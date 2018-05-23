@@ -1,0 +1,25 @@
+# Data file that describes books.
+
+- name: 'Mastering JavaFX Controls'
+  edition: '1st edition'
+  author: hendrik
+  full-author-list:
+    - 'Hendrik Ebbers'
+  isbn: '978-0071833776'
+  publisher: 'McGraw-Hill Education'
+  release: 'July 7, 2014'
+  language: 'English'
+  cover: 'mastering-fx.png'
+  link: 'https://www.amazon.com/Mastering-JavaFX-Controls-Oracle-Press/dp/0071833773'
+
+- name: 'Groovy in Action'
+  edition: 'todo'
+  author: todo
+  full-author-list:
+    - 'todo'
+  isbn: 'todo'
+  publisher: 'todo'
+  release: 'todo'
+  language: 'todo'
+  cover: 'todo'
+  link: 'todo'

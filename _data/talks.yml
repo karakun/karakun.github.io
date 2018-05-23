@@ -1,0 +1,21 @@
+# Data file that describes talks
+
+- name: 'WebComponents & Polymer'
+  author: 'hendrik'
+  summary: 'todo'
+  lectures: 
+    - conference: 'Devoxx'
+      year: '2015'
+    - conference: 'test-conf'
+      year: '2016'
+  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  tags: []
+
+- name: 'Mein kleiner Talk'
+  author: 'timo'
+  summary: 'todo'
+  lectures: 
+    - conference: 'DIY CONF'
+      year: '2018'
+  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  tags: ['DIY', 'CORBA']
