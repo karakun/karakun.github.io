@@ -5,4 +5,5 @@
 layout: home
 ---
 
-# Currently under construction
+# Home
+## Currently under construction
