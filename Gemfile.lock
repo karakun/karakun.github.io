@@ -27,6 +27,8 @@ GEM
     faraday (0.15.2)
       multipart-post (>= 1.2, < 3)
     ffi (1.9.23)
+    font-awesome-sass (5.0.13)
+      sassc (>= 1.11)
     forwardable-extended (2.6.0)
     gemoji (3.0.0)
     github-pages (185)
@@ -227,6 +229,10 @@ GEM
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
       rb-inotify (~> 0.9, >= 0.9.7)
+    sassc (1.11.4)
+      bundler
+      ffi (~> 1.9.6)
+      sass (>= 3.3.0)
     sawyer (0.8.1)
       addressable (>= 2.3.5, < 2.6)
       faraday (~> 0.8, < 1.0)
@@ -243,6 +249,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  font-awesome-sass (~> 5.0.13)
   github-pages
   jekyll-feed (~> 0.6)
   minima (~> 2.0)
