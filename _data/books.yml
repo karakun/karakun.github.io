@@ -2,7 +2,7 @@
 
 - name: 'Mastering JavaFX Controls'
   edition: '1st edition'
-  description: 'This book is about JavaFX'
+  description: 'Deliver state-of-the-art applications with visually stunning UIs. Mastering JavaFX 8 Controls provides clear instructions, detailed examples, and ready-to-use code samples. Find out how to work with the latest JavaFX APIs, configure UI components, automatically generate FXML, build cutting-edge controls, and effectively apply CSS styling. Troubleshooting, tuning, and deployment are also covered in this Oracle Press guide.'
   author: 'hendrik'
   full-author-list:
     - 'Hendrik Ebbers'
@@ -15,7 +15,8 @@
 
 - name: 'Groovy in Action'
   edition: 'todo'
-  author: todo
+  description: 'Groovy in Action, Second Edition is a thoroughly-revised, comprehensive guide to Groovy programming, introducing Groovy by example and presenting lots of reusable code. It introduces Java developers to the dynamic features that Groovy provides, and shows them how to apply Groovy to a range of tasks including building new apps, integration with existing code, and DSL development.'
+  author: 'mittie'
   full-author-list:
     - 'todo'
   isbn: 'todo'
@@ -23,4 +24,4 @@
   release: 'todo'
   language: 'todo'
   cover: 'todo'
-  link: 'todo'
+  link: 'https://www.amazon.de/Groovy-Action-Dierk-Konig/dp/1935182447'
