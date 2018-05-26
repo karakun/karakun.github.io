@@ -4,3 +4,15 @@ layout: default
 
 <h1>{{ page.firstName }} {{ page.lastName }}</h1>
 <p>{{ page.description }}</p>
+
+{% assign books = site.data.books | where: "author", page.name %}
+{% if books.size > 0 %}
+<h3>Books</h3>
+<ul>
+{% for book in books %}
+<li>
+    <a href="{{ book.link }} " target="_blank">{{ book.name }}</a>
+</li>
+{% endfor %}
+</ul>
+{% endif %}
