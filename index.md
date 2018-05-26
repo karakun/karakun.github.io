@@ -7,3 +7,9 @@ layout: home
 
 # Home
 ## Currently under construction
+
+
+<p>
+{% assign person = site.people| first %}
+<a href="{{ person.url }}">{{ person.name }}</a>
+</p>

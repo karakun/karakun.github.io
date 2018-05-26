@@ -2,7 +2,8 @@
 
 - name: 'Mastering JavaFX Controls'
   edition: '1st edition'
-  author: hendrik
+  description: 'This book is about JavaFX'
+  author: 'hendrik'
   full-author-list:
     - 'Hendrik Ebbers'
   isbn: '978-0071833776'
