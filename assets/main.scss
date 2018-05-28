@@ -10,6 +10,10 @@
 // Font-Awesome
 @import "font-awesome/fontawesome";
 
+// Layout based stuff
+@import "talks";
+@import "books";
+
 body {
     display: flex;
     flex-direction: column;
@@ -31,4 +35,24 @@ footer {
 .social-media-list .svg-icon {
     width: 1em;
     height: 1em;
+}
+
+h1 {
+    font-size: $size-1;
+}
+
+h2 {
+    font-size: $size-2;
+}
+
+h3 {
+    font-size: $size-3;
+}
+
+h4 {
+    font-size: $size-4;
+}
+
+h5 {
+    font-size: $size-5;
 }
