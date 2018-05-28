@@ -2,4 +2,29 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import "minima";
+// @import "minima";
+
+// Bulma.io CSS Framework
+@import 'bulma';
+
+// Font-Awesome
+@import "font-awesome/fontawesome";
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-wrapper {
+    flex: 1;
+}
+
+nav + .page-wrapper {
+    margin-top: 2em;
+}
+
+.social-media-list .svg-icon {
+    width: 1em;
+    height: 1em;
+}
