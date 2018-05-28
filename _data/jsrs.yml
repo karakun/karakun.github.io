@@ -1,0 +1,12 @@
+# Data file that describes jsrs.
+
+jsr-380:
+  name: 'Bean Validation 2.0'
+  description: 'This JSR aims at evolving the Bean Validation specification by leveraging Java 8 language constructs for the purposes of validation.'
+  link: 'https://jcp.org/en/jsr/detail?id=380'
+
+jsr-382:
+  name: 'Configuration API 1.0'
+  description: 'Provide applications and microservices means to obtain configuration properties through several environment-aware sources both internal and external to the application and made available through dependency injection or lookup.'
+  link: 'https://jcp.org/en/jsr/detail?id=382'
+  

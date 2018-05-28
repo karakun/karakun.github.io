@@ -1,0 +1,12 @@
+# Data file that describes awards.
+
+java-champion:
+  name: 'Java Champion'
+  description: 'todo'
+  icon: 'jc.png'
+
+javaone-rockstar:
+  name: 'JavaOne Rockstar'
+  description: 'todo'
+  icon: 'jr.png'
+  

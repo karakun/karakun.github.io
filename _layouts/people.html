@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% assign talks = site.data.talks | where: "author", page.name %}
+{% assign books = site.data.books | where: "author", page.name %}
+
+<h1>{{ page.firstName }} {{ page.lastName }}</h1>
+<p>{{ page.description }}</p>
+
+{% if talks.size > 0 %}
+    <h3>Talks</h3>
+    <ul>
+        {% for talk in talks %}
+        <li>{{ talk.name }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% if books.size > 0 %}
+    <h3>Books</h3>
+    <ul>
+        {% for book in books %}
+            <li>
+                <a href="{{ book.link }} " target="_blank">{{ book.name }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}

@@ -1,0 +1,40 @@
+# Data file that describes talks
+
+- name: 'Where the wild projects are'
+  author: 'hendrik'
+  summary: >
+    Build and testing a commercial software is easy. You can use a big infrastructure for CI and commercial tools to test your complete stack. And if you want to test your application on different mobile devices - well, that's easy! You company will buy them for you. But what can you do if you want to work on Open Source? You can not spend thousands of Dollars for a free time project and without a given infrastructure several build, test and deployment steps are just impossible... 
+    Imagine a world in that testing, building or deploying of open source software is at least as easy as for commercial projects. Maybe it's just easier and the infrastructure is better than in most $$$ stacks. I will introduce you to this world and show several tools and services that will help you to get the best out of your open source project - without producing any costs but with a lot of fun, cool new technologies and the freedom of choose.
+  lectures: 
+    - conference: 'Java Summit Bucharest'
+      year: '2018'
+  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  tags: [open source, keynote]
+
+- name: 'Polyglott Java - a platform for many paradigms'
+  author: 'mittie'
+  summary: > 
+    There are many ways to program - and all of them find a home on the JVM. Whether you are a die-hard object-oriented enterprise programmer, a super-cool scripting hipster, or a scientific functional engineer, the Java Platform has all you need.
+    In this talk we will go through unconventional combinations of these paradigms that enrich your solution space - scripting user-defined functions for a business application, building ambitious user interfaces, and creating rock-solid transaction systems.
+    Java has something for everybody.
+  lectures: 
+    - conference: 'Java Summit Bucharest'
+      year: '2018'
+  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  tags: ['Groovy', 'haskell', 'frege', 'jvm', 'polyglott']
+
+
+- name: 'Java APIs - The missing manual'
+  author: 'hendrik'
+  summary: > 
+    This isn’t a talk about microservices, NO-SQL, Container solutions or hip new frameworks. This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8. All this features are very helpful to create maintainable and future-proof applications, regardless of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of some important standard concepts and APIs of Java like annotations, null values and concurrency. Based on an overview of this topics and some samples the talk will answer questions like:
+    - How can I create my own annotations?
+    - How can I create a plugin structure without using frameworks like OSGI?
+    - What’s the best way to handle NullPointerExceptions?
+    - How can I write concurrent code that is still maintainable?
+  lectures: 
+    - conference: 'Dev Talks Cluj'
+      year: '2018'
+  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  tags: ['Java']
+  
