@@ -9,4 +9,3 @@ jsr-382:
   name: 'Configuration API 1.0'
   description: 'Provide applications and microservices means to obtain configuration properties through several environment-aware sources both internal and external to the application and made available through dependency injection or lookup.'
   link: 'https://jcp.org/en/jsr/detail?id=382'
-  
