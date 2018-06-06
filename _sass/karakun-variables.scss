@@ -1,0 +1,11 @@
+
+$karakun-main-color: #69C86C;
+
+
+// Overwrite Bulma
+$primary: $karakun-main-color;
+$link: $karakun-main-color;
+
+$navbar-item-color: $white;
+$navbar-item-active-color: $karakun-main-color;
+$navbar-item-hover-background-color: transparent;

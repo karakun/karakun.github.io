@@ -1,12 +1,19 @@
 ---
 layout: page
 ---
-Overview of talks that were done by members of Karakun:
+<h2>Overview of talks that were done by members of Karakun</h2>
 {% for talk in site.data.talks %}
-<article class="talk">
-{% assign author = site.people | where:'name', talk.author | first %}
-<h3>{{ talk.name }} - {{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h3>
-<p>{{ talk.summary }}</p>
-<span class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></span>
-</article>
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+        <div class="columns">
+    {% endif %}
+        <article class="talk column is-half">
+            {% assign author = site.people | where:'name', talk.author | first %}
+            <h3 class="has-text-primary">{{ talk.name }} - {{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h3>
+            <p>{{ talk.summary }}</p>
+            <span class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></span>
+        </article>
+    {% if loopindex == 0 %}
+        </div>
+    {% endif %}
 {% endfor %}

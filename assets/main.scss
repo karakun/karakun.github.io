@@ -32,11 +32,6 @@ footer {
     border-top: 1px solid $grey-lighter;
 }
 
-.social-media-list .svg-icon {
-    width: 1em;
-    height: 1em;
-}
-
 h1 {
     font-size: $size-1;
 }
@@ -55,4 +50,14 @@ h4 {
 
 h5 {
     font-size: $size-5;
+}
+
+.page-title {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.social-media-list .svg-icon {
+    width: 1em;
+    height: 1em;
 }
