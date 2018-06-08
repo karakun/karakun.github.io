@@ -2,16 +2,22 @@
 layout: page
 ---
 <h2>Overview of talks that were done by members of Karakun</h2>
+{% assign size = site.data.talks | size %}
 {% for talk in site.data.talks %}
     {% assign loopindex = forloop.index | modulo: 2 %}
     {% if loopindex == 1 %}
         <div class="columns">
     {% endif %}
+        {% if forloop.index == size and loopindex == 1 %}
+        <article class="talk column">
+        {% else %}
         <article class="talk column is-half">
+        {% endif %}
             {% assign author = site.people | where:'name', talk.author | first %}
-            <h3 class="has-text-primary">{{ talk.name }} - {{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h3>
+            <h3 class="has-text-primary">{{ talk.name }}</h3>
+            <h5>{{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h5>
             <p>{{ talk.summary }}</p>
-            <span class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></span>
+            <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
         </article>
     {% if loopindex == 0 %}
         </div>

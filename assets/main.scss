@@ -52,6 +52,15 @@ h5 {
     font-size: $size-5;
 }
 
+h1, h2, h3, h4, h5 {
+    line-height: 1;
+    margin-bottom: 0.75em;
+}
+
+p {
+    text-align: justify;
+}
+
 .page-title {
     text-transform: uppercase;
     font-weight: bold;
@@ -60,4 +69,8 @@ h5 {
 .social-media-list .svg-icon {
     width: 1em;
     height: 1em;
+}
+
+.author {
+    margin-top: 0.5em;
 }
