@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-<h2>Overview of talks that were done by members of Karakun</h2>
 {% assign size = site.data.talks | size %}
 {% for talk in site.data.talks %}
     {% assign loopindex = forloop.index | modulo: 2 %}
@@ -16,7 +15,7 @@ layout: page
             {% assign author = site.people | where:'name', talk.author | first %}
             <h3 class="has-text-primary">{{ talk.name }}</h3>
             <h5>{{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h5>
-            <p>{{ talk.summary }}</p>
+            <p>{%- if talk.featuredImage -%}<img class="featured-image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">{% endif %}{{ talk.summary }}</p>
             <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
         </article>
     {% if loopindex == 0 %}

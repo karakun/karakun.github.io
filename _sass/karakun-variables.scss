@@ -1,11 +1,10 @@
-
 $karakun-main-color: #69C86C;
 
+@import "bulma/utilities/initial-variables";
 
-// Overwrite Bulma
+// Overwrite Bulma default settings
 $primary: $karakun-main-color;
 $link: $karakun-main-color;
-
-$navbar-item-color: $white;
 $navbar-item-active-color: $karakun-main-color;
 $navbar-item-hover-background-color: transparent;
+$navbar-item-color: $white;

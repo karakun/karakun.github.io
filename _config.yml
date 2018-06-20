@@ -39,6 +39,9 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
+sass:
+  style: compressed
+
 collections:
   people:
     output: true

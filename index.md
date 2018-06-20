@@ -3,6 +3,8 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
+headerText: Welcome to the Karakun Developer Hub
+headerImage: /assets/images/sticker-mule-197268-unsplash.png
 ---
 
 # Home

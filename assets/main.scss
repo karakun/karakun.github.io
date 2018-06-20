@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-// @import "minima";
+@import 'karakun-variables';
 
 // Bulma.io CSS Framework
 @import 'bulma';
@@ -18,10 +18,15 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .page-wrapper {
     flex: 1;
+}
+
+.navbar-brand {
+    align-items: center;
 }
 
 nav + .page-wrapper {
@@ -30,6 +35,7 @@ nav + .page-wrapper {
 
 footer {
     border-top: 1px solid $grey-lighter;
+    margin-top: 2em;
 }
 
 h1 {
@@ -54,7 +60,13 @@ h5 {
 
 h1, h2, h3, h4, h5 {
     line-height: 1;
-    margin-bottom: 0.75em;
+    margin-bottom: 0.5em;
+    font-family: 'Encode Sans', sans-serif;
+    font-weight: bold;
+}
+
+h5 {
+    font-weight: 600;
 }
 
 p {
@@ -62,8 +74,12 @@ p {
 }
 
 .page-title {
-    text-transform: uppercase;
-    font-weight: bold;
+    font-size: 1.5em;
+    color: $white;
+}
+
+.page-title > span {
+    padding-right: 0.3em;
 }
 
 .social-media-list .svg-icon {
@@ -72,5 +88,65 @@ p {
 }
 
 .author {
-    margin-top: 0.5em;
+    margin-top: $size-7;
+}
+
+.racoon-logo {
+    height: $size-2;
+}
+
+.page-image {
+    height: 24.5em;
+    margin-bottom: 2em;
+    background-size: cover;
+    background-image: url('/assets/images/default.jpg');
+    display: flex;
+    align-items: stretch;
+}
+
+.page-image>div {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row-reverse;
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.navbar {
+    min-height: 5.5rem;
+}
+
+.my-karakun {
+    color: $karakun-main-color;
+    font-weight: bold;
+}
+
+.header-text {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    padding-bottom: 1em;
+    font-size: $size-2;
+    font-weight: lighter;
+    font-family: 'Encode Sans', sans-serif;
+    color: $white;
+}
+
+.header-text > div {
+    max-width: 9.5em;
+    text-align: right;
+    line-height: 1.2em;
+    font-size: 1.2em;
+}
+
+.column {
+    padding: 0.75rem 1.25rem;
+}
+
+img.featured-image {
+    float: left;
+    margin-right: 1em;
+    max-width: 175px;
+    border-radius: 6%;
+    margin-top: 0.4em;
 }

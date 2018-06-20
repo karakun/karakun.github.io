@@ -1,7 +1,6 @@
 ---
 layout: page
 ---
-<h2>Overview of books that were written by members of Karakun</h2>
 {% assign size = site.data.books | size %}
 {% for book in site.data.books %}
     {% assign loopindex = forloop.index | modulo: 2 %}
