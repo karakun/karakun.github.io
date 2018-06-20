@@ -9,7 +9,7 @@
     - conference: 'Java Summit Bucharest'
       year: '2018'
   speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
-  featuredImage: css
+  featuredImage: wild-projects
   tags: [open source, keynote]
 
 - name: 'Polyglott Java - a platform for many paradigms'
@@ -22,6 +22,7 @@
     - conference: 'Java Summit Bucharest'
       year: '2018'
   speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  featuredImage: mittie-talk
   tags: ['Groovy', 'haskell', 'frege', 'jvm', 'polyglott']
 
 
@@ -37,4 +38,5 @@
     - conference: 'Dev Talks Cluj'
       year: '2018'
   speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  featuredImage: java-apis
   tags: ['Java']

@@ -12,4 +12,8 @@ awards:
 jsrs:
     - 'jsr-380'
     - 'jsr-382'
+headerText: Hendrik Ebbers
+headerImage: hendrik
+
+
 ---

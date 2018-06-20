@@ -4,8 +4,5 @@
 
 layout: home
 headerText: Welcome to the Karakun Developer Hub
-headerImage: /assets/images/sticker-mule-197268-unsplash.png
+headerImage: home
 ---
-
-# Home
-## Currently under construction

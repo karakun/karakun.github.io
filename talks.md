@@ -1,7 +1,7 @@
 ---
 layout: talks
 title: Talks
-headerImage: /assets/images/IMG_0179.png
+headerImage: talks
 headerImageX: right
 headerImageY: 25%
 permalink: /talks/

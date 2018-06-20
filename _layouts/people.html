@@ -4,7 +4,6 @@ layout: page
 {% assign talks = site.data.talks | where: "author", page.name %}
 {% assign books = site.data.books | where: "author", page.name %}
 
-<h1>{{ page.firstName }} {{ page.lastName }}</h1>
 <p>{{ page.description }}</p>
 
 {% if talks.size > 0 %}

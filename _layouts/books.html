@@ -14,7 +14,7 @@ layout: page
         {% endif %}
             {% assign author = site.people | where:'name', book.author | first %}
             <h3 class="has-text-primary">{{ book.name }}</h3>
-            <p>{{ book.description }}</p>
+            <p>{%- if book.featuredImage -%}<img class="featured-image" src="/assets/featuredImages/{{ book.featuredImage }}.png">{% endif %}{{ book.description }}</p>
             <span><a href="{{ book.link }}" target="_blank">more infos</a></span>
             <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
         </article>

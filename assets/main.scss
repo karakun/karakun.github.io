@@ -149,4 +149,7 @@ img.featured-image {
     max-width: 175px;
     border-radius: 6%;
     margin-top: 0.4em;
+    border-width: 0.05em;
+    border-color: $black;
+    border-style: solid;
 }
