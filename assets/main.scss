@@ -153,6 +153,11 @@ img.featured-image {
     border-color: $black;
     border-style: solid;
     padding: 0.2em;
+    filter: grayscale(1);
+}
+
+article p:hover img.featured-image {
+    filter: grayscale(0);
 }
 
 .blink-cursor {
