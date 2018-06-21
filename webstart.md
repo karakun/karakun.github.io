@@ -1,7 +1,7 @@
 ---
-layout: page
+layout: article
 title: WebStart
-headerText: Run Web Start based application after the release of Java 11
+headerText: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
 permalink: /webstart/
 headerImage: webstart
 ---
@@ -21,6 +21,7 @@ The tool will provide exactly the same workflow as Java Web Start, therefore not
 * Our tool registers itself for the JNLP-file-extension and the MIME-type "application/x-java-jnlp-file", therefore by double clicking the JNLP-file, our tool launches. 
 * It parses the JNLP-file, downloads all needed resources (JARs, native libraries and images) and stores them in a cache. 
 * Once all resources are available, the application starts. 
+
 The tool automatically checks if a newer version of your application is available and downloads updated resources automatically. This guarantees that your users will always run the latest version of your applications on any client.
 The focus of the tool are rich desktop applications. It will not address the Java Applet technology. Therefore no browser plugins will be part of the tool.
 The application will come with a native installer, which ensures a simple installation process. It needs to be installed on a client only once, because it will contain a modern update mechanism to download and install required updates automatically.

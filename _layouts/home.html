@@ -8,9 +8,9 @@ layout: page
         <div class="columns">
     {% endif %}
         {% if forloop.index == size and loopindex == 1 %}
-        <article class="talk column">
+        <article class="talk column content">
         {% else %}
-        <article class="talk column is-half">
+        <article class="talk column is-half content">
         {% endif %}
             {% assign author = site.people | where:'name', post.author | first %}
             <h3 class="has-text-primary">{{ post.title }}</h3>
