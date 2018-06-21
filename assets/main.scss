@@ -156,7 +156,8 @@ img.featured-image {
     filter: grayscale(1);
 }
 
-article p:hover img.featured-image {
+article.talk:hover p img.featured-image,
+article.book:hover p img.featured-image {
     filter: grayscale(0);
 }
 
