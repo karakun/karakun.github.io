@@ -1,10 +1,11 @@
 ---
 layout: article
-title: WebStart
+title: Web Start
 headerText: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
 permalink: /webstart/
 headerImage: webstart
 ---
+## Java Web Start will die!
 Java Web Start (JWS) was deprecated in Java 9 and starting with Java 11 Oracle will remove JWS altogether. According to the current roadmap this will happen in September 2018. From this time on, it will be impossible to use JWS-based applications on clients, that have the latest version of Java installed.
 For more information you can take a look at these documents:
 
