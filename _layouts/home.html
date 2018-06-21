@@ -15,7 +15,7 @@ layout: page
             {% assign author = site.people | where:'name', post.author | first %}
             <h3 class="has-text-primary">{{ post.title }}</h3>
             <p>{%- if post.featuredImage -%}<img class="featured-image" src="/assets/featuredImages/{{ post.featuredImage }}.png">{% endif %}{{ post.excerpt }}</p>
-            <div class="author"><a>more...</a></div>
+            <div class="author"><a href="{{ post.url}}">more...</a></div>
         </article>
     {% if loopindex == 0 %}
         </div>

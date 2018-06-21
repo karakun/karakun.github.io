@@ -25,7 +25,6 @@
   featuredImage: mittie-talk
   tags: ['Groovy', 'haskell', 'frege', 'jvm', 'polyglott']
 
-
 - name: 'Java APIs - The missing manual'
   author: 'hendrik'
   summary: > 
