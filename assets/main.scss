@@ -149,7 +149,18 @@ img.featured-image {
     max-width: 175px;
     border-radius: 6%;
     margin-top: 0.4em;
-    border-width: 0.05em;
+    border-width: 0.1em;
     border-color: $black;
     border-style: solid;
+    padding: 0.2em;
+}
+
+.blink-cursor {
+    animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes blink-animation {
+    to {
+        visibility: hidden;
+    }
 }
