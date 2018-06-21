@@ -26,3 +26,9 @@
   language: 'todo'
   link: 'https://www.amazon.de/Groovy-Action-Dierk-Konig/dp/1935182447'
   featuredImage: groovy-in-action
+
+- name: 'JavaFX 8 Refcard'
+  description: 'JavaFX is the new UI toolkit for Java-based client applications running on desktop, embedded, and mobile devices. It is part of the JDK 8 and is provided as a pure Java API. This Dzone Refcard gives you what you need to start using the powerful JavaFX 8 UI and graphics tool with code snippets and visual examples of shapes and controls.'
+  link: https://dzone.com/refcardz/javafx-8-1?chapter=1
+  featuredImage: fx-refcard
+  author: 'hendrik'
