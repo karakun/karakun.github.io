@@ -177,3 +177,9 @@ article.book:hover p img.featured-image {
         visibility: hidden;
     }
 }
+
+.table-centered {
+    @extend .table;
+    margin: 2em auto 3em auto;
+    padding: 0 5em;
+}
