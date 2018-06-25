@@ -152,16 +152,16 @@ article.post p>img {
 
 img.featured-image {
     float: left;
-    margin-right: 1em;
-    max-width: 175px;
-    border-radius: 6%;
-    margin-top: 0.4em;
-    border-width: 0.1em;
-    border-color: $black;
+    margin-right: 0.8em;
+    max-width: 180px;
+    border-radius: 5%;
+    margin-top: 0.42em;
+    border-width: 0.15em;
+    border-color: #a5afb0;
     border-style: solid;
-    padding: 0.2em;
     filter: grayscale(1);
 }
+
 
 article.talk:hover p img.featured-image,
 article.book:hover p img.featured-image {
