@@ -2,7 +2,7 @@
 layout: post
 title:  'Do I need to pay for Java now?'
 author: hendrik
-featuredImage: travis
+featuredImage: tip-jar
 excerpt: „This post gives an overview of the new Java release train as it was announced by Oracle. Next to
  this the article provides some important information and hints how you should handle new Java releases in
  future and helps you to decide if you need to buy commercial Java support in future.“
