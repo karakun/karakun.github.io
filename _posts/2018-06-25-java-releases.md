@@ -125,6 +125,7 @@ since Oracle has removed WebStart from Java. You can find all the needed informa
 ## What does the new release train mean to my company?
 If we concentrate on the Oracle JDK the answer to that question is quite easy and you can choose between 3 
 options:
+
 - Update the Java version every 6 month. By doing so you will always build on the supported Java version and 
 will automatically get all important feature and security updates.
 - Buy commercial support from Oracle and migrate only from one LTS version to the next LTS version. This 
