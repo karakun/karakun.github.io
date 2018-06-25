@@ -1,10 +1,14 @@
 ---
 layout: post
-title:  "How WebComponents can help to create Microservices"
+title:  "How web components can help to create frontends for microservices"
 author: hendrik
-featuredImage: "css"
-excerpt: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
+featuredImage: sweets
+excerpt: "This post gives an overview of different patterns that can be used to define 
+frontends for microservices. In additon the post shows how you can make use of
+ web components together with a microservice based archicture to reduce the duplication
+ of code and provide a constinent ui / ux for a complete application landscape"
 tags: [architecture, microservice, webcomponents]
+headerImage: post
 ---
 
 
