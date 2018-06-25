@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How WebComponents can help to create Microservices"
+title:  "How web components can help to create frontends for microservices"
 author: hendrik
 featuredImage: sweets
 excerpt: "This post gives an overview of different patterns that can be used to define 
