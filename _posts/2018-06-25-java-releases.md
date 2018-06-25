@@ -52,7 +52,26 @@ based on Java do not have commercial support today since the release train of Ja
 an adoption of the newest version was easily possible.
 
 ## Why is Oracle doing this?
-TODO: ASChneller neue Features, Geld verdienen
+You might ask why Oracle changes the releases of Java in such an big way. To be true Oracle is not the only big company that 
+changed the release cycle of important products in the last years. Simply have a look at the release timeline of [Chrome]
+(https://www.chromestatus.com/features/schedule) or the [Go programming language](https://golang.org/doc/devel/release.html)
+you will see that more and more products try to shorten the periods between releases. While this is in general based on agil
+methods and the workflow that we use in software development in our days we can easily recognise 2 main benefits that are an
+outcome of the new Java release train.
+
+The most important point for faster releases of Java is the early availability of new features. Between the release of Java 7 
+and Java 8 was a periode of 3 years and that was more or less the time we as developers needed to wait for new features like
+lambdas. With the new release train new features can easily be published every 6 month. To be true a feature like lambdas or 
+the Java module system needs much more time than 6 month to be done but once it's ready it can be added to the next version
+that will be released at least 6 month later. In the past Java releases were delayed since some specific features simple
+were not production ready at the code freeze. Since Oracle didn't want to move that features to next release the complete JDK 
+release was delayed. With a new release every 6 month skipping a feature and adding it to one of the next versions is no
+problem anymore.
+
+Next to the there is a second point that will provide a big benefit to Oracle. With the new schedule a periode in that Oracle
+provide free support for more than 1 Java version is completelly gone. Based on this companies need to plan migration to new
+Java versions in a miuch stricter way than before. Based on internal constraints like resources it won't be possible for all companies to always update to a new Java version every 6 months. Here Oracle provide an updated commercial support model for
+companies to use the LTS version of Java much longer than 6 month and receive bugfix and security updates long after the end of the public support. Since the commercial support might become an important option for several companies in near future we will have a deeper look at its conditions and price now.
 
 ## What is Oracles price for commercial support of Java?
 Based on the changed release train a new commercial support model for Java was announced by Oracle. This 
@@ -94,9 +113,11 @@ the "Java SE Desktop Subscription" model:
 
 Commercial support for Java applications on the desktop might become quite important for some companies since Oracle will drop 
 several important desktop features from the JDK starting with Java version 11. If you are using Java on the desktop I highly 
-recommend to read [this article about the Java client roadmap that was announced by Oracle in 2018.](https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy)
+recommend to read [this article about the Java client roadmap that was announced by Oracle in 2018.]
+(https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy)
 
-If you need more information about the commercial support for Java that is offered by Oracle you should have a look at [this official document.](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html)
+If you need more information about the commercial support for Java that is offered by Oracle you should have a look at [this 
+official document.](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html)
 
 ## What does the new release train mean to my company?
 If we concentrate on the Oracle JDK the answer to that question is quite easy and you can choose between 3 
@@ -106,13 +127,22 @@ will automatically get all important feature and security updates.
 - Buy commercial support from Oracle and migrate only from one LTS version to the next LTS version. This 
 would mean that you migrate from Java 8 to Java 11 maybe in the first half of 2019 and than from Java 11 to Java 
 XX in XXXX.
-- Stay on a Java version without provided updates and bugfixes from Oracle. Once the free support of a Java version ends nobody 
+- Stay on a Java version without provided updates and bugfixes from Oracle. Once the free support of a Java version ends 
+nobody 
 forbids you to use the unsupported version in future. By doing so you do not need to pay commercial support 
-or get into a maybe stressfull migration every 6 months. With this approach you can freely decide when to migrate to a newer Java version. On the downside you will miss out on newly released bugfixes and security updates. While a bugfix is not 
+or get into a maybe stressfull migration every 6 months. With this approach you can freely decide when to migrate to a newer 
+Java version. On the downside you will miss out on newly released bugfixes and security updates. While a bugfix is not 
 really critical as long as the bug does not affect your software, open security issues can end in horrible 
 problems.
-The 3 options presented above outline different strategies. Which one to choose depends on many factors such as importance of project, impact of failure, budget, company policy and many more. This new release train brings a great change to the Java environment and while many companies, ops and devs will struggle at first there is a reason behind this change. One of Oracles designated goals with the new release trains is to deliver new language features faster. 
-When new language features are introduced in Java they take a considerable amount of time until they are adopted and widely used in the daily work. As an example both the generic (introduced with Java 5) as well as lambdas (introduced with Java 8) have only slowly made their progress to the community. Part of this slow adoption speed is due to the countless open source frameworks and libraries which are a core part of the Java ecosystem. A new language feature will not get adopted until it can inter operate with the dependencies of an application.
+The 3 options presented above outline different strategies. Which one to choose depends on many factors such as importance of 
+project, impact of failure, budget, company policy and many more. This new release train brings a great change to the Java 
+environment and while many companies, ops and devs will struggle at first there is a reason behind this change. One of Oracles 
+designated goals with the new release trains is to deliver new language features faster. 
+When new language features are introduced in Java they take a considerable amount of time until they are adopted and widely 
+used in the daily work. As an example both the generic (introduced with Java 5) as well as lambdas (introduced with Java 8) 
+have only slowly made their progress to the community. Part of this slow adoption speed is due to the countless open source 
+frameworks and libraries which are a core part of the Java ecosystem. A new language feature will not get adopted until it can 
+inter operate with the dependencies of an application.
 
 This points will change in near future. While today you often hear that Java 11 will be the next „big release“ were 
 libraries and application will depend on you need to keep in mind that even this version will only have a 6 
