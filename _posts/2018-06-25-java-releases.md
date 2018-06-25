@@ -1,4 +1,13 @@
-# Do I need to pay now for Java?
+---
+layout: post
+title:  "Do I need to pay for Java now?“
+author: hendrik
+featuredImage: travis
+excerpt: „This post gives an overview of the new Java release train as it was announced by Oracle. Next to this the article provides some important information and hints how you should handle new Java releases in future and helps you to decide if you need to buy commercial Java support in future.“
+tags: [Java]
+headerImage: post
+---
+
 This year several changes are introduced to the Java release and support model that is provided by Oracle. Based on this several Java developers have questions on how this changes will affect their future work and what strategy should be used when thinking about Java version updates in applications. One think that is often discussed but never really end in a clear answer is if companies need to pay for Java in near future. This article will give an overview of the new Java release train, the commercial support for Java. Based on this several solutions and workflows for supporting Java in Java based applications will b e discussed.
 
 ## The Java release train
