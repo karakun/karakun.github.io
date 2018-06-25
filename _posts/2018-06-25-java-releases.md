@@ -29,9 +29,7 @@ version was released. Based on this the periode in that a company could savely u
 version was quite long. The following diagram shows a time graph of the last Java releases and the time of 
 it’s official support by oracle.
 
-XXXXXX BILD XXXXXXXX
 ![Java release train]({{ "/assets/posts/java-release-train/old-roadmap.png" | absolute_url }})
-
 
 As you can see in the diagram the free support of a Java version was quite long and the timespan in that 2 
 versions were supported in parallel was long enough to plan and handle a migration of your software to the 
@@ -57,9 +55,14 @@ an adoption of the newest version was easily possible.
 TODO: ASChneller neue Features, Geld verdienen
 
 ## What is Oracles price for commercial support of Java?
- TODO: http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html
+Based on the changed release train a new commercial support model for Java was announced by Oracle. This 
+provides 2 different types of support subscriptions. One of them targets Java on the desktop and the other one Java 
+on the server and Java in general. If you do not use Java on the desktop the "Java SE Subscription" will be the right support
+model for you. Iy you use Java on the desktop for client applications you need to pay support for each desktop user by 
+choosing the "Java SE Desktop Subscription". If your software uses a Java server and Java based clients you need to pay for 
+both subscriptions.
 
-Java SE Subscription Pricing:
+The following table shows the price for the "Java SE Subscription" that cost is based on the processor count:
 
 | Processor count | Monthly price per processor          |
 | --------------- | ------------------------------------ |
@@ -72,8 +75,13 @@ Java SE Subscription Pricing:
 | 10,000-19,999   | $12.50                               | 
 | 320,000+        | Oracle must be contacted for details | 
 
+When running Java based servers on bare metal this price model is quite easy and you simply pay for the CPUs that your server 
+machines contain. If you work with a cloud based infrastructure things will become much harder to understand because the real 
+CPUs are shared between multiple virtual machines or containers (like in Docker and Kubernetes).
 
-Java SE Desktop Subscription Pricing:
+Next to this model that is useable for Java on the server Oracle provides a special support for Java on the desktop. Here the
+price for the commercial support is based on the number of users / client terminals. The following table shows the cost for 
+the "Java SE Desktop Subscription" model:
 
 | Users / client machines | Monthly price per user / client machine |
 | ----------------------- | --------------------------------------- |
@@ -84,8 +92,11 @@ Java SE Desktop Subscription Pricing:
 | 20,000-49,999           | $1.25                                   | 
 | 50,000+                 | Oracle must be contacted for details    | 
 
+Commercial support for Java applications on the desktop might become quite important for some companies since Oracle will drop 
+several important desktop features from the JDK starting with Java version 11. If you are using Java on the desktop I highly 
+recommend to read [this article about the Java client roadmap that was announced by Oracle in 2018.](https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy)
 
-
+If you need more information about the commercial support for Java that is offered by Oracle you should have a look at [this official document.](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html)
 
 ## What does the new release train mean to my company?
 If we concentrate on the Oracle JDK the answer to that question is quite easy and you can choose between 3 
@@ -97,17 +108,13 @@ would mean that you migrate from Java 8 to Java 11 maybe in the first half of 20
 XX in XXXX.
 - Stay on a Java version without provided updates and bugfixes from Oracle. Once the free support of a Java version ends nobody 
 forbids you to use the unsupported version in future. By doing so you do not need to pay commercial support 
-or get into a maybe stressfull migration every 6 months. With this approach you can freely decide when to migrate to a newer Java version you will miss security updates and bugfixes. While a bugfix is not 
-really critical as long as the bug do not affect your software, open security issues can end in horrible 
+or get into a maybe stressfull migration every 6 months. With this approach you can freely decide when to migrate to a newer Java version. On the downside you will miss out on newly released bugfixes and security updates. While a bugfix is not 
+really critical as long as the bug does not affect your software, open security issues can end in horrible 
 problems.
-While this option provides several strategies and mostly at least one of them can be adopted to the general 
-workflow of a developer team you should have one important point in mind: One of the main reasons why Oracle 
-has chosen this new release train is to offer new languages features faster. When generics, annotations or 
-lambdas were introduced in Java the developer community had quite a lot of time to understand and adopt that 
-new features. Next to this frameworks in general stayed updated on one of the 2 last Java versions. Today you 
-are in a good position if your application depends on Java 8 for example. In this case you can use mostly all 
-Java dependencies in your software and had a lot of time to maker yourself familiar with lambdas. This points 
-will change in near future. While today you often hear that Java 11 will be the next „big release“ were 
+The 3 options presented above outline different strategies. Which one to choose depends on many factors such as importance of project, impact of failure, budget, company policy and many more. This new release train brings a great change to the Java environment and while many companies, ops and devs will struggle at first there is a reason behind this change. One of Oracles designated goals with the new release trains is to deliver new language features faster. 
+When new language features are introduced in Java they take a considerable amount of time until they are adopted and widely used in the daily work. As an example both the generic (introduced with Java 5) as well as lambdas (introduced with Java 8) have only slowly made their progress to the community. Part of this slow adoption speed is due to the countless open source frameworks and libraries which are a core part of the Java ecosystem. A new language feature will not get adopted until it can inter operate with the dependencies of an application.
+
+This points will change in near future. While today you often hear that Java 11 will be the next „big release“ were 
 libraries and application will depend on you need to keep in mind that even this version will only have a 6 
 month lifetime if you do not buy commercial support. Today nobody knows what features will be introduced in 
 the JDK after version 11. Maybe Java 13 will introduce something were framework developers will depend on. 
