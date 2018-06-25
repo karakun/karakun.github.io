@@ -29,6 +29,8 @@ version was quite long. The following diagram shows a time graph of the last Jav
 it’s official support by oracle.
 
 XXXXXX BILD XXXXXXXX
+![Java release train]({{ "/assets/posts/java-release-train/old-roadmap.png" | absolute_url }})
+
 
 As you can see in the diagram the free support of a Java version was quite long and the timespan in that 2 
 versions were supported in parallel was long enough to plan and handle a migration of your software to the 
@@ -38,7 +40,7 @@ by buying commercial support for a Java version.
 As already said all this points will change in future based on that the new release train for Java. The 
 following image shows the release train as it was announced by Oracle.
 
-![Java release train]({{ "/assets/posts/java-release-train/roadmap-java.png" | absolute_url }})
+![Future Java release train]({{ "/assets/posts/java-release-train/roadmap-java.png" | absolute_url }})
 
 Starting with Java 9 mostly all Java version will only have a lifetime of 6 month. After this periode no more 
 updates will be provided for the version. Even if you have a commercial contract with Oracle you won’t get 
