@@ -82,7 +82,7 @@ both subscriptions.
 
 The following table shows the price for the "Java SE Subscription" that cost is based on the processor count:
 
-{:.table-centered}
+{:.table}
 | Processor count | Monthly price per processor          |
 | --------------- | ------------------------------------ |
 | 1-99            | $25.00                               | 
@@ -102,7 +102,7 @@ Next to this model that is useable for Java on the server Oracle provides a spec
 price for the commercial support is based on the number of users / client terminals. The following table shows the cost for 
 the "Java SE Desktop Subscription" model:
 
-{:.table-centered}
+{:.table}
 | Users / client machines | Monthly price per user / client machine |
 | ----------------------- | --------------------------------------- |
 | 1-999                   | $2.50                                   | 
@@ -181,7 +181,7 @@ OpenJDK commumnity will provide it last build for Java 11 in September 2022. Thi
 11 much longer by using OpenJDK than Oracle JDK but omn the other hand there is just no commercial support for OpenJDK builds.
 An overview about the planed roadmap of OpenJDK can be found [here](https://adoptopenjdk.net/support.html).
 
-#### Azul
+### Azul
 https://www.azul.com/products/azul_support_roadmap/
 https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/
 ![Azul roadmap]({{ "/assets/posts/java-release-train/roadmap-azul.png" | absolute_url }})
@@ -210,7 +210,7 @@ todo
 
 Overview of future Java releases.
 
-{:.table-centered}
+{:.table}
 | Java version | free 6 month support  | free MTS support | commercial MTS support | commercial LTS support |
 | ------------ | --------------------- | ---------------- | ---------------------- | ---------------------- |
 | 8            | all                   | all              | all                    | all                    | 
