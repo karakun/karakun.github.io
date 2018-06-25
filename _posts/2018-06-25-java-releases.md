@@ -6,7 +6,7 @@ Last year Oracle announced a new release train for Java and this new schedule re
 
 The last years it was more or less easy for an application developer to depend on a supported version of Java. Till Java 8 all version had a quite long lifetime and free updates were still provided after the next version was released. Based on this the periode in that a company could savely update Java to the newest version was quite long. The following diagram shows a time graph of the last Java releases and the time of it’s official support by oracle.
 
-XXXXXX BILD XXXXXXXX
+XXXXXX BILD XXXXXXXX roadmap-java.png
 
 As you can see in the diagram the free support of a Java version was quite long and the timespan in that 2 versions were supported in parallel was long enough to plan and handle a migration of your software to the newest Java version. Even if this period was to short based on some constraints it was possible to extend it by buying commercial support for a Java version.
 
