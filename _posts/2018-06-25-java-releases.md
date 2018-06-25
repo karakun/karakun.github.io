@@ -170,12 +170,18 @@ AIX systems. Next to the first companies that create a business model based on n
 Here the biggest player is definitaly Azul. With the new release model of Java and the need for commercial support in near future maybe more companies will be created based on this business to provide Java build artifacts for the different needs of all the customers. While this might be an interessting future for Java no one knows today what impact this will have in IT companies. Therefore we should have a concreete look at the vendors that afre already on the market today.
 
 ### OpenJDK
-https://adoptopenjdk.net/support.html
+Open JDK provides builds that are directly based on the open source part of Java. Builds of OpenJDK can be downloaded [here](https://adoptopenjdk.net/index.html).
+The roadmap of the OpenJDK is more or less the same as the roadmap that Oracle has defined. The big different is that OpenJDK 
+will provide LTS releases longer than 6 month but by far not as long as Oracle
+will do with the commercial support model. Since Oracle will provide commercial support for Java 11 until September 2026 the
+OpenJDK commumnity will provide it last build for Java 11 in September 2022. This means that you will get free updates for Java
+11 much longer by using OpenJDK than Oracle JDK but omn the other hand there is just no commercial support for OpenJDK builds.
+An overview about the planed roadmap of OpenJDK can be found [here](https://adoptopenjdk.net/support.html).
 
 #### Azul
 https://www.azul.com/products/azul_support_roadmap/
 https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/
-![Azul roadmap]({{ "/assets/posts/java-release-train/azul-roadmap.png" | absolute_url }})
+![Azul roadmap]({{ "/assets/posts/java-release-train/roadmap-azul.png" | absolute_url }})
 
 ### IBM
 https://developer.ibm.com/javasdk/2018/04/26/java-standard-edition-ibm-support-statement/
@@ -187,5 +193,19 @@ https://access.redhat.com/articles/3409141
 ### OpenJ9
 https://www.eclipse.org/openj9/
 
+### SAP
+https://sap.github.io/SapMachine/
+
 ## Conclusion
 todo
+
+Overview of future Java releases.
+
+| Java version | free 6 month support  | free MTS support | commercial MTS support | commercial LTS support |
+| ------------ | --------------------- | ---------------- | ---------------------- | ---------------------- |
+| 8            | all                   | all              | all                    | all                    | 
+| 9            | OpenJDK, Oracle, Azul | -                | Azul                   | -                      | 
+| 10           | OpenJDK, Oracle, Azul | -                | -                      | -                      | 
+| 11           | all                   | OpenJDK          | all                    | all                    |
+| 12           | OpenJDK, Oracle, Azul | -                | -                      | -                      | 
+| 13           | OpenJDK, Oracle, Azul | -                | Azul                   | -                      | 
