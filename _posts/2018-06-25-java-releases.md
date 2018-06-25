@@ -153,10 +153,21 @@ version. So even if you buy commercial support or skip Java releases for your so
 important than before to update to a current Java version.
 
 
-
-
-### Weiteres
-Azul Support: 
+## Azul support
 https://www.azul.com/products/azul_support_roadmap/
 https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/
 ![Azul roadmap]({{ "/assets/posts/java-release-train/azul-roadmap.png" | absolute_url }})
+
+## OpenJDK
+https://adoptopenjdk.net/support.html
+
+## IBM
+https://developer.ibm.com/javasdk/2018/04/26/java-standard-edition-ibm-support-statement/
+
+## OpenJ9
+https://www.eclipse.org/openj9/
+
+## RedHat
+https://access.redhat.com/articles/1299013
+https://access.redhat.com/articles/3409141
+
