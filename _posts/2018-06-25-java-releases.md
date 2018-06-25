@@ -91,7 +91,7 @@ The following table shows the price for the "Java SE Subscription" that cost is 
 | 1,000-2,999     | $17.50                               | 
 | 3,000-9,999     | $15.00                               |
 | 10,000-19,999   | $12.50                               | 
-| 320,000+        | Oracle must be contacted for details | 
+| 320,000+        | Oracle must be contacted for details |    <--- TODO: Hier stimmt was nicht, da ist ein Sprung
 
 When running Java based servers on bare metal this price model is quite easy and you simply pay for the CPUs that your server 
 machines contain. If you work with a cloud based infrastructure things will become much harder to understand because the real 
@@ -112,11 +112,11 @@ the "Java SE Desktop Subscription" model:
 
 Commercial support for Java applications on the desktop might become quite important for some companies since Oracle will drop 
 several important desktop features from the JDK starting with Java version 11. If you are using Java on the desktop I highly 
-recommend to read [this article about the Java client roadmap that was announced by Oracle in 2018.]
-(https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy)
+recommend to read [this article about the Java client roadmap that was announced by Oracle in 2018]
+(https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy).
 
 If you need more information about the commercial support for Java that is offered by Oracle you should have a look at [this 
-official document.](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html) If you
+official document](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html). If you
 use Java WebStart technology to provide desktop clients you should take care about the current situation as fast as possible 
 since Oracle has removed WebStart from Java. You can find all the needed information [here]({{ site.baseurl }}{% link webstart.md %}).
 
