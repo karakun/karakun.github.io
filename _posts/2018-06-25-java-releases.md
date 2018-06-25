@@ -43,9 +43,9 @@ following image shows the release train as it was announced by Oracle.
 
 Starting with Java 9 most Java version will only have a lifetime of 6 month. After this periode no more 
 updates will be provided for the version. Even if you have a commercial contract with Oracle you won’t get 
-any additional updates for Java 9 or 10 after this 6 months. Next to this all XX years a LTS (long term 
+any additional updates for Java 9 or 10 after this 6 months. Next to this all 3 years a LTS (long term 
 support) version of Java will be released. The first version with LTS support will be Java 11 that is 
-scheduled for fall 2018. This LTS version will provide a commercial support with updates for XX years. The 
+scheduled for fall 2018. This LTS version will provide a commercial support with updates for 8 years. The 
 most important fact is that updates for LTS version can only be accessed and used by people that buy 
 commercial support at Oracle. Based on my daily work I would say that most companies that create software 
 based on Java do not have commercial support today since the release train of Java was quite „friendly“ and 
@@ -127,7 +127,7 @@ options:
 will automatically get all important feature and security updates.
 - Buy commercial support from Oracle and migrate only from one LTS version to the next LTS version. This 
 would mean that you migrate from Java 8 to Java 11 maybe in the first half of 2019 and than from Java 11 to Java 
-XX in XXXX.
+17 in 2022.
 - Stay on a Java version without provided updates and bugfixes from Oracle. Once the free support of a Java version ends 
 nobody 
 forbids you to use the unsupported version in future. By doing so you do not need to pay commercial support 
@@ -153,22 +153,39 @@ Based on that such dependencies can not be used in your application anymore if y
 version. So even if you buy commercial support or skip Java releases for your software it will be more 
 important than before to update to a current Java version.
 
+## Is Oracle our last hope?
+Until now all strategies and solutions to handle future Java versions are based on the new release train of Oracle. While
+a large majority of all installed JDKs is coming from Oracle there are several other vendors on the market that provide
+a JDK and a JVM. All this products have 1 important thing in common: They all are built on top of OpenJDK. 
 
-## Azul support
+The OpenJDK is the open source part of Java that is used to build the Oracle JDK and JRE as a native binary that you normally
+will install on your system. To be true most of the parts that are used in Oracle to build Java binaries are part opf the 
+OpenJDK. Therefore even the OpenJDK provides Java binaries. This binaries can be downloaded for free and often used as Java
+installation in Linux ditributions. All core parts of Java are part of the OpenJDK binaries. Only some Oracle specific tools 
+like "Java Flight Recorder" are missing.
+
+Oracle and the OpenJDK itself are not the only players that provide native builds based on the open sources of Java. Some
+IT companies provide specific JDK builds for their products. A good example in this area is IBM that provides its own JDK for
+AIX systems. Next to the first companies that create a business model based on native Java builds shown up the last years.
+Here the biggest player is definitaly Azul. With the new release model of Java and the need for commercial support in near future maybe more companies will be created based on this business to provide Java build artifacts for the different needs of all the customers. While this might be an interessting future for Java no one knows today what impact this will have in IT companies. Therefore we should have a concreete look at the vendors that afre already on the market today.
+
+### OpenJDK
+https://adoptopenjdk.net/support.html
+
+#### Azul
 https://www.azul.com/products/azul_support_roadmap/
 https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/
 ![Azul roadmap]({{ "/assets/posts/java-release-train/azul-roadmap.png" | absolute_url }})
 
-## OpenJDK
-https://adoptopenjdk.net/support.html
-
-## IBM
+### IBM
 https://developer.ibm.com/javasdk/2018/04/26/java-standard-edition-ibm-support-statement/
 
-## OpenJ9
-https://www.eclipse.org/openj9/
-
-## RedHat
+### RedHat
 https://access.redhat.com/articles/1299013
 https://access.redhat.com/articles/3409141
 
+### OpenJ9
+https://www.eclipse.org/openj9/
+
+## Conclusion
+todo
