@@ -53,8 +53,7 @@ an adoption of the newest version was easily possible.
 
 ## Why is Oracle doing this?
 You might ask why Oracle changes the releases of Java in such an big way. To be true Oracle is not the only big company that 
-changed the release cycle of important products in the last years. Simply have a look at the release timeline of [Chrome]
-(https://www.chromestatus.com/features/schedule) or the [Go programming language](https://golang.org/doc/devel/release.html)
+changed the release cycle of important products in the last years. Simply have a look at the release timeline of [Chrome](https://www.chromestatus.com/features/schedule) or the [Go programming language](https://golang.org/doc/devel/release.html)
 you will see that more and more products try to shorten the periods between releases. While this is in general based on agil
 methods and the workflow that we use in software development in our days we can easily recognise 2 main benefits that are an
 outcome of the new Java release train.
