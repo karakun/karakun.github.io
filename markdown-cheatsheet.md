@@ -1,10 +1,8 @@
 ---
 layout: post
 title:  "Markdown Cheatsheet"
-author: hendrik
-featuredImage: "css"
-excerpt: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
-tags: [architecture, microservice, webcomponents]
+headerImage: post
+hidden: true
 ---
 
 An overview of the markdown syntax and how the different style types are layouted on our page.

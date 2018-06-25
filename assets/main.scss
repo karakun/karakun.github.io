@@ -183,3 +183,11 @@ article.post .table {
     margin: 2em auto 3em auto;
     padding: 0 5em;
 }
+
+.featured-images-table {
+    @extend .table
+}
+
+.featured-images-table img {
+    width: 192px;
+}

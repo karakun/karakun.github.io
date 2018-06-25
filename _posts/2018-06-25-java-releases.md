@@ -114,11 +114,10 @@ the "Java SE Desktop Subscription" model:
 
 Commercial support for Java applications on the desktop might become quite important for some companies since Oracle will drop 
 several important desktop features from the JDK starting with Java version 11. If you are using Java on the desktop I highly 
-recommend to read [this article about the Java client roadmap that was announced by Oracle in 2018]
-(https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy).
+recommend to read [this article about the Java client roadmap that was announced by Oracle in 2018](https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy).
 
-If you need more information about the commercial support for Java that is offered by Oracle you should have a look at [this 
-official document](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html). If you
+If you need more information about the commercial support for Java that is offered by Oracle you should have a look at 
+[this official document](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html). If you
 use Java WebStart technology to provide desktop clients you should take care about the current situation as fast as possible 
 since Oracle has removed WebStart from Java. You can find all the needed information [here]({{ site.baseurl }}{% link webstart.md %}).
 
