@@ -5,6 +5,8 @@ headerImage: post
 hidden: true
 ---
 
+## Notification & Info Bars
+
 {:.notification}
 This is the a notification panel
 
@@ -25,6 +27,8 @@ This is the a notification panel
 
 {:.notification .is-danger}
 This is the a notification panel
+
+## Tags
 
 {:.tag}
 a simple tag
@@ -116,11 +120,19 @@ a simple tag
 {:.tag .is-danger .is-large}
 a simple tag
 
+## Box
+
 {:.box}
 a simple box
 
-This is a text that contains 
+## Table
 
-{:.tag .is-danger .is-medium}a simple tag
-
-in the middle...
+{:.table}
+| Users / client machines | Monthly price per user / client machine |
+| ----------------------- | --------------------------------------- |
+| 1-999                   | $2.50                                   | 
+| 1,000-2,999             | $2.00                                   | 
+| 3,000-9,999             | $1.75                                   | 
+| 10,000-19,999           | $1.50                                   | 
+| 20,000-49,999           | $1.25                                   | 
+| 50,000+                 | Oracle must be contacted for details    | 
