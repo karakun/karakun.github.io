@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Do I need to pay for Java now?“
+title:  'Do I need to pay for Java now?'
 author: hendrik
 featuredImage: travis
 excerpt: „This post gives an overview of the new Java release train as it was announced by Oracle. Next to
@@ -28,9 +28,7 @@ version was released. Based on this the periode in that a company could savely u
 version was quite long. The following diagram shows a time graph of the last Java releases and the time of 
 it’s official support by oracle.
 
-![Java release train]({{ "/assets/posts/java-release-train/roadmap-java.png" | absolute_url }})
-
-XXXXXX BILD XXXXXXXX roadmap-java.png
+XXXXXX BILD XXXXXXXX
 
 As you can see in the diagram the free support of a Java version was quite long and the timespan in that 2 
 versions were supported in parallel was long enough to plan and handle a migration of your software to the 
@@ -40,7 +38,7 @@ by buying commercial support for a Java version.
 As already said all this points will change in future based on that the new release train for Java. The 
 following image shows the release train as it was announced by Oracle.
 
-XXXXXX BILD XXXXXXXX
+![Java release train]({{ "/assets/posts/java-release-train/roadmap-java.png" | absolute_url }})
 
 Starting with Java 9 mostly all Java version will only have a lifetime of 6 month. After this periode no more 
 updates will be provided for the version. Even if you have a commercial contract with Oracle you won’t get 
@@ -54,6 +52,37 @@ an adoption of the newest version was easily possible.
 
 ## Why is Oracle doing this?
 TODO: ASChneller neue Features, Geld verdienen
+
+## What is Oracles price for commercial support of Java?
+ TODO: http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html
+
+Java SE Subscription Pricing:
+
+| Processor count | Monthly price per processor          |
+| --------------- | ------------------------------------ |
+| 1-99            | $25.00                               | 
+| 100-249         | $23.75                               | 
+| 250-499         | $22.50                               | 
+| 500-999         | $20.00                               | 
+| 1,000-2,999     | $17.50                               | 
+| 3,000-9,999     | $15.00                               |
+| 10,000-19,999   | $12.50                               | 
+| 320,000+        | Oracle must be contacted for details | 
+
+
+Java SE Desktop Subscription Pricing:
+
+| Users / client machines | Monthly price per user / client machine |
+| ----------------------- | --------------------------------------- |
+| 1-999                   | $2.50                                   | 
+| 1,000-2,999             | $2.00                                   | 
+| 3,000-9,999             | $1.75                                   | 
+| 10,000-19,999           | $1.50                                   | 
+| 20,000-49,999           | $1.25                                   | 
+| 50,000+                 | Oracle must be contacted for details    | 
+
+
+
 
 ## What does the new release train mean to my company?
 If we concentrate on the Oracle JDK the answer to that question is quite easy and you can choose between 3 
@@ -83,3 +112,12 @@ the JDK after version 11. Maybe Java 13 will introduce something were framework 
 Based on that such dependencies can not be used in your application anymore if you stay on an older Java 
 version. So even if you buy commercial support or skip Java releases for your software it will be more 
 important than before to update to a current Java version.
+
+
+
+
+### Weiteres
+Azul Support: 
+https://www.azul.com/products/azul_support_roadmap/
+https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/
+![Azul roadmap]({{ "/assets/posts/java-release-train/azul-roadmap.png" | absolute_url }})
