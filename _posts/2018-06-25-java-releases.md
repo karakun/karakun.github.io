@@ -91,7 +91,7 @@ The following table shows the price for the "Java SE Subscription" that cost is 
 | 1,000-2,999     | $17.50                               | 
 | 3,000-9,999     | $15.00                               |
 | 10,000-19,999   | $12.50                               | 
-| 320,000+        | Oracle must be contacted for details |    <--- TODO: Hier stimmt was nicht, da ist ein Sprung
+| 20,000+         | Oracle must be contacted for details |   
 
 When running Java based servers on bare metal this price model is quite easy and you simply pay for the CPUs that your server 
 machines contain. If you work with a cloud based infrastructure things will become much harder to understand because the real 
