@@ -2,9 +2,10 @@
 layout: post
 title:  "How WebComponents can help to create Microservices"
 author: hendrik
-featuredImage: "css"
+featuredImage: sweets
 excerpt: "At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."
 tags: [architecture, microservice, webcomponents]
+headerImage: post
 ---
 
 

@@ -138,6 +138,7 @@ or get into a maybe stressfull migration every 6 months. With this approach you 
 Java version. On the downside you will miss out on newly released bugfixes and security updates. While a bugfix is not 
 really critical as long as the bug does not affect your software, open security issues can end in horrible 
 problems.
+
 The 3 options presented above outline different strategies. Which one to choose depends on many factors such as importance of 
 project, impact of failure, budget, company policy and many more. This new release train brings a great change to the Java 
 environment and while many companies, ops and devs will struggle at first there is a reason behind this change. One of Oracles 
