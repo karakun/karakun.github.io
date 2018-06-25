@@ -28,6 +28,8 @@ version was released. Based on this the periode in that a company could savely u
 version was quite long. The following diagram shows a time graph of the last Java releases and the time of 
 it’s official support by oracle.
 
+![Java release train]({{ "/assets/posts/java-release-train/roadmap-java.png" | absolute_url }})
+
 XXXXXX BILD XXXXXXXX roadmap-java.png
 
 As you can see in the diagram the free support of a Java version was quite long and the timespan in that 2 
