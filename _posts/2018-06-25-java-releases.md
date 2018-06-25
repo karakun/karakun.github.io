@@ -184,7 +184,13 @@ https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-supp
 ![Azul roadmap]({{ "/assets/posts/java-release-train/roadmap-azul.png" | absolute_url }})
 
 ### IBM
-https://developer.ibm.com/javasdk/2018/04/26/java-standard-edition-ibm-support-statement/
+To support its own hardware IBM provides native JDK bundles for AIX, Linux, z/OS and IBM i. Until now IBM offers free versions 
+of the build for download. For Java 7 and 8 IBM still provides updates with security- and bugfixes. A special commercial 
+support for this built is offered by IBM for its enterprise customers. Until now IBM has not announced an end of life for the 
+Java 8 support but Java 7 support will end in September 2019. Based on the new Java release schedule IBM has announced that 
+not all future Java versions will be supprted and provided by IBM. Only for Java LTS versions the company will provide native 
+builds. Based on this Java 11 will be the next Java version after Java 8 for that IBM will provide native builds. More 
+information about the JDK by IBM can be found [here](https://developer.ibm.com/javasdk).
 
 ### RedHat
 https://access.redhat.com/articles/1299013
