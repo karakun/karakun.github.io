@@ -2,6 +2,20 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="twitter:site" content="@karakun" />
+  <meta property="og:title" content="{{ page.title | truncate: 70 }}" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}" />
+  <meta property="og:site_name" content="Karakun Developer Hub"/>
+  <meta property="og:type" content="website" />
+  {%- if page.excerpt -%}
+    <meta property="og:description" content="{{ page.excerpt | truncate: 200 }}" />
+  {%- endif -%}
+  {%- if page.featuredImage -%}
+    <meta property="og:image" content="{{ site.url }}/assets/featuredImage/{{ page.featuredImage }}.png" />
+  {%- endif -%}
+
   {%- seo -%}
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans:300,600,700,800|Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
