@@ -25,13 +25,13 @@ and see how Java releases were done and used in the past and even today.
 
 Until now it was (for most developers) fairly simple to build and run an application on a supported version of
 Java. Till Java 8 all version had a quite long lifetime and free updates were still provided after the next 
-version was released. Based on this the periode in that a company could savely update Java to the newest 
+version was released. Based on this the period in that a company could safely update Java to the newest 
 version was quite long. The following diagram shows a time graph of the last Java releases and the time of 
-it’s official support by oracle.
+its official support by oracle.
 
 ![Java release train]({{ "/assets/posts/java-release-train/old-roadmap.png" | absolute_url }})
 
-As you can see in the diagram the free support of a Java version was quite long and the timespan in that 2 
+As you can see in the diagram the free support of a Java version was quite long and the timespan in which 2 
 versions were supported in parallel was long enough to plan and handle a migration of your software to the 
 newest Java version. Even if this period was to short based on some constraints it was possible to extend it 
 by buying commercial support for a Java version.
@@ -41,7 +41,7 @@ following image shows the release train as it was announced by Oracle.
 
 ![Future Java release train]({{ "/assets/posts/java-release-train/roadmap-java.png" | absolute_url }})
 
-Starting with Java 9 most Java version will only have a lifetime of 6 month. After this periode no more 
+Starting with Java 9 most Java version will only have a lifetime of 6 month. After this period no more 
 updates will be provided for the version. Even if you have a commercial contract with Oracle you won’t get 
 any additional updates for Java 9 or 10 after this 6 months. Next to this all 3 years a LTS (long term 
 support) version of Java will be released. The first version with LTS support will be Java 11 that is 
@@ -53,24 +53,28 @@ an adoption of the newest version was easily possible.
 
 ## Why is Oracle doing this?
 You might ask why Oracle changes the releases of Java in such an big way. To be true Oracle is not the only big company that 
-changed the release cycle of important products in the last years. Simply have a look at the release timeline of [Chrome](https://www.chromestatus.com/features/schedule) or the [Go programming language](https://golang.org/doc/devel/release.html)
-you will see that more and more products try to shorten the periods between releases. While this is in general based on agil
-methods and the workflow that we use in software development in our days we can easily recognise 2 main benefits that are an
+changed the release cycle of important products in the last years. Simply have a look at the release timeline of 
+[Chrome](https://www.chromestatus.com/features/schedule) or the [Go programming language](https://golang.org/doc/devel/release.html)
+and you will see that more and more products try to shorten the periods between releases. While this is in general based on agile
+methods and the workflow that we use in software development we can also recognise 2 main benefits that are an
 outcome of the new Java release train.
 
 The most important point for faster releases of Java is the early availability of new features. Between the release of Java 7 
-and Java 8 was a periode of 3 years and that was more or less the time we as developers needed to wait for new features like
+and Java 8 was a period of 3 years and that was more or less the time we as developers needed to wait for new features like
 lambdas. With the new release train new features can easily be published every 6 month. To be true a feature like lambdas or 
-the Java module system needs much more time than 6 month to be done but once it's ready it can be added to the next version
-that will be released at least 6 month later. In the past Java releases were delayed since some specific features simple
+the Java module system needs much more time than 6 month to be implemented but once it's ready it can be added to the next version
+that will be released at least 6 month later. In the past Java releases were delayed since some specific features simply
 were not production ready at the code freeze. Since Oracle didn't want to move that features to next release the complete JDK 
 release was delayed. With a new release every 6 month skipping a feature and adding it to one of the next versions is no
 problem anymore.
 
-Next to the there is a second point that will provide a big benefit to Oracle. With the new schedule a periode in that Oracle
-provide free support for more than 1 Java version is completelly gone. Based on this companies need to plan migration to new
-Java versions in a miuch stricter way than before. Based on internal constraints like resources it won't be possible for all companies to always update to a new Java version every 6 months. Here Oracle provide an updated commercial support model for
-companies to use the LTS version of Java much longer than 6 month and receive bugfix and security updates long after the end of the public support. Since the commercial support might become an important option for several companies in near future we will have a deeper look at its conditions and price now.
+Next to the there is a second point that will provide a big benefit to Oracle. With the new schedule a period in that Oracle
+provide free support for more than 1 Java version is completely gone. Based on this companies need to plan migration to new
+Java versions in a much stricter way than before. Based on internal constraints like resources it won't be possible for all
+companies to always update to a new Java version every 6 months. Here Oracle provides an updated commercial support model for
+companies to use the LTS version of Java much longer than 6 month and receive bugfixes and security updates long after the 
+end of the public support. Since the commercial support might become an important option for several companies in near future 
+we will have a deeper look at its conditions and price now.
 
 ## What is Oracles price for commercial support of Java?
 Based on the changed release train a new commercial support model for Java was announced by Oracle. This 
@@ -98,7 +102,7 @@ When running Java based servers on bare metal this price model is quite easy and
 machines contain. If you work with a cloud based infrastructure things will become much harder to understand because the real 
 CPUs are shared between multiple virtual machines or containers (like in Docker and Kubernetes).
 
-Next to this model that is useable for Java on the server Oracle provides a special support for Java on the desktop. Here the
+Next to this model that is usable for Java on the server Oracle provides a special support for Java on the desktop. Here the
 price for the commercial support is based on the number of users / client terminals. The following table shows the cost for 
 the "Java SE Desktop Subscription" model:
 
@@ -130,10 +134,9 @@ will automatically get all important feature and security updates.
 - Buy commercial support from Oracle and migrate only from one LTS version to the next LTS version. This 
 would mean that you migrate from Java 8 to Java 11 maybe in the first half of 2019 and than from Java 11 to Java 
 17 in 2022.
-- Stay on a Java version without provided updates and bugfixes from Oracle. Once the free support of a Java version ends 
-nobody 
-forbids you to use the unsupported version in future. By doing so you do not need to pay commercial support 
-or get into a maybe stressfull migration every 6 months. With this approach you can freely decide when to migrate to a newer 
+- Stay on a Java version without updates and bugfixes from Oracle. Once the free support of a Java version ends 
+nobody forbids you to use the unsupported version in future. By doing so you do not need to pay commercial support 
+or get into a maybe stressful migration every 6 months. With this approach you can freely decide when to migrate to a newer 
 Java version. On the downside you will miss out on newly released bugfixes and security updates. While a bugfix is not 
 really critical as long as the bug does not affect your software, open security issues can end in horrible 
 problems.
@@ -162,23 +165,26 @@ a large majority of all installed JDKs is coming from Oracle there are several o
 a JDK and a JVM. All this products have 1 important thing in common: They all are built on top of OpenJDK. 
 
 The OpenJDK is the open source part of Java that is used to build the Oracle JDK and JRE as a native binary that you normally
-will install on your system. To be true most of the parts that are used in Oracle to build Java binaries are part opf the 
+will install on your system. To be honest most of the parts that are used by Oracle to build Java binaries are part opf the 
 OpenJDK. Therefore even the OpenJDK provides Java binaries. This binaries can be downloaded for free and often used as Java
-installation in Linux ditributions. All core parts of Java are part of the OpenJDK binaries. Only some Oracle specific tools 
+installation in Linux distributions. All core parts of Java are part of the OpenJDK binaries. Only some Oracle specific tools 
 like "Java Flight Recorder" are missing.
 
 Oracle and the OpenJDK itself are not the only players that provide native builds based on the open sources of Java. Some
 IT companies provide specific JDK builds for their products. A good example in this area is IBM that provides its own JDK for
 AIX systems. Next to the first companies that create a business model based on native Java builds shown up the last years.
-Here the biggest player is definitaly Azul. With the new release model of Java and the need for commercial support in near future maybe more companies will be created based on this business to provide Java build artifacts for the different needs of all the customers. While this might be an interessting future for Java no one knows today what impact this will have in IT companies. Therefore we should have a concreete look at the vendors that afre already on the market today.
+Here the biggest player is definitely Azul. With the new release model of Java and the need for commercial support in near 
+future maybe more companies will be created based on this business to provide Java build artifacts for the different needs 
+of all the customers. While this might be an interesting future for Java no one knows today what impact this will have in 
+IT companies. Therefore we should have a concrete look at the vendors that are already on the market today.
 
 ### OpenJDK
 Open JDK provides builds that are directly based on the open source part of Java. Builds of OpenJDK can be downloaded [here](https://adoptopenjdk.net/index.html).
 The roadmap of the OpenJDK is more or less the same as the roadmap that Oracle has defined. The big different is that OpenJDK 
 will provide LTS releases longer than 6 month but by far not as long as Oracle
-will do with the commercial support model. Since Oracle will provide commercial support for Java 11 until September 2026 the
-OpenJDK commumnity will provide it last build for Java 11 in September 2022. This means that you will get free updates for Java
-11 much longer by using OpenJDK than Oracle JDK but omn the other hand there is just no commercial support for OpenJDK builds.
+will do with the commercial support model. While Oracle will provide commercial support for Java 11 until September 2026 the
+OpenJDK community will provide its last build for Java 11 in September 2022. This means that you will get free updates for Java
+11 much longer by using OpenJDK than Oracle JDK but on the other hand there is just no commercial support for OpenJDK builds.
 An overview about the planed roadmap of OpenJDK can be found [here](https://adoptopenjdk.net/support.html).
 
 ### Azul
@@ -191,7 +197,7 @@ To support its own hardware IBM provides native JDK bundles for AIX, Linux, z/OS
 of the build for download. For Java 7 and 8 IBM still provides updates with security- and bugfixes. A special commercial 
 support for this built is offered by IBM for its enterprise customers. Until now IBM has not announced an end of life for the 
 Java 8 support but Java 7 support will end in September 2019. Based on the new Java release schedule IBM has announced that 
-not all future Java versions will be supprted and provided by IBM. Only for Java LTS versions the company will provide native 
+not all future Java versions will be supported and provided by IBM. Only for Java LTS versions the company will provide native 
 builds. Based on this Java 11 will be the next Java version after Java 8 for that IBM will provide native builds. More 
 information about the JDK by IBM can be found [here](https://developer.ibm.com/javasdk).
 
