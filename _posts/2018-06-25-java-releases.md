@@ -162,7 +162,7 @@ important than before to update to a current Java version.
 ## Is Oracle our last hope?
 Until now all strategies and solutions to handle future Java versions are based on the new release train of Oracle. While
 a large majority of all installed JDKs is coming from Oracle there are several other vendors on the market that provide
-a JDK and a JVM. All this products have one important thing in common: They all are built on top of OpenJDK. 
+a JDK and a JVM. All this products have 1 important thing in common: They all are built on top of OpenJDK. 
 
 The OpenJDK is the open source part of Java that is used to build the Oracle JDK and JRE as a native binary that you normally
 will install on your system. To be honest most of the parts that are used by Oracle to build Java binaries are part opf the 
