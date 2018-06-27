@@ -2,6 +2,44 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 300;
+    src: url('/assets/fonts/EncodeSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 600;
+    src: url('/assets/fonts/EncodeSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 700;
+    src: url('/assets/fonts/EncodeSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 800;
+    src: url('/assets/fonts/EncodeSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Source Code Pro';
+    font-weight: 400;
+    src: url('/assets/fonts/SourceCodePro-Regular.ttf') format('truetype');
+}
+
+
+
 @import 'karakun-variables';
 
 // Bulma.io CSS Framework
@@ -190,4 +228,16 @@ article.post .table {
 
 .featured-images-table img {
     width: 192px;
+}
+
+.highlight pre {
+    text-align: left;
+    background-color: #272822;
+    color: #F8F8F2;
+    border-radius: 0.5em;
+    border-top: 1.5em $grey-lighter solid;
+}
+
+.highlight pre code {
+    font-family: 'Source Code Pro', monospace;
 }
