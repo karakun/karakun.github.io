@@ -202,19 +202,17 @@ builds. Based on this Java 11 will be the next Java version after Java 8 for tha
 information about the JDK by IBM can be found [here](https://developer.ibm.com/javasdk).
 
 ### RedHat
-https://access.redhat.com/articles/1299013
-https://access.redhat.com/articles/3409141
-
-### OpenJ9
-https://www.eclipse.org/openj9/
-
-### SAP
-https://sap.github.io/SapMachine/
+Like IBM RedHat won't provide Java 9 and 10 releases. The next distribution the RedHat plans to release is OpenJDK 11 for 
+Red Hat Enterprise Linux 7. Currently Java 8 is the supported release for Red Hat Enterprise Linux and the company will 
+support it till 2020. A general information from RedHat can be found [here](https://access.redhat.com/articles/1299013).
 
 ## Conclusion
-todo
-
-Overview of future Java releases.
+By defining the new release train of Java Oracle created a big issue for enterprise companies. Since it won't be possible
+to easily change the used Java version every 6 month companies with big Java based application need to rethink its 
+strategy. Java vendors react on this topic and provide different commercial models for supporting Java version longer than 
+6 month. Maybe this can even be a new market for some companies to provide support for specific Java version and satisfy 
+specifc needs of customers by doing so. The following table gives an overview of future Java releases and the support that 
+will be offered by the biggest vendors today.
 
 {:.table}
 | Java version | free 6 month support  | free MTS support | commercial MTS support | commercial LTS support |
@@ -225,3 +223,5 @@ Overview of future Java releases.
 | 11           | all                   | OpenJDK          | all                    | all                    |
 | 12           | OpenJDK, Oracle, Azul | -                | -                      | -                      | 
 | 13           | OpenJDK, Oracle, Azul | -                | Azul                   | -                      | 
+
+
