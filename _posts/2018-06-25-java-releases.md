@@ -188,10 +188,27 @@ OpenJDK community will provide its last build for Java 11 in September 2022. Thi
 An overview about the planed roadmap of OpenJDK can be found [here](https://adoptopenjdk.net/support.html).
 
 ### Azul
-https://www.azul.com/products/azul_support_roadmap/
-https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/
+It looks like Azul offers a really good support for all companies that do not want to skip all Java version between LTS releases but can not switch to the newest version every 6 month. Next to the support for all LTS releases, where Azul provides 1 more year of support than Oracle, Azul offers support for so called MTS (Medium Term Support) releases for the Zulu JDK. Here you can buy commercial support for every second Java version. The support duration of this versions are different. Azul tries to provide a good time range to prepair a switch to the next version and define 3 different durations for support of Java versions. The following image gives an overview of the future Java version and the periode that they are supported by Azul.
+
 ![Azul roadmap]({{ "/assets/posts/java-release-train/roadmap-azul.png" | absolute_url }})
 
+Because Zulu is a Java distribution that targets server side applications Azul do not provide any support model for Java 
+on the desktop. Against Oracle the commercial support of Zulu is not defined by a CPU count but by a number of systems. A 
+system is defined as a physical or virtual server or a desktop pc. As you can see in the following table the support model 
+do not really makes sense for desktop application but is quite interesting for server side applications.
+
+{:.table}
+| systems |Price/year (Standard Support) | Price/year (Premium Support) |
+| --------- | -------------------------- | ---------------------------- |
+| 1-25      | $12,000                    | not available                |
+| 16-100    | $28,750                    | $34,500                      |
+| 101-1000  | $86,250                    | $103,500                     |
+| unlimited | $258,750                   | $310,500                     |
+
+ At the moment the difference between standard and premium support is not really clear and might be added by an update or 
+ comment of the article. Additional information of the Azul support model for Zulu can be found [here](https://www.azul.com/products/azul_support_roadmap/) 
+ and [here](https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/).
+ 
 ### IBM
 To support its own hardware IBM provides native JDK bundles for AIX, Linux, z/OS and IBM i. Until now IBM offers free versions 
 of the build for download. For Java 7 and 8 IBM still provides updates with security- and bugfixes. A special commercial 
