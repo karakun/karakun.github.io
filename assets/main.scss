@@ -2,6 +2,36 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 300;
+    src: url('/assets/fonts/EncodeSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 600;
+    src: url('/assets/fonts/EncodeSans-SemiBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 700;
+    src: url('/assets/fonts/EncodeSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Encode Sans';
+    font-weight: 800;
+    src: url('/assets/fonts/EncodeSans-ExtraBold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    src: url('/assets/fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
 @import 'karakun-variables';
 
 // Bulma.io CSS Framework
