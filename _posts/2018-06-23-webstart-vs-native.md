@@ -11,4 +11,30 @@ tags: [Java, WebStart, Native, Build]
 headerImage: post
 ---
 
+As you might already know Oracle removed Java Web Start from Java string with version 11. For companies that develop or 
+maintain desktop applications that are distributed by Web Start this announcement created a big issue that needs to be 
+solved within the next months since Java 11 will be released in September 2018 and the free Java 8 support will end in 
+January 2019.
+
+Next to this you might have noticed that we at Karakun try to create [an open source sucessor of Web Start]({{ site.baseurl }}{% link webstart.md %}). 
+While using such a product would be a good strategie to ensure the operationality of a software that uses Web Start there 
+are some other possible solutions that can be used. On of this solutions is the distribution of a native bundle that 
+contains a JRE and the application. In this article we want to have show how a native bundle can be credated and what 
+benefits and downsides native bundles have against the use of Oracle Web Start or our future product.
+
+From our point of view there are currently 2 different popular approach to create a native bundle: using the javafxpackager of the JDK or using the commercial software install4J. Let's have a look at both of them.
+
+## Creating a native bundle by using JDK features
+Todo
+
+## Creating a native bundle with install4J
+Todo
+
+## Benefits of a native bundle
+Todo
+
+## Downsides of native bundles
+Todo
+
+## Conclusion
 Todo
