@@ -22,6 +22,8 @@ are some other possible solutions that can be used. On of this solutions is the 
 contains a JRE and the application. In this article we want to have show how a native bundle can be credated and what 
 benefits and downsides native bundles have against the use of Oracle Web Start or our future product.
 
+TODO: Image?????
+
 From our point of view there are currently 2 different popular approach to create a native bundle: using the "javapackager" of the JDK or using the commercial software "install4J". Let's have a look at both of them.
 
 ## Creating a native bundle by using JDK features
@@ -43,10 +45,16 @@ replace Web Start in future.
 Todo
 
 ## Benefits of a native bundle
-Todo
+Todo: It's native, contains everything that is needed, you can handle updates more flexible
 
 ## Downsides of native bundles
-Todo
+Todo: If you have several apps each contains a JRE, no sandbox / security support, no debugging / logging support, no support to define proxy settings
+
+![Debug options of Web Start]({{ "/assets/posts/webstart-vs-native/debug.png" | absolute_url }})
+
+![Proxy settings of Web Start]({{ "/assets/posts/webstart-vs-native/proxy.png" | absolute_url }})
+
+![Advanced proxy settings of Web Start]({{ "/assets/posts/webstart-vs-native/proxy-2.png" | absolute_url }})
 
 ## Conclusion
 Todo
