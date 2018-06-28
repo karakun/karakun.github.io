@@ -9,8 +9,8 @@
     {% else %}
       <article class="media column content is-half">
     {% endif %}
-      {%- if media.link -%}
-        <a href="{{ media.link }}"><h3>{{ media.title }}</h3></a>
+      {%- if linkToDetails -%}
+        <a href="{{ media.url }}"><h3>{{ media.title }}</h3></a>
       {% else %}
         <h3>{{ media.title }}</h3>
       {% endif %}
@@ -23,8 +23,8 @@
           {% endif %}
           {{ media.description }}
         </p>
-      {%- if media.link -%}
-       <p class="more"><a href="{{ media.link }}">more...</a></p>
+      {%- if linkToDetails -%}
+       <p class="more"><a href="{{ media.url }}">more...</a></p>
       {% endif %}
       {%- if showAuthor -%}
         {% assign author = site.people | where:'name', media.author | first %}
@@ -32,7 +32,7 @@
       {% endif %}
       {% for metadata in media.metadata %}
         {%- if metadata.link -%}
-          <p class="metadata"><a href="{{ metadata.link }}"><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</a></p>
+          <p class="metadata"><i class="fas {{ metadata.icon }}"></i> <a href="{{ metadata.link }}">{{ metadata.description }}</a></p>
         {% else %}
           <p class="metadata"><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</p>
         {% endif %}
