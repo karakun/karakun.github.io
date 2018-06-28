@@ -1,0 +1,40 @@
+{% assign size = mediaList | size %}
+{% for media in mediaList %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  {% if loopindex == 1 %}
+    <div class="columns">
+  {% endif %}
+    {% if forloop.index == size and loopindex == 1 %}
+      <article class="media column content">
+    {% else %}
+      <article class="media column content is-half">
+    {% endif %}
+      {%- if media.link -%}
+        <a href="{{ media.link }}"><h3>{{ media.title }}</h3></a>
+      {% else %}
+        <h3>{{ media.title }}</h3>
+      {% endif %}
+      {%- if media.subtitle -%}
+        <h5>{{ media.subtitle }}</h5>
+      {% endif %}
+        <p class="description">
+          {%- if media.featuredImage -%}
+            <img class="featured-image" src="/assets/featuredImages/{{ media.featuredImage }}.png">
+          {% endif %}
+          {{ media.description }}
+        </p>
+      {%- if media.link -%}
+       <p class="more"><a href="{{ media.link }}">more...</a></p>
+      {% endif %}
+      {% for metadata in media.metadata %}
+        {%- if metadata.link -%}
+          <p class="metadata"><a href="{{ metadata.link }}"></a><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</a></p>
+        {% else %}
+          <p class="metadata"><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</p>
+        {% endif %}
+      {% endfor %}
+    </article>
+  {% if loopindex == 0 or forloop.index == size %}
+    </div>
+  {% endif %}
+{% endfor %}
