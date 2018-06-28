@@ -3,22 +3,27 @@ layout: page
 ---
 {% assign size = site.data.talks | size %}
 {% for talk in site.data.talks %}
-    {% assign loopindex = forloop.index | modulo: 2 %}
-    {% if loopindex == 1 %}
-        <div class="columns">
-    {% endif %}
-        {% if forloop.index == size and loopindex == 1 %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  {% if loopindex == 1 %}
+    <div class="columns">
+  {% endif %}
+      {% if forloop.index == size and loopindex == 1 %}
         <article class="talk column content">
-        {% else %}
+      {% else %}
         <article class="talk column is-half content">
-        {% endif %}
-            {% assign author = site.people | where:'name', talk.author | first %}
-            <h3 class="has-text-primary">{{ talk.name }}</h3>
-            <h5>{{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h5>
-            <p>{%- if talk.featuredImage -%}<img class="featured-image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">{% endif %}{{ talk.summary }}</p>
-            <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
+      {% endif %}
+          {% assign author = site.people | where:'name', talk.author | first %}
+          <h3 class="has-text-primary">{{ talk.name }}</h3>
+          <h5>{{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h5>
+          <p>
+            {%- if talk.featuredImage -%}
+              <img class="featured-image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
+            {% endif %}
+            {{ talk.summary }}
+          </p>
+          <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
         </article>
-    {% if loopindex == 0 %}
-        </div>
-    {% endif %}
+  {% if loopindex == 0 or forloop.index == size %}
+    </div>
+  {% endif %}
 {% endfor %}

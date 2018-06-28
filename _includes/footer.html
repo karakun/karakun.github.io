@@ -1,15 +1,15 @@
 <footer class="footer has-background-dark has-text-white">
-    <div class="container">
-        <div class="menu">
-            <p class="menu-label">
-              {{ site.title | escape }}
-            </p>
-            <ul class="menu-list">
-                {%- if site.email -%}
-                <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-                {%- endif -%}
-            </ul>
-            {%- include social.html -%}
-        </div>
-      </div>
+  <div class="container">
+    <div class="menu">
+      <p class="menu-label">
+        {{ site.title | escape }}
+      </p>
+      <ul class="menu-list">
+        {%- if site.email -%}
+          <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+        {%- endif -%}
+      </ul>
+      {%- include social.html -%}
+    </div>
+  </div>
 </footer>

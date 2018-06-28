@@ -25,10 +25,9 @@ layout: default
 
       <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
       {%- if author -%}
-
-          <h4>{{ author.firstName }} {{ author.lastName }}</h4>
-          <p>{{ author.description }}</p>
-          <p><a href="{{ author.url }}">more...</a></p>
+        <h4><a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></h4>
+        <p>{{ author.description }}</p>
+        <p><a href="{{ author.url }}">more...</a></p>
       {%- endif -%}</p>
     </article>
   </div>
