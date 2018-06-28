@@ -28,7 +28,7 @@
       {% endif %}
       {% for metadata in media.metadata %}
         {%- if metadata.link -%}
-          <p class="metadata"><a href="{{ metadata.link }}"></a><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</a></p>
+          <p class="metadata"><a href="{{ metadata.link }}"><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</a></p>
         {% else %}
           <p class="metadata"><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</p>
         {% endif %}

@@ -1,29 +1,5 @@
 ---
 layout: page
 ---
-{% assign size = site.data.books | size %}
-{% for book in site.data.books %}
-  {% assign loopindex = forloop.index | modulo: 2 %}
-  {% if loopindex == 1 %}
-    <div class="columns">
-  {% endif %}
-      {% if forloop.index == size and loopindex == 1 %}
-        <article class="book column content">
-      {% else %}
-        <article class="book column is-half content">
-      {% endif %}
-          {% assign author = site.people | where:'name', book.author | first %}
-          <h3 class="has-text-primary">{{ book.name }}</h3>
-          <p>
-            {%- if book.featuredImage -%}
-              <img class="featured-image" src="/assets/featuredImages/{{ book.featuredImage }}.png">
-            {% endif %}
-            {{ book.description }}
-          </p>
-          <span><a href="{{ book.link }}" target="_blank">more infos</a></span>
-          <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
-        </article>
-  {% if loopindex == 0 or forloop.index == size %}
-    </div>
-  {% endif %}
-{% endfor %}
+{% assign mediaList = site.data.books %}
+{%- include media.html -%}
