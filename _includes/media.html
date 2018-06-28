@@ -26,6 +26,10 @@
       {%- if media.link -%}
        <p class="more"><a href="{{ media.link }}">more...</a></p>
       {% endif %}
+      {%- if showAuthor -%}
+        {% assign author = site.people | where:'name', media.author | first %}
+        <p class="metadata"><a href="{{ author.url }}"><i class="fas fa-author"></i> {{ author.firstName }} {{ author.lastName }}</a></p>
+      {% endif %}
       {% for metadata in media.metadata %}
         {%- if metadata.link -%}
           <p class="metadata"><a href="{{ metadata.link }}"><i class="fas {{ metadata.icon }}"></i> {{ metadata.description }}</a></p>
