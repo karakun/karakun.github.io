@@ -5,14 +5,14 @@
     <div class="columns">
   {% endif %}
     {% if forloop.index == size and loopindex == 1 %}
-      <article class="media column content">
+      <article class="karakun-media column content">
     {% else %}
-      <article class="media column content is-half">
+      <article class="karakun-media column content is-half">
     {% endif %}
       {%- if linkToDetails -%}
-        <a href="{{ media.url }}"><h3>{{ media.title }}</h3></a>
+        <a href="{{ media.url }}"><h3 class="hhas-text-primary">{{ media.title }}</h3></a>
       {% else %}
-        <h3>{{ media.title }}</h3>
+        <h3 class="has-text-primary">{{ media.title }}</h3>
       {% endif %}
       {%- if media.subtitle -%}
         <h5>{{ media.subtitle }}</h5>
