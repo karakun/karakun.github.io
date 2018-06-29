@@ -61,8 +61,10 @@ body {
     align-items: center;
 }
 
-nav + .page-wrapper {
-    margin-top: 2em;
+nav {
+    + .page-wrapper {
+        margin-top: 2em;
+    }
 }
 
 footer {
