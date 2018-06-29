@@ -38,8 +38,6 @@
     src: url('/assets/fonts/SourceCodePro-Regular.ttf') format('truetype');
 }
 
-
-
 @import 'karakun-variables';
 
 // Bulma.io CSS Framework
@@ -47,10 +45,6 @@
 
 // Font-Awesome
 @import "font-awesome/fontawesome";
-
-// Layout based stuff
-@import "talks";
-@import "books";
 
 body {
     display: flex;
@@ -115,15 +109,16 @@ p {
     font-size: 1.5em;
     color: $white;
     font-family: 'Encode Sans', sans-serif;
+    > span {
+        padding-right: 0.3em;
+    }
 }
 
-.page-title > span {
-    padding-right: 0.3em;
-}
-
-.social-media-list .svg-icon {
-    width: 1em;
-    height: 1em;
+.social-media-list {
+    .svg-icon {
+        width: 1em;
+        height: 1em;
+    }
 }
 
 .author {
@@ -141,14 +136,13 @@ p {
     background-image: url('/assets/images/default.jpg');
     display: flex;
     align-items: stretch;
-}
-
-.page-image>div {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row-reverse;
-    flex-grow: 1;
-    background-color: rgba(0, 0, 0, 0.4);
+    > div {
+        display: flex;
+        align-items: stretch;
+        flex-direction: row-reverse;
+        flex-grow: 1;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
 }
 
 .navbar {
@@ -169,41 +163,58 @@ p {
     font-weight: lighter;
     font-family: 'Encode Sans', sans-serif;
     color: $white;
-}
-
-.header-text > div {
-    max-width: 9.5em;
-    text-align: right;
-    line-height: 1.2em;
-    font-size: 1.2em;
+    > div {
+        max-width: 9.5em;
+        text-align: right;
+        line-height: 1.2em;
+        font-size: 1.2em;
+    }
 }
 
 .column {
     padding: 0.75rem 1.25rem;
 }
 
-article.post p>img {
-    padding: 2em 5em 2.5em 5em;
-    margin: 0 auto;
-    display: block;
+article.post {
+    p {
+        > img {
+            padding: 2em 5em 2.5em 5em;
+            margin: 0 auto;
+            display: block;
+        }
+    }
+    .table {
+        @extend .is-hoverable;
+        margin: 2em auto 3em auto;
+        padding: 0 5em;
+    }
 }
 
-img.featured-image {
-    float: left;
-    margin-right: 0.8em;
-    max-width: 180px;
-    border-radius: 5%;
-    margin-top: 0.42em;
-    border-width: 0.15em;
-    border-color: #a5afb0;
-    border-style: solid;
-    filter: grayscale(1);
+img {
+    &.featured-image {
+        float: left;
+        margin-right: 0.8em;
+        max-width: 180px;
+        border-radius: 5%;
+        margin-top: 0.42em;
+        border-width: 0.15em;
+        border-color: #a5afb0;
+        border-style: solid;
+        filter: grayscale(1);
+    }
 }
 
-
-article.talk:hover p img.featured-image,
-article.book:hover p img.featured-image {
-    filter: grayscale(0);
+article {
+    &.talk, &.book, &.karakun-media {
+        margin-bottom: $size-2;
+        &:hover {
+            p {
+                img.featured-image {
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
 }
 
 .blink-cursor {
@@ -216,28 +227,23 @@ article.book:hover p img.featured-image {
     }
 }
 
-article.post .table {
-    @extend .is-hoverable;
-    margin: 2em auto 3em auto;
-    padding: 0 5em;
-}
-
 .featured-images-table {
+    img {
+        width: 192px;
+    }
     @extend .table
+    
 }
 
-.featured-images-table img {
-    width: 192px;
-}
-
-.highlight pre {
-    text-align: left;
-    background-color: #272822;
-    color: #F8F8F2;
-    border-radius: 0.5em;
-    border-top: 1.5em $grey-lighter solid;
-}
-
-.highlight pre code {
-    font-family: 'Source Code Pro', monospace;
+.highlight {
+    pre {
+        text-align: left;
+        background-color: #272822;
+        color: #F8F8F2;
+        border-radius: 0.5em;
+        border-top: 1.5em $grey-lighter solid;
+        code {
+            font-family: 'Source Code Pro', monospace;
+        }
+    }
 }
