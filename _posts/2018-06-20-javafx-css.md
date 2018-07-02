@@ -5,7 +5,8 @@ author: hendrik
 featuredImage: colors-2
 excerpt: "This post shows how JavaFX controls can easily be styled with CSS. Since it is eaven a little bit tricky to style a simple button the right way if you want to profide a complete custom look this post give several tips & tricks that will be usefull when using CSS in JavaFX"
 tags: [JavaFX, CSS]
-headerImage: post
+header:
+  image: post
 ---
 In this post I want to show a control in JavaFX can be styled. To do so I will use the JavaFX Button as an example. When having a look at the regular JavaFX button it looks like this:
 

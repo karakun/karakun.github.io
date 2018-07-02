@@ -45,6 +45,9 @@
 
 // Font-Awesome
 @import "font-awesome/fontawesome";
+@import "font-awesome/fa-solid";
+@import "font-awesome/fa-brands";
+
 
 body {
     display: flex;
@@ -70,6 +73,41 @@ nav {
 footer {
     border-top: 1px solid $grey-lighter;
     margin-top: 6em;
+    &.footer {
+        padding-bottom: 1em;
+    }
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        > div {
+            flex-grow: 1;
+        }
+        > div.menu {
+            ul {
+                > li:last-of-type {
+                    > a {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+        > div.contact {
+            flex-grow: 10;
+            align-self: flex-end;
+        }
+        > div.social {
+            align-self: flex-end;
+            ul {
+                > li {
+                    display: inline-block;
+                    > a {
+                        font-size: 2em;
+                        color: $karakun-main-color;
+                    }
+                }
+            }
+        }
+    }
 }
 
 h1 {
@@ -178,11 +216,53 @@ p {
 }
 
 article.post {
+    display: flex;
     p {
         > img {
             padding: 2em 5em 2.5em 5em;
             margin: 0 auto;
             display: block;
+        }
+    }
+    div:last-of-type {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 25rem;
+    }
+    div.info {
+        margin-left: 2em;
+    }
+    div.post-author {
+        padding: 1em;
+        background-color: $white-ter;
+        p {
+            > img {
+                padding: 0;
+                margin: 0.3em 1em 1em 0;
+                max-width: 10em;
+                float: left;
+            }
+        }
+        .information {
+            margin-top: 2em;
+        }
+    }
+    div.post-tags {
+        padding: 1em 1em 1em 0;
+        ul {
+            > li {
+                display: inline-block;
+                padding: 0.25em 1em;
+                background-color: $grey-light;
+                color: $white;
+                margin-bottom: 0.5em;
+            }
+        }
+    }
+    h1.post-title {
+        margin-bottom: 0.25em;
+        + .post-meta {
+            margin-bottom: 1em;
         }
     }
     .table {
@@ -246,6 +326,13 @@ article {
         border-top: 1.5em $grey-lighter solid;
         code {
             font-family: 'Source Code Pro', monospace;
+            white-space: normal;
         }
     }
+}
+
+.copyright {
+    border-top: 1px #848B89 solid;
+    text-align: center;
+    padding: 1em 0;
 }

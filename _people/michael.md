@@ -6,6 +6,7 @@ description: 'Michael Heinrichs is co-founder of Karakun and a passionated front
 twitter: 'netophyr'
 awards:
     - 'java-champion'
-headerImage: michael
-headerText: Michael Heinrichs
+header:
+  image: michael
+  text: Michael Heinrichs
 ---

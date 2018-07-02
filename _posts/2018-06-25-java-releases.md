@@ -7,7 +7,8 @@ excerpt: 'This post gives an overview of the new Java release train as it was an
  this the article provides some important information and hints how you should handle new Java releases in
  future and helps you to decide if you need to buy commercial Java support in future.'
 tags: [Java]
-headerImage: post
+header:
+  image: post
 ---
 
 This year many changes are introduced to the Java release and support model that is provided by Oracle.
