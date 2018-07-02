@@ -229,8 +229,10 @@ article.post {
         flex-shrink: 0;
         flex-basis: 25rem;
     }
-    div.post-author {
+    div.info {
         margin-left: 2em;
+    }
+    div.post-author {
         padding: 1em;
         background-color: $white-ter;
         p {
@@ -243,6 +245,17 @@ article.post {
         }
         .information {
             margin-top: 2em;
+        }
+    }
+    div.post-tags {
+        padding: 1em 1em 1em 0;
+        ul {
+            > li {
+                display: inline-block;
+                padding: 0.25em 1em;
+                background-color: $grey-light;
+                color: $white;
+            }
         }
     }
     h1.post-title {

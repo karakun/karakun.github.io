@@ -28,15 +28,24 @@ layout: default
 
         <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
       </div>
-      {%- if author -%}
       <div>
-        <div class="post-author">
+        {%- if author -%}
+        <div class="post-author info">
           <h5>Author</h5>
           <p><img src="/assets/avatars/{{ author.avatar }}.png"/>{{ author.description }}</p>
           <div class="information"><a class="button is-primary" href="{{ author.url }}">more...</a></div>
         </div>
+        {%- endif -%}
+        {%- if page.tags -%}
+        <div class="post-tags info">
+            <ul>
+              {% for tag in page.tags %}
+              <li>{{ tag }}</li>
+              {% endfor %}
+          </ul>
+        </div>
+        {%- endif -%}
       </div>
-      {%- endif -%}
     </article>
   </div>
 </section>
