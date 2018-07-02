@@ -1,8 +1,9 @@
 ---
 layout: article
 title: About
-headerText: About the <span class="my-karakun">Karakun</span> Developer Hub
+header:
+  text: About the <span class="my-karakun">Karakun</span> Developer Hub
+  image:  home
 permalink: /about/
-headerImage: home
 ---
 Todo

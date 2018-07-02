@@ -68,15 +68,15 @@
     {%- endif -%}
   </div>
 </nav>
-{%- assign page_image = page.headerImage | default: "/assets/images/default.jpg" -%}
-{%- assign page_image_size = page.headerImageSize | default: "cover" -%}
-{%- assign page_image_x = page.headerImageX | default: "center" -%}
-{%- assign page_image_y = page.headerImageY | default: "center" -%}
+{%- assign page_image = page.header.image | default: "/assets/images/default.jpg" -%}
+{%- assign page_image_size = page.header.size | default: "cover" -%}
+{%- assign page_image_x = page.header.x | default: "center" -%}
+{%- assign page_image_y = page.header.y | default: "center" -%}
 {%- assign fallback_header_text = page.title | append: " by Karakun" -%}
 <div class="page-image" style="background-image: url('/assets/images/pageHeaders/{{ page_image }}.png'); background-size: {{ page_image_size }}; background-position-x: {{ page_image_x }}; background-position-y: {{ page_image_y }};">
   <div>
     <div class="header-text container">
-      <div>{{ page.headerText | default: fallback_header_text | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}</div>
+      <div>{{ page.header.text | default: fallback_header_text | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}</div>
     </div>
   </div>
 </div>

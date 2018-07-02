@@ -45,6 +45,9 @@
 
 // Font-Awesome
 @import "font-awesome/fontawesome";
+@import "font-awesome/fa-solid";
+@import "font-awesome/fa-brands";
+
 
 body {
     display: flex;
@@ -70,6 +73,41 @@ nav {
 footer {
     border-top: 1px solid $grey-lighter;
     margin-top: 6em;
+    &.footer {
+        padding-bottom: 1em;
+    }
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        > div {
+            flex-grow: 1;
+        }
+        > div.menu {
+            ul {
+                > li:last-of-type {
+                    > a {
+                        padding-bottom: 0;
+                    }
+                }
+            }
+        }
+        > div.contact {
+            flex-grow: 10;
+            align-self: flex-end;
+        }
+        > div.social {
+            align-self: flex-end;
+            ul {
+                > li {
+                    display: inline-block;
+                    > a {
+                        font-size: 2em;
+                        color: $karakun-main-color;
+                    }
+                }
+            }
+        }
+    }
 }
 
 h1 {
@@ -248,4 +286,10 @@ article {
             font-family: 'Source Code Pro', monospace;
         }
     }
+}
+
+.copyright {
+    border-top: 1px #848B89 solid;
+    text-align: center;
+    padding: 1em 0;
 }

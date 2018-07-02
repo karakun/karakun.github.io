@@ -8,7 +8,8 @@ companies migrate away from Web Start to the build of native bundles that provid
 specific application and a JDK. While this is a very good approach in general the Web Start technology contains some
 important features for enterprise that can't easily be replaced by a native bundle."
 tags: [Java, WebStart, Native, Build]
-headerImage: post
+header:
+  image: post
 ---
 
 As you might already know Oracle removed Java Web Start from Java string with version 11. For companies that develop or 

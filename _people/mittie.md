@@ -6,6 +6,6 @@ description: 'Dierk is fellow of Karakun'
 twitter: 'mittie'
 awards:
     - 'java-champion'
-headerImage: mittie
-
+header:
+  image: mittie
 ---

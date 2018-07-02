@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Featured Images"
-headerImage: post
+header:
+  image: post
 hidden: true
 ---
 
