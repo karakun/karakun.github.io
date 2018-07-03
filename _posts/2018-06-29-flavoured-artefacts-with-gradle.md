@@ -2,32 +2,35 @@
 layout: post
 title:  'Gradle: flavoured artefacts from a multi-module build'
 author: markus
-featuredImage: tip-jar
-excerpt: 'Customized artefacts can be a headache to build and distribute. Luckily gradle provides a powerful DSL that can solve that task easily - here is an example how.'
+featuredImage: flavours-tom-hermans-642316-unsplash
+excerpt: 'Customized artefacts can be a headache to build and distribute. To the rescue, Gradle provides a powerful DSL that can solve that task easily - here is an example how.'
 tags: [Java, Gradle]
-headerImage: post
+header:
+  image: post
 ---
 
-While providing a solution customized for many customers, you might want to package an application artefact in muliple flavours. Each with a set of dependencies to provide just the customer specific implementations.
+While providing a solution customized for many customers, you might want to package an application artefact in multiple flavours. Each with a set of dependencies to provide just the customer specific implementations.
 
-With gradle is can be done fairly easy. 
-To demonstrate this, I've created a little example project.
+With gradle this can be accomplished fairly easy. 
+To demonstrate it, I've created a [example project available on github](https://github.com/madmas/gradle-flavoured-artefacts).
+
 It consists of five modules:
-* a sample application
-* and API interface module
-* three API implementations
+* an application module
+* an API interface module
+* three modules as API implementations 
 
 The API interface module is not needed during runtime but helpful during development time.
 It helps to enforce the same expected interface in the implementation classes.
 
-The lib-impl* modules contain each a custom implementation for the CustomDataProvider.
+The `lib-impl*` modules contain each a custom implementation for the `CustomDataProvider` and demonstrate the different flavours of the artefacts.
+
 Now, the question is how to provide several artefacts of the application, each bundled with one of the library implementations.
 
-One solution (as always, there a probably many possible out there) is to use gradle configurations with the shadow plugin.
+One solution (as always, there a probably many possible out there) is to use Gradle _configurations_ with the [Shadow Plugin]( http://imperceptiblethoughts.com/shadow/#introduction ).
 Using the shadow plugin is the exchangeable part here. 
 As we basically do rely on the grade configurations, the way the application is package is completely open and this solution can probably also be applied to other packaging plugins.
 
-Now, having a look at the build.gradle of the application module reveals that we create a configuration for each flavour we want to have a seperate artefact for.
+Having a look at the [`build.gradle` of the application module]( https://github.com/madmas/gradle-flavoured-artefacts/blob/master/application/build.gradle ) reveals that we create a configuration for each flavour we want to have a seperate artefact for.
 
 {% highlight groovy %}
 configurations {
@@ -81,9 +84,11 @@ variants.each { variant ->
 The `classifier`property is used to get an distingushable artefact name. 
 `from` and `configurations` make up the thing comined together into the shadowJar artefact.
 
-HINT: If you need to apply the base idea of this article to another packaging context, those two properties are probably those you want to take and apply accordingly.
+>If you need to apply the base idea of this article to another packaging context, those two properties are probably those you want to take and apply accordingly.
+{:.admonition-note}
 
-And finally, we define the Main-Class name for the manifest. ShadowJar usually adopt it automatically when the application plugin is used, but as we are using a custom shadowJar task here, we als need to apply it with those three lines.
+
+And finally, we define the `Main-Class` name as an sttribute for the manifest. ShadowJar usually adopts it automatically when the application plugin is used, but as we are using a custom shadowJar task here, we also need to apply it with those three lines.
 
 Finally, by defining the dependency with `dependsOn`, we can afterwards just type
 `gradle shadowJar` to have all variants build and waiting for us in `build/libs/`.
@@ -101,5 +106,6 @@ s = Implementation or customer A
 
 {% endhighlight %}
 
+Have fun building the solutions that make your customers happy! :-)
 
-
+(Photo by [Tom Hermans on Unsplash](https://unsplash.com/@tomhermans))
