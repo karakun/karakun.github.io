@@ -53,9 +53,10 @@ dependencies {
 }
 {% endhighlight %}
 
-And finally we want to have a task for each artefact to be generated. 
-In our case such is a ShadowJar task. 
-To make this concise and clean and easy to extend, we can use the Gradle DSL based on Groovy.
+To make it easier to execute sub-steps of the build, it's nice to have a task for each artefact to be generated. 
+Thus we need a way to dynamically add build tasks for each variant we want to build.
+In our case the type of such is a `ShadowJar` task. 
+To make this concise, clean and easy to extend, we can use the Gradle DSL based on Groovy.
 
 First, we define a array of the variants we want:
 
@@ -94,8 +95,8 @@ those two properties are probably those you want to take and apply accordingly.
 {:.admonition-note}
 
 
-And finally, we define the `Main-Class` name as an sttribute for the manifest. 
-ShadowJar usually adopts it automatically when the application plugin is used, 
+To get executeable jar artefacts, we define the `Main-Class` name as an attribute for the manifest. 
+`ShadowJar` usually adopts it automatically when the application plugin is used, 
 but as we are using a custom shadowJar task here, we also need to apply it with those three lines.
 
 Finally, by defining the dependency with `dependsOn`, we can afterwards just type
@@ -115,5 +116,3 @@ s = Implementation or customer A
 {% endhighlight %}
 
 Have fun building the solutions that make your customers happy! :-)
-
-(Photo by [Tom Hermans on Unsplash](https://unsplash.com/@tomhermans))
