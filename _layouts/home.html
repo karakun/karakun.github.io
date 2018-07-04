@@ -18,9 +18,8 @@ layout: page
             {%- if post.featuredImage -%}
               <a href="{{ post.url}}"><img class="featured-image" src="/assets/featuredImages/{{ post.featuredImage }}.png"></a>
             {% endif %}
-            {{ post.excerpt }}
+            <a class="excerpt" href="{{ post.url}}">{{ post.excerpt }}</a>
           </p>
-          <div class="author"><a href="{{ post.url}}">more...</a></div>
         </article>
   {% if loopindex == 0 or forloop.index == size %}
     </div>

@@ -335,3 +335,9 @@ article {
     text-align: center;
     padding: 1em 0;
 }
+
+a {
+    &.excerpt {
+        color: $body-color;
+    }
+}
