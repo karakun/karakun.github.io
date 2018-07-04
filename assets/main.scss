@@ -331,10 +331,7 @@ article {
 .highlight {
     pre {
         text-align: left;
-        background-color: #272822;
-        color: #F8F8F2;
         border-radius: $karakun-border-radius;
-        border-top: 1.5em $grey-lighter solid;
         overflow: auto;
         code {
             font-family: 'Source Code Pro', monospace;
