@@ -10,7 +10,7 @@
       <article class="karakun-media column content is-half">
     {% endif %}
       {%- if linkToDetails -%}
-        <a href="{{ media.url }}"><h3 class="hhas-text-primary">{{ media.title }}</h3></a>
+        <a href="{{ media.url }}"><h3 class="has-text-primary">{{ media.title }}</h3></a>
       {% else %}
         <h3 class="has-text-primary">{{ media.title }}</h3>
       {% endif %}
@@ -21,11 +21,12 @@
           {%- if media.featuredImage -%}
             <img class="featured-image" src="/assets/featuredImages/{{ media.featuredImage }}.png">
           {% endif %}
-          {{ media.description }}
+          {%- if linkToDetails -%}
+            <a class="excerpt" href="{{ media.url}}">{{ media.description }}</a>
+          {% else %}
+            {{ media.description }}
+          {% endif %}
         </p>
-      {%- if linkToDetails -%}
-       <p class="more"><a href="{{ media.url }}">more...</a></p>
-      {% endif %}
       {%- if showAuthor -%}
         {% assign author = site.people | where:'name', media.author | first %}
         <p class="metadata"><a href="{{ author.url }}"><i class="fas fa-author"></i> {{ author.firstName }} {{ author.lastName }}</a></p>
