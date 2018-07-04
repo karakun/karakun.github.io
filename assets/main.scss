@@ -84,6 +84,15 @@ footer {
         }
         > div.menu {
             ul {
+                > li {
+                    > a {
+                        color: $white;
+                        &:hover,
+                        &.is-active, {
+                            color: $link;
+                        }
+                    }
+                }
                 > li:last-of-type {
                     > a {
                         padding-bottom: 0;
@@ -103,6 +112,9 @@ footer {
                     > a {
                         font-size: 2em;
                         color: $karakun-main-color;
+                        &:hover {
+                            color: $white;
+                        }
                     }
                 }
             }
@@ -319,10 +331,7 @@ article {
 .highlight {
     pre {
         text-align: left;
-        background-color: #272822;
-        color: #F8F8F2;
         border-radius: $karakun-border-radius;
-        border-top: 1.5em $grey-lighter solid;
         overflow: auto;
         code {
             font-family: 'Source Code Pro', monospace;
@@ -334,4 +343,10 @@ article {
     border-top: 1px #848B89 solid;
     text-align: center;
     padding: 1em 0;
+}
+
+a {
+    &.excerpt {
+        color: $body-color;
+    }
 }
