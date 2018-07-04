@@ -179,6 +179,8 @@ future maybe more companies will emerge based on the business model of providing
 While this might be an interesting future for Java no one knows today what impact this will have in
 IT companies. Therefore we should have a concrete look at the vendors that are already on the market today.
 
+![Duke]({{ "/assets/posts/java-release-train/duke-logos.png" | absolute_url }})
+
 ### OpenJDK
 Open JDK provides builds that are directly based on the open source part of Java. Builds of OpenJDK can be downloaded [here](https://adoptopenjdk.net/index.html).
 The roadmap of the OpenJDK is more or less the same as the roadmap that Oracle has defined. The big different is that OpenJDK

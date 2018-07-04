@@ -13,7 +13,7 @@ While providing a solution customized for many customers, you might want to pack
 Each with a set of dependencies to provide just the customer specific implementations.
 
 With gradle this can be accomplished fairly easy. 
-To demonstrate it, I've created a [example project available on github](https://github.com/madmas/gradle-flavoured-artefacts).
+To demonstrate it, I've created an [example project available on github](https://github.com/madmas/gradle-flavoured-artefacts).
 
 It consists of five modules:
 * an application module
