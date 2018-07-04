@@ -12,6 +12,10 @@ header:
 
 This is the Karakun Developer Hub, brought to you by [Karakun AG](https://www.karakun.com).
 
+## The team
+
+Todo
+
 ## Contact details
 
 > Karakun AG  
