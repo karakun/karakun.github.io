@@ -1,0 +1,40 @@
+---
+layout: article
+---
+<h2>About us</h2>
+<p>This is the Karakun Developer Hub, brought to you by <a href="https://www.karakun.com" target="_blank">Karakun AG</a>.</p>
+
+<h3>The team</h3>
+<p>This page is provided by the developers at Karakun AG. In detail the following people have provided content to the page:</p>
+{% assign people = site.people %}
+  <ul>
+    {% for person in people %}
+      <li>
+        <a href="{{ person.url }}">{{ person.firstName }} {{ person.lastName }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+<h3>Contact details</h3>
+<blockquote>
+    <p>Karakun AG<br>
+    Leonhardsgraben 36<br>
+    CH-4051 Basel</p>
+  
+    <p>+41 61 551 36 00<br>
+    <a href="mailto:info@karakun.com">info@karakun.com</a><br>
+    <a href="https://www.karakun.com">karakun.com</a></p>
+</blockquote>
+
+<h3>Photos and Images</h3>
+
+<h4>Logo-Design</h4>
+(reference to the designer?)
+
+<h4>Unsplash</h4> 
+<p>Credits for some images go to  [Unsplash](https://unsplash.com)</p>
+<p>In detail:
+<ul>
+    <li>[Flavours](https://unsplash.com/photos/O6nOEZcLCWQ) by [Tom Hermans on Unsplash](https://unsplash.com/@tomhermans)</li>
+</ul>
+</p>
