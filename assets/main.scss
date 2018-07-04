@@ -84,6 +84,15 @@ footer {
         }
         > div.menu {
             ul {
+                > li {
+                    > a {
+                        color: $white;
+                        &:hover,
+                        &.is-active, {
+                            color: $link;
+                        }
+                    }
+                }
                 > li:last-of-type {
                     > a {
                         padding-bottom: 0;
