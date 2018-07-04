@@ -112,6 +112,9 @@ footer {
                     > a {
                         font-size: 2em;
                         color: $karakun-main-color;
+                        &:hover {
+                            color: $white;
+                        }
                     }
                 }
             }
