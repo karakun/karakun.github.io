@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Gradle: flavoured artefacts from a multi-module build'
+title:  'Gradle - Flavoured artefacts from a multi-module build'
 author: markus
 featuredImage: flavours-tom-hermans-642316-unsplash
 excerpt: 'Customized artefacts can be a headache to build and distribute. To the rescue, Gradle provides a powerful DSL that can solve that task easily - here is an example how.'
