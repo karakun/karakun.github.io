@@ -18,6 +18,12 @@ email: info@karakun.com
 description: >- # this means to ignore newlines until "baseurl:"
   The Developer Hub of Karakun AG :)
 baseurl: "" # the subpath of your site, e.g. /blog
+copyright: Copyright © 2018 Karakun AG
+contact:
+  street: Leonhardsgraben 36
+  city: CH-4051 Basel
+  email: info@karakun.com
+  company: Karakun AG
 url: "https://karakun.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: karakun
 github_username:  karakun

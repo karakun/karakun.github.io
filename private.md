@@ -1,7 +1,8 @@
 ---
 layout: post
 title:  "Private Area"
-headerImage: post
+header:
+  image: post
 hidden: true
 ---
 

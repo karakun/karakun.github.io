@@ -1,4 +1,4 @@
-<nav class="navbar has-background-dark" role="navigation" aria-label="main navigation">
+<nav class="navbar" role="navigation" aria-label="main navigation">
   <div class="container">
   <div class="navbar-brand">
     {%- assign default_paths = site.pages | map: "path" -%}
@@ -49,34 +49,39 @@
       </g>
     </svg>
     <a class="navbar-item page-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}<span class="blink-cursor">_</span></a>
+    <a role="button" class="navbar-burger" data-target="main-menu" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
   </div>
   {%- if page_paths -%}
-    <div class="navbar-menu navbar-end">
+    <div class="navbar-menu navbar-end" id="main-menu">
     {%- for path in page_paths -%}
-        {%- assign my_page = site.pages | where: "path", path | first -%}
-          {%- if my_page.hidden != true -%}
-            {%- if my_page.title and my_page.url != "/" -%}
-              {% if page.title == my_page.title %}
-                <a class="navbar-item is-active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {% else %}
-                <a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-              {% endif %}
-            {%- endif -%}
-          {%- endif -%}
-        {%- endfor -%}
+      {%- assign my_page = site.pages | where: "path", path | first -%}
+      {%- if my_page.hidden != true -%}
+        {%- if my_page.title and my_page.url != "/" -%}
+          {% if page.title == my_page.title %}
+            <a class="navbar-item is-active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% else %}
+            <a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+          {% endif %}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
     </div>
-    {%- endif -%}
+  {%- endif -%}
   </div>
 </nav>
-{%- assign page_image = page.headerImage | default: "/assets/images/default.jpg" -%}
-{%- assign page_image_size = page.headerImageSize | default: "cover" -%}
-{%- assign page_image_x = page.headerImageX | default: "center" -%}
-{%- assign page_image_y = page.headerImageY | default: "center" -%}
+{%- assign page_image = page.header.image | default: "/assets/images/default.jpg" -%}
+{%- assign page_image_size = page.header.size | default: "cover" -%}
+{%- assign page_image_x = page.header.x | default: "center" -%}
+{%- assign page_image_y = page.header.y | default: "center" -%}
 {%- assign fallback_header_text = page.title | append: " by Karakun" -%}
 <div class="page-image" style="background-image: url('/assets/images/pageHeaders/{{ page_image }}.png'); background-size: {{ page_image_size }}; background-position-x: {{ page_image_x }}; background-position-y: {{ page_image_y }};">
   <div>
     <div class="header-text container">
-      <div>{{ page.headerText | default: fallback_header_text | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}</div>
+      <div>{{ page.header.text | default: fallback_header_text | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}</div>
     </div>
   </div>
 </div>

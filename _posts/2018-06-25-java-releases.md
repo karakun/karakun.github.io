@@ -7,7 +7,8 @@ description: 'This post gives an overview of the new Java release train as it wa
  this the article provides some important information and hints how you should handle new Java releases in
  future and helps you to decide if you need to buy commercial Java support in future.'
 tags: [Java]
-headerImage: post
+header:
+  image: post
 ---
 
 This year many changes are introduced to the Java release and support model that is provided by Oracle.
@@ -177,6 +178,8 @@ Here the biggest player is definitely Azul. With the new release model of Java a
 future maybe more companies will emerge based on the business model of providing Java build artifacts for the different needs.
 While this might be an interesting future for Java no one knows today what impact this will have in
 IT companies. Therefore we should have a concrete look at the vendors that are already on the market today.
+
+![Duke]({{ "/assets/posts/java-release-train/duke-logos.png" | absolute_url }})
 
 ### OpenJDK
 Open JDK provides builds that are directly based on the open source part of Java. Builds of OpenJDK can be downloaded [here](https://adoptopenjdk.net/index.html).

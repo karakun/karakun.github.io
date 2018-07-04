@@ -1,8 +1,9 @@
 ---
 layout: talks
 title: Talks
-headerImage: talks
-headerImageX: right
-headerImageY: 25%
+header:
+  image: talks
+  x: right
+  y: 25%
 permalink: /talks/
 ---

@@ -3,6 +3,7 @@
 # To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
 
 layout: home
-headerText: Welcome to the Karakun Developer Hub
-headerImage: home
+header:
+  image: home
+  text: Welcome to the Karakun Developer Hub
 ---

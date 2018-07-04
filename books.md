@@ -1,7 +1,8 @@
 ---
 layout: books
 title: Books
-headerText: Books by members of Karakun
+header:
+  text: Books by members of Karakun
+  image: books
 permalink: /books/
-headerImage: books
 ---

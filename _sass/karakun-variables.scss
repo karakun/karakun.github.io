@@ -1,10 +1,16 @@
 $karakun-main-color: #69C86C;
+$karakun-main-dark-background: #0A1C24;
+$karakun-border-radius: 0.5rem;
+
+$dark: #0A1C24;
+$fa-font-path: 'fonts/';
 
 @import "bulma/utilities/initial-variables";
 
 // Overwrite Bulma default settings
 $primary: $karakun-main-color;
 $link: $karakun-main-color;
+$navbar-background-color: $karakun-main-dark-background;
 $navbar-item-active-color: $karakun-main-color;
 $navbar-item-hover-background-color: transparent;
 $navbar-item-color: $white;
