@@ -350,3 +350,37 @@ a {
         color: $body-color;
     }
 }
+
+.lid {
+    animation: blink 6s infinite;
+}
+
+.eye {
+    animation: squeeze 6s infinite;
+}
+  
+@keyframes blink {
+    90% {
+        transform: none;
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(15px) scaleY(0)
+    }
+    100% {
+        animation-timing-function: ease-out;
+    }
+}
+
+@keyframes squeeze {
+    90% {
+        transform: none;
+        animation-timing-function: ease-in;
+    }
+    93% {
+        transform: translateY(3px) scaleY(0.8)
+    }
+    100% {
+        animation-timing-function: ease-out;
+    }
+}
