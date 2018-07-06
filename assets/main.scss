@@ -352,19 +352,19 @@ a {
 }
 
 .lid {
-    animation: blink 6s infinite;
+    animation: blink 4.5s infinite;
 }
 
 .eye {
-    animation: squeeze 6s infinite;
+    animation: squeeze 4.5s infinite;
 }
   
 @keyframes blink {
-    90% {
+    96% {
         transform: none;
         animation-timing-function: ease-in;
     }
-    93% {
+    99% {
         transform: translateY(15px) scaleY(0)
     }
     100% {
@@ -373,11 +373,11 @@ a {
 }
 
 @keyframes squeeze {
-    90% {
+    96% {
         transform: none;
         animation-timing-function: ease-in;
     }
-    93% {
+    99% {
         transform: translateY(3px) scaleY(0.8)
     }
     100% {
