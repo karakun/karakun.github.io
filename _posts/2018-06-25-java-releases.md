@@ -69,6 +69,8 @@ were not production ready at the code freeze. Since Oracle didn't want to move t
 release was delayed. With a new release every 6 month skipping a feature and adding it to one of the next versions is no
 problem anymore.
 
+![Duke]({{ "/assets/posts/java-release-train/duke-11.jpg" | absolute_url }})
+
 There is a second point that will provide a big benefit to Oracle. With the new schedule the period in which Oracle needs to
 provide free support for more than 1 Java version is completely gone. Based on this companies need to plan migration to new
 Java versions in a much stricter way than before. Because of internal constraints, like resources, not all companies will be
@@ -179,7 +181,7 @@ future maybe more companies will emerge based on the business model of providing
 While this might be an interesting future for Java no one knows today what impact this will have in
 IT companies. Therefore we should have a concrete look at the vendors that are already on the market today.
 
-![Duke]({{ "/assets/posts/java-release-train/duke-logos.png" | absolute_url }})
+![Duke]({{ "/assets/posts/java-release-train/duke-logos.jpg" | absolute_url }})
 
 ### OpenJDK
 Open JDK provides builds that are directly based on the open source part of Java. Builds of OpenJDK can be downloaded [here](https://adoptopenjdk.net/index.html).
