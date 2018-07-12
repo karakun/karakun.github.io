@@ -300,6 +300,7 @@ img {
 article {
     &.talk, &.book, &.karakun-media {
         margin-bottom: $size-2;
+        clear: both;
         &:hover {
             p {
                 img.featured-image {
