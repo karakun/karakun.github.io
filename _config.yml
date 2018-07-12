@@ -58,3 +58,6 @@ defaults:
       type: "people"
     values:
       layout: people
+
+webstats:
+  siteId: 1
