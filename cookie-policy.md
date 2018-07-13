@@ -2,6 +2,8 @@
 layout: article
 title: Cookie Policy
 permalink: /cookie-policy/
+nav:
+  top: false
 header:
   text: About the <span class="my-karakun">Karakun</span> Developer Hub
   image: security

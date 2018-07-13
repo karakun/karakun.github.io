@@ -2,6 +2,8 @@
 layout: article
 title: Privacy Policy
 permalink: /privacy-policy/
+nav:
+  top: false
 header:
   text: About the <span class="my-karakun">Karakun</span> Developer Hub
   image: security
