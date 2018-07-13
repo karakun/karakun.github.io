@@ -4,6 +4,7 @@ title: Cookie Policy
 permalink: /cookie-policy/
 nav:
   top: false
+  bottom: false
 header:
   text: We respect your <span class="my-karakun">privacy<span>
   image: security
