@@ -5,7 +5,7 @@ permalink: /cookie-policy/
 nav:
   top: false
 header:
-  text: About the <span class="my-karakun">Karakun</span> Developer Hub
+  text: We respect your <span class="my-karakun">privacy<span>
   image: security
   y: 10%
 ---
