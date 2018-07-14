@@ -79,6 +79,9 @@ footer {
     .boxes {
         display: flex;
         justify-content: space-between;
+        @include mobile {
+            flex-direction: column;
+        }
         > div {
             flex-grow: 1;
         }
@@ -103,9 +106,20 @@ footer {
         > div.contact {
             flex-grow: 10;
             align-self: flex-end;
+            @include mobile {
+                flex-grow: 1;
+                align-self: center;
+                margin: 2em 0 1em 0;
+                > p {
+                    text-align: center;
+                }
+            }
         }
         > div.social {
             align-self: flex-end;
+            @include mobile {
+                align-self: center;
+            }
             ul {
                 > li {
                     display: inline-block;
@@ -201,6 +215,7 @@ p {
     min-height: 5.5rem;
     @include mobile {
         min-height: 1em;
+        padding-left: 1em;
     }
     @include tablet-only {
         min-height: 1em;
