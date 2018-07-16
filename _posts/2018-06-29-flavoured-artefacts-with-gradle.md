@@ -4,7 +4,7 @@ title:  'Flavoured artefacts from a multi-module build with Gradle'
 author: markus
 featuredImage: flavours-tom-hermans-642316-unsplash
 excerpt: 'Customized artefacts can be a headache to build and distribute. To the rescue, Gradle provides a powerful DSL that can solve that task easily - here is an example how.'
-tags: [Java, Gradle, build]
+categories: [Java, Gradle, build]
 header:
   image: post
 ---

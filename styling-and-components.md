@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: article
 title:  "Styling & Components"
-headerImage: post
+header:
+  image: post
 hidden: true
 ---
 

@@ -7,7 +7,7 @@ excerpt: "This post gives an overview of different patterns that can be used to 
 frontends for microservices. In additon the post shows how you can make use of
  web components together with a microservice based archicture to reduce the duplication
  of code and provide a constinent ui / ux for a complete application landscape"
-tags: [architecture, microservice, webcomponents]
+categories: [architecture, microservice, webcomponents]
 header:
   image: post
 ---
