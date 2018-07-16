@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: article
 title:  "Featured Images"
 header:
   image: post

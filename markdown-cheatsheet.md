@@ -1,7 +1,8 @@
 ---
-layout: post
+layout: article
 title:  "Markdown Cheatsheet"
-headerImage: post
+header:
+  image: post
 hidden: true
 ---
 

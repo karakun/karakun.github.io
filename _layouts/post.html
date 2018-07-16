@@ -34,11 +34,11 @@ layout: default
           <div class="information"><a class="button is-primary" href="{{ author.url }}">more...</a></div>
         </div>
         {%- endif -%}
-        {%- if page.tags -%}
+        {%- if page.categories -%}
         <div class="post-tags info">
             <ul>
-              {% for tag in page.tags %}
-              <li>{{ tag }}</li>
+              {% for category in page.categories %}
+              <li>{{ category }}</li>
               {% endfor %}
           </ul>
         </div>
