@@ -30,7 +30,7 @@ version was released. Based on this the period in which a company could safely u
 version was quite long. The following diagram shows a time graph of the last Java releases and the time of
 its official support by oracle.
 
-![Java release train]({{ "/assets/posts/java-release-train/old-roadmap.png" | absolute_url }})
+![Java release train]({{ "/assets/posts/2018-06-25-java-releases/old-roadmap.png" | absolute_url }})
 
 As you can see in the diagram the free support of a Java version was quite long and the timespan in which 2
 versions were supported in parallel was long enough to plan and handle a migration of your software to the
@@ -40,7 +40,7 @@ by buying commercial support for a Java version.
 As already said all this will change in the future based on the new release train for Java. The
 following image shows the release train as it was announced by Oracle.
 
-![Future Java release train]({{ "/assets/posts/java-release-train/roadmap-java.png" | absolute_url }})
+![Future Java release train]({{ "/assets/posts/2018-06-25-java-releases/roadmap-java.png" | absolute_url }})
 
 Starting with Java 9 most Java version will only have a lifetime of 6 month. After this period no more
 updates will be provided for the version. Even if you have a commercial contract with Oracle you won’t get
@@ -69,7 +69,7 @@ were not production ready at the code freeze. Since Oracle didn't want to move t
 release was delayed. With a new release every 6 month skipping a feature and adding it to one of the next versions is no
 problem anymore.
 
-![Duke]({{ "/assets/posts/java-release-train/duke-11.jpg" | absolute_url }})
+![Duke]({{ "/assets/posts/2018-06-25-java-releases/duke-11.jpg" | absolute_url }})
 
 There is a second point that will provide a big benefit to Oracle. With the new schedule the period in which Oracle needs to
 provide free support for more than 1 Java version is completely gone. Based on this companies need to plan migration to new
@@ -181,7 +181,7 @@ future maybe more companies will emerge based on the business model of providing
 While this might be an interesting future for Java no one knows today what impact this will have in
 IT companies. Therefore we should have a concrete look at the vendors that are already on the market today.
 
-![Duke]({{ "/assets/posts/java-release-train/duke-logos.jpg" | absolute_url }})
+![Duke]({{ "/assets/posts/2018-06-25-java-releases/duke-logos.jpg" | absolute_url }})
 
 ### OpenJDK
 Open JDK provides builds that are directly based on the open source part of Java. Builds of OpenJDK can be downloaded [here](https://adoptopenjdk.net/index.html).
@@ -200,7 +200,7 @@ commercial support for every second Java version. The support duration of this v
 good time range to prepare a migration to the next version and defines 3 different durations for support of Java versions.
 The following image gives an overview of the future Java version and the period that they are supported by Azul.
 
-![Azul roadmap]({{ "/assets/posts/java-release-train/roadmap-azul.png" | absolute_url }})
+![Azul roadmap]({{ "/assets/posts/2018-06-25-java-releases/roadmap-azul.png" | absolute_url }})
 
 Because Zulu is a Java distribution targeting server side applications Azul does not provide any support model for Java
 on the desktop. Unlike Oracle the commercial support of Zulu is not defined per CPU but based on the number of systems. A
