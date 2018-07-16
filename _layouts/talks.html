@@ -14,14 +14,32 @@ layout: page
       {% endif %}
           {% assign author = site.people | where:'name', talk.author | first %}
           <h3 class="has-text-primary">{{ talk.name }}</h3>
-          <h5>{{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h5>
+          <div class="post-meta">
+            <h5>{{ talk.lectures[0].conference }} {{ talk.lectures[0].year }}</h5>
+            {%- if author -%}
+            by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
+          </div>
+          {% endif %}
           <p>
             {%- if talk.featuredImage -%}
               <img class="featured-image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
             {% endif %}
             {{ talk.summary }}
           </p>
-          <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
+          <div class="links">
+            <div>
+              <div><i class="fas fa-map-marker-alt"></i></div>
+              <div>Berlin</div>
+            </div>
+            <div>
+              <div><i class="fab fa-slideshare"></i></div>
+              <div>Slideshare/Slidedeck</div>
+            </div>
+            <div>
+              <div><i class="fab fa-youtube"></i></div>
+              <div><a href="https://www.youtube.com">youtube</a></div>
+            </div>
+          </div>
         </article>
   {% if loopindex == 0 or forloop.index == size %}
     </div>
