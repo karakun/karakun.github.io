@@ -323,6 +323,12 @@ article {
                 }
             }
         }
+        h5 {
+            margin-bottom: 0;
+        }
+        .post-meta {
+            margin-bottom: 0.8em;
+        }
     }
 }
 
@@ -399,4 +405,32 @@ a {
     100% {
         animation-timing-function: ease-out;
     }
+}
+
+.links {
+    clear: both;
+    padding-top: 0.5em;
+    > div {
+        display: flex;
+    }
+}
+
+.less-bottom-margin {
+    margin-bottom: 8px !important;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0px !important;
+}
+
+.metainfo-icon-div {
+    width: 14px;
+    max-width: 14px;
+    min-width: 14px;
+    text-align: center;
+            margin-right: 1em;
+}
+
+.metainfo-icon {
+    color: rgb(100, 100, 100);   
 }

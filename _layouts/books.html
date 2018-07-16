@@ -12,16 +12,33 @@ layout: page
       {% else %}
         <article class="book column is-half content">
       {% endif %}
-          {% assign author = site.people | where:'name', book.author | first %}
-          <h3 class="has-text-primary">{{ book.name }}</h3>
+      <h3 class="has-text-primary">{{ book.name }}</h3>
+      {% assign author = site.people | where:'name', book.author | first %}
+      {%- if author -%}
+        <div class="post-meta">
+              by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
+            </div>
           <p>
+              {% endif %}
             {%- if book.featuredImage -%}
               <img class="featured-image" src="/assets/featuredImages/{{ book.featuredImage }}.png">
             {% endif %}
             {{ book.description }}
           </p>
-          <span><a href="{{ book.link }}" target="_blank">more infos</a></span>
-          <div class="author">Author: <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a></div>
+          <div class="links">
+              {%- if book.amazon-link -%}
+            <div>
+              <div class="metainfo-icon-div"><i class="fab fa-amazon metainfo-icon"></i></div>
+              <div><a href="{{ book.amazon-link }}">Buy the book at amazon</a></div>
+            </div>
+            {% endif %}
+            {%- if book.download-link -%}
+            <div>
+              <div class="metainfo-icon-div"><i class="fas fa-cloud-download-alt metainfo-icon"></i></div>
+              <div><a href="{{ book.download-link }}">Download the book for free</a></div>
+            </div>
+            {% endif %}
+          </div>
         </article>
   {% if loopindex == 0 or forloop.index == size %}
     </div>
