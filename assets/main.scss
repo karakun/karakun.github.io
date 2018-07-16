@@ -412,10 +412,25 @@ a {
     padding-top: 0.5em;
     > div {
         display: flex;
-        > div:first-child {
-            flex-basis: 24px;
-            text-align: center;
-            margin-right: 1em;
-        }
     }
+}
+
+.less-bottom-margin {
+    margin-bottom: 8px !important;
+}
+
+.no-bottom-margin {
+    margin-bottom: 0px !important;
+}
+
+.metainfo-icon-div {
+    width: 14px;
+    max-width: 14px;
+    min-width: 14px;
+    text-align: center;
+            margin-right: 1em;
+}
+
+.metainfo-icon {
+    color: rgb(100, 100, 100);   
 }

@@ -5,10 +5,8 @@
   summary: >
     Build and testing a commercial software is easy. You can use a big infrastructure for CI and commercial tools to test your complete stack. And if you want to test your application on different mobile devices - well, that's easy! You company will buy them for you. But what can you do if you want to work on Open Source? You can not spend thousands of Dollars for a free time project and without a given infrastructure several build, test and deployment steps are just impossible... 
     Imagine a world in that testing, building or deploying of open source software is at least as easy as for commercial projects. Maybe it's just easier and the infrastructure is better than in most $$$ stacks. I will introduce you to this world and show several tools and services that will help you to get the best out of your open source project - without producing any costs but with a lot of fun, cool new technologies and the freedom of choose.
-  lectures: 
-    - conference: 'Java Summit Bucharest'
-      year: '2018'
-  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  lectures: ['Java Summit Bucharest 2018']
+  youtube-link: 'https://www.youtube.com/watch?v=74AiufFGVug'
   featuredImage: wild-projects
   tags: [open source, keynote]
 
@@ -18,10 +16,8 @@
     There are many ways to program - and all of them find a home on the JVM. Whether you are a die-hard object-oriented enterprise programmer, a super-cool scripting hipster, or a scientific functional engineer, the Java Platform has all you need.
     In this talk we will go through unconventional combinations of these paradigms that enrich your solution space - scripting user-defined functions for a business application, building ambitious user interfaces, and creating rock-solid transaction systems.
     Java has something for everybody.
-  lectures: 
-    - conference: 'Java Summit Bucharest'
-      year: '2018'
-  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  lectures: ['Java Summit Bucharest 2018']
+  youtube-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
   featuredImage: mittie-talk
   tags: ['Groovy', 'haskell', 'frege', 'jvm', 'polyglott']
 
@@ -33,9 +29,6 @@
     - How can I create a plugin structure without using frameworks like OSGI?
     - What’s the best way to handle NullPointerExceptions?
     - How can I write concurrent code that is still maintainable?
-  lectures: 
-    - conference: 'Dev Talks Cluj'
-      year: '2018'
-  speaker-deck-id: 'e3f7bdb17bba4b63bed9ed368da014ff'
+  lectures: ['Dev Talks Cluj 2018']
   featuredImage: java-apis
   tags: ['Java']
