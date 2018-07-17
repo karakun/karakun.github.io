@@ -7,11 +7,7 @@ layout: page
   {% if loopindex == 1 %}
     <div class="columns">
   {% endif %}
-      {% if forloop.index == size and loopindex == 1 %}
-        <article class="book column content">
-      {% else %}
-        <article class="book column is-half content">
-      {% endif %}
+      <article class="book column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
       <h3 class="has-text-primary">{{ book.name }}</h3>
       {% assign author = site.people | where:'name', book.author | first %}
       {%- if author -%}
