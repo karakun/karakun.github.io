@@ -12,7 +12,7 @@ layout: page
         <h3 class="has-text-primary"><a href="{{ post.url}}">{{ post.title }}</a></h3>
         <p>
           {%- if post.featuredImage -%}
-            <a href="{{ post.url}}"><img class="featured-image" src="/assets/featuredImages/{{ post.featuredImage }}.png"></a>
+            <a href="{{ post.url}}"><img class="featured-image" alt="featured image" src="/assets/featuredImages/{{ post.featuredImage }}.png"></a>
           {% endif %}
           <a class="excerpt" href="{{ post.url}}">{{ post.excerpt }}</a>
         </p>
