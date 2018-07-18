@@ -30,7 +30,7 @@ version was released. Based on this the period in which a company could safely u
 version was quite long. The following diagram shows a time graph of the last Java releases and the time of
 its official support by oracle.
 
-![Java release train]({{ "/assets/posts/2018-06-25-java-releases/old-roadmap.png" | absolute_url }})
+![Java release train]({{ "/assets/posts/2018-06-25-java-releases/diagramm-past.png" | absolute_url }})
 
 As you can see in the diagram the free support of a Java version was quite long and the timespan in which 2
 versions were supported in parallel was long enough to plan and handle a migration of your software to the
@@ -40,7 +40,7 @@ by buying commercial support for a Java version.
 As already said all this will change in the future based on the new release train for Java. The
 following image shows the release train as it was announced by Oracle.
 
-![Future Java release train]({{ "/assets/posts/2018-06-25-java-releases/roadmap-java.png" | absolute_url }})
+![Future Java release train]({{ "/assets/posts/2018-06-25-java-releases/diagramm-oracle-1.png" | absolute_url }})
 
 Starting with Java 9 most Java version will only have a lifetime of 6 month. After this period no more
 updates will be provided for the version. Even if you have a commercial contract with Oracle you won’t get
@@ -51,6 +51,14 @@ most important fact is that updates for LTS version can only be accessed and use
 commercial support at Oracle. Based on my daily work I would say that most companies that create software
 based on Java do not have commercial support today since the release train of Java was quite „friendly“ and
 an adoption of the newest version was easily possible.
+
+Next to this there is another important change in the licence model of the Oracle JDK. Most developers just downloaded 
+a Java version from Oracle (JRE or JDK) for all development and production environments in the past. Starting with Java 11 
+this won't be possible anymore since the usage of a non commercial version of the Oracle JDK is allowed for development
+and testing. Without buying commercial support from Oracle you will become a criminal if you use the Oracle JDK (starting with 
+version 11) in production. Oracle will provide Java builds based on OpenJDK for free that developers can download and even use in production but for the offical Oracle JDK the real roadmap will look like this:
+
+![Future Oracle JDK release train]({{ "/assets/posts/2018-06-25-java-releases/diagramm-oracle-2.png" | absolute_url }})
 
 ## Why is Oracle doing this?
 You might ask why Oracle changes the releases of Java in such an big way. To be true Oracle is not the only big company that
@@ -200,7 +208,7 @@ commercial support for every second Java version. The support duration of this v
 good time range to prepare a migration to the next version and defines 3 different durations for support of Java versions.
 The following image gives an overview of the future Java version and the period that they are supported by Azul.
 
-![Azul roadmap]({{ "/assets/posts/2018-06-25-java-releases/roadmap-azul.png" | absolute_url }})
+![Azul roadmap]({{ "/assets/posts/2018-06-25-java-releases/diagramm-azul.png" | absolute_url }})
 
 Because Zulu is a Java distribution targeting server side applications Azul does not provide any support model for Java
 on the desktop. Unlike Oracle the commercial support of Zulu is not defined per CPU but based on the number of systems. A
@@ -215,8 +223,8 @@ does not really makes sense for desktop application but is quite interesting for
 | 101-1000  | $86,250                       | $103,500                     |
 | unlimited | $258,750                      | $310,500                     |
 
- At the moment the difference between standard and premium support is not really clear. More details might be added by
- an update or comment to this article. Additional information of the Azul support model for Zulu can be found
+ The only difference between standard and premium support is the availability of the support. By buying premium support you can call 
+ Azul 24x7. More details might be added by an update or comment to this article. Additional information of the Azul support model for Zulu can be found
  [here](https://www.azul.com/products/azul_support_roadmap/)
  and [here](https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-enterprise-java-support-options/).
 
