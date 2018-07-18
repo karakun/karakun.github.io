@@ -52,11 +52,13 @@ commercial support at Oracle. Based on my daily work I would say that most compa
 based on Java do not have commercial support today since the release train of Java was quite „friendly“ and
 an adoption of the newest version was easily possible.
 
-Next to this there is another important change in the licence model of the Oracle JDK. Most developers just downloaded 
-a Java version from Oracle (JRE or JDK) for all development and production environments in the past. Starting with Java 11 
-this won't be possible anymore since the usage of a non commercial version of the Oracle JDK is allowed for development
-and testing. Without buying commercial support from Oracle you will become a criminal if you use the Oracle JDK (starting with 
-version 11) in production. Oracle will provide Java builds based on OpenJDK for free that developers can download and even use in production but for the offical Oracle JDK the real roadmap will look like this:
+Next to this there is another important change in the licence model of the Oracle JDK.
+So far most developers simply downloaded a single Java version from Oracle (JRE or JDK)
+and installed it into all environments (development, testing and production).
+Starting with Java 11 the Oracle JDK is restricted to development and testing environments.
+Oracle JDKs may only be used in production if you buy the commercial support.
+Oracle will provide Java builds based on OpenJDK for free which can be use in production.
+But for the official Oracle JDK the real roadmap will look like this:
 
 ![Future Oracle JDK release train]({{ "/assets/posts/2018-06-25-java-releases/diagramm-oracle-2.png" | absolute_url }})
 
