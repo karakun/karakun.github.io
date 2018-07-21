@@ -16,9 +16,7 @@ layout: page
   <h3>Books</h3>
   <ul>
     {% for book in books %}
-      <li>
-        <a href="{{ book.link }} " target="_blank">{{ book.name }}</a>
-      </li>
+      <li>{{ book.name }}</li>
     {% endfor %}
   </ul>
 {% endif %}
