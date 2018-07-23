@@ -11,12 +11,12 @@ header:
   image: post
 ---
 
-When writing software that is based on JavaEE / JakartaEE you have one big benefit:
+When writing software that is based on [JavaEE / JakartaEE](https://jakarta.ee) you have one big benefit:
 All APIs are specified and therefore your software will run on any application server :)
 
 Sadly the reality is different.
 While the introduction is true for about 99% of all use cases there are still some pitfalls.
-Since all application servers like TomEE, Wildfly or Payara are developed by human they all have bugs.
+Since all application servers like [TomEE](http://tomee.apache.org), [Wildfly](http://www.wildfly.org) or [Payara](https://www.payara.fish) are developed by human they all have bugs.
 I do not want to say that they are not usable.
 Too be true the big players are really stable and flexible.
 But sometimes you will find some behavior that is different in one application compared to the others.
@@ -24,7 +24,7 @@ If you write an application this is not that important as you normally will run 
 It won't make sense to test your application on Wildfly and use TomEE in production.
 But if you want to develop a library or a framework that depends on the JavaEE specification and should be usable with any
 application server it really makes sense to test your code on as many as you can.
-This post will give you an overview how you can achieve this goal by using docker.
+This post will give you an overview how you can achieve this goal by using [Docker](https://www.docker.com).
 
 ## How to write tests for an enterprise library
 
@@ -158,7 +158,7 @@ By executing the test TestNG will automatically call it once for every given con
 At the moment the tests will fail since we do not have any applications that are deployed or maybe not even an application running.
 
 To automatically bootstrap an application server with our test application we will use Docker.
-I will not describe the functionality of Docker since this will XXXXX the scope of this article.
+I will not describe the functionality of Docker since this would be beyond the scope of this article.
 
 Adam Bean provides some good Docker containers for JavaEE application servers that can be used as a base for our containers.
 You can find all needed Docker files [at Github](https://github.com/AdamBien/docklands).
@@ -174,8 +174,58 @@ COPY sample.war ${DEPLOYMENT_DIR}
 The `DEPLOYMENT_DIR` variable is already defined in the docker file from Adam and we can easily use it to add our application 
 (the `sample.war`) to the TomEE instance that is running in the Docker container.
 The only important point is that the war is in the same folder as the docker file when you build the image file.
-When starting the container by hand you can easily map the internal port of the application server (8080) to any free port of your local system by adding a port mapping:
+When starting the container by hand you can easily map the internal port of the application server (8080) to any free port of your
+ local system by adding a port mapping:
 
 {% highlight shell %}
 docker run -p 8080:8080
 {% endhighlight %}
+
+After starting the containers in Docker we need to wait until the containers are started and the internal application is deployed. 
+To do so we can write a small Java method that for example checks if a health-endpoint of the app can be reached.
+
+Since we want to access the docker containers for each test run they must be started automatically before the tests and shut down after
+the tests. In TestNG we can use the `@BeforeClass` and `@AfterClass` (or `@BeforeGroup` and `@AfterGroup`) annotations to execute good
+before running the tests after and all tests are executed. Since we can start native progresses in Java a first implementation to run
+our integration tests the following code gives an idea how such functionality can be implemented in Java:
+
+{% highlight java %}
+
+public class DockerBasedTest() {
+
+    @BeforeClass
+    public void init() {
+        Runtime.getRuntime().exec("cd docker/tomee && docker run -p 8080:8080 -n TomEE");
+        Runtime.getRuntime().exec("cd docker/tomee && docker run -p 8080:8081 -n Payara");
+        Helper.WaitTillPortsAvailable(8080, 8081);
+    }
+
+    @DataProvider(name = "endpoints")
+    public Object[][] getEndpoints() {
+        return new Object[][]{
+                new Object[]{"TomEE", "8080"},
+                new Object[]{"Payara", "8081"}
+        };
+    }
+
+    @Test(dataProvider =  "endpoints")
+    public void testEndpoints(String containerType, String port) {
+        print("Testing " + containerType);
+        final String url = "http://localhost:" + port + "/test";
+        final Map<String, Long> timings = callEndpoint(url);
+        assertContains(timings, "Call DB", 3450);
+    }
+
+    @AfterClass
+    public void destroy() {
+        Runtime.getRuntime().exec("docker stop TomEE");
+        Runtime.getRuntime().exec("docker stop Payara");
+    }
+}
+{% endhighlight %}
+
+With this class we already defined a full workflow to test the internals of the sample app on several application servers. The following 
+diagramms gives an overview of the implemented steps:
+
+![Workflow]({{ "/assets/posts/2018-07-18-integration-docker/workflow1.png" | absolute_url }})
+
