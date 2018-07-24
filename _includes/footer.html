@@ -5,6 +5,12 @@
         {{ site.title | escape | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}
       </p>
       <ul class="menu-list">
+          {% if page.title == my_page.title %}
+          <li><a class="navbar-item is-active" href="{{ "/" | relative_url }}">Home</a></li>
+        {% else %}
+          <li><a class="navbar-item" href="{{ "/" | relative_url }}">Home</a></li>
+        {% endif %}
+
         {%- if page_paths -%}
           {%- for path in page_paths -%}
               {%- assign my_page = site.pages | where: "path", path | first -%}

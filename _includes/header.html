@@ -57,6 +57,11 @@
   </div>
   {%- if page_paths -%}
     <div class="navbar-menu navbar-end" id="main-menu">
+      {% if page.title == my_page.title %}
+        <a class="navbar-item is-active" href="{{ "/" | relative_url }}">Home</a>
+      {% else %}
+        <a class="navbar-item" href="{{ "/" | relative_url }}">Home</a>
+      {% endif %}
     {%- for path in page_paths -%}
       {%- assign my_page = site.pages | where: "path", path | first -%}
       {%- if my_page.hidden != true -%}
