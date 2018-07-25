@@ -65,6 +65,9 @@ systems than oracle does. You can download the artifacts directly at [adoptopenj
 | Linux /aarch64 | 10           |[download](https://goo.gl/zkqosn) |
 | AIX / ppc64    | 10           |[download](https://goo.gl/EpSxqA) |
 
+_We just added links to the artifacts that are provided by Oracle and adoptopenjdk.net - we do not provide
+any support for them._
+
 ### Why should I care?
 Well If you already paying commercial support to Oracle you are fine. Since this is not the case
 for most Java developers it really makes sense to download OpenJDK binaries already today
