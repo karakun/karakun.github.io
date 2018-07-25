@@ -1,10 +1,11 @@
 ---
 layout: article
 title: Web Start
-headerText: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
+headerText:
 permalink: /webstart/
 header:
   image: webstart
+  text: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
 nav:
   bottom: false
 ---
