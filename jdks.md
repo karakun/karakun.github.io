@@ -65,7 +65,25 @@ systems than oracle does. You can download the artifacts directly at [adoptopenj
 | Linux /aarch64 | 10           |[download](https://goo.gl/zkqosn) |
 | AIX / ppc64    | 10           |[download](https://goo.gl/EpSxqA) |
 
-_We just added links to the artifacts that are provided by Oracle and adoptopenjdk.net - we do not provide
+Next to Oracle [Azul](https://www.azul.com) provides free OpenJDK builds, too. The OpenJDK build that Azul
+provides is named Zulu. You can download and use Zulu for free (see [terms of use](https://www.azul.com/products/zulu-and-zulu-enterprise/zulu-terms-of-use/)) at [Azul](https://www.azul.com/downloads/zulu/).
+Next to this here is a table with direct links to all current versions:
+
+{:.table}
+| OS            | Java version | link                             |
+| ------------- | ------------ | -------------------------------- |
+| Linux / x64   | 10.0.1       |[download](https://goo.gl/DuUNie) |
+| macOS / x64   | 10.0.1       |[download](https://goo.gl/yuG2zD) |
+| Windows / x64 | 10.0.1       |[download](https://goo.gl/CCtdRf) |
+| Linux / x64   | 9.0.7        |[download](https://goo.gl/8i4yUz) |
+| macOS / x64   | 9.0.7        |[download](https://goo.gl/gTkkct) |
+| Windows / x64 | 9.0.7        |[download](https://goo.gl/wJEFnC) |
+| Linux / x64   | 8u172        |[download](https://goo.gl/v9pKwG) |
+| macOS / x64   | 8u172        |[download](https://goo.gl/g68cNn) |
+| Windows / x64 | 8u172        |[download](https://goo.gl/tX1wNF) |
+
+
+_We just added links to the artifacts that are provided by Oracle, Azul and adoptopenjdk.net - we do not provide
 any support for them._
 
 ### Why should I care?
