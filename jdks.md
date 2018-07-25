@@ -1,10 +1,11 @@
 ---
 layout: article
 title: OpenJDK
-headerText: Open<span class="my-karakun">JDK</span> downloads
+headerText: 
 permalink: /jdks/
 header:
   image: webstart
+  text: Open<span class="my-karakun">JDK</span> downloads
 nav:
   bottom: false
 ---
