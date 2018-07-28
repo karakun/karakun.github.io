@@ -1,8 +1,6 @@
 <nav class="navbar" aria-label="main navigation">
   <div class="container">
   <div class="navbar-brand">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
     <svg class="raccoon-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 37">
       <defs>
           <style>.cls-1{isolation:isolate;}.cls-2{fill:#72ba6c;}.cls-3{fill:#607676;}.cls-4{fill:#485555;}.cls-5,.cls-6{mix-blend-mode:overlay;}.cls-5{fill:url(#Unbenannter_Verlauf_76);}.cls-6{opacity:0.15;fill:url(#Unbenannter_Verlauf_76-2);}.cls-7{opacity:0.9;fill:url(#Unbenannter_Verlauf_75);}.cls-8{fill:#fff;}.cls-9{fill:#263131;}.cls-10{fill:none;stroke:#4c5b5b;stroke-miterlimit:10;stroke-width:0.69px;}.cls-11{fill:#4c5b5b;}</style>
@@ -55,15 +53,15 @@
         <span aria-hidden="true"></span>
       </a>
   </div>
-  {%- if page_paths -%}
     <div class="navbar-menu navbar-end" id="main-menu">
       {% if page.title == my_page.title %}
         <a class="navbar-item is-active" href="{{ "/" | relative_url }}">Home</a>
       {% else %}
         <a class="navbar-item" href="{{ "/" | relative_url }}">Home</a>
       {% endif %}
-    {%- for path in page_paths -%}
-      {%- assign my_page = site.pages | where: "path", path | first -%}
+    
+    {% assign sortedPaths = site.pages | sort: 'order'  %}
+    {% for my_page in sortedPaths %}
       {%- if my_page.hidden != true -%}
         {%- if my_page.title and my_page.url != "/" and my_page.nav.top != false -%}
           {% if page.title == my_page.title %}
@@ -75,7 +73,6 @@
       {%- endif -%}
     {%- endfor -%}
     </div>
-  {%- endif -%}
   </div>
 </nav>
 {%- assign page_image = page.header.image | default: "/assets/images/default.jpg" -%}
