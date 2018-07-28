@@ -16,7 +16,7 @@ layout: page
               {% capture link %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endcapture %}
               {% assign author_array = author_array | push: link %}
             {% endfor %}
-            by {{ author_array | join: ', ' }}
+            by {{ author_array | join: ', ' }} {% if book.multipleAuthors %} and others {% endif %}
           </div>
           <p>
             {%- if book.featuredImage -%}

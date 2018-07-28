@@ -11,9 +11,31 @@
   authors: ['mittie']
   amazon-link: 'https://www.amazon.de/Groovy-Action-Dierk-Konig/dp/1935182447'
   featuredImage: groovy-in-action
+  multipleAuthors: true
 
 - name: 'JavaFX 8 Refcard'
   description: 'JavaFX is the new UI toolkit for Java-based client applications running on desktop, embedded, and mobile devices. It is part of the JDK 8 and is provided as a pure Java API. This Dzone Refcard gives you what you need to start using the powerful JavaFX 8 UI and graphics tool with code snippets and visual examples of shapes and controls.'
   download-link: https://dzone.com/refcardz/javafx-8-1
   featuredImage: fx-refcard
   authors: ['hendrik', 'michael']
+
+- name: 'Java FX - Embedded'
+  description: 'TODO'
+  amazon-link: 'https://www.amazon.de/Java-FX-Embedded-shortcuts-67-ebook/dp/B00E1E2HMU'
+  featuredImage: fx-embedded
+  authors: ['gerrit']
+  multipleAuthors: true
+
+- name: 'JavaFX 8: Introduction by Example'
+  description: 'JavaFX 8: Introduction by Example shows you how to use your existing Java skills to create graphically exciting client applications with the JavaFX 8 platform. The book is a new and much improved edition of JavaFX 2.0: Introduction by Example, taking you through a series of engaging, fun-to-work examples that bring you up to speed on the major facets of the platform'
+  amazon-link: 'https://www.amazon.de/JavaFX-Introduction-Example-Mark-Heckler-ebook/dp/B01HXFN1D2'
+  featuredImage: fx-example-8
+  authors: ['gerrit']
+  multipleAuthors: true
+
+- name: 'JavaFX 9 by Example'
+  description: 'Create media-rich client applications using JavaFX 9 and the Java 9 platform. Learn to create GUI-based applications for mobile devices, desktop PCs, and even the web. Incorporate media such as audio and video into your applications. Interface with hardware devices such as Arduino and Leap Motion. Respond to gesture control through devices such as the Leap Motion Controller. Take advantage of the new HTTP2 API to make RESTful web requests and WebSockets calls'
+  amazon-link: 'https://www.amazon.de/JavaFX-9-Example-Carl-Dea/dp/1484219600'
+  featuredImage: fx-example-9
+  authors: ['gerrit']
+  multipleAuthors: true
