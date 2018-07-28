@@ -1,29 +1,14 @@
 # Data file that describes books.
 
 - name: 'Mastering JavaFX Controls'
-  edition: '1st edition'
   description: 'Deliver state-of-the-art applications with visually stunning UIs. Mastering JavaFX 8 Controls provides clear instructions, detailed examples, and ready-to-use code samples. Find out how to work with the latest JavaFX APIs, configure UI components, automatically generate FXML, build cutting-edge controls, and effectively apply CSS styling. Troubleshooting, tuning, and deployment are also covered in this Oracle Press guide.'
-  author: 'hendrik'
-  full-author-list:
-    - 'Hendrik Ebbers'
-  isbn: '978-0071833776'
-  publisher: 'McGraw-Hill Education'
-  release: 'July 7, 2014'
-  language: 'English'
+  authors: ['hendrik']
   amazon-link: 'https://www.amazon.com/Mastering-JavaFX-Controls-Oracle-Press/dp/0071833773'
   featuredImage: mastering-fx
 
-
 - name: 'Groovy in Action'
-  edition: 'todo'
   description: 'Groovy in Action, Second Edition is a thoroughly-revised, comprehensive guide to Groovy programming, introducing Groovy by example and presenting lots of reusable code. It introduces Java developers to the dynamic features that Groovy provides, and shows them how to apply Groovy to a range of tasks including building new apps, integration with existing code, and DSL development.'
-  author: 'mittie'
-  full-author-list:
-    - 'todo'
-  isbn: 'todo'
-  publisher: 'todo'
-  release: 'todo'
-  language: 'todo'
+  authors: ['mittie']
   amazon-link: 'https://www.amazon.de/Groovy-Action-Dierk-Konig/dp/1935182447'
   featuredImage: groovy-in-action
 
@@ -31,4 +16,4 @@
   description: 'JavaFX is the new UI toolkit for Java-based client applications running on desktop, embedded, and mobile devices. It is part of the JDK 8 and is provided as a pure Java API. This Dzone Refcard gives you what you need to start using the powerful JavaFX 8 UI and graphics tool with code snippets and visual examples of shapes and controls.'
   download-link: https://dzone.com/refcardz/javafx-8-1
   featuredImage: fx-refcard
-  author: 'hendrik'
+  authors: ['hendrik', 'michael']

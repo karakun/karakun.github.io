@@ -9,13 +9,16 @@ layout: page
   {% endif %}
       <article class="book column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
       <h3 class="has-text-primary">{{ book.name }}</h3>
-      {% assign author = site.people | where:'name', book.author | first %}
-      {%- if author -%}
         <div class="post-meta">
-              by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
-            </div>
+            {% assign author_array = "" | split: "/" %}
+            {% for authorName in book.authors %}
+              {% assign author = site.people | where:'name', authorName | first %}
+              {% capture link %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endcapture %}
+              {% assign author_array = author_array | push: link %}
+            {% endfor %}
+            by {{ author_array | join: ', ' }}
+          </div>
           <p>
-              {% endif %}
             {%- if book.featuredImage -%}
               <img class="featured-image" src="/assets/featuredImages/{{ book.featuredImage }}.png">
             {% endif %}
