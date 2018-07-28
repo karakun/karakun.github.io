@@ -1,12 +1,11 @@
 ---
 layout: post
-title:  'Integration tests for open source software'
+title:  'Integration tests for libraries and frameworks with Docker'
 author: hendrik
 featuredImage: whale
-excerpt: 'This post gives an overview how we at Karakun use Docker to create integration tests for JavaEE / JakartaEE based 
-libraries and frameworks. Since Travis supports Docker for some time now the technique described in this the post can also
-be used for open source software.'
-categories: [Java, Docker, Open Source, Travis, Integration Tests, Tests, JavaEE, JakartaEE]
+excerpt: 'This post gives an overview how we at Karakun use Docker to create integration tests for 
+JavaEE / JakartaEE based libraries and frameworks.'
+categories: [Java, Docker, Integration Tests, Tests, JavaEE, JakartaEE]
 header:
   image: post
 ---
@@ -32,7 +31,7 @@ Let's assume you develop a library that adds [Server Timing](https://www.w3.org/
 Server Timing is a new W3C features that allows you to add some metrics about the request handling to the response.
 The following images shows how such information would be rendered in the developer console of chrome:
 
-![Duke]({{ "/assets/posts/2018-07-18-integration-docker/server-timing.png" | absolute_url }})
+![Server Timing]({{ "/assets/posts/2018-07-18-integration-docker/server-timing.png" | absolute_url }})
 
 When developing such a feature for JavaEE an implementation of the `javax.servlet.Filter` interface will be a good choose.
 In our library we could provide the following class:
@@ -110,7 +109,6 @@ Once you did it 3 times you now that you need to automate the workflow in some w
 Next to this your team members maybe do not know how you do the tests and push code changes without checking the functionality on TomEE.
 
 ## Integration tests with Docker
-
 Since we want to test the integration of our library in specific application servers
 so called integration tests are the solution to our problem.
 To test this automatically after every code change or with every build we need to automate the following steps:
@@ -184,6 +182,8 @@ docker run -p 8080:8080
 After starting the containers in Docker we need to wait until the containers are started and the internal application is deployed. 
 To do so we can write a small Java method that for example checks if a health-endpoint of the app can be reached.
 
+![Container in Docker]({{ "/assets/posts/2018-07-18-integration-docker/docker-container.png" | absolute_url }})
+
 Since we want to access the docker containers for each test run they must be started automatically before the tests and shut down after
 the tests. In TestNG we can use the `@BeforeClass` and `@AfterClass` (or `@BeforeGroup` and `@AfterGroup`) annotations to execute good
 before running the tests after and all tests are executed. Since we can start native progresses in Java a first implementation to run
@@ -229,3 +229,26 @@ diagramms gives an overview of the implemented steps:
 
 ![Workflow]({{ "/assets/posts/2018-07-18-integration-docker/workflow1.png" | absolute_url }})
 
+## Use docker-compose for a more easy setup
+TODO
+docker-compose file that contains all docker files.
+Only one command to start all containers and one command to stop all
+
+## The future is testcontainers.org
+TODO
+Framework that provides all this functionallity
+Sadly only JUnit is supported at the moment
+Already in contact
+
+## Building the sample
+TODO
+We need to provide the sample app
+modules for integration tests in a multi module project
+example
+
+## conclusion
+TODO
+Currently the setup is quite high
+Once you did it once adding tests is as easy as possible
+can be reused for as many projects as you want
+Future: Just use frameworks like testcontainers.org to solve the problem
