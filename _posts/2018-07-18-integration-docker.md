@@ -93,6 +93,10 @@ createdFilter.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true
 
 To check that the code snippet is working and your custom filter will really be called for each and every request
 you need to test your library with an application server.
+
+![Server Timing]({{ "/assets/posts/2018-07-18-integration-docker/timing-request.png" | absolute_url }})
+
+
 Since your library will be used in several applications in the near future
 it is important to test it with all application server types (and releases) that are used by your customers.
 
@@ -190,7 +194,6 @@ before running the tests after and all tests are executed. Since we can start na
 our integration tests the following code gives an idea how such functionality can be implemented in Java:
 
 {% highlight java %}
-
 public class DockerBasedTest() {
 
     @BeforeClass
@@ -231,24 +234,42 @@ diagramms gives an overview of the implemented steps:
 
 ## Use docker-compose for a more easy setup
 TODO
-docker-compose file that contains all docker files.
-Only one command to start all containers and one command to stop all
+
+* docker-compose file that contains all docker files.
+* Only one command to start all containers and one command to stop all
 
 ## The future is testcontainers.org
 TODO
-Framework that provides all this functionallity
-Sadly only JUnit is supported at the moment
-Already in contact
+
+* Framework that provides all this functionallity
+* Sadly only JUnit is supported at the moment
+* Already in contact
+
+{% highlight java %}
+@ClassRule
+public static GenericContainer redis =
+    new GenericContainer("redis:3.0.2")
+               .withExposedPorts(6379);
+{% endhighlight %}
+
+
+{% highlight java %}
+@ClassRule
+public static DockerComposeContainer environment =
+    new DockerComposeContainer(new File("src/test/resources/compose-test.yml"));
+{% endhighlight %}
 
 ## Building the sample
 TODO
-We need to provide the sample app
-modules for integration tests in a multi module project
-example
+
+* We need to provide the sample app
+* modules for integration tests in a multi module project
+* example
 
 ## conclusion
 TODO
-Currently the setup is quite high
-Once you did it once adding tests is as easy as possible
-can be reused for as many projects as you want
-Future: Just use frameworks like testcontainers.org to solve the problem
+
+* Currently the setup is quite high
+* Once you did it once adding tests is as easy as possible
+* can be reused for as many projects as you want
+* Future: Just use frameworks like testcontainers.org to solve the problem
