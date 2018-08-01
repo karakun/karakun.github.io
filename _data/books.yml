@@ -20,7 +20,7 @@
   authors: ['hendrik', 'michael']
 
 - name: 'Java FX - Embedded'
-  description: 'TODO'
+  description: 'The use of Java and JavaFX on embedded hardware like the Raspberry Pi or the BeagleBoard-xM makes sense and is a lot of fun. The first chapter of the shortcut explains what you can do with a desktop UI framework on these devices. Ever thought about building your own hardware gadget? Be it for a tinkering or an innovative idea for a customer project: It is not difficult; the second chapter documents the installation of a Raspberry Pi, the addition of a self-built hardware component, which is addressed via GPIO pins with Java 8, and the visualization of the state with JavaFX.'
   amazon-link: 'https://www.amazon.de/Java-FX-Embedded-shortcuts-67-ebook/dp/B00E1E2HMU'
   featuredImage: fx-embedded
   authors: ['gerrit']
