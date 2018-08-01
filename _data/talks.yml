@@ -8,7 +8,6 @@
   lectures: ['Java Summit Bucharest 2018']
   youtube-link: 'https://www.youtube.com/watch?v=74AiufFGVug'
   featuredImage: wild-projects
-  tags: [open source, keynote]
 
 - name: 'Polyglott Java - a platform for many paradigms'
   author: 'mittie'
@@ -19,7 +18,6 @@
   lectures: ['Java Summit Bucharest 2018']
   youtube-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
   featuredImage: mittie-talk
-  tags: ['Groovy', 'haskell', 'frege', 'jvm', 'polyglott']
 
 - name: 'Java APIs - The missing manual'
   author: 'hendrik'
@@ -31,4 +29,3 @@
     - How can I write concurrent code that is still maintainable?
   lectures: ['Dev Talks Cluj 2018']
   featuredImage: java-apis
-  tags: ['Java']
