@@ -83,8 +83,28 @@ Next to this here is a table with direct links to all current versions:
 | macOS / x64   | 8u172        |[download](https://goo.gl/g68cNn) |
 | Windows / x64 | 8u172        |[download](https://goo.gl/tX1wNF) |
 
+Another player is [SAP](https://www.sap.com) that distributes (free OpenJDK builds)[https://sap.github.io/SapMachine/] next to a closed source SAP JVM. 
+The free JDK at SAP is called "SapMachine" and at the moment the following free JDK builds can be downloaded:
 
-_We just added links to the artifacts that are provided by Oracle, Azul and adoptopenjdk.net - we do not provide
+{:.table}
+| OS             | Java version     | link                             |
+| -------------- | ---------------- | -------------------------------- |
+| Linux / x64    | 10.0.2           |[download](https://goo.gl/7MnWk3) |
+| Linux /ppc64   | 10.0.2           |[download](https://goo.gl/nr4UuW) |
+| Linux /ppc64le | 10.0.2           |[download](https://goo.gl/nbT59G) |
+| Linux / x64    | 11 (pre-release) |[download](https://goo.gl/jmDkad) |
+| Linux /ppc64   | 11 (pre-release) |[download](https://goo.gl/GqAPmm) |
+| Linux /ppc64le | 11 (pre-release) |[download](https://goo.gl/YSh54U) |
+| Windows / x64  | 11 (pre-release) |[download](https://goo.gl/CZuQnt) |
+| macOS / x64    | 11 (pre-release) |[download](https://goo.gl/wo2GXY) |
+| Linux / x64    | 12 (pre-release) |[download](https://goo.gl/PwwErg) |
+| Linux /ppc64   | 12 (pre-release) |[download](https://goo.gl/DJUVpW) |
+| Linux /ppc64le | 12 (pre-release) |[download](https://goo.gl/6QvpSd) |
+| Windows / x64  | 12 (pre-release) |[download](https://goo.gl/jeAdCS) |
+
+Next to JDK builds SAP provides JRE builds for the versions that are listed in the table. Since SAP provides all builds as GitHub releases a good overview [can be found here](https://github.com/SAP/SapMachine/releases).
+
+_We just added links to the artifacts that are provided by different vendors of Java binaries - we do not provide
 any support for them._
 
 ### Why should I care?
