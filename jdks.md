@@ -83,7 +83,7 @@ Next to this here is a table with direct links to all current versions:
 | macOS / x64   | 8u172        |[download](https://goo.gl/g68cNn) |
 | Windows / x64 | 8u172        |[download](https://goo.gl/tX1wNF) |
 
-Another player is [SAP](https://www.sap.com) that distributes (free OpenJDK builds)[https://sap.github.io/SapMachine/] next to a closed source SAP JVM. 
+Another player is [SAP](https://www.sap.com) that distributes [free OpenJDK builds](https://sap.github.io/SapMachine/) next to a [closed source SAP JVM](https://tools.hana.ondemand.com/#cloud). 
 The free JDK at SAP is called "SapMachine" and at the moment the following free JDK builds can be downloaded:
 
 {:.table}
