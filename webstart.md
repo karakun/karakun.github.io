@@ -48,7 +48,7 @@ Compared to the alternative solutions our proposal has the following advantages:
 * no commercial license per client instance is required
 
 ### Roadmap
-Currently we are looking for funding. Once funding is secured, we will start development. Beta tests are planned for late August and September. It is crucial that the first version becomes available at the same time Java 11 is released. The following diagram shows the roadmap:
+Currently we are looking for funding. Once funding is secured, we will start development. The following diagram shows the roadmap:
 
 ![Karakun WebStart roadmap]({{ "/assets/webstart/roadmap-karakun.png" | absolute_url }})
 
