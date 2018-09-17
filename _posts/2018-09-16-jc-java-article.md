@@ -17,4 +17,4 @@ Together with evengalists and employees of the main Java vendor companies like O
 
 We (Karakun) contributed to this document and our previous articles were a good starting point to write the open document. We are really happy that we already had the change to help that many developers to get the critical knowlegde about Java in this first periode of the Karakun DevHub.
 
-Well, since you are here to read the open document of the Java Champion group I don't want to detain you anymore ;) You can [find the document here](https://docs.google.com/document/d/1nFGazvrCvHMZJgFstlbzoHjpAVwv5DEdnaBr_5pKuHo/preview).
+Well, since you are here to read the open document of the Java Champion group I don't want to detain you anymore ;) You can [find the document here](https://medium.com/@javachampions/java-is-still-free-c02aef8c9e04).
