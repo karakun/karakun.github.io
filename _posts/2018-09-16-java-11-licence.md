@@ -19,7 +19,7 @@ Java 8 to Java 11 within the next month. Since Java 9 and Java 10 were the 2 fir
 of Oracle a lot of people assume a LTS (Long term support) release of Java 11 by Oracle that they can easily use the next year in
 production.
 
-![Duke]({{ "/assets/posts/2018-06-25-java-releases/duke-11.jpg" | absolute_url }})
+![Duke]({{ "/assets/posts/2018-09-16-java-11-licence/duke-11.jpg" | absolute_url }})
 
 While there are still some rumors and wrong assumtions about the new release train, the content of Java 11 and its pricing model we will have a deeper look at all this points in a series of blog posts.
 
@@ -30,7 +30,7 @@ In this first post we will have a general look at the release model and licence 
 When having a look at the current state of Java 11 you can already download an "early access" build. Here Oracle provides 2 different
 types of builds: "OpenJDK builds" and "Oracle JDK builds"
 
-![Current Java 11 early access downloads]({{ "/assets/posts/2018-07-24-open-jdk/download.png" | absolute_url }})
+![Current Java 11 early access downloads]({{ "/assets/posts/2018-09-16-java-11-licence/download.png" | absolute_url }})
 
 As you can see in the screenshot the 2 versions differ in the supported operation systems and the licence. Once Java 11 is released you will be able to download final release binaries for this 2 builds types. Based on this it will be important for every developer to know the difference between this 2 types. To be true there are no real difference in the functionallity of this builds. Both will be build based on the same sources (from OpenJDK) and will contain the same functions and Java APIs. The main differences will be the licence that defines how and when the build can be used and the future support of this 2 builds. While we already [publised a more detailed article]({{ site.baseurl }}{% post_url 2018-06-25-java-releases %}) about that topic and mentioned it in our [OpenJDK overview page]({{ site.baseurl }}{% link jdks.md %}) I will just give a short summary:
 
@@ -52,7 +52,7 @@ Since several years other vendors provide free and commercial builds for Java. M
 
 Do not stress yourself with the changes in the Java ecosystem. Inform yourself about the alternatives next to Oracle within the next month and be prepaired for the bright future of Java. By doing so you can really be relaxed ;)
 
-![RICO]({{ "/assets/posts/2018-07-24-open-jdk/racoon_meditation.jpg" | absolute_url }})
+![RICO]({{ "/assets/posts/2018-09-16-java-11-licence/racoon_meditation.jpg" | absolute_url }})
 
 ## Preview
 
