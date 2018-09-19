@@ -3,7 +3,7 @@ layout: article
 title: You@Karakun
 order: '19'
 headerText: 
-permalink: /become-a-karakuni/
+permalink: /you-at-karakun/
 header:
   image: team
   text: Work <span class="my-karakun">happier!</span>
@@ -27,8 +27,8 @@ TODO: Schulung, Vorträge, Mit Autoren & JCs zusammen arbeiten. Contribution to 
 
 ## Find the right location
 
-TODO: Basel oder Dortmund
+Since our headquarter is located in [Basel, Switzerland](https://www.google.com/maps/place/Karakun+AG/@47.5560423,7.5830238,17z/data=!3m1!4b1!4m5!3m4!1s0x4791b964d4499a5b:0x3c0e6bdb3503d901!8m2!3d47.5560387!4d7.5852125) we have a second office in [Dortmund, Germany](https://www.google.com/maps/place/Selkamp+12,+44287+Dortmund/@51.499891,7.5656977,17z/data=!3m1!4b1!4m5!3m4!1s0x47b9169eff1bcd2d:0xd6046623ea550456!8m2!3d51.4998877!4d7.5678864). Both offices
+are ready to take care of new motivated employees ;)
 
 ## Do the first step!
-
-TODO: Contact
+If you are interessted in working with a young and agile team you can have a look at our [open positions](https://karakun.com/jobs/) or just [contact us](mailto:you@karakun.com).
