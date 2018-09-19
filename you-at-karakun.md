@@ -14,7 +14,12 @@ nav:
 ## Love where you work
 
 At Karakun, we’re looking for talented people to do work that they love at all levels of the company. 
-TODO: allgeminer netter Text über Karakun
+
+Karakun is a team of more than 30 very experienced software developers working together for many years. The Karakun team is developing agilely custom solutions for enterprises based on Java and Web technologies providing the optimal user experience.
+
+At Karakun we believe in the tools we use and the solutions we offer. With a strong focus on open source and open source
+based solutions we always try to create the best reachable solutions for our customers and share our insights and 
+knowledge with the community.
 
 ## Stay up to date
 
