@@ -26,7 +26,7 @@ knowledge with the community.
 The following image shows just some of the technologies and open source projects that we at Karakun use in
 our daily business. Since we love open source we already contributed to several of that technologies.
 
-![technologies]({{ "/assets/images/pages/become-a-karakuni/technologies.png" | absolute_url }})
+![technologies]({{ "/assets/images/pages/you-at-karakun/technologies.png" | absolute_url }})
 
 To always be up to date we try to improve ourselfs by visiting well known conferences like JavaLand, Devoxx or Oracle Code One. Next to this we do internal hackathons and sponsor meetups like hackergarten or JUGs. Next to this we offer
 trainings for several modern technologies and topics by worldwide experts that can easily attended by colleges. 
@@ -34,6 +34,8 @@ trainings for several modern technologies and topics by worldwide experts that c
 Next to the cool technology that we use you will work together with often Java Champions, Java Rockstars and 
 several Java book authors in your projects. At Karakun we try to mix our development teams without creating
 any hierarchies in the work force.
+
+![Karakun loves open source]({{ "/assets/images/pages/you-at-karakun/duke-loves-os-small.png" | absolute_url }})
 
 ## Find the right environment
 
