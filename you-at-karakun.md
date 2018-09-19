@@ -28,9 +28,14 @@ our daily business. Since we love open source we already contributed to several 
 
 ![technologies]({{ "/assets/images/pages/become-a-karakuni/technologies.png" | absolute_url }})
 
-TODO: Schulung, Vorträge, Mit Autoren & JCs zusammen arbeiten. Contribution to open source
+To always be up to date we try to improve ourselfs by visiting well known conferences like JavaLand, Devoxx or Oracle Code One. Next to this we do internal hackathons and sponsor meetups like hackergarten or JUGs. Next to this we offer
+trainings for several modern technologies and topics by worldwide experts that can easily attended by colleges. 
 
-## Find the right location
+Next to the cool technology that we use you will work together with often Java Champions, Java Rockstars and 
+several Java book authors in your projects. At Karakun we try to mix our development teams without creating
+any hierarchies in the work force.
+
+## Find the right environment
 
 Since our headquarter is located in [Basel, Switzerland](https://www.google.com/maps/place/Karakun+AG/@47.5560423,7.5830238,17z/data=!3m1!4b1!4m5!3m4!1s0x4791b964d4499a5b:0x3c0e6bdb3503d901!8m2!3d47.5560387!4d7.5852125) we have a second office in [Dortmund, Germany](https://www.google.com/maps/place/Selkamp+12,+44287+Dortmund/@51.499891,7.5656977,17z/data=!3m1!4b1!4m5!3m4!1s0x47b9169eff1bcd2d:0xd6046623ea550456!8m2!3d51.4998877!4d7.5678864). Both offices
 are ready to take care of new motivated employees ;)
