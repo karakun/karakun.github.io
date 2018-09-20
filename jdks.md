@@ -10,7 +10,7 @@ header:
 nav:
   bottom: false
 ---
-## What is the OpenJDK
+## About Oracle JDK
 As you might already know Java will change at the end of the year based on the new Java release train and
 the new licence model of Oracle. Starting with Java 11 it is not allowed to use the Oracle JDK anymore in
 production. Next to this Oracle won't provide any JRE builds for desktop clients anymore.
