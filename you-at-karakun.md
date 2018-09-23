@@ -24,10 +24,8 @@ knowledge with the community.
 
 ## Stay up to date
 
-The following image shows just some of the technologies and open source projects that we at Karakun use in
-our daily business. Since we love open source we already contributed back to many of these technologies.
-
-![technologies]({{ "/assets/images/pages/you-at-karakun/technologies.png" | absolute_url }})
+At Karakun we mostly use open source projects and tools in our daily business. 
+Since we love open source we already contributed back to many of these technologies.
 
 To always be up to date we try to improve ourselves by visiting well known conferences like JavaLand, Devoxx or Oracle Code One.
 Next to this we do internal hackathons and sponsor meetups like [hackergarten](http://hackergarten.net/) or JUGs.
