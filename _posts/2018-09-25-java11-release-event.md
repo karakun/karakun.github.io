@@ -12,7 +12,9 @@ header:
   image: post
 ---
 
-Together with Oracle and [Heise](https://www.heise.de/developer/meldung/Jetzt-vormerken-Launch-Event-zu-Java-11-4168709.html) we will do a 
-Java 11 release event at September 25th, 2018. The event will be live streamed and recorded at YouTube and you can watch it here:
+Together with Oracle and 
+[Heise](https://www.heise.de/developer/meldung/Jetzt-vormerken-Launch-Event-zu-Java-11-4168709.html) we will do a 
+Java 11 release event at September 25th, 2018. 
+This event will be followed by Hendrik Ebbers and Michael Heinrichs. There will be a YouTube Live Stream from 6 pm UTC+2. We are looking forward to many viewers!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CUuCVHWeO-Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
