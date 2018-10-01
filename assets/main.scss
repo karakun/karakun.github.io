@@ -294,6 +294,13 @@ article.post {
             padding: 2em 5em 2.5em 5em;
             margin: 0 auto;
             display: block;
+            width: 100%;
+        }
+    }
+    .embed-container {
+        > iframe {
+            padding-left: 5em;
+            padding-right: 5em;
         }
     }
     div.post-author {

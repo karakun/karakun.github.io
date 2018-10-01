@@ -187,6 +187,8 @@ GEM
       jekyll (~> 3.3)
     jekyll-watch (2.0.0)
       listen (~> 3.0)
+    jekyll-youtube (1.0.0)
+      jekyll
     jemoji (0.9.0)
       activesupport (~> 4.0, >= 4.2.9)
       gemoji (~> 3.0)
@@ -245,6 +247,7 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.6)
+  jekyll-youtube
   minima (~> 2.0)
   tzinfo-data
 
