@@ -32,6 +32,7 @@ github_username:  karakun
 markdown: kramdown
 plugins:
   - jekyll-feed
+  - jekyll-youtube
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
