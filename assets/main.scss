@@ -377,6 +377,17 @@ article {
             margin-bottom: 0.8em;
         }
     }
+    &.content {
+        h3 {
+            height: 2em;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 0.25em;
+        }
+        p, p:not(:last-child) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .blink-cursor {
@@ -460,14 +471,6 @@ a {
     > div {
         display: flex;
     }
-}
-
-.less-bottom-margin {
-    margin-bottom: 8px !important;
-}
-
-.no-bottom-margin {
-    margin-bottom: 0px !important;
 }
 
 .metainfo-icon-div {

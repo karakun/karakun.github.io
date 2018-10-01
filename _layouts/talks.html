@@ -9,13 +9,13 @@ layout: page
   {% endif %}
       <article class="talk column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
         {% assign author = site.people | where:'name', talk.author | first %}
-        <h3 class="has-text-primary less-bottom-margin">{{ talk.name }}</h3>
+        <h3 class="has-text-primary">{{ talk.name }}</h3>
         <div class="post-meta">
           {%- if author -%}
           by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
           {% endif %}
         </div>
-        <p class="no-bottom-margin">
+        <p>
           {%- if talk.featuredImage -%}
             <img class="featured-image" alt="featured image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
           {% endif %}
