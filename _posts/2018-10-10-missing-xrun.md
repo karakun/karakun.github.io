@@ -12,6 +12,9 @@ header:
   image: post
 ---
 
+One might say the problems already started when I got my hands at JavaScript ;) - but to be fair as a Java developer today
+it is very helpfull for your job to now about JS and how a web frontend can be added to a Java based server application.
+
 
 
 [INFO] bower paper-item#^2.0.0                  cached https://github.com/PolymerElements/paper-item.git#2.1.1
