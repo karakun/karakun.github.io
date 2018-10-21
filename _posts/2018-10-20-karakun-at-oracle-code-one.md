@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Karakun at Oracle Code One'
-author: timo
+author: hendrik
 featuredImage: oracle-code-one
 excerpt: 'This year Oracle does the first Code One conference in San Francisco. Code One is the sucessor of the famous JavaOne conference and will connect developers of different programming languages and backgrounds. Karakun will have several sessions and activities at Code One.'
 categories: [Conferences, Java, CodeOne]
@@ -9,9 +9,9 @@ header:
   image: post
 ---
 
-This year Oracle does the first [Code One conference](https://www.oracle.com/code-one/index.html) in San Francisco. Code One is the sucessor of the famous JavaOne conference and will connect developers of different programming languages and backgrounds. Even with the changed name Java is still very important and huge at Code One and the conference offers an awesome opertunity for our Java exports to discuss the future of the ecosystem.
+This year Oracle does the first [Code One conference](https://www.oracle.com/code-one/index.html) in San Francisco. Code One is the sucessor of the famous JavaOne conference and will connect developers of different programming languages and backgrounds. Even with the changed name, Java is still very important and huge at Code One and the conference offers an awesome opertunity for our Java exports to discuss the future of the ecosystem.
 
-![Duke]({{ "/assets/posts/2018-10-20-karakun-at-oracle-code-one/code-one-logo.png" | absolute_url }})
+![Code-One]({{ "/assets/posts/2018-10-20-karakun-at-oracle-code-one/code-one-logo.png" | absolute_url }})
 
 This post will give you an overview about the activities that we have planed at Code One. We will write some follow up posts with more details of the sessions and events.
 
@@ -28,13 +28,15 @@ Join us at:
 If you visit Code One you will notice the Voting Machines that will be placed at each session room.
 By using this machines you have the chance to give a vote for the current session. If you like the session you simple pressed the green Duke, if you do not like the presentation you choosed the red Duke and if it's quite ok you select the Duke in the middle.
 
-We at Karakun assamble and maintain the vopting machine for Code One since the concept behind this machines comes from our
+We at Karakun assamble and maintain the voting machine for Code One since the concept behind this machines comes from our
 engeniers.
 
 This machines were already used at JavaOne the last years and will be used at CodeOne again. After some polishing and rebranding all those machines are ready to handle your votes ;)
 
-TODO: Pictures
+## Java Champions summit
+Before the conference Oracle organized a day for all Java Champions with a lot of interesting content. We saw some quite cool Java content and had very good discussions. Since we needed to sign an NDA I can not write about any specific news at the moment.
 
 ## Need some stickers?
 If you need new stickers, come to on of our sessions and help yourself!
-TODO: Pics...
+
+![Sticker]({{ "/assets/posts/2018-10-20-karakun-at-oracle-code-one/sticker.png" | absolute_url }})
