@@ -16,15 +16,22 @@ This post will give you an overview about the activities that we have planed at 
 ## Karakun sessions at Code One
 We're happy to host 4 session at the Oracle Code One in SFO this week! 
 Join us at:
-* Java WebStart Is Dead: What Should We Do Now? [DEV5418] by Hendrik
-* Web Components and Polymer 3 [DEV5421] by Hendrik
-* Extreme GUI Makeover 2018 [DEV5416] by Hendrik
-* Multidevice Controls: A Different Approach to UX [DEV4399] by Gerrit
-
-TODO: Links for sessions
+* [Java WebStart Is Dead: What Should We Do Now?](https://oracle.rainfocus.com/widget/oracle/oow18/catalogcodeone18?search=DEV5418)
+* [Web Components and Polymer 3](https://oracle.rainfocus.com/widget/oracle/oow18/catalogcodeone18?search=DEV5421)
+* [Extreme GUI Makeover 2018](https://oracle.rainfocus.com/widget/oracle/oow18/catalogcodeone18?search=DEV5416)
+* [Multidevice Controls: A Different Approach to UX](https://oracle.rainfocus.com/widget/oracle/oow18/catalogcodeone18?search=DEV4399)
 
 ## Karakun voting machines at Code One
-TODO: short description & pics
+
+If you visit Code One you will notice the Voting Machines that will be placed at each session room.
+By using this machines you have the chance to give a vote for the current session. If you like the session you simple pressed the green Duke, if you do not like the presentation you choosed the red Duke and if it's quite ok you select the Duke in the middle.
+
+We at Karakun assamble and maintain the vopting machine for Code One since the concept behind this machines comes from our
+engeniers.
+
+This machines were already used at JavaOne the last years and will be used at CodeOne again. After some polishing and rebranding all those machines are ready to handle your votes ;)
+
+TODO: Pictures
 
 ## Need some stickers?
 If you need new stickers, come to on of our sessions and help yourself!
