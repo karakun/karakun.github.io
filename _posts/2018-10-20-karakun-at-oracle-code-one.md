@@ -11,6 +11,8 @@ header:
 
 This year Oracle does the first [Code One conference](https://www.oracle.com/code-one/index.html) in San Francisco. Code One is the sucessor of the famous JavaOne conference and will connect developers of different programming languages and backgrounds. Even with the changed name Java is still very important and huge at Code One and the conference offers an awesome opertunity for our Java exports to discuss the future of the ecosystem.
 
+![Duke]({{ "/assets/posts/2018-10-20-karakun-at-oracle-code-one/code-one-logo.png" | absolute_url }})
+
 This post will give you an overview about the activities that we have planed at Code One. We will write some follow up posts with more details of the sessions and events.
 
 ## Karakun sessions at Code One
