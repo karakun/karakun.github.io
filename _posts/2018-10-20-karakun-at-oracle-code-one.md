@@ -30,7 +30,6 @@ Join us at:
 * [Multidevice Controls: A Different Approach to UX](https://oracle.rainfocus.com/widget/oracle/oow18/catalogcodeone18?search=DEV4399)
 
 ## Karakun voting machines at Code One
-
 If you visit Code One you will notice the Voting Machines which placed 
 at each session room. By using this machines you have the chance to give a 
 vote for the current session. If you like the session you simple pressed 
