@@ -22,7 +22,7 @@ layout: page
             {%- if book.featuredImage -%}
               <img class="featured-image" src="/assets/featuredImages/{{ book.featuredImage }}.png">
             {% endif %}
-            {{ book.description }}
+            {{ book.description | newline_to_br }}
           </p>
           <div class="links">
               {%- if book.amazon-link -%}
