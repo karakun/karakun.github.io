@@ -1,4 +1,28 @@
 # Data file that describes talks
+- name: 'The path to CD: End-to-End with Docker and Geb'
+  author: 'markus'
+  summary: >
+    End to end testing is a crucial part of a tool chain to deliver high-quality releases of many software systems.
+    
+    With Geb, we have a very handy wrapper to WebDriver/Selenium at our fingertips that enables us to create actually maintainable E2E test suites even for large web applications.
+    Combining it with Docker and a CI system enables us to be very flexible about the context we use this tests in and allow us to provoke feedback for many interesting aspects we need to know about in our system.
+
+    This talk outlines findings and experiences from projects that utilized the mentioned technologies to succeed in constantly delivering high quality releases not only in slides but also with some live-coding and demos.
+  lectures: ['BaselOne 2018']
+  github-link: 'https://github.com/madmas/E2ETestGebSpockDocker'
+  featuredImage: sleepy-racoon
+
+- name: 'The secret behind JWT'
+  author: 'markus'
+  summary: >
+    In the age of micro services and applications that are build from many distributed components and need to take care for aspects like CSRF and CORS, session cookies are not practicable anymore.
+
+    Tokens promise to be a silverbullet. JWT (JSON Web Token) aims to simplify the usage of authentication tokens in modern application landscapes.
+
+    This talks shows if tokens can fulfill that promise and keep up the web applications taste even when cookies are missing. 
+  lectures: ['BaselOne 2018']
+  github-link: 'https://github.com/madmas/TokenVsCookies'
+  featuredImage: token
 
 - name: 'Java WebStart is dead - What should we do now?'
   author: 'hendrik'
@@ -24,7 +48,7 @@
 
 - name: 'Polyglott Java - a platform for many paradigms'
   author: 'mittie'
-  summary: > 
+  summary: >
     There are many ways to program - and all of them find a home on the JVM. Whether you are a die-hard object-oriented enterprise programmer, a super-cool scripting hipster, or a scientific functional engineer, the Java Platform has all you need.
     In this talk we will go through unconventional combinations of these paradigms that enrich your solution space - scripting user-defined functions for a business application, building ambitious user interfaces, and creating rock-solid transaction systems.
     Java has something for everybody.
@@ -34,7 +58,7 @@
 
 - name: 'Java APIs - The missing manual'
   author: 'hendrik'
-  summary: > 
+  summary: >
     This isn’t a talk about microservices, NO-SQL, Container solutions or hip new frameworks. This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8. All this features are very helpful to create maintainable and future-proof applications, regardless of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of some important standard concepts and APIs of Java like annotations, null values and concurrency. Based on an overview of this topics and some samples the talk will answer questions like:
     - How can I create my own annotations?
     - How can I create a plugin structure without using frameworks like OSGI?
