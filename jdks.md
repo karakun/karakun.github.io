@@ -7,8 +7,7 @@ permalink: /jdks/
 header:
   image: webstart
   text: Open<span class="my-karakun">JDK</span> downloads
-nav:
-  bottom: false
+hidden: true
 ---
 ## About Oracle JDK
 As you might already know Java will change at the end of the year based on the new Java release train and
