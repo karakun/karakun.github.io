@@ -3,7 +3,6 @@
 - name: 'Web-APIs: Das ultimative Handbuch'
   author: 'simon'
   summary: >
-    Beispiel schon das Web Speech API, oder das Web Bluetooth API, das Server Timing API, das Battery
     Status API oder das Credential Management API? Diese und weitere APIs sind Teil des Vortrags,
     der Webentwicklern helfen soll, ihre Komfortzone zu verlassen. Da der Vortrag sehr viele APIs
     umfasst, kann das Publikum am Anfang auswählen, welche APIs im Detail vorgestellt werden.
