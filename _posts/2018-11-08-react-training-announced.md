@@ -26,7 +26,7 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 * Why is React a library and not a framework?
 - Welche Konzepte stecken hinter React?
 * What are these "props"?
-- Was ist der State?
+* What are these "state"?
 - JavaScript ES6 Grundlagen
 - JavaScript syntax extension (JSX)
 - Lebenszyklus der Komponenten (Mount, Update, Error)
