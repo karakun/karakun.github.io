@@ -3,7 +3,6 @@
 - name: 'Web-APIs: Das ultimative Handbuch'
   author: 'simon'
   summary: >
-    oder die Geolocation API. Es entsteht eine Art Komfortzone, die man selten verlässt. Dabei stellt
     das Web noch viel mehr APIs zur Verfügung, die wenig oder gar nicht bekannt sind. Kennen Sie zum
     Beispiel schon das Web Speech API, oder das Web Bluetooth API, das Server Timing API, das Battery
     Status API oder das Credential Management API? Diese und weitere APIs sind Teil des Vortrags,
