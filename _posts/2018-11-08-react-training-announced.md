@@ -29,7 +29,7 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 * What are these "state"?
 - JavaScript ES6 Grundlagen
 * JavaScript syntax extension (JSX)
-- Lebenszyklus der Komponenten (Mount, Update, Error)
+* Components Life cycle
 - Build-Prozess
 - Der React Renderer (ReactDOM, ReactDOM Server, ReactVR, ...)
 - State-Management (Context API, Redux, MobX)
