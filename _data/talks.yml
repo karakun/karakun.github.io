@@ -1,6 +1,6 @@
 # Data file that describes talks
 
-- name: 'Progressive Web Apps mit der Service Worker API'
+- name: 'Progressive Web Apps and the Service Worker API'
   author: 'simon'
   summary: >
     Progressive Web Apps (PWAs) closes the gap between websites and native applications. 
@@ -16,7 +16,7 @@
   github-link: 'https://giftkugel.github.io/talks/pwa.html'
   featuredImage: pwa
 
-- name: 'Web-APIs: Das ultimative Handbuch'
+- name: 'Web APIs - The missing manual'
   author: 'simon'
   summary: >
     Web developers use different Web APIs every day. Often this APIs are well known ones, 
