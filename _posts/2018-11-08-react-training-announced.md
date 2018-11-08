@@ -29,7 +29,7 @@ Practical exercises support the theory taught in the course. The participants ap
 * What are these "state"?
 * JavaScript ES6 basics
 * JavaScript syntax extension (JSX)
-* Components Life cycle
+* Components lifecycle
 * Build-Process
 * The React Renderer (ReactDOM, ReactDOM Server, ReactVR, ...)
 * State-Management (Context API, Redux, MobX)
