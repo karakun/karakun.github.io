@@ -25,7 +25,7 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 ## Outline with the most important Topics
 * Why is React a library and not a framework?
 - Welche Konzepte stecken hinter React?
-- Was sind die Props?
+* What are these "props"?
 - Was ist der State?
 - JavaScript ES6 Grundlagen
 - JavaScript syntax extension (JSX)
