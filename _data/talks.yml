@@ -31,7 +31,7 @@
     can reside on a mobile device. For example, you can think about a text input field that gets the focus, 
     with the actual data input being done on a mobile phone. This session presents an overview of the concept 
     and shows you some results of the research project in the form of demos based on Swift, JavaFX, and Polymer.
-  lectures: ['Oracle CodeOne 2018']
+  lectures: ['Oracle CodeOne 2018', 'Jocker Conf 2018', 'Voxxed Days Banff 2018']
   featuredImage: multi-device
   slides-link: https://www.slideshare.net/HendrikEbbers/multidevice-controls-a-different-approach-to-ux
 
