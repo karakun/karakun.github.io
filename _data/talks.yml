@@ -11,7 +11,7 @@ Web Apps can work offline (Service Worker API) and be added like a native app to
 
 This talk shows how to create a PWA. The focus is on the Service Worker API, 
 which plays a central role for Progressive Web Apps. It will also show how the Web 
-App manifest and which tools help to realize a PWA.
+App manifest and which help to realize a PWA.
     Aussehen (HTML, CSS), Suchmaschinenoptimierung (SEO) und Funktionalität (Push API, Notification API, 
     
   lectures: ['W-JAX 2018']
