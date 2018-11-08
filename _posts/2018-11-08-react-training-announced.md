@@ -36,4 +36,4 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 * Client-Server communication
 * Router
 * React components testing
-- PropTypes, Flow, TypeScript
+* PropTypes, Flow, TypeScript
