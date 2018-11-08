@@ -35,5 +35,5 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 * State-Management (Context API, Redux, MobX)
 * Client-Server communication
 * Router
-- Testen von React Komponenten
+* React components testing
 - PropTypes, Flow, TypeScript
