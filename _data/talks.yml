@@ -1,5 +1,21 @@
 # Data file that describes talks
 
+- name: 'Progressive Web Apps mit der Service Worker API'
+  author: 'simon'
+  summary: >
+    Progressive Web Apps (PWAs) schließen die Lücke zwischen Webseiten und nativen Applikationen. 
+    Sie kombinieren die hohe Erreichbarkeit von Webseiten und die offenen Standards des Web in Bezug auf 
+    Aussehen (HTML, CSS), Suchmaschinenoptimierung (SEO) und Funktionalität (Push API, Notification API, 
+    Web Storage API, HTTPS etc.) mit einigen Eigenschaften von nativen Applikationen. So können Progressive 
+    Web Apps offline verwendet (Service Worker API) und über den Home Screen aufrufen werden (Web App Manifest).
+    
+    Dieser Talk zeigt, wie man eine PWA erstellt. Schwerpunkt hierbei ist die Service Worker API, 
+    die eine zentrale Rolle für Progressive Web Apps einnimmt. Des Weiteren wird gezeigt, wie das Web 
+    App Manifest aussieht und welche Tools dabei helfen, eine PWA zu realisieren.
+  lectures: ['W-JAX 2018']
+  github-link: 'https://giftkugel.github.io/talks/pwa.html'
+  featuredImage: pwa
+
 - name: 'Java APIs - The missing manual'
   author: 'hendrik'
   summary: >
