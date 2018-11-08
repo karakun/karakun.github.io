@@ -23,7 +23,7 @@ Web development is gaining more and more importance in software development. In 
 Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernte Wissen wenden die Teilnehmer gleich in konkreten Beispielen aus dem Entwickler-Alltag an. Die neuen Skills können so direkt auf die eigene Entwicklungsarbeit im Projekt übertragen werden.
 
 ## Outline with the most important Topics
-- Wieso ist es eine Bibliothek und kein Framework?
+* Why is React a library and not a framework?
 - Welche Konzepte stecken hinter React?
 - Was sind die Props?
 - Was ist der State?
