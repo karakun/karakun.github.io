@@ -14,7 +14,6 @@ which plays a central role for Progressive Web Apps. It will also show how the W
 App manifest and which tools help to realize a PWA.
     Aussehen (HTML, CSS), Suchmaschinenoptimierung (SEO) und Funktionalität (Push API, Notification API, 
     
-    Dieser Talk zeigt, wie man eine PWA erstellt. Schwerpunkt hierbei ist die Service Worker API, 
     die eine zentrale Rolle für Progressive Web Apps einnimmt. Des Weiteren wird gezeigt, wie das Web 
     App Manifest aussieht und welche Tools dabei helfen, eine PWA zu realisieren.
   lectures: ['W-JAX 2018']
