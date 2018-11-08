@@ -15,7 +15,6 @@ App manifest and which tools help to realize a PWA.
     Aussehen (HTML, CSS), Suchmaschinenoptimierung (SEO) und Funktionalität (Push API, Notification API, 
     
     die eine zentrale Rolle für Progressive Web Apps einnimmt. Des Weiteren wird gezeigt, wie das Web 
-    App Manifest aussieht und welche Tools dabei helfen, eine PWA zu realisieren.
   lectures: ['W-JAX 2018']
   github-link: 'https://giftkugel.github.io/talks/pwa.html'
   featuredImage: pwa
