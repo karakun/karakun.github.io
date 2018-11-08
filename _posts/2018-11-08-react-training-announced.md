@@ -32,7 +32,7 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 * Components Life cycle
 * Build-Process
 * The React Renderer (ReactDOM, ReactDOM Server, ReactVR, ...)
-- State-Management (Context API, Redux, MobX)
+* State-Management (Context API, Redux, MobX)
 - Datenabrufen vom Server
 - Router
 - Testen von React Komponenten
