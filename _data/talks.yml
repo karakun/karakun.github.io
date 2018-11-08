@@ -15,6 +15,27 @@ at the beginning which APIs will be presented in detail.
   lectures: ['W-JAX 2018']
   github-link: 'https://giftkugel.github.io/talks/web-api.html'
   featuredImage: web-apis-talk
+  
+- name: 'Java APIs - The missing manual'
+  author: 'hendrik'
+  summary: >
+    This isn’t a talk about microservices, NoSQL, container solutions or hip new frameworks. 
+    This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8.
+    All those features are very helpful to create maintainable and future-proof applications, regardless
+    of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of
+    some important standard concepts and APIs of Java like annotations, null values and concurrency.
+    Based on an overview of this topics and some samples the talk will answer questions like: 
+
+    - How can I create my own annotations? 
+    
+    - How can I create a plugin structure without using frameworks like OSGI? 
+    
+    - What’s the best way to handle NullPointerExceptions? 
+    
+    - How can I write concurrent code that is still maintainable? 
+  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018']
+  slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
+  featuredImage: java-apis
 
 - name: 'Multidevice Controls: A Different Approach to UX'
   author: 'gerrit'
@@ -26,7 +47,7 @@ at the beginning which APIs will be presented in detail.
     can reside on a mobile device. For example, you can think about a text input field that gets the focus, 
     with the actual data input being done on a mobile phone. This session presents an overview of the concept 
     and shows you some results of the research project in the form of demos based on Swift, JavaFX, and Polymer.
-  lectures: ['Oracle CodeOne 2018']
+  lectures: ['Oracle CodeOne 2018', 'Jocker Conf 2018', 'Voxxed Days Banff 2018']
   featuredImage: multi-device
   slides-link: https://www.slideshare.net/HendrikEbbers/multidevice-controls-a-different-approach-to-ux
 
@@ -86,24 +107,4 @@ at the beginning which APIs will be presented in detail.
   lectures: ['Java Summit Bucharest 2018']
   youtube-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
   featuredImage: mittie-talk
-
-- name: 'Java APIs - The missing manual'
-  author: 'hendrik'
-  summary: >
-    This isn’t a talk about microservices, NO-SQL, Container solutions or hip new frameworks. 
-    This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8.
-    All this features are very helpful to create maintainable and future-proof applications, regardless
-    of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of
-    some important standard concepts and APIs of Java like annotations, null values and concurrency.
-    Based on an overview of this topics and some samples the talk will answer questions like: 
-
-    - How can I create my own annotations? 
-    
-    - How can I create a plugin structure without using frameworks like OSGI? 
-    
-    - What’s the best way to handle NullPointerExceptions? 
-    
-    - How can I write concurrent code that is still maintainable? 
-  lectures: ['Dev Talks Cluj 2018']
-  featuredImage: java-apis
 
