@@ -4,7 +4,7 @@
   summary: >
     This isn’t a talk about microservices, NO-SQL, Container solutions or hip new frameworks. 
     This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8.
-    All this features are very helpful to create maintainable and future-proof applications, regardless
+    All those features are very helpful to create maintainable and future-proof applications, regardless
     of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of
     some important standard concepts and APIs of Java like annotations, null values and concurrency.
     Based on an overview of this topics and some samples the talk will answer questions like: 
