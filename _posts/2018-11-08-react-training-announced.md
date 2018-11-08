@@ -31,7 +31,7 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 * JavaScript syntax extension (JSX)
 * Components Life cycle
 * Build-Process
-- Der React Renderer (ReactDOM, ReactDOM Server, ReactVR, ...)
+* The React Renderer (ReactDOM, ReactDOM Server, ReactVR, ...)
 - State-Management (Context API, Redux, MobX)
 - Datenabrufen vom Server
 - Router
