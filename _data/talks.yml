@@ -3,7 +3,6 @@
 - name: 'Web-APIs: Das ultimative Handbuch'
   author: 'simon'
   summary: >
-    Als Webentwickler verwendet man jeden Tag verschiedene Web-APIs. Häufig handelt es sich um die
     allgemein bekannten APIs, wie das Document Object Model (DOM), das DOM Event API, das Fetch API
     oder die Geolocation API. Es entsteht eine Art Komfortzone, die man selten verlässt. Dabei stellt
     das Web noch viel mehr APIs zur Verfügung, die wenig oder gar nicht bekannt sind. Kennen Sie zum
