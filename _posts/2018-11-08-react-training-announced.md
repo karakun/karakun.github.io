@@ -30,7 +30,7 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 - JavaScript ES6 Grundlagen
 * JavaScript syntax extension (JSX)
 * Components Life cycle
-- Build-Prozess
+* Build-Process
 - Der React Renderer (ReactDOM, ReactDOM Server, ReactVR, ...)
 - State-Management (Context API, Redux, MobX)
 - Datenabrufen vom Server
