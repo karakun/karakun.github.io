@@ -9,7 +9,7 @@ header:
   image: post
 ---
 
-2019 beginnen wir eine Reihe an Trainings anzubieten.
+Beginning next year we will offer trainings to different topics in different locations. 
 Hier werden wir Dortmund, München & Basel als Orte haben
 Erste Training (in München) bereits buchbar: https://eppleton.de/kurse/react-training-mit-simon-skozczylas_31.html
 
