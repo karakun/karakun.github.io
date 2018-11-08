@@ -3,7 +3,6 @@
 - name: 'Web-APIs: Das ultimative Handbuch'
   author: 'simon'
   summary: >
-    der Webentwicklern helfen soll, ihre Komfortzone zu verlassen. Da der Vortrag sehr viele APIs
     umfasst, kann das Publikum am Anfang auswählen, welche APIs im Detail vorgestellt werden.
   lectures: ['W-JAX 2018']
   github-link: 'https://giftkugel.github.io/talks/web-api.html'
