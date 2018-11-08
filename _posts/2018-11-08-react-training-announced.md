@@ -11,7 +11,8 @@ header:
 
 Beginning next year we will offer trainings to different topics in different locations. 
 You'll get trained by us in Basel (CH), Munich (D) and Dortmund (D).
-Erste Training (in München) bereits buchbar: https://eppleton.de/kurse/react-training-mit-simon-skozczylas_31.html
+We're happy to announce that our first training is already able for booking: 
+[React Training](https://eppleton.de/kurse/react-training-mit-simon-skozczylas_31.html) with [Simon]({{ "/people/simon.html" | absolute_url }}) in Munich.
 
 ![React training]({{ "/assets/images/illustrations/karakun_react.png" | absolute_url }})
 
