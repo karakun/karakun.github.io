@@ -6,6 +6,6 @@
   github: 'timo0'
   avatar: 'timo'
   header:
-	  image: timo
-	  text: Timo Brandstätter
+    image: timo
+    text: Timo Brandstätter
 ---
