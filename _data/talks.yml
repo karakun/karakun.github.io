@@ -6,7 +6,7 @@
 Progressive Web Apps (PWAs) closes the gap between websites and native applications. 
 They combine the high accessibility of web pages with the open standards of the web in terms of 
 Look and feel (HTML, CSS), search engine optimization (SEO) and functionality (Push API, Notification API), 
-Web Storage API, HTTPS etc.) with some properties of native applications. So Progressive 
+Web Storage API, HTTPS etc.) with properties of native applications. So Progressive 
 Web Apps offline (Service Worker API) and from the Home Screen (Web App Manifest).
 
 This talk shows how to create a PWA. The focus is on the Service Worker API, 
