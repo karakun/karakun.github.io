@@ -3,20 +3,36 @@
 - name: 'Progressive Web Apps mit der Service Worker API'
   author: 'simon'
   summary: >
-Progressive Web Apps (PWAs) closes the gap between websites and native applications. 
-They combine the high accessibility of web pages with the open standards of the web in terms of 
-Look and feel (HTML, CSS), search engine optimization (SEO) and functionality (Push API, Notification API), 
-Web Storage API, HTTPS etc.) with properties of native applications. So Progressive 
-Web Apps can work offline (Service Worker API) and be added like a native app to the Home Screen of your device (Web App Manifest).
+    Progressive Web Apps (PWAs) closes the gap between websites and native applications. 
+    They combine the high accessibility of web pages with the open standards of the web in terms of 
+    Look and feel (HTML, CSS), search engine optimization (SEO) and functionality (Push API, Notification API), 
+    Web Storage API, HTTPS etc.) with properties of native applications. So Progressive 
+    Web Apps can work offline (Service Worker API) and be added like a native app to the Home Screen of your device (Web App Manifest).
 
-This talk shows how to create a PWA. The focus is on the Service Worker API, 
-which plays a central role for Progressive Web Apps. It will also show how the Web 
-App manifest and which help to realize a PWA.
-    Aussehen (HTML, CSS), Suchmaschinenoptimierung (SEO) und Funktionalität (Push API, Notification API, 
+    This talk shows how to create a PWA. The focus is on the Service Worker API, 
+    which plays a central role for Progressive Web Apps. It will also show how the Web 
+    App manifest and which help to realize a PWA.
+        Aussehen (HTML, CSS), Suchmaschinenoptimierung (SEO) und Funktionalität (Push API, Notification API, 
     
   lectures: ['W-JAX 2018']
   github-link: 'https://giftkugel.github.io/talks/pwa.html'
   featuredImage: pwa
+
+- name: 'Web-APIs: Das ultimative Handbuch'
+  author: 'simon'
+  summary: >
+    Web developers use different Web APIs every day. Often this APIs are well known ones, 
+    like the Document Object Model (DOM), the DOM Event API, the Fetch API or the 
+    Geolocation API. A kind of comfort zone is created, which one rarely leaves. 
+    The web provides many more APIs, which are rarely or not at all known. 
+    Do you already know for example the Web Speech API, or the Web Bluetooth 
+    API, the Server Timing API, the Battery Status API or the Credential Management 
+    API? These and other APIs are part of the talk to help web developers leave their 
+    comfort zone. Since the presentation includes many APIs, the attendees can choose 
+    at the beginning which APIs will be presented in detail.
+  lectures: ['W-JAX 2018']
+  github-link: 'https://giftkugel.github.io/talks/web-api.html'
+  featuredImage: web-apis-talk
 
 - name: 'Java APIs - The missing manual'
   author: 'hendrik'
@@ -49,7 +65,7 @@ App manifest and which help to realize a PWA.
     can reside on a mobile device. For example, you can think about a text input field that gets the focus, 
     with the actual data input being done on a mobile phone. This session presents an overview of the concept 
     and shows you some results of the research project in the form of demos based on Swift, JavaFX, and Polymer.
-  lectures: ['Oracle CodeOne 2018']
+  lectures: ['Oracle CodeOne 2018', 'Jocker Conf 2018', 'Voxxed Days Banff 2018']
   featuredImage: multi-device
   slides-link: https://www.slideshare.net/HendrikEbbers/multidevice-controls-a-different-approach-to-ux
 
