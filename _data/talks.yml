@@ -16,7 +16,7 @@
     - What’s the best way to handle NullPointerExceptions? 
     
     - How can I write concurrent code that is still maintainable? 
-  lectures: ['Dev Talks Cluj 2018', 'w-jax 2018']
+  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
   featuredImage: java-apis
 
