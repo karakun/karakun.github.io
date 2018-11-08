@@ -18,7 +18,7 @@ We're happy to announce that our first training is already able for booking:
 
 
 ## Overview of the React training
-Die Web-Entwicklung gewinnt in der Software-Entwicklung immer mehr an Bedeutung. Um auch komplexere Projekte erfolgreich umsetzen zu können kommt in vielen Projekten die React Bibliothek zum Einsatz. React verspricht performante Anwendungen und gleichzeitig einen einfachen, klar strukturierten Aufbau. In diesem Training lernen Sie die Grundprinzipien von React.
+Web development is gaining more and more importance in software development. In order to successfully implement more complex projects, the React library is used in many projects. React promises high-performance applications and at the same time a simple, clearly defined structure. In this training you will learn the basic principles of React.
 
 Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernte Wissen wenden die Teilnehmer gleich in konkreten Beispielen aus dem Entwickler-Alltag an. Die neuen Skills können so direkt auf die eigene Entwicklungsarbeit im Projekt übertragen werden.
 
