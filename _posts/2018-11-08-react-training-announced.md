@@ -24,7 +24,7 @@ Practical exercises support the theory taught in the course. The participants ap
 
 ## Outline with the most important Topics
 * Why is React a library and not a framework?
-- Welche Konzepte stecken hinter React?
+* What are the concepts behind React?
 * What are these "props"?
 * What are these "state"?
 - JavaScript ES6 Grundlagen
