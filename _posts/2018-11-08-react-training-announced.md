@@ -3,10 +3,10 @@ layout: post
 title:  'Karakun React training in 2019'
 author: timo
 featuredImage: training-1
-excerpt: 'Beginning next year we will offer trainings to different topics in different locations. We're happy to announce that our first training is already able for booking. Our JavaScript expert Simon Skoczylas will host a training about React in Munich. Hurry up and book your seat soon!'
+excerpt: 'Beginning next year we will offer trainings to different topics in different locations. We are happy to announce that our first training is already able for booking. Our JavaScript expert Simon Skoczylas will host a training about React in Munich. Hurry up and book your seat soon!'
 categories: [JavaScript, React]
 header:
-  image: post
+  image: training
 ---
 
 Beginning next year we will offer trainings to different topics in different locations. 
