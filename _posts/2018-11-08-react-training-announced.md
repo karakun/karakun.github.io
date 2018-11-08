@@ -33,7 +33,7 @@ Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernt
 * Build-Process
 * The React Renderer (ReactDOM, ReactDOM Server, ReactVR, ...)
 * State-Management (Context API, Redux, MobX)
-- Datenabrufen vom Server
+* Client-Server communication
 - Router
 - Testen von React Komponenten
 - PropTypes, Flow, TypeScript
