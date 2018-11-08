@@ -27,7 +27,7 @@ Practical exercises support the theory taught in the course. The participants ap
 * What are the concepts behind React?
 * What are these "props"?
 * What are these "state"?
-- JavaScript ES6 Grundlagen
+* JavaScript ES6 basics
 * JavaScript syntax extension (JSX)
 * Components Life cycle
 * Build-Process
