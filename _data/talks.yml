@@ -3,7 +3,7 @@
 - name: 'Web-APIs: Das ultimative Handbuch'
   author: 'simon'
   summary: >
-Web developers use different Web APIs every day. Often they are the well known APIs, 
+Web developers use different Web APIs every day. Often this APIs are well known ones, 
 like the Document Object Model (DOM), the DOM Event API, the Fetch API or the 
 Geolocation API. A kind of comfort zone is created, which one rarely leaves. 
 The web provides many more APIs, which are rarely or not at all known. 
