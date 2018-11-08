@@ -14,7 +14,6 @@ which plays a central role for Progressive Web Apps. It will also show how the W
 App manifest and which tools help to realize a PWA.
     Aussehen (HTML, CSS), Suchmaschinenoptimierung (SEO) und Funktionalität (Push API, Notification API, 
     
-    die eine zentrale Rolle für Progressive Web Apps einnimmt. Des Weiteren wird gezeigt, wie das Web 
   lectures: ['W-JAX 2018']
   github-link: 'https://giftkugel.github.io/talks/pwa.html'
   featuredImage: pwa
