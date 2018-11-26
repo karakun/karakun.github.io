@@ -56,7 +56,7 @@ several years. On the FAQ page of Corretto Amazon describes the model like this:
 > Corretto 11, corresponding to OpenJDK 11, will be available during the first half of 2019. Amazon will support Corretto 11 with quarterly updates until at least August 2024
 
 Based on this you can definitelly say that Corretto will be free. To be true Amazon does not provide any commercial support for Corretto.
-If this is positive or negative depends on your opionon about commercial support. In general, it is really positive to have a distributor that offers free LTS support for Java.
+If this is positive or negative depends on your opinion about commercial support. In general, it is really positive to have a distributor that offers free LTS support for Java.
 
 ## Is Corretto production ready?
 
@@ -93,6 +93,6 @@ updates.
 
 Since Corretto is completely free I would really love to see that Amazon contributes some of the work (like bugfixes or security fixes) back to [AdoptOpenJDK](https://adoptopenjdk.net). With this
 community we have a 100% free and open initiative to provide future open Java versions. If big vendors that work on OpenJDK and provide LTS support for Java would
-contribute their changes to AdoptOpenJDK instead or next to a closed branch, the future of Java as an open source project would even be brigther. But this discussion
+contribute their changes to AdoptOpenJDK instead or next to a closed branch, the future of Java as an open source project would even be brigther. But that discussion
 will contain more than enough content for a future post ;)
 
