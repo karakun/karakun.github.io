@@ -79,7 +79,6 @@ can see some positive and some negative aspects about Corretto:
 
 * Corretto contains JavaFX and can therefore be used to easily start a JavaFX based application. Several other vendors do not bundle JavaFX in the JDK artifacts
 * Next to the JavaFX API the Amazon JDK contains the javafxpackager tool. This can be found in the bin folder and allows users to create native applications based on a Java application
-* Corretto is missing JShell at the moment. Actually I do not know why the JShell executable is not part of the bin folder. Maybe this will be fixed with the first major release
 * As all other JDK vendors (besides Oracle) no WebStart functionallity can be found in Corretto. An explanation of the WebStart absense in OpenJDK distributions can be found here
 
 Based on all this, one can say that Amazon is on a really good way to offer a production ready OpenJDK distribution.
