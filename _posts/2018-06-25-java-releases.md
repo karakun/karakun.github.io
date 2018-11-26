@@ -19,6 +19,8 @@ This article will give an overview of the new Java release train and the commerc
 this several solutions and workflows for supporting and managing Java versions for Java based applications will
 be discussed.
 
+bla blubb
+
 ## The Java release train
 Last year Oracle announced a new release train for Java and this new schedule really changes how companies
 will work with Java in the (near) future. Before we have a deep dive into the new release model we will take a look back
