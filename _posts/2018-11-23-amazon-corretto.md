@@ -10,19 +10,25 @@ header:
   image: post
 ---
 
-Based on the changes that Oracle announced a year ago about the new release train and licences of Java and the Oracle Java distributions it was just a question of time 
+Based on the changes that Oracle announced a year ago about [the new release train and licences of Java](/java/2018/06/25/java-releases.html) and the Oracle Java distributions it was just a question of time 
 when additional big players start to distribute custom OpenJDK builds. Some companies like RedHat or IBM did this already for some years to provide custom Java support 
 for existing enterprise customers. The first big player that offered a more general OpenJDK build with custom support was Azul. With the new licence model of Oracle that 
 only provides free updates for java version (even LTS versions) for a 6 month periode, the door was open for new vendors. Especially cloud providers needed to find a 
 solution for the new situation. If you have Java installed on millions of containers that are running in your cloud you do not want to buy commercial support at Oracle 
 for all of them. Next to this you do not want to use outdated Java versions in production. Especially in a public cloud infrastructure you need security fixes as fast 
-as possible. Based on this Microsoft already announced a partnership with Azul a month ago. Amazon decided to not cooperate with a given JDK vendor and provides its 
-own distribution as they have announced at Devoxx 2018. Let's have a deeper look at it.
+as possible. Based on this Microsoft already [announced a partnership with Azul](https://azure.microsoft.com/en-us/blog/microsoft-and-azul-systems-bring-free-java-lts-support-to-azure/) 
+a month ago. Amazon decided to not cooperate with a given JDK vendor and provides its own distribution as they have announced at Devoxx 2018. 
+
+The Java distribution of Amazon is named Corretto and [on the product page](https://aws.amazon.com/de/corretto/) Amazon describes Corretto as a 
+**"No-cost, multiplatform, production-ready distribution of OpenJDK"**. Let's have a deeper look at it.
+
+![Free LTS]({{ "/assets/posts/2018-11-23-amazon-corretto/duke_ice.png" | absolute_url }})
+
 
 ## About multiplatform support
 
-The Java distribution of Amazon is named Corretto and on the product page Amazon describes Corretto as a "No-cost, multiplatform, production-ready distribution of OpenJDK". 
-Currently a Java 8 based preview can be downloaded for Linux, Mac and Windows. Here Amazon provides only 64 bit version. Against some other distributions the download 
+Currently a [Java 8 based preview can be downloaded](https://docs.aws.amazon.com/de_de/corretto/latest/corretto-8-ug/downloads-list.html) for Linux, Mac and Windows. 
+Here Amazon provides only 64 bit version. Against some other distributions the download 
 contains an installer (at least for Windows and Mac) that will install the Java distribution on your machine. This is a big benefit against some other vendors that 
 only offer a packed (like tar or zip) folder of the JDK. Next to this Amazon already offers ready to use docker support. If you want to run a java application in a 
 container by using the Corretto JDK you only need to build the open source image:
@@ -43,7 +49,7 @@ OpenJDK 64-Bit Server VM (build 25.192-b12, mixed mode)
 
 ## Is Corretto really a no-cost JDK?
 
-For now you can easily download a Java 11 version everywhere. You can choose between Oracle JDK, Oracle OpenJDK builds, AdoptOpenJDK builds and many more. 
+For now you can easily download a Java 11 version everywhere. You can choose between Oracle JDK, Oracle OpenJDK builds, AdoptOpenJDK builds and [many more](/jdks/). 
 While all without the OpenJDK build can easily used in production it will become much harder in some month when Java 12 hits the market and the 6 month periode 
 of Java 11 ends. Even if Java 11 is a so called LTS release (Long Term Support) companies like Oracle or Azul will only offer updates on Java 11 if you pay 
 commercial support to them. Here Amazon plans to offer a free support and will provide updates for Java 11 with patches (security fixes and bugfixes) for 
@@ -92,7 +98,7 @@ knowledge of the company I do not expect any issue here. On the other we will ne
 Corretto is 100% free no one will have any contract about future support and therefore it will just be in Amazons hands to support the Java commmunity with future
 updates.
 
-Since Corretto is completely free I would really love to see that Amazon contributes some of the work (like bugfixes or security fixes) back to AdoptOpenJDK. With this
+Since Corretto is completely free I would really love to see that Amazon contributes some of the work (like bugfixes or security fixes) back to [AdoptOpenJDK](https://adoptopenjdk.net). With this
 community we have a 100% free and open initiative to provide future open Java versions. If big vendors that work on OpenJDK and provide LTS support for Java would
 contribute their changes to AdoptOpenJDK insteads or next to a closed branch the future of Java as an open source project would even be brigther. But this discussion
 will contain more than enough content for a future post ;)
