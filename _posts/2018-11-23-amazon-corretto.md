@@ -91,7 +91,8 @@ knowledge of Amazon, I do not expect any issue here. On the other hand we will n
 Corretto is 100% free no one will have any contract about future support and therefore it will just be in Amazons hands to support the Java commmunity with future
 updates.
 
-Since Corretto is completely free I would really love to see that Amazon contributes some of the work (like bugfixes or security fixes) back to [AdoptOpenJDK](https://adoptopenjdk.net). With this
+Since Corretto is completely free I would really love to see that Amazon contributes some of the work (like bugfixes or security fixes) back to OpenJDK. This would help all Java users and 
+especially community based organisations like [AdoptOpenJDK](https://adoptopenjdk.net). With this
 community we have a 100% free and open initiative to provide future open Java versions. If big vendors that work on OpenJDK and provide LTS support for Java would
 contribute their changes to AdoptOpenJDK instead or next to a closed branch, the future of Java as an open source project would even be brigther. But that discussion
 will contain more than enough content for a future post ;)
