@@ -15,7 +15,7 @@
     Fragen beantwortet wie zum Beispiel „Ist Java kostenpflichtig?“,
     „Was ist überhaupt dieses OpenJDK?“, „Muss ich jetzt alle 6 Monate Java updaten?“ 
     oder „Kann ich Java 11 als LTS Version die nächsten Jahre nutzen?“
-  featuredImage: TODO
+  featuredImage: 8-11
 
 - name: 'Performante Webapplikationen mit React'
   trainers: ['simon']
@@ -30,7 +30,7 @@
     wenden die Teilnehmer gleich in konkreten Beispielen aus dem Entwickler-alltag an. 
     Die neuen Skills können so direkt auf die eigene Entwicklungsarbeit im Projekt 
     übertragen werden.
-  featuredImage: TODO
+  featuredImage: react
 
 - name: 'Java - the missing manual'
   trainers: ['hendrik']
@@ -47,21 +47,21 @@
 
     In diesem Kurs werden diese und weitere spannende Fragen beantwortet. Die Teilnehmer lernen am 
     praktischen Beispiel die Standard-APIs sinnvoll einzusetzen, um besseren Code zu schreiben. 
-  featuredImage: TODO   
+  featuredImage: apis   
 
 - name: 'JavaFX for beginners'
   trainers: ['hendrik', 'gerrit']
   summary: >
     An praktischen Beispielen lernen die Teilnehmer, wie sie mittels JavaFX sowohl grafisch 
     anspruchsvolle Benutzeroberflächen als auch nachhaltige Business- Anwendungen entwickeln.
-  featuredImage: TODO   
+  featuredImage: fx   
 
 - name: 'JavaFX für anspruchsvolle Benutzeroberflächen'
   trainers: ['hendrik', 'gerrit']
   summary: >
     In diesem Kurs lernen die Teilnehmer, wie sie mit den unterschiedlichen JavaFX APIs moderne 
     Benutzeroberflächen mit maximaler User Experience erstellen.
-  featuredImage: TODO   
+  featuredImage: fx   
 
 - name: 'JavaFX enterprise'
   trainers: ['hendrik']
@@ -71,4 +71,4 @@
     diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
     enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
     ex ea commodo consequat.
-  featuredImage: TODO   
+  featuredImage: fx   

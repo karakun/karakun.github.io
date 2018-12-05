@@ -499,3 +499,23 @@ a {
         height: 100%;
     }
 }
+
+.training-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+
+    padding-top: 1em;
+    padding-bottom: 2em;
+    padding-left: 1em;
+}
+
+.training-logo {
+    display: inline-block;
+    margin-right: 0.5em;
+
+    min-width: 12em;
+    max-width: 12em;
+    width: 100%;
+} 
