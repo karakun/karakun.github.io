@@ -294,6 +294,13 @@ article.post {
             padding: 2em 5em 2.5em 5em;
             margin: 0 auto;
             display: block;
+            width: 100%;
+        }
+    }
+    .embed-container {
+        > iframe {
+            padding-left: 5em;
+            padding-right: 5em;
         }
     }
     div.post-author {
@@ -368,6 +375,17 @@ article {
         }
         .post-meta {
             margin-bottom: 0.8em;
+        }
+    }
+    &.content {
+        h3 {
+            height: 2em;
+            display: flex;
+            align-items: flex-end;
+            margin-bottom: 0.25em;
+        }
+        p, p:not(:last-child) {
+            margin-bottom: 0;
         }
     }
 }
@@ -455,14 +473,6 @@ a {
     }
 }
 
-.less-bottom-margin {
-    margin-bottom: 8px !important;
-}
-
-.no-bottom-margin {
-    margin-bottom: 0px !important;
-}
-
 .metainfo-icon-div {
     width: 14px;
     max-width: 14px;
@@ -473,4 +483,19 @@ a {
 
 .metainfo-icon {
     color: rgb(100, 100, 100);   
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    iframe, object, embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 }

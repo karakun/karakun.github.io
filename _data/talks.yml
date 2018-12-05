@@ -1,5 +1,132 @@
 # Data file that describes talks
 
+- name: 'Java 11 - OMG!!!!'
+  author: 'hendrik'
+  summary: >
+    With Java 6, 7 or 8, the world for a Java developer was quite easy. The Java platform
+    had a long running release cycle and versions normally overlapped for more than 1 year.
+    Normally, you as a developer had more than enough time to prepair your applications
+    for the next release. Once this was done, you simply downloaded the JDK from Oracle and
+    installed it with the automatic installer. The biggest problem in that world was
+    the Ask-Toolbar ;)
+
+    Starting with Java 9 Oracle has announced a new release train and with Java 11 the licence
+    model of the Oracle JDK has changed. Because of this, new vendors appear on the market 
+    offering commercial support for Java. But isn't Java 11 a LTS version that I can easily use 
+    for years and why should I use commercial support in this case?
+
+    The keynote gives an overview of the history of Java and the OpenJDK. We will have a closer
+    look the new at the release train to kill all the rumors about Java 11, commercial support and
+    the future of Java.
+  lectures: ['JVM-Con 2018']
+  slides-link: https://www.slideshare.net/HendrikEbbers/java-11-omg
+  featuredImage: java11-omg
+
+- name: 'Progressive Web Apps and the Service Worker API'
+  author: 'simon'
+  summary: >
+    Progressive Web Apps (PWAs) closes the gap between websites and native applications. 
+    They combine the high accessibility of web pages with the open standards of the web in terms of 
+    Look and feel (HTML, CSS), search engine optimization (SEO) and functionality (Push API, Notification API), 
+    Web Storage API, HTTPS etc.) with properties of native applications. So Progressive 
+    Web Apps can work offline (Service Worker API) and be added like a native app to the Home Screen of your device (Web App Manifest).
+
+    This talk shows how to create a PWA. The focus is on the Service Worker API, 
+    which plays a central role for Progressive Web Apps. It will also show how the Web 
+    App manifest and which help to realize a PWA.
+  lectures: ['W-JAX 2018']
+  github-link: 'https://giftkugel.github.io/talks/pwa.html'
+  featuredImage: pwa
+
+- name: 'Web APIs - The missing manual'
+  author: 'simon'
+  summary: >
+    Web developers use different Web APIs every day. Often this APIs are well known ones, 
+    like the Document Object Model (DOM), the DOM Event API, the Fetch API or the 
+    Geolocation API. A kind of comfort zone is created, which one rarely leaves. 
+    The web provides many more APIs, which are rarely or not at all known. 
+    Do you already know for example the Web Speech API, or the Web Bluetooth 
+    API, the Server Timing API, the Battery Status API or the Credential Management 
+    API? These and other APIs are part of the talk to help web developers leave their 
+    comfort zone. Since the presentation includes many APIs, the attendees can choose 
+    at the beginning which APIs will be presented in detail.
+  lectures: ['W-JAX 2018']
+  github-link: 'https://giftkugel.github.io/talks/web-api.html'
+  featuredImage: web-apis-talk
+
+- name: 'Java APIs - The missing manual'
+  author: 'hendrik'
+  summary: >
+    This isn’t a talk about microservices, NoSQL, container solutions or hip new frameworks. 
+    This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8.
+    All those features are very helpful to create maintainable and future-proof applications, regardless
+    of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of
+    some important standard concepts and APIs of Java like annotations, null values and concurrency.
+    Based on an overview of this topics and some samples the talk will answer questions like: 
+
+    - How can I create my own annotations? 
+    
+    - How can I create a plugin structure without using frameworks like OSGI? 
+    
+    - What’s the best way to handle NullPointerExceptions? 
+    
+    - How can I write concurrent code that is still maintainable? 
+  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018']
+  slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
+  featuredImage: java-apis
+
+- name: 'Multidevice Controls: A Different Approach to UX'
+  author: 'gerrit'
+  summary: >
+    Everybody knows boring form-based user interfaces. What if you could add mobile devices to improve 
+    the UX of desktop or web applications? A research project at the University of Applied Sciences and 
+    Arts Northwestern Switzerland has tried to address this topic in a totally different way. Usually you 
+    would expect to rework the UI and make it fancier, but here the idea is to enhance controls so they 
+    can reside on a mobile device. For example, you can think about a text input field that gets the focus, 
+    with the actual data input being done on a mobile phone. This session presents an overview of the concept 
+    and shows you some results of the research project in the form of demos based on Swift, JavaFX, and Polymer.
+  lectures: ['Oracle CodeOne 2018', 'Jocker Conf 2018', 'Voxxed Days Banff 2018']
+  featuredImage: multi-device
+  slides-link: https://www.slideshare.net/HendrikEbbers/multidevice-controls-a-different-approach-to-ux
+
+- name: 'The path to CD: End-to-End with Docker and Geb'
+  author: 'markus'
+  summary: >
+    End to end testing is a crucial part of a tool chain to deliver high-quality releases of many software systems.
+    
+    With Geb, we have a very handy wrapper to WebDriver/Selenium at our fingertips that enables us to create actually maintainable E2E test suites even for large web applications.
+    Combining it with Docker and a CI system enables us to be very flexible about the context we use this tests in and allow us to provoke feedback for many interesting aspects we need to know about in our system.
+
+    This talk outlines findings and experiences from projects that utilized the mentioned technologies to succeed in constantly delivering high quality releases not only in slides but also with some live-coding and demos.
+  lectures: ['BaselOne 2018']
+  github-link: 'https://github.com/madmas/E2ETestGebSpockDocker'
+  featuredImage: sleepy-racoon
+
+- name: 'The secret behind JWT'
+  author: 'markus'
+  summary: >
+    In the age of micro services and applications that are build from many distributed components and need to take care for aspects like CSRF and CORS, session cookies are not practicable anymore.
+
+    Tokens promise to be a silverbullet. JWT (JSON Web Token) aims to simplify the usage of authentication tokens in modern application landscapes.
+
+    This talks shows if tokens can fulfill that promise and keep up the web applications taste even when cookies are missing. 
+  lectures: ['BaselOne 2018']
+  github-link: 'https://github.com/madmas/TokenVsCookies'
+  featuredImage: token
+
+- name: 'Java WebStart is dead - What should we do now?'
+  author: 'hendrik'
+  summary: > 
+    Starting with Java 11, WebStart is being removed from Java. 
+    Because even today several applications are built on top of this technology, 
+    it will be mission-critical for many companies to find a replacement for it. 
+    This session presents an overview of the features of WebStart and how they can be replaced. 
+    It includes samples of several open source and commercial tools that provide such features 
+    and might mean new and cool possibilities for WebStart-based applications.
+  lectures: ['Oracle CodeOne 2018']
+  featuredImage: webstart
+  slides-link: https://www.slideshare.net/HendrikEbbers/java-webstart-is-dead-what-should-we-do-now
+
 - name: 'Where the wild projects are'
   author: 'hendrik'
   summary: >
@@ -11,7 +138,7 @@
 
 - name: 'Polyglott Java - a platform for many paradigms'
   author: 'mittie'
-  summary: > 
+  summary: >
     There are many ways to program - and all of them find a home on the JVM. Whether you are a die-hard object-oriented enterprise programmer, a super-cool scripting hipster, or a scientific functional engineer, the Java Platform has all you need.
     In this talk we will go through unconventional combinations of these paradigms that enrich your solution space - scripting user-defined functions for a business application, building ambitious user interfaces, and creating rock-solid transaction systems.
     Java has something for everybody.
@@ -19,13 +146,3 @@
   youtube-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
   featuredImage: mittie-talk
 
-- name: 'Java APIs - The missing manual'
-  author: 'hendrik'
-  summary: > 
-    This isn’t a talk about microservices, NO-SQL, Container solutions or hip new frameworks. This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8. All this features are very helpful to create maintainable and future-proof applications, regardless of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of some important standard concepts and APIs of Java like annotations, null values and concurrency. Based on an overview of this topics and some samples the talk will answer questions like:
-    - How can I create my own annotations?
-    - How can I create a plugin structure without using frameworks like OSGI?
-    - What’s the best way to handle NullPointerExceptions?
-    - How can I write concurrent code that is still maintainable?
-  lectures: ['Dev Talks Cluj 2018']
-  featuredImage: java-apis
