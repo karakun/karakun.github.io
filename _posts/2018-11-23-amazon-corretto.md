@@ -7,6 +7,7 @@ excerpt: 'At the Devoxx conference 2 weeks ago, Amazon announced Corretto as a n
 "No-cost, multiplatform, production-ready distribution of OpenJDK". In this post I will have a deeper look at Corretto and explain why Amazon did this move.'
 categories: [Java, OpenJDK]
 header:
+  text: Amazon <span class="my-karakun">Corretto<span>
   image: post
 ---
 
