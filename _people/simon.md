@@ -8,4 +8,5 @@ github: 'giftkugel'
 header:
   image: simon
   text: Simon Skoczylas
+  x: left
 ---

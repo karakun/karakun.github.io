@@ -10,4 +10,5 @@ awards:
 header:
   image: michael
   text: Michael Heinrichs
+  x: left
 ---

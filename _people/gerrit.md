@@ -13,4 +13,5 @@ awards:
 header:
   image: gerrit
   text: Gerrit Grunwald
+  x: left
 ---

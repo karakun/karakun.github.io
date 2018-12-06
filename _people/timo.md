@@ -9,4 +9,5 @@
   header:
     image: timo
     text: Timo Brandstätter
+  x: left
 ---
