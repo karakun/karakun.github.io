@@ -6,5 +6,6 @@ description: 'Simon Skoczylas is a senior software engineer at Karakun AG, livin
 twitter: 'giftkugel'
 github: 'giftkugel'
 header:
+  image: simon
   text: Simon Skoczylas
 ---
