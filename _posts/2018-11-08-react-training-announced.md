@@ -7,6 +7,7 @@ excerpt: 'Beginning next year we will offer trainings to different topics in dif
 categories: [JavaScript, React]
 header:
   image: training
+  text: React training by Karakun
 ---
 
 Beginning next year we will offer trainings to different topics in different locations. 

@@ -8,6 +8,7 @@ information and hints how you should handle new Java releases in the future and 
 or not.'
 categories: [Java]
 header:
+  text: Do I need to pay for <span class="my-karakun">Java<span> now?
   image: post
 ---
 
