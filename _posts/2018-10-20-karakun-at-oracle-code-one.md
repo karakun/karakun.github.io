@@ -6,6 +6,7 @@ featuredImage: oracle-code-one
 excerpt: 'This year Oracle does the first Code One conference in San Francisco. Code One is the successor of the famous JavaOne conference and will connect developers of different programming languages and backgrounds. Karakun will have several sessions and activities at Code One.'
 categories: [Conferences, Java, CodeOne]
 header:
+  text: Oracle Code One and Karakun
   image: post
 ---
 
