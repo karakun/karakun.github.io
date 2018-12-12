@@ -45,7 +45,7 @@ for several JNLP applications.
 
 ![Managed apps]({{ "/assets/webstart/manage-java.png" | absolute_url }})
 
-Since our open source WebStart solutions comes with a nativer installer / exectable and a bundled Java runtime to
+Since our open source WebStart solutions comes with a nativer installer / executable and a bundled Java runtime to
 execute the WebStart process and it's internal components no Java instance needs to be installed on a client 
 anymore. WebStart will take care for the management and updates of JREs.
 
