@@ -1,74 +1,60 @@
-- name: 'Migration Java applications from 8 to 11'
+- name: 'Migrating from Java 8 to Java 11'
   trainers: ['hendrik']
   summary: >
-    Viele Entwickler nutzen Java 8 als Basis für ihre Anwendungen. Da im Januar 2019 das letzte 
-    öffentliche Release erscheint, wird es Zeit für ein Update auf die aktuelle Java Version. 
-    Von Java 8 bis zu Java 11 hat sich einiges getan und eine Migration ist oft keine leichte Aufgabe. 
-    Vor allem das neue Modulsystem bietet einige Herausforderungen.
-    
-    In diesem Training werden die neuen Sprachfeatures von Java 9–11 vorgestellt und Migrationswege 
-    von auf Java 8 basierten Anwendungen und Bibliotheken besprochen und anhand von Beispielen selbst 
-    ausprobiert. Hierdurch ist jeder Entwickler in der Lage, die technischen Hürden für eine Migration 
-    zu überwinden.
+    Java 8 is very often used when developing applications. Since the last public release will be 
+    published in Jan 2019, the time has come to update to the latest version. Comparing Java 8 and 
+    11, many things have changed and migrating to Java 11 is not an easy task. Especially the new 
+    module systems brings several challenges.
 
-    Ebenfalls wird im Training mit verschiedenen Gerüchten über Java 11 aufgeräumt und 
-    Fragen beantwortet wie zum Beispiel „Ist Java kostenpflichtig?“,
-    „Was ist überhaupt dieses OpenJDK?“, „Muss ich jetzt alle 6 Monate Java updaten?“ 
-    oder „Kann ich Java 11 als LTS Version die nächsten Jahre nutzen?“
+    During this training course, we will introduce the new features of Java 9 - 11 and we will 
+    discuss migration paths for Java 8 based applications and libraries. By testing those paths with 
+    specific examples participants will be enabled to overcome the technical hurdles of a migration.
+
+    During the training, we will also clear diverse rumours about Java 11 and we will answer questions 
+    like „Do I need to pay for Java?“, „What is OpenJDK?“, „Do I have to update Java every 6 months from 
+    now on?“ or „Can I use Java 11 as an LTS version for the next couple of years?“.
   featuredImage: 8-11
 
-- name: 'Performante Webapplikationen mit React'
+- name: 'High performance Web applications with React'
   trainers: ['simon']
   summary: >
-    Die Web-Entwicklung gewinnt in der Software-Entwicklung immer mehr an Bedeutung. 
-    Um auch komplexere Projekte erfolgreich umsetzen zu können kommt in vielen Projekten 
-    die React Bibliothek zum Einsatz. React verspricht performante Anwendungen und 
-    gleichzeitig einen einfachen, klar strukturierten Aufbau. In die- sem Training 
-    lernen Sie die Grundprinzipien von React.
-
-    Praktische Übungen ergänzen dabei die im Kurs vermittelte Theorie. Das gelernte Wissen 
-    wenden die Teilnehmer gleich in konkreten Beispielen aus dem Entwickler-alltag an. 
-    Die neuen Skills können so direkt auf die eigene Entwicklungsarbeit im Projekt 
-    übertragen werden.
+    Web development is becoming more and more important in the area of software development. 
+    The React library is used in many projects to successfully implement even complex requirements. 
+    React promises high-performance applications and at the same time a simple, clearly designed structure. 
+    Following this course, participants will learn the basic principles of React.
+    
+    Practical excercises support the theory taught in this course. The participants will immediately apply 
+    the imparted knowledge to specific examples from their everyday work as developers. Thus, the knowledge 
+    can be directly transferred to their daily work.
   featuredImage: react
 
 - name: 'Java - the missing manual'
   trainers: ['hendrik']
   summary: >
-    Java wird oft als Programmiersprache eingesetzt und verfügt über eine große Vielfalt von Standard-APIs. 
-    Einige der Standard-APIs sind kaum bekannt und werden nicht oft eingesetzt, bieten aber viel Potential, 
-    das eigene API Design und die entstehende Software zu verbessern.
+    Java is a frequently used programming language that offers a wide variety of standard API‘s. 
+    Some of them are hardly known and are not used very often - although they offer a high potential 
+    for improving API design and the software being developed.
 
-    Wann verwendet man das Schlüsselwort „final“, wie verhindert man am besten NullPointerExceptions?
+    • When to use the keyword „final“ and how to prevent NullPointerExceptions?
 
-    Wie macht man die Software flexibler und modularer mit SPI, oder wie behandelt man Fehler innerhalb der Stream-API?
+    • How to make software more flexible and modular with SPI or how to address errors within the Stream-API?
 
-    Was sind Annotations? Wie erstellt, und setzt man diese sinnvoll ein?
+    • What is an annotation? How to create annotiations and where to use them?
 
-    In diesem Kurs werden diese und weitere spannende Fragen beantwortet. Die Teilnehmer lernen am 
-    praktischen Beispiel die Standard-APIs sinnvoll einzusetzen, um besseren Code zu schreiben. 
+    Following this training course, participants learn how to use standard APIs in order to write better code.
   featuredImage: apis   
 
-- name: 'JavaFX for beginners'
+- name: 'JavaFX for business applications'
   trainers: ['hendrik', 'gerrit']
   summary: >
-    An praktischen Beispielen lernen die Teilnehmer, wie sie mittels JavaFX sowohl grafisch 
-    anspruchsvolle Benutzeroberflächen als auch nachhaltige Business- Anwendungen entwickeln.
+    Following this course, participants will learn how to use the capabilities of JavaFX to design graphical 
+    rich user interfaces and also developing long lasting business applications. You will learn the basic 
+    terms and advanced concepts of JavaFX.
   featuredImage: fx   
 
-- name: 'JavaFX für anspruchsvolle Benutzeroberflächen'
+- name: 'JavaFX for sophisticated user interfaces'
   trainers: ['hendrik', 'gerrit']
   summary: >
-    In diesem Kurs lernen die Teilnehmer, wie sie mit den unterschiedlichen JavaFX APIs moderne 
-    Benutzeroberflächen mit maximaler User Experience erstellen.
-  featuredImage: fx   
-
-- name: 'JavaFX enterprise'
-  trainers: ['hendrik']
-  summary: >
-    Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim 
-    placerat facer possim assum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed 
-    diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi 
-    enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip 
-    ex ea commodo consequat.
+    Participants will learn how to use the user interface and usability of the various JavaFX APIs to 
+    create a modern user experience.
   featuredImage: fx   

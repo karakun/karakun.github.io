@@ -9,7 +9,7 @@ layout: article
     <img class="training-logo" src="/assets/images/trainings/{{ training.featuredImage }}.png">
     <div>
         <h3>{{ training.name }}</h3>
-        <p>{{ training.summary }}</p>
+        <p>{{ training.summary | newline_to_br }}</p>
         {% assign author_array = "" | split: "/" %}
         {% for trainerName in training.trainers %}
         {% assign trainer = site.people | where:'name', trainerName | first %}
