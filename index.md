@@ -4,6 +4,6 @@
 
 layout: home
 header:
-  image: home
+  image: karakun-header
   text: Welcome to the Karakun Developer Hub
 ---

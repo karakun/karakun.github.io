@@ -9,6 +9,7 @@ new features of Java 11 and want to know more information about the new roadmap
 of OpenJDK and Oracle you should attend our event online.'
 categories: [Java]
 header:
+  text: The road to <span class="my-karakun">Java 11<span>
   image: post
 ---
 

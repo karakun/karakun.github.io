@@ -1,5 +1,16 @@
 # Data file that describes talks
 
+- name: 'JavaFX - Custom Controls'
+  author: 'gerrit'
+  summary: >
+    Gerrit presents his two open source frameworks TilesFX and Medusa. TilesFX is used 
+    for creating professional and sophisticated dashboards. Medusa delivers a huge set 
+    of custom controls that implement gauges, ideal for monitoring applications. Gerrit 
+    will share many tricks on how to accomplish eye candy effects.
+  lectures: ['JavaFX-Days 2018']
+  slides-link: https://speakerdeck.com/karakun/javafx-custom-controls
+  featuredImage: controls
+
 - name: 'Java 11 - OMG!!!!'
   author: 'hendrik'
   summary: >

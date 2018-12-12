@@ -6,6 +6,7 @@ featuredImage: open-jdk
 excerpt: 'This post is the first of our Java 11 posts that will introduce all needed information about the next Java release. In this post you can find all needed information about the free and commercial versions of Java 11.'
 categories: [Java]
 header:
+  text: The road to <span class="my-karakun">Java 11<span>
   image: post
 ---
 **"Knock knock."**

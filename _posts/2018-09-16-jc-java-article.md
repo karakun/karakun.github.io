@@ -8,6 +8,7 @@ an open article. The authors of the article worked together with mayor Java vend
 about Java releases and licenses'
 categories: [Java]
 header:
+  text: The road to <span class="my-karakun">Java 11<span>
   image: post
 ---
 

@@ -16,4 +16,5 @@ jsrs:
 header:
   image: hendrik
   text: Hendrik Ebbers
+  x: left
 ---

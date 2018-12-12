@@ -500,7 +500,8 @@ a {
     }
 }
 
-.training-wrapper {
+
+.foundations-wrapper .training-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -511,7 +512,8 @@ a {
     padding-left: 1em;
 }
 
-.training-logo {
+.training-logo .foundations-logo {
+
     display: inline-block;
     margin-right: 0.5em;
 
