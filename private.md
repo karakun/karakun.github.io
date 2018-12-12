@@ -14,3 +14,4 @@ This is the private area of the Karakun blog that provides some help to create c
 [Featured Images]({{ site.baseurl }}{% link featured-images.md %})  
 [Styling & Components]({{ site.baseurl }}{% link styling-and-components.md %})  
 [Color scheme]({{ site.baseurl }}{% link color-scheme.md %})  
+[Flyer]({{ site.baseurl }}{% link flyer.md %})  
