@@ -11,7 +11,7 @@ nav:
   bottom: false
 ---
 ## Our trainings and workshops
-Being prepaired for the future is always a mission critical task for modern it companies. New technologies and
+Being prepaired for the future is always a mission critical task for modern IT companies. New technologies and
 framework will be presented each year at tec conferences and the internet. By becoming more and more agile and
 using cool tools and services the open source community is growing like never before and provides iterations of
 new patterns, workflow and general rethinking how problems can be solved in a way that is much faster than even
