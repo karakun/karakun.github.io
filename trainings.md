@@ -16,7 +16,7 @@ frameworks are being presented every year at tech conferences and the internet. 
 using cool tools and services the open source community is growing like never before and provides iterations of
 new patterns, workflow and general rethinking about how problems can be solved in a way that is much faster than even
 5 years ago. To be prepaired for the future and learn what technologies should be used to create maintainable
-and stable applications our experts at Karakun created a rich set of training curses and workshops.
+and stable applications our experts at Karakun created a rich set of training courses and workshops.
 
 ## Workshops just made for you
 Will all of our curses will be held several times a year at 3 different locations in Europe we love to offer them
