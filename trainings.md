@@ -12,7 +12,7 @@ nav:
 ---
 ## Our trainings and workshops
 Being prepaired for the future is always a mission critical task for modern IT companies. New technologies and
-framework will be presented each year at tec conferences and the internet. By becoming more and more agile and
+frameworks are being presented every year at tech conferences and the internet. By becoming more and more agile and
 using cool tools and services the open source community is growing like never before and provides iterations of
 new patterns, workflow and general rethinking how problems can be solved in a way that is much faster than even
 5 years ago. To be prepaired for the future and learn what technologies should be used to create maintainable
