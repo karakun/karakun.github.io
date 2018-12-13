@@ -20,7 +20,7 @@ and stable applications our experts at Karakun created a rich set of training co
 
 ## Workshops just made for you
 While all of our courses will be held several times a year at 3 different locations in Europe we love to offer them
-as special in house trainings and workshops for companies. Here we can even dicuss specific problems in a more
+as special in house trainings and workshops for companies. We can even discuss specific problems in a more
 concrete way than it would be possible in a mixed course with trainees from different companies. If you interested
 in doing one of our workshops at your company [just contact us]((mailto:hendrik.ebbers@karakun.com)).
 
