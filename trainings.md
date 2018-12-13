@@ -29,7 +29,7 @@ As already mentioned we provide our workshops and trainings at 3 different locat
 
 * Karakun headquarter in Basel, Switzerland
 * Karakun office in Dortmund, Germany
-* Eppleton office in Munich, Germany
+* Eppleton IT Consulting in Munich, Germany
 
 At all 3 locations we will do the training in a nice equipped room that let attendees concentrate at the content but
 do not feel like beeing in a school class. All locations provide free wifi, softdrinks and snacks for the 
