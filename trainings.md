@@ -25,7 +25,7 @@ concrete way than it would be possible in a mixed course with participants from 
 in doing one of our workshops at your company [just contact us]((mailto:hendrik.ebbers@karakun.com)).
 
 ## Open Workshops
-As already mentioned we provide our workshops and traings at 3 different locations:
+As already mentioned we provide our workshops and trainings at 3 different locations:
 
 * Karakun headquarter in Basel, Switzerland
 * Karakun office in Dortmund, Germany
