@@ -500,7 +500,8 @@ a {
     }
 }
 
-.foundations-wrapper {
+
+.foundations-wrapper, .training-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -511,11 +512,20 @@ a {
     padding-left: 1em;
 }
 
-.foundations-logo {
+.training-logo, .foundations-logo {
     display: inline-block;
     margin-right: 0.5em;
 
     min-width: 12em;
     max-width: 12em;
     width: 100%;
+} 
+
+.training-logo {
+    padding-top: 1em;
+}
+
+.training-author {
+    font-style: italic;
+    padding-top: 0.5em;
 }

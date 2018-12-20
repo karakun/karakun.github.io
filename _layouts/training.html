@@ -1,0 +1,22 @@
+---
+layout: article
+---
+{{content}}
+{% assign trainings = site.data.trainings %}
+{% for training in trainings %}
+
+<article class="training-wrapper">
+    <img class="training-logo" src="/assets/images/trainings/{{ training.featuredImage }}.png">
+    <div>
+        <h3>{{ training.name }}</h3>
+        <p>{{ training.summary | newline_to_br }}</p>
+        {% assign author_array = "" | split: "/" %}
+        {% for trainerName in training.trainers %}
+        {% assign trainer = site.people | where:'name', trainerName | first %}
+        {% capture link %}<a href="{{ trainer.url }}">{{ trainer.firstName }} {{ trainer.lastName }}</a>{% endcapture %}
+        {% assign author_array = author_array | push: link %}
+        {% endfor %}
+        <div class="post-meta training-author">The training is done by {{ author_array | join: ', ' }}</div>
+    </div>
+</article>
+{% endfor %}
