@@ -501,7 +501,7 @@ a {
 }
 
 
-.foundations-wrapper .training-wrapper {
+.foundations-wrapper, .training-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -512,8 +512,7 @@ a {
     padding-left: 1em;
 }
 
-.training-logo .foundations-logo {
-
+.training-logo, .foundations-logo {
     display: inline-block;
     margin-right: 0.5em;
 
@@ -521,3 +520,12 @@ a {
     max-width: 12em;
     width: 100%;
 } 
+
+.training-logo {
+    padding-top: 1em;
+}
+
+.training-author {
+    font-style: italic;
+    padding-top: 0.5em;
+}

@@ -4,6 +4,7 @@ title: Trainings
 order: '16'
 headerText: 
 permalink: /trainings/
+hidden: true
 header:
   image: training
   text: Solve the problems of the <span class="my-karakun">future</span>

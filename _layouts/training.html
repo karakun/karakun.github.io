@@ -16,7 +16,7 @@ layout: article
         {% capture link %}<a href="{{ trainer.url }}">{{ trainer.firstName }} {{ trainer.lastName }}</a>{% endcapture %}
         {% assign author_array = author_array | push: link %}
         {% endfor %}
-        <div class="post-meta">The training is done by {{ author_array | join: ', ' }}</div>
+        <div class="post-meta training-author">The training is done by {{ author_array | join: ', ' }}</div>
     </div>
 </article>
 {% endfor %}
