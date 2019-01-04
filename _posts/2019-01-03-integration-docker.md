@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  'Integration tests for libraries with Docker'
+title:  'Integration tests with Docker'
 author: hendrik
 featuredImage: whale
 excerpt: 'This post gives an overview how we at Karakun use Docker to create integration tests for 
