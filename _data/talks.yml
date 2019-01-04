@@ -176,7 +176,7 @@
     is an exercise left to the developer, and it must be done (correctly!) before end users can interact with it. Fortunately, the open source DataFX framework aims to simplify
     this by enabling JavaFX developers to easily retrieve data from a variety of sources in several formats and rapidly integrate it with JavaFX components (such as TableView),
     using typical JavaFX patterns. This session introduces the free and open source DataFX project, gives practical advice for using it, and provides insight into future plans for this project.
-  lectures: ['JavaOne 2013', 'JUG Saxony Day 2014']
+  lectures: ['JavaOne 2013', 'JUG Saxony Day 2014', 'JavaOne 2014']
   featuredImage: graffiti
 
 - name: 'JavaFX, Widgets, and Apps'
@@ -215,4 +215,66 @@
 
     Methods and tools like the GitFlow, GitLab, the Java Togglz API and Jira will be shown in this talk.
   lectures: ['DevoxxUK 2014']
+  featuredImage: graffiti
+
+- name: 'JavaFX Enterprise'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    JavaFX 8 offers a lot of excellent features to create modern and interactive user interfaces. However, in addition to a shiny UI there are other important issues that must 
+    be considered when creating enterprise business applications with JavaFX. This talk gives an overview of the various best practices on solving problems like client-server 
+    communications (transport), asynchronous vs synchronous tasks, MVC/MVP framework patterned approaches and designing of complex dialog window flows. Although the JavaEE 
+    platform already defines decent data binding solutions when developing JavaFX applications, this session will demonstrate 3rd party frameworks such as DataFX, ControlsFX and 
+    Open Dolphin. These 3rd party frameworks provide useful features that will ease development, thus reducing time and money on your enterprise projects. By learning these 
+    JavaFX enterprise APIs and techniques a developer will be able to focus on application building instead of the underlying plumbing.
+  lectures: ['JavaOne 2014', 'w-jax 2014', 'Devoxx 2014', 'JavaLand 2015', 'jax 2015', 'JavaOne 2015', 'Java Forum Nord 2015', 'JUG Schweiz', 'JUG Dortmund']
+  featuredImage: graffiti
+
+- name: 'Smart UIs for mobile and embedded in JavaFX'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    You need a shiny cool UI for embedded devices? It should be optimized for touch? It should be responsive? It should be configurable? It should be based on JavaFX?
+
+    Great! We have exactly what you need!
+
+    In this talk we will introduce a new JavaFX theme that is made for embedded device and will fit perfect in all the cool new IoT and mobile products. By using the 
+    theme developers can enrich there IoT application with a modern UI and best practice workflows. 
+  lectures: ['JavaOne 2014']
+  featuredImage: graffiti
+
+- name: 'The JavaFX Community and Ecosystem'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    Do you want to start working with JavaFX? But you don't know where you can find all of the cool tutorials and open source APIs? This session is the perfect place to be! 
+    Leading up to the Java 8 release there has been a huge ecosystem with a lot of good tutorials and open source frameworks surrounding JavaFX. Since this year the community 
+    is getting bigger and bigger. In the session we will introduce some of the most important parts of the JavaFX ecosystem like 3rd party frameworks and popular knowledge bases. 
+    We will illustrate the functionality and synergy effects between the libraries with a live coding session. Lastly, we will end the session with real-world applications 
+    demonstrating techniques and APIs discussed earlier. 
+  lectures: ['JavaOne 2014']
+  featuredImage: graffiti
+
+- name: 'Extreme GUI Makeover 2014'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    This talk if for all UI lovers, GUI enthusiasts and friends of modern and user-friendly UX. JavaFX 8 a new and modern UI toolkit as part of Java 8 offers a lot of 
+    amazing features to help you craft modern looking and interactive user interfaces. The JavaFX 8 GUI toolkit offers everything that is needed to create well behaved 
+    and aesthetically pleasing GUI applications. This talk will compare and contrast your run-of-the-mill application and then go one step further by showing how developers 
+    can create an 'Extreme' GUI application. Who needs an old school toolbar when they can have a 3D animated menu? This and other important questions will be answered in 
+    this lighthearted talk. Because it is an 'Extreme Makeover' talk the examples will be shown as live demos and live coding sessions.
+  lectures: ['JavaOne 2014']
+  featuredImage: gui-makeover
+
+- name: 'WebComponents and Polymer'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    Up until now it was almost impossible to create reusable components for the Web in a reasonable way. CSS rules and JavaScript variables would always get in their way in 
+    large applications. Luckily there is an initiative now to unify techniques to define custom Web Components
+
+    Using examples we will show in this talk how you can build your own components. We will explain what the Shadow DOM is and will present tools like Polymer and X-Tag.
+    This talk will give an overview of the current state of technology and a forecast of future development.
+  lectures: ['JFocus 2015', 'jax 2015', 'Webinale Berlin 2015', 'Devoxx 2015', 'JUG Schweiz', 'JUG Dortmund']
   featuredImage: graffiti
