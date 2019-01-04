@@ -29,7 +29,7 @@
     The keynote gives an overview of the history of Java and the OpenJDK. We will have a closer
     look the new at the release train to kill all the rumors about Java 11, commercial support and
     the future of Java.
-  lectures: ['JVM-Con 2018']
+  lectures: ['JVM-Con 2018', 'Nighthacking-Munich']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-11-omg
   featuredImage: java11-omg
 
