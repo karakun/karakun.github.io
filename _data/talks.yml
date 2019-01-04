@@ -157,3 +157,62 @@
   youtube-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
   featuredImage: mittie-talk
 
+- name: 'Lightweight and reproducible environments with Vagrant and Puppet'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    Many developers are in need of complex development- and test environments for different projects with customers. The ideal situation would be to have them running in a sandbox. 
+    With help of the Cloud and VMs it's possible to create those sandbox-environments but administration, configuration and maintenance cost a lot of time and money. 
+    With a combination of Vagrant & Puppet it's possible to create and configure those environments "on the fly". Anytime, anywhere and above all reproducible.
+    The Talk shows how fast you can create and configure a sandbox for a Java environment including an Application Server and a database with the help of those tools.
+  lectures: ['Devoxx 2012', 'JayDay 2013', 'DevoxxUK 2013']
+  featuredImage: graffiti
+  
+- name: 'DataFX: The Best Way to Get Real-World Data into Your JavaFX Application'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    The real value in most client-oriented business applications is the data sitting on remote servers and cloud systems. Unfortunately, retrieving and displaying this data
+    is an exercise left to the developer, and it must be done (correctly!) before end users can interact with it. Fortunately, the open source DataFX framework aims to simplify
+    this by enabling JavaFX developers to easily retrieve data from a variety of sources in several formats and rapidly integrate it with JavaFX components (such as TableView),
+    using typical JavaFX patterns. This session introduces the free and open source DataFX project, gives practical advice for using it, and provides insight into future plans for this project.
+  lectures: ['JavaOne 2013', 'JUG Saxony Day 2014']
+  featuredImage: graffiti
+
+- name: 'JavaFX, Widgets, and Apps'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    Attend this session to hear about two exciting new OSS widget/app-launching frameworks, LaunchBoxFX and eWidgetFX, for embedded and desktop platforms. See how to create
+    dock-based widgets ranging from mini-apps to full-control interfaces for entire systems—and everything in between. LaunchBoxFX provides a pluggable interface for development
+    of dynamic widgets in embedded environments. You’ll learn how to use JavaFX 8 to create dynamic widgets that provide live updates and scalable monitoring/control for any number of inputs.
+    With more resources comes more power! With eWidgetFX, you’ll learn to create futuristic, dockable apps that “snap out” for greater visibility and control. Learn to leverage the power of
+    JavaFX on desktop platforms for user-awing UI results.
+  lectures: ['JavaOne 2013']
+  featuredImage: graffiti
+
+- name: 'Let’s Get Wet! AquaFX and Best Practices for Skinning JavaFX Controls'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    JavaFX offers a wide range of default controls for creating cool and great applications, from business to entertainment use cases. Because JavaFX is a multiplatform UI framework
+    that can be used mainly on desktop-based platforms and embedded devices, a cross-platform skin named Caspian is provided by JavaFX. As of Java 8, Modena will be a official second
+    cross-platform skin for JavaFX, but some applications and developers have a definite need for native or custom skins for their controls and applications. This session points out how
+    to create custom skins for JavaFX controls. You will learn that with AquaFX, this custom skin can even feel like a native one.
+  lectures: ['JavaOne 2013']
+  featuredImage: graffiti
+
+- name: 'Feature Driven Development'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    This talk shows Best Practices that can be used to develop application in an agile and feature driven workflow. Companies like flickr use this development process internally and even Martin 
+    Fowler defined a part of the process as "FeatureToggle".
+
+    In the talk I will start with the definition of feature tasks and what steps and methods are needed to define them. Next to this an application is shown that was developed by the use 
+    of FeatureToggles. Here different architecture approaches in Java will be shown. Next to the architecture of an application the development workflows must be changed to create 
+    applications in a feature driven way, too. In some examples best practices to handle the new workflows will be shown.
+
+    Methods and tools like the GitFlow, GitLab, the Java Togglz API and Jira will be shown in this talk.
+  lectures: ['DevoxxUK 2014']
+  featuredImage: graffiti

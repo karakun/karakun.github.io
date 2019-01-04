@@ -3,52 +3,56 @@ layout: page
 ---
 {% assign size = site.data.talks | size %}
 {% for talk in site.data.talks %}
-  {% assign loopindex = forloop.index | modulo: 2 %}
-  {% if loopindex == 1 %}
-    <div class="columns">
-  {% endif %}
-      <article class="talk column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
-        {% assign author = site.people | where:'name', talk.author | first %}
-        <h3 class="has-text-primary">{{ talk.name }}</h3>
-        <div class="post-meta">
-          {%- if author -%}
-          by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
-          {% endif %}
-        </div>
-        <p>
-          {%- if talk.featuredImage -%}
-            <img class="featured-image" alt="featured image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
-          {% endif %}
-          {{ talk.summary | newline_to_br }}
-        </p>
-        <div class="links">
-            {%- if talk.lectures -%}
-          <div>
-            <div class="metainfo-icon-div"><i class="fas fa-map-marker-alt metainfo-icon"></i></div>
-            <div>{{talk.lectures | array_to_sentence_string}}</div>
+  {% if talk.archive == page.archive %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+      <div class="columns">
+    {% endif %}
+        <article class="talk column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
+          {% assign author = site.people | where:'name', talk.author | first %}
+          <h3 class="has-text-primary">{{ talk.name }}</h3>
+          <div class="post-meta">
+            {%- if author -%}
+            by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
+            {% endif %}
           </div>
-          {% endif %}
-          {%- if talk.slides-link -%}
-          <div>
-            <div class="metainfo-icon-div"><i class="fab fa-slideshare metainfo-icon"></i></div>
-            <div><a href="{{ talk.slides-link }}">Download slides</a></div>
+          <p>
+            {%- if talk.featuredImage -%}
+              <img class="featured-image" alt="featured image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
+            {% endif %}
+            {{ talk.summary | newline_to_br }}
+          </p>
+          <div class="links">
+              {%- if talk.lectures -%}
+            <div>
+              <div class="metainfo-icon-div"><i class="fas fa-map-marker-alt metainfo-icon"></i></div>
+              <div>{{talk.lectures | array_to_sentence_string}}</div>
+            </div>
+            {% endif %}
+            {%- if talk.slides-link -%}
+            <div>
+              <div class="metainfo-icon-div"><i class="fab fa-slideshare metainfo-icon"></i></div>
+              <div><a href="{{ talk.slides-link }}">Download slides</a></div>
+            </div>
+            {% endif %}
+            {%- if talk.youtube-link -%}
+            <div>
+              <div class="metainfo-icon-div"><i class="fab fa-youtube metainfo-icon"></i></div>
+              <div><a href="{{ talk.youtube-link }}">Watch talk at YouTube</a></div>
+            </div>
+            {% endif %}
+            {%- if talk.github-link -%}
+            <div>
+              <div class="metainfo-icon-div"><i class="fab fa-github metainfo-icon"></i></div>
+              <div><a href="{{ talk.github-link }}">Resources on GitHub</a></div>
+            </div>
+            {% endif %}
           </div>
-          {% endif %}
-          {%- if talk.youtube-link -%}
-          <div>
-            <div class="metainfo-icon-div"><i class="fab fa-youtube metainfo-icon"></i></div>
-            <div><a href="{{ talk.youtube-link }}">Watch talk at YouTube</a></div>
-          </div>
-          {% endif %}
-          {%- if talk.github-link -%}
-          <div>
-            <div class="metainfo-icon-div"><i class="fab fa-github metainfo-icon"></i></div>
-            <div><a href="{{ talk.github-link }}">Resources on GitHub</a></div>
-          </div>
-          {% endif %}
-        </div>
-      </article>
-  {% if loopindex == 0 or forloop.index == size %}
-    </div>
+        </article>
+    {% if loopindex == 0 or forloop.index == size %}
+      </div>
+    {% endif %}
   {% endif %}
 {% endfor %}
+
+{{ content }}
