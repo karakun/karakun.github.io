@@ -79,6 +79,8 @@ public void testServerTiming() {
 {% endhighlight %}
 
 By doing so we can easily test that all information is added to the response and our Server Timing implementation is working.
+If you want to see how the server timing feature can be implemented in detail you can find an implementation as [part of our
+open source product Rico](https://github.com/rico-projects/rico/blob/1.0.0-CR2/base/rico-server/src/main/java/dev/rico/internal/server/timing/ServerTimingImpl.java). 
 
 One thing that we can not test is the usage of the `javax.servlet.Filter`.
 Such a filter can be added to a servlet context and then mutate every response for a defined endpoint.
@@ -232,18 +234,19 @@ diagramms gives an overview of the implemented steps:
 
 ![Workflow]({{ "/assets/posts/2018-07-18-integration-docker/workflow1.png" | absolute_url }})
 
-## Use docker-compose for a more easy setup
-TODO
-
-* docker-compose file that contains all docker files.
-* Only one command to start all containers and one command to stop all
+By starting any test of the given test class the needed docker containers will automatically be created and destroyed after the test was executed.
+To be true you do not want to write the docker commands in every test class. Here you can create your own custom abstraction or use a library
+that provides such functionality.
 
 ## The future is testcontainers.org
-TODO
 
-* Framework that provides all this functionallity
-* Sadly only JUnit is supported at the moment
-* Already in contact
+From my point of view [testcontainers](https://www.testcontainers.org) is a very good library to implement such workflows today. The library
+contains APIs to create unit tests that need docker containers at runtime. At the moment the library is limited to JUnit support and therefore
+TestNG is not supported.
+
+The testcontainers library uses the rule support of JUnit to define docker containers that should be automaticalyl be created for unit tests.
+Here the library provides a quite good API that let you easily define containers. The following example shows how a container with a redis instance
+can be defined for unit tests:
 
 {% highlight java %}
 @ClassRule
@@ -252,6 +255,9 @@ public static GenericContainer redis =
                .withExposedPorts(6379);
 {% endhighlight %}
 
+Next to this testcontainers provides support for docker compose. By doing so you can easily create a container landscape for tests. All containers
+that are needed for your tests can be defined in a yml file that docker compose will usse to start several docker containers. The following
+snippet shows how docker compose can be used with testcontainers:
 
 {% highlight java %}
 @ClassRule
@@ -259,17 +265,23 @@ public static DockerComposeContainer environment =
     new DockerComposeContainer(new File("src/test/resources/compose-test.yml"));
 {% endhighlight %}
 
-## Building the sample
-TODO
+From my point of view the biggest limitation of testcontainer is that you can only use it with JUnit at the moment. If your tests are based on TestNG
+for example you can not easily integrate it in your project. In this case you need to create your own minimal API to bootsrap docker containers as
+described before. We already talked with the maintainers of testcontainers and the project is aware of this issue and will work on it in future.
+ If you want to see a more concrete example that uses docker for integration and unit tests in TestNG you can have a look at the
+[integration tests of Rico](https://github.com/rico-projects/rico/tree/1.0.0-CR2/integration-tests/integration-tests/src/test/java/dev/rico/integrationtests).
+Here we use docker to test our server and client API with 3 different application server types automatically.
 
-* We need to provide the sample app
-* modules for integration tests in a multi module project
-* example
+## Conclusion
 
-## conclusion
-TODO
+To be true there are still some pitfalls if you want to integrate docker based containers in your test suite and run unit and integration tests against services
+that are provided by docker containers. If you use JUnit in your tests you should have a deeper look at [testcontainers](https://www.testcontainers.org) and 
+contribute to this project if some points are missing for your use cases. But even if you use a different test framework the hints and descriptions in this article should
+help you to create your own custom API to boot docker containers for unit tests.
 
-* Currently the setup is quite high
-* Once you did it once adding tests is as easy as possible
-* can be reused for as many projects as you want
-* Future: Just use frameworks like testcontainers.org to solve the problem
+Once you have the first tests running the integration to other tests and the definition of new tests is quite easy. Next to this most CI pipelines already offer docker support.
+Maybe you need to install docker and docker compose on your build nodes but that should not be a real problem.
+
+As already said we use this approach for [Rico](https://github.com/rico-projects/rico) and are really happy with the outcome. New tests that need external services can be created easily
+and we can test our complete API automatically on different environments. Since tools like [travis ci](https://travis-ci.org) already offer support for docker we can even run all
+the integration tests of our open source platform without any cost in the cloud.
