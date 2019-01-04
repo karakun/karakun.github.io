@@ -5,20 +5,24 @@
         {{ site.title | escape | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}
       </p>
       <ul class="menu-list">
-        {%- if page_paths -%}
-          {%- for path in page_paths -%}
-              {%- assign my_page = site.pages | where: "path", path | first -%}
-                {%- if my_page.hidden != true and my_page.nav.bottom != false -%}
-                  {%- if my_page.title and my_page.url != "/" -%}
-                    {% if page.title == my_page.title %}
-                      <li><a class="navbar-item is-active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                    {% else %}
-                      <li><a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-                    {% endif %}
-                  {%- endif -%}
-                {%- endif -%}
-              {%- endfor -%}
+          {% if page.title == my_page.title %}
+          <li><a class="navbar-item is-active" href="{{ "/" | relative_url }}">Home</a></li>
+        {% else %}
+          <li><a class="navbar-item" href="{{ "/" | relative_url }}">Home</a></li>
+        {% endif %}
+
+        {% assign sortedPaths = site.pages | sort: 'order'  %}
+        {% for my_page in sortedPaths %}
+          {%- if my_page.hidden != true and my_page.nav.bottom != false -%}
+            {%- if my_page.title and my_page.url != "/" -%}
+              {% if page.title == my_page.title %}
+                <li><a class="navbar-item is-active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+              {% else %}
+                <li><a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
+              {% endif %}
+            {%- endif -%}
           {%- endif -%}
+        {%- endfor -%}
       </ul>
     </div>
     <div class="contact">
@@ -32,7 +36,7 @@
 <div class="has-background-dark has-text-white copyright">
   {{ site.copyright | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}
 </div>
-<script type="text/javascript">
+<script>
 document.addEventListener('DOMContentLoaded', function () {
 
 // Get all "navbar-burger" elements

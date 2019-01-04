@@ -2,8 +2,22 @@
 layout: page
 ---
 {% assign talks = site.data.talks | where: "author", page.name %}
-{% assign books = site.data.books | where: "author", page.name %}
+{% assign books = site.data.books | where_exp:"book", "book.authors contains page.name" %}
 <p>{{ page.description }}</p>
+
+<h3>Connect with {{ page.firstName }}</h3>
+<ul>
+    {% if page.twitter %}
+    <li><a href="https://www.twitter.com/{{ page.twitter }}"><i class="fab fa-twitter metainfo-icon"></i> {{ page.firstName }} on Twitter</a></li>
+    {% endif %}
+    {% if page.github %}
+    <li><a href="https://www.github.com/{{ page.github }}"><i class="fab fa-github metainfo-icon"></i> {{ page.firstName }} on GitHub</a></li>
+    {% endif %}
+    {% if page.github %}
+    <li><a href="mailto:{{ page.mail }}"><i class="fas fa-envelope metainfo-icon"></i> Write {{ page.firstName }} a mail</a></li>
+    {% endif %}
+</ul>
+
 {% if talks.size > 0 %}
   <h3>Talks</h3>
   <ul>
@@ -16,9 +30,7 @@ layout: page
   <h3>Books</h3>
   <ul>
     {% for book in books %}
-      <li>
-        <a href="{{ book.link }} " target="_blank">{{ book.name }}</a>
-      </li>
+      <li>{{ book.name }}</li>
     {% endfor %}
   </ul>
 {% endif %}

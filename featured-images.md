@@ -32,3 +32,4 @@ An overview of the images that can be used as featured images for posts.
 | sweets              | ![sweets]({{ "/assets/featuredImages/sweets.png" | absolute_url }})                     | 
 | tip-jar             | ![tip-jar]({{ "/assets/featuredImages/tip-jar.png" | absolute_url }})                   | 
 | whale               | ![whale]({{ "/assets/featuredImages/whale.png" | absolute_url }})                       |
+| open-jdk            | ![open-jdk]({{ "/assets/featuredImages/open-jdk.png" | absolute_url }})                   | 

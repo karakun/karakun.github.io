@@ -16,7 +16,7 @@
 title: Karakun Developer Hub
 email: info@karakun.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The Developer Hub of Karakun AG :)
+  The Developer Hub of Karakun AG
 baseurl: "" # the subpath of your site, e.g. /blog
 copyright: Copyright © 2018 Karakun AG
 contact:

@@ -11,4 +11,6 @@ awards:
     - 'jax-innovationaward'
 header:
   image: mittie
+  text: Dierk König
+  x: left
 ---

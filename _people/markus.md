@@ -11,5 +11,5 @@ avatar: 'markus'
 header:
   image: markus
   text: Markus Schlichting
-
+  x: left
 ---

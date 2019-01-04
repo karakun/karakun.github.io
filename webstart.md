@@ -1,10 +1,12 @@
 ---
 layout: article
 title: Web Start
-headerText: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
+order: '16'
+headerText:
 permalink: /webstart/
 header:
   image: webstart
+  text: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
 nav:
   bottom: false
 ---
@@ -26,9 +28,26 @@ The tool will provide exactly the same workflow as Java Web Start, therefore not
 * It parses the JNLP-file, downloads all needed resources (JARs, native libraries and images) and stores them in a cache. 
 * Once all resources are available, the application starts. 
 
+![Managed apps]({{ "/assets/webstart/manage-apps.png" | absolute_url }})
+
 The tool automatically checks if a newer version of your application is available and downloads updated resources automatically. This guarantees that your users will always run the latest version of your applications on any client.
 The focus of the tool are rich desktop applications. It will not address the Java Applet technology. Therefore no browser plugins will be part of the tool.
+
 The application will come with a native installer, which ensures a simple installation process. It needs to be installed on a client only once, because it will contain a modern update mechanism to download and install required updates automatically.
+
+![Managed apps]({{ "/assets/webstart/updates.png" | absolute_url }})
+
+Next to this our open webstart solution will contain a Java runtime manager. This component will take care of
+installed Java versions on the client machine. If any JNLP based application needs a specific Java version that 
+is not installed on the client the manager will automatically download a matching Java runtime from a dedicated 
+server. Such Java instances won't be installed on the client but managed by the WebStart process and can be reused
+for several JNLP applications.
+
+![Managed apps]({{ "/assets/webstart/manage-java.png" | absolute_url }})
+
+Since our open source WebStart solutions comes with a nativer installer / executable and a bundled Java runtime to
+execute the WebStart process and it's internal components no Java instance needs to be installed on a client 
+anymore. WebStart will take care for the management and updates of JREs.
 
 ### Alternative Solutions
 There are certainly other solutions available, but to our knowledge all of them apply only to specific scenarios and have other downsides.
@@ -46,7 +65,7 @@ Compared to the alternative solutions our proposal has the following advantages:
 * no commercial license per client instance is required
 
 ### Roadmap
-Currently we are looking for funding. Once funding is secured, we will start development. Beta tests are planned for late August and September. It is crucial that the first version becomes available at the same time Java 11 is released. The following diagram shows the roadmap:
+Currently we are looking for funding. Once funding is secured, we will start development. The following diagram shows the roadmap:
 
 ![Karakun WebStart roadmap]({{ "/assets/webstart/roadmap-karakun.png" | absolute_url }})
 
