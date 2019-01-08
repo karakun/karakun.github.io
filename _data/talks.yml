@@ -82,7 +82,7 @@
     - What’s the best way to handle NullPointerExceptions? 
     
     - How can I write concurrent code that is still maintainable? 
-  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018']
+  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
   featuredImage: java-apis
 
@@ -276,5 +276,17 @@
 
     Using examples we will show in this talk how you can build your own components. We will explain what the Shadow DOM is and will present tools like Polymer and X-Tag.
     This talk will give an overview of the current state of technology and a forecast of future development.
-  lectures: ['JFocus 2015', 'jax 2015', 'Webinale Berlin 2015', 'Devoxx 2015', 'JUG Schweiz', 'JUG Dortmund']
+  lectures: ['JFocus 2015', 'jax 2015', 'Webinale Berlin 2015', 'Devoxx 2015', 'JUG Schweiz', 'JUG Dortmund', 'MTC 2016', 'Voxxed Days Berlin']
+  featuredImage: graffiti
+
+  - name: 'The remote presentation model'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    Finding the right architecture and remoting layer for a modern application of often very hard. In this talk we want to introduce the Remote Presentation Model Pattern 
+    that is based on MVC and introduces a generic model approach that can be used to define (presentation) models that can be synchronized between the client and the server. 
+    By doing so the business logic of an application can be defined completely on the server. In addition this pattern is a perfect match to create cross-platform apps that 
+    support real time updates and collaborative features. In this talk we show how the pattern can be used in a Spring or JavaEE environment by using all the cool features of 
+    this enterprise frameworks. In addition we will show how different clients can easily be implemented for an app that is based on remote presentation models.
+  lectures: ['JavaLand 2016', 'JUG Dortmund']
   featuredImage: graffiti
