@@ -17,7 +17,7 @@ layout: page
     {% if loopindex == 1 %}
       <div class="columns">
     {% endif %}
-        <article class="talk column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
+        <article class="talk column content {% unless loopcount == size and loopindex == 1 %} is-half {% endunless %}">
           {% assign author = site.people | where:'name', talk.author | first %}
           <h3 class="has-text-primary">{{ talk.name }}</h3>
           <div class="post-meta">
@@ -58,7 +58,7 @@ layout: page
             {% endif %}
           </div>
         </article>
-    {% if loopindex == 0 or forloop.index == size %}
+    {% if loopindex == 0 or loopcount == size %}
       </div>
     {% endif %}
   {% endif %}
