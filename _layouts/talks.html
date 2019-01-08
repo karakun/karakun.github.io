@@ -1,10 +1,19 @@
 ---
 layout: page
 ---
-{% assign size = site.data.talks | size %}
+{% assign size = 0 %}
 {% for talk in site.data.talks %}
   {% if talk.archive == page.archive %}
-    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% assign size = size | plus: 1 %}
+  {% endif %}
+{% endfor %}
+
+{% assign loopcount = 0 %}
+{% for talk in site.data.talks %}
+  {% if talk.archive == page.archive %}
+    {% assign loopcount = loopcount | plus: 1 %}
+    {% assign loopindex = loopcount | modulo: 2 %}
+
     {% if loopindex == 1 %}
       <div class="columns">
     {% endif %}
@@ -55,4 +64,6 @@ layout: page
   {% endif %}
 {% endfor %}
 
-{{ content }}
+<div>
+  {{ content }}
+</div>
