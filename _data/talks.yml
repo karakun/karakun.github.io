@@ -82,7 +82,7 @@
     - What’s the best way to handle NullPointerExceptions? 
     
     - How can I write concurrent code that is still maintainable? 
-  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund']
+  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund', 'JavaLand 2017', 'JUG Hamburg', 'JCON 2017', 'JUG Kassel']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
   featuredImage: java-apis
 
@@ -143,7 +143,7 @@
   summary: >
     Build and testing a commercial software is easy. You can use a big infrastructure for CI and commercial tools to test your complete stack. And if you want to test your application on different mobile devices - well, that's easy! You company will buy them for you. But what can you do if you want to work on Open Source? You can not spend thousands of Dollars for a free time project and without a given infrastructure several build, test and deployment steps are just impossible... 
     Imagine a world in that testing, building or deploying of open source software is at least as easy as for commercial projects. Maybe it's just easier and the infrastructure is better than in most $$$ stacks. I will introduce you to this world and show several tools and services that will help you to get the best out of your open source project - without producing any costs but with a lot of fun, cool new technologies and the freedom of choose.
-  lectures: ['Java Summit Bucharest 2018']
+  lectures: ['Java Summit Bucharest 2018', 'Riviera DEV 2017']
   youtube-link: 'https://www.youtube.com/watch?v=74AiufFGVug'
   featuredImage: wild-projects
 
@@ -255,18 +255,6 @@
   lectures: ['JavaOne 2014']
   featuredImage: graffiti
 
-- name: 'Extreme GUI Makeover 2014'
-  author: 'hendrik'
-  archive: true
-  summary: >
-    This talk if for all UI lovers, GUI enthusiasts and friends of modern and user-friendly UX. JavaFX 8 a new and modern UI toolkit as part of Java 8 offers a lot of 
-    amazing features to help you craft modern looking and interactive user interfaces. The JavaFX 8 GUI toolkit offers everything that is needed to create well behaved 
-    and aesthetically pleasing GUI applications. This talk will compare and contrast your run-of-the-mill application and then go one step further by showing how developers 
-    can create an 'Extreme' GUI application. Who needs an old school toolbar when they can have a 3D animated menu? This and other important questions will be answered in 
-    this lighthearted talk. Because it is an 'Extreme Makeover' talk the examples will be shown as live demos and live coding sessions.
-  lectures: ['JavaOne 2014']
-  featuredImage: gui-makeover
-
 - name: 'WebComponents and Polymer'
   author: 'hendrik'
   archive: true
@@ -276,10 +264,10 @@
 
     Using examples we will show in this talk how you can build your own components. We will explain what the Shadow DOM is and will present tools like Polymer and X-Tag.
     This talk will give an overview of the current state of technology and a forecast of future development.
-  lectures: ['JFocus 2015', 'jax 2015', 'Webinale Berlin 2015', 'Devoxx 2015', 'JUG Schweiz', 'JUG Dortmund', 'MTC 2016', 'Voxxed Days Berlin']
+  lectures: ['JFocus 2015', 'jax 2015', 'Webinale Berlin 2015', 'Devoxx 2015', 'JUG Schweiz', 'JUG Dortmund', 'MTC 2016', 'Voxxed Days Berlin', 'JUG Münster', 'MobileTecConf 2016', 'JFocus 2016']
   featuredImage: graffiti
 
-  - name: 'The remote presentation model'
+- name: 'The remote presentation model'
   author: 'hendrik'
   archive: true
   summary: >
@@ -288,5 +276,39 @@
     By doing so the business logic of an application can be defined completely on the server. In addition this pattern is a perfect match to create cross-platform apps that 
     support real time updates and collaborative features. In this talk we show how the pattern can be used in a Spring or JavaEE environment by using all the cool features of 
     this enterprise frameworks. In addition we will show how different clients can easily be implemented for an app that is based on remote presentation models.
-  lectures: ['JavaLand 2016', 'JUG Dortmund']
+  lectures: ['JavaLand 2016', 'JUG Dortmund', 'JUG Hamburg', 'JavaOne 2016', 'Oracle Code Berlin 2017']
   featuredImage: graffiti
+
+- name: 'How we built the JavaOne Voting Machine'
+  author: 'timo'
+  archive: true
+  summary: >
+    In this talk we will show how we implemented the JavaOne Voting machine. We will start with the general idea behind the Voting Machine and an overview of all components
+    involved that run on embedded hardware and in the cloud. We will then show some parts and solutions like the IoT functionality, live reporting and UI concepts in more detail.
+    If you are interested in how this cool voting concept has evolved and developed you should visit this session.
+  lectures: ['JavaOne Latin America 2016', 'JavaOne 2016']
+  featuredImage: graffiti
+
+- name: 'JavaFX in production'
+  author: 'hendrik'
+  archive: true
+  summary: >
+    Writing a "Hello World!" application is always easy and a Java developer can learn how to write such an application with JavaFX in some minutes. But if you want to create a 
+    productive application the knowledge of "Hello World" isn't enough. A real application should be well structured, provide an automatic build that ends in useable artifacts 
+    and contain only needed dependencies. In addition such an application should be testable and maintainable. This talk shows some general concepts how you can create and 
+    structure a JavaFX application that can easily grow and become more complex without loosing control of the code, functionality and maintainability. At the end each attendee 
+    will have a template that he can use to start creating JavaFX based application.
+  lectures: ['JavaOne 2016']
+  featuredImage: graffiti
+
+- name: 'Extreme Gui Makeover'
+  author: 'hendrik'
+  summary: >
+    This talk if for all UI lovers, GUI enthusiasts and friends of modern and user-friendly UX. JavaFX is not only  a modern UI toolkit but the recommend UI Toolkit of Java, 
+    too. It offers a lot of amazing features to help you craft modern looking and interactive user interfaces. JavaFX offers everything that is needed to create well behaved 
+    and aesthetically pleasing GUI applications.
+    This talk will compare and contrast your run-of-the-mill application and then go one step further by showing how developers can create an 'Extreme' GUI application. Who needs 
+    an old school toolbar when they can have an animated menu? This and other important questions will be answered in this lighthearted talk. Because it is an 'Extreme Makeover' 
+    talk the examples will be shown as live demos and live coding sessions.
+  lectures: ['JavaOne 2014', 'JavaOne 2017', 'JavaOne 2018', 'JavaFX-Day']
+  featuredImage: gui-makeover
