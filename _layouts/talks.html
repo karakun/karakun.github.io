@@ -33,9 +33,15 @@ layout: page
           </p>
           <div class="links">
               {%- if talk.lectures -%}
+              {% assign lecturesArray = "" | split: "/" %}
+              {% for lecture in talk.lectures %}
+                {% if forloop.index < 4 %}
+                  {% assign lecturesArray = lecturesArray | push: lecture %}
+                {% endif %}
+              {% endfor %}
             <div>
               <div class="metainfo-icon-div"><i class="fas fa-map-marker-alt metainfo-icon"></i></div>
-              <div>{{talk.lectures | array_to_sentence_string}}</div>
+              <div>{{ lecturesArray | join: ', ' }} {% if talk.lectures.size > 4 %} and <span title="{{ talk.lectures | join: ', ' }}" alt="{{ talk.lectures | join: ', ' }}">others</span> {% endif %}</div>
             </div>
             {% endif %}
             {%- if talk.slides-link -%}
