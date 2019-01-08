@@ -102,4 +102,6 @@ public class MyEndpoint {
 
 Like the basic API the `Timing` annotation supports of a name and a description for a metric.
 
+![Server Timing]({{ "/assets/posts/2019-01-08-rico-server-timing/timing-request.png" | absolute_url }})
+
 Since you do not want to send metrics with every request to the client we currently add some configurationn properties to Rico that let you configure when metrics should be added to a response. By doing so you can easily activate metrics in case of an issue when you want to have a look at the server timing information.
