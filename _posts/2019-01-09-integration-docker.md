@@ -31,7 +31,7 @@ Let's assume you develop a library that adds [Server Timing](https://www.w3.org/
 Server Timing is a new W3C features that allows you to add some metrics about the request handling to the response.
 The following images show how such information would be rendered in the developer console of Chrome:
 
-![Server Timing]({{ "/assets/posts/2019-01-03-integration-docker/server-timing.png" | absolute_url }})
+![Server Timing]({{ "/assets/posts/2019-01-09-integration-docker/server-timing.png" | absolute_url }})
 
 When developing such a feature for JavaEE, an implementation of the `javax.servlet.Filter` interface is a good choice.
 In our library we could provide the following class:
@@ -96,7 +96,7 @@ createdFilter.addMappingForUrlPatterns(EnumSet.allOf(DispatcherType.class), true
 To check that the code snippet is working and your custom filter will really be called for each and every request
 you need to test your library with an application server.
 
-![Server Timing]({{ "/assets/posts/2019-01-03-integration-docker/timing-request.png" | absolute_url }})
+![Server Timing]({{ "/assets/posts/2019-01-09-integration-docker/timing-request.png" | absolute_url }})
 
 
 Since your library will be used in several applications in the near future
@@ -188,7 +188,7 @@ docker run -p 8080:8080
 After starting the containers in Docker we need to wait until the containers are started and the internal application is deployed. 
 To do so we can write a small Java method that for example checks if a health-endpoint of the app can be reached.
 
-![Container in Docker]({{ "/assets/posts/2019-01-03-integration-docker/docker-container.png" | absolute_url }})
+![Container in Docker]({{ "/assets/posts/2019-01-09-integration-docker/docker-container.png" | absolute_url }})
 
 Since we want to access the Docker containers for each test run they must be started automatically before the tests and shut down after
 the tests. In TestNG we can use the `@BeforeClass` and `@AfterClass` (or `@BeforeGroup` and `@AfterGroup`) annotations to execute good
@@ -232,7 +232,7 @@ public class DockerBasedTest() {
 With this class we already defined a full workflow to test the internals of the sample app on several application servers. The following 
 diagramms gives an overview of the implemented steps:
 
-![Workflow]({{ "/assets/posts/2019-01-03-integration-docker/workflow1.png" | absolute_url }})
+![Workflow]({{ "/assets/posts/2019-01-09-integration-docker/workflow1.png" | absolute_url }})
 
 By starting any test of the given test class the needed Docker containers will automatically be created and destroyed after the test was executed.
 To be true, you do not want to write the Docker commands in every test class. Here you can create your own custom abstraction or use a library
