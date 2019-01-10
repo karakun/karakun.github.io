@@ -164,7 +164,7 @@ At the moment the tests will fail since we do not have any applications running,
 To automatically bootstrap an application server with our test application we will use Docker.
 I will not describe the functionality of Docker since this would be beyond the scope of this article.
 
-Adam Bean provides some good Docker containers for JavaEE application servers that can be used as a base for our containers.
+Adam Bien provides some good Docker containers for JavaEE application servers that can be used as a base for our containers.
 You can find all needed Docker files [at Github](https://github.com/AdamBien/docklands).
 For our sample we will use this container descriptions as a base and extend them with the needed functionality.
 For TomEE our Docker file will look like this:
