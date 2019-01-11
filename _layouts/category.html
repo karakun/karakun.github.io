@@ -19,9 +19,18 @@ layout: article
     </ul>
   </div>
 {% endfor %}
+ <div style="display: block;" id="placeholder">
+    This page is intended to show a categories details. Please add a category to the URL.
+ </div>
 
 <script>
   var tag = window.location.hash.substr(1);
   var elem = document.getElementById(tag);
-  elem.style.display = "block";   
+  if(elem){
+    elem.style.display = "block"; 
+    document.getElementById('placeholder').style.display="none";    
+  } else {
+     document.getElementById('placeholder').style.display="block";    
+  }
+  
 </script>
