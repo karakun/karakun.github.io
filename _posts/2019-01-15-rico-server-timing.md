@@ -10,10 +10,10 @@ header:
   image: post
 ---
 
-In the last release of Rico we introduced the support of "server timing" for JavaEE and Spring. Server Timing is a new W3C features that allows you to add some metrics about the request handling to the response.
-The following images shows how such information would be rendered in the developer console of chrome:
+In our open source project [Rico](https://github.com/rico-projects/rico) we introduced the support of "server timing" for JavaEE and Spring. Server Timing is [a new W3C features](https://www.w3.org/TR/server-timing/) that allows you to add some metrics about the request handling to the response. I already introduced server timing in [one of my last posts]({% post_url 2019-01-09-integration-docker %}).
+The following image shows how such information would be rendered in the developer console of chrome:
 	
-![Server Timing]({{ "/assets/posts/2019-01-08-rico-server-timing/server-timing.png" | absolute_url }})
+![Server Timing]({{ "/assets/posts/2019-01-15-rico-server-timing/server-timing.png" | absolute_url }})
 	
 The feature is very usefully when you develop a client that uses HTTP calls to communicate with the server. In this case the client sends a http request to the server and receives an http response after some time. The functionallity that the server executes to create the response based on the request is a black box for the client. Normally this is not really a problem but let's think about a possible bottleneck on the server. Sometimes your http call takes much longer than normally. To make it worse the problem only happens when you do not debug the server. In such case "server timing" is a really helpfull feature since you can display some timing information about the server functionallity in the client.
 
@@ -102,6 +102,6 @@ public class MyEndpoint {
 
 Like the basic API the `Timing` annotation supports of a name and a description for a metric.
 
-![Server Timing]({{ "/assets/posts/2019-01-08-rico-server-timing/timing-request.png" | absolute_url }})
+![Server Timing]({{ "/assets/posts/2019-01-15-rico-server-timing/timing-request.png" | absolute_url }})
 
 Since you do not want to send metrics with every request to the client we currently add some configurationn properties to Rico that let you configure when metrics should be added to a response. By doing so you can easily activate metrics in case of an issue when you want to have a look at the server timing information.
