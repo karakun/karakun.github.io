@@ -18,6 +18,9 @@ Together with Oracle and
 Java 11 release event at September 25th, 2018. 
 This event will be followed by Hendrik Ebbers and Michael Heinrichs. There will be a YouTube Live Stream from 6 pm UTC+2. We are looking forward to many viewers!
 
+Java stink
+
+
 <div class="embed-container">
   <iframe title="YouTube video player" width="640" height="390" src="//www.youtube.com/embed/CUuCVHWeO-Y" frameborder="0" allowfullscreen=""></iframe>
 </div>
