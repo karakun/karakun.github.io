@@ -10,6 +10,7 @@
   lectures: ['JavaFX-Days 2018']
   slides-link: https://speakerdeck.com/karakun/javafx-custom-controls
   featuredImage: controls
+  youtube-link: 'https://www.youtube.com/watch?v=OuF2BMnCjt4'
 
 - name: 'Java 11 - OMG!!!!'
   author: 'hendrik'
@@ -85,6 +86,7 @@
   lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund', 'JavaLand 2017', 'JUG Hamburg', 'JCON 2017', 'JUG Kassel']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
   featuredImage: java-apis
+  youtube-link: 'https://www.youtube.com/watch?v=YQBk9FyfzEM&'
 
 - name: 'Multidevice Controls: A Different Approach to UX'
   author: 'gerrit'
@@ -178,6 +180,7 @@
     using typical JavaFX patterns. This session introduces the free and open source DataFX project, gives practical advice for using it, and provides insight into future plans for this project.
   lectures: ['JavaOne 2013', 'JUG Saxony Day 2014', 'JavaOne 2014']
   featuredImage: graffiti
+  youtube-link: 'https://www.youtube.com/watch?v=q65436KIuJ0'
 
 - name: 'JavaFX, Widgets, and Apps'
   author: 'hendrik'
@@ -201,6 +204,7 @@
     to create custom skins for JavaFX controls. You will learn that with AquaFX, this custom skin can even feel like a native one.
   lectures: ['JavaOne 2013']
   featuredImage: graffiti
+  youtube-link: 'https://www.youtube.com/watch?v=ucvdYGLWLT0'
 
 - name: 'Feature Driven Development'
   author: 'hendrik'
@@ -216,6 +220,7 @@
     Methods and tools like the GitFlow, GitLab, the Java Togglz API and Jira will be shown in this talk.
   lectures: ['DevoxxUK 2014']
   featuredImage: graffiti
+  youtube-link: 'https://www.youtube.com/watch?v=D7f4ztJIHwo'
 
 - name: 'JavaFX Enterprise'
   author: 'hendrik'
@@ -229,6 +234,7 @@
     JavaFX enterprise APIs and techniques a developer will be able to focus on application building instead of the underlying plumbing.
   lectures: ['JavaOne 2014', 'w-jax 2014', 'Devoxx 2014', 'JavaLand 2015', 'jax 2015', 'JavaOne 2015', 'Java Forum Nord 2015', 'JUG Schweiz', 'JUG Dortmund']
   featuredImage: graffiti
+  youtube-link: 'https://www.youtube.com/watch?v=5yk6d8vjNE4&'
 
 - name: 'Smart UIs for mobile and embedded in JavaFX'
   author: 'hendrik'
@@ -254,6 +260,7 @@
     demonstrating techniques and APIs discussed earlier. 
   lectures: ['JavaOne 2014']
   featuredImage: graffiti
+  youtube-link: 'https://www.youtube.com/watch?v=MVIKZyqpnMY'
 
 - name: 'WebComponents and Polymer'
   author: 'hendrik'
@@ -266,6 +273,7 @@
     This talk will give an overview of the current state of technology and a forecast of future development.
   lectures: ['JFocus 2015', 'jax 2015', 'Webinale Berlin 2015', 'Devoxx 2015', 'JUG Schweiz', 'JUG Dortmund', 'MTC 2016', 'Voxxed Days Berlin', 'JUG Münster', 'MobileTecConf 2016', 'JFocus 2016']
   featuredImage: graffiti
+  youtube-link: 'https://www.youtube.com/watch?v=muqOStp3A_o'
 
 - name: 'The remote presentation model'
   author: 'hendrik'
@@ -312,3 +320,4 @@
     talk the examples will be shown as live demos and live coding sessions.
   lectures: ['JavaOne 2014', 'JavaOne 2017', 'JavaOne 2018', 'JavaFX-Day']
   featuredImage: gui-makeover
+  youtube-link: 'https://www.youtube.com/watch?v=-XY3Jjkz1sk'
