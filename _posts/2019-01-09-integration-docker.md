@@ -13,16 +13,16 @@ header:
 When writing software that is based on [JavaEE / JakartaEE](https://jakarta.ee) you have one big benefit:
 All APIs are specified and therefore your software will run on any application server 🙂
 
-Sadly the reality is different.
+Unfortunately, real life is different.
 While the introduction is true for most of all use cases, there are still some pitfalls.
 Since all application servers like [TomEE](http://tomee.apache.org), [Wildfly](http://www.wildfly.org) or [Payara](https://www.payara.fish) are developed by humans, they all have bugs.
 But I do not want to say that they are not usable.
 Too be true the big players are really stable and flexible.
 But sometimes you will find some behavior that is different in one application compared to others.
-If you write an application this is not that important as you normally will run your it only on a single application server.
+If you write an application which is not that important you will normally run your it only on a single application server.
 It won't make sense to test your application on Wildfly and use TomEE in production.
 But if you want to develop a library or a framework that depends on the JavaEE specification and should be usable with any
-application server it really makes sense to test your code on as often as you can.
+application server it really makes sense to test your code as often as you can.
 This post will give you an overview how you can achieve this goal by using [Docker](https://www.docker.com).
 
 ## How to write tests for an enterprise library
@@ -78,11 +78,11 @@ public void testServerTiming() {
 }
 {% endhighlight %}
 
-By doing so we can easily test that all information is added to the response and our Server Timing implementation is working.
+Thus, we can easily test that all information is added to the response and our Server Timing implementation is working.
 If you want to see how the server timing feature can be implemented in detail you can find an implementation as [part of our
 open source product Rico](https://github.com/rico-projects/rico/blob/1.0.0-CR2/base/rico-server/src/main/java/dev/rico/internal/server/timing/ServerTimingImpl.java). 
 
-One thing that we can not test is the usage of the `javax.servlet.Filter`.
+One thing that we cannot test is the usage of the `javax.servlet.Filter`.
 Such a filter can be added to a servlet context and then mutate every response for a defined endpoint.
 If you want to add the filtering to all requests that a server application receives you can add the
 `javax.servlet.annotation.WebFilter` annotation to your class or do the registration in code like it is shown in the following snippet:
@@ -106,13 +106,13 @@ it is important to test it with all application servers (and releases) that are 
 Since the main focus of this article should be the workflow to provide integration tests, the example is kept as simple as possible.
 
 Let's assume you need to check that your library is running fine on TomEE and Payara.
-To do so you can easily install local instances of the application servers on your machine,
+You can easily install local instances of the application servers on your machine,
 deploy a test application that internally uses your library and open some endpoints in your browser.
-Here you can check if you really see the Server Timing information in the developer view of your browser.
+You can then check if you really see the Server Timing information in the developer view of your browser.
 
-While the described workflow is fine for a first test you do not want to do this after every change in the sourcecode of the library.
-Once you did it 3 times you know that you need to automate the workflow in some way.
-Next to this your team members maybe do not know how you do the tests and push code changes without checking the functionality on TomEE.
+While the described workflow is fine for a first test you do not want to do this after every change in the source code of the library.
+After the first 3 tests you probably know that you need to automate the workflow in some way.
+Plus, your team members maybe do not know how you do the tests and push code changes without checking the functionality on TomEE.
 
 ## Integration tests with Docker
 Since we want to test the integration of our library in specific application servers, integration tests are the solution to our problem.
@@ -127,8 +127,8 @@ To test this automatically after every code change or with every build we need t
 * Trigger some Endpoints
 * Check the response
 
-Let's start with the simplest part which can be done 100% in Java:
-Writing a tests that triggers endpoints and checks the response.
+Let's start with the most simple part which can be done 100% in Java:
+Writing a test that triggers endpoints and checks the response.
 TestNG's data provider functionality can be used to write a test which calls multiple server instances.
 Here we can provide a list of configurations for our tests.
 The following snippet contains a method that is annotated with the `org.testng.annotations.DataProvider` annotation
@@ -146,7 +146,7 @@ public Object[][] getEndpoints() {
 
 The method provides the configuration for 2 endpoints (TomEE on port 8080 and Payara on port 8081).
 
-This configurations can now used in a test method:
+This configurations can now be used in a test method:
 
 {% highlight java %}
 @Test(dataProvider =  "endpoints")
