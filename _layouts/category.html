@@ -1,0 +1,36 @@
+---
+layout: article
+---
+
+{% for category in site.categories %}
+  <div style="display: none;" id="{{ category[0] | downcase }}">
+    <p>The following list contains all articles that are tagged with <span class="tag is-medium">{{ category[0] | capitalize }}</span></p>
+    <ul>
+      {% assign pages_list = category[1] %}
+      {% for post in pages_list %}
+        {% if post.title != null %}
+        {% if group == null or group == post.group %}
+        <li><a href="{{ site.url }}{{ post.url }}">{{ post.title }} <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%B %d, %Y" }}</time></a></li>
+        {% endif %}
+        {% endif %}
+      {% endfor %}
+      {% assign pages_list = nil %}
+      {% assign group = nil %}
+    </ul>
+  </div>
+{% endfor %}
+ <div style="display: block;" id="placeholder">
+    This page is intended to show a categories details. Please add a category to the URL.
+ </div>
+
+<script>
+  var tag = window.location.hash.substr(1);
+  var elem = document.getElementById(tag);
+  if(elem){
+    elem.style.display = "block"; 
+    document.getElementById('placeholder').style.display="none";    
+  } else {
+     document.getElementById('placeholder').style.display="block";    
+  }
+  
+</script>
