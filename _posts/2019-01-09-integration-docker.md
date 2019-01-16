@@ -13,23 +13,23 @@ header:
 When writing software that is based on [JavaEE / JakartaEE](https://jakarta.ee) you have one big benefit:
 All APIs are specified and therefore your software will run on any application server 🙂
 
-Sadly the reality is different.
+Unfortunately, real life is different.
 While the introduction is true for most of all use cases, there are still some pitfalls.
 Since all application servers like [TomEE](http://tomee.apache.org), [Wildfly](http://www.wildfly.org) or [Payara](https://www.payara.fish) are developed by humans, they all have bugs.
 But I do not want to say that they are not usable.
 Too be true the big players are really stable and flexible.
 But sometimes you will find some behavior that is different in one application compared to others.
-If you write an application this is not that important as you normally will run your it only on a single application server.
+If you write an application which is not that important you will normally run it only on a single application server.
 It won't make sense to test your application on Wildfly and use TomEE in production.
-But if you want to develop a library or a framework that depends on the JavaEE specification and should be usable with any
-application server it really makes sense to test your code on as often as you can.
+But if you want to develop a library or a framework that depends on the JavaEE specification and it should be usable with any
+application server it really makes sense to test your code as often as you can.
 This post will give you an overview how you can achieve this goal by using [Docker](https://www.docker.com).
 
 ## How to write tests for an enterprise library
 
 Let's assume you develop a library that adds [Server Timing](https://www.w3.org/TR/server-timing/) information to HTTP responses.
 Server Timing is a new W3C features that allows you to add some metrics about the request handling to the response.
-The following images show how such information would be rendered in the developer console of Chrome:
+The following image shows how such information would be rendered in the developer console of Chrome:
 
 ![Server Timing]({{ "/assets/posts/2019-01-09-integration-docker/server-timing.png" | absolute_url }})
 
@@ -66,7 +66,7 @@ As you see, we call the static `ServerTiming.writeTiming()` method in our filter
 This methods adds some headers to the HTTP response which is represented by the `ServletResponse` instance that is passed to the method.
 Even if this method is using APIs from the JavaEE specifications (the `ServletResponse` interface that is part of the servlet specification)
 we can easily provide some unit tests to check the functionality of the method.
-A test method could look this:
+A test method could look like this:
 
 {% highlight java %}
 @Test
@@ -78,11 +78,11 @@ public void testServerTiming() {
 }
 {% endhighlight %}
 
-By doing so we can easily test that all information is added to the response and our Server Timing implementation is working.
-If you want to see how the server timing feature can be implemented in detail you can find an implementation as [part of our
+Thus, we can easily test that all information is added to the response and our Server Timing implementation is working.
+If you want to see how the Server Timing feature can be implemented in detail you can find an implementation as [part of our
 open source product Rico](https://github.com/rico-projects/rico/blob/1.0.0-CR2/base/rico-server/src/main/java/dev/rico/internal/server/timing/ServerTimingImpl.java). 
 
-One thing that we can not test is the usage of the `javax.servlet.Filter`.
+One thing that we cannot test is the usage of the `javax.servlet.Filter`.
 Such a filter can be added to a servlet context and then mutate every response for a defined endpoint.
 If you want to add the filtering to all requests that a server application receives you can add the
 `javax.servlet.annotation.WebFilter` annotation to your class or do the registration in code like it is shown in the following snippet:
@@ -102,17 +102,17 @@ you need to test your library with an application server.
 Since your library will be used in several applications in the near future
 it is important to test it with all application servers (and releases) that are used by your customers.
 
->The given example will easily work on every application server since it only use some common and well tested features of the servlet API.
+The given example will easily work on every application server since it only uses some common and well tested features of the servlet API.
 Since the main focus of this article should be the workflow to provide integration tests, the example is kept as simple as possible.
 
 Let's assume you need to check that your library is running fine on TomEE and Payara.
-To do so you can easily install local instances of the application servers on your machine,
+You can easily install local instances of the application servers on your machine,
 deploy a test application that internally uses your library and open some endpoints in your browser.
-Here you can check if you really see the Server Timing information in the developer view of your browser.
+You can then check if you really see the Server Timing information in the developer view of your browser.
 
-While the described workflow is fine for a first test you do not want to do this after every change in the sourcecode of the library.
-Once you did it 3 times you know that you need to automate the workflow in some way.
-Next to this your team members maybe do not know how you do the tests and push code changes without checking the functionality on TomEE.
+While the described workflow is fine for a first test you do not want to do this after every change in the source code of the library.
+After the first 3 tests you probably know that you need to automate the workflow in some way.
+Plus, your team members maybe do not know how you do the tests and push code changes without checking the functionality on TomEE.
 
 ## Integration tests with Docker
 Since we want to test the integration of our library in specific application servers, integration tests are the solution to our problem.
@@ -127,10 +127,10 @@ To test this automatically after every code change or with every build we need t
 * Trigger some Endpoints
 * Check the response
 
-Let's start with the simplest part which can be done 100% in Java:
-Writing a tests that triggers endpoints and checks the response.
+Let's start with the most simple part which can be done 100% in Java:
+Writing a test that triggers endpoints and checks the response.
 TestNG's data provider functionality can be used to write a test which calls multiple server instances.
-Here we can provide a list of configurations for our tests.
+We can provide a list of configurations for our tests.
 The following snippet contains a method that is annotated with the `org.testng.annotations.DataProvider` annotation
 and provides the configurations for our tests:
 
@@ -146,7 +146,7 @@ public Object[][] getEndpoints() {
 
 The method provides the configuration for 2 endpoints (TomEE on port 8080 and Payara on port 8081).
 
-This configurations can now used in a test method:
+This configurations can now be used in a test method:
 
 {% highlight java %}
 @Test(dataProvider =  "endpoints")
@@ -159,15 +159,15 @@ public void testEndpoints(String containerType, String port) {
 {% endhighlight %}
 
 By executing the test, TestNG will automatically call it once for every given configuration.
-At the moment the tests will fail since we do not have any applications running, or maybe an application is not even deployed.
+At the moment the tests will fail since we do not have any applications running or maybe an application is not even deployed.
 
 To automatically bootstrap an application server with our test application we will use Docker.
 I will not describe the functionality of Docker since this would be beyond the scope of this article.
 
 Adam Bien provides some good Docker containers for JavaEE application servers that can be used as a base for our containers.
 You can find all needed Docker files [at Github](https://github.com/AdamBien/docklands).
-For our sample we will use this container descriptions as a base and extend them with the needed functionality.
-For TomEE our Docker file will look like this:
+For our sample, we will use these container descriptions as a base and extend them with the needed functionality.
+For TomEE, our Docker file will look like this:
 
 {% highlight java %}
 FROM airhacks/tomee:7.0.4-plus
@@ -229,7 +229,7 @@ public class DockerBasedTest() {
 }
 {% endhighlight %}
 
-With this class we already defined a full workflow to test the internals of the sample app on several application servers. The following 
+With this class, we already defined a full workflow to test the internals of the sample app on several application servers. The following 
 diagramms gives an overview of the implemented steps:
 
 ![Workflow]({{ "/assets/posts/2019-01-09-integration-docker/workflow1.png" | absolute_url }})
@@ -245,7 +245,7 @@ contains APIs to create unit tests that need Docker containers at runtime. At th
 TestNG is not supported.
 
 The testcontainers library uses the rule support of JUnit to define Docker containers that should be automatically be created for unit tests.
-Here the library provides a quite good API that let you easily define containers. The following example shows how a container with a [Redis](https://redis.io) instance
+The library provides a pretty good API that lets you easily define containers. The following example shows how a container with a [Redis](https://redis.io) instance
 can be defined for unit tests:
 
 {% highlight java %}
@@ -255,7 +255,7 @@ public static GenericContainer redis =
                .withExposedPorts(6379);
 {% endhighlight %}
 
-Next to this testcontainers provides support for Docker Compose. By doing so you can easily create a container landscape for tests. All containers
+Additionally, testcontainers provides support for Docker Compose. With this, you can easily create a container landscape for tests. All containers
 that are needed for your tests can be defined in a yml file that Docker Compose will use to start several Docker containers. The following
 snippet shows how Docker Compose can be used with testcontainers:
 
@@ -266,11 +266,11 @@ public static DockerComposeContainer environment =
 {% endhighlight %}
 
 From my point of view the biggest limitation of testcontainer is that you can only use it with JUnit at the moment. If your tests are based on TestNG
-for example you can not easily integrate it in your project. In this case you need to create your own minimal API to bootsrap Docker containers as
+for example you cannot easily integrate it in your project. In this case, you need to create your own minimal API to bootsrap Docker containers as
 described before. We already talked with the maintainers of testcontainers and the project is aware of this issue and will work on it in future.
  If you want to see a more concrete example that uses Docker for integration and unit tests in TestNG you can have a look at the
 [integration tests of Rico](https://github.com/rico-projects/rico/tree/1.0.0-CR2/integration-tests/integration-tests/src/test/java/dev/rico/integrationtests).
-Here we use Docker to test our server and client API with 3 different application server types automatically.
+We use Docker to test our server and client API with 3 different application server types automatically.
 
 ## Conclusion
 
@@ -279,7 +279,7 @@ that are provided by Docker containers. If you use JUnit in your tests you shoul
 contribute to this project if some points are missing for your use cases. But even if you use a different test framework the hints and descriptions in this article should
 help you to create your own custom API to boot Docker containers for unit tests.
 
-Once you have the first tests running the integration to other tests and the definition of new tests is quite easy. Next to this most CI pipelines already offer Docker support.
+Once you have the first tests running the integration to other tests and the definition of new tests is quite easy. Plus, most CI pipelines already offer Docker support.
 Maybe you need to install Docker and Docker Compose on your build nodes but that should not be a real problem.
 
 As already said we use this approach for [Rico](https://github.com/rico-projects/rico) and are really happy with the outcome. New tests that need external services can be created easily
