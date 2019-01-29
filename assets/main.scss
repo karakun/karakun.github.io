@@ -184,8 +184,14 @@ footer {
                     > li:last-of-type {
                         a {
                             padding-right: 0;
+                            @include mobile {
+                                padding-right: 0.75em;
+                            }
                         }
                     }
+                }
+                @include mobile {
+                    text-align: center;
                 }
             }
             > div.newsletter {
@@ -193,6 +199,9 @@ footer {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-end;
+                > a {
+                    display: flex;
+                }
             }
         }
     }
