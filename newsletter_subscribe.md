@@ -60,10 +60,6 @@ nav:
         <input type="checkbox" checked id="gdpr_12965" name="gdpr[12965]" value="Y">
         Email
     </label>
-    <label for="gdpr_12969" class="checkbox">
-        <input type="checkbox" id="gdpr_12969" name="gdpr[12969]" value="Y" checked>
-        Direct Mail
-    </label>
 </fieldset>
 
 <p>You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please visit our <a href="/privacy-policy/">privacy policy</a>.</p>
