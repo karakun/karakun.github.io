@@ -30,7 +30,7 @@
     The keynote gives an overview of the history of Java and the OpenJDK. We will have a closer
     look the new at the release train to kill all the rumors about Java 11, commercial support and
     the future of Java.
-  lectures: ['JVM-Con 2018', 'Nighthacking-Munich']
+  lectures: ['JVM-Con 2018', 'Nighthacking-Munich', 'JUG Münster']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-11-omg
   featuredImage: java11-omg
 
@@ -83,7 +83,7 @@
     - What’s the best way to handle NullPointerExceptions? 
     
     - How can I write concurrent code that is still maintainable? 
-  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund', 'JavaLand 2017', 'JUG Hamburg', 'JCON 2017', 'JUG Kassel']
+  lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund', 'JavaLand 2017', 'JUG Hamburg', 'JCON 2017', 'JUG Kassel', 'JUG Saxony', 'JUG Görlitz']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
   featuredImage: java-apis
   youtube-link: 'https://www.youtube.com/watch?v=YQBk9FyfzEM&'
