@@ -8,7 +8,7 @@ header:
   image: team
   text: Work <span class="my-karakun">happier!</span>
 nav:
-  bottom: true
+  bottom: false
 ---
 
 ## Love where you work
