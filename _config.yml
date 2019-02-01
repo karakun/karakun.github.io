@@ -28,6 +28,8 @@ url: "https://karakun.github.io" # the base hostname & protocol for your site, e
 twitter_username: karakun
 github_username:  karakun
 
+permalink: /:year/:month/:day/:title.html
+
 # Build settings
 markdown: kramdown
 plugins:

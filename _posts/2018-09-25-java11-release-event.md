@@ -7,6 +7,7 @@ excerpt: 'Together with Oracle and Heise we will do a Java 11 release event.
 The event will be live streamed and recorded at YouTube. If you are interested in the
 new features of Java 11 and want to know more information about the new roadmap
 of OpenJDK and Oracle you should attend our event online.'
+permalink: '/java/2018/09/25/java11-release-event.html'
 categories: [Java]
 header:
   text: The road to <span class="my-karakun">Java 11<span>

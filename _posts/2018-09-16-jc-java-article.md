@@ -6,6 +6,7 @@ featuredImage: labyrinth
 excerpt: 'Based on the confusion and rumors about the new Java release model a group of Java Champions has written
 an open article. The authors of the article worked together with mayor Java vendors to answer all questions
 about Java releases and licenses'
+permalink: '/java/2018/09/16/jc-java-article.html'
 categories: [Java]
 header:
   text: The road to <span class="my-karakun">Java 11<span>
