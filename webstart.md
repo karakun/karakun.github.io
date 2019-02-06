@@ -5,7 +5,7 @@ order: '16'
 headerText:
 permalink: /webstart/
 header:
-  image: webstart
+  image: webstart-2
   text: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
 nav:
   bottom: false
@@ -50,16 +50,16 @@ In that case the update functionality of the tool is deactivated and the IT depa
 The main focus of <span class="text-highlight">Open<span>WebStart</span></span> is the execution of JNLP based applications.
 Next to this the tool contains 4 modules with additional functionality that helps to simplify the WebStart workflows and let you configure <span class="text-highlight">Open<span>WebStart</span></span> just for your needs.
 
-- The App Manager will manage the versions of any JNLP based application that was executed by <span class="text-highlight">Open<span>WebStart</span></span>
-- The JVM Manager will manage Java versions and its updates on the client
-- The Control Panel provides a graphical user interface to configure <span class="text-highlight">Open<span>WebStart</span></span>
-- The Updater can automatically download and install new versions of <span class="text-highlight">Open<span>WebStart</span></span>
+- The **App Manager** will manage the versions of any JNLP based application that was executed by <span class="text-highlight">Open<span>WebStart</span></span>
+- The **JVM Manager** will manage Java versions and its updates on the client
+- The **Control Panel** provides a graphical user interface to configure <span class="text-highlight">Open<span>WebStart</span></span>
+- The **Updater** can automatically download and install new versions of <span class="text-highlight">Open<span>WebStart</span></span>
 
 #### JNLP support
 <span class="text-highlight">Open<span>WebStart</span></span> will provide exactly the same JNLP based workflow as Java Web Start, therefore nothing will change from the point of view of your users:
 
 - A JNLP-file that describes the application is downloaded to the client, typically either by clicking a link on a webpage or by an automated provisioning process.
-- <span class="text-highlight">Open<span>WebStart</span></span> registers itself by default for the JNLP-file-extension and the MIME-type "application/x-java-jnlp-file", therefore by double clicking the JNLP-file, <span class="text-highlight">Open<span>WebStart</span></span> launches.
+- <span class="text-highlight">Open<span>WebStart</span></span> registers itself by default for the JNLP-file-extension and the MIME-type `application/x-java-jnlp-file`, therefore by double clicking the JNLP-file, <span class="text-highlight">Open<span>WebStart</span></span> launches.
 - It parses the JNLP-file, downloads all needed resources (JARs, native libraries and images) and stores them in a cache.
 - Once all resources are available, the application starts.
 
