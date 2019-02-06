@@ -19,7 +19,7 @@ Since the public support of Java 8 ends in the 4 quarter of 2019 companies won't
 Based on this we at Karakun decided to create <span class="text-highlight">Open<span>WebStart</span></span> as an open source reimplementation of the Web Start technology.
 The replacement should provide all general features of Web Start and will reuse the JNLP standard so that customers can continue to use applications based on Web Start and JNLP without any changes.
 
-![roadmap]({{ "/assets/images/webstart/divider.png" | absolute_url }})
+![roadmap]({{ "/assets/images/webstart/divider-2.png" | absolute_url }})
 
 For more information about the removal of Java Web Start you can take a look at these documents:
 
