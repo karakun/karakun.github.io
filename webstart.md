@@ -19,6 +19,8 @@ Since the public support of Java 8 ends in the 4 quarter of 2019 companies won't
 Based on this we at Karakun decided to create <span class="text-highlight">Open<span>WebStart</span></span> as an open source reimplementation of the Web Start technology.
 The replacement should provide all general features of Web Start and will reuse the JNLP standard so that customers can continue to use applications based on Web Start and JNLP without any changes.
 
+![roadmap]({{ "/assets/images/webstart/divider.png" | absolute_url }})
+
 For more information about the removal of Java Web Start you can take a look at these documents:
 
 * [Official Java desktop roadmap from Oracle](http://www.oracle.com/technetwork/java/javase/javaclientroadmapupdate2018mar-4414431.pdf)
@@ -45,6 +47,7 @@ The tool contains an Updater component that will update <span class="text-highli
 If you or your customers are companies with its own IT department the executable bundle can be used to rollout <span class="text-highlight">Open<span>WebStart</span></span> on several client machines.
 In that case the update functionality of the tool is deactivated and the IT department can plan and handle the rollout of new versions based on internal workflows.
 
+![roadmap]({{ "/assets/images/webstart/rollout.png" | absolute_url }})
 
 #### General modules and functionallities
 The main focus of <span class="text-highlight">Open<span>WebStart</span></span> is the execution of JNLP based applications.
@@ -63,6 +66,8 @@ Next to this the tool contains 4 modules with additional functionality that help
 - It parses the JNLP-file, downloads all needed resources (JARs, native libraries and images) and stores them in a cache.
 - Once all resources are available, the application starts.
 
+![roadmap]({{ "/assets/images/webstart/manage-applications.png" | absolute_url }})
+
 Any JNLP based application that was downloaded and started via <span class="text-highlight">Open<span>WebStart</span></span> will be managed by the internal App Manager. The App Manager will automatically check if an update is provided for any managed applications and downloads such update automatically.
 
 #### JDK/JRE management
@@ -72,8 +77,12 @@ When deploying a JNLP based application a developer can not really define what e
 The JVM Manager can download Java versions from a dedicated server and manage such versions internally.
 By doing so a developer can easily define a specific Java version that should be used to run the provided JNLP based application.
 
+![roadmap]({{ "/assets/images/webstart/manage-java-version.png" | absolute_url }})
+
 By default <span class="text-highlight">Open<span>WebStart</span></span> will download OpenJDK based Java version from a dedicated server.
 The server can be configured by hand in the Control Center of the Web Start tool.
+
+![roadmap]({{ "/assets/images/webstart/download-jvm.png" | absolute_url }})
 
 #### Configuration of OpenWebStart
 The well known Java Control Panel that was installed in addition to any Oracle Java installation was part of Web Start.
