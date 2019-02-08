@@ -4,6 +4,7 @@ title:  'Karakun React training in 2019'
 author: timo
 featuredImage: training-1
 excerpt: 'Beginning next year we will offer trainings to different topics in different locations. We are happy to announce that our first training is already able for booking. Our JavaScript expert Simon Skoczylas will host a training about React in Munich. Hurry up and book your seat soon!'
+permalink: '/javascript/react/2018/11/08/react-training-announced.html'
 categories: [JavaScript, React]
 header:
   image: training
