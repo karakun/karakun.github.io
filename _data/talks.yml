@@ -46,7 +46,7 @@
     This talk shows how to create a PWA. The focus is on the Service Worker API, 
     which plays a central role for Progressive Web Apps. It will also show how the Web 
     App manifest and which help to realize a PWA.
-  lectures: ['W-JAX 2018', 'JavaLand 2018']
+  lectures: ['W-JAX 2018', 'JavaLand 2018', "c't &lt;webdev&gt; 2019"]
   github-link: 'https://giftkugel.github.io/talks/pwa.html'
   featuredImage: pwa
 
@@ -62,7 +62,7 @@
     API? These and other APIs are part of the talk to help web developers leave their 
     comfort zone. Since the presentation includes many APIs, the attendees can choose 
     at the beginning which APIs will be presented in detail.
-  lectures: ['W-JAX 2018']
+  lectures: ['W-JAX 2018', "c't &lt;webdev&gt; 2019"]
   github-link: 'https://giftkugel.github.io/talks/web-api.html'
   featuredImage: web-apis-talk
 
