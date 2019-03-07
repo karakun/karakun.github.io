@@ -99,10 +99,9 @@ If you want to use JDK with commercial support that should not be reachable in p
 All this configurations can be easily done for a customer that bought commercial support at Karakun. The free to use <span class="text-highlight">Open<span>WebStart</span></span> builds are all configured in a default way.
 
 ### Roadmap
-Currently we are looking for funding.
-Once funding is secured, we will start development.
-Beta tests might be availabe in Q2 2019.
-The following diagram shows the roadmap:
+A first base funding is secured and we start development mid of March.
+Beta tests will be available in Q2 2019. The following diagram shows
+the roadmap:
 
 ![roadmap]({{ "/assets/images/webstart/roadmap-karakun.png" | absolute_url }})
 
