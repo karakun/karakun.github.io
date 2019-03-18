@@ -29,7 +29,7 @@ For more information about the removal of Java Web Start you can take a look at 
 
 ### Technical details
 <span class="text-highlight">Open<span>WebStart</span></span> will be based on the JNLP-specification defined in JSR-56 and will implement the most commonly used features of Java Web Start.
-It will be able to handle any typical JWS-based application and will support all future versions of Java starting from Java 11.
+It will be able to handle any typical JWS-based application and will support all future versions of Java starting from Java 11. Next to Java 11 we will support Java 8 directly with the first release of <span class="text-highlight">Open<span>WebStart</span></span>.
 The following topics describe several aspects of the tool in more detail.
 
 
