@@ -30,7 +30,7 @@
     The keynote gives an overview of the history of Java and the OpenJDK. We will have a closer
     look the new at the release train to kill all the rumors about Java 11, commercial support and
     the future of Java.
-  lectures: ['JVM-Con 2018', 'Nighthacking-Munich', 'JUG Münster']
+  lectures: ['JVM-Con 2018', 'Nighthacking-Munich', 'JUG Münster', 'JavaLand 2019']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-11-omg
   featuredImage: java11-omg
 
@@ -136,7 +136,7 @@
     This session presents an overview of the features of WebStart and how they can be replaced. 
     It includes samples of several open source and commercial tools that provide such features 
     and might mean new and cool possibilities for WebStart-based applications.
-  lectures: ['Oracle CodeOne 2018']
+  lectures: ['Oracle CodeOne 2018', 'JavaLand 2019']
   featuredImage: webstart
   slides-link: https://www.slideshare.net/HendrikEbbers/java-webstart-is-dead-what-should-we-do-now
 
