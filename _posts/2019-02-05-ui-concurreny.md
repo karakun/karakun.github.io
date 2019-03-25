@@ -51,10 +51,10 @@ In such case we could end with a wrong ui:
 
 ![textfield]({{ "/assets/posts/2019-02-05-ui-concurreny/textfield-2.png" | absolute_url }})
 
-Instead of displaying the correct information "Shy boy" in the textfield we now can see the text "Hellboy".
+Instead of displaying the correct information "My boy" in the textfield we now can see the text "Hellboy".
 In this case the framework still used the old text content ("Hello World") when starting the rendering.
 After the first 3 letters were rendered the text content has been changed by our custom thread.
-Now the ui toolkit continue rendering based on the new content ("Shy boy") starting at character 4 since 3 characters were already rendered.
+Now the ui toolkit continue rendering based on the new content ("My boy") starting at character 4 since 3 characters were already rendered.
 
 Wether you like the "Hellboy" comics or not this is defentely a big problem. 
 When creating user interfaces one of the most important rules is that a user always sees the right data.
