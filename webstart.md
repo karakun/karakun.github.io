@@ -6,18 +6,17 @@ headerText:
 permalink: /webstart/
 header:
   image: webstart-2
-  text: Run <span class="my-karakun">Web Start</span> based application after the release of <span class="my-karakun">Java 11</span>
+  text: Run <span class="my-karakun">Web Start</span> based applications after the release of <span class="my-karakun">Java 11</span>
 nav:
   bottom: false
 ---
 ## Java Web Start will die!
-Java Web Start (JWS) was deprecated in Java 9 and starting with Java 11 Oracle will remove JWS from their JDK distributions.
-All this happened in September 2018.
-From this time on, it will be impossible to use JWS-based applications on clients, that have the latest version of Java installed.
-Since the public support of Java 8 ends in the 4 quarter of 2019 companies won't get any updates and security fixes for Web Start anymore.
+Java Web Start (JWS) was deprecated in Java 9 and starting with Java 11 Oracle removed JWS from their JDK distributions.
+From this time on, it became impossible to use JWS-based applications on clients, that had the latest version of Java installed.
+Since public support of Java 8 ended in Q4/2019, companies do not get any updates and security fixes for Java Web Start anymore.
 
-Based on this we at Karakun decided to create <span class="text-highlight">Open<span>WebStart</span></span> as an open source reimplementation of the Web Start technology.
-The replacement should provide all general features of Web Start and will reuse the JNLP standard so that customers can continue to use applications based on Web Start and JNLP without any changes.
+For this reason we decided to create <span class="text-highlight">Open<span>WebStart</span></span>, an open source reimplementation of the Java Web Start technology.
+The replacement will provide the most commonly used features of Java Web Start and the JNLP standard so that customers can continue to use applications based on Java Web Start and JNLP without any changes.
 
 ![roadmap]({{ "/assets/images/webstart/divider-2.png" | absolute_url }})
 
@@ -29,7 +28,7 @@ For more information about the removal of Java Web Start you can take a look at 
 
 ### Technical details
 <span class="text-highlight">Open<span>WebStart</span></span> will be based on the JNLP-specification defined in JSR-56 and will implement the most commonly used features of Java Web Start.
-It will be able to handle any typical JWS-based application and will support all future versions of Java starting from Java 11. Next to Java 11 we will support Java 8 directly with the first release of <span class="text-highlight">Open<span>WebStart</span></span>.
+It will be able to handle any typical JWS-based application and we plan to support all future versions of Java starting with Java 11. Next to Java 11 we will support Java 8 directly with the first release of <span class="text-highlight">Open<span>WebStart</span></span>.
 The following topics describe several aspects of the tool in more detail.
 
 
@@ -99,13 +98,19 @@ If you want to use JDK with commercial support that should not be reachable in p
 All this configurations can be easily done for a customer that bought commercial support at Karakun. The free to use <span class="text-highlight">Open<span>WebStart</span></span> builds are all configured in a default way.
 
 ### Roadmap
-A first base funding is secured and we start development mid of March.
-Beta tests will be available in Q2 2019. The following diagram shows
-the roadmap:
+We have been able to secure a good part of the required funding. With our sponsors we started to discuss the list of features that we are going to implement.
+Our goal is to have beta tests and a release candidate ready in Q3/2019.
+The following diagram shows the roadmap:
 
 ![roadmap]({{ "/assets/images/webstart/roadmap-karakun.png" | absolute_url }})
 
-#### Interested?
-If you want to learn more or if you would like to discuss your specific needs, please contact us at [OpenWebStart@karakun.com](mailto:openwebstart@karakun.com) or [subscribe to our newsletter](/subscribe/).
+#### Interested in becoming a sponsor?
+We are still looking for sponsors.
+As a sponsor you can influence the list of features that we are going to implement.
+Plus we will run regular tests with your applications to guarantee that your application will work with OpenWebStart.
+If that sounds interesting, please contact us at [OpenWebStart@karakun.com](mailto:openwebstart@karakun.com).
+
+#### How can I stay informed?
+If you want to learn more and stay up-to-date, please [subscribe to our newsletter](/subscribe/).
 
 ![roadmap]({{ "/assets/images/webstart/rocket.png" | absolute_url }})
