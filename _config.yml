@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 copyright: Copyright © 2018 Karakun AG
 contact:
-  street: Leonhardsgraben 36
+  street: Elisabethenanlage 25
   city: CH-4051 Basel
   email: info@karakun.com
   company: Karakun AG
