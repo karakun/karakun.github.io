@@ -136,7 +136,7 @@ recommend to read [this article about the Java client roadmap that was announced
 If you need more information about the commercial support for Java that is offered by Oracle you should have a look at
 [this official document](http://www.oracle.com/technetwork/java/javaseproducts/overview/javasesubscriptionfaq-4891443.html). If you
 are using Java WebStart technology to distribute desktop clients you should take care about the current situation as fast as possible
-since Oracle has removed WebStart from Java. You can find all the needed information [here]({{ site.baseurl }}{% link webstart.md %}).
+since Oracle has removed WebStart from Java. You can find all the needed information at [openwebstart.com](http://openwebstart.com/).
 
 ## What does the new release train mean to my company?
 Concentrating on the Oracle JDK, the answer to that question is quite easy and you can choose between 3

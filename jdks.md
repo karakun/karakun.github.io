@@ -18,7 +18,7 @@ If you want to know more about that topics you should have a look at the followi
 
 * [A general overview of future Java releases and Java licence models]({{ site.baseurl }}{% post_url 2018-06-25-java-releases %})
 * [Overview of all changes regarding Java Desktop in future Java releases](https://dzone.com/articles/what-the-future-java-releases-will-mean-for-legacy)
-* [Additional information about the end of Java WebStart]({{ site.baseurl }}{% link webstart.md %})
+* [Additional information about the end of Java WebStart](http://www.openwebstart.com)
 
 ### Downloads
 

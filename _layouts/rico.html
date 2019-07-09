@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<section>
+  <div class="container">
+    <article class="post h-entry columns">
+      <div class="column is-two-thirds-desktop is-three-fifths-tablet is-three-quarters">
+        <div class="post-content e-content post content">
+        	<h1 id="rico-application-framework">Rico Application Framework 
+        		<a href="https://github.com/rico-projects/rico"><span class="icon"><i class="fab fa-github"></i></span></a></h1>
+        	
+          {{ content }}
+        </div>
+      </div>
+      {% if site.data.rico-news.size > 0 %}
+      <div class="column overview">
+        <div class="news info">
+      	  <h5>News</h5>
+  			<ul>
+    		{% for news in site.data.rico-news %}
+          	<li>
+				<a href="{{news.url}}">{{news.title}}</a>
+				{% assign desc_size = news.description | size %}
+				{% if desc_size > 0 %}
+				 - 
+				{% endif %}
+				{{news.description | markdownify | remove: '<p>' | remove: '</p>'}} 
+				<br /><em><small>{{ news.date }}</small></em>
+          	</li>
+            {% endfor %}
+          	</ul>
+        </div>
+        {% endif %}
+      </div>
+    </article>
+  </div>
+</section>

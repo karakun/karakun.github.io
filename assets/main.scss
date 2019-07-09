@@ -333,7 +333,8 @@ article.post {
             padding-right: 5em;
         }
     }
-    div.post-author {
+    div.post-author,
+    div.news {
         padding: 1em;
         background-color: $white-ter;
         border-radius: $karakun-border-radius;
@@ -348,6 +349,14 @@ article.post {
         }
         .information {
             margin-top: 2em;
+        }
+        ul {
+            padding-left: 1em;
+            list-style: square;
+            li {
+                padding-top: 0.5em;
+                list-style: square;
+            }
         }
     }
     div.post-tags {
