@@ -19,11 +19,9 @@ Rico is an application framework that provides several functionalities and APIs 
 This includes features like tracing or monitoring that are critical in developing applications, escpecially in modern cloud based and distributed application landscapes. 
 Thus, Rico provides generic APIs with specific implementation for the mostly used frameworks and toolkits in modern application development.
 
-Rico originates from the [_Dolphin Platform_](https://github.com/canoo/dolphin-platform/) which appears to be discontinued. Rico is an (originally) API compatible fork the we continue to develop and improve.
+Rico originates from the [_Dolphin Platform_](https://github.com/canoo/dolphin-platform/) which appears to be discontinued. Rico is an (originally) API compatible fork that we continue to develop and improve.
 
 ### Rationale
-
-[//]: # ( #### Motivation for Rico )
 
 The motivation for us to create Rico is to avoid code for standard use-cases to be written over-and-over again. Thus, we created it as an extension to commonly used frameworks like Spring and Jakarta EE (Java EE) that is easily adoptable.
 
@@ -36,14 +34,11 @@ Also, Rico provides a remoting layer that helps you to seperate UI framework spe
 It also enables you to choose different technologies for every target platform. 
 As we see a very rapidly changing environment in UI technologies, this seperation helps to protect your investment put into the solution build with Rico as it will be less dependent on a concrete UI technology.
 
-
-[//]: # (### Introduction )
-
 ### Getting started
 
 Currently, the best point to get started is our [samples project repository](https://github.com/rico-projects/rico-samples). Please refer to the README in each project for a description how to get started with the sample:
 
-* [Rico To-Do list application]() Application both for Spring and Jave EE with frontends in Angular, AngularJS, Polymer and JavaFx to demonstrate _Rico Remoting_ and an _EventBus_ to connect between different clients implemented in various UI technolgies.
+* [Rico To-Do list application](https://github.com/rico-projects/rico-samples/tree/master/todo-list) Application both for Spring and Jave EE with frontends in Angular, AngularJS, Polymer and JavaFx to demonstrate _Rico Remoting_ and an _EventBus_ to connect between different clients implemented in various UI technolgies.
 * [Rico HTTP rest security](https://github.com/rico-projects/rico-samples/tree/master/rest-security) - use Rico integration for Keycloak to secure your applications.
 * [Rico HTTP client](https://github.com/rico-projects/rico-samples/tree/master/http-client) - show usage of Rico HTTP client to consume web services over HTTP 
 
