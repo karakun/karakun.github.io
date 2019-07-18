@@ -19,7 +19,7 @@ Rico is an application framework that provides several functionalities and APIs 
 This includes features like tracing or monitoring that are critical in developing applications, escpecially in modern cloud based and distributed application landscapes. 
 Thus, Rico provides generic APIs with specific implementation for the mostly used frameworks and toolkits in modern application development.
 
-Rico originates from the _Canoo Dolphin Platform_ which appears to be discontinued. Rico is an (originally) API compatible fork the we continue to develop and improve.
+Rico originates from the [_Dolphin Platform_](https://github.com/canoo/dolphin-platform/) which appears to be discontinued. Rico is an (originally) API compatible fork the we continue to develop and improve.
 
 ### Rationale
 
