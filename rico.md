@@ -32,7 +32,9 @@ Rico helps you to build your applications in a short time letting you focus on t
 
 To achieve this, Rico provides clean APIs to seperate complexity coming from the set of technologies required to build your solution from your actual code required to provide your business solution.
 
-Also, Rico provides a remoting layer that helps you to seperate UI framework specific code so that is a lot easier to switch UI implementations. As we see a very rapidly changing environment in UI technologies, this speration helps to protect your investment put into the solution build with Rico as it will be less dependent on a concrete UI technology.
+Also, Rico provides a remoting layer that helps you to seperate UI framework specific code so that is a lot easier to switch UI implementations.
+It also enables you to choose different technologies for every target platform. 
+As we see a very rapidly changing environment in UI technologies, this seperation helps to protect your investment put into the solution build with Rico as it will be less dependent on a concrete UI technology.
 
 
 [//]: # (### Introduction )
