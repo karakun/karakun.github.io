@@ -18,7 +18,7 @@ email: info@karakun.com
 description: >- # this means to ignore newlines until "baseurl:"
   The Developer Hub of Karakun AG
 baseurl: "" # the subpath of your site, e.g. /blog
-copyright: Copyright © 2019 Karakun AG
+copyright: Copyright © 2018-2019 Karakun AG
 contact:
   street: Elisabethenanlage 25
   city: CH-4051 Basel
