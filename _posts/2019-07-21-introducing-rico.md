@@ -11,20 +11,20 @@ header:
   image: post
 ---
 
-[Rico](/rico) is an application framework fostered by <span class="my-karakun">Karakun</span> to help building better solutions in less time.
+[Rico](/rico) is an open-source application framework led by <span class="my-karakun">Karakun</span> to help building better solutions in less time.
 
 Since [Hendrik blogged recently](/java/rico/2019/01/15/rico-server-timing.html) about a in-depth topic on [Rico](/rico), I thought we should give it an introduction post since it has not surfaced much so far....
 
 ## History
 
-[Rico](/rico) originates from the _Canoo Dolphin Platform_. 
-As practially everyone who was involved with the development of the _Dolphin Platform_ is working for Karakun now, Canoo shows no interest in it anymore and we still see value in this project, we decided to fork it.
+[Rico](/rico) descends from the _Dolphin Platform_ initiated by Canoo. 
+Unfortunately, Canoo does not exist any longer and the original project is dead. As most of the _Dolphin Platform_ team is now working for Karakun and the company still sees value in it, we decided to fork it.
 The result is the [Rico Application Platform](/rico).
 
 ## Overview
 
-[Rico](/rico) is build such it can be used on top of the most commonly used frameworks, Spring and Jakarte EE (formerly Java EE) used to build applications based on Java technology nowadays.
-It provides modules for common use cases that extend feature you already get from the framework underneath and simplify access and usage to functionality in question. 
+[Rico](/rico) is designed to be used on top of the most commonly used frameworks, Spring and Jakarta EE (formerly Java EE). Both are used to build applications based on Java technology nowadays.
+It provides modules for common use cases that extend the range of functions you already get from the framework underneath.  (...) and simplify access and usage to functionality in question. 
 
 ![Rico Modules Overview]({{ "/assets/posts/2019-07-21-introducing-rico/rico-overview.png" | absolute_url }})
  

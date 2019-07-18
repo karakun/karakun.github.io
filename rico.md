@@ -23,12 +23,12 @@ Rico originates from the [_Dolphin Platform_](https://github.com/canoo/dolphin-p
 
 ### Rationale
 
-The motivation for us to create Rico is to avoid code for standard use-cases to be written over-and-over again. Thus, we created it as an extension to commonly used frameworks like Spring and Jakarta EE (Java EE) that is easily adoptable.
+The motivation for us to create Rico is to avoid code for standard use-cases to be written over and over again. Thus, we created it as an extension to commonly used frameworks like Spring and Jakarta EE (Java EE) that is easily adoptable.
 
 The outcome is a framework that is build on top of well-known frameworks combined with commonly used components and prepared to be used with a very short warmup. 
-Rico helps you to build your applications in a short time letting you focus on the business requirements as it has standard solutions for common technical use cases like _Data Access_, _Logging_, _Monitoring_ and _Security_ *already build in* and well prepared to get *integrated in your environment*.
+Rico helps you to build your applications in a short time while letting you focus on the business requirements. It offers standard solutions for common technical use cases like _Data Access_, _Logging_, _Monitoring_ and _Security_ *already build in* and is well prepared to get *integrated in your environment*.
 
-To achieve this, Rico provides clean APIs to seperate complexity coming from the set of technologies required to build your solution from your actual code required to provide your business solution.
+To achieve this, Rico provides clean APIs to seperate complexity coming from the set of technologies required to build your solution from your actual code.
 
 Also, Rico provides a remoting layer that helps you to seperate UI framework specific code so that is a lot easier to switch UI implementations.
 It also enables you to choose different technologies for every target platform. 
@@ -66,4 +66,4 @@ Next steps planned for development of Rico are:
 * Upgrade the [Angular Adapter](https://github.com/rico-projects/rico-angular) to Angular 8
 * Upgrade support for WebComponents (currently outdated [Polymer Adapter](https://github.com/rico-projects/rico-polymer))
 
-Rico is a open-source project funded by the projects creating the solutions it helps to build. If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:info@karakun.com).
+Rico is an open-source framework mainly driven by the projects already using it in production. If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:rico@karakun.com).
