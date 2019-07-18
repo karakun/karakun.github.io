@@ -49,7 +49,7 @@ Client UI technologies currently supported by adapters are:
 * Polymer (WebComponents)
 
 On top of _[Rico](/rico) Remoting_, there is __[Rico](/rico) Projector__. This module provides a server-side API to create client UIs (currently just JavaFx). 
-It has been initiated and contributed by <a href="https://twitter.com/johado78">Jörg Hälker</a> at <a href="https://www.sprouts.aero/">sprouts GmbH</a> to whom we want to send a big THANK YOU.
+It has been initiated and contributed by [Jörg Hälker](https://twitter.com/johado78) at [sprouts GmbH](https://www.sprouts.aero/) to whom we want to send a big THANK YOU.
 This contribution to Rico is currently being finalized and will be released soon. The [__Projector__ repository](https://github.com/rico-projects/rico-projector) already contains an example application in case you want to have a look.
 Creating the UI from a server side API reduces the effort the dev team has to take to build a solution as they do not need to care about UI technology.
 
