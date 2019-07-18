@@ -51,7 +51,7 @@ Users of Rico we know of and who have agreed to be listed here as references:
 * [Sprouts GmbH](https://www.sprouts.aero/)
 * [IRIX Software Engineering AG](https://www.irix.ch/)
 
-If you are using Rico and would be happy to see your company listed here, please [contact us](mailto:info@karakun.com)
+If you are using Rico and would be happy to see your company listed here, please [contact us](mailto:info@karakun.com).
 
 ## Outlook 
 
@@ -66,4 +66,4 @@ Next steps planned for development of Rico are:
 * Upgrade the [Angular Adapter](https://github.com/rico-projects/rico-angular) to Angular 8
 * Upgrade support for WebComponents (currently outdated [Polymer Adapter](https://github.com/rico-projects/rico-polymer))
 
-Rico is a open-source project funded by the projects creating the solutions it helps to build. If you want to influence the timeline or prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:info@karakun.com) .
+Rico is a open-source project funded by the projects creating the solutions it helps to build. If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:info@karakun.com).
