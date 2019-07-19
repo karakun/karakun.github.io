@@ -51,7 +51,7 @@ Users of Rico we know of and who have agreed to be listed here as references:
 * [Sprouts GmbH](https://www.sprouts.aero/)
 * [IRIX Software Engineering AG](https://www.irix.ch/)
 
-If you are using Rico and would be happy to see your company listed here, please [contact us](mailto:info@karakun.com).
+If you are using Rico and would be happy to see your company listed here, please [contact us](mailto:rico@karakun.com).
 
 ## Outlook 
 
