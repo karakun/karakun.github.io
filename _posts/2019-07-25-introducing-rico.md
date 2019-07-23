@@ -4,7 +4,7 @@ title:  'Introducing Rico'
 author: markus
 featuredImage: 
 excerpt: 'Introduction to Rico, the application framework.'
-permalink: '/rico/2019/07/16/introducing-rico.html'
+permalink: '/rico/2019/07/25/introducing-rico.html'
 categories: [Java, Jakarta EE, Java EE, Spring, Rico, Remoting, Monitoring, Security, Angular, WebComponents, JavaFX, Projector]
 header:
   text: Introducing <span class="my-karakun">Rico<span>
@@ -30,12 +30,10 @@ It provides modules for common use cases that extend the range of functions you 
  
 These are in regard to core functionalities:
 
-* _Data Access_ -
-* _Logging_ - 
-* _Monitoring_ -
-* _Security_ - 
-
-(**TODO:** some word to each module)
+* _Data Access_ - Rico provides helpers to enhance usage of your applications data layer. This includes using an event system for entity mutation to solve common problems in distributed systems. Since Rico builds on top of established frameworks (Spring Data or JPA) it integrates smoothly in your data layer.
+* _Logging_ - Based on SLF4J, Rico provides logging features to serve typical uses-cases including distributed logging (painless GreyLog integration). Next to this, accessing the log entries is simplified by an In-Memory pipe of recent logentries and ready-to-use widgets to visualize logs (local & remote).
+* _Monitoring_ - As one of the first frameworks, Rico implemented the [new ServerTiming standard](/java/rico/2019/01/15/rico-server-timing.html) and is prepared for distributed tracing.
+* _Security_ - Generic interface to serve typical security use-cases (e.g. login, logout, session-management, ...) with integration of KeyCloak (popular access and identity management solution) as a first implementation. All security features are automatically integrated into Rico's Remoting / HTTP layers.
 
 Providing a user interface is more or less required for almost every solution today - be it an admin UI or a UI to give users access the needed functionality. Rico also provides some modules to help in that regard.
 
@@ -55,13 +53,16 @@ This contribution to Rico is currently being finalized and will be released soon
 Creating the UI from a server side API reduces the effort for dev teams as they do not need to care about UI technology.
 
 To provide maximum flexibility, it is of course also still possible to implement interfaces provided over HTTP (SOAP, REST, GraphQL, ...) as it is the case for the frameworks build upon.
-**TODO:** clarify if Rico provides something in addition....
+  
+Rico provides a fluent client API for HTTP(S) that automatically respects the threading rules of the given UI toolkit. 
+Next to this, Rico has functionality to provide maximum convenience when handling utf-8 text, (large) binaries and serializable data.
+Thanks to the plugin functionality of the HTTP client, _security features_ or the _Client Scope_ are injected automatically in each request.
 
 In order to use these components for UIs efficiently, even when combined, [Rico](/rico) provides a __Client Scope__ module on the one hand and an __Event Bus__ module on the other hand.
 
 __Client Scope__ is for example handy in cases when a browser UI is implemented (Angular or WebComponents/Polymer) and you need to handle several browser tabs being used in one session.
 
-__Event Bus__ is used to communicate between sessions. With this module data from one client session can be published to another session, e.g. to implement a collaboration use case or a chat client.
+__Event Bus__ is used to communicate between sessions (even beyond server boundaries). With this module data from one client session can be published to another session, e.g. to implement a collaboration use case or a chat client.
 
 
 
