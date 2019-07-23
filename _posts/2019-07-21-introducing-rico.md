@@ -37,9 +37,9 @@ These are in regard to core functionalities:
 
 (**TODO:** some word to each module)
 
-Providing a user interface is more or lesse required for almost every solution today - be it an admin UI or a UI to give users acess the needed functionality. Rico also provides some modules to help in that regard.
+Providing a user interface is more or less required for almost every solution today - be it an admin UI or a UI to give users access the needed functionality. Rico also provides some modules to help in that regard.
 
-We see the landscape of UI technologies changing much faster than core technology. This is why developed the __[Rico](/rico) Remoting__ module which helps seperating business logic from UI technology and even from client technology (e.g. browser or desktop).
+We see the landscape of UI technologies changing much faster than core technology. This is why developed the __[Rico](/rico) Remoting__ module which helps separating business logic from UI technology and even from client technology (e.g. browser or desktop).
 This separation protects the investment in an application as it makes it much cheaper to reimplement the UI with a new UI technology while keeping the core of the solution as it is (being in production and thus deeply validated by that time).
 Client UI technologies currently supported by adapters are:
 
