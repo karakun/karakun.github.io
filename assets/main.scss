@@ -400,6 +400,17 @@ img {
 }
 
 article {
+    .article-title {
+        position: relative;
+        min-height: 3em;
+
+        h3 {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+        }
+    }
+
     &.talk, &.book, &.karakun-media {
         margin-bottom: $size-2;
         clear: both;
