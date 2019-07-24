@@ -2,8 +2,8 @@
 layout: post
 title:  'Introducing Rico'
 author: markus
-featuredImage: 
-excerpt: 'Introduction to Rico, the application framework.'
+featuredImage: puffin
+excerpt: 'Rico is the application framework initiated and maintained by Karakun to help building better enterprise solutions in less time. This article gives an introduction and points out the key functionalities your projects can easily benefit from.'
 permalink: '/rico/2019/07/25/introducing-rico.html'
 categories: [Java, Jakarta EE, Java EE, Spring, Rico, Remoting, Monitoring, Security, Angular, WebComponents, JavaFX, Projector]
 header:
