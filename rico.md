@@ -13,7 +13,7 @@ nav:
 
 Implement applications while leveraging state-of-the art technologies, patterns and practices.
 
-![Rico Logo]({{ "/assets/images/rico-logo.png" | absolute_url }})
+![Rico Logo]({{ "/assets/images/rico/rico-logo.png" | absolute_url }})
 
 ## Overview
 
@@ -69,3 +69,5 @@ Next steps planned for development of Rico are:
 * Upgrade support for WebComponents (currently outdated [Polymer Adapter](https://github.com/rico-projects/rico-polymer))
 
 Rico is an open-source framework mainly driven by the projects already using it in production. If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:rico@karakun.com).
+
+![Rico Open Source]({{ "/assets/images/rico/rico-opensource.png" | absolute_url }})
