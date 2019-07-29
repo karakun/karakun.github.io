@@ -1,0 +1,14 @@
+- title: 'Blog post "Introducing Rico"'
+  url: '/rico/2019/07/29/intoducing-rico.html'
+  description: ''
+  date: 'July, 29 2019'  
+
+- title: 'Rico 1.0.1 Released'
+  url: 'https://github.com/rico-projects/rico/releases/tag/1.0.1'
+  description: '[Bintray](https://bintray.com/karakun/Rico/Rico/1.0.1)'
+  date: 'June, 11 2019'
+
+- title: 'Blog post "Server Timing with Rico"'
+  url: '/java/rico/2019/01/15/rico-server-timing.html'
+  description: ''
+  date: 'January, 15 2019'  
