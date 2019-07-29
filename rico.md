@@ -13,6 +13,8 @@ nav:
 
 Implement applications while leveraging state-of-the art technologies, patterns and practices.
 
+![Rico Logo]({{ "/assets/images/rico-logo.png" | absolute_url }})
+
 ## Overview
 
 Rico is an application framework that provides several functionalities and APIs to create enterprise applications. 

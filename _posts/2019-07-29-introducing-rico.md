@@ -4,7 +4,7 @@ title:  'Introducing Rico'
 author: markus
 featuredImage: puffin
 excerpt: 'Rico is the application framework initiated and maintained by Karakun to help building better enterprise solutions in less time. This article gives an introduction and points out the key functionalities your projects can easily benefit from.'
-permalink: '/rico/2019/07/25/introducing-rico.html'
+permalink: '/rico/2019/07/29/introducing-rico.html'
 categories: [Java, Jakarta EE, Java EE, Spring, Rico, Remoting, Monitoring, Security, Angular, WebComponents, JavaFX, Projector]
 header:
   text: Introducing <span class="my-karakun">Rico<span>
@@ -12,6 +12,8 @@ header:
 ---
 
 [Rico](/rico) is an open-source application framework led by <span class="my-karakun">Karakun</span> to help building better solutions in less time.
+
+![Rico Logo]({{ "/assets/images/rico-logo.png" | absolute_url }})
 
 Since [Hendrik blogged recently](/java/rico/2019/01/15/rico-server-timing.html) about a in-depth topic on [Rico](/rico), I thought we should give it an introduction post since it has not surfaced much so far...
 
