@@ -15,7 +15,7 @@ header:
 
 ![Rico Logo]({{ "/assets/images/rico/rico-logo.png" | absolute_url }})
 
-Since [Hendrik blogged recently](/java/rico/2019/01/15/rico-server-timing.html) about a in-depth topic on [Rico](/rico), I thought we should give it an introduction post since it has not surfaced much so far...
+Since [Hendrik blogged recently](/java/rico/2019/01/15/rico-server-timing.html) about an in-depth topic on [Rico](/rico), I thought we should give it an introduction post since it has not surfaced much so far...
 
 ## History
 
@@ -39,7 +39,7 @@ These are in regard to core functionalities:
 
 Providing a user interface is more or less required for almost every solution today - be it an admin UI or a UI to give users access the needed functionality. Rico also provides some modules to help in that regard.
 
-We see the landscape of UI technologies changing much faster than core technology. This is why developed the __[Rico](/rico) Remoting__ module which helps separating business logic from UI technology and even from client technology (e.g. browser or desktop).
+We see the landscape of UI technologies changing much faster than core technology. This is why we developed the __[Rico](/rico) Remoting__ module which helps separating business logic from UI technology and even from client technology (e.g. browser or desktop).
 This separation protects the investment in an application as it makes it much cheaper to reimplement the UI with a new UI technology while keeping the core of the solution as it is (being in production and thus deeply validated by that time).
 Client UI technologies currently supported by adapters are:
 
@@ -54,7 +54,7 @@ It has been initiated and contributed by [Jörg Hälker](https://twitter.com/joh
 This contribution to Rico is currently being finalized and will be released soon. The [__Projector__ repository](https://github.com/rico-projects/rico-projector) already contains an example application in case you want to have a look.
 Creating the UI from a server side API reduces the effort for dev teams as they do not need to care about UI technology.
 
-To provide maximum flexibility, it is of course also still possible to implement interfaces provided over HTTP (SOAP, REST, GraphQL, ...) as it is the case for the frameworks build upon.
+To provide maximum flexibility, it is of course also still possible to implement interfaces provided over HTTP (SOAP, REST, GraphQL, ...) as it is the case for the frameworks built upon.
   
 Rico provides a fluent client API for HTTP(S) that automatically respects the threading rules of the given UI toolkit. 
 Next to this, Rico has functionality to provide maximum convenience when handling utf-8 text, (large) binaries and serializable data.
