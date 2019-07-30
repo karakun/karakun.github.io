@@ -30,11 +30,11 @@ The motivation for us to create Rico is to avoid code for standard use-cases to 
 The outcome is a framework that is built on top of well-known frameworks combined with commonly used components and prepared to be used with a very short warmup. 
 Rico helps you to build your applications in a short time while letting you focus on the business requirements. It offers standard solutions for common technical use cases like _Data Access_, _Logging_, _Monitoring_ and _Security_ *already built in* and is well prepared to get *integrated in your environment*.
 
-To achieve this, Rico provides clean APIs to separate complexity coming from the set of technologies required to build your solution from your actual code.
+To achieve this, Rico provides clean APIs to seperate complexity coming from the set of technologies required to build your solution from your actual code.
 
 Also, Rico provides a remoting layer that helps you to seperate UI framework specific code so that is a lot easier to switch UI implementations.
 It also enables you to choose different technologies for every target platform. 
-As we see a very rapidly changing environment in UI technologies, this seperation helps to protect your investment put into the solution built with Rico as it will be less dependent on a concrete UI technology.
+As we see a very rapidly changing environment in UI technologies, this separation helps to protect your investment put into the solution built with Rico as it will be less dependent on a concrete UI technology.
 
 ### Getting started
 
