@@ -15,7 +15,7 @@ Often times, I've been asked the following question so I decided to write it dow
 
 ## The question 
 
-The question I was asked very often is
+The question I have been asked very often is
 
  "why is package-lock.json always updated but never used as reference to stick the the packages it defines?"
 
