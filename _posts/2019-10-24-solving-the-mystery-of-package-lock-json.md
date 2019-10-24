@@ -7,7 +7,7 @@ excerpt: 'A lot of people wonder, why package-lock.json is always updated but ne
 permalink: '/rico/2019/10/24/package-lock-mystery.html'
 categories: [JavaScript, TypeScript, Angular, WebComponents, React, VueJS]
 header:
-  text: Solving the <span class="my-karakun">package-lock.json<span> mystery
+  text: Solving the <span class="my-karakun">package-lock.json</span> mystery
   image: post
 ---
 
