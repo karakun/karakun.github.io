@@ -11,19 +11,13 @@ header:
   image: post
 ---
 
-Often times, I've been asked the following question so I decided to write it down here for future reference.
+Quite often, I have been asked the question "Why is package-lock.json always updated but never used as reference to stick the the packages it defines?". Even though the answer is quite simple, it is not obvious enough. :)
 
-## The question 
-
-The question I have been asked very often is
-
- "why is package-lock.json always updated but never used as reference to stick the the packages it defines?"
-
-## the quick answer
+## The quick answer
 
 `package-lock.json` is updated with every normal `npm install` to constantly reflect the packages that were used on the last build. 
 
-To use exectly the versions pinned in `package-lock.json`, one needs to use the `npm ci` command ([npm docs](https://docs.npmjs.com/cli/ci)). It's called `ci` as this command is expected to be used primarily within CI systems / for builds executed in CI systems.
+To use exactly the versions pinned in `package-lock.json`, one needs to use the `npm ci` command ([npm docs](https://docs.npmjs.com/cli/ci)). It's called `ci` as this command is expected to be used primarily within CI systems / for builds executed in CI systems.
 
 Thus, *you should usually use `npm ci`* instead of `npm install` in your build executed in CI jobs / pipelines.
 
