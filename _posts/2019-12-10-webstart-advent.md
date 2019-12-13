@@ -2,7 +2,7 @@
 layout: post
 title:  'How open source saved WebStart – a christmas carol'
 author: hendrik
-featuredImage: rock-solid-js
+featuredImage: winter
 excerpt: 'Everyone who has developed Java desktop applications within the last 15 years used WebStart or at least heard about it. This post gives an overview how the technology evolves as an open source project after Oracle announced its removal from the Oracle JDK.'
 categories: [Java, OpenWebStart]
 header:
@@ -69,3 +69,5 @@ Besides all the technical details and Java specific quirks we had two very insig
 * It is possible to find money for open source software. While the only profit we draw from OpenWebStart is the numerous experiences we made in the process of writing the code. We were able to find companies willing to support us financially in making this project come to live. Specially around Christmas time it is comforting to know that even in today’s culture of free services there are still some companies out there willing to pay for a piece of software.
 
 At the end I’m really happy that – together with awesome partners – we finished the 1.0 release of this interesting open source project just before the end of 2019.
+
+![XMAS]({{ "/assets/posts/2019-12-10-webstart-advent/christmas-rocket.png" | absolute_url }})
