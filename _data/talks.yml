@@ -32,7 +32,7 @@
     In this session I will give an overview about the differences between JDKs that you can use today and how frameworks like JavaFX
     are really supported by the vendors. Next to this we will have a look at all the tools that are important for building and installing
     desktop development. Since some like WebStart are gone you can find quite good alternatives.
-  lectures: ['JFX Day 2019']
+  lectures: ['JFX Days 2019']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-desktop-2019
   featuredImage: rocket
 
