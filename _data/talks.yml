@@ -8,7 +8,7 @@
     Using a hybrid framework like React Native or NativeScript with WebdriverIO, François will show how to use utility methods to cleverly encapsulate all of the platform differences as much as possible, so writing tests is efficient, readable and maintainable.
   lectures: ['SauceCon Online 2020']
   slides-link: https://github.com/martinfrancois/saucecon-2020-1-codebase-2-mobile-platforms
-  youtube-link: 'http://saucecon.com/agenda-2020?agendaPath=session/251027'
+  video-link: 'http://saucecon.com/agenda-2020?agendaPath=session/251027'
   featuredImage: mobile-e2e-talk
 
 - name: 'Java Desktop 2019'
@@ -47,7 +47,7 @@
   lectures: ['CodeOne 2019']
   slides-link: https://www.slideshare.net/HendrikEbbers/beauty-the-beast-java-vs-typescript
   featuredImage: beast
-  youtube-link: 'https://www.youtube.com/watch?v=6zxn_jY1jiA'
+  video-link: 'https://www.youtube.com/watch?v=6zxn_jY1jiA'
 
 - name: 'JavaFX - Custom Controls'
   author: 'gerrit'
@@ -59,7 +59,7 @@
   lectures: ['JavaFX-Days 2018']
   slides-link: https://speakerdeck.com/karakun/javafx-custom-controls
   featuredImage: controls
-  youtube-link: 'https://www.youtube.com/watch?v=OuF2BMnCjt4'
+  video-link: 'https://www.youtube.com/watch?v=OuF2BMnCjt4'
 
 - name: 'Java 11 - OMG!!!!'
   author: 'hendrik'
@@ -135,7 +135,7 @@
   lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund', 'JavaLand 2017', 'JUG Hamburg', 'JCON 2017', 'JUG Kassel', 'JUG Saxony', 'JUG Görlitz']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
   featuredImage: java-apis
-  youtube-link: 'https://www.youtube.com/watch?v=YQBk9FyfzEM&'
+  video-link: 'https://www.youtube.com/watch?v=YQBk9FyfzEM&'
 
 - name: 'Multidevice Controls: A Different Approach to UX'
   author: 'gerrit'
@@ -195,7 +195,7 @@
     Build and testing a commercial software is easy. You can use a big infrastructure for CI and commercial tools to test your complete stack. And if you want to test your application on different mobile devices - well, that's easy! You company will buy them for you. But what can you do if you want to work on Open Source? You can not spend thousands of Dollars for a free time project and without a given infrastructure several build, test and deployment steps are just impossible...
     Imagine a world in that testing, building or deploying of open source software is at least as easy as for commercial projects. Maybe it's just easier and the infrastructure is better than in most $$$ stacks. I will introduce you to this world and show several tools and services that will help you to get the best out of your open source project - without producing any costs but with a lot of fun, cool new technologies and the freedom of choose.
   lectures: ['Java Summit Bucharest 2018', 'Riviera DEV 2017']
-  youtube-link: 'https://www.youtube.com/watch?v=74AiufFGVug'
+  video-link: 'https://www.youtube.com/watch?v=74AiufFGVug'
   featuredImage: wild-projects
 
 - name: 'Polyglott Java - a platform for many paradigms'
@@ -205,7 +205,7 @@
     In this talk we will go through unconventional combinations of these paradigms that enrich your solution space - scripting user-defined functions for a business application, building ambitious user interfaces, and creating rock-solid transaction systems.
     Java has something for everybody.
   lectures: ['Java Summit Bucharest 2018']
-  youtube-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
+  video-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
   featuredImage: mittie-talk
 
 - name: 'Lightweight and reproducible environments with Vagrant and Puppet'
@@ -229,7 +229,7 @@
     using typical JavaFX patterns. This session introduces the free and open source DataFX project, gives practical advice for using it, and provides insight into future plans for this project.
   lectures: ['JavaOne 2013', 'JUG Saxony Day 2014', 'JavaOne 2014']
   featuredImage: graffiti
-  youtube-link: 'https://www.youtube.com/watch?v=q65436KIuJ0'
+  video-link: 'https://www.youtube.com/watch?v=q65436KIuJ0'
 
 - name: 'JavaFX, Widgets, and Apps'
   author: 'hendrik'
@@ -253,7 +253,7 @@
     to create custom skins for JavaFX controls. You will learn that with AquaFX, this custom skin can even feel like a native one.
   lectures: ['JavaOne 2013']
   featuredImage: graffiti
-  youtube-link: 'https://www.youtube.com/watch?v=ucvdYGLWLT0'
+  video-link: 'https://www.youtube.com/watch?v=ucvdYGLWLT0'
 
 - name: 'Feature Driven Development'
   author: 'hendrik'
@@ -269,7 +269,7 @@
     Methods and tools like the GitFlow, GitLab, the Java Togglz API and Jira will be shown in this talk.
   lectures: ['DevoxxUK 2014']
   featuredImage: graffiti
-  youtube-link: 'https://www.youtube.com/watch?v=D7f4ztJIHwo'
+  video-link: 'https://www.youtube.com/watch?v=D7f4ztJIHwo'
 
 - name: 'JavaFX Enterprise'
   author: 'hendrik'
@@ -283,7 +283,7 @@
     JavaFX enterprise APIs and techniques a developer will be able to focus on application building instead of the underlying plumbing.
   lectures: ['JavaOne 2014', 'w-jax 2014', 'Devoxx 2014', 'JavaLand 2015', 'jax 2015', 'JavaOne 2015', 'Java Forum Nord 2015', 'JUG Schweiz', 'JUG Dortmund']
   featuredImage: graffiti
-  youtube-link: 'https://www.youtube.com/watch?v=5yk6d8vjNE4&'
+  video-link: 'https://www.youtube.com/watch?v=5yk6d8vjNE4&'
 
 - name: 'Smart UIs for mobile and embedded in JavaFX'
   author: 'hendrik'
@@ -309,7 +309,7 @@
     demonstrating techniques and APIs discussed earlier.
   lectures: ['JavaOne 2014']
   featuredImage: graffiti
-  youtube-link: 'https://www.youtube.com/watch?v=MVIKZyqpnMY'
+  video-link: 'https://www.youtube.com/watch?v=MVIKZyqpnMY'
 
 - name: 'WebComponents and Polymer'
   author: 'hendrik'
@@ -322,7 +322,7 @@
     This talk will give an overview of the current state of technology and a forecast of future development.
   lectures: ['JFocus 2015', 'jax 2015', 'Webinale Berlin 2015', 'Devoxx 2015', 'JUG Schweiz', 'JUG Dortmund', 'MTC 2016', 'Voxxed Days Berlin', 'JUG Münster', 'MobileTecConf 2016', 'JFocus 2016']
   featuredImage: graffiti
-  youtube-link: 'https://www.youtube.com/watch?v=muqOStp3A_o'
+  video-link: 'https://www.youtube.com/watch?v=muqOStp3A_o'
 
 - name: 'The remote presentation model'
   author: 'hendrik'
@@ -369,4 +369,4 @@
     talk the examples will be shown as live demos and live coding sessions.
   lectures: ['JavaOne 2014', 'JavaOne 2017', 'JavaOne 2018', 'JavaFX-Day']
   featuredImage: gui-makeover
-  youtube-link: 'https://www.youtube.com/watch?v=-XY3Jjkz1sk'
+  video-link: 'https://www.youtube.com/watch?v=-XY3Jjkz1sk'
