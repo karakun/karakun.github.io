@@ -1,22 +1,33 @@
 # Data file that describes talks
 
+- name: '1 Codebase, 2 Mobile Platforms: How to Test iOS and Android by Just Writing Tests Once'
+  author: 'francois'
+  summary: >
+    Developing consistent mobile apps on iOS and Android is difficult enough, but writing automated end to end tests so they run on both platforms without writing them twice is even harder. The limited selectors on mobile make it very difficult to only use one testing code base for both platforms. By using accessibilityId’s with translation keys in the same way as in the app, we use the fastest and least brittle selector on mobile possible, being resistant to tests breaking in case of text changes, allowing to also check the app in all languages without any additional effort.
+
+    Using a hybrid framework like React Native or NativeScript with WebdriverIO, François will show how to use utility methods to cleverly encapsulate all of the platform differences as much as possible, so writing tests is efficient, readable and maintainable.
+  lectures: ['SauceCon Online 2020']
+  slides-link: https://github.com/martinfrancois/saucecon-2020-1-codebase-2-mobile-platforms
+  youtube-link: 'http://saucecon.com/agenda-2020?agendaPath=session/251027'
+  featuredImage: mobile-e2e-talk
+
 - name: 'Java Desktop 2019'
   author: 'hendrik'
   summary: >
-    Some years ago development of Java Desktop applications was easy: 
-    We just downloaded Java 8 from Oracle and got a set of useful tools and framework to develop Java desktop applications: 
+    Some years ago development of Java Desktop applications was easy:
+    We just downloaded Java 8 from Oracle and got a set of useful tools and framework to develop Java desktop applications:
 
     - AWT & Swing
-    
-    - WebStart 
-    
-    - JavaFX 
-    
-    - JFX Packager 
-    
+
+    - WebStart
+
+    - JavaFX
+
+    - JFX Packager
+
     If you now download a Java version from Oracle (or any other vendor) several of the mentioned tools and frameworks are gone.
     Some JDKs only contain AWT & Swing for desktop development and miss all the newer tools. But even if they include such tools
-    or frameworks you have sometimes no idea about their state. 
+    or frameworks you have sometimes no idea about their state.
     In this session I will give an overview about the differences between JDKs that you can use today and how frameworks like JavaFX
     are really supported by the vendors. Next to this we will have a look at all the tools that are important for building and installing
     desktop development. Since some like WebStart are gone you can find quite good alternatives.
@@ -41,9 +52,9 @@
 - name: 'JavaFX - Custom Controls'
   author: 'gerrit'
   summary: >
-    Gerrit presents his two open source frameworks TilesFX and Medusa. TilesFX is used 
-    for creating professional and sophisticated dashboards. Medusa delivers a huge set 
-    of custom controls that implement gauges, ideal for monitoring applications. Gerrit 
+    Gerrit presents his two open source frameworks TilesFX and Medusa. TilesFX is used
+    for creating professional and sophisticated dashboards. Medusa delivers a huge set
+    of custom controls that implement gauges, ideal for monitoring applications. Gerrit
     will share many tricks on how to accomplish eye candy effects.
   lectures: ['JavaFX-Days 2018']
   slides-link: https://speakerdeck.com/karakun/javafx-custom-controls
@@ -61,8 +72,8 @@
     the Ask-Toolbar ;)
 
     Starting with Java 9 Oracle has announced a new release train and with Java 11 the licence
-    model of the Oracle JDK has changed. Because of this, new vendors appear on the market 
-    offering commercial support for Java. But isn't Java 11 a LTS version that I can easily use 
+    model of the Oracle JDK has changed. Because of this, new vendors appear on the market
+    offering commercial support for Java. But isn't Java 11 a LTS version that I can easily use
     for years and why should I use commercial support in this case?
 
     The keynote gives an overview of the history of Java and the OpenJDK. We will have a closer
@@ -75,14 +86,14 @@
 - name: 'Progressive Web Apps and the Service Worker API'
   author: 'simon'
   summary: >
-    Progressive Web Apps (PWAs) closes the gap between websites and native applications. 
-    They combine the high accessibility of web pages with the open standards of the web in terms of 
-    Look and feel (HTML, CSS), search engine optimization (SEO) and functionality (Push API, Notification API), 
-    Web Storage API, HTTPS etc.) with properties of native applications. So Progressive 
+    Progressive Web Apps (PWAs) closes the gap between websites and native applications.
+    They combine the high accessibility of web pages with the open standards of the web in terms of
+    Look and feel (HTML, CSS), search engine optimization (SEO) and functionality (Push API, Notification API),
+    Web Storage API, HTTPS etc.) with properties of native applications. So Progressive
     Web Apps can work offline (Service Worker API) and be added like a native app to the Home Screen of your device (Web App Manifest).
 
-    This talk shows how to create a PWA. The focus is on the Service Worker API, 
-    which plays a central role for Progressive Web Apps. It will also show how the Web 
+    This talk shows how to create a PWA. The focus is on the Service Worker API,
+    which plays a central role for Progressive Web Apps. It will also show how the Web
     App manifest and which help to realize a PWA.
   lectures: ['W-JAX 2018', 'JavaLand 2018', "c't &lt;webdev&gt; 2019"]
   github-link: 'https://giftkugel.github.io/talks/pwa.html'
@@ -91,14 +102,14 @@
 - name: 'Web APIs - The missing manual'
   author: 'simon'
   summary: >
-    Web developers use different Web APIs every day. Often this APIs are well known ones, 
-    like the Document Object Model (DOM), the DOM Event API, the Fetch API or the 
-    Geolocation API. A kind of comfort zone is created, which one rarely leaves. 
-    The web provides many more APIs, which are rarely or not at all known. 
-    Do you already know for example the Web Speech API, or the Web Bluetooth 
-    API, the Server Timing API, the Battery Status API or the Credential Management 
-    API? These and other APIs are part of the talk to help web developers leave their 
-    comfort zone. Since the presentation includes many APIs, the attendees can choose 
+    Web developers use different Web APIs every day. Often this APIs are well known ones,
+    like the Document Object Model (DOM), the DOM Event API, the Fetch API or the
+    Geolocation API. A kind of comfort zone is created, which one rarely leaves.
+    The web provides many more APIs, which are rarely or not at all known.
+    Do you already know for example the Web Speech API, or the Web Bluetooth
+    API, the Server Timing API, the Battery Status API or the Credential Management
+    API? These and other APIs are part of the talk to help web developers leave their
+    comfort zone. Since the presentation includes many APIs, the attendees can choose
     at the beginning which APIs will be presented in detail.
   lectures: ['W-JAX 2018', "c't &lt;webdev&gt; 2019"]
   github-link: 'https://giftkugel.github.io/talks/web-api.html'
@@ -107,20 +118,20 @@
 - name: 'Java APIs - The missing manual'
   author: 'hendrik'
   summary: >
-    This isn’t a talk about microservices, NoSQL, container solutions or hip new frameworks. 
+    This isn’t a talk about microservices, NoSQL, container solutions or hip new frameworks.
     This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8.
     All those features are very helpful to create maintainable and future-proof applications, regardless
     of whether JavaEE, Spring, JavaFX or any other framework is used. The talk will give an overview of
     some important standard concepts and APIs of Java like annotations, null values and concurrency.
-    Based on an overview of this topics and some samples the talk will answer questions like: 
+    Based on an overview of this topics and some samples the talk will answer questions like:
 
-    - How can I create my own annotations? 
-    
-    - How can I create a plugin structure without using frameworks like OSGI? 
-    
-    - What’s the best way to handle NullPointerExceptions? 
-    
-    - How can I write concurrent code that is still maintainable? 
+    - How can I create my own annotations?
+
+    - How can I create a plugin structure without using frameworks like OSGI?
+
+    - What’s the best way to handle NullPointerExceptions?
+
+    - How can I write concurrent code that is still maintainable?
   lectures: ['Dev Talks Cluj 2018', 'W-JAX 2018', 'JUG Dortmund', 'JavaLand 2017', 'JUG Hamburg', 'JCON 2017', 'JUG Kassel', 'JUG Saxony', 'JUG Görlitz']
   slides-link: https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-manual
   featuredImage: java-apis
@@ -129,12 +140,12 @@
 - name: 'Multidevice Controls: A Different Approach to UX'
   author: 'gerrit'
   summary: >
-    Everybody knows boring form-based user interfaces. What if you could add mobile devices to improve 
-    the UX of desktop or web applications? A research project at the University of Applied Sciences and 
-    Arts Northwestern Switzerland has tried to address this topic in a totally different way. Usually you 
-    would expect to rework the UI and make it fancier, but here the idea is to enhance controls so they 
-    can reside on a mobile device. For example, you can think about a text input field that gets the focus, 
-    with the actual data input being done on a mobile phone. This session presents an overview of the concept 
+    Everybody knows boring form-based user interfaces. What if you could add mobile devices to improve
+    the UX of desktop or web applications? A research project at the University of Applied Sciences and
+    Arts Northwestern Switzerland has tried to address this topic in a totally different way. Usually you
+    would expect to rework the UI and make it fancier, but here the idea is to enhance controls so they
+    can reside on a mobile device. For example, you can think about a text input field that gets the focus,
+    with the actual data input being done on a mobile phone. This session presents an overview of the concept
     and shows you some results of the research project in the form of demos based on Swift, JavaFX, and Polymer.
   lectures: ['Oracle CodeOne 2018', 'Jocker Conf 2018', 'Voxxed Days Banff 2018']
   featuredImage: multi-device
@@ -144,7 +155,7 @@
   author: 'markus'
   summary: >
     End to end testing is a crucial part of a tool chain to deliver high-quality releases of many software systems.
-    
+
     With Geb, we have a very handy wrapper to WebDriver/Selenium at our fingertips that enables us to create actually maintainable E2E test suites even for large web applications.
     Combining it with Docker and a CI system enables us to be very flexible about the context we use this tests in and allow us to provoke feedback for many interesting aspects we need to know about in our system.
 
@@ -167,12 +178,12 @@
 
 - name: 'Java WebStart is dead - What should we do now?'
   author: 'hendrik'
-  summary: > 
-    Starting with Java 11, WebStart is being removed from Java. 
-    Because even today several applications are built on top of this technology, 
-    it will be mission-critical for many companies to find a replacement for it. 
-    This session presents an overview of the features of WebStart and how they can be replaced. 
-    It includes samples of several open source and commercial tools that provide such features 
+  summary: >
+    Starting with Java 11, WebStart is being removed from Java.
+    Because even today several applications are built on top of this technology,
+    it will be mission-critical for many companies to find a replacement for it.
+    This session presents an overview of the features of WebStart and how they can be replaced.
+    It includes samples of several open source and commercial tools that provide such features
     and might mean new and cool possibilities for WebStart-based applications.
   lectures: ['Oracle CodeOne 2018', 'JavaLand 2019']
   featuredImage: webstart
@@ -181,7 +192,7 @@
 - name: 'Where the wild projects are'
   author: 'hendrik'
   summary: >
-    Build and testing a commercial software is easy. You can use a big infrastructure for CI and commercial tools to test your complete stack. And if you want to test your application on different mobile devices - well, that's easy! You company will buy them for you. But what can you do if you want to work on Open Source? You can not spend thousands of Dollars for a free time project and without a given infrastructure several build, test and deployment steps are just impossible... 
+    Build and testing a commercial software is easy. You can use a big infrastructure for CI and commercial tools to test your complete stack. And if you want to test your application on different mobile devices - well, that's easy! You company will buy them for you. But what can you do if you want to work on Open Source? You can not spend thousands of Dollars for a free time project and without a given infrastructure several build, test and deployment steps are just impossible...
     Imagine a world in that testing, building or deploying of open source software is at least as easy as for commercial projects. Maybe it's just easier and the infrastructure is better than in most $$$ stacks. I will introduce you to this world and show several tools and services that will help you to get the best out of your open source project - without producing any costs but with a lot of fun, cool new technologies and the freedom of choose.
   lectures: ['Java Summit Bucharest 2018', 'Riviera DEV 2017']
   youtube-link: 'https://www.youtube.com/watch?v=74AiufFGVug'
@@ -201,13 +212,13 @@
   author: 'hendrik'
   archive: true
   summary: >
-    Many developers are in need of complex development- and test environments for different projects with customers. The ideal situation would be to have them running in a sandbox. 
-    With help of the Cloud and VMs it's possible to create those sandbox-environments but administration, configuration and maintenance cost a lot of time and money. 
+    Many developers are in need of complex development- and test environments for different projects with customers. The ideal situation would be to have them running in a sandbox.
+    With help of the Cloud and VMs it's possible to create those sandbox-environments but administration, configuration and maintenance cost a lot of time and money.
     With a combination of Vagrant & Puppet it's possible to create and configure those environments "on the fly". Anytime, anywhere and above all reproducible.
     The Talk shows how fast you can create and configure a sandbox for a Java environment including an Application Server and a database with the help of those tools.
   lectures: ['Devoxx 2012', 'JayDay 2013', 'DevoxxUK 2013']
   featuredImage: graffiti
-  
+
 - name: 'DataFX: The Best Way to Get Real-World Data into Your JavaFX Application'
   author: 'hendrik'
   archive: true
@@ -248,11 +259,11 @@
   author: 'hendrik'
   archive: true
   summary: >
-    This talk shows Best Practices that can be used to develop application in an agile and feature driven workflow. Companies like flickr use this development process internally and even Martin 
+    This talk shows Best Practices that can be used to develop application in an agile and feature driven workflow. Companies like flickr use this development process internally and even Martin
     Fowler defined a part of the process as "FeatureToggle".
 
-    In the talk I will start with the definition of feature tasks and what steps and methods are needed to define them. Next to this an application is shown that was developed by the use 
-    of FeatureToggles. Here different architecture approaches in Java will be shown. Next to the architecture of an application the development workflows must be changed to create 
+    In the talk I will start with the definition of feature tasks and what steps and methods are needed to define them. Next to this an application is shown that was developed by the use
+    of FeatureToggles. Here different architecture approaches in Java will be shown. Next to the architecture of an application the development workflows must be changed to create
     applications in a feature driven way, too. In some examples best practices to handle the new workflows will be shown.
 
     Methods and tools like the GitFlow, GitLab, the Java Togglz API and Jira will be shown in this talk.
@@ -264,11 +275,11 @@
   author: 'hendrik'
   archive: true
   summary: >
-    JavaFX 8 offers a lot of excellent features to create modern and interactive user interfaces. However, in addition to a shiny UI there are other important issues that must 
-    be considered when creating enterprise business applications with JavaFX. This talk gives an overview of the various best practices on solving problems like client-server 
-    communications (transport), asynchronous vs synchronous tasks, MVC/MVP framework patterned approaches and designing of complex dialog window flows. Although the JavaEE 
-    platform already defines decent data binding solutions when developing JavaFX applications, this session will demonstrate 3rd party frameworks such as DataFX, ControlsFX and 
-    Open Dolphin. These 3rd party frameworks provide useful features that will ease development, thus reducing time and money on your enterprise projects. By learning these 
+    JavaFX 8 offers a lot of excellent features to create modern and interactive user interfaces. However, in addition to a shiny UI there are other important issues that must
+    be considered when creating enterprise business applications with JavaFX. This talk gives an overview of the various best practices on solving problems like client-server
+    communications (transport), asynchronous vs synchronous tasks, MVC/MVP framework patterned approaches and designing of complex dialog window flows. Although the JavaEE
+    platform already defines decent data binding solutions when developing JavaFX applications, this session will demonstrate 3rd party frameworks such as DataFX, ControlsFX and
+    Open Dolphin. These 3rd party frameworks provide useful features that will ease development, thus reducing time and money on your enterprise projects. By learning these
     JavaFX enterprise APIs and techniques a developer will be able to focus on application building instead of the underlying plumbing.
   lectures: ['JavaOne 2014', 'w-jax 2014', 'Devoxx 2014', 'JavaLand 2015', 'jax 2015', 'JavaOne 2015', 'Java Forum Nord 2015', 'JUG Schweiz', 'JUG Dortmund']
   featuredImage: graffiti
@@ -282,8 +293,8 @@
 
     Great! We have exactly what you need!
 
-    In this talk we will introduce a new JavaFX theme that is made for embedded device and will fit perfect in all the cool new IoT and mobile products. By using the 
-    theme developers can enrich there IoT application with a modern UI and best practice workflows. 
+    In this talk we will introduce a new JavaFX theme that is made for embedded device and will fit perfect in all the cool new IoT and mobile products. By using the
+    theme developers can enrich there IoT application with a modern UI and best practice workflows.
   lectures: ['JavaOne 2014']
   featuredImage: graffiti
 
@@ -291,11 +302,11 @@
   author: 'hendrik'
   archive: true
   summary: >
-    Do you want to start working with JavaFX? But you don't know where you can find all of the cool tutorials and open source APIs? This session is the perfect place to be! 
-    Leading up to the Java 8 release there has been a huge ecosystem with a lot of good tutorials and open source frameworks surrounding JavaFX. Since this year the community 
-    is getting bigger and bigger. In the session we will introduce some of the most important parts of the JavaFX ecosystem like 3rd party frameworks and popular knowledge bases. 
-    We will illustrate the functionality and synergy effects between the libraries with a live coding session. Lastly, we will end the session with real-world applications 
-    demonstrating techniques and APIs discussed earlier. 
+    Do you want to start working with JavaFX? But you don't know where you can find all of the cool tutorials and open source APIs? This session is the perfect place to be!
+    Leading up to the Java 8 release there has been a huge ecosystem with a lot of good tutorials and open source frameworks surrounding JavaFX. Since this year the community
+    is getting bigger and bigger. In the session we will introduce some of the most important parts of the JavaFX ecosystem like 3rd party frameworks and popular knowledge bases.
+    We will illustrate the functionality and synergy effects between the libraries with a live coding session. Lastly, we will end the session with real-world applications
+    demonstrating techniques and APIs discussed earlier.
   lectures: ['JavaOne 2014']
   featuredImage: graffiti
   youtube-link: 'https://www.youtube.com/watch?v=MVIKZyqpnMY'
@@ -304,7 +315,7 @@
   author: 'hendrik'
   archive: true
   summary: >
-    Up until now it was almost impossible to create reusable components for the Web in a reasonable way. CSS rules and JavaScript variables would always get in their way in 
+    Up until now it was almost impossible to create reusable components for the Web in a reasonable way. CSS rules and JavaScript variables would always get in their way in
     large applications. Luckily there is an initiative now to unify techniques to define custom Web Components
 
     Using examples we will show in this talk how you can build your own components. We will explain what the Shadow DOM is and will present tools like Polymer and X-Tag.
@@ -317,10 +328,10 @@
   author: 'hendrik'
   archive: true
   summary: >
-    Finding the right architecture and remoting layer for a modern application of often very hard. In this talk we want to introduce the Remote Presentation Model Pattern 
-    that is based on MVC and introduces a generic model approach that can be used to define (presentation) models that can be synchronized between the client and the server. 
-    By doing so the business logic of an application can be defined completely on the server. In addition this pattern is a perfect match to create cross-platform apps that 
-    support real time updates and collaborative features. In this talk we show how the pattern can be used in a Spring or JavaEE environment by using all the cool features of 
+    Finding the right architecture and remoting layer for a modern application of often very hard. In this talk we want to introduce the Remote Presentation Model Pattern
+    that is based on MVC and introduces a generic model approach that can be used to define (presentation) models that can be synchronized between the client and the server.
+    By doing so the business logic of an application can be defined completely on the server. In addition this pattern is a perfect match to create cross-platform apps that
+    support real time updates and collaborative features. In this talk we show how the pattern can be used in a Spring or JavaEE environment by using all the cool features of
     this enterprise frameworks. In addition we will show how different clients can easily be implemented for an app that is based on remote presentation models.
   lectures: ['JavaLand 2016', 'JUG Dortmund', 'JUG Hamburg', 'JavaOne 2016', 'Oracle Code Berlin 2017']
   featuredImage: graffiti
@@ -339,10 +350,10 @@
   author: 'hendrik'
   archive: true
   summary: >
-    Writing a "Hello World!" application is always easy and a Java developer can learn how to write such an application with JavaFX in some minutes. But if you want to create a 
-    productive application the knowledge of "Hello World" isn't enough. A real application should be well structured, provide an automatic build that ends in useable artifacts 
-    and contain only needed dependencies. In addition such an application should be testable and maintainable. This talk shows some general concepts how you can create and 
-    structure a JavaFX application that can easily grow and become more complex without loosing control of the code, functionality and maintainability. At the end each attendee 
+    Writing a "Hello World!" application is always easy and a Java developer can learn how to write such an application with JavaFX in some minutes. But if you want to create a
+    productive application the knowledge of "Hello World" isn't enough. A real application should be well structured, provide an automatic build that ends in useable artifacts
+    and contain only needed dependencies. In addition such an application should be testable and maintainable. This talk shows some general concepts how you can create and
+    structure a JavaFX application that can easily grow and become more complex without loosing control of the code, functionality and maintainability. At the end each attendee
     will have a template that he can use to start creating JavaFX based application.
   lectures: ['JavaOne 2016']
   featuredImage: graffiti
@@ -350,11 +361,11 @@
 - name: 'Extreme Gui Makeover'
   author: 'hendrik'
   summary: >
-    This talk if for all UI lovers, GUI enthusiasts and friends of modern and user-friendly UX. JavaFX is not only  a modern UI toolkit but the recommend UI Toolkit of Java, 
-    too. It offers a lot of amazing features to help you craft modern looking and interactive user interfaces. JavaFX offers everything that is needed to create well behaved 
+    This talk if for all UI lovers, GUI enthusiasts and friends of modern and user-friendly UX. JavaFX is not only  a modern UI toolkit but the recommend UI Toolkit of Java,
+    too. It offers a lot of amazing features to help you craft modern looking and interactive user interfaces. JavaFX offers everything that is needed to create well behaved
     and aesthetically pleasing GUI applications.
-    This talk will compare and contrast your run-of-the-mill application and then go one step further by showing how developers can create an 'Extreme' GUI application. Who needs 
-    an old school toolbar when they can have an animated menu? This and other important questions will be answered in this lighthearted talk. Because it is an 'Extreme Makeover' 
+    This talk will compare and contrast your run-of-the-mill application and then go one step further by showing how developers can create an 'Extreme' GUI application. Who needs
+    an old school toolbar when they can have an animated menu? This and other important questions will be answered in this lighthearted talk. Because it is an 'Extreme Makeover'
     talk the examples will be shown as live demos and live coding sessions.
   lectures: ['JavaOne 2014', 'JavaOne 2017', 'JavaOne 2018', 'JavaFX-Day']
   featuredImage: gui-makeover
