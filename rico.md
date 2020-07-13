@@ -38,11 +38,13 @@ As we see a very rapidly changing environment in UI technologies, this separatio
 
 ### Getting started
 
-Currently, the best point to get started is our [samples project repository](https://github.com/rico-projects/rico-samples). Please refer to the README in each project for a description how to get started with the sample:
+Currently, the best point to get started is our [documentation](https://rico-projects.github.io/rico/) in combination with the [samples project repository](https://github.com/rico-projects/rico-samples). Please refer to the README in each project for a description how to get started with the sample:
 
-* [Rico To-Do list application](https://github.com/rico-projects/rico-samples/tree/master/todo-list) Application both for Spring and Jave EE with frontends in Angular, AngularJS, Polymer and JavaFx to demonstrate _Rico Remoting_ and an _EventBus_ to connect between different clients implemented in various UI technolgies.
+* [Rico To-Do list application](https://github.com/rico-projects/rico-samples/tree/master/todo-list) Application both for Spring and Java EE with frontends in Angular, AngularJS, Polymer and JavaFx to demonstrate _Rico Remoting_ and an _EventBus_ to connect between different clients implemented in various UI technologies.
 * [Rico HTTP rest security](https://github.com/rico-projects/rico-samples/tree/master/rest-security) - use Rico integration for Keycloak to secure your applications.
-* [Rico HTTP client](https://github.com/rico-projects/rico-samples/tree/master/http-client) - show usage of Rico HTTP client to consume web services over HTTP 
+* [Rico HTTP client](https://github.com/rico-projects/rico-samples/tree/master/http-client) - show usage of Rico HTTP client to consume web services over HTTP.
+* [Rico Logging Sample](https://github.com/rico-projects/rico-samples/tree/master/logging-sample) - shows how the logging appender of Rico can be used to add useful metadata to application logging and store it in a central place.
+* [Rico Metrics Sample](https://github.com/rico-projects/rico-samples/tree/master/metrics-sample) - collect metrics and make use of them with Prometheus and Grafana.
 
 Our main repository as well as all our sub-projects can be found at our [GitHub organisation](https://github.com/rico-projects/).
 
@@ -63,7 +65,7 @@ Next steps planned for development of Rico are:
 * Improve Rico Remoting Protocol
 * Migrate [Rico JavaScript](https://github.com/rico-projects/rico-js) to TypeScript for better maintainability
 * Extend [Rico JavaScript](https://github.com/rico-projects/rico-js) to support more Rico features (currently just remoting)
-* Upgrade the [Angular Adapter](https://github.com/rico-projects/rico-angular) to Angular 8
+* Upgrade the [Angular Adapter](https://github.com/rico-projects/rico-angular) to a recent Angular version
 * Upgrade support for WebComponents (currently outdated [Polymer Adapter](https://github.com/rico-projects/rico-polymer))
 
 Rico is an open-source framework mainly driven by the projects already using it in production. If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:rico@karakun.com).
