@@ -10,7 +10,7 @@ header:
   image: post
 ---
 
-AdoptOpenJDK has become one of the biggest Java respectively OpenJDK distributions with [more than 165M downloads](https://dash-v2.adoptopenjdk.net/). As a member of the Technical Steering Committee (TSC) of AdoptOpenJDK, I did not only follow the project in the last couple of months but was at least in pieces a vital part of it.
+AdoptOpenJDK has become one of the biggest Java respectively OpenJDK distributions with [more than 170M downloads](https://dash-v2.adoptopenjdk.net/). As a member of the Technical Steering Committee (TSC) of AdoptOpenJDK, I did not only follow the project in the last couple of months but was at least in pieces a vital part of it.
 
 ## Why AdoptOpenJDK?
 
