@@ -20,7 +20,9 @@ If I was asked 5 years ago about where to download Java I definitely would have 
 
 In contrast to OpenJDK distributions by companies like Oracle, IBM, Azul or Bellsoft, [AdoptOpenJDK](https://adoptopenjdk.net/) is a community-based project providing Java binaries for a large number of platforms. Besides the common binaries for Windows x64, Mac x64 and Linux x64 there are also builds for AIX and ARM.
 
-One of the maybe biggest advantages of the provided builds is the Long-Term-Support (LTS). Unlike some commercial providers of Java binaries, AdoptOpenJDK delivers free updates with important security fixes for Java LTS versions (e.g. Java 8 and 11) even 6 months later.
+![Platforms supported by AdoptOpenJDK](/assets/posts/2020-07-13-adoptium/platforms.png)
+
+One of the maybe biggest advantages of the provided builds is the [Long-Term-Support (LTS)](https://adoptopenjdk.net/support.html#roadmap). Unlike some commercial providers of Java binaries, AdoptOpenJDK delivers free updates with important security fixes for Java LTS versions (e.g. Java 8 and 11) even 6 months later.
 
 AdoptOpenJDK does not only build Java binaries but also runs tests with its own [test toolkit AQA](/2020/02/26/OpenJDK-builds.html). Every build passes tests in different categories like unit tests, performance or integration tests. In addition to the tests defined in OpenJDK, Technology Compatibility Kits (TCK) of various Eclipse microprofile specifications or the complete testsuite of Apache Tomcat are run against the JDK. This means millions and millions of tests for every release and nightly build and guaranteed compatibility with established applications.
 
@@ -42,3 +44,6 @@ If you’re curious to understand the difference between OpenJDK, Oracle Java, A
 ![Speaker of Virtual Roadshow](/assets/posts/2020-07-13-adoptium/speakers.png)
 
 George Adam (Microsoft) and myself are presenting this talk. If you want to check the dates and JUGs we're presenting at, please go to [https://blog.adoptopenjdk.net/2020/07/adoptopenjdk-virtual-roadshow/](https://blog.adoptopenjdk.net/2020/07/adoptopenjdk-virtual-roadshow/). We're looking forward to seeing you virtually...
+
+## Need a guide through the JDK jungle?
+We at [Karakun](https://karakun.com) offer consultancy services to companies to select the right JDK, Vendor and update strategy. For assistance, either contact [me](/people/hendrik) or write an email to [info@karakun.com](mailto:info@karakun.com).
