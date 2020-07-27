@@ -22,7 +22,7 @@ In contrast to OpenJDK distributions by companies like Oracle, IBM, Azul or Bell
 
 ![Platforms supported by AdoptOpenJDK](/assets/posts/2020-07-13-adoptium/platforms.png)
 
-One of the maybe biggest advantages of the provided builds is the [Long-Term-Support (LTS)](https://adoptopenjdk.net/support.html#roadmap). Unlike some commercial providers of Java binaries, AdoptOpenJDK delivers free updates with important security fixes for Java LTS versions (e.g. Java 8 and 11) even 6 months later.
+One of the biggest advantages of the provided builds is the [Long-Term-Support (LTS)](https://adoptopenjdk.net/support.html#roadmap). Unlike some commercial providers, AdoptOpenJDK delivers free updates with security fixes for Java LTS versions (e.g. Java 8 and 11) even after a period of 6 months.
 
 AdoptOpenJDK does not only build Java binaries but also runs tests with its own [test toolkit AQA](/2020/02/26/OpenJDK-builds.html). Every build passes tests in different categories like unit tests, performance or integration tests. In addition to the tests defined in OpenJDK, Technology Compatibility Kits (TCK) of various Eclipse microprofile specifications or the complete testsuite of Apache Tomcat are run against the JDK. This means millions and millions of tests for every release and nightly build and guaranteed compatibility with established applications.
 
