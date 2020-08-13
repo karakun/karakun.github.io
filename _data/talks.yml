@@ -16,7 +16,7 @@
   lectures: ['Knoxville JUG', 'JUG Istanbul', 'Connecticut JUG', 'JUG Switzerland']
   slides-link: https://speakerdeck.com/hendrikebbers/adoptopenjdk-making-java-free-again
   video-link: 'https://www.youtube.com/watch?v=KvpibYDRSUo&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW'
-  featuredImage: mobile-e2e-talk
+  featuredImage: adopt-free
 
 
 - name: '1 Codebase, 2 Mobile Platforms: How to Test iOS and Android by Just Writing Tests Once'
