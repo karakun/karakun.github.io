@@ -73,7 +73,7 @@ Now everything is ready to be sent to the centralized logging facility.
 For sending log messages to a centralized logging facilities there exist many good solutions.
 One possibility is to use a log appender and send the message to the server instead of writing it to a file.
 Such appender are available for both Logback and Log4j.
-We have made good experience with bot [logstash-gelf](https://github.com/mp911de/logstash-gelf) and [Logback GELF](https://github.com/osiegmar/logback-gelf).
+We have made good experience with both [logstash-gelf](https://github.com/mp911de/logstash-gelf) and [Logback GELF](https://github.com/osiegmar/logback-gelf).
 They use [GELF (Graylog Extended Log Format)](https://docs.graylog.org/en/latest/pages/gelf.html), a defacto standard to send log messages over the wire. 
 
 After all this theory we would like to also show you how this can look in action.
