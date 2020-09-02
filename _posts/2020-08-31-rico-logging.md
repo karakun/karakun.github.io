@@ -43,7 +43,7 @@ To still be able to have a complete picture about today's polyglot systems all t
 
 There are several products available which allow harvesting, storing, analyzing and managing of logs. 
 Among the most widespread are [Graylog](https://www.graylog.org/) and [ELK (Elasticsearch, Logstash and Kibana)](https://www.elastic.co/what-is/elk-stack).
-Both of them allow to look a logs by time, origin, severity and other criteria.
+Both of them allow to look at logs by time, origin, severity and other criteria.
 They also have more sophisticated tools which support extracting even more information from the collected data.
 We do not want to give a recommendation.
 Have a look at both and maybe even a third solution.
