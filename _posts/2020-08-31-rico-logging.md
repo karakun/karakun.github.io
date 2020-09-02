@@ -60,7 +60,7 @@ If this is done manually then most likely it will be forgotten more than once.
 
 Exactly here will Rico assist you and take all the burden from your shoulders.
 Rico provides the `RicoApplicationContext` which is basically a dictionary to store context information.
-Basic information such as application name, application version and much more are prefilled into the dictionary by rico.
+Basic information such as application name, application version and much more are prefilled into the dictionary by Rico.
 Application specific information can be added to this dictionary as needed during runtime.  
 Such entries can be either global or just for the current thread.
 
