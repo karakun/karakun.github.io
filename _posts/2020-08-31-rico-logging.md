@@ -36,10 +36,7 @@ Rather it is fragmented and spread over many servers.
 Some may be offline at the moment
 To still be able to have a complete picture about today's polyglot systems all the logs need to be collected in a central location.
 
-<figure>
-    ![webstart timeline]({{ "/assets/posts/2020-08-31-rico-logging/modern-application-setup.png" | absolute_url }})
-  <figcaption>Simplified component diagram for a modern web application</figcaption>
-</figure>
+![component diagram](/assets/posts/2020-08-31-rico-logging/modern-application-setup.png)
 
 There are several products available which allow harvesting, storing, analyzing and managing of logs. 
 Among the most widespread are [Graylog](https://www.graylog.org/) and [ELK (Elasticsearch, Logstash and Kibana)](https://www.elastic.co/what-is/elk-stack).
@@ -69,6 +66,8 @@ For this task Rico provides log appender for [Logback](http://logback.qos.ch/) a
 These appender take the message and place the entire content of the `RicoApplicationContext` to the MDC (Mapped Diagnostic Context).
 The MDC is also dictionary and meant to carry the context information of a log message.
 Now everything is ready to be sent to the centralized logging facility.
+
+![component diagram](/assets/posts/2020-08-31-rico-logging/logging-and-context.png)
 
 For sending log messages to a centralized logging facilities there exist many good solutions.
 One possibility is to use a log appender and send the message to the server instead of writing it to a file.
