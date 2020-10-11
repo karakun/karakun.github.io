@@ -20,7 +20,7 @@ Never the less there is also a legal side to source code.
 And simply adding an open source license to a repository is not sufficient.
 We all would love if it would be that straight forward.
 
-In order to accept your contribution we must make sure, that you are the owner of the copyright and you are willing to grant your copyright and your patent license to the open source project.
+In order to accept your contribution we must make sure, that you are the owner of the copyright and you are willing to grant your copyright and - where applicable - your patent license to the open source project.
 
 ## Individual CLA
 If you are the owner of the copyright of your contribution then please fill out the **[Individual Contributor License Agreement]({{"/assets/cla/IndividualContributorLicenseAgreement.pdf"}})**.
