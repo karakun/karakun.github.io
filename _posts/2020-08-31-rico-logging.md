@@ -1,10 +1,9 @@
 ---
 layout: post
-title:  'Rico logging'
+title:  'Contextual and centralized logging with Rico'
 author: TODO
 featuredImage: TODO
 excerpt: 'TODO'
-permalink: '/rico/2020/08/29/rico-2.0-logging.html'
 categories: [Java, Jakarta EE, Java EE, Spring, Rico, Logging, GELF]
 header:
   text: Rico Logging
