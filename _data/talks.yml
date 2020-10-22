@@ -36,10 +36,10 @@
   slides-link: https://speakerdeck.com/hendrikebbers/a-comparative-review-of-microservice-frameworks
   featuredImage: microservices-attack
 
-- name: 'What\'s New in the Eclipse Platform Project'
+- name: 'Whats New in the Eclipse Platform Project'
   author: 'karsten'
   summary: >
-    This is a wrap up of what has happened in the Eclipse Platform Project from last year\'s EclipseCon (Eclipse 2019-09) till EclipseCon 2020 and also current challenges the Eclipse Platform team is working on.
+    This is a wrap up of what has happened in the Eclipse Platform Project from last years EclipseCon (Eclipse 2019-09) till EclipseCon 2020 and also current challenges the Eclipse Platform team is working on.
 
     The talk is complementary to other talks given at EclipseCon that focused on aspects like JDT, Java Support, Build, or Performance.
 
