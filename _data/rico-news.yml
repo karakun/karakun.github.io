@@ -1,17 +1,22 @@
+- title: 'Blog post "Rico Logging"'
+  url: '/rico/2020/11/11/rico-logging.html'
+  description: ''
+  date: 'November, 11 2020'
+
 - title: 'Blog post "Rico 2.0 released"'
   url: '/rico/2020/07/13/rico-2.0.html'
   description: ''
-  date: 'July, 13 2020'  
+  date: 'July, 13 2020'
 
 - title: 'Blog post "Rico 1.1 released"'
   url: '/rico/2020/05/18/rico-1.1.html'
   description: ''
-  date: 'May, 18 2020'  
+  date: 'May, 18 2020'
 
 - title: 'Blog post "Introducing Rico"'
   url: '/rico/2019/07/29/introducing-rico.html'
   description: ''
-  date: 'July, 29 2019'  
+  date: 'July, 29 2019'
 
 - title: 'Rico 1.0.1 Released'
   url: 'https://github.com/rico-projects/rico/releases/tag/1.0.1'
