@@ -162,7 +162,7 @@ footer {
         > div.right-clm {
             display: flex;
             flex-direction: column;
-                        
+
             @include mobile {
                 align-self: center;
             }
@@ -406,8 +406,13 @@ article {
 
         h3 {
           position: absolute;
-          bottom: 0;
+          bottom: 0.5em;
           left: 0;
+        }
+
+        p {
+            position: absolute;
+            margin-top: 1.5em;
         }
     }
 
@@ -445,7 +450,7 @@ article {
         width: 192px;
     }
     @extend .table
-    
+
 }
 
 .highlight {
@@ -478,7 +483,7 @@ a {
 .eye {
     animation: squeeze 4.5s infinite;
 }
-  
+
 @keyframes blink {
     96% {
         transform: none;
@@ -522,7 +527,7 @@ a {
 }
 
 .metainfo-icon {
-    color: rgb(100, 100, 100);   
+    color: rgb(100, 100, 100);
 }
 
 .embed-container {
@@ -559,7 +564,7 @@ a {
     min-width: 12em;
     max-width: 12em;
     width: 100%;
-} 
+}
 
 .training-logo {
     padding-top: 1em;

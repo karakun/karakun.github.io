@@ -16,6 +16,7 @@ layout: default
               {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
               {{ page.date | date: date_format }}
             </time>
+            {% include reading-time.html content=content prefix=" · " %}
         </div>
 
         <div class="post-content e-content post content" itemprop="articleBody">
