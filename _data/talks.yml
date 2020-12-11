@@ -18,7 +18,22 @@
     future might bring for us. 
   lectures: ['JFX-Days 2020']
   slides-link: https://speakerdeck.com/hendrikebbers/java-desktop-2020
+  video-link: 'https://www.youtube.com/watch?v=mIR2TucAwSQ&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=3'
   featuredImage: desktop-2020
+
+- name: '50 Shades of Java'
+  author: 'hendrik'
+  summary: >
+    Let me seduce you!
+    Talks in which you learn how to "program Java correctly & cleanly" has been seen way to often.
+    In this session you will learn things you should never do in your next Java project.
+    Let's leave the world of all this boring clean code and come with me on a journey into the shadows of Java programming.
+    Even though Java is a solid & stable language, 
+    there are still some loopholes that you can exploit with tools like Reflection to get really whacky results and effects.
+    If you want to experience the pain of these hacks then you've come to the right place.
+  lectures: ['w-jax 2020', 'JCON 2020']
+  video-link: 'https://www.youtube.com/watch?v=5jlxGiGjZlQ&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=5'
+  featuredImage: 50-shades
 
 - name: 'AdoptOpenJDK - Making Java free again'
   author: 'hendrik'
@@ -33,7 +48,7 @@
     the Java binaries that you use today. If you’re curious to understand the difference
     between OpenJDK, Oracle Java, AdoptOpenJDK and all the other distributions,
     then this is the talk for you!
-  lectures: ['Knoxville JUG', 'JUG Istanbul', 'Connecticut JUG', 'JUG Switzerland']
+  lectures: ['Knoxville JUG', 'JUG Istanbul', 'Connecticut JUG', 'JUG Switzerland', 'JUG Dortmund', 'Eclipse Con 2020', 'Java Forum Stuttgart 2020', 'JConf Mexico 2020', 'w-jax 2020', 'JCON 2020']
   slides-link: https://speakerdeck.com/hendrikebbers/adoptopenjdk-making-java-free-again
   video-link: 'https://www.youtube.com/watch?v=KvpibYDRSUo&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW'
   featuredImage: adopt-free
