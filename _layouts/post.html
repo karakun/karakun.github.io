@@ -41,11 +41,18 @@ layout: default
         {%- endif -%}
         {%- if page.categories -%}
         <div class="post-tags info">
-            <ul>
-              {% for category in page.categories %}
-              <li>{{ category }}</li>
-              {% endfor %}
-          </ul>
+          <div class="field is-grouped is-grouped-multiline">
+            {% for category in site.categories %}
+              {% if page.categories contains category[0] %}
+                <div class="control">
+                  <div class="tags has-addons">
+                    <a href="/categories#{{ category[0] | downcase }}" class="tag is-medium is-primary">{{ category[0] }}</a>
+                    <a href="/categories#{{ category[0] | downcase }}" class="tag is-medium">{{ category[1].size }}</a>
+                  </div>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </div>
         </div>
         {%- endif -%}
       </div>
