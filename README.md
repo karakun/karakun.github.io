@@ -4,7 +4,7 @@ The developer community page of Karakun AG
 ## Build instructions
 
 The most easy way to build the page locally is by using `docker-compose`.
-We provide a `docker-compose.yml` file that starts a server that runs the page an forwards it to `localhost:4040`.
+We provide a `docker-compose.yml` file that starts a server that runs the page an forwards it to `localhost:4000`.
 If you have installed [docker compose](https://docs.docker.com/compose/) on your machine you only need to call the following command from the root directory of the repository to get everything up and running:
 
 ```
