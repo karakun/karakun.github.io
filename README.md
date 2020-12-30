@@ -3,7 +3,17 @@ The developer community page of Karakun AG
 
 ## Build instructions
 
-In order to start `start.sh`  you have to install [_jekyll_](https://jekyllrb.com) (see instructions online).
+The most easy way to build the page locally is by using `docker-compose`.
+We provide a `docker-compose.yml` file that starts a server that runs the page an forwards it to `localhost:4040`.
+If you have installed [docker compose](https://docs.docker.com/compose/) on your machine you only need to call the following command from the root directory of the repository to get everything up and running:
+
+```
+docker-compose up
+```
+
+### Run jekyll on your machine
+
+In order to start `start.sh` on your machine you have to install [_jekyll_](https://jekyllrb.com) (see instructions online).
 If you want to install [_jekyll_](https://jekyllrb.com) ruby is needed on your machine.
 
 If you have macOS and `brew` is installed you can easily execute the following commands:
