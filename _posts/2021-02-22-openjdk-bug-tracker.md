@@ -3,7 +3,10 @@ layout: post
 title:  'How to submit a Bug to OpenJDK - An Unexpected Journey'
 author: hendrik
 featuredImage: bugs
-excerpt: 'TODO'
+excerpt: "In this article I will have a look how developers can create issues for Java (the openjdk project) or comment on existing issues.
+Creating issues is one of the most simple action that a developler can do to help open source projects.
+By doing so the mainainters of such project will get a good overview of the users, their problems and wishes.
+Let's have a look how such usecases are defined at the openjdk."
 permalink: '/rico/2021/02/22/openjdk-bug-tracker.html'
 categories: [Java, OpenJDK]
 header:
