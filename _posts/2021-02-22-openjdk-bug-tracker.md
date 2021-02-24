@@ -2,7 +2,7 @@
 layout: post
 title:  'How to submit a Bug to OpenJDK - An Unexpected Journey'
 author: hendrik
-featuredImage: TODO
+featuredImage: bugs
 excerpt: 'TODO'
 permalink: '/rico/2021/02/22/openjdk-bug-tracker.html'
 categories: [Java, OpenJDK]
