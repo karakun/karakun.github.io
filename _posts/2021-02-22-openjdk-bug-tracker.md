@@ -33,7 +33,7 @@ The topic I want to discuss today is a perfect example of a workflow where the O
 Let's have a look at how to submit a bug to the OpenJDK.
 
 The OpenJDK provides a bug database that is based on the tool Jira.
-The database is called [Java Bug Database (JBS)](https://bugs.openjdk.java.net).
+The database is called [JDK Bug System (JBS)](https://bugs.openjdk.java.net).
 If you are familiar with Jira the navigation and search within the database will work for you.
 Issues are tagged by "components", "sub-components" and "labels".
 Also fields like "affected versions" and "fixed versions" are filled for the issues in the database.
@@ -50,7 +50,7 @@ On the JBS starting page you can find the following information:
 The good news is, searching and browsing for issues can be done without having an account in the bug database.
 If you want to report a bug, on the other hand, you need to have a login i.e. you need to be an OpenJDK Author.
 To make a long story short: getting the OpenJDK Author status is not that easy and definitely nothing you want to do to simply file a bug.
-Sadly the front-page of the Jira does not contain any information on how somebody cansubmit a but who is not an OpenJDK Author.
+Sadly the front-page of the Jira does not contain any information on how somebody can submit a bug for developers not being an OpenJDK Author.
 There is only a vague hint to the wiki:
 
 > See the [OpenJDK wiki](https://wiki.openjdk.java.net/display/general/JBS+Overview) for information on using the system.
@@ -67,7 +67,7 @@ The following image shows the above mentioned issue in the Oracle Bug Database.
 
 The information available at "Oracle Java Bug Database" is only a subset of the ones in JBS Jira.
 This can be helpful when trying to get an overview of an issue.
-What is missing is a link to the issue in the Java Bug Database (JBS) where all the details are visible.
+What is missing is a link to the issue in the JDK Bug System (JBS) where all the details are visible.
 Like in the JBS you do not have any possibility to add comments to an issue within this view in the "Oracle Java Bug Database".
 The search for issues is also much harder.
 Therefore, I will strongly suggest to always use the JBS when searching for issues.
@@ -77,13 +77,6 @@ Therefore, I will strongly suggest to always use the JBS when searching for issu
 Fortunately, there is a way how the rest of us can open an issue in the OpenJDK.
 But there is no explanation of the process in the JBS so you have to google such information.
 Additionally, the place to report bugs is not within the OpenJDK or the JBS but in the Oracle Java Bug Database.
-
-
-
-// Vor dem OpenJDK bugtracker issue Bild steht hinter Java Bug Database in Klammern "JBS". Folglich ist die Abkürzung ein Synonym dafür. In dem Satz oberhalb sieht es aber anders aus... 
-
-
-
 
 In contrast to JBS, the start page of the Oracle Java Bug Database contains a lot of information.
 It lists links or short descriptions on how to
@@ -110,7 +103,7 @@ That's it, we are ready to open our issue.
 It is already confusing that the place to report a bug is not part of OpenJDK, rather it is hidden away in an Oracle mirror of it.
 Surely, this has some historical or organizational reason and simply is the way it is because it always has been this way.
 
-This is a topic for another time.
+This is a topic for another article.
 We want to stay focused.
 Let's have a look at how to submit a bug.
 The entry point to submit a bug is [https://bugreport.java.com/](https://bugreport.java.com/).
@@ -144,7 +137,7 @@ We will check that silly checkbox and continue to go down that rabbit hole.
 
 ![Duke and Bugs illustration](/assets/posts/2021-02-22-openjdk-bug-tracker/duke_bugs_1.jpg)
 
-Hurray, we are finally on the form to create a bug report.
+Hooray, we are finally on the form to create a bug report.
 As you can see in the following picture the form really looks like many other bug tracker forms.
 You find all the fields for reporting the issue, the expected and actual behavior, and much more.
 You can and should also provide code to reproduce the bug.
@@ -169,7 +162,7 @@ That's handy, especially if you are asked to provide additional information abou
 ![Mail by Oracle](/assets/posts/2021-02-22-openjdk-bug-tracker/oracle-mail-2.png)
 
 When clicking on the "provide more information about this issue" you are directed to another form of the "Oracle Java Bug Database".
-Here you can enter the additional information.
+You can now enter the additional information.
 Again, your data will be reviewed by Oracle before it will be added as a comment to the issue.
 Even if this workflow is horrible we at least have a way to create issues for OpenJDK and comment on "our issues".
 Sadly the workflow contains some problems.
@@ -221,19 +214,19 @@ Otherwise, many people simply will not do it.
 ## The journey comes to an end
 
 Well, this was really an adventure but fortunately, we found all the answers that we need at the end of our journey to the OpenJDK bug tracker.
-Unfortunately, the experience is miles away from what we all expect from an open-source project today.
+But the user experience is miles away from what we all expect from an open-source project today.
 The Jira-based JBS is really a good fit for a project of the size of OpenJDK.
 It is also very helpful that all the old issues from Sun and Oracle (e.g. from Java 1.2) have been migrated to the JBS to show a complete history.
 On the other hand, it is clumsy that you cannot create an account and report issues directly in the bug database. Again, only JDK Authors are allowed to do this.
 
-Oracle provides a tedious solution that is half bug tracker and half Oracle support sales point.
+Oracle provides a tedious solution that is half bug tracker and half point of sale for Oracle support.
 There might be some good reasons to disallow creating issues directly at the JBS (spam or security).
 But having the frontend hosted by Oracle instead of OpenJDK is confusing and sometimes also misleading.
 If it was provided by the OpenJDK maybe we would see several mentions of paid Oracle support or checkboxes telling you that this is not a place to get support.
 
 There is still a lot of potential to make the workflow of bug reporting for the OpenJDK better.
 While researching for this article I found many answers to the questions I encountered.
-They are scattered in the wiki, the help pages, and guides.
+They are scattered in the wiki, the help pages, and different guides.
 A low-hanging fruit would be to collect all these bits and pieces and summarize them in a short step-by-step tutorial.
 Then put this tutorial prominently on the start page of the JBS, the Github repositories, and the Oracle Java Bug Database.
 
