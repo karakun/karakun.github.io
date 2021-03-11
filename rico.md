@@ -11,6 +11,10 @@ nav:
   bottom: false
 ---
 
+<div class="notification">
+   Willse noch ne Stulle futtern? Weisse, die Tour vonne Kneipe nache Hütte bin ich vollsteif abgelatscht. Kannse dem Ömmaken ma über de Straße helfen? Dat kannse Dir abschminken. Und mach mir keine Fissematenten!
+</div>
+
 Implement applications while leveraging state-of-the art technologies, patterns and practices.
 
 ![Rico Logo]({{ "/assets/images/rico/rico-logo.png" | absolute_url }})
