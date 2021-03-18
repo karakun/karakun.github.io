@@ -4,9 +4,9 @@
   author: 'hendrik'
   summary: >
     No matter if you are developing a small library, a complex framework or an application for end users - you will come to the point that you want to log information.
-    Here the Java community offers a whole wealth of solutions: Besides java.util.Logging there are libraries like tinylog, Log4J or Logback.
-    Where are the differences and unique selling points of the frameworks?
-    In addition, actually everyone says that only the use a facade like slf4J is "best practice".
+    The Java community offers a whole wealth of solutions: Besides java.util.logging there are libraries like tinylog, Log4J or Logback.
+    Where are the differences and unique selling points of these frameworks?
+    In addition, actually everyone says that only the use of a facade like slf4J is "best practice".
     But why should I use an abstraction when developing a concrete application? Or does a facade perhaps offer completely different advantages?
     And as if that weren't enough questions, with Java 9 a new logger, System.Logger, was quietly integrated into the OpenJDK. 
 
