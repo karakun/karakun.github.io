@@ -18,12 +18,13 @@ layout: page
       <div class="columns">
     {% endif %}
         <article class="talk column content {% unless loopcount == size and loopindex == 1 %} is-half {% endunless %}">
-          {% assign author = site.people | where:'name', talk.author | first %}
           <h3 class="has-text-primary">{{ talk.name }}</h3>
           <div class="post-meta">
-            {%- if author -%}
-            by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
-            {% endif %}
+            by
+            {% for a in talk.authors %}
+              {% assign author = site.people | where:'name', a | first %}
+              <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
+            {% endfor %}
           </div>
           <p>
             {%- if talk.featuredImage -%}
