@@ -20,11 +20,27 @@ layout: page
         <article class="talk column content {% unless loopcount == size and loopindex == 1 %} is-half {% endunless %}">
           <h3 class="has-text-primary">{{ talk.name }}</h3>
           <div class="post-meta">
-            by
-            {% for a in talk.authors %}
-              {% assign author = site.people | where:'name', a | first %}
-              <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
+            {% assign authorCount = 0 %}
+            {% for i in talk.authors %}
+              {% assign authorCount = authorCount | plus: 1 %}
             {% endfor %}
+            {% if authorCount > 1 %}
+              <!-- Used to determine the last author in the list and remove semicolon. :) -->
+              {% assign lastAuthorPointer = 0 %}
+              by
+              {% for a in talk.authors %}
+                {% assign lastAuthorPointer = lastAuthorPointer | plus: 1 %}
+                {% assign author = site.people | where:'name', a | first %}
+                {% if lastAuthorPointer == authorCount %}
+                  <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
+                {% else %}
+                  <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>,
+                {% endif %}
+              {% endfor %}
+            {% else %}
+              {% assign singleAuthor = site.people | where:'name', talk.authors | first %}
+              by <a href="{{ singleAuthor.url }}">{{ singleAuthor.firstName }} {{ singleAuthor.lastName }}</a>
+            {% endif %}
           </div>
           <p>
             {%- if talk.featuredImage -%}
