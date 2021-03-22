@@ -20,27 +20,29 @@ layout: page
         <article class="talk column content {% unless loopcount == size and loopindex == 1 %} is-half {% endunless %}">
           <h3 class="has-text-primary">{{ talk.name }}</h3>
           <div class="post-meta">
-            {% assign authorCount = 0 %}
+            <!-- count valid authors -->
+            {% assign lastAuthor = 0 %}
             {% for i in talk.authors %}
-              {% assign authorCount = authorCount | plus: 1 %}
+              {% assign ii = site.people | where:'name', a | first %}
+              {% if ii %}
+                {% assign lastAuthor = lastAuthor | plus: 1 %}
+              {% endif %}
             {% endfor %}
-            {% if authorCount > 1 %}
-              <!-- Used to determine the last author in the list and remove semicolon. :) -->
-              {% assign lastAuthorPointer = 0 %}
-              by
-              {% for a in talk.authors %}
-                {% assign lastAuthorPointer = lastAuthorPointer | plus: 1 %}
-                {% assign author = site.people | where:'name', a | first %}
-                {% if lastAuthorPointer == authorCount %}
-                  <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
+            {% assign secondLastAuthor = lastAuthor | minus: 1 %}
+            <!-- list valid authors -->
+            {% assign counter = 0 %}
+            {% for a in talk.authors %}
+              {% assign author = site.people | where:'name', a | first %}
+              {% if author %}
+                {% assign counter = counter | plus: 1 %}
+                {% if counter == 1 %}
+                  by
                 {% else %}
-                  <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>,
+                  {% if counter == lastAuthor %}and{% endif %}
                 {% endif %}
-              {% endfor %}
-            {% else %}
-              {% assign singleAuthor = site.people | where:'name', talk.authors | first %}
-              by <a href="{{ singleAuthor.url }}">{{ singleAuthor.firstName }} {{ singleAuthor.lastName }}</a>
-            {% endif %}
+                <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% if counter < secondLastAuthor %},{% endif %}
+              {% endif %}
+            {% endfor %}
           </div>
           <p>
             {%- if talk.featuredImage -%}
