@@ -11,6 +11,8 @@ nav:
   bottom: false
 ---
 
+NOTE: Rico has been put 'on-hold'. Find more details what that mean in the corresponding [blog post](/).
+
 Implement applications while leveraging state-of-the art technologies, patterns and practices.
 
 ![Rico Logo]({{ "/assets/images/rico/rico-logo.png" | absolute_url }})
@@ -59,15 +61,8 @@ If you are using Rico and would be happy to see your company listed here, please
 
 ## Outlook 
 
-Next steps planned for development of Rico are:
+Rico is an open-source framework mainly driven by the projects already using it in production. The is not concrete timeline for further development planned at the moment. More details can be found in [the blog post](/)
 
-* Release [Rico Projector](https://github.com/rico-projects/rico-projector)
-* Improve Rico Remoting Protocol
-* Migrate [Rico JavaScript](https://github.com/rico-projects/rico-js) to TypeScript for better maintainability
-* Extend [Rico JavaScript](https://github.com/rico-projects/rico-js) to support more Rico features (currently just remoting)
-* Upgrade the [Angular Adapter](https://github.com/rico-projects/rico-angular) to a recent Angular version
-* Upgrade support for WebComponents (currently outdated [Polymer Adapter](https://github.com/rico-projects/rico-polymer))
-
-Rico is an open-source framework mainly driven by the projects already using it in production. If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:rico@karakun.com).
+If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:rico@karakun.com).
 
 ![Rico Open Source]({{ "/assets/images/rico/rico-opensource.png" | absolute_url }})
