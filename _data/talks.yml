@@ -1,34 +1,50 @@
 # Data file that describes talks
 
-- name: 'Java Desktop 2020'
-  author: 'hendrik'
+- name: 'System.out.println("USE A LOGGER!!!");'
+  authors: ['hendrik', 'stephanc']
   summary: >
-    In Java's history a lot of different UI technologies appeared and helped Java to become 
-    an established technology for desktop applications. Especially the cross platform functionality 
-    of Java enabled a lot of mission critical desktop applications in industries like the aerospace 
+    No matter if you are developing a small library, a complex framework or an application for end users - you will come to the point that you want to log information.
+    The Java community offers a whole wealth of solutions: Besides java.util.logging there are libraries like tinylog, Log4J or Logback.
+    Where are the differences and unique selling points of these frameworks?
+    In addition, actually everyone says that only the use of a facade like slf4J is "best practice".
+    But why should I use an abstraction when developing a concrete application? Or does a facade perhaps offer completely different advantages?
+    And as if that weren't enough questions, with Java 9 a new logger, System.Logger, was quietly integrated into the OpenJDK.
+
+    This talk gives an understandable guide through the logging jungle and shows a few practices that help to get the logging of libraries and applications under control.
+    If you're on the verge of going back to System.out out of frustration, this session is for you.
+  lectures: ['JavaLand 2021']
+  slides-link: https://speakerdeck.com/hendrikebbers/system-dot-out-dot-println-use-a-logger
+  featuredImage: logger
+
+- name: 'Java Desktop 2020'
+  authors: 'hendrik'
+  summary: >
+    In Java's history a lot of different UI technologies appeared and helped Java to become
+    an established technology for desktop applications. Especially the cross platform functionality
+    of Java enabled a lot of mission critical desktop applications in industries like the aerospace
     sector, deep sea research, the stock market, and others.
-    
-    As we all know the market share of desktop applications has gone down during the last decade. 
-    Next to mobile computing more and more applications move to web browsers. Based on this Java 
-    desktop technologies are not as attractive anymore as they were a couple of years ago. 
-    ​ 
-    Nevertheless there is still progress in Java Desktop technologies and a lot of positive changes 
-    and progression happened within the last 12 months. Together we will take a look at the current 
-    state of these technologies, how they evolved within the last year, and what new developments the 
-    future might bring for us. 
+
+    As we all know the market share of desktop applications has gone down during the last decade.
+    Next to mobile computing more and more applications move to web browsers. Based on this Java
+    desktop technologies are not as attractive anymore as they were a couple of years ago.
+    ​
+    Nevertheless there is still progress in Java Desktop technologies and a lot of positive changes
+    and progression happened within the last 12 months. Together we will take a look at the current
+    state of these technologies, how they evolved within the last year, and what new developments the
+    future might bring for us.
   lectures: ['JFX-Days 2020']
   slides-link: https://speakerdeck.com/hendrikebbers/java-desktop-2020
   video-link: 'https://www.youtube.com/watch?v=mIR2TucAwSQ&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=3'
   featuredImage: desktop-2020
 
 - name: '50 Shades of Java'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     Let me seduce you!
     Talks in which you learn how to "program Java correctly & cleanly" has been seen way to often.
     In this session you will learn things you should never do in your next Java project.
     Let's leave the world of all this boring clean code and come with me on a journey into the shadows of Java programming.
-    Even though Java is a solid & stable language, 
+    Even though Java is a solid & stable language,
     there are still some loopholes that you can exploit with tools like Reflection to get really whacky results and effects.
     If you want to experience the pain of these hacks then you've come to the right place.
   lectures: ['w-jax 2020', 'JCON 2020']
@@ -36,7 +52,7 @@
   featuredImage: 50-shades
 
 - name: 'AdoptOpenJDK - Making Java free again'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     AdoptOpenJDK is the leading provider of OpenJDK™ binaries.
     With over 170 million downloads in the last year, it is successfully used by
@@ -54,25 +70,25 @@
   featuredImage: adopt-free
 
 - name: 'A comparative review of microservice frameworks'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     In this session we will compare some of the most popular Microservice frameworks in the Java ecosystem like SpringBoot, Quarkus, Eclipse MicroProfile, and more. We will give an overview and jumpstart for each framework. Next to this we will answer questions like:
 
     - Which features do provide all of them, what are their unique selling points?
 
     - How do I start writing microservices with the different frameworks?
-    
+
     - Which technology stack do the different frameworks use?
-    
+
     - How do they perform in regards to startup time, and responding with different response sizes?
-    
+
     - How large are the resulting application containers in Docker?
   lectures: ['EclipseCon 2020']
   slides-link: https://speakerdeck.com/hendrikebbers/a-comparative-review-of-microservice-frameworks
   featuredImage: microservices-attack
 
 - name: 'OpenWebStart 1.3 - Webinar'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     Besides new functionalities and improvements, version 1.3 of OpenWebStart will come with
     a new documentation and support options.
@@ -82,7 +98,7 @@
   featuredImage: ows-webinar-2
 
 - name: 'Whats New in the Eclipse Platform Project'
-  author: 'karsten'
+  authors: 'karsten'
   summary: >
     This is a wrap up of what has happened in the Eclipse Platform Project from last years EclipseCon (Eclipse 2019-09) till EclipseCon 2020 and also current challenges the Eclipse Platform team is working on.
 
@@ -106,7 +122,7 @@
   featuredImage: eclipse-con-2020
 
 - name: 'OpenWebStart 1.2 - Webinar'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     Besides new functionalities and improvements, version 1.2 of OpenWebStart will come with
     a new layout which aligns with the new look and feel of the OWS website.
@@ -116,7 +132,7 @@
   featuredImage: webstart-webinar
 
 - name: '1 Codebase, 2 Mobile Platforms: How to Test iOS and Android by Just Writing Tests Once'
-  author: 'francois'
+  authors: 'francois'
   summary: >
     Developing consistent mobile apps on iOS and Android is difficult enough, but writing automated end to end tests so they run on both platforms without writing them twice is even harder. The limited selectors on mobile make it very difficult to only use one testing code base for both platforms. By using accessibilityId’s with translation keys in the same way as in the app, we use the fastest and least brittle selector on mobile possible, being resistant to tests breaking in case of text changes, allowing to also check the app in all languages without any additional effort.
 
@@ -128,7 +144,7 @@
   featuredImage: mobile-e2e-talk
 
 - name: 'Java Desktop 2019'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     Some years ago development of Java Desktop applications was easy:
     We just downloaded Java 8 from Oracle and got a set of useful tools and framework to develop Java desktop applications:
@@ -152,7 +168,7 @@
   featuredImage: rocket
 
 - name: 'Beauty and the Beast: Java Versus TypeScript'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     Once upon a time, there was a poor, innocent language. It was friendly and kind.
     Everything could have been nice and peaceful, but there was another language that
@@ -166,7 +182,7 @@
   video-link: 'https://www.youtube.com/watch?v=6zxn_jY1jiA'
 
 - name: 'JavaFX - Custom Controls'
-  author: 'gerrit'
+  authors: 'gerrit'
   summary: >
     Gerrit presents his two open source frameworks TilesFX and Medusa. TilesFX is used
     for creating professional and sophisticated dashboards. Medusa delivers a huge set
@@ -178,7 +194,7 @@
   video-link: 'https://www.youtube.com/watch?v=OuF2BMnCjt4'
 
 - name: 'Java 11 - OMG!!!!'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     With Java 6, 7 or 8, the world for a Java developer was quite easy. The Java platform
     had a long running release cycle and versions normally overlapped for more than 1 year.
@@ -200,7 +216,7 @@
   featuredImage: java11-omg
 
 - name: 'Progressive Web Apps and the Service Worker API'
-  author: 'simon'
+  authors: 'simon'
   summary: >
     Progressive Web Apps (PWAs) closes the gap between websites and native applications.
     They combine the high accessibility of web pages with the open standards of the web in terms of
@@ -216,7 +232,7 @@
   featuredImage: pwa
 
 - name: 'Web APIs - The missing manual'
-  author: 'simon'
+  authors: 'simon'
   summary: >
     Web developers use different Web APIs every day. Often this APIs are well known ones,
     like the Document Object Model (DOM), the DOM Event API, the Fetch API or the
@@ -232,7 +248,7 @@
   featuredImage: web-apis-talk
 
 - name: 'Java APIs - The missing manual'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     This isn’t a talk about microservices, NoSQL, container solutions or hip new frameworks.
     This talk will show some of the standard Java APIs that are part of Java since version 5, 6, 7 or 8.
@@ -254,7 +270,7 @@
   video-link: 'https://www.youtube.com/watch?v=YQBk9FyfzEM&'
 
 - name: 'Multidevice Controls: A Different Approach to UX'
-  author: 'gerrit'
+  authors: 'gerrit'
   summary: >
     Everybody knows boring form-based user interfaces. What if you could add mobile devices to improve
     the UX of desktop or web applications? A research project at the University of Applied Sciences and
@@ -268,7 +284,7 @@
   slides-link: https://www.slideshare.net/HendrikEbbers/multidevice-controls-a-different-approach-to-ux
 
 - name: 'The path to CD: End-to-End with Docker and Geb'
-  author: 'markus'
+  authors: 'markus'
   summary: >
     End to end testing is a crucial part of a tool chain to deliver high-quality releases of many software systems.
 
@@ -281,7 +297,7 @@
   featuredImage: sleepy-racoon
 
 - name: 'The secret behind JWT'
-  author: 'markus'
+  authors: 'markus'
   summary: >
     In the age of micro services and applications that are build from many distributed components and need to take care for aspects like CSRF and CORS, session cookies are not practicable anymore.
 
@@ -293,7 +309,7 @@
   featuredImage: token
 
 - name: 'Java WebStart is dead - What should we do now?'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     Starting with Java 11, WebStart is being removed from Java.
     Because even today several applications are built on top of this technology,
@@ -306,7 +322,7 @@
   slides-link: https://www.slideshare.net/HendrikEbbers/java-webstart-is-dead-what-should-we-do-now
 
 - name: 'Where the wild projects are'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     Build and testing a commercial software is easy. You can use a big infrastructure for CI and commercial tools to test your complete stack. And if you want to test your application on different mobile devices - well, that's easy! You company will buy them for you. But what can you do if you want to work on Open Source? You can not spend thousands of Dollars for a free time project and without a given infrastructure several build, test and deployment steps are just impossible...
     Imagine a world in that testing, building or deploying of open source software is at least as easy as for commercial projects. Maybe it's just easier and the infrastructure is better than in most $$$ stacks. I will introduce you to this world and show several tools and services that will help you to get the best out of your open source project - without producing any costs but with a lot of fun, cool new technologies and the freedom of choose.
@@ -315,7 +331,7 @@
   featuredImage: wild-projects
 
 - name: 'Polyglott Java - a platform for many paradigms'
-  author: 'mittie'
+  authors: 'mittie'
   summary: >
     There are many ways to program - and all of them find a home on the JVM. Whether you are a die-hard object-oriented enterprise programmer, a super-cool scripting hipster, or a scientific functional engineer, the Java Platform has all you need.
     In this talk we will go through unconventional combinations of these paradigms that enrich your solution space - scripting user-defined functions for a business application, building ambitious user interfaces, and creating rock-solid transaction systems.
@@ -325,7 +341,7 @@
   featuredImage: mittie-talk
 
 - name: 'Lightweight and reproducible environments with Vagrant and Puppet'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     Many developers are in need of complex development- and test environments for different projects with customers. The ideal situation would be to have them running in a sandbox.
@@ -336,7 +352,7 @@
   featuredImage: graffiti
 
 - name: 'DataFX: The Best Way to Get Real-World Data into Your JavaFX Application'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     The real value in most client-oriented business applications is the data sitting on remote servers and cloud systems. Unfortunately, retrieving and displaying this data
@@ -348,7 +364,7 @@
   video-link: 'https://www.youtube.com/watch?v=q65436KIuJ0'
 
 - name: 'JavaFX, Widgets, and Apps'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     Attend this session to hear about two exciting new OSS widget/app-launching frameworks, LaunchBoxFX and eWidgetFX, for embedded and desktop platforms. See how to create
@@ -360,7 +376,7 @@
   featuredImage: graffiti
 
 - name: 'Let’s Get Wet! AquaFX and Best Practices for Skinning JavaFX Controls'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     JavaFX offers a wide range of default controls for creating cool and great applications, from business to entertainment use cases. Because JavaFX is a multiplatform UI framework
@@ -372,7 +388,7 @@
   video-link: 'https://www.youtube.com/watch?v=ucvdYGLWLT0'
 
 - name: 'Feature Driven Development'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     This talk shows Best Practices that can be used to develop application in an agile and feature driven workflow. Companies like flickr use this development process internally and even Martin
@@ -388,7 +404,7 @@
   video-link: 'https://www.youtube.com/watch?v=D7f4ztJIHwo'
 
 - name: 'JavaFX Enterprise'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     JavaFX 8 offers a lot of excellent features to create modern and interactive user interfaces. However, in addition to a shiny UI there are other important issues that must
@@ -402,7 +418,7 @@
   video-link: 'https://www.youtube.com/watch?v=5yk6d8vjNE4&'
 
 - name: 'Smart UIs for mobile and embedded in JavaFX'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     You need a shiny cool UI for embedded devices? It should be optimized for touch? It should be responsive? It should be configurable? It should be based on JavaFX?
@@ -415,7 +431,7 @@
   featuredImage: graffiti
 
 - name: 'The JavaFX Community and Ecosystem'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     Do you want to start working with JavaFX? But you don't know where you can find all of the cool tutorials and open source APIs? This session is the perfect place to be!
@@ -428,7 +444,7 @@
   video-link: 'https://www.youtube.com/watch?v=MVIKZyqpnMY'
 
 - name: 'WebComponents and Polymer'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     Up until now it was almost impossible to create reusable components for the Web in a reasonable way. CSS rules and JavaScript variables would always get in their way in
@@ -441,7 +457,7 @@
   video-link: 'https://www.youtube.com/watch?v=muqOStp3A_o'
 
 - name: 'The remote presentation model'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     Finding the right architecture and remoting layer for a modern application of often very hard. In this talk we want to introduce the Remote Presentation Model Pattern
@@ -453,7 +469,7 @@
   featuredImage: graffiti
 
 - name: 'How we built the JavaOne Voting Machine'
-  author: 'timo'
+  authors: 'timo'
   archive: true
   summary: >
     In this talk we will show how we implemented the JavaOne Voting machine. We will start with the general idea behind the Voting Machine and an overview of all components
@@ -463,7 +479,7 @@
   featuredImage: graffiti
 
 - name: 'JavaFX in production'
-  author: 'hendrik'
+  authors: 'hendrik'
   archive: true
   summary: >
     Writing a "Hello World!" application is always easy and a Java developer can learn how to write such an application with JavaFX in some minutes. But if you want to create a
@@ -475,7 +491,7 @@
   featuredImage: graffiti
 
 - name: 'Extreme Gui Makeover'
-  author: 'hendrik'
+  authors: 'hendrik'
   summary: >
     This talk if for all UI lovers, GUI enthusiasts and friends of modern and user-friendly UX. JavaFX is not only  a modern UI toolkit but the recommend UI Toolkit of Java,
     too. It offers a lot of amazing features to help you craft modern looking and interactive user interfaces. JavaFX offers everything that is needed to create well behaved

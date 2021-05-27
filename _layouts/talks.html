@@ -18,12 +18,31 @@ layout: page
       <div class="columns">
     {% endif %}
         <article class="talk column content {% unless loopcount == size and loopindex == 1 %} is-half {% endunless %}">
-          {% assign author = site.people | where:'name', talk.author | first %}
           <h3 class="has-text-primary">{{ talk.name }}</h3>
           <div class="post-meta">
-            {%- if author -%}
-            by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>
-            {% endif %}
+            <!-- count valid authors -->
+            {% assign lastAuthor = 0 %}
+            {% for i in talk.authors %}
+              {% assign ii = site.people | where:'name', a | first %}
+              {% if ii %}
+                {% assign lastAuthor = lastAuthor | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+            {% assign secondLastAuthor = lastAuthor | minus: 1 %}
+            <!-- list valid authors -->
+            {% assign counter = 0 %}
+            {% for a in talk.authors %}
+              {% assign author = site.people | where:'name', a | first %}
+              {% if author %}
+                {% assign counter = counter | plus: 1 %}
+                {% if counter == 1 %}
+                  by
+                {% else %}
+                  {% if counter == lastAuthor %}and{% endif %}
+                {% endif %}
+                <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% if counter < secondLastAuthor %},{% endif %}
+              {% endif %}
+            {% endfor %}
           </div>
           <p>
             {%- if talk.featuredImage -%}
