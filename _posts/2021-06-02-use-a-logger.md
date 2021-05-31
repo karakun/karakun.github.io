@@ -3,7 +3,7 @@ layout: post
 title:  'System.out.println("USE A LOGGER")'
 author: stephanc
 featuredImage: logger
-excerpt: "Logging ins done in most applications but when did you last talk about it?
+excerpt: "Logging is done in most applications but when did you last talk about it?
 What to log, how to log and which benefits a logger provides are discussed before going into the topic of collecting and analyzing logs."
 categories: [Java, Logging]
 header:
