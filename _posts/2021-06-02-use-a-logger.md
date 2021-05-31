@@ -20,7 +20,7 @@ This article presents the main points and conclusions in case you do not have ti
 
 # What should you log?
 
-Before we examine how to log we need to talk about what to log.
+Before we examine how to log, we need to talk about what to log.
 This question is not trivial and there is no black and white.
 In fact, most developers need to answer this question multiple times a day.
 Defining a logging concept for your project or product helps you to make decisions faster and more precisely.
