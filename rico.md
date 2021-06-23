@@ -12,7 +12,7 @@ nav:
 ---
 
 <div class="notification">
-   NOTE: Rico has been put 'on-hold'. Find more details what that mean in the corresponding <a href="/rico/2021/07/02/rico-on-hold.html">blog post</a>.
+   IMPORTANT NOTICE: The Rico project has been put 'on-hold'. For more details about this move please read this <a href="/rico/2021/07/02/rico-on-hold.html">blog post</a>.
 </div>
 
 Implement applications while leveraging state-of-the art technologies, patterns and practices.
