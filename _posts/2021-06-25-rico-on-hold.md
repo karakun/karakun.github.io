@@ -4,7 +4,7 @@ title: 'Rico project put "on hold"'
 author: markus
 featuredImage: airport-waiting
 excerpt: 'Rico is an application framework that provides several functionalities and APIs to create enterprise applications. Recently, we put the projekt "on-hold". But what exactly does this mean?'
-permalink: '/rico/2021/07/02/rico-on-hold.html'
+permalink: '/rico/2021/06/25/rico-on-hold.html'
 categories: [Java, Jakarta EE, Java EE, Spring, Rico]
 header:
   text: Rico on-hold

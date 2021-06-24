@@ -12,7 +12,7 @@ nav:
 ---
 
 <div class="notification">
-   IMPORTANT NOTICE: The Rico project has been put 'on-hold'. For more details about this move please read this <a href="/rico/2021/07/02/rico-on-hold.html">blog post</a>.
+   IMPORTANT NOTICE: The Rico project has been put 'on-hold'. For more details about this move please read this <a href="/rico/2021/06/25/rico-on-hold.html">blog post</a>.
 </div>
 
 Implement applications while leveraging state-of-the art technologies, patterns and practices.
@@ -63,7 +63,7 @@ If you are using Rico and would be happy to see your company listed here, please
 
 ## Outlook 
 
-Rico is an open-source framework mainly driven by the projects already using it in production. The is not concrete timeline for further development planned at the moment. More details can be found in [the blog post](/rico/2021/07/02/rico-on-hold.html)
+Rico is an open-source framework mainly driven by the projects already using it in production. The is not concrete timeline for further development planned at the moment. More details can be found in [the blog post](/rico/2021/06/25/rico-on-hold.html)
 
 If you want to influence the timeline, prioritize the next steps in Rico development or add your own items to the list, please [contact us](mailto:rico@karakun.com).
 
