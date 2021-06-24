@@ -3,7 +3,7 @@ layout: post
 title: 'Rico project put "on hold"'
 author: markus
 featuredImage: airport-waiting
-excerpt: 'Rico is an application framework that provides several functionalities and APIs to create enterprise applications. Recently, we put the projekt "on-hold". And what exactly does this mean?'
+excerpt: 'Rico is an application framework that provides several functionalities and APIs to create enterprise applications. Recently, we put the projekt "on-hold". But what exactly does this mean?'
 permalink: '/rico/2021/07/02/rico-on-hold.html'
 categories: [Java, Jakarta EE, Java EE, Spring, Rico]
 header:
@@ -11,7 +11,7 @@ header:
   image: post
 ---
 
-Our application framework Rico originates from the open-source project [Dolphin Platform](https://github.com/canoo/dolphin-platform/). As this project appeared to be discontinued, we forked it and put a lot of work into it for improvements and developments. 
+Our application framework [Rico](../rico) originates from the open-source project [Dolphin Platform](https://github.com/canoo/dolphin-platform/). As this project appeared to be discontinued, we forked it and put a lot of work into it for improvements and developments. 
 
 The idea behind [Rico](../rico) was to provide standard functionality without writing the same code over and over again for faster software development. Such functionalities include data access, logging, monitoring, or security. To achieve this, Rico provides clean APIs to separate complexity coming from the set of technologies required to build your solution from your actual code.
 
