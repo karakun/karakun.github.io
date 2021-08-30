@@ -18,24 +18,3 @@
   download-link: https://dzone.com/refcardz/javafx-8-1
   featuredImage: fx-refcard
   authors: ['hendrik', 'michael']
-
-- name: 'Java FX - Embedded'
-  description: 'The use of Java and JavaFX on embedded hardware like the Raspberry Pi or the BeagleBoard-xM makes sense and is a lot of fun. The first chapter of the shortcut explains what you can do with a desktop UI framework on these devices. Ever thought about building your own hardware gadget? Be it for a tinkering or an innovative idea for a customer project: It is not difficult; the second chapter documents the installation of a Raspberry Pi, the addition of a self-built hardware component, which is addressed via GPIO pins with Java 8, and the visualization of the state with JavaFX.'
-  amazon-link: 'https://www.amazon.de/Java-FX-Embedded-shortcuts-67-ebook/dp/B00E1E2HMU'
-  featuredImage: fx-embedded
-  authors: ['gerrit']
-  multipleAuthors: true
-
-- name: 'JavaFX 8: Introduction by Example'
-  description: 'JavaFX 8: Introduction by Example shows you how to use your existing Java skills to create graphically exciting client applications with the JavaFX 8 platform. The book is a new and much improved edition of JavaFX 2.0: Introduction by Example, taking you through a series of engaging, fun-to-work examples that bring you up to speed on the major facets of the platform.'
-  amazon-link: 'https://www.amazon.de/JavaFX-Introduction-Example-Mark-Heckler-ebook/dp/B01HXFN1D2'
-  featuredImage: fx-example-8
-  authors: ['gerrit']
-  multipleAuthors: true
-
-- name: 'JavaFX 9 by Example'
-  description: 'Create media-rich client applications using JavaFX 9 and the Java 9 platform. Learn to create GUI-based applications for mobile devices, desktop PCs, and even the web. Incorporate media such as audio and video into your applications. Interface with hardware devices such as Arduino and Leap Motion. Respond to gesture control through devices such as the Leap Motion Controller. Take advantage of the new HTTP2 API to make RESTful web requests and WebSockets calls.'
-  amazon-link: 'https://www.amazon.de/JavaFX-9-Example-Carl-Dea/dp/1484219600'
-  featuredImage: fx-example-9
-  authors: ['gerrit']
-  multipleAuthors: true

@@ -88,7 +88,7 @@
   slides-link: https://speakerdeck.com/hendrikebbers/a-comparative-review-of-microservice-frameworks
   video-link: 'https://www.youtube.com/watch?v=UZx175ejLRU&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=11'
   featuredImage: microservices-attack
-  
+
 
 - name: 'OpenWebStart 1.3 - Webinar'
   authors: 'hendrik'
@@ -188,6 +188,7 @@
 
 - name: 'JavaFX - Custom Controls'
   authors: 'gerrit'
+  archive: true
   summary: >
     Gerrit presents his two open source frameworks TilesFX and Medusa. TilesFX is used
     for creating professional and sophisticated dashboards. Medusa delivers a huge set
@@ -276,6 +277,7 @@
 
 - name: 'Multidevice Controls: A Different Approach to UX'
   authors: 'gerrit'
+  archive: true
   summary: >
     Everybody knows boring form-based user interfaces. What if you could add mobile devices to improve
     the UX of desktop or web applications? A research project at the University of Applied Sciences and
