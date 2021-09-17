@@ -1,5 +1,29 @@
 # Data file that describes talks
 
+- name: 'Java 17'
+  authors: 'hendrik'
+  summary: >
+    TODO
+  lectures: ['BetterCode() Java 17']
+  slides-link: https://speakerdeck.com/hendrikebbers/java-17-release
+  featuredImage: java-17
+
+- name: 'Beam me up, Botti'
+  authors: 'hendrik'
+  summary: >
+    TODO
+  lectures: ['Java Forum Nord 2021']
+  slides-link: https://speakerdeck.com/hendrikebbers/beam-me-up-botti
+  featuredImage: botti
+
+- name: 'OpenJDK Facts'
+  authors: 'hendrik'
+  summary: >
+    TODO
+  lectures: ['Java Forum Nord 2021']
+  slides-link: https://speakerdeck.com/hendrikebbers/openjdk-facts
+  featuredImage: openjdk-facts
+
 - name: 'System.out.println("USE A LOGGER!!!");'
   authors: ['hendrik', 'stephanc']
   summary: >
