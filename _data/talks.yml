@@ -1,64 +1,49 @@
 # Data file that describes talks
 
-- name: 'Open Source verstehen'
+- name: 'Understanding Open Source
   authors: 'hendrik'
   summary: >
-    Content Management Systeme, Web-Browser oder Betriebssystem: Viele der Produkte und Services die wir täglich nutzen werden mittlerweile als 
-    Open Source Projekte realisiert. Durch den hohen Einfluss, den die Open Source Entwicklung mittlerweile auf die digitale Welt hat, findet 
-    man allerdings auch viele unterschiedliche Aussagen über die Gefahren und Vorteile von Open Source Produkten. Vor allem wenn man sich 
-    selber noch nicht intensiv mit der Thematik auseinander setzen konnte ist es hierdurch schwer, fachlich korrekte Bewertungen zu Open Source 
-    Produkten treffen zu können.
+    Content management systems, web browsers or operating systems: many of these products and services that we use every day are now implemented as 
+    open source projects. Due to the high influence that open source development has on the digital world, there are also many different 
+    statements about the advantages and dangers of open source products. Especially if you are not familiar with the subject matter, it is difficult 
+    to make a technically correct assessment of open source products
 
-    Basierend auf der Mitarbeit an verschiedenen großen Projekten in der Eclipse Foundation und des Java Ökosystems werde ich in diesem Vortrag 
-    nicht nur die theoretische Definition von Open Source vorstellen, sondern auch zeigen, wie Open Source Projekte in der Praxis entstehen und 
-    weiterentwickelt werden. Wir werden uns auch anschauen, warum Organisationen Software als Open Source veröffentlichen und welche neuen und 
-    interessanten Geschäftsmodelle sich hierbei ergeben. Hierbei werden auch die Themen wie Lizenzen, Security und Support von Open Source 
-    Produkten angesprochen, welche durch Beispiele wie OpenSSL und den 2014 veröffentlichten Heartbleed-Bug konkretisiert werden.
-
-    Das im Vortrag vermittelte Wissen soll helfen, Open Source Software besser verstehen und einschätzen zu können. Mit diesem Fachwissen 
-    können die verschiedenen Gefahren und Vorteile, die durch die Nutzung von Open Source Komponenten entstehen, in Zukunft besser beurteilt 
-    werden.
+    The knowledge presented in this talk should help to better understand and evaluate open source software. Using this knowledge, the various 
+    dangers and advantages arising from the use of open source components can be better evaluated in the future.
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
+  video-link: https://www.youtube.com/watch?v=r0UPHHsgOHg
   featuredImage: TODO
 
-- name: 'Intelligente Text Analytics & Enterprise Search'
+- name: 'Intelligent Text Analytics & Enterprise Search'
   authors: ['iryna', 'christopher']
   summary: >
-    Auf intelligenter Sprachanalyse und Enterprise Search basierende Technologien durchdringen mehr und mehr alle Unternehmensbereiche. 
-    Diese ermöglichen die Umsetzung von Digitalisierungs- und Automatisierungsstrategien. Ihr Beitrag zur Optimierung Dokumenten-basierter 
-    Prozesse und einer verbesserten Customer Experience ist essentiell, damit Unternehmen, Politik, Behörden und die Öffentlichkeit die fortschreitende 
-    digitale Transformation erfolgreich steuern und mitgestalten können.
-    
-    Enterprise Search Systeme, die auf modernen KI Technologien basieren, spielen eine dabei wichtige Rolle. Mittels ihnen können die rasant wachsenden 
-    Datenmengen aus unterschiedlichen Quellen einfach und effizient verarbeitet werden. Die Hibu-Plattform von Karakun bietet ein erprobtes, 
-    ausgereiftes Toolset, das zur Entwicklung maßgeschneiderter Lösungen für die Erschließung text-basierter Inhalte eingesetzt werden kann. Hibu basiert 
-    auf einer hochmodernen Analyseplattform, die NLP Verfahren mit denen der KI und des Maschinellen Lernens verbindet. Die Plattform wird aktiv mit 
-    wiederkehrenden Kundenanforderungen erweitert und weiterentwickelt.
+    Technologies based on intelligent speech analysis and enterprise search are increasingly finding their way into all areas of companies. They 
+    enable the implementation of digitization and automation strategies. Their contribution to the optimization of document-based processes and 
+    an improved customer experience is essential for businesses, politics, public authorities and the public to successfully master the digital 
+    transformation.
 
-    In unserem Vortrag gehen wir auf die technischen Möglichkeiten von Sprachanalysen und Enterprise Search ein und zeigen, wie Hibu-Plattform zur 
-    effizienten Erschliessung von Inhalten eingesetzt werden kann. Anhand von Praxisbeispielen und einer Demo erläutern wir, wie Verfahren der 
-    Textklassifikation und der intelligenten semantischen Suche zur Entwicklung von smarten Funktionen und automatisierten Workflows, wie z.B. 
-    automatisierte Rechnungsläufe, beitragen.
+    In this talk we will discuss the technical possibilities of speech analytics and enterprise search and show how the Hibu platform can be 
+    used for efficient content indexing. Using practical examples and a demo, we will explain how methods of text classification and intelligent 
+    semantic search contribute to the development of smart functions and automated workflows, e.g. automated invoice processes.
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
+  video-link: https://www.youtube.com/watch?v=9iXreiTeICw&t=904s
   featuredImage: TODO
 
-- name: 'Management und Analyse von Test- und Simulationsdaten'
+- name: 'Management and analysis of test and simulation data'
   authors: 'simon'
   summary: >
-    Die Menge der Daten, die bei Tests und Simulationen in Automobilbranche gesammelt wird, ist in den letzten Jahren massiv gewachsen und es ist kein Ende 
-    dieser Entwicklung in Sicht. Bisherige Techniken zur Analyse stossen an ihre Grenzen. Während die bei Tests und Simulationen anfallende Datenmenge 
-    immer grösser wird, können einzelne Computer nicht im gleichen Masse erweitert werden. Damit erreicht die bisher übliche Praxis, Daten zur Analyse auf 
-    einen Arbeitsplatzrechner zu kopieren, ihr Limit. Hinzu kommt, dass Transfer und Kopieren der Daten selbst zu einem Zeit- und Kostenfaktor wird.
-    
-    Die Kombination des vorhandenen ASAM Open Data Services (ODS) Standards, ein von der Automobilindustrie entwickelter Standard zur Verwaltung von Testdaten, 
-    mit Big Data bietet einen Ausweg. Unglücklicherweise entstammt ASAM ODS, aus einer Zeit vor Big Data und wurde bislang unabhängig weiterentwickelt. 
-    Erst seit kurzem gibt es erste Bemühungen, ODS und Big Data zusammenzubringen.
-    In diesem Vortrag sollen die verschiedenen Möglichkeiten der Verwaltung von Test- und Simulationsdaten und der Analyse mit Big Data Technologien beleuchtet 
-    werden. Wie kommen ASAM ODS und Big Data zusammen?
+    The amount of data collected during tests and simulations in the automotive industry has grown massively in recent years and there is no end 
+    in sight to this trend. Previous techniques for analysis have reached their limits. While the amount of data collected during tests and simulations 
+    is increasing, individual computers cannot be expanded to the same extent. This means that the usual practice of copying data to a workstation for 
+    analysis is reaching its limits. In addition, transferring and copying the data itself becomes a time and cost factor.
+
+    This talk presents the various ways in which test and simulation data can be managed and analyzed using Big Data technologies. How do ASAM ODS 
+    and Big Data come together?
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/management-und-analyse-von-test-und-simulationsdaten
+  video-link: https://www.youtube.com/watch?v=TaHoKKoh_P4
   featuredImage: TODO
 
 - name: 'Java 17'
