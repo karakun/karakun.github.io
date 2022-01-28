@@ -1,5 +1,66 @@
 # Data file that describes talks
 
+- name: 'Open Source verstehen'
+  authors: 'hendrik'
+  summary: >
+    Content Management Systeme, Web-Browser oder Betriebssystem: Viele der Produkte und Services die wir täglich nutzen werden mittlerweile als 
+    Open Source Projekte realisiert. Durch den hohen Einfluss, den die Open Source Entwicklung mittlerweile auf die digitale Welt hat, findet 
+    man allerdings auch viele unterschiedliche Aussagen über die Gefahren und Vorteile von Open Source Produkten. Vor allem wenn man sich 
+    selber noch nicht intensiv mit der Thematik auseinander setzen konnte ist es hierdurch schwer, fachlich korrekte Bewertungen zu Open Source 
+    Produkten treffen zu können.
+
+    Basierend auf der Mitarbeit an verschiedenen großen Projekten in der Eclipse Foundation und des Java Ökosystems werde ich in diesem Vortrag 
+    nicht nur die theoretische Definition von Open Source vorstellen, sondern auch zeigen, wie Open Source Projekte in der Praxis entstehen und 
+    weiterentwickelt werden. Wir werden uns auch anschauen, warum Organisationen Software als Open Source veröffentlichen und welche neuen und 
+    interessanten Geschäftsmodelle sich hierbei ergeben. Hierbei werden auch die Themen wie Lizenzen, Security und Support von Open Source 
+    Produkten angesprochen, welche durch Beispiele wie OpenSSL und den 2014 veröffentlichten Heartbleed-Bug konkretisiert werden.
+
+    Das im Vortrag vermittelte Wissen soll helfen, Open Source Software besser verstehen und einschätzen zu können. Mit diesem Fachwissen 
+    können die verschiedenen Gefahren und Vorteile, die durch die Nutzung von Open Source Komponenten entstehen, in Zukunft besser beurteilt 
+    werden.
+  lectures: ['Digitale Woche Dortmund 2021']
+  slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
+  featuredImage: TODO
+
+- name: 'Intelligente Text Analytics & Enterprise Search'
+  authors: ['iryna', 'christopher']
+  summary: >
+    Auf intelligenter Sprachanalyse und Enterprise Search basierende Technologien durchdringen mehr und mehr alle Unternehmensbereiche. 
+    Diese ermöglichen die Umsetzung von Digitalisierungs- und Automatisierungsstrategien. Ihr Beitrag zur Optimierung Dokumenten-basierter 
+    Prozesse und einer verbesserten Customer Experience ist essentiell, damit Unternehmen, Politik, Behörden und die Öffentlichkeit die fortschreitende 
+    digitale Transformation erfolgreich steuern und mitgestalten können.
+    
+    Enterprise Search Systeme, die auf modernen KI Technologien basieren, spielen eine dabei wichtige Rolle. Mittels ihnen können die rasant wachsenden 
+    Datenmengen aus unterschiedlichen Quellen einfach und effizient verarbeitet werden. Die Hibu-Plattform von Karakun bietet ein erprobtes, 
+    ausgereiftes Toolset, das zur Entwicklung maßgeschneiderter Lösungen für die Erschließung text-basierter Inhalte eingesetzt werden kann. Hibu basiert 
+    auf einer hochmodernen Analyseplattform, die NLP Verfahren mit denen der KI und des Maschinellen Lernens verbindet. Die Plattform wird aktiv mit 
+    wiederkehrenden Kundenanforderungen erweitert und weiterentwickelt.
+
+    In unserem Vortrag gehen wir auf die technischen Möglichkeiten von Sprachanalysen und Enterprise Search ein und zeigen, wie Hibu-Plattform zur 
+    effizienten Erschliessung von Inhalten eingesetzt werden kann. Anhand von Praxisbeispielen und einer Demo erläutern wir, wie Verfahren der 
+    Textklassifikation und der intelligenten semantischen Suche zur Entwicklung von smarten Funktionen und automatisierten Workflows, wie z.B. 
+    automatisierte Rechnungsläufe, beitragen.
+  lectures: ['Digitale Woche Dortmund 2021']
+  slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
+  featuredImage: TODO
+
+- name: 'Management und Analyse von Test- und Simulationsdaten'
+  authors: 'simon'
+  summary: >
+    Die Menge der Daten, die bei Tests und Simulationen in Automobilbranche gesammelt wird, ist in den letzten Jahren massiv gewachsen und es ist kein Ende 
+    dieser Entwicklung in Sicht. Bisherige Techniken zur Analyse stossen an ihre Grenzen. Während die bei Tests und Simulationen anfallende Datenmenge 
+    immer grösser wird, können einzelne Computer nicht im gleichen Masse erweitert werden. Damit erreicht die bisher übliche Praxis, Daten zur Analyse auf 
+    einen Arbeitsplatzrechner zu kopieren, ihr Limit. Hinzu kommt, dass Transfer und Kopieren der Daten selbst zu einem Zeit- und Kostenfaktor wird.
+    
+    Die Kombination des vorhandenen ASAM Open Data Services (ODS) Standards, ein von der Automobilindustrie entwickelter Standard zur Verwaltung von Testdaten, 
+    mit Big Data bietet einen Ausweg. Unglücklicherweise entstammt ASAM ODS, aus einer Zeit vor Big Data und wurde bislang unabhängig weiterentwickelt. 
+    Erst seit kurzem gibt es erste Bemühungen, ODS und Big Data zusammenzubringen.
+    In diesem Vortrag sollen die verschiedenen Möglichkeiten der Verwaltung von Test- und Simulationsdaten und der Analyse mit Big Data Technologien beleuchtet 
+    werden. Wie kommen ASAM ODS und Big Data zusammen?
+  lectures: ['Digitale Woche Dortmund 2021']
+  slides-link: https://speakerdeck.com/karakun/management-und-analyse-von-test-und-simulationsdaten
+  featuredImage: TODO
+
 - name: 'Java 17'
   authors: 'hendrik'
   summary: >
