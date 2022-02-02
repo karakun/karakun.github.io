@@ -1,6 +1,6 @@
 # Data file that describes talks
 
-- name: 'Understanding Open Source
+- name: 'Understanding Open Source'
   authors: 'hendrik'
   summary: >
     Content management systems, web browsers or operating systems: many of these products and services that we use every day are now implemented as 
