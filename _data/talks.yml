@@ -13,7 +13,7 @@
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
   video-link: https://www.youtube.com/watch?v=r0UPHHsgOHg
-  featuredImage: TODO
+  featuredImage: diwodo-os
 
 - name: 'Intelligent Text Analytics & Enterprise Search'
   authors: ['iryna', 'christopher']
@@ -29,7 +29,7 @@
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
   video-link: https://www.youtube.com/watch?v=9iXreiTeICw&t=904s
-  featuredImage: TODO
+  featuredImage: diwodo-es
 
 - name: 'Management and analysis of test and simulation data'
   authors: 'simon'
@@ -44,7 +44,7 @@
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/management-und-analyse-von-test-und-simulationsdaten
   video-link: https://www.youtube.com/watch?v=TaHoKKoh_P4
-  featuredImage: TODO
+  featuredImage: diwodo-bd
 
 - name: 'Java 17'
   authors: 'hendrik'
