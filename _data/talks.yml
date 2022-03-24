@@ -10,7 +10,7 @@
 
     The knowledge presented in this talk should help to better understand and evaluate open source software. Using this knowledge, the various 
     dangers and advantages arising from the use of open source components can be better evaluated in the future.
-  lectures: ['Digitale Woche Dortmund 2021']
+  lectures: ['Digitale Woche Dortmund 2021', 'OOP 2022']
   slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
   video-link: https://www.youtube.com/watch?v=r0UPHHsgOHg
   featuredImage: diwodo-os
@@ -55,7 +55,7 @@
     the JVM has been able to make great leaps in the last few years and Java 12, 13, 14, 15 and 16 have been released. 
     You read right: since Java 11, there are really already 6 releases that add interesting and important new features to the language syntax, 
     the JVM or the Java APIs. In this session, I talk about Java 17, the OpenJDK, different Java distributions and the Java ecosystem.
-  lectures: ['BetterCode() Java 17']
+  lectures: ['BetterCode() Java 17', 'JavaLand 2022']
   slides-link: https://speakerdeck.com/hendrikebbers/java-17-release
   featuredImage: java-17
 
@@ -90,7 +90,7 @@
     and show how this huge community-based project for the free reuse of Java has emerged within the last years. Of course, questions 
     about security and future-proofing of Adoptium and OpenJDK will also be addressed. Additionally, I will show the current and future goals 
     of the project and also give ideas how interested participants can participate and contribute to the project.
-  lectures: ['Java Forum Nord 2021']
+  lectures: ['Java Forum Nord 2021', 'JUG Munich']
   slides-link: https://speakerdeck.com/hendrikebbers/openjdk-facts
   video-link: 'https://www.youtube.com/watch?v=feWxvznnPss'
   featuredImage: openjdk-facts
@@ -107,7 +107,7 @@
 
     This talk gives an understandable guide through the logging jungle and shows a few practices that help to get the logging of libraries and applications under control.
     If you're on the verge of going back to System.out out of frustration, this session is for you.
-  lectures: ['JavaLand 2021']
+  lectures: ['JavaLand 2021', 'JCON 2021']
   slides-link: https://speakerdeck.com/hendrikebbers/system-dot-out-dot-println-use-a-logger
   video-link: 'https://www.youtube.com/watch?v=hwyEanE6tX8&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=2'
   featuredImage: logger
