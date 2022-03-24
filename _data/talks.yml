@@ -1,5 +1,51 @@
 # Data file that describes talks
 
+- name: 'Understanding Open Source'
+  authors: 'hendrik'
+  summary: >
+    Content management systems, web browsers or operating systems: many of these products and services that we use every day are now implemented as 
+    open source projects. Due to the high influence that open source development has on the digital world, there are also many different 
+    statements about the advantages and dangers of open source products. Especially if you are not familiar with the subject matter, it is difficult 
+    to make a technically correct assessment of open source products
+
+    The knowledge presented in this talk should help to better understand and evaluate open source software. Using this knowledge, the various 
+    dangers and advantages arising from the use of open source components can be better evaluated in the future.
+  lectures: ['Digitale Woche Dortmund 2021']
+  slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
+  video-link: https://www.youtube.com/watch?v=r0UPHHsgOHg
+  featuredImage: diwodo-os
+
+- name: 'Intelligent Text Analytics & Enterprise Search'
+  authors: ['iryna', 'christopher']
+  summary: >
+    Technologies based on intelligent speech analysis and enterprise search are increasingly finding their way into all areas of companies. They 
+    enable the implementation of digitization and automation strategies. Their contribution to the optimization of document-based processes and 
+    an improved customer experience is essential for businesses, politics, public authorities and the public to successfully master the digital 
+    transformation.
+
+    In this talk we will discuss the technical possibilities of speech analytics and enterprise search and show how the Hibu platform can be 
+    used for efficient content indexing. Using practical examples and a demo, we will explain how methods of text classification and intelligent 
+    semantic search contribute to the development of smart functions and automated workflows, e.g. automated invoice processes.
+  lectures: ['Digitale Woche Dortmund 2021']
+  slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
+  video-link: https://www.youtube.com/watch?v=9iXreiTeICw&t=904s
+  featuredImage: diwodo-es
+
+- name: 'Management and analysis of test and simulation data'
+  authors: 'simon'
+  summary: >
+    The amount of data collected during tests and simulations in the automotive industry has grown massively in recent years and there is no end 
+    in sight to this trend. Previous techniques for analysis have reached their limits. While the amount of data collected during tests and simulations 
+    is increasing, individual computers cannot be expanded to the same extent. This means that the usual practice of copying data to a workstation for 
+    analysis is reaching its limits. In addition, transferring and copying the data itself becomes a time and cost factor.
+
+    This talk presents the various ways in which test and simulation data can be managed and analyzed using Big Data technologies. How do ASAM ODS 
+    and Big Data come together?
+  lectures: ['Digitale Woche Dortmund 2021']
+  slides-link: https://speakerdeck.com/karakun/management-und-analyse-von-test-und-simulationsdaten
+  video-link: https://www.youtube.com/watch?v=TaHoKKoh_P4
+  featuredImage: diwodo-bd
+
 - name: 'Java 17'
   authors: 'hendrik'
   summary: >
