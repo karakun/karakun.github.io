@@ -2,13 +2,13 @@
 - name: 'Singularity by mistake - Why my AI is wiping out humanity'
   authors: 'christopher'
   summary: >
-    In movie blockbusters, we learn that artificial intelligence can rise against humanity and sound the death knell of the world. Is this just Hollywood 
+    In movie blockbusters, we learn that artificial intelligence can rise against humanity and sound the death knell of the world. Is this just Hollywood
     fantasy or already reality? And why is Elon Musk "afraid" of the AI future?
 
-    In this talk, we will deal with failed AI learnings and the abstruse results that can be created by such learning attempts. Here we will have a look at 
+    In this talk, we will deal with failed AI learnings and the abstruse results that can be created by such learning attempts. Here we will have a look at
     difference areas of AI like NLP or reinforcement learning. Ever thought about a PacMan that is controlled by an evil AI and how such character would act?
-    We will look at the errors that can occur during learning processes. Here we will not only see amusing results, but also scenarios that can be a real danger 
-    in a productive environment. In the conclusion will also take a closer look at the causes of these failed learning processes and discuss what can be 
+    We will look at the errors that can occur during learning processes. Here we will not only see amusing results, but also scenarios that can be a real danger
+    in a productive environment. In the conclusion will also take a closer look at the causes of these failed learning processes and discuss what can be
     done to avoid such problems and pitfalls.
   lectures: ['JavaLand 2022']
   slides-link: https://speakerdeck.com/chkei001/singularity-aus-versehen
@@ -17,15 +17,15 @@
 - name: 'I know what you did last summer'
   authors: ['hendrik', 'stephanc']
   summary: >
-    Can you say the same about your Java applications? Today, applications run not only as monoliths on a server, but also distributed as (micro-)services 
-    in the cloud. Continuous monitoring is becoming more important in such scenarios. For example, as soon as you want to be informed about running out of 
-    memory, too many user sessions or increasing memory consumption, logging alone is no longer sufficient. For these and many other scenarios, metrics are 
+    Can you say the same about your Java applications? Today, applications run not only as monoliths on a server, but also distributed as (micro-)services
+    in the cloud. Continuous monitoring is becoming more important in such scenarios. For example, as soon as you want to be informed about running out of
+    memory, too many user sessions or increasing memory consumption, logging alone is no longer sufficient. For these and many other scenarios, metrics are
     the tool of choice today.
 
-    In this session we will look at how to implement, visualize and evaluate metrics for Java applications. We will not only look at products and 
-    ready-to-use solutions like Grafana or Prometheus. Rather, we also want to find out how to implement metrics in Java in a meaningful way without 
-    vendor lock-in. With Micrometer and Java Flight Recorder, for example, there are several APIs that can be used to easily extend a Java application 
-    with metrics and the possibility of continuous monitoring. Together we will look at different approaches and discuss best practices or pitfalls 
+    In this session we will look at how to implement, visualize and evaluate metrics for Java applications. We will not only look at products and
+    ready-to-use solutions like Grafana or Prometheus. Rather, we also want to find out how to implement metrics in Java in a meaningful way without
+    vendor lock-in. With Micrometer and Java Flight Recorder, for example, there are several APIs that can be used to easily extend a Java application
+    with metrics and the possibility of continuous monitoring. Together we will look at different approaches and discuss best practices or pitfalls
     when using metrics.
   lectures: ['JavaLand 2022']
   slides-link: https://speakerdeck.com/hendrikebbers/i-know-what-you-did-last-summer
@@ -34,12 +34,12 @@
 - name: 'Understanding Open Source'
   authors: 'hendrik'
   summary: >
-    Content management systems, web browsers or operating systems: many of these products and services that we use every day are now implemented as 
-    open source projects. Due to the high influence that open source development has on the digital world, there are also many different 
-    statements about the advantages and dangers of open source products. Especially if you are not familiar with the subject matter, it is difficult 
+    Content management systems, web browsers or operating systems: many of these products and services that we use every day are now implemented as
+    open source projects. Due to the high influence that open source development has on the digital world, there are also many different
+    statements about the advantages and dangers of open source products. Especially if you are not familiar with the subject matter, it is difficult
     to make a technically correct assessment of open source products
 
-    The knowledge presented in this talk should help to better understand and evaluate open source software. Using this knowledge, the various 
+    The knowledge presented in this talk should help to better understand and evaluate open source software. Using this knowledge, the various
     dangers and advantages arising from the use of open source components can be better evaluated in the future.
   lectures: ['Digitale Woche Dortmund 2021', 'OOP 2022']
   slides-link: https://speakerdeck.com/hendrikebbers/open-source-verstehen
@@ -49,13 +49,13 @@
 - name: 'Intelligent Text Analytics & Enterprise Search'
   authors: ['iryna', 'christopher']
   summary: >
-    Technologies based on intelligent speech analysis and enterprise search are increasingly finding their way into all areas of companies. They 
-    enable the implementation of digitization and automation strategies. Their contribution to the optimization of document-based processes and 
-    an improved customer experience is essential for businesses, politics, public authorities and the public to successfully master the digital 
+    Technologies based on intelligent speech analysis and enterprise search are increasingly finding their way into all areas of companies. They
+    enable the implementation of digitization and automation strategies. Their contribution to the optimization of document-based processes and
+    an improved customer experience is essential for businesses, politics, public authorities and the public to successfully master the digital
     transformation.
 
-    In this talk we will discuss the technical possibilities of speech analytics and enterprise search and show how the Hibu platform can be 
-    used for efficient content indexing. Using practical examples and a demo, we will explain how methods of text classification and intelligent 
+    In this talk we will discuss the technical possibilities of speech analytics and enterprise search and show how the Hibu platform can be
+    used for efficient content indexing. Using practical examples and a demo, we will explain how methods of text classification and intelligent
     semantic search contribute to the development of smart functions and automated workflows, e.g. automated invoice processes.
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search
@@ -65,12 +65,12 @@
 - name: 'Management and analysis of test and simulation data'
   authors: 'simon'
   summary: >
-    The amount of data collected during tests and simulations in the automotive industry has grown massively in recent years and there is no end 
-    in sight to this trend. Previous techniques for analysis have reached their limits. While the amount of data collected during tests and simulations 
-    is increasing, individual computers cannot be expanded to the same extent. This means that the usual practice of copying data to a workstation for 
+    The amount of data collected during tests and simulations in the automotive industry has grown massively in recent years and there is no end
+    in sight to this trend. Previous techniques for analysis have reached their limits. While the amount of data collected during tests and simulations
+    is increasing, individual computers cannot be expanded to the same extent. This means that the usual practice of copying data to a workstation for
     analysis is reaching its limits. In addition, transferring and copying the data itself becomes a time and cost factor.
 
-    This talk presents the various ways in which test and simulation data can be managed and analyzed using Big Data technologies. How do ASAM ODS 
+    This talk presents the various ways in which test and simulation data can be managed and analyzed using Big Data technologies. How do ASAM ODS
     and Big Data come together?
   lectures: ['Digitale Woche Dortmund 2021']
   slides-link: https://speakerdeck.com/karakun/management-und-analyse-von-test-und-simulationsdaten
@@ -80,11 +80,11 @@
 - name: 'Java 17'
   authors: 'hendrik'
   summary: >
-    If someone told us in summer 2017 that Java 17 would be released in fall 2021, 
-    we certainly wouldn't have taken that statement seriously. 
-    But with the OpenJDK roadmap presented in September 2017 and releases every 6 months, 
-    the JVM has been able to make great leaps in the last few years and Java 12, 13, 14, 15 and 16 have been released. 
-    You read right: since Java 11, there are really already 6 releases that add interesting and important new features to the language syntax, 
+    If someone told us in summer 2017 that Java 17 would be released in fall 2021,
+    we certainly wouldn't have taken that statement seriously.
+    But with the OpenJDK roadmap presented in September 2017 and releases every 6 months,
+    the JVM has been able to make great leaps in the last few years and Java 12, 13, 14, 15 and 16 have been released.
+    You read right: since Java 11, there are really already 6 releases that add interesting and important new features to the language syntax,
     the JVM or the Java APIs. In this session, I talk about Java 17, the OpenJDK, different Java distributions and the Java ecosystem.
   lectures: ['BetterCode() Java 17', 'JavaLand 2022']
   slides-link: https://speakerdeck.com/hendrikebbers/java-17-release
@@ -93,14 +93,14 @@
 - name: 'Beam me up, Botti'
   authors: 'hendrik'
   summary: >
-    Human-computer interaction has changed dramatically in recent years. 
-    As a result, more and more so-called social bots have been created over the years - especially in the area of social networks - 
-    which can be used both to obtain information and to enhance the user experience. 
-    In addition to "nice gimmicks," however, such bots are also being used more and more in critical areas, 
-    such as by politicians during election campaigns. 
-    Misinformation on climate change, for example, is also being spread more and more by bots. 
-    In this talk, we will look at how to develop bots in general (with Java) and what options are open to a developer. 
-    Together we will develop a bot and look at how easy it is to integrate and use gamification aspects to motivate users to interact with our bot. 
+    Human-computer interaction has changed dramatically in recent years.
+    As a result, more and more so-called social bots have been created over the years - especially in the area of social networks -
+    which can be used both to obtain information and to enhance the user experience.
+    In addition to "nice gimmicks," however, such bots are also being used more and more in critical areas,
+    such as by politicians during election campaigns.
+    Misinformation on climate change, for example, is also being spread more and more by bots.
+    In this talk, we will look at how to develop bots in general (with Java) and what options are open to a developer.
+    Together we will develop a bot and look at how easy it is to integrate and use gamification aspects to motivate users to interact with our bot.
     However, we will also look at the downsides of this technology, e.g. what sensitive data a developer might suddenly have at his disposal.
   lectures: ['Java Forum Nord 2021']
   slides-link: https://speakerdeck.com/hendrikebbers/beam-me-up-botti
@@ -109,17 +109,17 @@
 - name: 'OpenJDK & Adoptium'
   authors: 'hendrik'
   summary: >
-    In the last few years, there have been many rumors in the Java community about the new roadmap of Java and the OpenJDK. 
-    Next to this, Oracle changed its licensing terms for the Oracle JDK. 
-    Today, you can no longer simply download your Java Runtime from Oracle and use it for free on your company servers. You have to choose 
-    between different providers. 
-    One of these runtime providers is Eclipse Adoptium. 
-    But who is behind Eclipse Adoptium and how do their Java distribution Temurin and its licenses differ from other providers? 
+    In the last few years, there have been many rumors in the Java community about the new roadmap of Java and the OpenJDK.
+    Next to this, Oracle changed its licensing terms for the Oracle JDK.
+    Today, you can no longer simply download your Java Runtime from Oracle and use it for free on your company servers. You have to choose
+    between different providers.
+    One of these runtime providers is Eclipse Adoptium.
+    But who is behind Eclipse Adoptium and how do their Java distribution Temurin and its licenses differ from other providers?
     And what does AdoptOpenJDK or OpenJDK have to do with it?
 
-    As a working group member and committer of Adoptium, I will give an overview of the origin and intention of Eclipse Adoptium 
-    and show how this huge community-based project for the free reuse of Java has emerged within the last years. Of course, questions 
-    about security and future-proofing of Adoptium and OpenJDK will also be addressed. Additionally, I will show the current and future goals 
+    As a working group member and committer of Adoptium, I will give an overview of the origin and intention of Eclipse Adoptium
+    and show how this huge community-based project for the free reuse of Java has emerged within the last years. Of course, questions
+    about security and future-proofing of Adoptium and OpenJDK will also be addressed. Additionally, I will show the current and future goals
     of the project and also give ideas how interested participants can participate and contribute to the project.
   lectures: ['Java Forum Nord 2021', 'JUG Munich']
   slides-link: https://speakerdeck.com/hendrikebbers/openjdk-facts
