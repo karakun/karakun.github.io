@@ -1,4 +1,35 @@
 # Data file that describes talks
+- name: 'Singularity by mistake - Why my AI is wiping out humanity'
+  authors: 'christopher'
+  summary: >
+    In movie blockbusters, we learn that artificial intelligence can rise against humanity and sound the death knell of the world. Is this just Hollywood 
+    fantasy or already reality? And why is Elon Musk "afraid" of the AI future?
+
+    In this talk, we will deal with failed AI learnings and the abstruse results that can be created by such learning attempts. Here we will have a look at 
+    difference areas of AI like NLP or reinforcement learning. Ever thought about a PacMan that is controlled by an evil AI and how such character would act?
+    We will look at the errors that can occur during learning processes. Here we will not only see amusing results, but also scenarios that can be a real danger 
+    in a productive environment. In the conclusion will also take a closer look at the causes of these failed learning processes and discuss what can be 
+    done to avoid such problems and pitfalls.
+  lectures: ['JavaLand 2022']
+  slides-link: https://speakerdeck.com/chkei001/singularity-aus-versehen
+  featuredImage: ki-destroy
+
+- name: 'I know what you did last summer'
+  authors: ['hendrik', 'stephanc']
+  summary: >
+    Can you say the same about your Java applications? Today, applications run not only as monoliths on a server, but also distributed as (micro-)services 
+    in the cloud. Continuous monitoring is becomes more important in such scenarios. For example, as soon as you want to be informed about running out of 
+    memory, too many user sessions or increasing memory consumption, logging alone is no longer sufficient. For these and many other scenarios, metrics are 
+    the tool of choice today.
+
+    In this session we will look at how to implement, visualize and evaluate metrics for Java applications. We will not only look at products and 
+    ready-to-use solutions like Grafana or Prometheus. Rather, we also want to find out how to implement metrics in Java in a meaningful way without 
+    vendor lock-in. With Micrometer and Java Flight Recorder, for example, there are several APIs that can be used to easily extend a Java application 
+    with metrics and the possibility of continuous monitoring. Together we will look at different approaches and discuss best practices or pitfalls 
+    when using metrics.
+  lectures: ['JavaLand 2022']
+  slides-link: https://speakerdeck.com/hendrikebbers/i-know-what-you-did-last-summer
+  featuredImage: metrics
 
 - name: 'Understanding Open Source'
   authors: 'hendrik'
