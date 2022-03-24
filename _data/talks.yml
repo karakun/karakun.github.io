@@ -18,7 +18,7 @@
   authors: ['hendrik', 'stephanc']
   summary: >
     Can you say the same about your Java applications? Today, applications run not only as monoliths on a server, but also distributed as (micro-)services 
-    in the cloud. Continuous monitoring is becomes more important in such scenarios. For example, as soon as you want to be informed about running out of 
+    in the cloud. Continuous monitoring is becoming more important in such scenarios. For example, as soon as you want to be informed about running out of 
     memory, too many user sessions or increasing memory consumption, logging alone is no longer sufficient. For these and many other scenarios, metrics are 
     the tool of choice today.
 
