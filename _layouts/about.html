@@ -5,15 +5,30 @@ layout: article
 <p>This is the Karakun Developer Hub, brought to you by <a href="https://www.karakun.com" target="_blank">Karakun AG</a>.</p>
 
 <h3>The team</h3>
-<p>This page is provided by the developers at Karakun AG. In detail the following people have provided content to the page:</p>
+<p>This page is provided by the developers at Karakun. In detail the following people have provided content to the page:</p>
 {% assign people = site.people %}
   <ul>
     {% for person in people %}
+    {% if person.alumni != true %}
       <li>
         <a href="{{ person.url }}">{{ person.firstName }} {{ person.lastName }}</a>
       </li>
+    {% endif %}
     {% endfor %}
   </ul>
+
+  <h4>Alumni</h4>
+  <p>Former members of Karakun and the Developer Hub team:</p>
+  <ul>
+    {% for person in people %}
+    {% if person.alumni == true %}
+      <li>
+        <a href="{{ person.url }}">{{ person.firstName }} {{ person.lastName }}</a>
+      </li>
+    {% endif %}
+    {% endfor %}
+  </ul>
+
 
 <h3>Contact details</h3>
 <blockquote>
@@ -25,6 +40,8 @@ layout: article
     <a href="mailto:info@karakun.com">info@karakun.com</a><br>
     <a href="https://www.karakun.com">karakun.com</a></p>
 </blockquote>
+find more contact information and locations at <br /> <a href='https://karakun.com/en/about-us/#locations'>karakun.com/en/about-us</a>
+
 
 <h3>Organisations and foundations</h3>
 <p>We are part of several organisations to work on solid software and standards.</p>

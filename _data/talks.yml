@@ -325,7 +325,6 @@
 
 - name: 'JavaFX - Custom Controls'
   authors: 'gerrit'
-  archive: true
   summary: >
     Gerrit presents his two open source frameworks TilesFX and Medusa. TilesFX is used
     for creating professional and sophisticated dashboards. Medusa delivers a huge set
@@ -414,7 +413,6 @@
 
 - name: 'Multidevice Controls: A Different Approach to UX'
   authors: 'gerrit'
-  archive: true
   summary: >
     Everybody knows boring form-based user interfaces. What if you could add mobile devices to improve
     the UX of desktop or web applications? A research project at the University of Applied Sciences and
@@ -486,7 +484,6 @@
 
 - name: 'Lightweight and reproducible environments with Vagrant and Puppet'
   authors: 'hendrik'
-  archive: true
   summary: >
     Many developers are in need of complex development- and test environments for different projects with customers. The ideal situation would be to have them running in a sandbox.
     With help of the Cloud and VMs it's possible to create those sandbox-environments but administration, configuration and maintenance cost a lot of time and money.
@@ -497,7 +494,6 @@
 
 - name: 'DataFX: The Best Way to Get Real-World Data into Your JavaFX Application'
   authors: 'hendrik'
-  archive: true
   summary: >
     The real value in most client-oriented business applications is the data sitting on remote servers and cloud systems. Unfortunately, retrieving and displaying this data
     is an exercise left to the developer, and it must be done (correctly!) before end users can interact with it. Fortunately, the open source DataFX framework aims to simplify
@@ -509,7 +505,6 @@
 
 - name: 'JavaFX, Widgets, and Apps'
   authors: 'hendrik'
-  archive: true
   summary: >
     Attend this session to hear about two exciting new OSS widget/app-launching frameworks, LaunchBoxFX and eWidgetFX, for embedded and desktop platforms. See how to create
     dock-based widgets ranging from mini-apps to full-control interfaces for entire systems—and everything in between. LaunchBoxFX provides a pluggable interface for development
@@ -521,7 +516,6 @@
 
 - name: 'Let’s Get Wet! AquaFX and Best Practices for Skinning JavaFX Controls'
   authors: 'hendrik'
-  archive: true
   summary: >
     JavaFX offers a wide range of default controls for creating cool and great applications, from business to entertainment use cases. Because JavaFX is a multiplatform UI framework
     that can be used mainly on desktop-based platforms and embedded devices, a cross-platform skin named Caspian is provided by JavaFX. As of Java 8, Modena will be a official second
@@ -533,7 +527,6 @@
 
 - name: 'Feature Driven Development'
   authors: 'hendrik'
-  archive: true
   summary: >
     This talk shows Best Practices that can be used to develop application in an agile and feature driven workflow. Companies like flickr use this development process internally and even Martin
     Fowler defined a part of the process as "FeatureToggle".
@@ -549,7 +542,6 @@
 
 - name: 'JavaFX Enterprise'
   authors: 'hendrik'
-  archive: true
   summary: >
     JavaFX 8 offers a lot of excellent features to create modern and interactive user interfaces. However, in addition to a shiny UI there are other important issues that must
     be considered when creating enterprise business applications with JavaFX. This talk gives an overview of the various best practices on solving problems like client-server
@@ -563,7 +555,6 @@
 
 - name: 'Smart UIs for mobile and embedded in JavaFX'
   authors: 'hendrik'
-  archive: true
   summary: >
     You need a shiny cool UI for embedded devices? It should be optimized for touch? It should be responsive? It should be configurable? It should be based on JavaFX?
 
@@ -576,7 +567,6 @@
 
 - name: 'The JavaFX Community and Ecosystem'
   authors: 'hendrik'
-  archive: true
   summary: >
     Do you want to start working with JavaFX? But you don't know where you can find all of the cool tutorials and open source APIs? This session is the perfect place to be!
     Leading up to the Java 8 release there has been a huge ecosystem with a lot of good tutorials and open source frameworks surrounding JavaFX. Since this year the community
@@ -589,7 +579,6 @@
 
 - name: 'WebComponents and Polymer'
   authors: 'hendrik'
-  archive: true
   summary: >
     Up until now it was almost impossible to create reusable components for the Web in a reasonable way. CSS rules and JavaScript variables would always get in their way in
     large applications. Luckily there is an initiative now to unify techniques to define custom Web Components
@@ -602,7 +591,6 @@
 
 - name: 'The remote presentation model'
   authors: 'hendrik'
-  archive: true
   summary: >
     Finding the right architecture and remoting layer for a modern application of often very hard. In this talk we want to introduce the Remote Presentation Model Pattern
     that is based on MVC and introduces a generic model approach that can be used to define (presentation) models that can be synchronized between the client and the server.
@@ -614,7 +602,6 @@
 
 - name: 'How we built the JavaOne Voting Machine'
   authors: 'timo'
-  archive: true
   summary: >
     In this talk we will show how we implemented the JavaOne Voting machine. We will start with the general idea behind the Voting Machine and an overview of all components
     involved that run on embedded hardware and in the cloud. We will then show some parts and solutions like the IoT functionality, live reporting and UI concepts in more detail.
@@ -624,7 +611,6 @@
 
 - name: 'JavaFX in production'
   authors: 'hendrik'
-  archive: true
   summary: >
     Writing a "Hello World!" application is always easy and a Java developer can learn how to write such an application with JavaFX in some minutes. But if you want to create a
     productive application the knowledge of "Hello World" isn't enough. A real application should be well structured, provide an automatic build that ends in useable artifacts
