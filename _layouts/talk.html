@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-{% assign speaker = site.people | where:'name', page.speakers | first %}
 <section>
   <div class="container">
     <article class="post h-entry columns" itemscope itemtype="http://schema.org/BlogPosting">
@@ -9,9 +8,29 @@ layout: default
         <div class="post-header">
           <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
           <p class="post-meta">
-            {%- if speaker -%}
-            by <a href="{{ speaker.url }}">{{ speaker.firstName }} {{ speaker.lastName }}</a>
-            {%- endif -%}
+            <!-- count valid speakers -->
+            {% assign lastSpeaker = 0 %}
+            {% for i in page.speakers %}
+              {% assign ii = site.people | where:'name', a | first %}
+              {% if ii %}
+                {% assign lastSpeaker = lastSpeaker | plus: 1 %}
+              {% endif %}
+            {% endfor %}
+            {% assign secondLastSpeaker = lastSpeaker | minus: 1 %}
+            <!-- list valid speakers -->
+            {% assign counter = 0 %}
+            {% for speakerName in page.speakers %}
+              {% assign speaker = site.people | where:'name', speakerName | first %}
+              {% if speaker %}
+                {% assign counter = counter | plus: 1 %}
+                {% if counter == 1 %}
+                  by
+                {% else %}
+                  {% if counter == lastSpeaker %}and{% endif %}
+                {% endif %}
+                <a href="{{ speaker.url }}">{{ speaker.firstName }} {{ speaker.lastName }}</a>{% if counter < secondLastSpeaker %},{% endif %}
+              {% endif %}
+            {% endfor %}
             {%- if page.lectures -%}
               {% assign lecturesArray = "" | split: "/" %}
               {%- for lecture in page.lectures -%}
@@ -53,15 +72,20 @@ layout: default
         <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
       </div>
       <div class="column overview">
-        {%- if speaker -%}
-        <div class="post-author info">
-          <h5>Speaker</h5>
-          {%- if speaker.avatar -%}
-            <p><img src="/assets/avatars/{{ speaker.avatar }}.png" alt="avatar"/>{{ speaker.description }}</p>
-          {% else %}
-            <p><img src="/assets/avatars/unknown.png" alt="avatar"/>{{ speaker.description }}</p>
-          {% endif %}
-          <div class="information"><a class="button is-primary" href="{{ speaker.url }}">more...</a></div>
+        {%- if page.speakers -%}
+          <div class="post-author info">
+          {% for speakerName in page.speakers %}
+            {% assign speaker = site.people | where:'name', speakerName | first %}
+            {% if speaker %}
+              <h5>Speaker</h5>
+              {%- if speaker.avatar -%}
+                <p><img src="/assets/avatars/{{ speaker.avatar }}.png" alt="avatar"/>{{ speaker.description }}</p>
+              {% else %}
+                <p><img src="/assets/avatars/unknown.png" alt="avatar"/>{{ speaker.description }}</p>
+              {% endif %}
+              <div class="information"><a class="button is-primary" href="{{ speaker.url }}">more...</a></div>
+            {% endif %}
+          {% endfor %}
         </div>
         {%- endif -%}
         {%- if page.categories -%}
