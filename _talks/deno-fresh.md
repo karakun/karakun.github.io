@@ -11,6 +11,7 @@ featuredImage: lucas-santos-citrus-fresh-unsplash
 header:
   text: Fresh?
   image: post
+index: 44
 ---
 
 "Fresh" claims to be the next-gen webframework we all have been waiting for.

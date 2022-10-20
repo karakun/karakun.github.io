@@ -9,6 +9,7 @@ Für diese und viele weitere Szenarien sind Runtime Metriken heute das Mittel de
 lectures: ['DiWoDo 2022','BaselOne 2022']
 slides-link: https://speakerdeck.com/madmas/fresh-the-next-level-in-web-applications
 featuredImage: metrics2
+index: 45
 ---
 
 Heute laufen Anwendungen nicht nur als Monolithen auf einem Server, sondern oft verteilt als (Micro-)Services in der Cloud.
