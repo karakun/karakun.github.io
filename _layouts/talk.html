@@ -74,16 +74,16 @@ layout: default
       <div class="column overview">
         {%- if page.speakers -%}
           <div class="post-author info">
+          <h5>Speaker</h5>
           {% for speakerName in page.speakers %}
             {% assign speaker = site.people | where:'name', speakerName | first %}
             {% if speaker %}
-              <h5>Speaker</h5>
               {%- if speaker.avatar -%}
                 <p><img src="/assets/avatars/{{ speaker.avatar }}.png" alt="avatar"/>{{ speaker.description }}</p>
               {% else %}
                 <p><img src="/assets/avatars/unknown.png" alt="avatar"/>{{ speaker.description }}</p>
               {% endif %}
-              <div class="information"><a class="button is-primary" href="{{ speaker.url }}">more...</a></div>
+              <div class="information"><a class="button is-primary" href="{{ speaker.url }}">more...</a></div><br />
             {% endif %}
           {% endfor %}
         </div>

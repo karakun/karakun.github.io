@@ -2,13 +2,13 @@
 layout: talk
 title: 'Metrics 101'
 speakers: ['markus', 'stephanc']
-excerpt: 'Eine Einleitung in Metriken'
-lectures: ['BaselOne 2022']
+excerpt: 'Heute laufen Anwendungen nicht nur als Monolithen auf einem Server, sondern oft verteilt als (Micro-)Services in der Cloud.
+Umso wichtiger ist hier eine kontinuierliche Überwachung.
+Sobald man beispielsweise über knapp werdenden Speicherplatz, zu viele User-Sessions oder einen steigenden Memory-Verbrauch informiert werden will, reicht Logging alleine nicht mehr aus.
+Für diese und viele weitere Szenarien sind Runtime Metriken heute das Mittel der Wahl.'
+lectures: ['DiWoDo 2022','BaselOne 2022']
 slides-link: https://speakerdeck.com/madmas/fresh-the-next-level-in-web-applications
-featuredImage: lucas-santos-citrus-fresh-unsplash
-header:
-  text: Do I need to pay for <span class="my-karakun">Java<span> now?
-  image: post
+featuredImage: metrics2
 ---
 
 Heute laufen Anwendungen nicht nur als Monolithen auf einem Server, sondern oft verteilt als (Micro-)Services in der Cloud.
