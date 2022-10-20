@@ -13,7 +13,7 @@ lectures:
   - JavaOne Latin America 2016
   - JavaOne 2016
 featuredImage: graffiti
-index: 40
+index: 3
 
 ---
 

@@ -27,7 +27,7 @@ slides-link: 'https://speakerdeck.com/hendrikebbers/system-dot-out-dot-println-u
 video-link: >-
   https://www.youtube.com/watch?v=hwyEanE6tX8&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=2
 featuredImage: logger
-index: 8
+index: 35
 
 ---
 

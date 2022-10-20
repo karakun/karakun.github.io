@@ -10,7 +10,7 @@ lectures:
   - Karakun Webinar
 slides-link: 'https://speakerdeck.com/hendrikebbers/openwebstart-1-dot-2-0-webinar'
 featuredImage: webstart-webinar
-index: 15
+index: 28
 
 ---
 

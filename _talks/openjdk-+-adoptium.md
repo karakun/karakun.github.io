@@ -25,7 +25,7 @@ lectures:
 slides-link: 'https://speakerdeck.com/hendrikebbers/openjdk-facts'
 video-link: 'https://www.youtube.com/watch?v=feWxvznnPss'
 featuredImage: openjdk-facts
-index: 7
+index: 36
 
 ---
 

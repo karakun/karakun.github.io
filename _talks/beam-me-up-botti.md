@@ -20,7 +20,7 @@ lectures:
   - Java Forum Nord 2021
 slides-link: 'https://speakerdeck.com/hendrikebbers/beam-me-up-botti'
 featuredImage: botti
-index: 6
+index: 37
 
 ---
 

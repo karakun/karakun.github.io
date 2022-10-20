@@ -18,7 +18,7 @@ lectures:
   - c't &lt;webdev&gt; 2019
 github-link: 'https://giftkugel.github.io/talks/web-api.html'
 featuredImage: web-apis-talk
-index: 22
+index: 21
 
 ---
 

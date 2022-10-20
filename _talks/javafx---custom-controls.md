@@ -13,7 +13,7 @@ lectures:
 slides-link: 'https://speakerdeck.com/karakun/javafx-custom-controls'
 featuredImage: controls
 video-link: 'https://www.youtube.com/watch?v=OuF2BMnCjt4'
-index: 19
+index: 24
 
 ---
 

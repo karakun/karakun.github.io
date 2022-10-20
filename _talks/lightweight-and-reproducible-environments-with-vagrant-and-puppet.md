@@ -17,7 +17,7 @@ lectures:
   - JayDay 2013
   - DevoxxUK 2013
 featuredImage: graffiti
-index: 30
+index: 13
 
 ---
 

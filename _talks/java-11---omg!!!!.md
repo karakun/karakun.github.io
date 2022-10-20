@@ -26,7 +26,7 @@ lectures:
   - JavaLand 2019
 slides-link: 'https://www.slideshare.net/HendrikEbbers/java-11-omg'
 featuredImage: java11-omg
-index: 20
+index: 23
 
 ---
 

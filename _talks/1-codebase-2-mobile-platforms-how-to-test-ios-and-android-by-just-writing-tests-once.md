@@ -24,7 +24,7 @@ slides-link: 'https://github.com/martinfrancois/saucecon-2020-1-codebase-2-mobil
 video-link: 'http://saucecon.com/agenda-2020?agendaPath=session/251027'
 github-link: 'https://github.com/martinfrancois/wdio-mobile-utils'
 featuredImage: mobile-e2e-talk
-index: 16
+index: 27
 
 ---
 

@@ -23,7 +23,7 @@ lectures:
 slides-link: 'https://speakerdeck.com/karakun/intelligente-textanalyse-and-enterprise-search'
 video-link: 'https://www.youtube.com/watch?v=9iXreiTeICw&t=904s'
 featuredImage: diwodo-es
-index: 3
+index: 40
 
 ---
 

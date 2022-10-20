@@ -17,7 +17,7 @@ lectures:
 video-link: >-
   https://www.youtube.com/watch?v=5jlxGiGjZlQ&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=5
 featuredImage: 50-shades
-index: 10
+index: 33
 
 ---
 

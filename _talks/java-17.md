@@ -16,7 +16,7 @@ lectures:
   - JavaLand 2022
 slides-link: 'https://speakerdeck.com/hendrikebbers/java-17-release'
 featuredImage: java-17
-index: 5
+index: 38
 
 ---
 

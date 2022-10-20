@@ -14,7 +14,7 @@ lectures:
   - Java Summit Bucharest 2018
 video-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
 featuredImage: mittie-talk
-index: 29
+index: 14
 
 ---
 

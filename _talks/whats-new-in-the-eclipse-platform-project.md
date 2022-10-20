@@ -29,7 +29,7 @@ slides-link: >-
   https://speakerdeck.com/kthoms/whats-new-in-the-eclipse-platform-project-eclipsecon-2020
 video-link: 'https://www.youtube.com/watch?v=xl3Fl-WZfJA'
 featuredImage: eclipse-con-2020
-index: 14
+index: 29
 
 ---
 

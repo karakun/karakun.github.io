@@ -14,7 +14,7 @@ lectures:
 slides-link: 'https://www.slideshare.net/HendrikEbbers/beauty-the-beast-java-vs-typescript'
 featuredImage: beast
 video-link: 'https://www.youtube.com/watch?v=6zxn_jY1jiA'
-index: 18
+index: 25
 
 ---
 

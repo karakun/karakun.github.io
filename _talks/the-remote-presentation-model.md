@@ -21,7 +21,7 @@ lectures:
   - JavaOne 2016
   - Oracle Code Berlin 2017
 featuredImage: graffiti
-index: 39
+index: 4
 
 ---
 

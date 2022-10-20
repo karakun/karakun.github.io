@@ -16,7 +16,7 @@ lectures:
   - BaselOne 2018
 github-link: 'https://github.com/madmas/TokenVsCookies'
 featuredImage: token
-index: 26
+index: 17
 
 ---
 

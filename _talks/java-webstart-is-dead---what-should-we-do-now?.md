@@ -16,7 +16,7 @@ lectures:
 featuredImage: webstart
 slides-link: >-
   https://www.slideshare.net/HendrikEbbers/java-webstart-is-dead-what-should-we-do-now
-index: 27
+index: 16
 
 ---
 

@@ -23,7 +23,7 @@ slides-link: 'https://speakerdeck.com/hendrikebbers/java-desktop-2020'
 video-link: >-
   https://www.youtube.com/watch?v=mIR2TucAwSQ&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=3
 featuredImage: desktop-2020
-index: 9
+index: 34
 
 ---
 

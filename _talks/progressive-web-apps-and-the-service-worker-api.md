@@ -20,7 +20,7 @@ lectures:
   - c't &lt;webdev&gt; 2019
 github-link: 'https://giftkugel.github.io/talks/pwa.html'
 featuredImage: pwa
-index: 21
+index: 22
 
 ---
 

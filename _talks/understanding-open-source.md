@@ -21,7 +21,7 @@ lectures:
 slides-link: 'https://speakerdeck.com/hendrikebbers/open-source-verstehen'
 video-link: 'https://www.youtube.com/watch?v=r0UPHHsgOHg'
 featuredImage: diwodo-os
-index: 2
+index: 41
 
 ---
 

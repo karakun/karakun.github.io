@@ -26,7 +26,7 @@ lectures:
   - JFocus 2016
 featuredImage: graffiti
 video-link: 'https://www.youtube.com/watch?v=muqOStp3A_o'
-index: 38
+index: 5
 
 ---
 

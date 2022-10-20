@@ -5,7 +5,7 @@ layout: talk\n\
 ";
 
 
-function createFilename (title: string, index: number) {
+function createFilename (title: string) {
   return title.replaceAll('&','+')
             .replaceAll(';', '')
             .replaceAll(':', '')
@@ -30,8 +30,8 @@ const file = Deno.readTextFileSync('./_data/talks.yml', 'utf8')
 const data = parse(file);
 
 for (var talk of data) {
-    talk.index = data.indexOf(talk);
-    Deno.writeTextFileSync("./_talks/" + createFilename(talk.name, talk.index), 
+    talk.index = (43 - data.indexOf(talk));
+    Deno.writeTextFileSync("./_talks/" + createFilename(talk.name), 
                            convertContent(stringify(talk)));
 }
 

@@ -21,7 +21,7 @@ lectures:
   - JavaFX-Day
 featuredImage: gui-makeover
 video-link: 'https://www.youtube.com/watch?v=-XY3Jjkz1sk'
-index: 42
+index: 1
 
 ---
 

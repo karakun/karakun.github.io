@@ -16,7 +16,7 @@ summary: >
 lectures:
   - JavaOne 2014
 featuredImage: graffiti
-index: 36
+index: 7
 
 ---
 

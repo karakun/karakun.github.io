@@ -19,7 +19,7 @@ lectures:
   - BaselOne 2018
 github-link: 'https://github.com/madmas/E2ETestGebSpockDocker'
 featuredImage: sleepy-racoon
-index: 25
+index: 18
 
 ---
 

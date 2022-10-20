@@ -17,7 +17,7 @@ lectures:
   - JavaOne 2014
 featuredImage: graffiti
 video-link: 'https://www.youtube.com/watch?v=MVIKZyqpnMY'
-index: 37
+index: 6
 
 ---
 
