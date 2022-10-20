@@ -6,7 +6,15 @@ layout: talk\n\
 
 
 function createFilename (title: string, index: number) {
-  return title.replace('&','+').replaceAll(';', '').replaceAll(':', '').replaceAll(',', '').replaceAll(' ', '-').toLowerCase() + ".md"
+  return title.replaceAll('&','+')
+            .replaceAll(';', '')
+            .replaceAll(':', '')
+            .replaceAll('`', '')
+            .replaceAll('’', '')
+            .replaceAll('\'', '')
+            .replaceAll(',', '')
+            .replaceAll(' ', '-')
+            .toLowerCase() + ".md"
 } 
 
 function convertContent(content: string){
