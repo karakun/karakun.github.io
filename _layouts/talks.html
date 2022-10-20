@@ -9,7 +9,7 @@ layout: page
 {% endfor %}
 
 {% assign loopcount = 0 %}
-{% assign sortedtalks = site.talks | sort: 'index' %}
+{% assign sortedtalks = site.talks | sort: 'index' | reverse %}
 {% for talk in sortedtalks %}
   {% if talk.archive == page.archive %}
     {% assign loopcount = loopcount | plus: 1 %}
