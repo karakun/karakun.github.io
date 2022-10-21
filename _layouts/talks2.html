@@ -2,15 +2,14 @@
 layout: page
 ---
 {% assign size = 0 %}
-{% for talk in site.talks %}
+{% for talk in site.data.talks %}
   {% if talk.archive == page.archive %}
     {% assign size = size | plus: 1 %}
   {% endif %}
 {% endfor %}
 
 {% assign loopcount = 0 %}
-{% assign sortedtalks = site.talks | sort: 'index' | reverse %}
-{% for talk in sortedtalks %}
+{% for talk in site.data.talks %}
   {% if talk.archive == page.archive %}
     {% assign loopcount = loopcount | plus: 1 %}
     {% assign loopindex = loopcount | modulo: 2 %}
@@ -19,39 +18,37 @@ layout: page
       <div class="columns">
     {% endif %}
         <article class="talk column content {% unless loopcount == size and loopindex == 1 %} is-half {% endunless %}">
-          <h3 class="has-text-primary"><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
+          <h3 class="has-text-primary">{{ talk.name }}</h3>
           <div class="post-meta">
-            <!-- count valid speakers -->
-            {% assign lastSpeaker = 0 %}
-            {% for i in talk.speakers %}
+            <!-- count valid authors -->
+            {% assign lastAuthor = 0 %}
+            {% for i in talk.authors %}
               {% assign ii = site.people | where:'name', a | first %}
               {% if ii %}
-                {% assign lastSpeaker = lastSpeaker | plus: 1 %}
+                {% assign lastAuthor = lastAuthor | plus: 1 %}
               {% endif %}
             {% endfor %}
-            {% assign secondLastSpeaker = lastSpeaker | minus: 1 %}
-            <!-- list valid speakers -->
+            {% assign secondLastAuthor = lastAuthor | minus: 1 %}
+            <!-- list valid authors -->
             {% assign counter = 0 %}
-            {% for a in talk.speakers %}
+            {% for a in talk.authors %}
               {% assign author = site.people | where:'name', a | first %}
               {% if author %}
                 {% assign counter = counter | plus: 1 %}
                 {% if counter == 1 %}
                   by
                 {% else %}
-                  {% if counter == lastSpeaker %}and{% endif %}
+                  {% if counter == lastAuthor %}and{% endif %}
                 {% endif %}
-                <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% if counter < secondLastSpeaker %},{% endif %}
+                <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% if counter < secondLastAuthor %},{% endif %}
               {% endif %}
             {% endfor %}
           </div>
           <p>
             {%- if talk.featuredImage -%}
-            <a href="{{ talk.url }}">
               <img class="featured-image" alt="featured image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
-            </a>
             {% endif %}
-            <a class="excerpt" href="{{ talk.url }}">{{ talk.excerpt | newline_to_br }}</a>
+            {{ talk.summary | newline_to_br }}
           </p>
           <div class="links">
               {%- if talk.lectures -%}

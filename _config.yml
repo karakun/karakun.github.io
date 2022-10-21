@@ -53,6 +53,8 @@ sass:
 collections:
   people:
     output: true
+  talks:
+    output: true
 
 defaults:
   - scope:
