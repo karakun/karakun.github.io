@@ -27,6 +27,8 @@ lectures:
 slides-link: 'https://www.slideshare.net/HendrikEbbers/java-11-omg'
 featuredImage: java11-omg
 index: 23
+header:
+  image: talks
 
 ---
 

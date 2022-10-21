@@ -15,6 +15,8 @@ slides-link: 'https://www.slideshare.net/HendrikEbbers/beauty-the-beast-java-vs-
 featuredImage: beast
 video-link: 'https://www.youtube.com/watch?v=6zxn_jY1jiA'
 index: 25
+header:
+  image: talks
 
 ---
 

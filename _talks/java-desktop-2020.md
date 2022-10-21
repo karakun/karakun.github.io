@@ -24,6 +24,8 @@ video-link: >-
   https://www.youtube.com/watch?v=mIR2TucAwSQ&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=3
 featuredImage: desktop-2020
 index: 34
+header:
+  image: talks
 
 ---
 

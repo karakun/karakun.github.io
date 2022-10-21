@@ -30,6 +30,8 @@ slides-link: 'https://www.slideshare.net/HendrikEbbers/java-desktop-2019'
 video-link: 'https://www.youtube.com/watch?v=biokgYUnvr4'
 featuredImage: rocket
 index: 26
+header:
+  image: talks
 
 ---
 

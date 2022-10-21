@@ -21,6 +21,8 @@ lectures:
 github-link: 'https://giftkugel.github.io/talks/pwa.html'
 featuredImage: pwa
 index: 22
+header:
+  image: talks
 
 ---
 

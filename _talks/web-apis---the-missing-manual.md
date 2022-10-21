@@ -19,6 +19,8 @@ lectures:
 github-link: 'https://giftkugel.github.io/talks/web-api.html'
 featuredImage: web-apis-talk
 index: 21
+header:
+  image: talks
 
 ---
 

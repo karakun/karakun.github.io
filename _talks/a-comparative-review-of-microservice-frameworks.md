@@ -27,6 +27,8 @@ video-link: >-
   https://www.youtube.com/watch?v=UZx175ejLRU&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW&index=11
 featuredImage: microservices-attack
 index: 31
+header:
+  image: talks
 
 ---
 

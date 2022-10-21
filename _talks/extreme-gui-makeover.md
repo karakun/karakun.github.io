@@ -22,6 +22,8 @@ lectures:
 featuredImage: gui-makeover
 video-link: 'https://www.youtube.com/watch?v=-XY3Jjkz1sk'
 index: 1
+header:
+  image: talks
 
 ---
 

@@ -21,6 +21,8 @@ featuredImage: multi-device
 slides-link: >-
   https://www.slideshare.net/HendrikEbbers/multidevice-controls-a-different-approach-to-ux
 index: 19
+header:
+  image: talks
 
 ---
 

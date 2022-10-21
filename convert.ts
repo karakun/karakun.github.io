@@ -31,6 +31,8 @@ const data = parse(file);
 
 for (var talk of data) {
     talk.index = (43 - data.indexOf(talk));
+    talk.header = { image: 'talks' };
+
     Deno.writeTextFileSync("./_talks/" + createFilename(talk.name), 
                            convertContent(stringify(talk)));
 }

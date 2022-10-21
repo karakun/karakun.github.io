@@ -15,6 +15,8 @@ lectures:
 video-link: 'https://www.youtube.com/watch?v=vDQQ8axRC8I'
 featuredImage: mittie-talk
 index: 14
+header:
+  image: talks
 
 ---
 

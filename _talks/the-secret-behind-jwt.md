@@ -17,6 +17,8 @@ lectures:
 github-link: 'https://github.com/madmas/TokenVsCookies'
 featuredImage: token
 index: 17
+header:
+  image: talks
 
 ---
 

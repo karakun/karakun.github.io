@@ -20,6 +20,8 @@ lectures:
 github-link: 'https://github.com/madmas/E2ETestGebSpockDocker'
 featuredImage: sleepy-racoon
 index: 18
+header:
+  image: talks
 
 ---
 

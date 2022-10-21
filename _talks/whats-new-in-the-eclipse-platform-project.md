@@ -30,6 +30,8 @@ slides-link: >-
 video-link: 'https://www.youtube.com/watch?v=xl3Fl-WZfJA'
 featuredImage: eclipse-con-2020
 index: 29
+header:
+  image: talks
 
 ---
 

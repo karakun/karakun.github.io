@@ -33,6 +33,8 @@ slides-link: 'https://www.slideshare.net/HendrikEbbers/java-apis-the-missing-man
 featuredImage: java-apis
 video-link: 'https://www.youtube.com/watch?v=YQBk9FyfzEM&'
 index: 20
+header:
+  image: talks
 
 ---
 

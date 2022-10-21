@@ -22,6 +22,8 @@ lectures:
   - Oracle Code Berlin 2017
 featuredImage: graffiti
 index: 4
+header:
+  image: talks
 
 ---
 
