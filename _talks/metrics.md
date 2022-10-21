@@ -7,7 +7,7 @@ Umso wichtiger ist hier eine kontinuierliche Überwachung.
 Sobald man beispielsweise über knapp werdenden Speicherplatz, zu viele User-Sessions oder einen steigenden Memory-Verbrauch informiert werden will, reicht Logging alleine nicht mehr aus.
 Für diese und viele weitere Szenarien sind Runtime Metriken heute das Mittel der Wahl.'
 lectures: ['DiWoDo 2022','BaselOne 2022']
-slides-link: https://speakerdeck.com/madmas/fresh-the-next-level-in-web-applications
+slides-link: /assets/talks/Slidedeck_RuntimeMetriken101_BaselOne.pdf
 featuredImage: metrics2
 index: 45
 ---
