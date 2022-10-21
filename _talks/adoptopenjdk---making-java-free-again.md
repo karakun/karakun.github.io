@@ -30,6 +30,8 @@ video-link: >-
   https://www.youtube.com/watch?v=KvpibYDRSUo&list=PL9r_sTu6nhXSFYknILieFl2YbFBrJIWRW
 featuredImage: adopt-free
 index: 32
+header:
+  image: talks
 
 ---
 

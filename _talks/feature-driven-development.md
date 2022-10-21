@@ -23,6 +23,8 @@ lectures:
 featuredImage: graffiti
 video-link: 'https://www.youtube.com/watch?v=D7f4ztJIHwo'
 index: 9
+header:
+  image: talks
 
 ---
 

@@ -21,6 +21,8 @@ lectures:
 slides-link: 'https://speakerdeck.com/hendrikebbers/beam-me-up-botti'
 featuredImage: botti
 index: 37
+header:
+  image: talks
 
 ---
 

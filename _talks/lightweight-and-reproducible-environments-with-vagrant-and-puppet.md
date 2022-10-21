@@ -18,6 +18,8 @@ lectures:
   - DevoxxUK 2013
 featuredImage: graffiti
 index: 13
+header:
+  image: talks
 
 ---
 

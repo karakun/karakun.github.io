@@ -23,6 +23,8 @@ lectures:
 video-link: 'https://www.youtube.com/watch?v=74AiufFGVug'
 featuredImage: wild-projects
 index: 15
+header:
+  image: talks
 
 ---
 

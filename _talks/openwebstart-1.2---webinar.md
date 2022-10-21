@@ -11,6 +11,8 @@ lectures:
 slides-link: 'https://speakerdeck.com/hendrikebbers/openwebstart-1-dot-2-0-webinar'
 featuredImage: webstart-webinar
 index: 28
+header:
+  image: talks
 
 ---
 

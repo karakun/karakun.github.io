@@ -25,6 +25,8 @@ video-link: 'http://saucecon.com/agenda-2020?agendaPath=session/251027'
 github-link: 'https://github.com/martinfrancois/wdio-mobile-utils'
 featuredImage: mobile-e2e-talk
 index: 27
+header:
+  image: talks
 
 ---
 

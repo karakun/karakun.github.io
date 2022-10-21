@@ -18,6 +18,8 @@ lectures:
   - JavaOne 2013
 featuredImage: graffiti
 index: 11
+header:
+  image: talks
 
 ---
 

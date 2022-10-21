@@ -9,6 +9,8 @@ Für diese und viele weitere Szenarien sind Runtime Metriken heute das Mittel de
 lectures: ['DiWoDo 2022','BaselOne 2022']
 slides-link: /assets/talks/Slidedeck_RuntimeMetriken101_BaselOne.pdf
 featuredImage: metrics2
+header:
+  image: talks
 index: 45
 ---
 

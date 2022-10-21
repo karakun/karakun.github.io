@@ -10,7 +10,7 @@ slides-link: https://speakerdeck.com/madmas/fresh-the-next-level-in-web-applicat
 featuredImage: lucas-santos-citrus-fresh-unsplash
 header:
   text: Fresh?
-  image: post
+  image: talks
 index: 44
 ---
 

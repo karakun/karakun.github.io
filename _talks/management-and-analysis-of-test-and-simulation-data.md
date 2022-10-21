@@ -22,6 +22,8 @@ slides-link: >-
 video-link: 'https://www.youtube.com/watch?v=TaHoKKoh_P4'
 featuredImage: diwodo-bd
 index: 39
+header:
+  image: talks
 
 ---
 

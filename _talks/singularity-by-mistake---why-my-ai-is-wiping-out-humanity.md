@@ -22,6 +22,8 @@ slides-link: 'https://speakerdeck.com/chkei001/singularity-aus-versehen'
 video-link: 'https://www.youtube.com/watch?v=9qgBeZUszLs&t'
 featuredImage: ki-destroy
 index: 43
+header:
+  image: talks
 
 ---
 

@@ -17,6 +17,8 @@ lectures:
 slides-link: 'https://speakerdeck.com/hendrikebbers/java-17-release'
 featuredImage: java-17
 index: 38
+header:
+  image: talks
 
 ---
 
