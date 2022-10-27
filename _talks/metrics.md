@@ -8,6 +8,7 @@ Sobald man beispielsweise über knapp werdenden Speicherplatz, zu viele User-Ses
 Für diese und viele weitere Szenarien sind Runtime Metriken heute das Mittel der Wahl.'
 lectures: ['DiWoDo 2022','BaselOne 2022']
 slides-link: /assets/talks/Slidedeck_RuntimeMetriken101_BaselOne.pdf
+video-link: 'https://www.youtube.com/watch?v=XBtFGwqy7yE'
 featuredImage: metrics2
 header:
   image: talks
