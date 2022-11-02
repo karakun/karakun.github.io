@@ -2,11 +2,9 @@
 name: 'iryna'
 firstName: 'Iryna'
 lastName: 'Dohndorf'
-description: 'Dr. Iryna Dohndorf is a full stack software engineer at Karakun AG and full time machine learning enthusiast.'
-twitter: ''
-github: ''
+description: 'Dr. Iryna Dohndorf is software engineer at Karakun, book author and speaker at international conferences.'
 mail: 'iryna.dohndorf@karakun.com'
-avatar: ''
+avatar: 'iryna'
 
 header:
   image: 
