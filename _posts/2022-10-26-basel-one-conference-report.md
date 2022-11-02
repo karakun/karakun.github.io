@@ -11,14 +11,15 @@ header:
   image: post
 ---
 
-# BaselOne 2022
-
-BaselOne 2022 conference took place on October 19th in the Markthalle. As we were quite a few people from Karakun attending, be it as participants, speakers or organizer, we would like to share our impressions in this blog post.
-
-Some hardfacts first:
+BaselOne 2022 conference took place on October 19, 2022 in the Markthalle. As we were quite a few people from Karakun attending, be it as participants, speakers or organizer, we would like to share our impressions in this blog post. Some hardfacts first:
 
 ## BaselOne 22 in figures
+BaselOne is a yearly event organized by the eponymous association existing of [Karakun AG](https://karakun.com), [Bluesky IT-Solutions AG](https://bluesky-it.ch) and [Baloise Insurance](https://baloise.com). In total, BaselOne 22 offered 26 talks by 29 speaker and 4 workshops to 160 paying attendees. All in all, almost 350 hours of organization time were spent to make all this happen.
 
+![Alexander Schwarz, RedHat](/assets/posts/2022-10-25-basel-one/Basel-One-29.jpg)
+![Break at BaselOne22](/assets/posts/2022-10-25-basel-one/Basel-One-57.jpg)
+![Gradle booth at BaselOne22](/assets/posts/2022-10-25-basel-one/Basel-One-189.jpg)
+![Fun with after-conference-beer](/assets/posts/2022-10-25-basel-one/Basel-One-190.jpg)
 
 
 
