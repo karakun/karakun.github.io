@@ -2,11 +2,11 @@
 name: 'christopher'
 firstName: 'Christopher'
 lastName: 'Keibel'
-description: 'Christopher Keibel is a full stack software engineer at Karakun AG and full time machine learning enthusiast.'
+description: 'Christopher Keibel is a software engineer at Karakun and currently doing his master in Data Science.'
 twitter: 'C_Keibel'
 github: 'CKeibel'
 mail: 'christopher.keibel@karakun.com'
-avatar: ''
+avatar: 'christopher'
 
 header:
   image: 
