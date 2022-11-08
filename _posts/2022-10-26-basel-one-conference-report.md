@@ -14,19 +14,55 @@ header:
 BaselOne 2022 conference took place on October 19, 2022 in the Markthalle. As we were quite a few people from Karakun attending, be it as participants, speakers or organizer, we would like to share our impressions in this blog post. Some hardfacts first:
 
 ## BaselOne 22 in figures
-BaselOne is a yearly event organized by the eponymous association existing of [Karakun AG](https://karakun.com), [Bluesky IT-Solutions AG](https://bluesky-it.ch) and [Baloise Insurance](https://baloise.com). In total, BaselOne 22 offered 26 talks by 29 speaker and 4 workshops to 160 paying attendees. All in all, almost 350 hours of organization time were spent to make all this happen.
+BaselOne is a yearly event organized by the eponymous association existing of [Karakun AG](https://karakun.com), [Bluesky IT-Solutions AG](https://bluesky-it.ch) and [Baloise Insurance](https://baloise.com).
+
+ In total, BaselOne 22 offered 26 talks by 29 speaker and 4 workshops to 160 paying attendees. All in all, almost 350 hours of organization time were spent to make all this happen.
+
+
+
+## Talks
+
+As said, there were 26 talks and it was challanging to choose which to attend
+
+### ???
 
 ![Alexander Schwarz, RedHat](/assets/posts/2022-10-25-basel-one/Basel-One-29.jpg)
+
+
+### Metrics
+
+![Stephan explaining metrics](/assets/posts/2022-10-25-basel-one/IMG_1530.jpeg)
+
+### AI
+
+![Christopher and Iryna explaining AI](/assets/posts/2022-10-25-basel-one/IMG_1535.jpeg)
+
+
+## Impressions
+
+As a really handy improvement, a little map to the venue was given to each attendee to make it easier to find the roome which are located in the markhalle building but aside from the main hall:
+
+![Map for the conference](/assets/posts/2022-10-25-basel-one/IMG_1525.jpeg)
+
+Break time!
+
 ![Break at BaselOne22](/assets/posts/2022-10-25-basel-one/Basel-One-57.jpg)
+
+
+Very tasty meals from the streetfood like stands selling delicious food at Markthalle (included in the conference ticket)
+
+![Lunchtime!](/assets/posts/2022-10-25-basel-one/IMG_1534.jpeg)
+
+the Gradle booth, Guy explaining the advantages of theit Buildscan offering
+
 ![Gradle booth at BaselOne22](/assets/posts/2022-10-25-basel-one/Basel-One-189.jpg)
+
+After the conference, networking with some tasty beverages
+
 ![Fun with after-conference-beer](/assets/posts/2022-10-25-basel-one/Basel-One-190.jpg)
 
 
 
-![Map for the conference](/assets/posts/2022-10-25-basel-one/IMG_1525.jpeg)
 
-![Stephan explaining metrics](/assets/posts/2022-10-25-basel-one/IMG_1530.jpeg)
 
-![Lunchtime!](/assets/posts/2022-10-25-basel-one/IMG_1534.jpeg)
 
-![Christopher and Iryna explaining AI](/assets/posts/2022-10-25-basel-one/IMG_1535.jpeg)
