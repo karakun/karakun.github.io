@@ -46,13 +46,20 @@ As a really handy improvement, a little map to the venue was given to each atten
 
 Break time!
 
+One of the very nice features of BaselOne is its size.
+It is big enough to attract international speakers and still small enough to easily be able to have a chat with them.
+And it is not just the audience which enjoys these direct interaction, also the speakers can be seen chatting and listening intensely.
+
 ![Break at BaselOne22](/assets/posts/2022-10-25-basel-one/Basel-One-57.jpg)
 
-Very tasty meals from the street-food like stands selling delicious food at Markthalle (included in the conference ticket)
+Very tasty meals from the street-food like stands selling delicious food at Markthalle (included in the conference ticket).
+
+Like the previous years Ursula, from the JUG Switzerland administration, spoiled the participants with homemade Duke shaped cookies.
+Unfortunately we were enjoying them so much we forgot to take a picture...
 
 ![Lunchtime!](/assets/posts/2022-10-25-basel-one/IMG_1534.jpeg)
 
-the Gradle booth, Guy explaining the advantages of their "Build Scan"  offering
+the Gradle booth, Guy explaining the advantages of their "Build Scan" offering
 
 ![Gradle booth at BaselOne22](/assets/posts/2022-10-25-basel-one/Basel-One-189.jpg)
 
