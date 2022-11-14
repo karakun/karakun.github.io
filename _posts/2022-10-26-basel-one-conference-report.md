@@ -5,7 +5,7 @@ author: markus
 featuredImage: BaselOne22
 excerpt: "BaselOne 22 took place on Oct 19, 2022 in the Markthalle in Basel, Switzerland. Let us have a look back at this amazing event from different views: as one of the organizers, as speaker and as attendees."
 permalink: '/2022/10/26/baselone22.html'
-categories: [Java, Metrics, AI, NLP, Conferences]
+categories: [Java, Metrics, AI, NLP, Conferences, Kubernetes, Docker, DevOps, Istio, Service Mesh]
 header:
   text: BaselOne22 Conference Report
   image: post
@@ -22,7 +22,11 @@ In total, BaselOne 22 offered 26 talks by 29 speakers and 4 workshops to 160 pay
 
 ## Day 1 - Conference Day
 
-As said, there were 26 talks, and it was challenging to choose which one to attend. The lineup was packed with well-known speakers like Ixchel Ruiz, Falk Sippach, Sandra Parsick, Otavio Santana, Katrin Rabow, Gerd Aschemann, Chris Engelbert and many more.
+As said, there were 26 talks, and it was challenging to choose which one to attend. The lineup was packed with well-known speakers like Ixchel Ruiz, Falk Sippach, Sandra Parsick, Otavio Santana, Katrin Rabow, Gerd Aschemann, Chris Engelbert and many more. The talks were nicely distributed across variety of topics and domains of IT. It is worth to mention that most of the talks had an introductory flavour to it to attract more beginners, but also to light a spark among more experienced folks. From more advanced talks to one of our colleague [George](https://twitter.com/grigala_) clearly stand out a talk about Service Mesh by [Abdellfetah Sghiouar](https://twitter.com/boredabdel):
+
+<blockquote class="twitter-tweet" style="justify-content: center"><p lang="en" dir="ltr">Very interesting talk by <a href="https://twitter.com/boredabdel?ref_src=twsrc%5Etfw">@boredabdel</a> <a href="https://twitter.com/Baselone?ref_src=twsrc%5Etfw">@Baselone</a> about Service Mesh with <a href="https://twitter.com/IstioMesh?ref_src=twsrc%5Etfw">@IstioMesh</a> <a href="https://twitter.com/kubernetesio?ref_src=twsrc%5Etfw">@kubernetesio</a> <a href="https://twitter.com/hashtag/BaselOne22?src=hash&amp;ref_src=twsrc%5Etfw">#BaselOne22</a> <a href="https://twitter.com/hashtag/BaselOne?src=hash&amp;ref_src=twsrc%5Etfw">#BaselOne</a> <a href="https://t.co/4Q2zZ2Vqaa">pic.twitter.com/4Q2zZ2Vqaa</a></p>&mdash; George Grigalashvili (@grigala_) <a href="https://twitter.com/grigala_/status/1582664710763053056?ref_src=twsrc%5Etfw">October 19, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+The talk explored how service mesh by the example of [Istio](https://istio.io/latest/) helps with many common challenges of a distributed architecture.
 
 ![Alexander Schwarz, RedHat](/assets/posts/2022-10-25-basel-one/Basel-One-29.jpg)
 
