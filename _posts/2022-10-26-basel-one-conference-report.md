@@ -48,7 +48,9 @@ The talk is also available at [Karakun YouTube Channel](https://karakun.com/yout
 
 ### "Ich bin C-3PO, wie kann ich Dir helfen?" - Wie Maschinen natürliche Sprache verarbeiten 
 
-This talk by Iryna and Christopher was all about *Natural Language Processing (NLP)*. We all use NLP in our daily lifes e.g. when using Siri, Alexa and search engines. But there are far more things to come in the future. 
+This talk by Iryna and Christopher was all about *Natural Language Processing (NLP)*.
+We all use NLP in our daily lifes e.g. when using Siri, Alexa and search engines. 
+But there are far more things to come in the future. 
 
 NLP uses linguistics and machine learning to get a general language comprehension which will be quite similar to human cognitive abilities. In this session, Iryna and Christopher presented the tools and techniques of NLP and discussed the roles of machine learning and artificial neural networks for optimization of NLP. 
 
