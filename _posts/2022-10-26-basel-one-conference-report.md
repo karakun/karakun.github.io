@@ -55,7 +55,8 @@ But there are far more things to come in the future.
 NLP uses linguistics and machine learning to get a general language comprehension which will be quite similar to human cognitive abilities. 
 In this session, Iryna and Christopher presented the tools and techniques of NLP and discussed the roles of machine learning and artificial neural networks for optimization of NLP. 
 
-The slides are available at the [BaselOne website](https://baselone.ch/dam/baselone2022/assets/Slides2022/BaselOne2022_C-3PO.pdf). The talk is also available at [Karakun YouTube Channel](https://karakun.com/youtube) or via this [direct link](https://youtu.be/Z47sGjK5hXc).
+The slides are available at the [BaselOne website](https://baselone.ch/dam/baselone2022/assets/Slides2022/BaselOne2022_C-3PO.pdf). 
+The talk is also available at [Karakun YouTube Channel](https://karakun.com/youtube) or via this [direct link](https://youtu.be/Z47sGjK5hXc).
 
 ![Christopher and Iryna explaining AI](/assets/posts/2022-10-25-basel-one/IMG_1535.jpeg)
 
