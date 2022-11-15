@@ -33,7 +33,9 @@ And of course, there were also talks by Karakun: "Runtime metrics 101" (Markus S
 
 ### Runtime Metrics 101
 
-As modern applications are no longer monoliths on a server but consist of distributed microservices in the cloud, monitoring becomes more and more important. Logging alone won't be enough if you want to be informed about free disk space, a critical number of user sessions or increasing memory consumption. This is where runtime metrics can help.
+As modern applications are no longer monoliths on a server but consist of distributed microservices in the cloud, monitoring becomes more and more important.
+ Logging alone won't be enough if you want to be informed about free disk space, a critical number of user sessions or increasing memory consumption. 
+ This is where runtime metrics can help.
 
 During their session, Markus and Stephan showed the audience how to implement, visualize and analyze metrics for Java applications. They did not only focus on products and ready-made solutions like [Grafana](https://grafana.com) or [Prometheus](https://prometheus.io). Furthermore, they also presented different APIs like Java Flight Recorder and [Micrometer](https://micrometer.io) that can be used to extend a Java application with metrics and continuous monitoring.
 
