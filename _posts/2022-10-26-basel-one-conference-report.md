@@ -52,7 +52,8 @@ This talk by Iryna and Christopher was all about *Natural Language Processing (N
 We all use NLP in our daily lifes e.g. when using Siri, Alexa and search engines. 
 But there are far more things to come in the future. 
 
-NLP uses linguistics and machine learning to get a general language comprehension which will be quite similar to human cognitive abilities. In this session, Iryna and Christopher presented the tools and techniques of NLP and discussed the roles of machine learning and artificial neural networks for optimization of NLP. 
+NLP uses linguistics and machine learning to get a general language comprehension which will be quite similar to human cognitive abilities. 
+In this session, Iryna and Christopher presented the tools and techniques of NLP and discussed the roles of machine learning and artificial neural networks for optimization of NLP. 
 
 The slides are available at the [BaselOne website](https://baselone.ch/dam/baselone2022/assets/Slides2022/BaselOne2022_C-3PO.pdf). The talk is also available at [Karakun YouTube Channel](https://karakun.com/youtube) or via this [direct link](https://youtu.be/Z47sGjK5hXc).
 
