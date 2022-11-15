@@ -43,7 +43,8 @@ Furthermore, they also presented different APIs like Java Flight Recorder and [M
 
 ![Stephan explaining metrics](/assets/posts/2022-10-25-basel-one/IMG_1530.jpeg)
 
-The slides are available [here](https://dev.karakun.com/assets/talks/Slidedeck_RuntimeMetriken101_BaselOne.pdf). The talk is also available at [Karakun YouTube Channel](https://karakun.com/youtube) or via this [direct link](https://youtu.be/XBtFGwqy7yE). 
+The slides are available [here](https://dev.karakun.com/assets/talks/Slidedeck_RuntimeMetriken101_BaselOne.pdf). 
+The talk is also available at [Karakun YouTube Channel](https://karakun.com/youtube) or via this [direct link](https://youtu.be/XBtFGwqy7yE). 
 
 ### "Ich bin C-3PO, wie kann ich Dir helfen?" - Wie Maschinen natürliche Sprache verarbeiten 
 
