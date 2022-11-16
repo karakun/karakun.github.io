@@ -89,3 +89,12 @@ the Gradle booth, Guy explaining the advantages of their "Build Scan" offering
 After the conference, networking with some tasty beverages
 
 ![Fun with after-conference-beer](/assets/posts/2022-10-25-basel-one/Basel-One-190.jpg)
+
+## Conclusion
+
+To sum it up, all of us, both as atendees and as speakers and organisers, really enjoyed this years edition of BaselOne and look forward to next year! 
+We totally recommend it and strongly suggest to mark the date for next year in your calendar.
+
+Even if you´re not located nearby, Basel as a city is worth a visit on top of the conference! 
+
+And if you like to give a talk, watch out for the social media channels for the call for papers (usually it starts in April ), your proposal is very much welcome!
