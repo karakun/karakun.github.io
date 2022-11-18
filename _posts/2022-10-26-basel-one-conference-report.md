@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'BaselOne Conference Report'
-author: markus
+author: 'markus'
 featuredImage: BaselOne22
 excerpt: "BaselOne 22 took place on Oct 19, 2022 in the Markthalle in Basel, Switzerland. Let us have a look back at this amazing event from different views: as one of the organizers, as speaker and as attendees."
 permalink: '/2022/10/26/baselone22.html'
@@ -46,7 +46,23 @@ Furthermore, they also presented different APIs like Java Flight Recorder and [M
 The slides are available [here](https://dev.karakun.com/assets/talks/Slidedeck_RuntimeMetriken101_BaselOne.pdf). 
 The talk is also available at [Karakun YouTube Channel](https://karakun.com/youtube) or via this [direct link](https://youtu.be/XBtFGwqy7yE). 
 
-If you need some tipps about how to use metrics in your applications, [Markus](mailto:markus.schlichting@karakun.com) or [Stephan](stephan.classen@karakun.com) are happy to help.
+{:.notification .is-warning}
+<span class="icon">
+  <i class="fas fa-exclamation-triangle"></i>
+</span>
+If you need some tipps about how to use metrics in your applications,
+<span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </span>
+ [Markus](mailto:markus.schlichting@karakun.com) or
+ <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </span>
+  [Stephan](mailto:stephan.classen@karakun.com) are happy to help.
 
 ### "Ich bin C-3PO, wie kann ich Dir helfen?" - Wie Maschinen natürliche Sprache verarbeiten 
 
@@ -62,7 +78,23 @@ In this session, Iryna and Christopher presented the tools and techniques of NLP
 The slides are available at the [BaselOne website](https://baselone.ch/dam/baselone2022/assets/Slides2022/BaselOne2022_C-3PO.pdf). 
 The talk is also available at [Karakun YouTube Channel](https://karakun.com/youtube) or via this [direct link](https://youtu.be/Z47sGjK5hXc).
 
-Any questions about NLP, Machine Learning, Neural Networks or AI in general? [Iryna](iryna.dohndorf@karakun.com) and [Christopher](christopher.keibel@karakun.com) are happy to answer all your questions!
+{:.notification .is-warning}
+<span class="icon">
+  <i class="fas fa-exclamation-triangle"></i>
+</span>
+Any questions about NLP, Machine Learning, Neural Networks or AI in general? 
+ <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </span>
+[Iryna](mailto:iryna.dohndorf@karakun.com) and
+ <span class="icon-text">
+      <span class="icon">
+        <i class="fas fa-envelope"></i>
+      </span>
+    </span>
+[Christopher](mailto:christopher.keibel@karakun.com) are happy to answer all your questions!
 
 ## Off the pitch
 

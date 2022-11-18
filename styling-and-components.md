@@ -12,22 +12,22 @@ hidden: true
 This is the a notification panel
 
 {:.notification .is-primary}
-This is the a notification panel
+This is the a primary notification panel
 
 {:.notification .is-link}
-This is the a notification panel
+This is the a link notification panel
 
 {:.notification .is-info}
-This is the a notification panel
+This is the a info notification panel
 
 {:.notification .is-success}
-This is the a notification panel
+This is the a success notification panel
 
 {:.notification .is-warning}
-This is the a notification panel
+This is the a warning notification panel
 
 {:.notification .is-danger}
-This is the a notification panel
+This is the a danger notification panel
 
 ## Tags
 
