@@ -75,7 +75,9 @@
     </div>
   </div>
 </nav>
-{%- assign page_image = page.header.image | default: "/assets/images/default.jpg" -%}
+{%- if page.alumni != true -%}
+  {%- assign page_image = page.header.image | default: "/karakun-header" -%}
+{%- endif -%}
 {%- assign page_image_size = page.header.imageSize | default: "cover" -%}
 {%- assign page_image_x = page.header.x | default: "center" -%}
 {%- assign page_image_y = page.header.y | default: "center" -%}
