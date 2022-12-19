@@ -23,7 +23,7 @@ layout: article
     {% for person in people %}
     {% if person.alumni == true %}
       <li>
-        <a href="{{ person.url }}">{{ person.firstName }} {{ person.lastName }}</a>
+        {{ person.firstName }} {{ person.lastName }}
       </li>
     {% endif %}
     {% endfor %}
