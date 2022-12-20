@@ -9,7 +9,9 @@ layout: default
         <div class="post-header">
           <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
           <p class="post-meta">
-            {%- if author -%}
+            {%- if author and author.alumni == true -%}
+            by {{ author.firstName }} {{ author.lastName }} on&nbsp;
+            {%- elsif author -%}
             by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a> on&nbsp;
             {%- endif -%}
             <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
@@ -29,12 +31,14 @@ layout: default
         {%- if author -%}
         <div class="post-author info">
           <h5>Author</h5>
-          {%- if author.avatar -%}
+          {%- if author.avatar and author.alumni != true -%}
             <p><img src="/assets/avatars/{{ author.avatar }}.png" alt="avatar"/>{{ author.description }}</p>
           {% else %}
             <p><img src="/assets/avatars/unknown.png" alt="avatar"/>{{ author.description }}</p>
           {% endif %}
-          <div class="information"><a class="button is-primary" href="{{ author.url }}">more...</a></div>
+          {%- if author and author.alumni != true -%}
+            <div class="information"><a class="button is-primary" href="{{ author.url }}">more...</a></div>
+          {% endif %}
         </div>
         {%- endif -%}
         {%- if page.categories -%}
