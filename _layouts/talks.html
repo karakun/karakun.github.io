@@ -41,7 +41,7 @@ layout: page
                 {% else %}
                   {% if counter == lastSpeaker %}and{% endif %}
                 {% endif %}
-                <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% if counter < secondLastSpeaker %},{% endif %}
+                {% if author.alumni == true %}{{ author.firstName }} {{ author.lastName }}{% else %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endif %}{% if counter < secondLastSpeaker %},{% endif %}
               {% endif %}
             {% endfor %}
           </div>

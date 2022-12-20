@@ -13,7 +13,7 @@ layout: page
             {% assign author_array = "" | split: "/" %}
             {% for authorName in book.authors %}
               {% assign author = site.people | where:'name', authorName | first %}
-              {% capture link %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endcapture %}
+              {% capture link %}{% if author.alumni == true %}{{ author.firstName }} {{ author.lastName }}{% else %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endif %}{% endcapture %}
               {% assign author_array = author_array | push: link %}
             {% endfor %}
             by {{ author_array | join: ', ' }} {% if book.multipleAuthors %} and others {% endif %}
