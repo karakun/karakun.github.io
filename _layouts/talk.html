@@ -28,7 +28,7 @@ layout: page
                 {% else %}
                   {% if counter == lastSpeaker %}and{% endif %}
                 {% endif %}
-                <a href="{{ speaker.url }}">{{ speaker.firstName }} {{ speaker.lastName }}</a>{% if counter < secondLastSpeaker %},{% endif %}
+                {% if speaker.alumni == true %}{{ speaker.firstName }} {{ speaker.lastName }}{% else %}<a href="{{ speaker.url }}">{{ speaker.firstName }} {{ speaker.lastName }}</a>{% endif %}{% if counter < secondLastSpeaker %},{% endif %}
               {% endif %}
             {% endfor %}
             {%- if page.lectures -%}
@@ -78,12 +78,14 @@ layout: page
           {% for speakerName in page.speakers %}
             {% assign speaker = site.people | where:'name', speakerName | first %}
             {% if speaker %}
-              {%- if speaker.avatar -%}
+              {%- if speaker.avatar and speaker.alumni != true -%}
                 <p><img src="/assets/avatars/{{ speaker.avatar }}.png" alt="avatar"/>{{ speaker.description }}</p>
               {% else %}
                 <p><img src="/assets/avatars/unknown.png" alt="avatar"/>{{ speaker.description }}</p>
               {% endif %}
-              <div class="information"><a class="button is-primary" href="{{ speaker.url }}">more...</a></div><br />
+              {%- if speaker.alumni != true %}
+                <div class="information"><a class="button is-primary" href="{{ speaker.url }}">more...</a></div><br />
+              {% endif %}
             {% endif %}
           {% endfor %}
         </div>
