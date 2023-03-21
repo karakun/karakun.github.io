@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Solving the mystery about package-lock.json'
-author: markus
+authors: ['markus']
 featuredImage: mystery
 excerpt: 'A lot of people wonder, why package-lock.json is always updated but never used as-is. Here is the explanation.'
 permalink: '/rico/2019/10/24/package-lock-mystery.html'

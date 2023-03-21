@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Contextual and centralized logging with Rico'
-author: stephanc
+authors: ['stephanc']
 featuredImage: elk
 excerpt: 'Logging is has changed in recent years. It is not sufficient to simply put some message to the console. Rico helps you to augment your log message with all necessary information to be ready for a central logging facility for your micro services.'
 permalink: '/rico/2020/11/11/rico-logging.html'

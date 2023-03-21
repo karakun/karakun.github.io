@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Cross-platform apps with NativeScript'
-author: markus
+authors: ['markus']
 featuredImage: cross-platform
 excerpt: "Providing mobile apps for different platforms out of one code base is not only attractive in terms of costs. Focussing on one central technology helps the development team and thus improves code quality. With NativeScript software developers can use their Angular- and TypeScript know-how to provide applications for iOS, Android and web with the same code base."
 categories: [iOS, Android, Web, NativeScript]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'How AdoptOpenJDK provides enterprise ready OpenJDK builds'
-author: hendrik
+authors: ['hendrik']
 featuredImage: adoptopenjdk
 excerpt: "With the new licence of the Oracle JDK a lot of companies need to switch to a new JDK vendor. With AdoptOpenJDK we have a community based alternative that provides free LTS JDK builds. In this post I will have a deeper look at the infrastructure of the AdoptOpenJDK and how each build is tested to offer production ready quality."
 categories: [Java, OpenJDK]

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Java 11 release event'
-author: hendrik
+authors: ['hendrik']
 featuredImage: release
 excerpt: 'Together with Oracle and Heise we will do a Java 11 release event.
 The event will be live streamed and recorded at YouTube. If you are interested in the

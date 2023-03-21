@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'BaselOne Conference Report'
-author: 'markus'
+authors: ['markus']
 featuredImage: BaselOne22
 excerpt: "BaselOne 22 took place on Oct 19, 2022 in the Markthalle in Basel, Switzerland. Let us have a look back at this amazing event from different views: as one of the organizers, as speaker and as attendees."
 permalink: '/2022/11/23/baselone22.html'

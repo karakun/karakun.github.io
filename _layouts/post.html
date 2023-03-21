@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: page
 ---
-{% assign author = site.people | where:'name', page.author | first %}
 <section>
   <div class="container">
     <article class="post h-entry columns" itemscope itemtype="http://schema.org/BlogPosting">
@@ -9,16 +8,42 @@ layout: default
         <div class="post-header">
           <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
           <p class="post-meta">
-            {%- if author and author.alumni == true -%}
-            by {{ author.firstName }} {{ author.lastName }} on&nbsp;
-            {%- elsif author -%}
-            by <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a> on&nbsp;
-            {%- endif -%}
-            <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-              {{ page.date | date: date_format }}
-            </time>
-            {% include reading-time.html content=content prefix=" · " %}
+              <!-- count valid authors -->
+              {% assign lastAuthor = 0 %}
+              {% for i in page.authors %}
+                {% assign ii = site.people | where:'name', a | first %}
+                {% if ii %}
+                    {% assign lastAuthor = lastAuthor | plus: 1 %}
+                {% endif %}
+              {% endfor %}
+              {% assign secondLastAuthor = lastAuthor | minus: 1 %}
+              <!-- list valid authors -->
+              {% assign counter = 0 %}
+              {% for authorName in page.authors %}
+                {% assign author = site.people | where:'name', authorName | first %}
+                {% if author %}
+                    {% assign counter = counter | plus: 1 %}
+                    {% if counter == 1 %}
+                        by
+                    {% else %}
+                        {% if counter == lastAuthor %}and{% endif %}
+                    {% endif %}
+                    {% if author.alumni == true %}
+                        {{ author.firstName }} {{ author.lastName }}
+                    {% else %}
+                        <a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }} </a>
+                    {% endif %}
+                    {% if counter < secondLastAuthor %}
+                        ,
+                    {% endif %}
+                {% endif %}
+              {% endfor %}
+              on
+              <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                {{ page.date | date: date_format }}
+              </time>
+              {% include reading-time.html content=content prefix=" · " %}
         </div>
 
         <div class="post-content e-content post content" itemprop="articleBody">
@@ -31,14 +56,19 @@ layout: default
         {%- if author -%}
         <div class="post-author info">
           <h5>Author</h5>
-          {%- if author.avatar and author.alumni != true -%}
-            <p><img src="/assets/avatars/{{ author.avatar }}.png" alt="avatar"/>{{ author.description }}</p>
-          {% else %}
-            <p><img src="/assets/avatars/unknown.png" alt="avatar"/>{{ author.description }}</p>
-          {% endif %}
-          {%- if author and author.alumni != true -%}
-            <div class="information"><a class="button is-primary" href="{{ author.url }}">more...</a></div>
-          {% endif %}
+          {% for authorName in page.authors %}
+            {% assign author = site.people | where:'name', authorName | first %}
+            {% if author %}
+                {%- if author.avatar and author.alumni != true -%}
+                    <p><img src="/assets/avatars/{{ author.avatar }}.png" alt="avatar"/>{{ author.description }}</p>
+                {% else %}
+                    <p><img src="/assets/avatars/unknown.png" alt="avatar"/>{{ author.description }}</p>
+                {% endif %}
+                {%- if author.alumni != true %}
+                    <div class="information"><a class="button is-primary" href="{{ author.url }}">more...</a></div><br />
+                {% endif %}
+            {% endif %}
+          {% endfor %}
         </div>
         {%- endif -%}
         {%- if page.categories -%}
