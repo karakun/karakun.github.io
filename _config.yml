@@ -55,6 +55,8 @@ collections:
     output: true
   talks:
     output: true
+  authors:
+    output: true
 
 defaults:
   - scope:

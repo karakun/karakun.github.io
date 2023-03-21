@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Multidevice controls at Code One'
-author: hendrik
+authors: ['hendrik']
 featuredImage: multi-device
 excerpt: 'Everybody knows boring form-based user interfaces. What if you could add mobile devices to improve the UX of desktop or web applications? This Code One session a concept that was created by the University of Applied Sciences and Arts Northwestern Switzerland and Karakun for multi device controls.'
 permalink: '/conferences/java/codeone/javafx/swift/polymer/2018/11/01/multidevice-controls.html'

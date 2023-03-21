@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Integration tests with Docker'
-author: hendrik
+authors: ['hendrik']
 featuredImage: whale
 excerpt: 'This post gives an overview how we at Karakun use Docker to create integration tests for 
 JavaEE / JakartaEE based libraries and frameworks.'

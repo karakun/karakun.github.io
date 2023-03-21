@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Writing Frontend in Rust using Yew and WebAssembly'
-author: 'giorgi'
+authors: ['giorgi', 'george']
 featuredImage: adventure
 excerpt: "In the previous article you have read about one of the projects implemented as part of Karakun Code-Camp 2022. This time we present to you another project with a bit of exploratory nature that has been worked on in parallel to our colleagues from the previous blog post."
 permalink: '/2023/03/19/writing-frontend-in-rust-using-yew-and-webassembly.html'

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Rock-Solid JavaScript through applied science'
-author: mittie
+authors: ['mittie']
 featuredImage: rock-solid-js
 excerpt: 'Many Java applications have JavaScript frontends these days. While the Java part of the application is considered to be well engineered, the JavaScript part often lacks industrial-strength stability. This talk was recorded at BaselOne 19 and shows new ways to make JavaScript code more reliable.'
 permalink: '/javascript/2019/11/04/rock-solid-js.html'
