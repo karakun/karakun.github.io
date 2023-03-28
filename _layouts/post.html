@@ -55,9 +55,10 @@ layout: page
       <div class="column overview">
         {%- if author -%}
         <div class="post-author info">
-          <h5>Author</h5>
+          <h4>Author(s)</h4>
           {% for authorName in page.authors %}
             {% assign author = site.people | where:'name', authorName | first %}
+            <h5>{{ author.firstName }} {{ author.lastName }}</h5>
             {% if author %}
                 {%- if author.avatar and author.alumni != true -%}
                     <p><img src="/assets/avatars/{{ author.avatar }}.png" alt="avatar"/>{{ author.description }}</p>
