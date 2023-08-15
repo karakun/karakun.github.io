@@ -127,7 +127,7 @@ As a result, every time servlet context is about to shut down, we make sure to m
 
 ### References
 - [https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html){:target="_blank" rel="noopener"}
-- [https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html){:target="_blank" rel="noopener"}
-- [https://jakarta.ee/specifications/platform/9/apidocs/index.html?jakarta/servlet/ServletContextListener.html](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html){:target="_blank" rel="noopener"}
-- [https://cwiki.apache.org/confluence/display/TOMCAT/MemoryLeakProtection](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html){:target="_blank" rel="noopener"}
-- [https://stackoverflow.com/a/7791593](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ExecutorService.html){:target="_blank" rel="noopener"}
+- [https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/concurrent/ScheduledThreadPoolExecutor.html){:target="_blank" rel="noopener"}
+- [https://jakarta.ee/specifications/platform/9/apidocs/index.html?jakarta/servlet/ServletContextListener.html](https://jakarta.ee/specifications/platform/9/apidocs/index.html?jakarta/servlet/ServletContextListener.html){:target="_blank" rel="noopener"}
+- [https://cwiki.apache.org/confluence/display/TOMCAT/MemoryLeakProtection](https://cwiki.apache.org/confluence/display/TOMCAT/MemoryLeakProtection){:target="_blank" rel="noopener"}
+- [https://stackoverflow.com/a/7791593](https://stackoverflow.com/a/7791593){:target="_blank" rel="noopener"}
