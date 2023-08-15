@@ -32,6 +32,10 @@ permalink: /:year/:month/:day/:title.html
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
 plugins:
   - jekyll-feed
 
