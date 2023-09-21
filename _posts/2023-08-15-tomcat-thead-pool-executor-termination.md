@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 'Terminating custom scheduled tasks in Spring Framework properly to prevent memory leaks'
-author: 'giorgi'
+authors: ['giorgi']
 featuredImage: tip-jar
 excerpt: "You may or may not have seen this error before but when you have a custom `ThreadPoolTaskScheduler` configured for your `@Scheduled` methods the re-deployment your app in context of Tomcat will give you the following warning message..."
 permalink: '/2023/08/15/tomcat-thread-pool-executor-termination.html'

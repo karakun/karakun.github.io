@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'AdoptOpenJDK becomes Eclipse Adoptium'
-author: hendrik
+authors: ['hendrik']
 featuredImage: coffee-3
 excerpt: 'AdoptOpenJDK officially announced its accession to the Eclipse Foundation and the future name "Eclipse Adoptium". A necessary and sensible move? A comment by Hendrik Ebbers, member of the Technical Steering Committee of AdoptOpenJDK.' 
 categories: [Java, OpenJDK, Eclipse, Adoptium]

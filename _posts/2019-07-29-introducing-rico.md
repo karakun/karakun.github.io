@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Introducing Rico'
-author: markus
+authors: ['markus']
 featuredImage: puffin
 excerpt: 'Rico is the application framework initiated and maintained by Karakun to help building better enterprise solutions in less time. This article gives an introduction and points out the key functionalities your projects can easily benefit from.'
 permalink: '/rico/2019/07/29/introducing-rico.html'

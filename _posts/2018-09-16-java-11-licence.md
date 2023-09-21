@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'The road to Java 11 - builds and licences'
-author: hendrik
+authors: ['hendrik']
 featuredImage: open-jdk
 excerpt: 'This post is the first of our Java 11 posts that will introduce all needed information about the next Java release. In this post you can find all needed information about the free and commercial versions of Java 11.'
 permalink: '/java/2018/09/16/java-11-licence.html'

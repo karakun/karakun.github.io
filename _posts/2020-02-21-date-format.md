@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  'Back to the future - with Java'
-author: hendrik
+authors: ['hendrik']
 featuredImage: calendar
 excerpt: "Each year several Java applications might show wrong date information for the days around New
  Year's Eve. This post gives an overview about the reasons and describes how you can easily avoid such
