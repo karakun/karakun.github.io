@@ -11,11 +11,17 @@ layout: page
 
   <h3>Connect with {{ page.firstName }}</h3>
   <ul>
+      {% if page.mastodon %}
+      <li><a href="{{ page.mastodon }}"><i class="fab fa-mastodon metainfo-icon"></i> {{ page.firstName }} on Fediverse/Mastodon</a></li>
+      {% endif %}
       {% if page.twitter %}
       <li><a href="https://www.twitter.com/{{ page.twitter }}"><i class="fab fa-twitter metainfo-icon"></i> {{ page.firstName }} on Twitter</a></li>
       {% endif %}
       {% if page.github %}
       <li><a href="https://www.github.com/{{ page.github }}"><i class="fab fa-github metainfo-icon"></i> {{ page.firstName }} on GitHub</a></li>
+      {% endif %}
+      {% if page.linkedin %}
+      <li><a href="https://www.linkedin.com/in/{{ page.linkedin }}/"><i class="fab fa-linkedin metainfo-icon"></i> {{ page.firstName }} on LinkedIn</a></li>
       {% endif %}
       {% if page.mail %}
       <li><a href="mailto:{{ page.mail }}"><i class="fas fa-envelope metainfo-icon"></i> Write {{ page.firstName }} an email</a></li>
