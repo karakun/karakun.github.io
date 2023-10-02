@@ -2,14 +2,13 @@
 name: 'christopher'
 firstName: 'Christopher'
 lastName: 'Keibel'
-description: 'Christopher Keibel is a software engineer at Karakun and currently doing his master in Data Science.'
+description: 'Christopher Keibel worked at Karakun as a software engineer until 2022.'
 twitter: 'C_Keibel'
 github: 'CKeibel'
-mail: 'christopher.keibel@karakun.com'
 avatar: 'christopher'
-
 header:
   image: 
   text: Christopher Keibel
   x: left
+alumni: true
 ---
