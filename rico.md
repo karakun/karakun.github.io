@@ -9,6 +9,7 @@ header:
   text: Rico by Karakun
 nav:
   bottom: false
+hidden: true
 ---
 
 <div class="notification">
