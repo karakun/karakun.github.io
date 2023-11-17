@@ -10,7 +10,7 @@ featuredImage: generative-ai
 header:
   text: Documentation
   image: talks
-index: 46
+index: 48
 ---
 
 A.L.I.E., die Hauptfigur in der Serie "The 100", ist eine künstliche Intelligenz mit dem Hauptbefehl, "das Leben besser zu machen". Den gleichen Auftrag haben auch KI-basierte Tools und Services wie ChatGPT, CoPilot, IntelliCode, usw. Sie sollen die Qualität und die Effizienz des Programmierens erhöhen und das Leben der Softwareentwickler besser machen.
