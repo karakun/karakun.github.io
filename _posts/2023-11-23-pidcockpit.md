@@ -25,7 +25,7 @@ If the DPO is lucky, there are no physical documents to be searched and all rele
 A better strategy is needed – at least if the organization expects more than just a handful of such requests per year. Below, we outline an approach consisting of several steps, each providing a further improvement over the status quo. This strategy was also adopted by Karakun when creating our own [PID Cockpit](https://pidcockpit.com/) – the term "PID" here refers to "personal identifiable data", which is the more formal term for personal data (sometimes also called "personal identifiable information", PII).
 
 ## Improvement 1: Use a centralized search tool
-Using a single search solution is the most natural improvement to this situation. That way, the DPO can process the request by a single search query in a single system (see Fig. 2) that will find personal data in all relevant systems. Aside from saving a lot of time, this also has the desirable effect that all systems are searched consistently with the same query parameters.
+Using a single search solution is the most natural improvement to this situation. That way, the DPO can process the request by a single search query in a single system that will find personal data in all relevant systems. Aside from saving a lot of time, this also has the desirable effect that all systems are searched consistently with the same query parameters.
 
 ![The DPO has to search only a single system](/assets/posts/2023-11-23-pidcockpit/2-with-tool.jpg)
 
@@ -34,7 +34,7 @@ Technically, to enable this approach, the relevant source systems need to be int
 ## Improvement 2: Inspect documents directly in the UI
 To decide whether a document is relevant to the person's request, the DPO also has to inspect the document's content. A suitable solution has to be designed with care to support the DPO well. As you probably know from your own experience, with many search solutions (including web search engines such as Google), clicking an individual search result will open the respective document (or web page) outside the search UI (in a separate browser tab or application, e.g., a PDF reader). The user then has to search inside that document to find the relevant text locations and assess these for their relevance. This means two things: The user effectively has to search twice (first searching for documents, second searching for text locations inside every document), and they repeatedly leave the context of their original document search which requires more attention on the user's part to ensure a systematic inspection of search results.
 
-With our recommended approach, a DPO doesn't need to switch context and there is no second round of searching. The DPO can inspect documents inside the search UI next to the result list. To this end, the PID Cockpit has an embedded document viewer. Moreover, the Cockpit highlights the search terms in the opened document and allows the DPO to easily step through them instead of searching again (see Fig. 3).
+With our recommended approach, a DPO doesn't need to switch context and there is no second round of searching. The DPO can inspect documents inside the search UI next to the result list. To this end, the PID Cockpit has an embedded document viewer. Moreover, the Cockpit highlights the search terms in the opened document and allows the DPO to easily step through them instead of searching again.
 
 ![PID Cockpit with document preview and highlighted query terms](/assets/posts/2023-11-23-pidcockpit/3-document-ui.png)
 
