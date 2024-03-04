@@ -4,7 +4,7 @@ title: 'Why Software Testing Is a Waste of Time: Unpacking the Paradox'
 authors: [ 'francois' ]
 featuredImage: why-software-testing-is-a-waste-of-time
 excerpt: "The provocative truth behind 'Why Software Testing Is a Waste of Time' and how revolutionizing your approach can transform testing from a chore to a cornerstone of software excellence."
-permalink: '/2024/03/02/why-software-testing-is-a-waste-of-time-unpacked.html'
+permalink: '/2024/03/18/why-software-testing-is-a-waste-of-time-unpacked.html'
 categories: [ Testing ]
 header:
   text: 'Why Software Testing Is a Waste of Time: Unpacking the Paradox'
