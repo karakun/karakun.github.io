@@ -51,16 +51,15 @@ The real issue lies not in the testing itself but in the approach, many organiza
   on rarely used or unpredictable tests.
 
 * **Irrelevant test execution:** Running tests unaffected by code changes is inefficient and requires developers to wait
-  longer for tests to complete. As an effect, this often results in running tests less frequently.
+  longer for tests to complete. This often results in running tests less frequently.
   Some tools have a built-in feature for this, like [Jest's `--changedSince`](https://jestjs.io/docs/cli),
   [nx affected](https://nx.dev/concepts/affected),
   or [Gradle Enterprise's Predictive Test Selection](https://gradle.com/gradle-enterprise-solutions/predictive-test-selection/).
   If you separate your test types or long-running tests into multiple Gradle tasks, you can also
-  use [Gradle's Build Cache](https://docs.gradle.org/current/userguide/build_cache.html) to run each task only when
+  use [Gradle's Build Cache](https://docs.gradle.org/current/userguide/build_cache.html) to have each task only run when
   necessary.
 
-* **Infrequent test execution:** Tests run too rarely and require more time to find problematic code changes when tests
-  fail, especially in teams with a high volume of changes, which slows down the debugging process.
+* **Infrequent test execution:** Executing tests with every code change quickly isolates failures; in contrast, testing less frequently, such as daily, blurs the cause—especially in teams with a high volume of changes—requiring tedious and slow troubleshooting.
 
 * **Flaky tests:** Tests that fail intermittently without clear reasons can lead to developers losing trust in the tests
   and their outcomes, often necessitating repetitive, time-consuming, and extensive investigations.
@@ -83,7 +82,7 @@ Adopting efficient testing practices can mitigate these issues:
   their value in aligning development with business needs.
 
 * **Test data management:** Effectively manage test data by setting up unique data for individual tests and cleanly
-  removing it afterwards to preserve the integrity of the results.
+  removing it afterward to preserve the integrity of the results.
 
 * **Efficient end-to-end (E2E) testing:**. Using deep links and ensuring tests can run independently and quickly are
   crucial for efficient E2E testing.
