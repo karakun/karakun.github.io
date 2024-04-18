@@ -1,104 +1,57 @@
 ---
 layout: post
-title: 'Why Software Testing Is a Waste of Time: Unpacking the Paradox'
-authors: [ 'francois' ]
-featuredImage: why-software-testing-is-a-waste-of-time
-excerpt: "The provocative truth behind 'Why Software Testing Is a Waste of Time' and how revolutionizing your approach can transform testing from a chore to a cornerstone of software excellence."
-permalink: '/2024/03/18/why-software-testing-is-a-waste-of-time-unpacked.html'
-categories: [ Testing ]
+title: 'JavaLand 2024: A Review'
+authors: [ 'ixchel' ]
+featuredImage: javaland-review
+excerpt: "From the 9th to the 11th of April, JavaLand celebrated its tenth anniversary with a grand event at the iconic Nürburgring in the Eifel region of Germany. The event saw an impressive turnout of over 1,440 attendees, making it a truly memorable occasion for all in attendance."
+permalink: '/2024/04/18/javaland24-review.html'
+categories: [ Javaland, Conference ]
 header:
-  text: 'Why Software Testing Is a Waste of Time: Unpacking the Paradox'
+  text: 'JavaLand 2024: A review'
   image: post
 ---
 
-Software testing is often perceived as a time-consuming and sometimes unnecessary step in the development process.
-However, what if the real waste of time isn't the act of testing itself but how we approach it? This is the provocative
-premise I explored in my
-talk ["Why Software Testing Is a Waste of Time" which I first held at JCON Europe 2023](https://www.youtube.com/watch?v=qQVhb3z244Q).
+From the 9th to the 11th of April, [JavaLand](https://www.javaland.eu/) celebrated its tenth anniversary with a grand event at the iconic Nürburgring in the Eifel region of Germany. The event saw an impressive turnout of over 1,440 attendees, making it a truly memorable occasion for all in attendance.
 
-## Misconceptions about Software Testing
+## JavaLand Conference Agenda
+The conference featured presentations from twelve different streams, providing attendees with a wealth of knowledge and insight. Renowned experts from the Java community joined the event, offering valuable perspectives and engaging discussions that kept attendees engaged throughout.
 
-At first glance, the statement of software testing being a waste of time seems unrealistic to those who have seen
-firsthand the disasters and uncertainty that can result from inadequately tested software. When examining the reasons
-behind some developers’ view of software testing being unproductive, I consistently encountered a pattern of
-inefficient, outdated, and poorly implemented testing strategies. As I’ve guided teams into improving those aspects,
-I’ve noticed testing becoming an indispensable part of ensuring software quality and reliability to them. The goal of my
-talk, and the insights that follow, is to empower you with the tools and knowledge to replicate similar enhancements
-within your projects.
+One of my favourite sessions was [Testcontainers: necessary, simple, powerful](https://meine.doag.org/events/javaland/2024/agenda/#agendaId.3785) by Kevin Wittek and Piotr Przybyl. They presented the new features that make testing with Testcontainers even easier than before! Another interesting point they make is the type of tests and the distribution of tests that we usually think is best for our projects. The traditional testing pyramid, where we spend less time on large and cumbersome integration tests, is not a limiting factor in their number or reach.
 
-## Inefficiencies in Common Testing Practices
+If you haven't used Testcontainers, you're doing a disservice to your peace of mind! [Testcontainers](https://testcontainers.com/) is a library that provides simple and lightweight APIs for bootstrapping local development and testing dependencies with real services wrapped in Docker containers. With Testcontainers, you can write tests that depend on the same services you use in production, without mocks or in-memory services.
 
-The real issue lies not in the testing itself but in the approach, many organizations take toward it:
+Another session I enjoyed was [Jenseits von Kafka](https://meine.doag.org/events/javaland/2024/agenda/#agendaId.3714) by Jochen Mader. One of the reasons I wanted to attend this session was that I had an amazingly entertaining conversation with the speaker before his session. The motivation behind this session was very compelling! Sometimes the use case doesn't match the technology chosen to "solve" it. The talk provided a concise overview of different event systems, looking at their unique features, recommended applications and implications for inter-service communication, CQRS and streaming. It will also touch on the trade-offs that can arise when choices are limited.
+ 
+## The Community
+Another outstanding feature of JavaLand, in addition to its technical content, is its unique community atmosphere.
 
-* **Overreliance on reactive measures over prevention:** Systems that detect and roll back bugs in production address
-  issues only after they've impacted users, rather than preventing them upfront. This results in bad user experience and
-  having to fix bugs after a change was deployed, instead of getting instant feedback when testing during development.
+Community-driven technical conferences, such as JavaLand, offer a number of advantages over more corporate-sponsored events. One key advantage is the diverse content committee that shapes the conference agenda. Unlike corporate-driven events, community-led conferences bring together professionals from a variety of backgrounds and experiences. This diversity ensures that the conference programme covers a wide range of perspectives, topics and expertise. Attendees can expect a richer and fuller agenda, covering both mainstream and niche topics to meet the diverse interests of the community.
 
-* **Neglecting Test-driven Development (TDD):** Skipping TDD leads to missing out on benefits, such as less
-  overengineering, inherently testable code, and improved architecture.
+Passion is another feature of community-driven conferences like javaLand. Organised by practitioners deeply immersed in the Java ecosystem, these events are driven by a genuine enthusiasm for the technology and its applications. From the speakers to the volunteers, everyone involved is motivated by a shared passion for Java and its community. This enthusiasm creates a dynamic and engaging atmosphere where attendees can immerse themselves in the latest developments, best practices and real-world experiences shared by fellow enthusiasts. The result is an exciting environment that fosters learning, collaboration and innovation.
 
-* **Misapplication of the Test Pyramid:** Straying from
-  the [test pyramid](https://martinfowler.com/articles/practical-test-pyramid.html)'s guidance results in
-  a [slow and fragile suite of tests, prioritizing end-to-end tests over unit tests](https://www.youtube.com/watch?v=CI8KX6tr4vM&t=368s).
+## The Commonhaus Foundation
+One of the most interesting developments at JavaLand following this community spirit was the announcement of the Commonhaus Foundation (Building a forever home for open source projects), a notable event as open source organisations are paramount to the future, sustainability and health of open source projects. Commonhaus acts as a steward of transparency and custodian of project and community identity. Commonhaus provides guidance and support in a unique way, without imposing mandates. Through a collaborative approach, they empower project contributors to take ownership of their initiatives, fostering pride and commitment within the community. This approach not only respects the diverse voices and perspectives of stakeholders, but also ensures that decisions are made collectively, reflecting the true spirit of open source collaboration.
 
-* **Excessive Manual Testing:** Manual testing is not only slow and prone to errors but also reduces release flexibility
-  and delays feedback. By automating repetitive manual tests, teams gain the freedom to focus on exploratory testing.
-  This shift from tedious, routine checks to dynamic, critical thinking tasks not only enhances engagement. It also
-  encourages a more thorough and inventive approach to quality assurance. It allows every team member and stakeholder to
-  contribute to a culture of innovation and continuous improvement in the testing process.
+Transparency is fundamental to the way Commonhaus operates and permeates every aspect of its activities. They are committed to openness and accountability, from governance structures to financial disclosure. By keeping stakeholders informed of key decisions and processes, they build trust and foster mutual respect within the community. This transparent approach strengthens the projects' foundation and serves as a model for others wishing to embrace open source principles.
 
-* **Over-automation of tests:** Automating every test, regardless of its frequency or predictability, wastes resources
-  on rarely used or unpredictable tests.
+In addition to promoting transparency, Commonhaus emphasises long-term thinking as essential for sustainable project impact. By encouraging stakeholders to think beyond short-term gains and consider the broader implications of their actions, they foster a culture of strategic planning and foresight. This ensures that Commonhaus-supported projects are well equipped to overcome challenges and capitalise on opportunities for growth and innovation in the dynamic open source technology landscape. Through its unwavering commitment to transparency and long-term impact, Commonhaus sets a high standard for open source foundations, inspiring others to cultivate thriving and resilient communities of developers and contributors.
 
-* **Irrelevant test execution:** Running tests unaffected by code changes is inefficient and requires developers to wait
-  longer for tests to complete. This often results in running tests less frequently.
-  Some tools have a built-in feature for this, like [Jest's `--changedSince`](https://jestjs.io/docs/cli),
-  [nx affected](https://nx.dev/concepts/affected),
-  or [Gradle Enterprise's Predictive Test Selection](https://gradle.com/gradle-enterprise-solutions/predictive-test-selection/).
-  If you separate your test types or long-running tests into multiple Gradle tasks, you can also
-  use [Gradle's Build Cache](https://docs.gradle.org/current/userguide/build_cache.html) to have each task only run when
-  necessary.
+Among the project that already joined the foundation are:
 
-* **Infrequent test execution:** Executing tests with every code change quickly isolates failures; in contrast, testing less frequently, such as daily, blurs the cause—especially in teams with a high volume of changes—requiring tedious and slow troubleshooting.
+* [**Hibernate**](https://hibernate.org/): The Hibernate projects offer a suite of powerful Java libraries to work with data. It is best known for Hibernate ORM, which provides 
+relational persistence for Java models and is an implementation of the Jakarta Persistence specification.
+	
+* [**Jackson**](https://github.com/FasterXML/jackson): The go-to library for JSON processing in Java. Jackson offers fast and flexible parsing/generation of JSON for Java applications, 
+enabling seamless data interchange.
+* [**JBang**](https://www.jbang.dev/): Unlock Java's scripting potential. JBang makes it easy to run Java applications as scripts without the need for a project setup or build 
+configuration. Ideal for quick experiments, prototypes, or utility scripts.
+* [**JReleaser**](https://jreleaser.org/): Automate your Java project releases with ease. JReleaser streamlines packaging and distribution to multiple platforms, integrating with Maven, 
+Gradle, and more. Simplify your release process, from changelogs to deployment. 
+* [**Morphia**](https://morphia.dev/): Bridge the gap between Java and MongoDB. Morphia provides a lightweight type-safe mapping library to simplify working with MongoDB documents using 
+Java.
+* [**OpenRewrite**](https://docs.openrewrite.org/): Automate the refactoring of your Java codebase. OpenRewrite offers scalable, safe, and idempotent code transformations to modernize 
+and maintain your applications.
+ 
+JavaLand is organised by members of more than 40 Java User Groups in Germany, Austria and Switzerland, which are part of the [IJUG association](http://ijug.eu/).
 
-* **Flaky tests:** Tests that fail intermittently without clear reasons can lead to developers losing trust in the tests
-  and their outcomes, often necessitating repetitive, time-consuming, and extensive investigations.
-
-## Strategies for Efficient Testing
-
-Adopting efficient testing practices can mitigate these issues:
-
-* **Data-Driven Testing:** Utilizing tools
-  like [JUnit's @CsvSource, @MethodSource](https://junit.org/junit5/docs/current/user-guide/),
-  or [Jest's `.each`](https://jestjs.io/docs/api) makes tests more comprehensive, readable, and concise.
-
-* **Reducing the complexity of logic within tests:** Simplifying the logic within tests and using assertion libraries
-  like [AssertJ](https://assertj.github.io/doc/) or [assertpy](https://github.com/assertpy/assertpy) enhances
-  maintainability and clarity.
-
-* **Appropriate use of BDD tools:** BDD tools should be
-  used [for collaboration with the appropriate training](https://cucumber.io/blog/collaboration/the-worlds-most-misunderstood-collaboration-tool/)
-  and [by using the right level of abstraction](https://lizkeogh.com/2011/03/04/step-away-from-the-tools/), to retain
-  their value in aligning development with business needs.
-
-* **Test data management:** Effectively manage test data by setting up unique data for individual tests and cleanly
-  removing it afterward to preserve the integrity of the results.
-
-* **Efficient end-to-end (E2E) testing:**. Using deep links and ensuring tests can run independently and quickly are
-  crucial for efficient E2E testing.
-
-* **Parallel execution of tests:** Running tests in parallel, either on the same machine or across multiple machines,
-  significantly accelerates the testing process and enforces tests to be independent. Setting up parallelization on the
-  same machine is usually very straightforward. For example, [WebdriverIO](https://webdriver.io/docs/organizingsuites/)
-  does this by
-  default, [JUnit](https://junit.org/junit5/docs/5.3.0-M1/user-guide/index.html#writing-tests-parallel-execution)
-  and [Gradle](https://docs.gradle.org/current/userguide/performance.html#parallel_execution) can be easily configured
-  to run in parallel.
-
-* **Detailed failure reporting:** Comprehensive failure reports, facilitated by tools
-  like [Allure](https://qameta.io/allure-report/), aid in quickly diagnosing and resolving issues.
-
-For more details, you can watch my
-talk ["Why Software Testing Is a Waste of Time"](https://www.youtube.com/watch?v=qQVhb3z244Q),
-reach out to me via [email](mailto:francois.martin@karakun.com) or send me a message
-on [LinkedIn](https://linkedin.com/in/françoismartin).
+![Overview Java User Groups in Germany, Austria and Switzerland - Source: iJUG](/assets/posts/2024-04-18-javaland/iJUG-JUGS.png)
