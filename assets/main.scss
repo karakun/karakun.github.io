@@ -600,3 +600,12 @@ fieldset label {
     color: black;
     font-weight: normal;
 }
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.pagination-wrapper .pagination {
+    gap: 2rem;
+}
