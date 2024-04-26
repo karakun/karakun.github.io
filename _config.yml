@@ -37,6 +37,7 @@ kramdown:
   input: GFM
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -70,3 +71,6 @@ defaults:
 
 webstats:
   siteId: 1
+
+paginate: 12
+paginate_path: /page/:num/
