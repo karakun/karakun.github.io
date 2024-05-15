@@ -11,9 +11,9 @@ header:
   image: post
 ---
 
-Imagine, in a project you are asked to consume a SOAP webservice. Yes, SOAP is aged as stone BUT it is also very percisely specified as a interface, which make it still a common choice when it comes to intergrate systems. And only integrated systems deliver great benefit on the one hand as well as (old) legacy system have proven their business case which is why they are worth to integrate. (There is *gold* in legacy.) 
+Imagine, in a project you are asked to consume a SOAP webservice. Yes, SOAP is aged as stone BUT it is also very precisely specified as an interface, which make it still a common choice when it comes to integrate systems. And only integrated systems deliver great benefit on the one hand as well as (old) legacy system have proven their business case which is why they are worth to integrate. (There is *gold* in legacy.) 
 
-So while integrating that SOAP webservice, you try to generate some Java classes from the XML files provided and suddently, you see:
+So while integrating that SOAP webservice, you try to generate some Java classes from the XML files provided and suddenly, you see:
 
 ```
 org.apache.cxf.tools.common.ToolException: Tools plugin provider jaxb context init failed
@@ -83,15 +83,15 @@ task copyGeneratedFilesToSourceFolder(type: Copy) {
 }
 ```
 
-But as i transferred this into the lager project, I got the error mentioned above:
+But as i transferred this into the larger project, I got the error mentioned above:
 
 ```
 org.apache.cxf.tools.common.ToolException: Tools plugin provider jaxb context init failed
 ```
 
-To get more information, try running my build with the `--stacktrace`flag, but it does not give a more detailled output or more hints than the errormessage above.
+To get more information, tried running my build with the `--stacktrace` flag, but it did not give a more detailed output or more hints than the error message above.
 
-Going one step further with `--debug` , one finds himself flooded with output - but having a closer look and goind through it pay off. We find 
+Going one step further with `--debug`, you find yourself flooded with an output - but having a closer look and going through it payed off. We find 
 
 ```
 [DEBUG] [jakarta.xml.bind] Unable to find from OSGi: [jakarta.xml.bind.JAXBContextFactory]
