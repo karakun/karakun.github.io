@@ -4,7 +4,7 @@ title: 'Building blocks'
 authors: [ 'ixchel' ]
 featuredImage: security 
 excerpt: "Security requires continuous effort, as there is no singular, straightforward solution that can be universally applied. The ever-changing nature of software means that what may be considered secure today could become vulnerable tomorrow"
-permalink: '/2024/04/30/security-slsa.html'
+permalink: '/2024/06/12/security-slsa.html'
 categories: [Security, SLSA, Provenance, Software Supply Chain]
 header:
   text: 'Building blocks of a hardened software supply chain: SLSA'
@@ -48,7 +48,7 @@ In the figure below, you can get a taste of _a few_ of the inflection points in 
 
 **Availability:** Ensure that all code and change history is available for investigation and incident response, and that the package can be built and maintained in the future. 
 
-![SLSA Supply chain threats](/assets/posts/2024-04-30-security-slsa/2024-04-30-supply-chain-threats.svg)
+![SLSA Supply chain threats](/assets/posts/2024-06-12-security-slsa/2024-06-12-supply-chain-threats.svg)
 
 
 ### Levels and tracks
