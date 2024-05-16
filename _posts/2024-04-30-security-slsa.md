@@ -4,7 +4,7 @@ title: 'Building blocks'
 authors: [ 'ixchel' ]
 featuredImage: security 
 excerpt: "Security requires continuous effort, as there is no singular, straightforward solution that can be universally applied. The ever-changing nature of software means that what may be considered secure today could become vulnerable tomorrow"
-permalink: '/2024/04/30/security-slsa.html'
+permalink: '/2024/06/12/security-slsa.html'
 categories: [Security, SLSA, Provenance, Software Supply Chain]
 header:
   text: 'Building blocks of a hardened software supply chain: SLSA'
@@ -48,7 +48,7 @@ In the figure below, you can get a taste of _a few_ of the inflection points in 
 
 **Availability:** Ensure that all code and change history is available for investigation and incident response, and that the package can be built and maintained in the future. 
 
-![SLSA Supply chain threats](/assets/posts/2024-04-30-security-slsa/2024-04-30-supply-chain-threats.svg)
+![SLSA Supply chain threats](/assets/posts/2024-06-12-security-slsa/2024-06-12-supply-chain-threats.svg)
 
 
 ### Levels and tracks
@@ -63,7 +63,7 @@ _“SLSA levels are split into tracks. Each track has its own set of levels that
 
 **Build Level 3 (Hardened builds)** provides additional protection against specific threats by ensuring that both the build and source platforms meet auditing standards and maintain the integrity of the provenance. The build platform implements strong controls to prevent runs from interfering with each other, even within the same project, and to prevent secret material used to sign the provenance from being accessible to custom build steps.
 
-Artifacts Integrity is about the ability to trust the authenticity of artifacts, meaning verifying that the artifact you get is really the original artifact uploaded by its author. Establishing the provenance of the artifacts produce is extremely important. So what is _"Provenance"_ all about?
+Artifacts Integrity is about the ability to trust the authenticity of artifacts, meaning verifying that the artifact you get is really the original artifact uploaded by its author. Establishing the provenance of the artifacts produced is extremely important. So what is _"Provenance"_ all about?
 
 ### Provenance 
 
