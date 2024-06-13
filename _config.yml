@@ -26,6 +26,9 @@ contact:
 url: "https://karakun.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: karakun
 github_username:  karakun
+mastodon:
+  - username: "karakun"
+    instance: "karakun.social"
 
 permalink: /:year/:month/:day/:title.html
 
