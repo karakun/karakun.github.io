@@ -73,4 +73,4 @@ In order to trace software back to its source and define the moving parts in a c
 Specifically, provenance ties source code and build steps to the resulting artifacts. By documenting how the resulting artefacts were created in relation to the build, it essentially acts as a receipt generated for the build process.
 
 
-This was the first part on a series of articles on Security. Stay tuned (e.g. [via RSS](/feed.xml)) for more and feel free to [contact us](mailto:info@karkaun.com?subject=SLSA on DevHub) with feedback and questions.
+This was the first part of a series of articles related to security. Stay tuned (e.g. [via RSS](/feed.xml)) for more and don't hesitate to [contact us](mailto:info@karakun.com?subject=SLSA on DevHub) with feedback and questions.
