@@ -71,3 +71,6 @@ _Provenance is verifiable information, or metadata, about how a software artefac
 In order to trace software back to its source and define the moving parts in a complex supply chain, provenance needs to be there from the get-go
 
 Specifically, provenance ties source code and build steps to the resulting artifacts. By documenting how the resulting artefacts were created in relation to the build, it essentially acts as a receipt generated for the build process.
+
+
+This was the first part of a series of articles related to security. Stay tuned (e.g. [via RSS](/feed.xml)) for more and don't hesitate to [contact us](mailto:info@karakun.com?subject=SLSA on DevHub) with feedback and questions.
