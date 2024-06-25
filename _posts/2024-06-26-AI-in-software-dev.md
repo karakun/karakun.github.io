@@ -53,3 +53,5 @@ In the age of digitization, technical solutions and programming code have long b
 new applications and permanently optimize the existing code. Will creative work still be done by developers? Or will their future tasks mainly focus on specification, modelling, and maintenance? What role will 
 characteristics such as professional experience, creativity, memory, teamwork, and craftsmanship play in programming? The subjective nature of programming and the creative processes of programmers may change with AI 
 tools. However, the internet and the supportive nature of such tools do not make learning programming obsolete.
+
+Interested in more details about using AI agents for software development or other applications of AI? Stay tuned (e.g. [via the DevHub RSS feed](/feed.xml)) for more and don't hesitate to [contact us](mailto:info@karakun.com?subject=GenAI for Software Engineering) with feedback and questions.
