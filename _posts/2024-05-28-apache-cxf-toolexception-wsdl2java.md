@@ -4,7 +4,7 @@ title: 'Apache CXF ToolException "Tools plugin provider jaxb context init failed
 authors: ['markus']
 featuredImage: gitlab-ci-pipelines
 excerpt: "Build a multiproject spanning Pipeline triggered by Tags in Gitlab CI"
-permalink: '/2024/05/28/cxf-jaxb-toolexception-wsdl2java.html'
+permalink: '/2024/08/30/cxf-jaxb-toolexception-wsdl2java.html'
 categories: [CXF, JAXB, wsdl2java, XML, SOAP, Code Generation, Gradle]
 header:
   text: Apache CXF ToolException with JAXB / wsdl2java 
@@ -112,7 +112,7 @@ which in turn leads me to the requirement of adding these to my dependencies:
     wsdl2java "org.apache.cxf:cxf-tools-wsdlto-databinding-jaxb:4.0.4"
 ```	
 
-and suddently i can see the output I was longing for: 
+and suddently I can see the output I was longing for: 
 
 `BUILD SUCCESSFUL in 2s`
 
