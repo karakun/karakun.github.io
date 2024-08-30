@@ -1,9 +1,9 @@
 ---
 layout: post
-title: 'Apache CXF ToolException "Tools plugin provider jaxb context init failed" when using wsdl2java '
+title: 'SOAP Survival: Overcoming JAXB and Gradle Conflicts in Legacy Systems'
 authors: ['markus']
 featuredImage: gitlab-ci-pipelines
-excerpt: "Build a multiproject spanning Pipeline triggered by Tags in Gitlab CI"
+excerpt: 'Solve Apache CXF ToolException "Tools plugin provider jaxb context init failed" when using wsdl2java'
 permalink: '/2024/08/30/cxf-jaxb-toolexception-wsdl2java.html'
 categories: [CXF, JAXB, wsdl2java, XML, SOAP, Code Generation, Gradle]
 header:
