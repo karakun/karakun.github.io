@@ -32,7 +32,7 @@ While BaselOne sold 270 tickets for both event days, we were happy to welcome 26
 
 After a short introduction by the orga team, the conference started with a keynote by Ralf Westphal. Ralf is trainer, consultant, author and co-founder of the Clean Code Developer Initiative.
 
-![Ralf Westphal during the keynote at BaselOne 24](/assets/posts/2024-11-05-BaselOne-Review/keynote.png)
+![Ralf Westphal during the keynote at BaselOne 24](/assets/posts/2024-11-05-BaselOne-Review/Keynote.png)
 
 His inspiring presentation was a lightweight opener for the following 24 talks. Two of them were delivered by the Karakun experts Iryna Dohndorf and François Martin. While [Iryna](/people/iryna) talked about the usage of AI-based tools in software development, [François](/people/francois) challenged the audience with his presentation “My code is faster than yours... let me prove it to you!” 
 
