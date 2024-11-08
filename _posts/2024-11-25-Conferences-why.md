@@ -4,7 +4,7 @@ title: 'Conferences: Inside & Out'
 authors: ['ixchel']
 featuredImage: conference
 excerpt: 'Exploring the motivations for attending conferences or UnConferences reveals a shared passion for learning, networking, and inspiration. Connecting with like-minded individuals, breaking out of comfort zones, and continuous growth are key drivers. Presenting at conferences offers unique opportunities to deepen knowledge, share insights, and inspire others.'
-permalink: '/2024/11/15/Conferences-why.html'
+permalink: '/2024/11/25/Conferences-why.html'
 categories: [Conferences, Community]
 header:
     text: Conferences
