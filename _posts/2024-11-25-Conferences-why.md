@@ -101,4 +101,4 @@ Gaining insight into emerging technologies can prove beneficial in strategic pla
 
 ## Sharing your thoughts!
 
-What do you think about the importance of conferences? I would love to discuss this with you. Drop me a line at &#073;&#120;&#099;&#104;&#101;&#108;&#046;&#114;&#117;&#105;&#122;&#064;&#107;&#097;&#114;&#097;&#107;&#117;&#110;&#046;&#099;&#111;&#109;  or contact me via social media.
+What do you think about the importance of conferences? I would love to discuss this with you. [Contact me](/people/ixchel) via social media.
