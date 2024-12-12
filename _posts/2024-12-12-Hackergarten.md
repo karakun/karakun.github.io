@@ -30,7 +30,7 @@ The goal is to conclude each meeting with a patch or comparable contribution to 
 not all of which are technical. This article provides proof of this fact. Marcus Fihlon proposed an outstanding idea, and [Tamari](/people/tamari) and [Ixchel](/people/ixchel) collaborated to execute it.
 
 Within minutes, a list of topics began to take shape. Each person had the opportunity to introduce a project and a first idea of how they would like to contribute. For example, you might have an issue with your favourite open source project you work 
-with or would like to contribute to. We are aware that several open-source projects have spent time welcoming new contributors, and you can find issues marked as "first contribution". However, it is precisely this that makes Hackergarten such a unique event. 
+with or would like to contribute to. We are aware that several open-source projects have spent time welcoming new contributors, and you can find issues marked as ["good first contribution"](https://github.com/search?q=label%3A%22good+first+contribution%22+state%3Aopen&type=issues) or ["hackergarten"](https://github.com/search?q=label%3Ahackergarten+state%3Aopen&type=issues). However, it is precisely this that makes Hackergarten such a unique event. 
 The event has a clear starting point, people with passion in IT and a willingness to make the world a better place, one contribution at the time.
 
 Here you can see the list of topics we proposed tonight:
