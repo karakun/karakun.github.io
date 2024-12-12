@@ -37,7 +37,7 @@ Here you can see the list of topics we proposed:
 
 * Asciidoctor Plugin / Antora Plugin
 * Mastodon setup on (h) Cloud (Bash)
-* Article about Hackergarten for [JavaAktuell](https://www.ijug.eu/de/java-aktuell/zeitschrift/)
+* Article about Hackergarten
 * Apache Solr : 1st contrib issues
 * ZioNSON with DSON-LD (Scala)
 * [JReleaser](https://jreleaser.org)
