@@ -44,7 +44,7 @@ Here you can see the list of topics we proposed:
 * [RDiscount](https://github.com/davidfstr/rdiscount) (Ruby, C)
 * [Pandoc Plant UML Filter](https://github.com/timofurrer/pandoc-plantuml-filter) (Python)
 
-In Hackergarten, there are not many rules. But the intention of the organizer that people split in groups so nobody works alone. So, after a quick vote the project work started. 
+In Hackergarten, there are not many rules. But the intention of the organizer is that people split in groups so nobody works alone (and, even if the topic they work on does not "work out", they can at least have fun working together and maybe learn something from each other, e.g. a new IDE shortcut). So, after a quick vote the project work started. 
 
 The suggested projects are written in different programming languages. This is not by any means a limitation as we all have preferences and sometimes dislikes - and that is acceptable. Nonetheless, this is a distinct advantage of Hackergarten: 
 it’s surprising mix of interest, languages, platforms and even types of contributions. You can never predict how it’s going to turn out or who you’re going to work with, or how far-reaching the inspiration will be. This article, for example, 
