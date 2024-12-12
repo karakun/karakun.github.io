@@ -88,7 +88,10 @@ To host a **successful** Hackergarten, you will need a suitable venue with ample
 
 ### Social and Communication
 
-To streamline your organization process, a platform like Meetup is highly recommended. It has proven to be effective for many events, including Hackergartens in places such as Basel and Lucerne. And even in Dortmund, Germany, and many other places around the globe. You can easily manage event registration, communication, and updates.
+To streamline your organization process, a platform like Meetup is highly recommended. It has proven to be effective for many events, including Hackergartens in places such as 
+[Basel](https://www.meetup.com/hackergarten-basel/), [Zürich](https://www.meetup.com/hackergarten-zurich/events/303915242/) and 
+[Lucerne](https://www.meetup.com/hackergarten-luzern/). And even in [Stuttgart](https://www.meetup.com/hackergarten-stuttgart/) and
+[Dortmund](https://www.meetup.com/hackergarten-dortmund/), and many other places around the globe. You can easily manage event registration, communication, and updates. There is the [hackergarten.net](https://www.hackergarten.net) Homepage that is intended as a common umbrella for all Hackergarten.
 
 ### Join the list!
 
