@@ -33,7 +33,7 @@ Within minutes, a list of topics began to take shape. Each person had the opport
 with or would like to contribute to. We are aware that several open-source projects have spent time welcoming new contributors, and you can find issues marked as ["good first contribution"](https://github.com/search?q=label%3A%22good+first+contribution%22+state%3Aopen&type=issues) or ["hackergarten"](https://github.com/search?q=label%3Ahackergarten+state%3Aopen&type=issues). However, it is precisely this that makes Hackergarten such a unique event. 
 The event has a clear starting point, people with passion in IT and a willingness to make the world a better place, one contribution at the time.
 
-Here you can see the list of topics we proposed tonight:
+Here you can see the list of topics we proposed:
 
 * Asciidoctor Plugin / Antora Plugin
 * Mastodon setup on (h) Cloud (Bash)
