@@ -38,7 +38,7 @@ Like a junk drawer that becomes more daunting with each new item you toss in, al
 
 ## Common Causes of Flaky Tests
 
-To effectively address flaky tests, you have to first understand why tests become flaky in the first place. The most common reasons include:
+To effectively address flaky tests, you have to understand why tests become flaky in the first place. The most common reasons include:
 
 1. **Timing Issues or Hard-Coded Delays:**  
    Using fixed waits, like `Thread.sleep(500)` instead of waiting for conditions to be met, will lead to unpredictable failures. The test may pass or fail if the system is faster or slower than expected.
@@ -79,13 +79,13 @@ Adopt the following rule for your team: **For each sprint, fix at least one flak
 
 Think of it as putting away one item from your junk drawer each week. Over time, the drawer (your flaky test backlog) will be empty. This practice is easy to justify to management ("it's just one test per sprint") but makes a considerable difference cumulatively.
 
-Some teams go further by dedicating a day (like "Flaky Test Fridays") to systematically address these issues. This can be especially effective if your project has many flaky tests.
+Some teams go further by dedicating a day (like "Flaky Test Fridays") to address these issues systematically. This can be especially effective if your project has many flaky tests.
 
 ### 3. Use New Test Data
 
 Make sure each test starts with a clean slate:
 
-- **Isolate Test Data**: Use unique data for each test to prevent collisions. Tools like [Testcontainers](https://www.testcontainers.org/) allow you to quickly spin up disposable containers for databases and other services.
+- **Isolate Test Data**: To prevent collisions, use unique data for each test. Tools like [Testcontainers](https://www.testcontainers.org/) allow you to spin up disposable containers for databases and other services quickly.
 - **Setup and Teardown**: In frameworks like JUnit, use `@BeforeEach` to set up fresh data and `@AfterEach` to remove it:
 
 ```java
@@ -175,7 +175,7 @@ End-to-end and integration tests are often slower and more prone to flakiness be
 - **Integration Tests**: Verify how your component behaves when interacting with other components (e.g., between your code and a database) without using the UI.
 - **Unit Tests**: Verify the behavior of individual functions or classes in isolation.
 
-Teams often default to adding new integration tests because it *seems* more straightforward: fewer, broader tests can cover more code. However, this approach leads to larger, slower test suites that are harder to maintain. One practical approach to address this issue is to refactor complex, multi-purpose methods so each method has a specific purpose. This simplifies the methods and makes them easier to test with unit tests. For instance, in one project, I took a monolithic integration test suite that ran for **five minutes** and restructured it so that most logic was covered by unit tests instead. This ended up reducing the total runtime to **just 11 seconds**.
+Teams often default to adding new integration tests because it *seems* more straightforward: fewer, broader tests can cover more code. However, this approach leads to larger, slower test suites that are harder to maintain. One practical approach to address this issue is to refactor complex, multi-purpose methods so each method has a specific purpose. This simplifies methods and makes them easier to test with unit tests. For instance, in one project, I took a monolithic integration test suite that ran for **five minutes** and restructured it so that most logic was covered by unit tests instead. This ended up reducing the total runtime to **just 11 seconds**.
 
 ---
 
