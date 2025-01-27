@@ -3,7 +3,7 @@ layout: post
 title: 'Eliminating Flaky Tests to End World Hunger'
 authors: ['francois']
 featuredImage: eliminating-flaky-tests
-excerpt: "We keep rerunning tests that sometimes fail and then pass again without explanation, wasting time, money, and eroding trust in our CI pipeline. Let's explore why tests become flaky and how to fix them before they pile up like clutter in a junk drawer."
+excerpt: "We keep re-running tests that sometimes fail and then pass again without explanation, wasting time, money, and eroding trust in our CI pipeline. Let's explore why tests become flaky and how to fix them before they pile up like clutter in a junk drawer."
 permalink: '/2025/01/25/eliminating-flaky-tests.html'
 categories: [ Testing ]
 header:
