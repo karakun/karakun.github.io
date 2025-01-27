@@ -15,7 +15,7 @@ Einstein's so-called "Parable of Quantum Insanity" says:
 
 > **Insanity** is doing the same thing over and over and expecting different results.
 
-However, everyone has at least once experienced a test that failed and then passed in the next run without changing the code or the environment. In software engineering, we don't call it insanity; we call such unpredictable failures flaky tests. At first, they may seem like minor problems, but like clutter in a junk drawer, they become worse over time if you never take care of them.
+However, everyone has at least once experienced a test that failed and then passed in the next run without changing the code or the environment. In software engineering, we don't call it insanity; we call such unpredictable failures **flaky tests**. At first, they may seem like minor problems, but like clutter in a junk drawer, they become worse over time if you never take care of them.
 
 What if we lived in a world where we could solve massive global problems like world hunger by eliminating flaky tests in software development? While it may seem exaggerated, it is closer to the truth than you might think, and it highlights the enormous cost and resources that flaky tests drain in development teams worldwide.
 
