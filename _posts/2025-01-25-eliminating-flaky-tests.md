@@ -11,9 +11,9 @@ header:
   image: post
 ---
 
-Einstein's so-called "Parable of Quantum Insanity" says:
+Rita Mae Brown once said:
 
-> **Insanity** is doing the same thing over and over and expecting different results.
+> **Insanity** is doing the same thing over and over again and expecting different results.​
 
 However, everyone has at least once experienced a test that failed and then passed in the next run without changing the code or the environment. In software engineering, we don't call it insanity; we call such unpredictable failures **flaky tests**. At first, they may seem like minor problems, but like clutter in a junk drawer, they become worse over time if you never take care of them.
 
