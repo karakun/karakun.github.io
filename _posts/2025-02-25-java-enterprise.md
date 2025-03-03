@@ -3,7 +3,7 @@ layout: post
 title: 'Java: The Brave Companion in the World of Enterprise Software Solutions!'
 authors: [ 'ixchel' ]
 featuredImage: adopt-free
-excerpt: "The relentless march of technology demands that we design enterprise solutions not just for today, but for a future we can only partially imagine. Java, with its commitment to a regular release cadence and a focus on evolution, stands as a shining example of how to build software that can adapt, grow, and remain relevant for years to come. By embracing change, fostering innovation, and prioritizing sustainability, we can create systems that not only enhance human life but also contribute to the well-being of our planet."
+excerpt: "The relentless march of technology demands that we design enterprise solutions not just for today but for a future we can only partially imagine. Java, with its commitment to a regular release cadence and a focus on evolution, stands as a shining example of how to build software that can adapt, grow, and remain relevant for years to come. By embracing change, fostering innovation, and prioritizing sustainability, we can create systems that not only enhance human life but also contribute to the well-being of our planet."
 permalink: '/2025/02/25/java-enterprise.html'
 categories: [ Java ]
 header:
@@ -14,10 +14,11 @@ header:
 Enterprise solutions are designed to address the multifaceted
 requirements of businesses and organisations. Compared to solutions
 designed for consumer use, enterprise solutions typically have a longer
-development lifecycle and require a higher level of investment, and it
-is not only the development cycle, enterprise software tends to have a
-longer lifespan than consumer-facing solutions. The lifespan of
-enterprise software can vary considerably, dependent on several factors,
+development lifecycle and require a higher level of investment. And it
+is not only the development cycle - enterprise software tends to have a
+longer lifespan than consumer-facing solutions. 
+
+The lifespan of enterprise software can vary considerably, depending on several factors,
 including the complexity of the solution, the specific requirements of
 the organisation in question, and the pace of technological advancement.
 This is partly due to the higher level of investment required, the
@@ -28,74 +29,81 @@ cycle (_SDLC_) of such systems. It can be reasonably assumed that a
 considerable number of these systems will undergo phases of
 reengineering, refactoring, or redesign during this period. The process
 is influenced by the fact that technology is an ever-evolving field, and
-the tools and solutions that are currently in use may become obsolete in
-the near future. The notion that a design solution will remain effective
+the tools and solutions that are currently in use may become obsolete soon. 
+The notion that a design solution will remain effective
 indefinitely is no longer a valid assumption. Consequently, the
 objective is to develop solutions that can be repeatedly deployed to
 address evolving issues, becoming progressively more sophisticated,
-elegant, and intelligent over time. Choosing the right set of tools or
-platform is a critical decision that will have a profound impact on
-every level of an organisation. The JVM is one of the most robust,
-dependable, well-maintained, secure and stable platforms for enterprise
-solutions globally.
+elegant, and intelligent over time. 
 
-A number of scientific disciplines have illuminated the complex
+Choosing the right set of tools or platforms is a critical decision that 
+will have a profound impact on every level of an organisation. The JVM is 
+one of the most robust, dependable, well-maintained, secure and stable platforms 
+for enterprise solutions globally.
+
+Several scientific disciplines have illuminated the complex
 mechanisms underlying the evolution, adaptation, and healing of
 biological systems, enabling organisms to not only survive but also to
 flourish, with life spans that greatly exceed those of humans. These
 solutions from a distant past demonstrate the value of celebrating,
 understanding, and appreciating the past as a foundation for future
-progress. It is a challenging task to advance rapidly and not to be
+progress. It is a challenging task to advance rapidly and not be
 tempted by the hubris of complete disruption to move forward. It is
 essential to strive for strategic improvement and change, with a
 cautious understanding of potential consequences and a commitment to
-building something better in their place.\
-It is not enough for us, as professionals engaged in the development of
-systems and structures, to merely create solutions that enhance the
+building something better in their place.
+
+It is not enough for us as professionals engaged in developing
+systems and structures to merely create solutions that enhance the
 quality of human life. Rather, we should focus on designing for the
 well-being of the whole environment. Resources are finite! In this era
-of rapid change, it\'s vital that our solutions are constantly up to
+of rapid change, our solutions must be constantly up to
 date with the significant changes taking place in our world.
 
 _We have a duty and a responsibility to deliver and maintain applications
 with higher levels of usability and sustainability. We should ask big
 questions such as: what are the long-term implications of our
-decisions?_  \
-Designing long-lasting systems requires a thoughtful approach that
-incorporates golden principles and powerful tools.\
+decisions?_
+
+Designing long-lasting systems requires a thoughtful approach 
+incorporating golden principles and powerful tools.
+
 The Java development team has adopted a strategy that integrates proven
 principles, thereby facilitating the evolution of the Java platform and
 the creation of innovative features. Furthermore, the team has adapted
 and delivered new features that enable developers to address present
 challenges, establish a robust foundation for the future, and provide a
 long-lasting platform that allows critical applications with a long
-lifespan to be in production today and in the future.\
+lifespan to be in production today and in the future.
+
 Maintaining and evolving the JVM and the Java language often requires
-the implementation of breakthrough features that significantly improve
+implementing breakthrough features that significantly improve
 performance or security. The key is to communicate these changes
 effectively and ensure that users understand the trade-offs involved in
 adopting new versions. By doing so, the Java team can foster a culture
 that embraces change rather than resists it, encouraging organizations
 to try new features and take advantage of the improvements in
-performance, security, or footprint.\
+performance, security, or footprint.
+
 The Java programming language has undergone significant changes before
-September 2017, but the introduction of a regular release cadence
+September 2017, but introducing a regular release cadence
 encourages developers to adopt new practices and tools. By releasing a
-version every six months, developers have access to new features and
+version every six months, developers can access new features and
 improvements more frequently. By committing to a predictable schedule,
 Java has mitigated the risks associated with long periods of stagnation,
-enabling teams to innovate continuously. \
-In my opinion the most remarkable features present on each LTS version
+enabling teams to innovate continuously.
+
+In my opinion, the most remarkable features present on each LTS version
 released since Java 8 are as follows:
 
 ## Java 8: The Functional Push
 
 -   **Lambda expressions**, **method references**, and the **Stream
-    API** brought a functional programming paradigm to Java, making code
+    API** brought a functional programming paradigm to Java making code
     more concise, expressive, and often faster. Parallel processing with
     streams opened doors to efficient data manipulation, especially for
     large datasets.  **Stream API**, which allows for efficient
-    processing of sequences of elements, enabling parallel processing
+    processing of sequences of elements enabling parallel processing
     and improved performance. [Performance Enhancements & Modern
     Language Features] [JEP 126: Lambda
     Expressions](https://openjdk.org/jeps/126); [JEP 335: Method
@@ -107,7 +115,7 @@ released since Java 8 are as follows:
     and well-designed approach to date and time handling, crucial for
     building consistent and predictable systems. The Optional
     class tackled the age-old problem of null pointers, fostering
-    cleaner code and reducing potential errors.[JEP 150:
+    cleaner code and reducing potential errors. [JEP 150:
     Date & Time API](https://openjdk.org/jeps/150)
 
 -   Improved security features, including updates to
@@ -117,9 +125,9 @@ released since Java 8 are as follows:
     Extension](https://openjdk.org/jeps/114); [JEP 115: AEAD
     CipherSuites](https://openjdk.org/jeps/115); [JEP 121: Stronger
     Algorithms for Password-Based
-    Encryption](https://openjdk.org/jeps/121) ;[JEP 123: Configurable
+    Encryption](https://openjdk.org/jeps/121); [JEP 123: Configurable
     Secure Random-Number
-    Generation](https://openjdk.org/jeps/123);[JEP 124:
+    Generation](https://openjdk.org/jeps/123); [JEP 124:
     Enhance the Certificate Revocation-Checking API;JEP 131: PKCS#11
     Crypto Provider for 64-bit
     Windows](https://openjdk.org/jeps/131); [JEP 166: Overhaul
@@ -128,11 +136,11 @@ released since Java 8 are as follows:
 ## Java 11: Modernization and Efficiency
 
 -   The **HTTP client API** provided a streamlined and modern way to
-    interact with Web services.[JEP 321: HTTP Client
+    interact with Web services. [JEP 321: HTTP Client
     API](https://openjdk.org/jeps/321)
 
--   The removal of obsolete modules like Java EE and CORBA streamlined
-    the JDK, making it more efficient and less prone to compatibility
+-   Removing obsolete modules like Java EE and CORBA streamlined
+    the JDK making it more efficient and less prone to compatibility
     issues. [JEP 320: Remove the Java EE and CORBA
     Modules](https://openjdk.org/jeps/320)
 
@@ -140,10 +148,10 @@ released since Java 8 are as follows:
     from the JVM, including memory usage, CPU activity, thread states,
     and garbage collection events. This comprehensive data collection
     helps developers diagnose issues and optimize application
-    performance.[JEP 328: Flight
+    performance. [JEP 328: Flight
     Recorder](https://openjdk.org/jeps/328)
 
--    **Garbage Collector (GC)** improvements were added, including the
+-    **Garbage Collector (GC)** improvements were added including the
     introduction of the **Z Garbage Collector**, which optimizes memory
     management and reduces pause times. ZGC is designed to handle large
     heaps (up to several terabytes) while maintaining low pause times,
@@ -152,9 +160,9 @@ released since Java 8 are as follows:
     Enhancements] [JEP 333: ZGC: A Scalable Low-Latency
     Garbage Collector](https://openjdk.org/jeps/333)
 
--   Added **var keyword** for local variable type inference, this
+-   Added **var keyword** for local variable type inference. This
     feature enhances code readability, especially in cases where the
-    type is obvious from the context, such as with collections or
+    type is obvious from the context such as with collections or
     complex types.  [Modern Language Features] [JEP 286:
     Local-Variable Type Inference](https://openjdk.org/jeps/286)
 
@@ -165,7 +173,7 @@ released since Java 8 are as follows:
     reduces the potential for errors. [JEP 409: Sealed
     Classes](https://openjdk.org/jeps/409)
 
--   **Pattern matching**, facilitates the streamlining of type checking
+-   **Pattern matching** facilitates the streamlining of type-checking
     and casting operations, thereby enhancing the clarity and
     readability of the code in question. This feature enables the user
     to ascertain whether an object is an instance of a particular class
@@ -179,7 +187,7 @@ released since Java 8 are as follows:
     Rendering Pipeline
 
 -   **Foreign Function & Memory API** was introduced as part of the
-    ongoing effort to improve Java\'s interoperability with native code
+    ongoing effort to improve Java's interoperability with native code
     and memory. This API allows Java programs to safely and efficiently
     access foreign memory outside of the Java heap, enabling better
     integration with native libraries and systems. [JEP 412: Foreign
@@ -201,11 +209,11 @@ released since Java 8 are as follows:
     16.
 
 -   Enhanced security with features such as **Deprecate the Security
-    Manager for Removal** which provides better control over the use of
+    Manager for Removal**, which provides better control over the use of
     native code, and improvements to the **TLS** protocol. [Enhanced
-    Security].[JEP 411: Deprecate the Security
+    Security]. [JEP 411: Deprecate the Security
     Manager for Removal.](https://openjdk.org/jeps/411) Introduced
-    in Java 17;[JEP 844: TLS
+    in Java 17; [JEP 844: TLS
     1.3 Support](https://openjdk.org/jeps/844). Introduced in Java
     11; [JEP 825: TLS 1.3 in the Java SE
     Platform](https://openjdk.org/jeps/825). Introduced in Java 17.
@@ -213,16 +221,16 @@ released since Java 8 are as follows:
 ## Java 21: The current Java  **LTS**
 
 -   **String templates** introduced a modern way to create strings with
-    embedded expressions, making code more readable and
+    embedded expressions making code more readable and
     maintainable. **Virtual threads** (Preview) promised to simplify
     concurrent programming by providing lightweight threads, potentially
     leading to significant performance improvements. [JEP 430: String
     Templates ](https://openjdk.org/jeps/430)(Preview) Introduced in
-    JDK 21;[JEP 459: String
+    JDK 21; [JEP 459: String
     Templates](https://openjdk.org/jeps/459) (Second Preview) Introduced
     in JDK 22; [JEP 425: Virtual
     Threads](https://openjdk.org/jeps/425) (Preview) Introduced in Java
-    19;[JEP 436: Virtual
+    19; [JEP 436: Virtual
     Threads](https://openjdk.org/jeps/436) (Second Preview). Introduced
     in  Java 20. [JEP 444: Virtual
     Threads](https://openjdk.org/jeps/444). Introduced in Java 21
@@ -237,7 +245,7 @@ released since Java 8 are as follows:
     21; [JEP 406: Initial introduction of pattern matching for
     switch](https://openjdk.org/jeps/406). Introduced in Java 17; [JEP
     420: Pattern Matching for
-    switch](https://openjdk.org/jeps/420)Second preview .
+    switch](https://openjdk.org/jeps/420) Second preview.
     Introduced in Java 18; [JEP 427](https://openjdk.org/jeps/427):
      Third preview. Introduced in Java 19; [JEP
     433](https://openjdk.org/jeps/433): Fourth preview. Introduced in
@@ -247,7 +255,7 @@ released since Java 8 are as follows:
     20; [JEP 446: Scoped Values](https://openjdk.org/jeps/446) (Preview)
     Introduced in Java 21; [JEP 464: Scoped
     Values](https://openjdk.org/jeps/464) (Second Preview) Introduced in
-    Java 22;[JEP 481: Scoped
+    Java 22; [JEP 481: Scoped
     Values](https://openjdk.org/jeps/481)(Third Preview) Introduced in
     Java 23; [JEP 487: Scoped
     Values](https://openjdk.org/jeps/487) (Fourth Preview) Introduced in
@@ -258,7 +266,7 @@ released since Java 8 are as follows:
     programming by enabling developers to write code that can handle
     multiple tasks concurrently, without the inherent complexity of
     traditional thread management. [JEP 425: Virtual
-    Threads](https://openjdk.org/jeps/425) ( Preview). Introduced
+    Threads](https://openjdk.org/jeps/425) (Preview). Introduced
     in Java 19; [JEP 436: Virtual
     Threads](https://openjdk.org/jeps/436) (Second Preview). Introduced
     in Java 20; [JEP 444: Virtual
@@ -294,9 +302,9 @@ released since Java 8 are as follows:
     the scoped values introduced in earlier versions, this JEP refines
     the application programming interface (API) for sharing immutable
     data across methods and threads, thereby promoting more effective
-    data management practices in concurrent applications
+    data management practices in concurrent applications.
 
-In this article, I\'m excited to give you an overview of the enterprise
+In this article, I'm excited to give you an overview of the enterprise
 software landscape and showcase why the evolution of the Java platform
 makes the JVM such a powerful and useful technology. It looks at the key
 considerations and advancements that have shaped the development and
@@ -304,15 +312,15 @@ longevity of enterprise-level solutions. There are five main things to
 take away from this article:
 
 -   Enterprise solutions have a *longer* **development
-    lifecycle**, higher **investment**, and longer **lifespan** compared
-    to consumer solutions. This often requires reengineering and
+    lifecycle**, higher **investment**, and longer **lifespan** than
+    consumer solutions. This often requires reengineering and
     adaptation to evolving technology, which is a fantastic opportunity
     for developers to really add value and make a
     real *long-term* **impact**.
 
 -   The Java Virtual Machine (JVM) is a robust and secure platform for
-    enterprise solutions. It\'s a great foundation to build powerful,
-    reliable software on.
+    enterprise solutions. It's a great foundation for powerful and reliable
+    software.
 
 -   Java has undergone significant improvements with each Long-Term
     Support (LTS) release, introducing features like *functional
@@ -326,6 +334,6 @@ take away from this article:
 -   The regular release cadence encourages developers to continuously
     adopt new practices and tools, mitigating the risks of long periods
     of stagnation.
-### Sharing your thoughts!
-
-What do you think about the importance of backward compatibility? Java being 30 years? The future of Enterprise software? I would love to discuss this with you. [Contact me](/people/ixchel) via social media.
+    
+## Sharing your thoughts!
+What do you think about the importance of backward compatibility? Java being 30 years old? The future of Enterprise software? I would love to discuss this with you. [Contact me](/people/ixchel) via social media.
