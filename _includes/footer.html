@@ -60,6 +60,7 @@ if ($navbarBurgers.length > 0) {
 
       // Toggle the class on both the "navbar-burger" and the "navbar-menu"
       $el.classList.toggle('is-active');
+      $el.attributes.getNamedItem("aria-expanded").value = "" + ($el.attributes.getNamedItem("aria-expanded").value!=="true")
       $target.classList.toggle('is-active');
 
     });

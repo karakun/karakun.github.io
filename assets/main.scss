@@ -609,3 +609,9 @@ fieldset label {
 .pagination-wrapper .pagination {
     gap: 2rem;
 }
+
+button.navbar-burger {
+  border: none;
+  background: none;
+  color: $link
+}
