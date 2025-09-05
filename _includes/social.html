@@ -1,15 +1,15 @@
 <ul class="social-media-list menu-list">
-  {%- if site.dribbble_username -%}<li><a class="navbar-item" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-dribble"></i></span></a></li>{%- endif -%}
-  {%- if site.facebook_username -%}<li><a class="navbar-item" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-facebook"></i></span></a></li>{%- endif -%}
-  {%- if site.flickr_username -%}<li><a class="navbar-item" href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-flickr"></i></span></a></li>{%- endif -%}
-  {%- if site.github_username -%}<li><a class="navbar-item" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-github"></i></span></a></li>{%- endif -%}
-  {%- if site.instagram_username -%}<li><a class="navbar-item" href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-instagram"></i></span></a></li>{%- endif -%}
-  {%- if site.linkedin_username -%}<li><a class="navbar-item" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-linkedin"></i></span></a></li>{%- endif -%}
-  {%- if site.pinterest_username -%}<li><a class="navbar-item" href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-pintetest"></i></span></a></li>{%- endif -%}
+  {%- if site.dribbble_username -%}<li><a class="navbar-item" href="https://dribbble.com/{{ site.dribbble_username| cgi_escape | escape }}" title="Dribble"><span class="icon" aria-hidden="true"><i class="fab fa-dribble"></i></span></a></li>{%- endif -%}
+  {%- if site.facebook_username -%}<li><a class="navbar-item" href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}" title="Facebook"><span class="icon" aria-hidden="true"><i class="fab fa-facebook"></i></span></a></li>{%- endif -%}
+  {%- if site.flickr_username -%}<li><a class="navbar-item" href="https://www.flickr.com/photos/{{ site.flickr_username| cgi_escape | escape }}" title="Flickr"><span class="icon" aria-hidden="true"><i class="fab fa-flickr"></i></span></a></li>{%- endif -%}
+  {%- if site.github_username -%}<li><a class="navbar-item" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" title="Github"><span class="icon" aria-hidden="true"><i class="fab fa-github"></i></span></a></li>{%- endif -%}
+  {%- if site.instagram_username -%}<li><a class="navbar-item" href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}" title="Instagram"><span class="icon" aria-hidden="true"><i class="fab fa-instagram"></i></span></a></li>{%- endif -%}
+  {%- if site.linkedin_username -%}<li><a class="navbar-item" href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}" title="Linkedin"><span class="icon" aria-hidden="true"><i class="fab fa-linkedin"></i></span></a></li>{%- endif -%}
+  {%- if site.pinterest_username -%}<li><a class="navbar-item" href="https://www.pinterest.com/{{ site.pinterest_username| cgi_escape | escape }}" title="Pinterest"><span class="icon" aria-hidden="true"><i class="fab fa-pintetest"></i></span></a></li>{%- endif -%}
   {%- for mst in site.mastodon -%}
-    {%- if mst.username and mst.instance -%}<li><a class="navbar-item" href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}"><span class="icon"><i class="fab fa-mastodon"></i></span></a></li>{%- endif -%}
+    {%- if mst.username and mst.instance -%}<li><a class="navbar-item" href="https://{{ mst.instance| cgi_escape | escape}}/@{{mst.username}}" title="Mastodon"><span class="icon" aria-hidden="true"><i class="fab fa-mastodon"></i></span></a></li>{%- endif -%}
   {%- endfor -%}
-  {%- if site.youtube_username -%}<li><a class="navbar-item" href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}"><span class="icon"><i class="fab fa-youtube"></i></span></a></li>{%- endif -%}
-  {%- if site.googleplus_username -%}<li><a class="navbar-item" href="https://plus.google.com/{{ site.googleplus_username| escape }}"><span class="icon"><i class="fab fa-google"></i></span></a></li>{%- endif -%}
-  <li><a class="navbar-item" href="{{ 'feed.xml' | relative_url }}"><span class="icon"><i class="fas fa-rss"></i></span> <span>{{ site.rss | escape }}</span></a></li>
+  {%- if site.youtube_username -%}<li><a class="navbar-item" href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}" title="Youtube"><span class="icon" aria-hidden="true"><i class="fab fa-youtube"></i></span></a></li>{%- endif -%}
+  {%- if site.googleplus_username -%}<li><a class="navbar-item" href="https://plus.google.com/{{ site.googleplus_username| escape }}" title="Google Plus"><span class="icon" aria-hidden="true"><i class="fab fa-google"></i></span></a></li>{%- endif -%}
+  <li><a class="navbar-item" href="{{ 'feed.xml' | relative_url }}" title="RSS Feed"><span class="icon" aria-hidden="true"><i class="fas fa-rss"></i></span> <span>{{ site.rss | escape }}</span></a></li>
 </ul>
