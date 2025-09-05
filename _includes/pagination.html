@@ -22,8 +22,8 @@
   <div class="pagination-wrapper">
     <div class="pagination">
       {% if paginator.previous_page %}
-        <a rel="prev" class="pagination-arrow pagination-step" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-          <span class="icon">
+        <a rel="prev" class="pagination-arrow pagination-step" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Previous page">
+          <span class="icon" aria-hidden="true">
             <i class="fas fa-angle-left"></i>
           </span>
         </a>
@@ -44,9 +44,9 @@
         {% if page == paginator.page %}
           <span class="active">{{ page }}</span>
         {% elsif page == 1 %}
-          <a href="{{ site.baseurl }}/">1</a>
+          <a href="{{ site.baseurl }}/" aria-label="Page 1">1</a>
         {% else %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" aria-label="Page {{ page }}">{{ page }}</a>
         {% endif %}
       {% endfor %}
 
@@ -56,8 +56,8 @@
       {% endif %}
 
       {% if paginator.next_page %}
-        <a rel="next" class="pagination-step pagination-arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
-          <span class="icon">
+        <a rel="next" class="pagination-step pagination-arrow" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Next page">
+          <span class="icon" aria-hidden="true">
             <i class="fas fa-angle-right"></i>
           </span>
         </a>
