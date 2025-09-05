@@ -84,8 +84,8 @@
 {%- assign fallback_header_text = page.title | append: " by Karakun" -%}
 <div class="page-image" style="background-image: url('/assets/images/pageHeaders/{{ page_image }}.png'); background-size: {{ page_image_size }}; background-position-x: {{ page_image_x }}; background-position-y: {{ page_image_y }};">
   <div>
-    <div class="header-text container">
+    <h1 class="header-text container">
       <div>{{ page.header.text | default: fallback_header_text | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}</div>
-    </div>
+    </h1>
   </div>
 </div>

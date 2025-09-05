@@ -114,12 +114,11 @@ nav {
     }
 }
 
-footer {
+.footer {
     border-top: 1px solid $grey-lighter;
     margin-top: 6em;
-    &.footer {
-        padding-bottom: 0em;
-    }
+    padding-bottom: 0em;
+
     .boxes {
         display: flex;
         justify-content: space-between;

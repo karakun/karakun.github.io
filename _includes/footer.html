@@ -1,4 +1,4 @@
-<footer class="footer has-background-dark has-text-white">
+<div class="footer has-background-dark has-text-white">
   <div class="container boxes">
     <div class="menu">
       <p>
@@ -37,35 +37,7 @@
       </div>
     </div>
   </div>
-</footer>
+</div>
 <div class="has-background-dark has-text-white copyright">
   Copyright © 2018-{{ site.time | date: '%Y' }} <span class="my-karakun">Karakun</span> AG
 </div>
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-
-// Get all "navbar-burger" elements
-var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-// Check if there are any navbar burgers
-if ($navbarBurgers.length > 0) {
-
-  // Add a click event on each of them
-  $navbarBurgers.forEach(function ($el) {
-    $el.addEventListener('click', function () {
-
-      // Get the target from the "data-target" attribute
-      var target = $el.dataset.target;
-      var $target = document.getElementById(target);
-
-      // Toggle the class on both the "navbar-burger" and the "navbar-menu"
-      $el.classList.toggle('is-active');
-      $el.attributes.getNamedItem("aria-expanded").value = "" + ($el.attributes.getNamedItem("aria-expanded").value!=="true")
-      $target.classList.toggle('is-active');
-
-    });
-  });
-}
-
-});
-</script>
