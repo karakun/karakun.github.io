@@ -1,7 +1,7 @@
 <nav class="navbar" aria-label="main navigation">
   <div class="container">
   <div class="navbar-brand">
-    <svg class="raccoon-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 37">
+    <svg role="img" class="raccoon-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 46 37">
       <defs>
           <style>.cls-1{isolation:isolate;}.cls-2{fill:#72ba6c;}.cls-3{fill:#607676;}.cls-4{fill:#485555;}.cls-5,.cls-6{mix-blend-mode:overlay;}.cls-5{fill:url(#Unbenannter_Verlauf_76);}.cls-6{opacity:0.15;fill:url(#Unbenannter_Verlauf_76-2);}.cls-7{opacity:0.9;fill:url(#Unbenannter_Verlauf_75);}.cls-8{fill:#fff;}.cls-9{fill:#263131;}.cls-10{fill:none;stroke:#4c5b5b;stroke-miterlimit:10;stroke-width:0.69px;}.cls-11{fill:#4c5b5b;}</style>
           <linearGradient id="Unbenannter_Verlauf_76" x1="298.66" y1="426" x2="298.66" y2="408.79" gradientTransform="translate(-0.5)" gradientUnits="userSpaceOnUse">
@@ -46,12 +46,12 @@
           </g>
       </g>
     </svg>
-    <a class="navbar-item page-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}<span class="blink-cursor">_</span></a>
-    <a role="button" class="navbar-burger" data-target="main-menu" aria-label="menu" aria-expanded="false">
+    <a class="navbar-item page-title" rel="author" aria-label="Karakun Developer Hub" href="{{ "/" | relative_url }}">{{ site.title | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}<span class="blink-cursor">_</span></a>
+    <button class="navbar-burger" data-target="main-menu" aria-label="menu" aria-expanded="false">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
-      </a>
+      </button>
   </div>
     <div class="navbar-menu navbar-end" id="main-menu">
       {% if page.title == my_page.title %}
@@ -59,7 +59,7 @@
       {% else %}
         <a class="navbar-item" href="{{ "/" | relative_url }}">Home</a>
       {% endif %}
-    
+
     {% assign sortedPaths = site.pages | sort: 'order'  %}
     {% for my_page in sortedPaths %}
       {%- if my_page.hidden != true -%}
@@ -84,8 +84,8 @@
 {%- assign fallback_header_text = page.title | append: " by Karakun" -%}
 <div class="page-image" style="background-image: url('/assets/images/pageHeaders/{{ page_image }}.png'); background-size: {{ page_image_size }}; background-position-x: {{ page_image_x }}; background-position-y: {{ page_image_y }};">
   <div>
-    <div class="header-text container">
+    <h1 class="header-text container">
       <div>{{ page.header.text | default: fallback_header_text | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}</div>
-    </div>
+    </h1>
   </div>
 </div>

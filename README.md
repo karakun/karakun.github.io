@@ -8,7 +8,7 @@ We provide a `docker-compose.yml` file that starts a server that runs the page a
 If you have installed [docker compose](https://docs.docker.com/compose/) on your machine you only need to call the following command from the root directory of the repository to get everything up and running:
 
 ```
-docker-compose up
+docker compose up
 ```
 
 ### Run jekyll on your machine
