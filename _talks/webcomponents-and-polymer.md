@@ -2,7 +2,7 @@
 layout: talk
 title: WebComponents and Polymer
 speakers: hendrik
-summary: >
+excerpt: >
   Up until now it was almost impossible to create reusable components for the
   Web in a reasonable way. CSS rules and JavaScript variables would always get
   in their way in large applications. Luckily there is an initiative now to

@@ -2,7 +2,7 @@
 layout: talk
 title: JavaFX in production
 speakers: hendrik
-summary: >
+excerpt: >
   Writing a "Hello World!" application is always easy and a Java developer can
   learn how to write such an application with JavaFX in some minutes. But if you
   want to create a productive application the knowledge of "Hello World" isn't

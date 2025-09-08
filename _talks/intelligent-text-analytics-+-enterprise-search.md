@@ -4,7 +4,7 @@ title: Intelligent Text Analytics & Enterprise Search
 speakers:
   - iryna
   - christopher
-summary: >
+excerpt: >
   Technologies based on intelligent speech analysis and enterprise search are
   increasingly finding their way into all areas of companies. They enable the
   implementation of digitization and automation strategies. Their contribution

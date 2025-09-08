@@ -2,7 +2,7 @@
 layout: talk
 title: How we built the JavaOne Voting Machine
 speakers: timo
-summary: >
+excerpt: >
   In this talk we will show how we implemented the JavaOne Voting machine. We
   will start with the general idea behind the Voting Machine and an overview of
   all components involved that run on embedded hardware and in the cloud. We

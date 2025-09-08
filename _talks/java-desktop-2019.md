@@ -2,7 +2,7 @@
 layout: talk
 title: Java Desktop 2019
 speakers: hendrik
-summary: >
+excerpt: >
   Some years ago development of Java Desktop applications was easy: We just
   downloaded Java 8 from Oracle and got a set of useful tools and framework to
   develop Java desktop applications:

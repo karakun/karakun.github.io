@@ -2,7 +2,7 @@
 layout: talk
 title: Web APIs - The missing manual
 speakers: simon
-summary: >
+excerpt: >
   Web developers use different Web APIs every day. Often this APIs are well
   known ones, like the Document Object Model (DOM), the DOM Event API, the Fetch
   API or the Geolocation API. A kind of comfort zone is created, which one

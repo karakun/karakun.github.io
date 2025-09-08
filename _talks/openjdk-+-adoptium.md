@@ -2,7 +2,7 @@
 layout: talk
 title: OpenJDK & Adoptium
 speakers: hendrik
-summary: >
+excerpt: >
   In the last few years, there have been many rumors in the Java community about
   the new roadmap of Java and the OpenJDK. Next to this, Oracle changed its
   licensing terms for the Oracle JDK. Today, you can no longer simply download

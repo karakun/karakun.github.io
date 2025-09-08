@@ -2,7 +2,7 @@
 layout: talk
 title: Singularity by mistake - Why my AI is wiping out humanity
 speakers: christopher
-summary: >
+excerpt: >
   In movie blockbusters, we learn that artificial intelligence can rise against
   humanity and sound the death knell of the world. Is this just Hollywood
   fantasy or already reality? And why is Elon Musk "afraid" of the AI future?

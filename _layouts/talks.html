@@ -48,7 +48,7 @@ layout: page
           <p>
             {%- if talk.featuredImage -%}
             <a href="{{ talk.url }}">
-              <img class="featured-image" alt="featured image" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
+              <img class="featured-image" alt="" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
             </a>
             {% endif %}
             <a class="excerpt" href="{{ talk.url }}">{{ talk.excerpt | newline_to_br }}</a>
@@ -62,25 +62,25 @@ layout: page
                 {% endif %}
               {% endfor %}
             <div>
-              <div class="metainfo-icon-div"><i class="fas fa-map-marker-alt metainfo-icon"></i></div>
+              <div class="metainfo-icon-div" aria-hidden="true"><i class="fas fa-map-marker-alt metainfo-icon"></i></div>
               <div>{{ lecturesArray | join: ', ' }} {% if talk.lectures.size > 4 %} and <span title="{{ talk.lectures | join: ', ' }}" alt="{{ talk.lectures | join: ', ' }}">others</span> {% endif %}</div>
             </div>
             {% endif %}
             {%- if talk.slides-link -%}
             <div>
-              <div class="metainfo-icon-div"><i class="fab fa-slideshare metainfo-icon"></i></div>
+              <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-slideshare metainfo-icon"></i></div>
               <div><a href="{{ talk.slides-link }}">Download slides</a></div>
             </div>
             {% endif %}
             {%- if talk.video-link -%}
             <div>
-              <div class="metainfo-icon-div"><i class="fab fa-youtube metainfo-icon"></i></div>
+              <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-youtube metainfo-icon"></i></div>
               <div><a href="{{ talk.video-link }}">Watch talk online</a></div>
             </div>
             {% endif %}
             {%- if talk.github-link -%}
             <div>
-              <div class="metainfo-icon-div"><i class="fab fa-github metainfo-icon"></i></div>
+              <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-github metainfo-icon"></i></div>
               <div><a href="{{ talk.github-link }}">Resources on GitHub</a></div>
             </div>
             {% endif %}

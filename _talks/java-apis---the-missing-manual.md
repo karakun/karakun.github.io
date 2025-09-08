@@ -2,7 +2,7 @@
 layout: talk
 title: Java APIs - The missing manual
 speakers: hendrik
-summary: >
+excerpt: >
   This isn’t a talk about microservices, NoSQL, container solutions or hip new
   frameworks. This talk will show some of the standard Java APIs that are part
   of Java since version 5, 6, 7 or 8. All those features are very helpful to

@@ -4,7 +4,7 @@ title: >-
   1 Codebase, 2 Mobile Platforms: How to Test iOS and Android by Just Writing
   Tests Once
 speakers: francois
-summary: >
+excerpt: >
   Developing consistent mobile apps on iOS and Android is difficult enough, but
   writing automated end to end tests so they run on both platforms without
   writing them twice is even harder. The limited selectors on mobile make it

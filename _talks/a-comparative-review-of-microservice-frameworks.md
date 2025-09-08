@@ -2,7 +2,7 @@
 layout: talk
 title: A comparative review of microservice frameworks
 speakers: hendrik
-summary: >
+excerpt: >
   In this session we will compare some of the most popular Microservice
   frameworks in the Java ecosystem like SpringBoot, Quarkus, Eclipse
   MicroProfile, and more. We will give an overview and jumpstart for each

@@ -2,7 +2,7 @@
 layout: talk
 title: Where the wild projects are
 speakers: hendrik
-summary: >
+excerpt: >
   Build and testing a commercial software is easy. You can use a big
   infrastructure for CI and commercial tools to test your complete stack. And if
   you want to test your application on different mobile devices - well, that's

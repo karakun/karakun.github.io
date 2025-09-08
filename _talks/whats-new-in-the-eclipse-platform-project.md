@@ -2,7 +2,7 @@
 layout: talk
 title: Whats New in the Eclipse Platform Project
 speakers: karsten
-summary: >
+excerpt: >
   This is a wrap up of what has happened in the Eclipse Platform Project from
   last years EclipseCon (Eclipse 2019-09) till EclipseCon 2020 and also current
   challenges the Eclipse Platform team is working on.

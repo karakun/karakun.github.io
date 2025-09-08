@@ -2,7 +2,7 @@
 layout: talk
 title: Management and analysis of test and simulation data
 speakers: simon
-summary: >
+excerpt: >
   The amount of data collected during tests and simulations in the automotive
   industry has grown massively in recent years and there is no end in sight to
   this trend. Previous techniques for analysis have reached their limits. While

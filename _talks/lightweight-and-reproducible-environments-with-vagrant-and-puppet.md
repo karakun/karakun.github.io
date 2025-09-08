@@ -2,7 +2,7 @@
 layout: talk
 title: Lightweight and reproducible environments with Vagrant and Puppet
 speakers: hendrik
-summary: >
+excerpt: >
   Many developers are in need of complex development- and test environments for
   different projects with customers. The ideal situation would be to have them
   running in a sandbox. With help of the Cloud and VMs it's possible to create
