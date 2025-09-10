@@ -2,7 +2,7 @@
 layout: talk
 title: Extreme Gui Makeover
 speakers: hendrik
-summary: >
+excerpt: >
   This talk if for all UI lovers, GUI enthusiasts and friends of modern and
   user-friendly UX. JavaFX is not only  a modern UI toolkit but the recommend UI
   Toolkit of Java, too. It offers a lot of amazing features to help you craft

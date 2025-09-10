@@ -2,7 +2,7 @@
 layout: talk
 title: Java WebStart is dead - What should we do now?
 speakers: hendrik
-summary: >
+excerpt: >
   Starting with Java 11, WebStart is being removed from Java. Because even today
   several applications are built on top of this technology, it will be
   mission-critical for many companies to find a replacement for it. This session

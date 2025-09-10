@@ -2,7 +2,7 @@
 layout: talk
 title: Java 11 - OMG!!!!
 speakers: hendrik
-summary: >
+excerpt: >
   With Java 6, 7 or 8, the world for a Java developer was quite easy. The Java
   platform had a long running release cycle and versions normally overlapped for
   more than 1 year. Normally, you as a developer had more than enough time to

@@ -2,7 +2,7 @@
 layout: talk
 title: The secret behind JWT
 speakers: markus
-summary: >
+excerpt: >
   In the age of micro services and applications that are build from many
   distributed components and need to take care for aspects like CSRF and CORS,
   session cookies are not practicable anymore.

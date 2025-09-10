@@ -2,7 +2,7 @@
 layout: talk
 title: Smart UIs for mobile and embedded in JavaFX
 speakers: hendrik
-summary: >
+excerpt: >
   You need a shiny cool UI for embedded devices? It should be optimized for
   touch? It should be responsive? It should be configurable? It should be based
   on JavaFX?

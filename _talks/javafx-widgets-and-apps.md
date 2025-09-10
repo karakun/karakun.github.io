@@ -2,7 +2,7 @@
 layout: talk
 title: 'JavaFX, Widgets, and Apps'
 speakers: hendrik
-summary: >
+excerpt: >
   Attend this session to hear about two exciting new OSS widget/app-launching
   frameworks, LaunchBoxFX and eWidgetFX, for embedded and desktop platforms. See
   how to create dock-based widgets ranging from mini-apps to full-control

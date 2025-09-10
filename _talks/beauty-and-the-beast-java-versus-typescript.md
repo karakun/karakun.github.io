@@ -2,7 +2,7 @@
 layout: talk
 title: 'Beauty and the Beast: Java Versus TypeScript'
 speakers: hendrik
-summary: >
+excerpt: >
   Once upon a time, there was a poor, innocent language. It was friendly and
   kind. Everything could have been nice and peaceful, but there was another
   language that was grumpy and mean. One day they met and started to argue about

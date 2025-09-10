@@ -2,7 +2,7 @@
 layout: talk
 title: AdoptOpenJDK - Making Java free again
 speakers: hendrik
-summary: >
+excerpt: >
   AdoptOpenJDK is the leading provider of OpenJDK™ binaries. With over 170
   million downloads in the last year, it is successfully used by many
   enterprises and ready for your production usage of Java™. AdoptOpenJDK

@@ -2,7 +2,7 @@
 layout: talk
 title: Let’s Get Wet! AquaFX and Best Practices for Skinning JavaFX Controls
 speakers: hendrik
-summary: >
+excerpt: >
   JavaFX offers a wide range of default controls for creating cool and great
   applications, from business to entertainment use cases. Because JavaFX is a
   multiplatform UI framework that can be used mainly on desktop-based platforms

@@ -2,7 +2,7 @@
 layout: talk
 title: 'Multidevice Controls: A Different Approach to UX'
 speakers: gerrit
-summary: >
+excerpt: >
   Everybody knows boring form-based user interfaces. What if you could add
   mobile devices to improve the UX of desktop or web applications? A research
   project at the University of Applied Sciences and Arts Northwestern

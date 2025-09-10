@@ -2,7 +2,7 @@
 layout: talk
 title: 'Beam me up, Botti'
 speakers: hendrik
-summary: >
+excerpt: >
   Human-computer interaction has changed dramatically in recent years. As a
   result, more and more so-called social bots have been created over the years -
   especially in the area of social networks - which can be used both to obtain

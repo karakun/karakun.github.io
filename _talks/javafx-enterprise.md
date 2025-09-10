@@ -2,7 +2,7 @@
 layout: talk
 title: JavaFX Enterprise
 speakers: hendrik
-summary: >
+excerpt: >
   JavaFX 8 offers a lot of excellent features to create modern and interactive
   user interfaces. However, in addition to a shiny UI there are other important
   issues that must be considered when creating enterprise business applications

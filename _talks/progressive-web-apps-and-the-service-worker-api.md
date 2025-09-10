@@ -2,7 +2,7 @@
 layout: talk
 title: Progressive Web Apps and the Service Worker API
 speakers: simon
-summary: >
+excerpt: >
   Progressive Web Apps (PWAs) closes the gap between websites and native
   applications. They combine the high accessibility of web pages with the open
   standards of the web in terms of Look and feel (HTML, CSS), search engine

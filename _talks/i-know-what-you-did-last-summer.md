@@ -4,7 +4,7 @@ title: I know what you did last summer
 speakers:
   - hendrik
   - stephanc
-summary: >
+excerpt: >
   Can you say the same about your Java applications? Today, applications run not
   only as monoliths on a server, but also distributed as (micro-)services in the
   cloud. Continuous monitoring is becoming more important in such scenarios. For

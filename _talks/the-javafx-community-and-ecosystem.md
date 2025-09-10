@@ -2,7 +2,7 @@
 layout: talk
 title: The JavaFX Community and Ecosystem
 speakers: hendrik
-summary: >
+excerpt: >
   Do you want to start working with JavaFX? But you don't know where you can
   find all of the cool tutorials and open source APIs? This session is the
   perfect place to be! Leading up to the Java 8 release there has been a huge

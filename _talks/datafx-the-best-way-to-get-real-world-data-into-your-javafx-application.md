@@ -2,7 +2,7 @@
 layout: talk
 title: 'DataFX: The Best Way to Get Real-World Data into Your JavaFX Application'
 speakers: hendrik
-summary: >
+excerpt: >
   The real value in most client-oriented business applications is the data
   sitting on remote servers and cloud systems. Unfortunately, retrieving and
   displaying this data is an exercise left to the developer, and it must be done

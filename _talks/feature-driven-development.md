@@ -2,7 +2,7 @@
 layout: talk
 title: Feature Driven Development
 speakers: hendrik
-summary: >
+excerpt: >
   This talk shows Best Practices that can be used to develop application in an
   agile and feature driven workflow. Companies like flickr use this development
   process internally and even Martin Fowler defined a part of the process as

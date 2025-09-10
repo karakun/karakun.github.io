@@ -2,7 +2,7 @@
 layout: talk
 title: Understanding Open Source
 speakers: hendrik
-summary: >
+excerpt: >
   Content management systems, web browsers or operating systems: many of these
   products and services that we use every day are now implemented as open source
   projects. Due to the high influence that open source development has on the

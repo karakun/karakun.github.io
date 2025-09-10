@@ -2,7 +2,7 @@
 layout: talk
 title: Polyglott Java - a platform for many paradigms
 speakers: mittie
-summary: >
+excerpt: >
   There are many ways to program - and all of them find a home on the JVM.
   Whether you are a die-hard object-oriented enterprise programmer, a super-cool
   scripting hipster, or a scientific functional engineer, the Java Platform has

@@ -2,7 +2,7 @@
 layout: talk
 title: 50 Shades of Java
 speakers: hendrik
-summary: >
+excerpt: >
   Let me seduce you! Talks in which you learn how to "program Java correctly &
   cleanly" has been seen way to often. In this session you will learn things you
   should never do in your next Java project. Let's leave the world of all this

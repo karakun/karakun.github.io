@@ -4,7 +4,7 @@ title: System.out.println("USE A LOGGER!!!");
 speakers:
   - hendrik
   - stephanc
-summary: >
+excerpt: >
   No matter if you are developing a small library, a complex framework or an
   application for end users - you will come to the point that you want to log
   information. The Java community offers a whole wealth of solutions: Besides

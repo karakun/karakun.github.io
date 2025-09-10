@@ -2,7 +2,7 @@
 layout: talk
 title: The remote presentation model
 speakers: hendrik
-summary: >
+excerpt: >
   Finding the right architecture and remoting layer for a modern application of
   often very hard. In this talk we want to introduce the Remote Presentation
   Model Pattern that is based on MVC and introduces a generic model approach

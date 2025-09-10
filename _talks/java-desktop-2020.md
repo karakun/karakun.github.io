@@ -2,7 +2,7 @@
 layout: talk
 title: Java Desktop 2020
 speakers: hendrik
-summary: >
+excerpt: >
   In Java's history a lot of different UI technologies appeared and helped Java
   to become an established technology for desktop applications. Especially the
   cross platform functionality of Java enabled a lot of mission critical desktop

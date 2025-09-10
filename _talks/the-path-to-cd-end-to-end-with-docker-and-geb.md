@@ -2,7 +2,7 @@
 layout: talk
 title: 'The path to CD: End-to-End with Docker and Geb'
 speakers: markus
-summary: >
+excerpt: >
   End to end testing is a crucial part of a tool chain to deliver high-quality
   releases of many software systems.
 

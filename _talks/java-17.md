@@ -2,7 +2,7 @@
 layout: talk
 title: Java 17
 speakers: hendrik
-summary: >
+excerpt: >
   If someone told us in summer 2017 that Java 17 would be released in fall 2021,
   we certainly wouldn't have taken that statement seriously. But with the
   OpenJDK roadmap presented in September 2017 and releases every 6 months, the

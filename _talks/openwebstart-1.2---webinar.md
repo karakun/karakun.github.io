@@ -2,7 +2,7 @@
 layout: talk
 title: OpenWebStart 1.2 - Webinar
 speakers: hendrik
-summary: >
+excerpt: >
   Besides new functionalities and improvements, version 1.2 of OpenWebStart will
   come with a new layout which aligns with the new look and feel of the OWS
   website. Most of the new functionalities will be discussed in this session.
