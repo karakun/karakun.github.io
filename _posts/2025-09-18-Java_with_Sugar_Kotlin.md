@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 'Java with Sugar: Why Kotlin Is More than Cotton Candy on a Stick'
-seo_title: "Kotlin 2.0 & K2 Compiler: Bridging Java and Multiplatform"
 authors: [ 'iryna' ]
 featuredImage: Kotlin_Java_with_Sugar
 excerpt: "Kotlin 2.0 marks a turning point with the K2 compiler, multiplatform capabilities, and advanced features that go beyond “Java with sugar.” Discover how Kotlin bridges gaps in the Java ecosystem, boosts developer productivity, and sets the course for the future of JVM and cross-platform development."
