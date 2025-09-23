@@ -9,7 +9,13 @@
     <meta property="og:image" content="{{ site.url }}/assets/images/raccoon.png" />
   {%- endif -%}
 
-  {%- seo -%}
+  {%- if page.seo_title -%}
+    <title>{{ page.seo_title }}</title>
+    {%- seo title=false -%}
+  {%- else -%}
+    {%- seo -%}
+  {%- endif -%}
+
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="manifest" href="/manifest.json">
 

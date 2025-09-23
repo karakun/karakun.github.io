@@ -39,6 +39,7 @@ kramdown:
   syntax_highlighter: rouge
   input: GFM
 plugins:
+  - jekyll-seo-tag
   - jekyll-feed
   - jekyll-paginate
 
