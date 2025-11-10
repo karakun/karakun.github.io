@@ -11,7 +11,7 @@ header:
   image: 'books'
 ---
 
-Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. With **Spring AI**, however, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing real-world lessons learned. The interface is out of scope for this article.
+Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. With **Spring AI**, however, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing real-world lessons learned. The interface is not covered in this article.
 
 ## 1. The Idea: Let the AI Build Your Request Objects
 
