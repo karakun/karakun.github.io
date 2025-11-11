@@ -3,7 +3,7 @@ layout: post
 title: 'Retrofitting an Existing Spring Application with AI Capabilities Using Spring AI'
 authors: [ 'Hannes' ]
 featuredImage: 'RetrofittingAI'
-excerpt: 'Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. With Spring AI, however, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate AI-based request generation for an existing search API, focusing on structured outputs, tooling, and validation, while discussing real-world lessons learned.'
+excerpt: 'Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate AI-based request generation for an existing search API, focusing on structured outputs, tooling, and validation, while discussing real-world obstacles.'
 permalink: '/2025/12/15/Retrofitting-AI.html'
 categories: [ Ai, Nlp, Java, Spring, Spring boot, Search ]
 header:
@@ -11,7 +11,7 @@ header:
   image: 'books'
 ---
 
-Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. With **Spring AI**, however, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing real-world lessons learned. The interface is not covered in this article.
+Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing real-world obstacles.
 
 ## 1. The Idea: Let the AI Build Your Request Objects
 
@@ -102,11 +102,11 @@ public class AiPromptAssistanceService {
 This example uses the Spring AI fluent API. The LLM receives a system prompt describing how to construct a valid `SearchRequestModel`.
 The `.entity(SearchRequestModel.class)` call ensures the response is automatically deserialized and validated against the record definition.
 
-**Note:** The actual system prompt used contains many more instructions and restrictions for the LLM, such as “DO NOT invent or change filter values.” I have kept it brief for this article.
+**Note:** The actual system prompt most likely contains many more instructions and restrictions for the LLM, such as “DO NOT invent or change filter values.” I have kept it brief for this article.
 
 ## 4. Adding Domain-Specific Tools
 
-The `@Tool` annotation turns normal Spring beans into callable LLM functions. Here, two tools support validation and controlled value selection.
+The `@Tool` annotation turns normal Spring beans into callable LLM functions. In this example, two tools support validation and controlled value selection.
 
 ```java
 package com.karakun.hibu.promtassistance;
@@ -223,3 +223,10 @@ Adding AI features on top of existing systems provides several advantages:
 * Test, observe, and iterate - AI integration is not a one-time setup but a living process.
 
 By combining Spring AI, careful tool definitions, and disciplined validation, teams can extend legacy systems with intelligent interfaces while maintaining technical and business stability.
+
+## 8. We Are Here to Help
+
+Integrating AI into existing software ecosystems requires more than technical know-how. It takes experience in balancing architecture, maintainability, and business goals.  
+At **Karakun**, we help organizations analyze their current solutions and design the best way to integrate AI - whether that means lightweight retrofitting, full-stack modernization, or targeted use of AI capabilities.
+
+If you are exploring how to bring intelligent features into your existing systems, reach out to us. Together we can identify where AI delivers real value without disrupting what already works.
