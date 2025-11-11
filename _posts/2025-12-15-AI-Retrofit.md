@@ -27,6 +27,8 @@ This approach bridges free-text prompts with typed data structures, enabling hum
 
 ## 2. Technology Setup
 
+For this article, we use our own [HIBU platform](https://hibu-platform.com/en/home/) as an example. HIBU provides an API library that includes request and response classes annotated with OpenAPI metadata, which makes it well suited for generating structured outputs.
+
 ### Gradle Dependencies
 
 You can retrofit without heavy dependencies, provided your project already runs on **Spring Boot 3.x** (required for Spring AI).
