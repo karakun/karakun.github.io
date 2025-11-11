@@ -102,7 +102,8 @@ public class AiPromptAssistanceService {
 ```
 
 This example uses the Spring AI fluent API. The LLM receives a system prompt describing how to construct a valid `SearchRequestModel`.
-The `.entity(SearchRequestModel.class)` call ensures the response is automatically deserialized and validated against the record definition.
+The `.entity(SearchRequestModel.class)` call ensures the response is automatically deserialized and validated against the record definition. 
+For this, Spring AI processes existing annotations like `@Nullable`, `@Schema`, `@JsonProperty`, and many more. 
 
 **Note:** The actual system prompt most likely contains many more instructions and restrictions for the LLM, such as “DO NOT invent or change filter values.” I have kept it brief for this article.
 
