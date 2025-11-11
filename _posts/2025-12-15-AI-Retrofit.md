@@ -212,7 +212,7 @@ Adding AI features on top of existing systems provides several advantages:
 
 ### Practical Constraints
 
-* Spring Boot 3.x required: Spring AI only supports applications running on the latest generation. Legacy projects may require upgrade work before integration.
+* Spring Boot 3.x required: Spring AI only supports applications running on the latest generation. Legacy projects may require upgrade work before integration or maintain such a retrofitting component in a separate module/project.
 * Validation tools improve reliability: Without them, structured output tends to break on minor syntax issues.
 * Model selection and cost: Smaller models like gpt-4.1-mini often suffice. Larger ones may be cost-prohibitive for frequent use.
 * Testing discipline: Because LLMs behave probabilistically, regression tests are critical to detect subtle prompt changes or API behavior shifts. At Karakun, we are currently introducing tool support to facilitate testing across multiple models and maintain a library of best practices for prompts.
