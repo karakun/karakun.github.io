@@ -4,7 +4,7 @@ title: 'EncryptedFileChannel - Transparent Encryption for Java NIO'
 authors: [ 'Hannes' ]
 featuredImage: 'EncryptedFileChannel'
 excerpt: 'This article introduces EncryptedFileChannel, a drop-in replacement for Java’s FileChannel that transparently encrypts and decrypts data using Google Tink. It demonstrates how to integrate strong, authenticated encryption into existing Java I/O code without refactoring application logic. A lightweight reminder for developers: don’t roll your own crypto!'
-permalink: '/2025/11/01/EncryptedFileChannel.html'
+permalink: '/2025/12/01/EncryptedFileChannel.html'
 categories: [ Java, Security ]
 header:
   text: EncryptedFileChannel - Transparent Encryption for Java NIO
