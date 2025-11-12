@@ -90,7 +90,7 @@ public class AiPromptAssistanceService {
                     Task: Given a user prompt, produce a SearchRequest JSON for our search API.
                     Use synonyms and simple_query_string syntax for "query".
                     Allowed filter fields: {filterFields}
-                    Use the tools to fetch keyword filters and validate the result object.
+                    Use the tools to fetch keyword filter values and validate the result object.
                     """
                 )
                 .param("filterFields", String.join(",", facetFields))
