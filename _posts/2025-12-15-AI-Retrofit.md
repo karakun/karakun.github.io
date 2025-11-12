@@ -3,7 +3,7 @@ layout: post
 title: 'Retrofitting an Existing Spring Application with AI Capabilities Using Spring AI'
 authors: [ 'Hannes' ]
 featuredImage: 'RetrofittingAI'
-excerpt: 'Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate AI-based request generation for an existing search API, focusing on structured outputs, tooling, and validation, while discussing real-world obstacles.'
+excerpt: 'Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched.'
 permalink: '/2025/12/15/Retrofitting-AI.html'
 categories: [ Ai, Nlp, Java, Spring, Spring boot, Search ]
 header:
@@ -11,7 +11,10 @@ header:
   image: 'books'
 ---
 
-Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing real-world obstacles.
+Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. 
+
+
+This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing some real-world obstacles. This example represents a simpler case where tool calls are fast and have no side effects. It allows us to focus on the interaction between the LLM, the tools, and the structured output without introducing external dependencies, complex state handling, or repeated tool calls.
 
 ## 1. The Idea: Let the AI Build Your Request Objects
 
@@ -31,7 +34,7 @@ For this article, we use our own [HIBU platform](https://hibu-platform.com/en/ho
 
 ### Gradle Dependencies
 
-You can retrofit without heavy dependencies, provided your project already runs on **Spring Boot 3.x** (required for Spring AI).
+You can retrofit without heavy dependencies, provided your project already runs on **Spring Boot 3.x** (required for Spring AI) or you are maintaining this code in a separate module/project.
 
 ```groovy
 dependencies {
@@ -229,7 +232,10 @@ By combining Spring AI, careful tool definitions, and disciplined validation, te
 
 ## 8. We Are Here to Help
 
+While this example keeps things simple with side-effect-free tool calls, real-world applications often involve more complex integrations.
 Integrating AI into existing software ecosystems requires more than technical know-how. It takes experience in balancing architecture, maintainability, and business goals.  
+
+
 At **Karakun**, we help organizations analyze their current solutions and design the best way to integrate AI - whether that means lightweight retrofitting, full-stack modernization, or targeted use of AI capabilities.
 
 If you are exploring how to bring intelligent features into your existing systems, reach out to us. Together we can identify where AI delivers real value without disrupting what already works.
