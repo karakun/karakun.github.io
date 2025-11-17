@@ -6,7 +6,7 @@ description: 'Combine document search with RAG to boost accuracy and efficiency.
 authors: [ 'holger' ]
 featuredImage: knowledgemanagement
 excerpt: "Combining document search with generative AI improves information-retrieval efficiency for knowledge workers. This article explores why neither search nor chat alone is enough - and how using both provides clearer answers, greater control, and faster access to the information people need."
-permalink: '/2025/11/26/Search-and-Chat.html'
+permalink: '/2025/11/18/Search-and-Chat.html'
 categories: [ HIBU, RAG, LLM, AI, Document Search ]
 header:
   text: 'Why Knowledge Workers Need Both Search and Chat'
