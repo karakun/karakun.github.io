@@ -13,7 +13,7 @@ header:
   image: 'security'
 ---
 
-In 2025, secure local storage is a critical requirement for systems handling regulated or privacy-sensitive data, especially when built on Lucene or Java NIO. 
+In 2025, secure local storage is more than ever a crucial requirement for systems that process regulated or privacy-sensitive data. 
 EncryptedFileChannel matters because it adds transparent, authenticated encryption to existing applications without architectural changes, using modern 
 cryptographic primitives from Google Tink. It allows teams to harden storage security with minimal code impact while maintaining full compatibility with 
 established Java I/O workflows.
