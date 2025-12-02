@@ -5,7 +5,7 @@ seo_title: 'EncryptedFileChannel: Transparent Java NIO Encryption'
 description: 'EncryptedFileChannel adds transparent, authenticated Java NIO encryption using Google Tink…'
 authors: [ 'Hannes' ]
 featuredImage: 'EncryptedFileChannel'
-excerpt: 'Discover how EncryptedFileChannel delivers transparent, authenticated Java NIO encryption for Lucene and other storage-heavy systems using Google Tink — without refactoring existing code.'
+excerpt: 'Discover how EncryptedFileChannel delivers transparent, authenticated Java NIO encryption for Lucene and other storage-heavy systems using Google Tink - without refactoring existing code.'
 permalink: '/2025/12/01/EncryptedFileChannel.html'
 categories: [ Java, Security ]
 header:
@@ -118,6 +118,23 @@ We use **AES-256-GCM** for encryption and **HKDF-SHA256** for key derivation - a
 Unfortunately, this uses a method that is now deprecated. The more modern approach would be to use a KeysetHandle instead of byte[] and generate the StreamingAead from it.
 
 # <a name="usage"></a> Usage Example: Secure Java FileChannel
+
+### Gradle Integration
+
+```groovy
+repositories {
+    maven {
+        url "https://nexus.karakun.com/repository/maven-public-releases/"
+    }
+}
+
+dependencies {
+    implementation 'com.karakun:encrypted-filechannel:2.1.0'
+}
+```
+Of course, it can also be integrated into Maven with the appropriate syntax.
+
+### Read and Write Channel
 
 You can open and use `EncryptedFileChannel` almost exactly like a normal `FileChannel`:
 
