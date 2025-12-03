@@ -7,7 +7,7 @@ authors: [ 'Hannes' ]
 featuredImage: 'EncryptedFileChannel'
 excerpt: 'Discover how EncryptedFileChannel delivers transparent, authenticated Java NIO encryption for Lucene and other storage-heavy systems using Google Tink - without refactoring existing code.'
 permalink: '/2025/12/01/EncryptedFileChannel.html'
-categories: [ Java, Security ]
+categories: [ Java, Security, Open source ]
 header:
   text: EncryptedFileChannel - Transparent Encryption for Java NIO
   image: 'security'
@@ -35,7 +35,7 @@ established Java I/O workflows.
 
 ---
 
-This article introduces EncryptedFileChannel, a drop-in replacement for Java’s FileChannel that transparently encrypts and decrypts data using Google Tink. It demonstrates how to integrate strong, authenticated encryption into existing Java I/O code without refactoring application logic. A lightweight reminder for developers: **don’t roll your own crypto!**
+This article introduces EncryptedFileChannel, an open source drop-in replacement for Java’s FileChannel that transparently encrypts and decrypts data using Google Tink. It demonstrates how to integrate strong, authenticated encryption into existing Java I/O code without refactoring application logic. A lightweight reminder for developers: **don’t roll your own crypto!**
 
 When working on a custom **Apache Lucene Store plugin**, we needed to write Lucene’s **index** and **transaction log (translog)** files in an encrypted form - without changing Lucene’s logic or APIs.
 Lucene’s I/O layer expects to interact with a plain `java.nio.channels.FileChannel`. So we built a **drop-in replacement**: [EncryptedFileChannel](https://github.com/karakun/encrypted-filechannel).
@@ -196,7 +196,7 @@ This design choice gives us both flexibility and safety.
 `EncryptedFileChannel` is a small but powerful utility:
 It lets you bring **transparent, authenticated encryption** into any Java NIO–based system, including Lucene, without rewriting application logic.
 
-You can find the source and tests on GitHub:
+You can find the source and tests on GitHub ([MPL-2.0 license](github.com/karakun/encrypted-filechannel?tab=MPL-2.0-1-ov-file#readme)):
 [karakun/encrypted-filechannel](https://github.com/karakun/encrypted-filechannel)
 
 If you’re working with sensitive data on disk - and need something light, reliable, and open - give it a look.
