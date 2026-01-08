@@ -329,7 +329,7 @@ article.post {
     }
     a {
         text-decoration: underline;
-        &:hover{
+        &:hover, &.button, &.tag {
             text-decoration: none;
         }
     }
