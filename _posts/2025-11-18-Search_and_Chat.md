@@ -22,7 +22,7 @@ scales as an enterprise search and knowledge management strategy.
 
 ---
 
-# Article Navigation
+## Article Navigation
 * [Traditional Document Search: How It Works](#search)
 * [Information Retrieval with Generative AI (GenAI)](#InformationRetrieval)
 * [Retrieval-Augmented Generation (RAG) Explained](#RAG)
@@ -59,7 +59,7 @@ For a knowledge worker, the decision should not be between search or chat – it
 
 But to get there, let’s first look at how both approaches look independently.
 
-# <a name="search"></a> Traditional Document Search: How It Works
+## <a name="search"></a> Traditional Document Search: How It Works
 
 Figure 2 illustrates in a simplified way how document search works. On the left is the user request; on the right, the document collection. 
 A search engine connects the two and, given the user request, produces a ranked list of documents taken from the document collection.
@@ -82,7 +82,7 @@ the content, decide if it is relevant, and derive the final answer to their ques
 the user can revise the original search request (keywords and filters) and reassess the updated results. This manual assessment grants 
 maximum control but can be time-consuming.
 
-## <a name="InformationRetrieval"></a>Information Retrieval with Generative AI (GenAI)
+### <a name="InformationRetrieval"></a>Information Retrieval with Generative AI (GenAI)
 
 Advancements in AI and LLMs have drastically transformed information retrieval. LLM-enabled chatbots are not only proficient in 
 understanding and generating text; they also possess extensive world knowledge and even some domain-specific expertise. That is why, when 
@@ -106,7 +106,7 @@ quality of LLM responses tends to degrade as the submitted context grows, even w
 this empirical study: [https://github.com/NVIDIA/RULER](https://github.com/NVIDIA/RULER)). Note that while it is possible to 
 implement a workaround for the limitations in context size, issues with cost and speed will still apply — and may even get worse.
 
-## <a name="RAG"></a> Retrieval-Augmented Generation (RAG) Explained
+### <a name="RAG"></a> Retrieval-Augmented Generation (RAG) Explained
 
 A more robust approach, Retrieval-Augmented Generation, keeps the context small by sending to the LLM not the entire document 
 collection, but only a relevant subset of content. This subset is selected through information retrieval – typically by means of a 
@@ -121,7 +121,7 @@ the user’s perspective, it still feels like chatting directly with the model, 
 
 ![Retrieving information from documents using RAG](/assets/posts/2025-11-26-Search-and-Chat/fig-4.png "Retrieving information from documents using RAG")
 
-## <a name="semanticRAG"></a> Semantic Search in Modern RAG Pipelines
+### <a name="semanticRAG"></a> Semantic Search in Modern RAG Pipelines
 
 Because Figure 4 above gives a simplified account of how a RAG architecture looks, let’s take a closer look at how semantic 
 search is applied here. At its core, semantic search remains a search engine, but it goes beyond keyword matching by processing 
@@ -143,7 +143,7 @@ strategy for the user request, or similarity measures. For instance, vector sear
 to one another, while omitting diverse but relevant information. Reranking, using techniques like Maximum Marginal Relevance (MMR), 
 mitigates this by increasing variation among selected chunks.
 
-## <a name="hybrid"></a> Hybrid Approach: Combining Search and RAG
+### <a name="hybrid"></a> Hybrid Approach: Combining Search and RAG
 
 Even with optimization, the semantic search component in RAG must process a heavy load – especially with very large document 
 collections. A straightforward improvement is to let the user first narrow down the content through traditional document search and 
@@ -173,7 +173,7 @@ and their interpretation.
 * **RAG** provides a natural, conversational interface, supports cross-language processing, is flexible regarding wording (in both the user 
 request and the document content), and can combine information from multiple documents intelligently.
  
-# <a name="conclusion"></a> Conclusion: Search and Chat – The Best of Both Worlds
+## <a name="conclusion"></a> Conclusion: Search and Chat – The Best of Both Worlds
 
 RAG is often seen as replacing traditional document search since both aim to extract specific information from a document collection. 
 However, real-world experience shows that users are best served by a seamless integration of both methods – a hybrid search approach 
@@ -195,5 +195,5 @@ Among these options, users are free to make different choices depending on their
 In essence, combining search and generative AI enables organizations to access knowledge with both human precision and AI-powered 
 reasoning – getting truly the best of both worlds. 
 
-# <a name="cta"></a> Let's connect!
+## <a name="cta"></a> Let's connect!
 Do you have questions about document search, RAG or knowledge management in general? [Feel free to reach out](/people/holger).
