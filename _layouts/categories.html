@@ -2,7 +2,7 @@
 layout: article
 ---
 
-{% assign categories_list = site.categories %}
+{% assign categories_list = site.categories | sort %}
 <div class="field is-grouped is-grouped-multiline">
 {% for category in categories_list %}
   <div class="control">
