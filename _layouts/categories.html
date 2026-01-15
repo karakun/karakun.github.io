@@ -7,16 +7,16 @@ layout: article
 {% for category in categories_list %}
   <div class="control">
     <div class="tags has-addons">
-      <a href="#{{ category[0] | downcase }}" class="tag is-medium is-primary">{{ category[0] | capitalize }}</a>
+      <a href="#{{ category[0] | downcase }}" class="tag is-medium is-primary">{{ category[0] }}</a>
       <a href="#{{ category[0] | downcase }}" class="tag is-medium">{{ category[1].size }}</a>
     </div>
   </div>
 {% endfor %}
 </div>
 
-{% for category in site.categories %}
-  <h3 id="{{ category[0] | downcase }}">{{ category[0] | capitalize }}</h3>
-  <p>The following list contains all articles that are tagged with <span class="tag is-medium">{{ category[0] | capitalize }}</span></p>
+{% for category in categories_list %}
+  <h3 id="{{ category[0] | downcase }}">{{ category[0] }}</h3>
+  <p>The following list contains all articles that are tagged with <span class="tag is-medium">{{ category[0] }}</span></p>
   <ul>
     {% assign pages_list = category[1] %}
     {% for post in pages_list %}

@@ -5,7 +5,7 @@ authors: [ 'iryna' ]
 featuredImage: devoxxuk 
 excerpt: "The Devoxx conference in London was an unforgettable experience that defied the norms of traditional tech events. Its unique blend of high-energy ambience, innovative presentation formats, and the open, interactive nature of its venue created an environment that was as much a celebration as it was an educational opportunity. DevoxxUK stands out not just as a conference but as a vibrant gathering that embodies the spirit of the tech community."
 permalink: '/2024/07/24/devoxxuk.html'
-categories: [Conference, Devoxx]
+categories: [Conferences, Devoxx]
 header:
   text: 'The Developers Community Conference - Devoxx 2024'
   image: post

@@ -6,7 +6,7 @@ featuredImage: whale
 excerpt: 'This post gives an overview how we at Karakun use Docker to create integration tests for 
 JavaEE / JakartaEE based libraries and frameworks.'
 permalink: '/java/docker/integration%20tests/tests/javaee/jakartaee/2019/01/09/integration-docker.html'
-categories: [Java, Docker, Integration Tests, Tests, JavaEE, JakartaEE]
+categories: [Java, Docker, Integration Tests, Testing, Java EE, Jakarta EE]
 header:
   image: post
 ---
