@@ -41,7 +41,7 @@ Luckily, all three organisations really care about open source and therefore it 
 
 As none of the partners was willing or capable of financing all the work required to add the missing features to IcedTeaWeb a search for sponsors was started. The goal was to find companies willing to sponsor parts of the development coast. It was not always easy to convince finance departments why they should be paying for a software that a) is not ready to use and b) is licensed under GPLv2 and therefore free for everybody to use. So for our sponsors it was a prisoners dilemma. Why should they invest for something which is free. But on the other hand, the project could not be realized if nobody invested. As a result, they would need to find a custom solution for their existing applications which depend on WebStart.
 
-# OpenWebStart
+## OpenWebStart
 
 While analyzing the features of IcedTeaWeb and comparing them with the needs of the companies sponsoring the work we noticed a gap. IcedTeaWeb was mostly designed with a normal end user in mind. But companies have very different requirements. E.g. they want a simple mechanism to roll out an application to many computers or they want to control which application can be started on a computer. Thus, we decided to start a second project on top of IcedTeaWeb: and this is how [OpenWebStart](https://openwebstart.com/) was born.
 
@@ -57,11 +57,11 @@ With the 1.0 release of OpenWebStart some weeks ago, developers can now choose i
 
 Thanks to [the sponsors](https://openwebstart.com/sponsors/) that liked the idea of a solid open source replacement of Oracle WebStart, we were able to polish the IcedTeaWeb code and shift it’s quality and feature-set to a new level next to implementing new native features in OpenWebStart. With IcedTeaWeb and OpenWebStart user now have 2 open source solutions that allow them to continue the usage of JNLP based applications. While some features are still in development, we already received a lot of positive feedback from the developer community.
 
-# The future of WebStart
+## The future of WebStart
 
 Don’t get this wrong. Nobody is trying to sell WebStart as the next big thing in the Java ecosystem. For us it was important to support companies and developers in doing a planned and controlled migration away from WebStart to other technologies. By having a working open source solution that will stay for the next years, companies will have time to find solutions and workflows to install, update and execute Java desktop integration. With the JavaPackager the OpenJDK will contain a tool to create native applications from Java in the near future. While this tool does not provide all functionalities that WebStart offers – and that are needed for desktop integration from our point of view – the Java community has won some time to create a real successor that might help to bring more Java applications to the desktop.
 
-# Our learning
+## Our learning
 
 Besides all the technical details and Java specific quirks we had two very insightful learnings:
 

@@ -17,7 +17,7 @@ and [ChatGPT](https://chatgpt.com){:target="_blank" rel="noopener"} are availabl
 Know what? Even in 2024, attending a conference offers tons of advantages. Meet experts in person, learn from and get inspired by their expert knowledge and experience, build your professional network, or share your 
 experiences with like-minded developers. You will also meet people with innovative and unusual business experiences and ideas. That's why we endeavour to report on a Java conference with a unique community feeling.
 
-# Development and the history of the Devoxx UK
+## Development and the history of the Devoxx UK
 "To understand the history of [Devoxx UK](https://www.devoxx.co.uk){:target="_blank" rel="noopener"}, you first need to go back", laughingly said Kim Fletcher, the Head of Event Operations, to me. The Developers Community 
 Conference Devoxx, formerly Javapolis, has come a long way since its inception. Initially created by Stephan Janssen and run in collaboration with the [Belgian Java User Group](https://bejug.github.io){:target="_blank" rel="noopener"} 
 in 2002. Surpassing expectations, the conference gained a very high level of participation, and its popularity grew steadily. By 2006, it was the largest vendor-neutral Java-focused event in the world, with 2,800 attendees.
@@ -37,7 +37,7 @@ The global Covid pandemic did not stop on Devoxx UK as the event has had to be c
 Devoxx UK has comprised Mark Hazell, Kim Fletcher, Dan Hardiker, Sam Hepburn and Ana-Maria Mihalceanu, who put their hearts and souls into managing the conference event, the community, the social events, inviting 
 exceptional keynote speakers, and organizing the programme committee.
 
-# Java Conference with a unique Community feeling
+## Java Conference with a unique Community feeling
 The Devoxx conference in London left a lasting impression on me, feeling more like an exhilarating party than a conventional conference. The atmosphere was high-energy, cool, and relaxed, marked by a free-spirited 
 vibe and friendly, eye-to-eye conversations, even with high-level industry players. The event location, a vast, impressive, and restructured market hall, was expansive and open, facilitating easy interaction.
 
@@ -50,7 +50,7 @@ event. An official pub event featuring tech karaoke, added to the unique enviro
 All in all, the Devoxx conference was a breath of fresh air in today's IT, offering knowledgeable perspectives, unlikely entertainment and diverse social opportunities. This extraordinary conference has definitely 
 left a lasting impression on many participants, as it has on me.
  
-# Conclusion
+## Conclusion
 Next time you're asking yourself why you should consider attending a Java conference in the year 2024, please keep in mind the strong influence of a supportive and friendly professional community on performance 
 and well-being, you can meet it with participation, inspiration and support. Connecting to the developer community and IT professionals, those with whom we share interests, experiences, and a common path, not 
 only makes us feel better and the world a better place. They help you perform better and the satisfaction with one's own activity is increased, too. Nothing can replace an in-person connection. As a developer, 

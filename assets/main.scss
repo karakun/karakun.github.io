@@ -231,7 +231,6 @@ h5 {
 h1, h2, h3, h4, h5 {
     line-height: 1;
     margin-bottom: 0.5em;
-    margin-top: 1.5em;
     font-family: 'Encode Sans', sans-serif;
     font-weight: bold;
 }
@@ -326,6 +325,12 @@ article.post {
             margin: 0 auto;
             display: block;
             width: 100%;
+        }
+    }
+    a {
+        text-decoration: underline;
+        &:hover, &.button, &.tag {
+            text-decoration: none;
         }
     }
     .embed-container {

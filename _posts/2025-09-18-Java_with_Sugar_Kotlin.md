@@ -20,7 +20,7 @@ coming decade.
 
 ---
 
-# Article Navigation
+## Article Navigation
 * [The History Behind Kotlin's Genesis](#history)
 * [Multiplatform Wunderkind: Kotlin Beyond Android](#multiplatform)
 * [The K2 Compiler Technology and FIR](#K2)
@@ -47,7 +47,7 @@ reflection and continuous effort in further development and optimization are the
 That's why the [VirtualJUG](https://www.meetup.com/virtualjug/) session made me as a Java developer so curious! So let’s take a 
 deep dive in this article at what Kotlin actually has to offer.
 
-# <a name="history"></a> The History Behind Kotlin’s Genesis
+## <a name="history"></a> The History Behind Kotlin’s Genesis
 The mood in the Java community in 2010 was mixed. When Oracle acquired Sun Microsystems in 2010, there were concerns about a loss 
 in control, possible changes to the open source strategy, and the impact on OpenJDK and the freedom of the community. Some saw 
 opportunities in more stable investments and resources, while others feared restrictions on patents, license models, and the 
@@ -93,7 +93,7 @@ Java platform at the time. In February 2012, JetBrains made the project availabl
 license. On 15th February 2016, Kotlin reached its 1.0 release. The 1.2 release followed in November 2017. A team of nearly 
 150 developers contributed to the development of Kotlin.
 
-# <a name="multiplatform"></a> Multiplatform Wunderkind: Kotlin Beyond Android
+## <a name="multiplatform"></a> Multiplatform Wunderkind: Kotlin Beyond Android
 Kotlin is mainly known as a JVM language for backend services. In the meantime, it has become the standard language for 
 Android app development. Together with Jetpack Compose, for example, you can also design the frontend and UI. But that’s 
 not all, because there is also Kotlin Multiplatform. With it, you can use the same code for Android, iOS, all JVM platforms 
@@ -107,7 +107,7 @@ maintenance effort, as schemas only need to be implemented once and can then be 
 Kotlin language and the Kotlin Multiplatform technology extremely attractive. JetBrains provides a robust ecosystem, including 
 Ktor, Coroutines, and many other tools facilitating the development of scalable applications.
 
-# <a name="K2"></a>The K2 Compiler Technology and FIR
+## <a name="K2"></a>The K2 Compiler Technology and FIR
 Technically, the development of the new compiler frontend was one of the biggest challenges on the path to the development 
 of a new compiler technology. Let’s take a look into the road to the K2 compiler and scratch on the surface of its magic.
 
@@ -144,7 +144,7 @@ same FIR as input and share the same IR.
 On 21st May 2024, Kotlin 2.0, with the K2 at its heart, was released. The release delivered better performance and stabilization 
 of the language features across multiple compilation targets.
 
-# <a name="features"></a> The Pragmatism at Its Heart: Key Kotlin Features
+## <a name="features"></a> The Pragmatism at Its Heart: Key Kotlin Features
 The list of distinguished and advanced features in Kotlin is long, e.g., lambda expressions, inline functions, null safety, 
 string templates, operator overloading, to name just a few. Although string templates are also supported by Java 21, and Java, 
 for its part, also has features that Kotlin does not—Kotlin still has a lot to offer. The following language features are 
@@ -184,7 +184,7 @@ makes assignments concise and readable.
 Interested readers are referred to the official overview page: [https://kotlinlang.org/docs/comparison-to-java.html#what-java-has-that-kotlin-does-not](https://kotlinlang.org/docs/comparison-to-java.html#what-java-has-that-kotlin-does-not){:target="_blank" rel="noopener"}. 
 These sugared features combined together allow for more pragmatic and flexible work with your code base.
 
-## <a name="kotlin-java"></a> Kotlin vs Java: Interoperability and Syntax Differences
+### <a name="kotlin-java"></a> Kotlin vs Java: Interoperability and Syntax Differences
 Kotlin was designed as a pragmatic language that improves upon Java without replacing it. Thanks to 99% interoperability, 
 developers can mix Kotlin and Java code within the same project, making adoption incremental rather than disruptive. The most 
 visible Kotlin vs Java syntax differences are reduced boilerplate, null safety, extension functions, and more concise data 
@@ -192,7 +192,7 @@ structures. For example, Kotlin eliminates the need for verbose getters and sett
 pitfalls such as NullPointerException through its strict null-safety system. These differences give Kotlin a modern and 
 expressive style, while still leveraging the stability and ecosystem of the JVM.
 
-# <a name="roadmap"></a> What to Expect in the Near Future of Kotlin
+## <a name="roadmap"></a> What to Expect in the Near Future of Kotlin
 It is worth getting to know this exciting programming language and at least taking a look at it. Additionally, there are 
 many ways and possibilities to get involved in the Kotlin Open Source Community. Visit [https://www.jetbrains.com/opensource/kotlin/](https://www.jetbrains.com/opensource/kotlin/){:target="_blank" rel="noopener"}
 for more information. As the further development of Kotlin continues steadily, the next Kotlin features will be union types 
@@ -200,24 +200,24 @@ for errors, the introduction of context parameters, and effect system capabiliti
 of Kotlin, according to the roadmap 2025, will also include more features for working with data, as well as stronger 
 abstractions and improvements in the type system. Let’s wait for it!
 
-# <a name="conclusion"></a> Conclusion
+## <a name="conclusion"></a> Conclusion
 Kotlin has grown from a pragmatic addition to the JVM into a modern, multiplatform language with advanced compiler technology 
 and strong community support. With Kotlin 2.0 and the K2 compiler, it continues to improve performance and developer 
 productivity while extending its reach across platforms. Far beyond being just “Java with sugar,” Kotlin has established 
 itself as one of the most important programming languages for the coming decade.
 
-# <a name="jetbrains"></a> Notes on JetBrains and the Kotlin Community
+## <a name="jetbrains"></a> Notes on JetBrains and the Kotlin Community
 In response to Russia's invasion of Ukraine, JetBrains—now headquartered in Prague and central to the Kotlin community—has 
 suspended sales and research & development activities in Russia, as well as sales in Belarus, for an indefinite period. The 
 company condemns the aggression and supports the people of Ukraine, including its own colleagues and their families. 
 JetBrains has liquidated its Russian subsidiary and relocated many of its employees from Russia to Europe to continue operations.
 
-# <a name="cta"></a> Let's connect!
+## <a name="cta"></a> Let's connect!
 Do you have questions about Kotlin 2.0, Multiplatform, or the K2 compiler? Or would you like to share your own experiences 
 with Kotlin vs Java? [Feel free to reach out](mailto:iryna.dohndorf@karakun.com?subject=[Karakun%20DevHub]%20Kotlin%20Article). 
 I look forward to exchanging ideas with the community.
 
-# <a name="references"></a> References
+## <a name="references"></a> References
 
 1. Alexey Soshin; Anton Arhipov, Kotlin Design Patterns and Best Practices: Build scalable applications using traditional, reactive, and concurrent design patterns in Kotlin, Packt Publishing, 2022.
 2. [https://speakerdeck.com/antonarhipov/virtualjug-kotlin-2-dot-0-and-beyond](https://speakerdeck.com/antonarhipov/virtualjug-kotlin-2-dot-0-and-beyond){:target="_blank" rel="noopener"}
