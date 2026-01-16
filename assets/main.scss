@@ -294,15 +294,15 @@ p {
 
     .pagefind-ui {
         --pagefind-ui-scale: 1;
-        --pagefind-ui-primary: $karakun-main-color;
+        --pagefind-ui-primary: #69C86C;
         --pagefind-ui-text: #393939;
         --pagefind-ui-background: white;
-        --pagefind-ui-border: $grey-light;
-        --pagefind-ui-tag: $grey-light;
+        --pagefind-ui-border: #a5afb0;
+        --pagefind-ui-tag: #69C86C;
         --pagefind-ui-border-width: 1px;
         --pagefind-ui-border-radius: 0.5rem;
         --pagefind-ui-image-border-radius: 0.5rem;
-        --pagefind-ui-image-box-ratio: 3 / 5;
+        --pagefind-ui-image-box-ratio: 3 / 2;
         --pagefind-ui-font: 'Open Sans', sans-serif;
 
         .pagefind-ui__form {
@@ -326,7 +326,7 @@ p {
             }
         }
 
-        .pagefind-ui__drawer .pagefind-ui__results-area {
+        .pagefind-ui__drawer  {
             position: absolute;
             z-index: 1000;
             width: 40em;
@@ -335,6 +335,7 @@ p {
             background: $white;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
             margin-top: auto;
+            gap: normal;
 
             @include mobile {
                 width: inherit;
@@ -343,8 +344,19 @@ p {
                 width: inherit;
             }
 
-            .pagefind-ui__result, .pagefind-ui__message {
+            .pagefind-ui__filter-panel {
+                min-width: 25%;
+                margin-left: 1em;
+                margin-top:0;
+            }
+            .pagefind-ui__results-area {
+                //max-width: 75%;
+                max-width: 75%;
+                margin-top: 0;
+            }
+            .pagefind-ui__result, .pagefind-ui__message, .pagefind-ui__filter-block {
                 padding: 1em;
+                border-bottom: none;
             }
         }
     }
