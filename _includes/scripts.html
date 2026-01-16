@@ -1,3 +1,6 @@
+<link href="/pagefind/pagefind-ui.css" rel="stylesheet">
+<script src="/pagefind/pagefind-ui.js"></script>
+
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -25,4 +28,16 @@ if ($navbarBurgers.length > 0) {
 }
 
 });
+
+    window.addEventListener('DOMContentLoaded', (event) => {
+    new PagefindUI({
+        element: "#search",
+        showSubResults: true,
+        translations: {
+            placeholder: "Search in DevHub",
+            clear_search: "X"
+        }
+    });
+});
+
 </script>
