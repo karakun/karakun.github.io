@@ -18,7 +18,7 @@ A recording of this session is available on the [Karakun YouTube channel](https:
 
 This article presents the main points and conclusions in case you do not have time to watch the full video (55 min).
 
-# What should you log?
+## What should you log?
 
 Before we examine how to log, we need to talk about what to log.
 This question is not trivial and there is no black and white.
@@ -32,7 +32,7 @@ A logging concept should at least touch the following points:
 * what information NOT to extract
 * the differences of logging in production/test/development
 
-# What are the benefits of logging?
+## What are the benefits of logging?
 
 Loggers can be seen as a pattern to solve a common problem in software.
 The following image provides an overview of the different parts a typical logging library contains.
@@ -51,7 +51,7 @@ All of this is possible because a log message is not a string but a complete obj
 This allows to add and process metadata about the message.
 This metadata is used in every step and may even be written in the final storage making it available for future analysis.
 
-# Which logger is the right one for me?
+## Which logger is the right one for me?
 
 Well, roughly speaking: it depends.
 If you develop a small library with (almost) no dependencies using Java 9 or greater, you should have a look at the [System.Logger](https://docs.oracle.com/javase/9/docs/api/java/lang/System.Logger.html) which is part of the JDK since Java 9.
@@ -65,7 +65,7 @@ This allows for smoother integration in modern applications.
 Finally, if you like to be an oddball and support small project teams which offer an awesome niche product, have a look at [tinylog](https://tinylog.org/v2/).
 It is very fast, simple, and clean to use but lacks some of the features big libraries offer.
 
-# How to combine logs
+## How to combine logs
 
 In a typical modern application, log messages come from many places.
 While some are sent from your business logic, others originate in a library you use.
@@ -73,14 +73,14 @@ Some come from a third-party application, or the environment your application is
 There are two main concepts to talk about that help you keep track of this flood of messages.
 If you are currently not using both of them, it may just be the right time to take a closer look at the opportunities you are missing out on.
 
-## Logging Facades
+### Logging Facades
 
 A logging facade captures the messages from different logging frameworks within your application.
 All of these messages are then routed to a central appender and written to a common log for your application.
 
 ![Logging Facade Diagram](/assets/posts/2021-06-02-use-a-logger/logging-facade.png)
 
-## Centralized Logging
+### Centralized Logging
 
 With the rise of microservices, distributed applications, and containerized production environments, the need to see beyond the border of your application arose.
 It is no longer sufficient to look at the log of an application in isolation.

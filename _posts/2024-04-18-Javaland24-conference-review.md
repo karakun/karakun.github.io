@@ -5,7 +5,7 @@ authors: [ 'ixchel' ]
 featuredImage: javaland-review
 excerpt: "From the 9th to the 11th of April, JavaLand celebrated its tenth anniversary with a grand event at the iconic Nürburgring in the Eifel region of Germany. The event saw an impressive turnout of over 1,440 attendees, making it a truly memorable occasion for all in attendance."
 permalink: '/2024/04/18/javaland24-review.html'
-categories: [ Javaland, Conference ]
+categories: [ Javaland, Conferences ]
 header:
   text: 'JavaLand 2024: A review'
   image: post

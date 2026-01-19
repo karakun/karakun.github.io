@@ -66,7 +66,7 @@ The first example is about the fact that not all documents in the result set are
 
 As the second example, consider that the DPO typically needs to produce some kind of report describing, at the required level of abstraction, the types of personal data the organization has stored about the given person. There might even be the need to create two report types: an internal one (e.g., for auditing purposes) and an external one (to be shared with the given person). The PID Cockpit allows the user to generate either type of report by simply clicking a button.
 
-# Conclusion
+## Conclusion
 The PID Cockpit is a vital tool for organizations seeking to comply with data protection regulations, including GDPR and Switzerland's new data protection law.
 
 Organizations are well advised to store personal data only electronically – and in as few different software systems as possible without compromising their business needs. Moreover, organizations expecting more than a handful of requests for information per year should consider using a software tool to assist their DPO in processing these requests and to ensure timely, accurate, and compliant responses. This paper described a general strategy for building a suitable software tool like Karakun's [PID Cockpit](https://pidcockpit.com).
