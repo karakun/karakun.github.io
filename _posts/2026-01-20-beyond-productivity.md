@@ -1,15 +1,15 @@
 ---
 layout: post
-title: 'Devoxx Morocco 2025: A Java Conference with a Unique Community Spirit'
-seo_title: 'Devoxx Morocco 2025: A Unique Java Conference Experience'
-description: 'Experience Devoxx Morocco 2025, the leading Java conference in MEA, offering expert talks, rich community exchange, and unforgettable cultural experiences in Marrakech.'
+title: 'Beyond Productivity: The Psychological, Social, and Ethical Impact of AI Coding Assistants'
+seo_title: 'Beyond Productivity'
+description: 'A report on biases, psychological and ethical impacts when working with ai coding assistants.'
 authors: [ 'iryna' ]
-featuredImage: devoxxma
-excerpt: "Devoxx Morocco is a community-driven Java conference in the MEA region. In 2025, it offered eight tracks, strong networking, and a unique setting in Marrakech. A review."
-permalink: '/2025/12/18/DevoxxMA.html'
-categories: [ Conferences, Devoxx, Java, Community, Tech ]
+featuredImage: todo
+excerpt: ""
+permalink: '/2026/01/20/BeyondProductivity.html'
+categories: [ AI, ethics, biases, security, safety, Tech ]
 header:
-  text: 'Devoxx Morocco 2025 - a review.'
+  text: 'Beyond Productivity 2026 - a biases review.'
   image: post
 ---
 
