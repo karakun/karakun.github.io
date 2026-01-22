@@ -4,10 +4,10 @@ title: 'Beyond Productivity: The Psychological, Social, and Ethical Impact of AI
 seo_title: 'AI Coding Assistants: Bias, Misconceptions, and Privacy Risk'
 description: 'AI coding assistants improve developer productivity but can reinforce misconceptions, trigger competence penalties, and raise privacy risks in software teams.'
 authors: [ 'iryna' ]
-featuredImage: AI
+featuredImage: productivity
 excerpt: "AI coding assistants boost productivity and remove friction, but they also reshape human–AI collaboration, workplace perception, and privacy risk. Here’s what to watch."
 permalink: '/2026/01/27/BeyondProductivity.html'
-categories: [ AI, Ethics, Biases, Security, Safety, Tech ]
+categories: [ AI, Ethics, Security ]
 header:
   text: 'Why AI Coding Assistants Feel So Good — and Why We Should Take a Closer Look'
   image: post
