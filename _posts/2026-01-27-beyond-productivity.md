@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 'Beyond Productivity: The Psychological, Social, and Ethical Impact of AI Coding Assistants'
+title: 'Beyond Productivity: Impacts & Risks of AI Coding Tools'
 seo_title: 'AI Coding Assistants: Bias, Misconceptions, and Privacy Risk'
 description: 'AI coding assistants improve developer productivity but can reinforce misconceptions, trigger competence penalties, and raise privacy risks in software teams.'
 authors: [ 'iryna' ]
@@ -109,8 +109,8 @@ The introduction of role models and joint AI hackathons within the organisation 
 
 ## <a name="misconception"></a> The Next Hidden Trap in AI Coding: Why Your Assistant Might Be Reinforcing Your Misconceptions
 
-Every software developer has introduced bugs for mundane reasons – forgetting to add a test case, calling the wrong method, or missing a boundary condition. 
-These are classic slips of the mind: small oversights that occur even when we understand the problem reasonably well. 
+Every software developer has introduced bugs for mundane reasons – forgetting to add a test case, a condition, or calling the wrong method. 
+These are small oversights that occur even when we understand the problem reasonably well. 
 This is precisely where AI coding assistants excel. 
 They act as a second set of eyes, catching missing checks, inconsistent logic, or obvious implementation errors.
 
@@ -120,17 +120,9 @@ However, there is a more dangerous category of errors – one that AI assistants
 
 A misconception is not a typo, syntax error, or an overlooked edge case. 
 It is a faulty assumption about how a framework, a system, a data structure, or an API works. 
-It occurs when your mental model of the code, commands, or tools is wrong, even though you feel confident in your reasoning.  
+It occurs when your mental model of the code, commands, or tools is wrong, even though you feel confident in your reasoning. This can happen, for example, when assumptions are reused from previous projects that simply do not hold in a new context.
 
-This happens frequently when:
-
-* Switching between programming languages or frameworks with subtly different semantics
-* Working in unfamiliar domains where names, conventions, or abstractions are misleading
-* Reusing assumptions from previous projects that simply do not hold in a new context
-
-Misconceptions are far harder to fix than ordinary bugs. 
-Correcting them requires replacing an entire mental model with a new one – a significant cognitive shift. 
-Even after learning the correct model, developers may revert to the old misconception under time pressure, cognitive load, or familiarity bias.
+Correcting bugs in thinking requires replacing an entire mental model with a new one – a significant cognitive shift, whilst even after learning the correct model, developers may revert to the old misconception under time pressure, cognitive load, or familiarity bias.
 
 *The AI Dynamic: A Cooperative Risk*
 
@@ -214,7 +206,7 @@ Even if the use of such technology can still be ethically justified after weighi
 That price should be openly acknowledged, debated, and – where possible – actively negotiated, rather than silently accepted or surrendered to opaque data-collection practices. 
 
 The same applies to software development. 
-AI tools offer undeniable advantages, but their social, organizational, and ethical implications do not disappear simply because the tools are useful or user-friendly. 
+AI tools offer undeniable advantages, but their social, organizational, and ethical implications do not disappear simply because the tools are useful and user-friendly. 
 Continuous reflection is not a luxury – it is a responsibility.
 
 ## <a name="references"></a> References
