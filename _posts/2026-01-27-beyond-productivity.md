@@ -221,5 +221,5 @@ Continuous reflection is not a luxury – it is a responsibility.
 5. Hermans, Felienne (2021). The Programmer's Brain: What Every Programmer Needs to Know About Cognition. Manning Publications.
 6. Rosengrün Sebastian (2023). Künstliche Intelligenz zur Einführung. Junius Verlag.
 7. Dardikman, Idan (2025, December 15). 8 Million Users' AI Conversations Sold for Profit by "Privacy" Extensions.
-   Koi Research Blog. Available at: [https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection](https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection)
-8. Oguz A. Acar, Phyliss Jia Gai, Yanping Tu and Jiayi Hou (2025, August 1). Research: The Hidden Penalty of Using AI at Work. Harvard Business Review Generative AI. Available at: [https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work](hhttps://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work)
+   Koi Research Blog. [https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection](https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection)
+8. Oguz A. Acar, Phyliss Jia Gai, Yanping Tu and Jiayi Hou (2025, August 1). Research: The Hidden Penalty of Using AI at Work. Harvard Business Review Generative AI. [https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work](https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work)
