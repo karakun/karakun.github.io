@@ -63,7 +63,7 @@ For many, this feels like pair programming without friction or frustration.
 There is no noticeable knowledge gap.
 
 In human pair programming, a gap often can push us out of our comfort zone. 
-With AI, that gap often feels absent because we know we are interacting with a machine, not another human, and therefore do not experience social comparison. 
+With AI, that knowledge gap often feels absent because we should know we are interacting with a machine, not another human, and therefore do not experience social comparison. 
 AI tools typically challenge ideas only when explicitly asked, and they are generally less critical of our decisions. 
 They do not hold genuine opinions, values, or a personality in the way real people do. 
 While certain values and behaviors can be partially simulated through configuration and prompting, this remains fundamentally different from engaging with a human collaborator who brings their own perspective, convictions, and lived experience into the discussion.
@@ -211,8 +211,15 @@ Continuous reflection is not a luxury – it is a responsibility.
 
 ## <a name="references"></a> References
 
-1. Hermans, Felienne (2021). The Programmer's Brain: What Every Programmer Needs to Know About Cognition. Manning Publications.
-2. Rosengrün Sebastian (2023). Künstliche Intelligenz zur Einführung. Junius Verlag.
-3. Dardikman, Idan (2025, December 15). 8 Million Users' AI Conversations Sold for Profit by "Privacy" Extensions.
+1. Xiao, Q., Hu, X. E., Whiting, M. E., Karunakaran, A., Shen, H., & Cao, H. (2025). AI hasn’t fixed teamwork, but it shifted collaborative culture: A longitudinal study in a project-based software development organization (2023–2025). arXiv. [https://arxiv.org/abs/2509.10956](https://arxiv.org/abs/2509.10956)
+
+2. Welter, A., Schneider, N., Dick, T., Weis, K., Tinnes, C., Wyrich, M., & Apel, S. (2025). From developer pairs to AI copilots: A comparative study on knowledge transfer. arXiv. [https://arxiv.org/abs/2506.04785](https://arxiv.org/abs/2506.04785)
+
+3. Apel, S., et al. (2025). Software developers show less constructive skepticism when using AI assistants than when working with human colleagues. The 40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025). Reported by TechXplore (edited by Stephanie Baum, reviewed by Andrew Zinin). [https://techxplore.com/news/2025-11-software-skepticism-ai-human-colleagues.html](https://techxplore.com/news/2025-11-software-skepticism-ai-human-colleagues.html)
+
+4. Dishop, C. R., Brown, A. S., Chao, P. Y., et al. (2025). Machines in the Middle: Using Artificial Intelligence (AI) While Offering Help Affects Warmth, Felt Obligations, and Reciprocity. Journal of Business and Psychology. [https://doi.org/10.1007/s10869-025-10068-x](https://doi.org/10.1007/s10869-025-10068-x)
+5. Hermans, Felienne (2021). The Programmer's Brain: What Every Programmer Needs to Know About Cognition. Manning Publications.
+6. Rosengrün Sebastian (2023). Künstliche Intelligenz zur Einführung. Junius Verlag.
+7. Dardikman, Idan (2025, December 15). 8 Million Users' AI Conversations Sold for Profit by "Privacy" Extensions.
    Koi Research Blog. Available at: [https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection](https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection)
-4. Oguz A. Acar, Phyliss Jia Gai, Yanping Tu and Jiayi Hou (2025, August 1). Research: The Hidden Penalty of Using AI at Work. Harvard Business Review Generative AI. Available at: [https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work](hhttps://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work)
+8. Oguz A. Acar, Phyliss Jia Gai, Yanping Tu and Jiayi Hou (2025, August 1). Research: The Hidden Penalty of Using AI at Work. Harvard Business Review Generative AI. Available at: [https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work](hhttps://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work)
