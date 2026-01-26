@@ -32,8 +32,10 @@ if ($navbarBurgers.length > 0) {
     window.addEventListener('DOMContentLoaded', (event) => {
     new PagefindUI({
         element: "#search",
+        excerptLength: 15,
         showSubResults: false,
         showEmptyFilters: false,
+        openFilters: ['category'],
         showImages: false, // enable to show pictures
         translations: {
             placeholder: "Search in DevHub",
