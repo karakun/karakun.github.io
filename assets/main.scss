@@ -290,6 +290,76 @@ p {
     @include tablet-only {
         min-height: 1em;
     }
+
+
+    .pagefind-ui {
+        --pagefind-ui-scale: 1;
+        --pagefind-ui-primary: #69C86C;
+        --pagefind-ui-text: #393939;
+        --pagefind-ui-background: white;
+        --pagefind-ui-border: #a5afb0;
+        --pagefind-ui-tag: #69C86C;
+        --pagefind-ui-border-width: 1px;
+        --pagefind-ui-border-radius: 0.5rem;
+        --pagefind-ui-image-border-radius: 0.5rem;
+        --pagefind-ui-image-box-ratio: 3 / 2;
+        --pagefind-ui-font: 'Open Sans', sans-serif;
+
+        .pagefind-ui__form {
+            &:before {
+                top: 0.7em;
+                left: 0.7em;
+                background-color: $karakun-main-color;
+            }
+            .pagefind-ui__search-input{
+                height: 2.5em;
+                font-weight: inherit;
+                font-size: inherit;
+                padding-right: inherit !important;
+                padding-left: 2.5em;
+            }
+            .pagefind-ui__search-clear {
+                color: $grey-light;
+                height: 2em;
+                font-weight: bold;
+                padding: 0.5em;
+            }
+        }
+
+        .pagefind-ui__drawer  {
+            position: absolute;
+            z-index: 1000;
+            width: 40em;
+            right: 0;
+            overflow-y: auto;
+            background: $white;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+            margin-top: auto;
+            gap: normal;
+
+            @include mobile {
+                width: inherit;
+            }
+            @include tablet-only {
+                width: inherit;
+            }
+
+            .pagefind-ui__filter-panel {
+                min-width: 25%;
+                margin-left: 1em;
+                margin-top:0;
+            }
+            .pagefind-ui__results-area {
+                //max-width: 75%;
+                max-width: 75%;
+                margin-top: 0;
+            }
+            .pagefind-ui__result, .pagefind-ui__message, .pagefind-ui__filter-block {
+                padding: 1em;
+                border-bottom: none;
+            }
+        }
+    }
 }
 
 .my-karakun {
