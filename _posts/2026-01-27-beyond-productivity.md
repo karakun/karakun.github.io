@@ -9,7 +9,7 @@ excerpt: "AI coding assistants boost productivity and remove friction, but they 
 permalink: '/2026/01/27/BeyondProductivity.html'
 categories: [ AI, Ethics, Security ]
 header:
-  text: 'Why AI Coding Assistants Feel So Good — and Why We Should Take a Closer Look'
+  text: 'Why AI Coding Assistants Feel So Good — and Why this Should Make us Wary'
   image: post
 ---
 
@@ -24,10 +24,11 @@ AI coding assistants can feel like supportive pair programming without social fr
 * [Bias, Perception, and the Hidden Competence Penalty](#bias)
 * [The Next Hidden Trap in AI Coding: Why Your Assistant Might Be Reinforcing Your Misconceptions](#misconception)
 * [The Need for Ongoing Self-Reflection: Power, Privacy, and Asymmetry](#reflection)
+* [What Developers Can Do Today](#recommendations)
 
 ---
 
-## <a name="intro"></a> Why AI Coding Assistants Feel So Good — and Why We Should Take a Closer Look
+## <a name="intro"></a> Why AI Coding Assistants Feel So Good — and Why this Should Make us Wary
 Have you ever caught yourself genuinely enjoying a digital pat on the back? 
 You’ve been using AI assistants in your daily work for a while now, and suddenly everything feels lighter. 
 You feel encouraged, supported, maybe even empowered. 
@@ -44,7 +45,7 @@ You might even dare to contribute seriously to an open source project, because t
 
 If this sounds familiar, you’re not alone. 
 Many developers, managers, and CTOs report similar experiences. 
-Early studies suggest that coding assistants can provide short-term emotional support and increase satisfaction with everyday software development tasks. 
+Early studies suggest that coding assistants can provide short-term emotional support and increase satisfaction with everyday software development tasks (Xiao et al., 2025). 
 What we don’t yet understand, however, are the long-term effects.
 
 AI coding assistants are not neutral tools. 
@@ -62,17 +63,17 @@ Modern AI assistants simulate emotional intelligence: they respond empatheticall
 For many, this feels like pair programming without friction or frustration. 
 There is no noticeable knowledge gap.
 
-In human pair programming, a gap often can push us out of our comfort zone. 
-With AI, that knowledge gap often feels absent because we should know we are interacting with a machine, not another human, and therefore do not experience social comparison. 
-AI tools typically challenge ideas only when explicitly asked, and they are generally less critical of our decisions. 
-They do not hold genuine opinions, values, or a personality in the way real people do. 
-While certain values and behaviors can be partially simulated through configuration and prompting, this remains fundamentally different from engaging with a human collaborator who brings their own perspective, convictions, and lived experience into the discussion.
+In human pair programming, a such gaps often push us out of our comfort zone. 
+With AI, that gap feels largely absent — not because it does not exist, but because it does not trigger social comparison.
+AI tools typically challenge ideas only when explicitly prompted and tend to show less critical resistance than human collaborators (Welter et al., 2025; Apel et al., 2025).
+They do not hold genuine opinions, values, or a lived perspective in the way real people do.
+While certain behaviors and values can be partially simulated through configuration and prompting, this remains fundamentally different from engaging with a human collaborator who brings their own convictions and experience into the discussion.
 
 ### And this is where the ambivalence begins.
 
-Early research indicates that developers who heavily rely on AI assistants for pair programming may invest less in real workplace relationships. 
-They spend less time mentoring, building team relationships, and engaging in interpersonal exchange. 
-The assumption that this technology is free of disappointment turns out to be an illusion, because disappointment does not disappear – it shifts.
+Early research indicates that developers who rely heavily on AI assistants for pair programming may gradually invest less in real workplace relationships.
+Studies suggest reduced depth of knowledge transfer, fewer mentoring interactions, and a shift away from interpersonal exchange and team-level collaboration toward individual, tool-mediated work (Welter et al., 2025; Xiao et al., 2025; Apel et al., 2025).
+The assumption that this technology is free of disappointment turns out to be an illusion, because disappointment does not disappear - it shifts.
 
 It shows up when no useful solution emerges despite careful prompting, suggestions are shallow or wrong, tools crash, token limits are reached, or costs spiral out of control. 
 It also appears when code with security vulnerabilities makes it into production despite careful reviews, when data leaks occur despite privacy assurances, or when platforms are suddenly discontinued or unavailable.
@@ -82,16 +83,13 @@ It also appears when code with security vulnerabilities makes it into production
 AI coding assistants open up enormous opportunities. 
 They are reshaping how we work, learn, and think. 
 But precisely because they feel so good, it’s worth taking a closer look. 
-Not every digital pat on the back is harmless. 
-Some distract us. 
-Some obscure risks. 
-And some replace something that cannot easily be simulated: genuine collaboration and growing together as a team.
+Not every digital pat on the back is harmless: some distract us, some obscure risks, and some replace something that cannot easily be simulated – genuine collaboration and growing together as a team (Dishop et al., 2025).
 
 ## <a name="bias"></a> Bias, Perception, and the Hidden Competence Penalty
 
 Not all colleagues view AI-assisted work positively. 
 The use of AI in software development is still surrounded by strong biases and preconceived notions. 
-Research shows that individuals who receive help from AI often face a hidden competence penalty: even when the quality of the work is identical, people are perceived as less competent, less diligent, and lazier simply because AI was involved.
+Research shows that individuals who receive help from AI often face a hidden competence penalty: even when the quality of the work is identical, people are perceived as less competent, less diligent, and lazier simply because AI was involved (Acar, et al., 2025).
 
 Experiments consistently demonstrate that engineers believed to have used AI are evaluated more negatively, despite no measurable difference in code quality. 
 This penalty does not target the output, but the perceived ability of the person behind it. 
@@ -100,7 +98,7 @@ Female engineers are penalized significantly more than their male counterparts, 
 
 As a result, many developers anticipate this social penalty and strategically avoid using AI to protect their professional reputation. 
 Ironically, the groups that could benefit most from productivity-enhancing tools – women and older engineers – are the least likely to adopt them. 
-This  reflects broader social and organizational structures in which AI assistance is framed not as strategic tool use, but as evidence of inadequacy, especially for already stereotyped groups.
+This reflects broader social and organizational structures in which AI assistance is framed not as strategic tool use, but as evidence of inadequacy, especially for already stereotyped groups.
 
 The research highlights a fundamental mismatch in how organizations approach AI adoption. 
 While companies focus on access, tooling, and training, they often ignore the social dynamics that determine whether AI is actually used. 
@@ -109,8 +107,8 @@ The introduction of role models and joint AI hackathons within the organisation 
 
 ## <a name="misconception"></a> The Next Hidden Trap in AI Coding: Why Your Assistant Might Be Reinforcing Your Misconceptions
 
-Every software developer has introduced bugs for mundane reasons – forgetting to add a test case, a condition, or calling the wrong method. 
-These are small oversights that occur even when we understand the problem reasonably well. 
+Every software engineer has introduced bugs for mundane reasons – forgetting to add a test case, a condition, or calling the wrong method. 
+These are small oversights that occur even when we understand the problem reasonably well (Hermans, 2021). 
 This is precisely where AI coding assistants excel. 
 They act as a second set of eyes, catching missing checks, inconsistent logic, or obvious implementation errors.
 
@@ -122,7 +120,7 @@ A misconception is not a typo, syntax error, or an overlooked edge case.
 It is a faulty assumption about how a framework, a system, a data structure, or an API works. 
 It occurs when your mental model of the code, commands, or tools is wrong, even though you feel confident in your reasoning. This can happen, for example, when assumptions are reused from previous projects that simply do not hold in a new context.
 
-Correcting bugs in thinking requires replacing an entire mental model with a new one – a significant cognitive shift, whilst even after learning the correct model, developers may revert to the old misconception under time pressure, cognitive load, or familiarity bias.
+Correcting bugs in thinking requires replacing an entire mental model with a new one – a significant cognitive shift, whilst even after learning the correct model, developers may revert to the old misconception under time pressure, cognitive load, or familiarity bias (Hermans, 2021).
 
 *The AI Dynamic: A Cooperative Risk*
 
@@ -139,13 +137,13 @@ If your prompt or existing code is based on a misconception, the AI may:
 
 Unlike a human colleague, an AI assistant does not naturally push back, express doubt, or question intent. 
 It does not notice conceptual inconsistencies unless they are syntactically or statistically obvious. 
-As a result, misconceptions can persist longer, spread further, and become deeply embedded in the codebase, hindering your future self or your team from developing correct solutions.
+As a result, misconceptions can persist longer, spread further, and become deeply embedded in the codebase, potentially hindering your future self or your team from developing correct solutions.
 
 ### Why Critical Thinking Is Still Your Most Important Tool
 
 AI can help us write code faster, but it cannot replace critical thinking, sound testing strategies, or shared reasoning.
 
-Traditionally, one of the most effective ways to uncover misconceptions has been collaboration: pair programming, code reviews, or group discussions. 
+Traditionally, one of the most effective ways to uncover misconceptions has been collaboration: pair programming, code reviews, or refinements. 
 When different mental models collide, assumptions are exposed, challenged, and refined. 
 A solid and well-designed test suite can also play a crucial role by forcing assumptions to become explicit and verifiable.
 
@@ -181,7 +179,7 @@ This is not accidental – it is a rapidly growing market with millions of users
 ### When Convenience Turns into a Security Risk
 
 Recent findings underline why this reflection is necessary. 
-A new security research report by Koi Research revealed that several popular browser extensions have been secretly harvesting private AI conversations from millions of users. 
+A new security research report by Koi Research revealed that several popular browser extensions have been secretly harvesting private AI conversations from millions of users (Dardikman, 2025). 
 While these tools claimed to protect user privacy, they injected scripts into the browser to intercept AI dialogues and sell the collected data to data brokers.
 
 More than eight million users were affected, with sensitive information harvested for marketing and analytics purposes. 
@@ -202,12 +200,30 @@ From a data monetization perspective, this information is exceptionally valuable
 
 Few would deny the potential benefits of using AI, for example in the medical research field for early detection of breast or skin cancer. 
 If the price of mass deployment and tool optimization is that a large corporation gains access to the medical records of millions of people, a careful moral trade-off is required. 
-Even if the use of such technology can still be ethically justified after weighing the benefits, society must remain conscious of the price it is paying. 
+Even if the use of such technology can still be ethically justified after weighing the benefits, society must remain conscious of the price it is paying (Rosengrün, 2023). 
 That price should be openly acknowledged, debated, and – where possible – actively negotiated, rather than silently accepted or surrendered to opaque data-collection practices. 
 
 The same applies to software development. 
 AI tools offer undeniable advantages, but their social, organizational, and ethical implications do not disappear simply because the tools are useful and user-friendly. 
 Continuous reflection is not a luxury – it is a responsibility.
+
+## <a name="recommendations"></a> What Developers Can Do Today
+First of all, leading companies should be aware of existing biases and ethical implications, and the development of AI tools must actively take them into account.
+Nevertheless, it would be unrealistic to assume that these challenges can be resolved very soon and solely at the platform level.
+The effects described above emerge in everyday practice — and they can also be addressed there.
+
+Two concrete strategies are particularly effective and can be applied immediately.
+
+### Actively demand critique from the assistant
+When using AI to formulate requirements, designs, or solutions, developers can deliberately counteract its tendency toward affirmation.
+Instead of inviting help, they can require critical review: “Before proceeding with anything else, evaluate this requirement for ambiguities. Ask clarifying questions if you have any.” or “Tell me if there are any open source libraries out there that already solve this problem.” or “Critique this design from the perspective of best-practice Java development. Do not give compliments.” 
+Used this way, the assistant becomes less reassuring and more adversarial, reintroducing friction and reflection.
+
+### Do not replace pair programming or peer review — augment them
+Rather than forgoing human collaboration, AI tools should be used alongside it.
+While an LLM can review code faster than any colleague, it lacks domain-specific context, architectural history, and shared responsibility.
+A human reviewer brings judgment and lived experience that cannot be simulated.
+Combined, both forms of feedback serve complementary roles — and preserving that balance is essential.
 
 ## <a name="references"></a> References
 
