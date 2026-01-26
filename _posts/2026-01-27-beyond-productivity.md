@@ -69,7 +69,7 @@ AI tools typically challenge ideas only when explicitly prompted and tend to sho
 They do not hold genuine opinions, values, or a lived perspective in the way real people do.
 While certain behaviors and values can be partially simulated through configuration and prompting, this remains fundamentally different from engaging with a human collaborator who brings their own convictions and experience into the discussion.
 
-### And this is where the ambivalence begins.
+### And this is where the ambivalence begins
 
 Early research indicates that developers who rely heavily on AI assistants for pair programming may gradually invest less in real workplace relationships.
 Studies suggest reduced depth of knowledge transfer, fewer mentoring interactions, and a shift away from interpersonal exchange and team-level collaboration toward individual, tool-mediated work (Welter et al., 2025; Xiao et al., 2025; Apel et al., 2025).
@@ -78,7 +78,7 @@ The assumption that this technology is free of disappointment turns out to be an
 It shows up when no useful solution emerges despite careful prompting, suggestions are shallow or wrong, tools crash, token limits are reached, or costs spiral out of control. 
 It also appears when code with security vulnerabilities makes it into production despite careful reviews, when data leaks occur despite privacy assurances, or when platforms are suddenly discontinued or unavailable.
 
-### The list of risks is long — and growing.
+### The list of risks is long — and growing
 
 AI coding assistants open up enormous opportunities. 
 They are reshaping how we work, learn, and think. 
@@ -158,7 +158,7 @@ They are caused by flawed thinking – and no assistant, however powerful, can f
 
 ## <a name="reflection"></a> The Need for Ongoing Self-Reflection: Power, Privacy, and Asymmetry
 
-### All of this calls for continuous self-reflection.
+### All of this calls for continuous self-reflection
 
 On the one hand, it is important to remember that today’s AI platforms are run by profit-driven companies. 
 These systems are not neutral infrastructures; they are operated by businesses that must generate revenue, and that inevitably means data has economic value. 
