@@ -9,4 +9,5 @@ header:
   image: hannes-header-sw
   text:
   x: left
+alumni: true
 ---
