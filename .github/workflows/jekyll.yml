@@ -54,7 +54,7 @@ jobs:
       - name: Build site with Jekyll
         run: bundle exec jekyll build
       - name: Run PageFind indexing
-        run: npx -y pagefind --source _site
+        run: npx -y pagefind --site _site
       - name: Upload artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
