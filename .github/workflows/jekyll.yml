@@ -50,7 +50,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v6
         with:
-          node-version: '24.13.0'
+          node-version: '24'
       - name: Build site with Jekyll
         run: bundle exec jekyll build
       - name: Run PageFind indexing
