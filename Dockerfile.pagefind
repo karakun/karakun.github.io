@@ -1,0 +1,5 @@
+FROM node:current-alpine
+
+WORKDIR /site
+
+ENTRYPOINT ["npx", "-y", "pagefind"]
