@@ -10,7 +10,7 @@ on:
   # Runs on pushes to all branches
   push:
 
-  # Runs daily at midnight UTC
+  # Runs daily
   schedule:
     - cron: '30 6 * * *'
 
