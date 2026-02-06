@@ -332,6 +332,7 @@ p {
             width: 40em;
             right: 0;
             overflow-y: auto;
+            max-height: 85vh;
             background: $white;
             box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
             margin-top: auto;
@@ -350,7 +351,6 @@ p {
                 margin-top:0;
             }
             .pagefind-ui__results-area {
-                //max-width: 75%;
                 max-width: 75%;
                 margin-top: 0;
             }
