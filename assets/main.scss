@@ -136,7 +136,7 @@ nav {
                         color: $white;
                         &:hover,
                         &.is-active, {
-                            color: $link;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -176,10 +176,7 @@ nav {
                         > a {
                             padding-top: 0;
                             font-size: 2em;
-                            color: $karakun-main-color;
-                            &:hover {
-                                color: $white;
-                            }
+                            color: $white;
                         }
                     }
                     > li:last-of-type {
@@ -362,6 +359,16 @@ p {
     }
 }
 
+a.navbar-item, a.navbar-link {
+    &.is-active, &:hover {
+        text-decoration: underline;
+        color: $navbar-item-active-color;
+    }
+    &.page-title{
+        text-decoration: none;
+    }
+}
+
 .my-karakun {
     color: $karakun-main-color;
     font-weight: bold;
@@ -480,6 +487,9 @@ article {
     .article-title {
         position: relative;
         min-height: 3em;
+        a {
+            color: $primary;
+        }
 
         h3 {
           position: absolute;
@@ -508,6 +518,18 @@ article {
         }
         .post-meta {
             margin-bottom: 0.8em;
+        }
+        .has-text-primary a {
+            color: $primary;
+        }
+
+        .post-meta, .links {
+            a {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
@@ -687,5 +709,5 @@ fieldset label {
 button.navbar-burger {
   border: none;
   background: none;
-  color: $link
+  color: $navbar-item-color;
 }
