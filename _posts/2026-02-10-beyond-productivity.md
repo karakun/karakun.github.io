@@ -248,6 +248,6 @@ I’m always happy to exchange knowledge, ideas, and experiences.
 <a name="dishop-et-al-2025">4. Dishop, C. R., Brown, A. S., Chao, P. Y., et al. (2025). Machines in the Middle: Using Artificial Intelligence (AI) While Offering Help Affects Warmth, Felt Obligations, and Reciprocity. Journal of Business and Psychology. [https://doi.org/10.1007/s10869-025-10068-x](https://doi.org/10.1007/s10869-025-10068-x)
 <a name="hermans-2021">5. Hermans, Felienne (2021). The Programmer's Brain: What Every Programmer Needs to Know About Cognition. Manning Publications.
 <a name="rosengrün-2023">6. Rosengrün Sebastian (2023). Künstliche Intelligenz zur Einführung. Junius Verlag.
-<a name="dardikman-et-al-2025">7. Dardikman, Idan (2025, December 15). 8 Million Users' AI Conversations Sold for Profit by "Privacy" Extensions.
+<a name="dardikman-2025">7. Dardikman, Idan (2025, December 15). 8 Million Users' AI Conversations Sold for Profit by "Privacy" Extensions.
    Koi Research Blog. [https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection](https://www.koi.ai/blog/urban-vpn-browser-extension-ai-conversations-data-collection)
 <a name="akar-et-al-2025">8. Oguz A. Acar, Phyliss Jia Gai, Yanping Tu and Jiayi Hou (2025, August 1). Research: The Hidden Penalty of Using AI at Work. Harvard Business Review Generative AI. [https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work](https://hbr.org/2025/08/research-the-hidden-penalty-of-using-ai-at-work)
