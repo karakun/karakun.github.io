@@ -202,7 +202,7 @@ From a data monetization perspective, this information is exceptionally valuable
 
 Few would deny the potential benefits of using AI, for example in the medical research field for early detection of breast or skin cancer. 
 If the price of mass deployment and tool optimization is that a large corporation gains access to the medical records of millions of people, a careful moral trade-off is required. 
-Even if the use of such technology can still be ethically justified after weighing the benefits, society must remain conscious of the price it is paying (Rosengrün, 2023). 
+Even if the use of such technology can still be ethically justified after weighing the benefits, society must remain conscious of the price it is paying ([Rosengrün, 2023](#rosengrün-2023)). 
 That price should be openly acknowledged, debated, and – where possible – actively negotiated, rather than silently accepted or surrendered to opaque data-collection practices. 
 
 The same applies to software development. 
