@@ -6,7 +6,7 @@ description: 'AI coding assistants improve developer productivity but can reinfo
 authors: [ 'iryna' ]
 featuredImage: productivity
 excerpt: "AI coding assistants boost productivity and remove friction, but they also reshape human–AI collaboration, workplace perception, and privacy risk. Here’s what to watch."
-permalink: '/2026/01/27/BeyondProductivity.html'
+permalink: '/2026/02/10/BeyondProductivity.html'
 categories: [ AI, Ethics, Security ]
 header:
   text: 'Why AI Coding Assistants Feel So Good — and Why this Should Make us Wary'
@@ -25,6 +25,8 @@ AI coding assistants can feel like supportive pair programming without social fr
 * [The Next Hidden Trap in AI Coding: Why Your Assistant Might Be Reinforcing Your Misconceptions](#misconception)
 * [The Need for Ongoing Self-Reflection: Power, Privacy, and Asymmetry](#reflection)
 * [What Developers Can Do Today](#recommendations)
+* [Let's connect](#cta)
+* [References](#references)
 
 ---
 
@@ -226,14 +228,17 @@ While an LLM can review code faster than any colleague, it lacks domain-specific
 A human reviewer brings judgment and lived experience that cannot be simulated.
 Combined, both forms of feedback serve complementary roles — and preserving that balance is essential.
 
+## <a name="cta"></a>Let's connect
+Do you have questions about the impact and risks of AI coding tools? 
+Or would you like to discuss the latest developments in AI-based software engineering?
+[Feel free to reach out.](/people/iryna) 
+I’m always happy to exchange knowledge, ideas, and experiences.
+
 ## <a name="references"></a> References
 
 1. Xiao, Q., Hu, X. E., Whiting, M. E., Karunakaran, A., Shen, H., & Cao, H. (2025). AI hasn’t fixed teamwork, but it shifted collaborative culture: A longitudinal study in a project-based software development organization (2023–2025). arXiv. [https://arxiv.org/abs/2509.10956](https://arxiv.org/abs/2509.10956)
-
 2. Welter, A., Schneider, N., Dick, T., Weis, K., Tinnes, C., Wyrich, M., & Apel, S. (2025). From developer pairs to AI copilots: A comparative study on knowledge transfer. arXiv. [https://arxiv.org/abs/2506.04785](https://arxiv.org/abs/2506.04785)
-
 3. Apel, S., et al. (2025). Software developers show less constructive skepticism when using AI assistants than when working with human colleagues. The 40th IEEE/ACM International Conference on Automated Software Engineering (ASE 2025). Reported by TechXplore (edited by Stephanie Baum, reviewed by Andrew Zinin). [https://techxplore.com/news/2025-11-software-skepticism-ai-human-colleagues.html](https://techxplore.com/news/2025-11-software-skepticism-ai-human-colleagues.html)
-
 4. Dishop, C. R., Brown, A. S., Chao, P. Y., et al. (2025). Machines in the Middle: Using Artificial Intelligence (AI) While Offering Help Affects Warmth, Felt Obligations, and Reciprocity. Journal of Business and Psychology. [https://doi.org/10.1007/s10869-025-10068-x](https://doi.org/10.1007/s10869-025-10068-x)
 5. Hermans, Felienne (2021). The Programmer's Brain: What Every Programmer Needs to Know About Cognition. Manning Publications.
 6. Rosengrün Sebastian (2023). Künstliche Intelligenz zur Einführung. Junius Verlag.
