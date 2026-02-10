@@ -20,17 +20,17 @@ AI coding assistants can feel like supportive pair programming without social fr
 ---
 
 ## Article Navigation
-* [Why AI Coding Assistants Feel So Good — and Why We Should Take a Closer Look](#intro)
-* [Bias, Perception, and the Hidden Competence Penalty](#bias)
+* [Why AI Coding Assistants Feel So Good — and Why This Should Make Us Wary](#intro)
+* [Bias, Perception, and The Hidden Competence Penalty](#bias)
 * [The Next Hidden Trap in AI Coding: Why Your Assistant Might Be Reinforcing Your Misconceptions](#misconception)
 * [The Need for Ongoing Self-Reflection: Power, Privacy, and Asymmetry](#reflection)
 * [What Developers Can Do Today](#recommendations)
-* [Let's connect](#cta)
+* [Let's Connect](#cta)
 * [References](#references)
 
 ---
 
-## <a name="intro"></a> Why AI Coding Assistants Feel So Good — and Why this Should Make us Wary
+## <a name="intro"></a> Why AI Coding Assistants Feel So Good — and Why This Should Make Us Wary
 Have you ever caught yourself genuinely enjoying a digital pat on the back? 
 You’ve been using AI assistants in your daily work for a while now, and suddenly everything feels lighter. 
 You feel encouraged, supported, maybe even empowered. 
@@ -71,7 +71,7 @@ AI tools typically challenge ideas only when explicitly prompted and tend to sho
 They do not hold genuine opinions, values, or a lived perspective in the way real people do.
 While certain behaviors and values can be partially simulated through configuration and prompting, this remains fundamentally different from engaging with a human collaborator who brings their own convictions and experience into the discussion.
 
-### And this is where the ambivalence begins
+### And This Is Where The Ambivalence Begins
 
 Early research indicates that developers who rely heavily on AI assistants for pair programming may gradually invest less in real workplace relationships.
 Studies suggest reduced depth of knowledge transfer, fewer mentoring interactions, and a shift away from interpersonal exchange and team-level collaboration toward individual, tool-mediated work [[1]](#xiao-et-al-2025) [[2]](#welter-et-al-2025) [[3]](#apel-et-al-2025).
@@ -80,14 +80,14 @@ The assumption that this technology is free of disappointment turns out to be an
 It shows up when no useful solution emerges despite careful prompting, suggestions are shallow or wrong, tools crash, token limits are reached, or costs spiral out of control. 
 It also appears when code with security vulnerabilities makes it into production despite careful reviews, when data leaks occur despite privacy assurances, or when platforms are suddenly discontinued or unavailable.
 
-### The list of risks is long — and growing
+### The List of Risks Is Long — and Growing
 
 AI coding assistants open up enormous opportunities. 
 They are reshaping how we work, learn, and think. 
 But precisely because they feel so good, it’s worth taking a closer look. 
 Not every digital pat on the back is harmless: some distract us, some obscure risks, and some replace something that cannot easily be simulated – genuine collaboration and growing together as a team [[4]](#dishop-et-al-2025).
 
-## <a name="bias"></a> Bias, Perception, and the Hidden Competence Penalty
+## <a name="bias"></a> Bias, Perception, and The Hidden Competence Penalty
 
 Not all colleagues view AI-assisted work positively. 
 The use of AI in software development is still surrounded by strong biases and preconceived notions. 
@@ -160,7 +160,7 @@ They are caused by flawed thinking – and no assistant, however powerful, can f
 
 ## <a name="reflection"></a> The Need for Ongoing Self-Reflection: Power, Privacy, and Asymmetry
 
-### All of this calls for continuous self-reflection
+### All of This Calls for Continuous Self-Reflection
 
 On the one hand, it is important to remember that today’s AI platforms are run by profit-driven companies. 
 These systems are not neutral infrastructures; they are operated by businesses that must generate revenue, and that inevitably means data has economic value. 
@@ -178,7 +178,7 @@ Tools are becoming more polished, more intuitive, and more responsive.
 User interfaces improve continuously, interaction feels increasingly natural, and the perceived quality of results keeps rising. 
 This is not accidental – it is a rapidly growing market with millions of users and strong economic incentives to optimize for adoption and dependency.
 
-### When Convenience Turns into a Security Risk
+### When Convenience Turns into A Security Risk
 
 Recent findings underline why this reflection is necessary. 
 A new security research report by Koi Research revealed that several popular browser extensions have been secretly harvesting private AI conversations from millions of users [[7]](#dardikman-2025)). 
@@ -216,7 +216,7 @@ The effects described above emerge in everyday practice — and they can also be
 
 Two concrete strategies are particularly effective and can be applied immediately.
 
-### Actively demand critique from the assistant
+### Actively Demand Critique from The Assistant
 When using AI to formulate requirements, designs, or solutions, developers can deliberately counteract its tendency toward affirmation.
 Instead of inviting help, they can proactively require critical review with prompts like
 
@@ -228,13 +228,13 @@ Instead of inviting help, they can proactively require critical review with prom
 The more specific, the better.
 Used this way, the assistant becomes less reassuring and more adversarial, reintroducing friction and reflection.
 
-### Do not replace pair programming or peer review — augment them
+### Do Not Replace Pair Programming or Peer Review — Augment Them
 Rather than forgoing human collaboration, AI tools should be used alongside it.
 While an LLM can review code faster than any colleague, it lacks domain-specific context, architectural history, and shared responsibility.
 A human reviewer brings judgment and lived experience that cannot be simulated.
 Combined, both forms of feedback serve complementary roles — and preserving that balance is essential.
 
-## <a name="cta"></a>Let's connect
+## <a name="cta"></a>Let's Connect
 Do you have questions about the impact and risks of AI coding tools? 
 Or would you like to discuss the latest developments in AI-based software engineering?
 [Feel free to reach out.](/people/iryna) 
