@@ -98,8 +98,8 @@ This penalty does not target the output, but the perceived ability of the person
 The effect is not evenly distributed. 
 Female engineers are penalized significantly more than their male counterparts, and the harshest judgments come from engineers who do not use AI themselves – particularly male non-adopters evaluating women.
 
-As a result, many developers anticipate this social penalty and strategically avoid using AI to protect their professional reputation. 
-Ironically, the groups that could benefit most from productivity-enhancing tools – women and older engineers – are the least likely to adopt them. 
+As a result, many developers anticipate this social penalty and strategically avoid using AI to protect their professional reputation, as mentioned in the research of Acar et al. "The Hidden Penalty of Using AI at Work". 
+The authors also state, that ironically, the groups that could benefit most from productivity-enhancing tools – women and older engineers – are the least likely to adopt them. 
 This reflects broader social and organizational structures in which AI assistance is framed not as strategic tool use, but as evidence of inadequacy, especially for already stereotyped groups.
 
 The research highlights a fundamental mismatch in how organizations approach AI adoption. 
