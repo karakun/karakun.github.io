@@ -91,7 +91,7 @@ Not every digital pat on the back is harmless: some distract us, some obscure ri
 
 Not all colleagues view AI-assisted work positively. 
 The use of AI in software development is still surrounded by strong biases and preconceived notions. 
-Research shows that individuals who receive help from AI often face a hidden competence penalty: even when the quality of the work is identical, people are perceived as less competent, less diligent, and lazier simply because AI was involved (Acar, et al., 2025).
+Research shows that individuals who receive help from AI often face a hidden competence penalty: even when the quality of the work is identical, people are perceived as less competent, less diligent, and lazier simply because AI was involved ([Acar et al., 2025](#acar-et-al-2025)).
 
 Experiments consistently demonstrate that engineers believed to have used AI are evaluated more negatively, despite no measurable difference in code quality. 
 This penalty does not target the output, but the perceived ability of the person behind it. 
