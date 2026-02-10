@@ -218,7 +218,13 @@ Two concrete strategies are particularly effective and can be applied immediatel
 
 ### Actively demand critique from the assistant
 When using AI to formulate requirements, designs, or solutions, developers can deliberately counteract its tendency toward affirmation.
-Instead of inviting help, they can proactively require critical review: “Before proceeding with anything else, evaluate this requirement for ambiguities. Ask clarifying questions if you have any.” or “Tell me if there are any open source libraries out there that already solve this problem.” or “Critique this design from the perspective of best-practice Java development. Check for clean code criteria. Check whether the code has any security gaps or vulnerabilities. Do not give compliments.” 
+Instead of inviting help, they can proactively require critical review with prompts like
+
+> Before proceeding with anything else, evaluate this requirement for ambiguities. Ask clarifying questions if you have any.
+
+> Tell me if there are any open source libraries out there that already solve this problem. 
+
+> Critique this design from the perspective of best-practice Java development. Check for clean code criteria. Check whether the code has any security gaps or vulnerabilities. Do not give compliments.
 The more specific, the better.
 Used this way, the assistant becomes less reassuring and more adversarial, reintroducing friction and reflection.
 
