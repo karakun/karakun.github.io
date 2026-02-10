@@ -47,7 +47,7 @@ You might even dare to contribute seriously to an open source project, because t
 
 If this sounds familiar, you’re not alone. 
 Many developers, managers, and CTOs report similar experiences. 
-Early studies suggest that coding assistants can provide short-term emotional support and increase satisfaction with everyday software development tasks (Xiao et al., 2025). 
+Early studies suggest that coding assistants can provide short-term emotional support and increase satisfaction with everyday software development tasks ([Xiao et al., 2025](#xaio-et-al-2025)). 
 What we don’t yet understand, however, are the long-term effects.
 
 AI coding assistants are not neutral tools. 
