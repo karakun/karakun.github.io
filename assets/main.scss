@@ -274,11 +274,11 @@ p {
 
     .pagefind-ui {
         --pagefind-ui-scale: 1;
-        --pagefind-ui-primary: #69C86C;
+        --pagefind-ui-primary: #3DA05E;
         --pagefind-ui-text: #393939;
         --pagefind-ui-background: white;
         --pagefind-ui-border: #a5afb0;
-        --pagefind-ui-tag: #69C86C;
+        --pagefind-ui-tag: #3DA05E;
         --pagefind-ui-border-width: 1px;
         --pagefind-ui-border-radius: 0.5rem;
         --pagefind-ui-image-border-radius: 0.5rem;
@@ -289,7 +289,7 @@ p {
             &:before {
                 top: 0.7em;
                 left: 0.7em;
-                background-color: $karakun-main-color;
+                background-color: $karakun-dark-green;
             }
             .pagefind-ui__search-input{
                 height: 2.5em;
@@ -337,6 +337,10 @@ p {
             .pagefind-ui__result, .pagefind-ui__message, .pagefind-ui__filter-block {
                 padding: 1em;
                 border-bottom: none;
+            }
+
+            .pagefind-ui__result-tag {
+                color: #ffffff;
             }
         }
     }
