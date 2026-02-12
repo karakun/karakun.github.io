@@ -1,37 +1,26 @@
 <div class="footer has-background-dark has-text-white">
   <div class="container boxes">
     <div class="menu">
-      <p>
+      <span>
         {{ site.title | escape | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}
-      </p>
-      <ul class="menu-list">
-          {% if page.title == my_page.title %}
-          <li><a class="navbar-item is-active" href="{{ "/" | relative_url }}">Home</a></li>
-        {% else %}
-          <li><a class="navbar-item" href="{{ "/" | relative_url }}">Home</a></li>
-        {% endif %}
-
-        {% assign sortedPaths = site.pages | sort: 'order'  %}
-        {% for my_page in sortedPaths %}
-          {%- if my_page.hidden != true and my_page.nav.bottom != false -%}
-            {%- if my_page.title and my_page.url != "/" -%}
-              {% if page.title == my_page.title %}
-                <li><a class="navbar-item is-active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-              {% else %}
-                <li><a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
-              {% endif %}
-            {%- endif -%}
+      </span>
+      {% assign sortedPaths = site.pages | sort: 'order'  %}
+      {% for my_page in sortedPaths %}
+        {%- if my_page.hidden != true and my_page.nav.bottom != false -%}
+          {%- if my_page.title and my_page.url != "/" -%}
+            {% if page.title == my_page.title %}
+              <span><a class="navbar-item is-active" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></span>
+            {% else %}
+              <span><a class="navbar-item" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></span>
+            {% endif %}
           {%- endif -%}
-        {%- endfor -%}
-      </ul>
+        {%- endif -%}
+      {%- endfor -%}
     </div>
-    <div class="contact">
-        {%- include contact.html -%}
+    <div class="social">
+      {%- include social.html -%}
     </div>
     <div class="right-clm">
-      <div class="social">
-          {%- include social.html -%}
-      </div>
       <div class="newsletter">
         <a href="/subscribe/"><img src="/assets/images/karakun_news_trans_280.png" alt="subscribe to newsletter"></a>
       </div>
