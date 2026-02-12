@@ -7,6 +7,8 @@ header:
   x: right
   y: 25%
 permalink: /talks/
+nav:
+  bottom: false
 ---
 ## More talks
 Several people at Karakun already did a bunch of talks before they founded Karakun as a new company.

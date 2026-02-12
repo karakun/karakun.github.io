@@ -125,72 +125,55 @@ nav {
         @include mobile {
             flex-direction: column;
         }
+        > div.menu {
+            display: flex;
+            justify-content: space-between;
+            span {
+                .navbar-item{
+                    padding: 0 0 2em 1em;
+                }
+                > a {
+                    text-decoration: underline;
+                    color: $white;
+                    &:hover,
+                    &.is-active, {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+        div.social {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            ul {
+                min-width: max-content;
+                @include mobile {
+                    align-self: center;
+                }
+                > li {
+                    display: inline-flex;
+                    > a {
+                        padding-top: 0;
+                        font-size: 2em;
+                        color: $white;
+                    }
+                }
+            }
+            @include mobile {
+                text-align: center;
+            }
+        }
         > div {
             flex-grow: 1;
         }
-        > div.menu {
-            padding-bottom: 1em;
-            ul {
-                > li {
-                    > a {
-                        color: $white;
-                        &:hover,
-                        &.is-active, {
-                            text-decoration: underline;
-                        }
-                    }
-                }
-                > li:last-of-type {
-                    > a {
-                        padding-bottom: 0;
-                    }
-                }
-            }
-        }
-        > div.contact {
-            flex-grow: 10;
-            padding-bottom: 1em;
-            align-self: flex-end;
-            @include mobile {
-                flex-grow: 1;
-                align-self: center;
-                margin: 2em 0 1em 0;
-                > p {
-                    text-align: center;
-                }
-            }
-        }
-        > div.right-clm {
+
+       > div.right-clm {
             display: flex;
             flex-direction: column;
 
             @include mobile {
                 align-self: center;
-            }
-            > div.social {
-                text-align: right;
-                flex-grow: 2;
-                ul {
-                    > li {
-                        display: inline-block;
-                        > a {
-                            padding-top: 0;
-                            font-size: 2em;
-                            color: $white;
-                        }
-                    }
-                    > li:last-of-type {
-                        a {
-                            padding-right: 0;
-                            @include mobile {
-                                padding-right: 0.75em;
-                            }
-                        }
-                    }
-                }
-                @include mobile {
-                    text-align: center;
-                }
             }
             > div.newsletter {
                 text-align: right;
@@ -370,7 +353,7 @@ a.navbar-item, a.navbar-link {
 }
 
 .my-karakun {
-    color: $karakun-main-color;
+    color: $primary;
     font-weight: bold;
 }
 
@@ -626,7 +609,7 @@ a {
 }
 
 .metainfo-icon {
-    color: rgb(100, 100, 100);
+    color: $primary;
 }
 
 .embed-container {
