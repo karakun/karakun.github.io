@@ -396,6 +396,18 @@ article.post {
         &:hover, &.button, &.tag {
             text-decoration: none;
         }
+        &.tag.is-primary {
+            border: $karakun-dark-green;
+            border-width: 1px;
+            border-style: solid;
+        }
+        &.tag.is-primary:hover {
+            background: #ffffff;
+            color: $karakun-dark-green;
+            border: $karakun-dark-green;
+            border-width: 1px;
+            border-style: solid;
+        }
     }
     .embed-container {
         > iframe {
