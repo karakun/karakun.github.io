@@ -1,39 +1,49 @@
 ---
 layout: post
 title: 'Retrofitting an Existing Spring Application with AI Capabilities Using Spring AI'
+seo_title: 'Retrofitting Spring Boot Apps with Spring AI'
+description: 'Learn how to retrofit Spring Boot 3 applications with Spring AI using structured output, LLM tools, and validation for safe AI integration.'
 authors: [ 'Hannes' ]
 featuredImage: 'RetrofittingAI'
-excerpt: 'Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched.'
-permalink: '/2025/12/15/Retrofitting-AI.html'
-categories: [ Ai, Nlp, Java, Spring, Spring boot, Search ]
+excerpt: 'How can you retrofit an existing Spring Boot 3 application with AI capabilities using Spring AI? This article explains structured output, LLM tools, and validation strategies for safe AI integration.'
+permalink: '/2026/02/20/Retrofitting-AI.html'
+categories: [ AI, NLP, Java, Spring, Spring Boot, Search ]
 header:
-  text: Retrofitting an Existing Spring Application with AI Capabilities Using Spring AI
   image: 'books'
+  text: Retrofitting an Existing Application with Spring AI
 ---
 
-Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched. 
+Adding AI-powered capabilities to existing enterprise systems is often complex, especially when modernization or migration to new frameworks is not immediately feasible. 
+However, it is possible to retrofit an application with a natural language interface while keeping the original business logic untouched.
 
+This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing some real-world obstacles. 
+This example represents a simpler case where tool calls are fast and have no side effects. 
+It allows us to focus on the interaction between the LLM, the tools, and the structured output without introducing external dependencies, complex state handling, or repeated tool calls. 
 
-This post walks through how to integrate **AI-based request generation** for an existing search API, focusing on **structured outputs**, **tooling**, and **validation**, while discussing some real-world obstacles. This example represents a simpler case where tool calls are fast and have no side effects. It allows us to focus on the interaction between the LLM, the tools, and the structured output without introducing external dependencies, complex state handling, or repeated tool calls. Complex scenarios involving interactions with tools that have side effects will be covered in a follow-up article.
+---
 
-# Table of Contents
+## Table of Contents
 
 * [1. The Idea: Let the AI Build Your Request Objects](#Idea)
-* [2. Technology Setup](#Setup)
+* [2. Technology Setup with Spring Boot 3 and Spring AI](#Setup)
   * [Gradle Dependencies](#Dependencies)
   * [Configuration](#Configuration)
 * [3. Converting Prompts into Valid Search Requests](#Prompts)
-* [4. Adding Domain-Specific Tool](#Tools)
+* [4. Adding Domain-Specific Tools](#Tools)
   * [Why Tools Matter](#ToolsMatter)
 * [5. Testing AI-Assisted Code](#Testing)
-* [6. Business Value and Real-World Constraints](#Value)
+* [6. Business Value and Constraints of AI Integration](#Value)
   * [Practical Constraints](#Constraints)
 * [7. Takeaways](#Takeaways)
-* [8. We Are Here to Help](#Help)
+* [8. Expert Support for AI Integration Projects](#Help)
 
-# <a name="Idea"></a> 1. The Idea: Let the AI Build Your Request Objects
+---
 
-Existing systems often have well-defined APIs for search, analytics, or operations. They usually expect strongly typed input models, such as a `SearchRequestModel`. Retrofitting them for AI input means giving the user a natural language interface and letting the LLM create valid request objects automatically.
+## <a name="Idea"></a> 1. The Idea: Let the AI Build Your Request Objects
+
+Existing systems often have well-defined APIs for search, analytics, or operations. 
+They usually expect strongly typed input models, such as a `SearchRequestModel`. 
+Retrofitting them for AI input means giving the user a natural language interface and letting the LLM create valid request objects automatically.
 
 With **Spring AI**, this becomes practical through:
 - **Structured output handling** – the LLM generates JSON matching a given class.
@@ -43,9 +53,10 @@ This approach bridges free-text prompts with typed data structures, enabling hum
 
 ---
 
-# <a name="Setup"></a> 2. Technology Setup
+## <a name="Setup"></a> 2. Technology Setup with Spring Boot 3 and Spring AI
 
-For this article, we use our own [HIBU platform](https://hibu-platform.com/en/home/) as an example. HIBU provides an API library that includes request and response classes annotated with OpenAPI metadata, which makes it well suited for generating structured outputs.
+For this article, we use our own [HIBU platform](https://hibu-platform.com/en/home/){:target="_blank"} as an example. 
+HIBU provides an API library that includes request and response classes annotated with OpenAPI metadata, which makes it well suited for generating structured outputs.
 
 ### <a name="Dependencies"></a> Gradle Dependencies
 
@@ -80,14 +91,15 @@ spring:
           model: gpt-4.1-mini
           temperature: 0
 ```
-A low temperature ensures "deterministic" output for testing and validation.
+A low temperature reduces output variance and improves reproducibility for testing and validation.
 
-# <a name="Prompts"></a> 3. Converting Prompts into Valid Search Requests
+## <a name="Prompts"></a> 3. Converting Prompts into Valid Search Requests
 
-The main service delegates prompt interpretation to the LLM. The `ChatClient` and your own `@Tool` definitions drive this.
+The main service delegates prompt interpretation to the LLM. 
+The `ChatClient` and your own `@Tool` definitions drive this.
 
 ```java
-package com.karakun.hibu.promtassistance;
+package com.karakun.hibu.promptassistance;
 
 @Service
 public class AiPromptAssistanceService {
@@ -119,18 +131,21 @@ public class AiPromptAssistanceService {
 }
 ```
 
-This example uses the Spring AI fluent API. The LLM receives a system prompt describing how to construct a valid `SearchRequestModel`.
+This example uses the Spring AI fluent API. 
+The LLM receives a system prompt describing how to construct a valid `SearchRequestModel`.
 The `.entity(SearchRequestModel.class)` call ensures the response is automatically deserialized and validated against the record definition. 
-For this, Spring AI processes existing annotations like `@Nullable`, `@Schema`, `@JsonProperty`, and many more. 
+For this, Spring AI processes existing annotations such as `@Nullable`, `@Schema`, `@JsonProperty`, and many more. 
 
-**Note:** The actual system prompt most likely contains many more instructions and restrictions for the LLM, such as “DO NOT invent or change filter values.” I have kept it brief for this article.
+**Note:** The actual system prompt most likely contains many more instructions and restrictions for the LLM, such as “DO NOT invent or change filter values.” 
+I have kept it brief for this article.
 
-# <a name="Tools"></a> 4. Adding Domain-Specific Tools
+## <a name="Tools"></a> 4. Adding Domain-Specific Tools
 
-The `@Tool` annotation turns normal Spring beans into callable LLM functions. In this example, two tools support validation and controlled value selection.
+The `@Tool` annotation turns normal Spring beans into callable LLM functions. 
+In this example, two tools support validation and controlled value selection.
 
 ```java
-package com.karakun.hibu.promtassistance;
+package com.karakun.hibu.promptassistance;
 
 @Service
 public class HibuTools {
@@ -178,18 +193,18 @@ public class HibuTools {
 
 ### <a name="ToolsMatter"></a> Why Tools Matter
 
-* The validation tool (isValidSearchRequestModel) allows the LLM to self-correct invalid JSON by reattempting generation. 
+* The validation tool (isValidSearchRequestModel) enables the LLM to correct invalid JSON through iterative tool-assisted regeneration. 
 * The fetch tool limits the model to known keyword values, avoiding invented filters and producing robust output.
 
 These patterns greatly reduce runtime errors and make the integration resilient to AI hallucinations.
 
-# <a name="Testing"></a> 5. Testing AI-Assisted Code
+## <a name="Testing"></a> 5. Testing AI-Assisted Code
 
-LLMs like ChatGPT do not guarantee deterministic replay, so testing expectations is essential.
+LLMs like ChatGPT do not guarantee deterministic replay, so defining explicit testing expectations is essential.
 You can use mocks to isolate behavior and assert that generated requests meet certain structural and semantic criteria.
 
 ```java
-package com.karakun.hibu.promtassistance;
+package com.karakun.hibu.promptassistance;
 
 public class AiPromptAssistanceServiceTest extends SpringBaseTest {
 
@@ -220,7 +235,7 @@ public class AiPromptAssistanceServiceTest extends SpringBaseTest {
 **Tip:** Always verify tool calls and expected key fields.
 This ensures your prompt and model configuration are aligned with predictable outcomes.
 
-# <a name="Value"></a> 6. Business Value and Real-World Constraints
+## <a name="Value"></a> 6. Business Value and Constraints of AI Integration
 
 Adding AI features on top of existing systems provides several advantages:
 
@@ -230,27 +245,31 @@ Adding AI features on top of existing systems provides several advantages:
 
 ### <a name="Constraints"></a> Practical Constraints
 
-* Spring Boot 3.x required: Spring AI only supports applications running on the latest generation. Legacy projects may require upgrade work before integration or maintain such a retrofitting component in a separate module/project.
+* Spring Boot 3.x required: Spring AI only supports applications running on the latest generation. 
+Legacy projects may require upgrade work before integration or maintain such a retrofitting component in a separate module/project.
 * Validation tools improve reliability: Without them, structured output tends to break on minor syntax issues.
-* Model selection and cost: Smaller models like gpt-4.1-mini often suffice. Larger ones may be cost-prohibitive for frequent use.
-* Testing discipline: Because LLMs behave probabilistically, regression tests are critical to detect subtle prompt changes or API behavior shifts. At Karakun, we are building an infrastructure that enables consistent testing across multiple models and helps us curate a maintainable collection of prompt patterns and best practices.
+* Model selection and cost: Smaller models like gpt-4.1-mini often suffice. 
+Larger ones may be cost-prohibitive for frequent use.
+* Testing discipline: Because LLMs behave probabilistically, regression tests are critical to detect subtle prompt changes or API behavior shifts. 
+At Karakun, we are building an infrastructure that enables consistent testing across multiple models and helps us curate a maintainable collection of prompt patterns and best practices.
 
-# <a name="Takeaways"></a> 7. Takeaways
+## <a name="Takeaways"></a> 7. Takeaways
 
 * Retrofitting an existing Spring application with AI features is possible and often valuable. 
 * Spring AI’s Tools and Structured Output simplify controlled AI integration.
 * Custom validation tools make AI-generated structures robust and retryable. 
 * Expect some migration effort to Spring Boot 3.x and ensure your LLM configuration is "deterministic" for repeatable tests. 
-* Test, observe, and iterate - AI integration is not a one-time setup but a living process.
+* Test, observe, and iterate - AI integration is not a one-time setup but a continuous process.
 
 By combining Spring AI, careful tool definitions, and disciplined validation, teams can extend legacy systems with intelligent interfaces while maintaining technical and business stability.
 
-# <a name="Help"></a> 8. We Are Here to Help
+## <a name="Help"></a> 8. Expert Support for AI Integration Projects
 
 While this example keeps things simple with side-effect-free tool calls, real-world applications often involve more complex integrations.
-Integrating AI into existing software ecosystems requires more than technical know-how. It takes experience in balancing architecture, maintainability, and business goals.  
+Integrating AI into existing software ecosystems requires architectural expertise and experience balancing maintainability and business objectives.
 
 
-At [karakun.com](https://karakun.com), we help organizations analyze their current solutions and design the best way to integrate AI - whether that means lightweight retrofitting, full-stack modernization, or targeted use of AI capabilities.
+At [karakun.com](https://karakun.com){:target="_blank"}, we help organizations analyze their current solutions and design the best way to integrate AI - whether that means lightweight retrofitting, full-stack modernization, or targeted use of AI capabilities.
 
-If you are exploring how to bring intelligent features into your existing systems, reach out to us. Together we can identify where AI delivers real value without disrupting what already works.
+If you are exploring how to introduce intelligent features into your existing systems, reach out to us. 
+Together we can identify where AI delivers measurable value without disrupting stable systems.
