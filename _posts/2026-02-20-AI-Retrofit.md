@@ -2,10 +2,10 @@
 layout: post
 title: 'Retrofitting an Existing Spring Application with AI Capabilities Using Spring AI'
 seo_title: 'Retrofitting Spring Boot Apps with Spring AI'
-description: 'Learn how to retrofit Spring Boot 3 applications with Spring AI using structured output, LLM tools, and validation for safe AI integration.'
+description: 'Retrofit AI into existing applications using Spring AI. Learn how natural language input is translated into structured requests with validation and LLM tools.'
 authors: [ 'Hannes' ]
 featuredImage: 'RetrofittingAI'
-excerpt: 'How can you retrofit an existing Spring Boot 3 application with AI capabilities using Spring AI? This article explains structured output, LLM tools, and validation strategies for safe AI integration.'
+excerpt: 'Learn how to retrofit AI capabilities into an existing application by adding a natural language interface that translates user prompts into structured requests. Using Spring AI as an example, this article demonstrates controlled request generation, tooling, and validation without modifying the original system.'
 permalink: '/2026/02/20/Retrofitting-AI.html'
 categories: [ AI, NLP, Java, Spring, Spring Boot, Search ]
 header:
@@ -25,7 +25,7 @@ It allows us to focus on the interaction between the LLM, the tools, and the str
 ## Table of Contents
 
 * [1. The Idea: Let the AI Build Your Request Objects](#Idea)
-* [2. Technology Setup with Spring Boot 3 and Spring AI](#Setup)
+* [2. Technology Setup](#Setup)
   * [Gradle Dependencies](#Dependencies)
   * [Configuration](#Configuration)
 * [3. Converting Prompts into Valid Search Requests](#Prompts)
@@ -53,7 +53,7 @@ This approach bridges free-text prompts with typed data structures, enabling hum
 
 ---
 
-## <a name="Setup"></a> 2. Technology Setup with Spring Boot 3 and Spring AI
+## <a name="Setup"></a> 2. Technology Setup
 
 For this article, we use our own [HIBU platform](https://hibu-platform.com/en/home/){:target="_blank"} as an example. 
 HIBU provides an API library that includes request and response classes annotated with OpenAPI metadata, which makes it well suited for generating structured outputs.
