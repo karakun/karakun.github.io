@@ -6,7 +6,7 @@ permalink: /sitemap.xml
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for page in site.pages %}
-    {% unless page.url contains 'assets' or page.url contains '.xml' or page.url == '/404.html' %}
+    {% unless page.url contains 'assets' or page.url contains '.xml' or page.url == '/404' %}
     <url>
         <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
         <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
