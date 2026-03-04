@@ -24,7 +24,7 @@ contact:
   city: CH-4051 Basel
   email: info@karakun.com
   company: Karakun AG
-url: "https://karakun.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://dev.karakun.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: karakun
 github_username:  karakun
 mastodon:
