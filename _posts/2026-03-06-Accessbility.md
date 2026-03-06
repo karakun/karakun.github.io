@@ -61,7 +61,7 @@ You wouldn’t go running in your flip-flops, would you?
 
 * [Understanding WCAG 2.0](https://www.w3.org/TR/UNDERSTANDING-WCAG20/Overview.html){:target="_blank"} - For those of you who would like to figure it out by themselves.
 * [Blog by Leonie Watson](https://tink.uk/){:target="_blank"} [https://tink.uk/](https://tink.uk/){:target="_blank"} - Topics around web accessibility.
-* [Udemy course by Liz Brown](https://www.udemy.com/course/the-ux-designers-accessibility-guide/)(:target="_blank") - Not free but definitely worth it.
+* [Udemy course by Liz Brown](https://www.udemy.com/course/the-ux-designers-accessibility-guide/){:target="_blank"} - Not free but definitely worth it.
 * [Web Accessibility Cookbook](https://accessibility-cookbook.com/)(:target="_blank") by [Manuel Matuzovic](https://www.linkedin.com/in/matuzo/){:target="_blank"} - You can also book Manuel for in-house workshops (highly recommended) and watch [his talk at beyond tellerrand 2023](https://www.youtube.com/watch?v=Wno1IhEBTxc){target="_blank"}. 
 
 ---
