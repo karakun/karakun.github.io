@@ -3,8 +3,8 @@ layout: post
 title: 'Migrating from Elasticsearch 7.17 to 8.19: A Practical Guide'
 seo_title: 'Elasticsearch 7.17 to 8.x Migration Guide'
 description: 'Practical guide to migrating from Elasticsearch 7.17 to 8.x. Learn how to replace HLRC, adopt the Java API Client, update security settings, and handle breaking changes.'
-authors: [ 'dirk' ]
-featuredImage: 'marathon'
+authors: [ 'jatin' ]
+featuredImage: 'elastic'
 excerpt: 'Migrating from Elasticsearch 7.17 to 8.x requires more than a version upgrade. This guide explains how to replace HLRC with the Java API Client, adapt to security defaults, and handle breaking changes in production systems.'
 permalink: '/2026/03/26/elasticsearch-7-to-8-migration-guide.html'
 categories: [ Elasticsearch, Search ]
@@ -35,7 +35,7 @@ This article provides a practical migration guide, covering the transition from 
 
 ---
 
-Elasticsearch 7.x is approaching end-of-life, with maintenance ending in April 2025 and support ending in January 2026, prompting many teams to migrate to version 8.x. 
+Elasticsearch 7.x has reached end-of-life, with maintenance ending in April 2025 and support ending in January 2026, prompting many teams to migrate to version 8.x. 
 This migration is more than a simple version bump—it requires rethinking how your Java application interacts with Elasticsearch. 
 The Java High Level REST Client (HLRC), the primary client library for ES 7.x, is now deprecated in favor of a completely redesigned Java API Client that embraces modern patterns such as builders, functional composition, and strong typing.
 
@@ -559,7 +559,7 @@ But the result is a more maintainable, type-safe, and future-proof integration w
 
 Do you have questions about the European Accessibility Act? 
 Or would you like to discuss what is the best starting point for accessibility?
-[Feel free to reach out.](/people/dirk) 
+[Feel free to reach out.](/people/jatin) 
 I’m always happy to exchange knowledge, ideas, and experiences.
 
 
