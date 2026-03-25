@@ -132,7 +132,7 @@ if (authEnabled) {
 }
 ```
 
-For development environments, we explicitly disabled security in `docker-compose.yml`:
+For local development and temporary flexibility, we disabled the security option in `docker-compose.yml`:
 
 ```yaml
 elasticsearch:
