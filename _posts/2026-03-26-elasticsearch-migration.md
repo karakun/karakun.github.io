@@ -557,8 +557,9 @@ But the result is a more maintainable, type-safe, and future-proof integration w
 
 ## <a name="cta"></a> Let's Connect!
 
-Do you have questions about the European Accessibility Act? 
-Or would you like to discuss what is the best starting point for accessibility?
+Do you have questions about our migration to Elasticsearch 8.19? 
+Or would you like to discuss the best migration path for your installation?
+Did you already migrate and experienced other pitfalls?
 [Feel free to reach out.](/people/jatin) 
 I’m always happy to exchange knowledge, ideas, and experiences.
 
