@@ -6,7 +6,7 @@ description: 'Insights from Swiss Testing Day 2026 on AI testing, non-determinis
 authors: [ 'mike' ]
 featuredImage: 'swisstestingday'
 excerpt: 'How do you test non-deterministic AI systems? Insights from Swiss Testing Day 2026 on AI testing, reliability, and probabilistic validation.'
-permalink: '/2026/04/01/Swiss-Testing-Day.html'
+permalink: '/2026/04/02/Swiss-Testing-Day.html'
 categories: [ Testing, AI ]
 header:
   text: Insights from Swiss Testing Day 2026 on AI testing, reliability, and probabilistic validation.
@@ -34,7 +34,7 @@ I, [Mike Mannion](/people/mike) attended the conference and captured a set of re
 
 **Bertrand Meyer – OO and Software Correctness Pioneer**
 
-Bertrand is a personal hero of mine. 
+Bertrand is a personal hero of mine.
 His work on software correctness shaped my profile as a software developer the moment I came in contact with it.
 In this keynote he covers a wide range of issues, but comes back to the central idea: proving that the software does what it promises; a challenge which LLMs, with their always-present non-determinism, have only made more difficult.
 
@@ -46,13 +46,13 @@ The second line of the following slide is absolutely crucial and a key aspect of
 
 The performance of stochastic features – which especially includes LLMs – must be measured, because a simple correct/not correct is not sufficient to gauge performance.
 
-But despite this observation, Bertrand does not go into detail about how to measure such systems. 
+But despite this observation, Bertrand does not go into detail about how to measure such systems.
 Instead he reiterates the message, which he has been saying for decades: program correctness must be built into the software.
 
-This was, in fact, the genius of his Eiffel language, which unfortunately was not adopted by any mainstream language that followed. 
+This was, in fact, the genius of his Eiffel language, which unfortunately was not adopted by any mainstream language that followed.
 But the principle stands – even if it does not yet fully answer the question of performance of stochastic systems.
 
-He ends on an optimistic note, stressing that the need for good software engineers will not disappear any time soon. 
+He ends on an optimistic note, stressing that the need for good software engineers will not disappear any time soon.
 Generated code must still be verified, and human understanding of the code remains key.
 
 ## <a name="good-bad-ai-testing-strategy"></a> Good AI Testing Strategy / Bad AI Testing Strategy. The difference and why it matters
@@ -61,17 +61,17 @@ Generated code must still be verified, and human understanding of the code remai
 
 A very philosophical but worthwhile talk. Iosif asks: What is strategy? What is it not?
 
-He challenges us to think about this carefully, and reminds us not to confuse strategy with a list of goals. 
+He challenges us to think about this carefully, and reminds us not to confuse strategy with a list of goals.
 It is also not QA; QA requires a different mindset than testing – and that mindset is critical.
 
 He frequently references the book *Good Strategy/Bad Strategy*.
 
 A useful distinction: QA is not testing.
 
-Iosif is adamant that testing is about identifying bugs. 
+Iosif is adamant that testing is about identifying bugs.
 He does not explicitly include other outputs such as usability feedback, responsiveness data, or success rates for stochastic services.
 
-When I asked him about this, he suggested that these aspects could also be interpreted as “bugs”. 
+When I asked him about this, he suggested that these aspects could also be interpreted as “bugs”.
 I’m not sure I agree – a suggestion for improvement is not necessarily a bug, but a claim that needs to be evaluated and may evolve into a requirement.
 
 Despite this difference of opinion, the talk is an important reminder: organisations need to think carefully about their testing strategy – not just their tooling.
@@ -82,13 +82,13 @@ Despite this difference of opinion, the talk is an important reminder: organisat
 
 Reitermayer presents an agent called “Avalon”, which generates synthetic test data.
 
-He quickly dives into product details, which can be difficult to follow without prior context. 
+He quickly dives into product details, which can be difficult to follow without prior context.
 However, one thing is clear: this is a sophisticated agent-based system that delivers measurable productivity gains.
 
-What stands out is the transparency of the system. 
+What stands out is the transparency of the system.
 The execution is visualised in real time in the UI, exposing LLM interactions, tool calls, and decision steps.
 
-## <name="why-ai-is-useless-for-compliance"></a> Why AI Is Useless for Compliance
+## <a name="why-ai-is-useless-for-compliance"></a> Why AI Is Useless for Compliance
 
 **Nick Gushchin – AI Transformation Manager**
 
@@ -98,13 +98,13 @@ Nick structures risk into different levels, each requiring different types of to
 
 ![Defining Roles and Responsibilities for AI in Organisation](/assets/posts/2026-04-01-Swiss-Testing-Day/4-roles-and-responsibilities.jpeg "Defining Roles and Responsibilities for AI in Organisation")
 
-He presents a matrix using likelihood and impact to systematically assess risks associated with AI systems. 
+He presents a matrix using likelihood and impact to systematically assess risks associated with AI systems.
 This is not a new concept – but its importance applies just as much in the context of AI.
 
 ![Cross-Industry Insight: AI Governance Through a Banking Risk Lens](/assets/posts/2026-04-01-Swiss-Testing-Day/5-matrix-ai-agents.jpeg "Cross-Industry Insight: AI Governance Through a Banking Risk Lens")
 
-One open question remains: how do we quantify “likelihood” in non-deterministic systems? 
-Frameworks like [PUnit](https://javai.org){:target="_blank"} may offer part of the answer here.
+One open question remains: how do we quantify “likelihood” in non-deterministic systems?
+Frameworks like [PUnit](https://javai.org){:target="_blank"} ([GitHub(https://github.com/javai-org/punit){:target="_blank"}])  may offer part of the answer here.
 
 This was an outstanding talk – highly practical, with no hype, and extremely relevant for anyone working on testing and reliability in AI-driven systems.
 
@@ -136,9 +136,9 @@ This is particularly relevant in domains such as automotive, aerospace, and othe
 
 ## <a name="cta"></a> Let's discuss!
 
-The Swiss Testing Day 2026 made one thing very clear: 
+The Swiss Testing Day 2026 made one thing very clear:
 AI does not eliminate the need for engineering discipline – it increases it.
 
 What are your thoughts on AI and engineering discipline?
-[Feel free to reach out](/people/mike). 
+[Feel free to reach out](/people/mike).
 I’m always happy to exchange knowledge, ideas, and experiences.
