@@ -104,7 +104,7 @@ This is not a new concept – but its importance applies just as much in the con
 ![Cross-Industry Insight: AI Governance Through a Banking Risk Lens](/assets/posts/2026-04-01-Swiss-Testing-Day/5-matrix-ai-agents.jpeg "Cross-Industry Insight: AI Governance Through a Banking Risk Lens")
 
 One open question remains: how do we quantify “likelihood” in non-deterministic systems?
-Frameworks like [PUnit](https://javai.org){:target="_blank"} ([GitHub](https://github.com/javai-org/punit){:target="_blank"}) may offer part of the answer here.
+Frameworks like [PUnit](https://javai.org){:target="_blank"} (view repository on [GitHub](https://github.com/javai-org/punit){:target="_blank"}) may offer part of the answer here.
 
 This was an outstanding talk – highly practical, with no hype, and extremely relevant for anyone working on testing and reliability in AI-driven systems.
 
