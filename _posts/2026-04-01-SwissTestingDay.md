@@ -15,7 +15,7 @@ header:
 
 At Karakun, we are closely following how software engineering evolves in the age of AI – especially when it comes to testing and reliability.
 The Swiss Testing Day 2026 brought together a range of perspectives on exactly this topic: from classical software verification to emerging approaches for testing non-deterministic systems.
-I, [Mike Mannion](/people/Mike) attended the conference and captured a set of reflections and observations from selected talks.
+I, [Mike Mannion](/people/Mike), attended the conference and captured a set of reflections and observations from selected talks.
 
 ---
 
