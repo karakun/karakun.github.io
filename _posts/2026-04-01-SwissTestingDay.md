@@ -140,5 +140,5 @@ The Swiss Testing Day 2026 made one thing very clear:
 AI does not eliminate the need for engineering discipline – it increases it.
 
 What are your thoughts on AI and engineering discipline?
-[Feel free to reach out](/people/mike).
+[Feel free to reach out](/people/Mike).
 I’m always happy to exchange knowledge, ideas, and experiences.
