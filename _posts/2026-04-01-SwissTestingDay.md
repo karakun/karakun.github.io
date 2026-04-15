@@ -15,14 +15,14 @@ header:
 
 At Karakun, we are closely following how software engineering evolves in the age of AI – especially when it comes to testing and reliability.
 The Swiss Testing Day 2026 brought together a range of perspectives on exactly this topic: from classical software verification to emerging approaches for testing non-deterministic systems.
-I, [Mike Mannion](/people/mike) attended the conference and captured a set of reflections and observations from selected talks.
+I, [Mike Mannion](/people/Mike) attended the conference and captured a set of reflections and observations from selected talks.
 
 ---
 
 ## Table Of Contents
 * [Opening Keynote: Software Verification in the Age of AI](#software-verification)
 * [Good AI Testing Strategy / Bad AI Testing Strategy. The difference and why it matters](#good-bad-ai-testing-strategy)
-* [gentic testing in banking: From hype to governed practice](#agentic-testing-in-banking)
+* [Agentic testing in banking: From hype to governed practice](#agentic-testing-in-banking)
 * [Why AI Is Useless for Compliance](#why-ai-is-useless-for-compliance)
 * [Key Takeaways](#takeaways)
 * [Karakun Perspective](#Karakun)
@@ -76,7 +76,7 @@ I’m not sure I agree – a suggestion for improvement is not necessarily a bug
 
 Despite this difference of opinion, the talk is an important reminder: organisations need to think carefully about their testing strategy – not just their tooling.
 
-## <a name="agentic-testig-in-banking"></a> Agentic testing in banking: From hype to governed practice
+## <a name="agentic-testing-in-banking"></a> Agentic testing in banking: From hype to governed practice
 
 **J. Reitermayer, S. Baumberger, M. Hause**
 
