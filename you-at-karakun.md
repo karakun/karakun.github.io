@@ -29,7 +29,7 @@ To always be up-to-date, we attend leading software engineering conferences like
 Plus, we organize internal hackathons and sponsor meetups like Hackergarten or JUGs. 
 And last but not least, we are co-organizers of [BaselOne](https://baselone.org/){:target="_blank"} - a 2-day software development event in the heart of Basel (Switzerland).
 
-We are  proud to be the home of Java Champions, Java Rockstars, Oracle Groundbreakers and Java book authors. 
+We are  proud to be the home of Conference speakers, Java Champions, Java Rockstars and Java book authors. 
 You have the opportunity to work with them on your next projects. 
 At Karakun, our development teams are composed flexibly - without any hierarchies or fixed roles. 
 
