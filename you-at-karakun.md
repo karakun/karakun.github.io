@@ -14,7 +14,7 @@ nav:
 ---
 
 ## Love where you work
-Karakun exists because we believe that good software empowers people – instead of frustrating them. 
+Karakun exists because we believe that good software empowers people – instead of holding them back. 
 Since 2018, we have been developing custom software that simplify work, improve processes and ensure user satisfaction. 
 Our teams bring together many years of combined experience in software engineering, IT consulting and research.
 
