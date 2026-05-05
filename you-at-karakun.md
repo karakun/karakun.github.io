@@ -1,6 +1,8 @@
 ---
 layout: article
 title: You@Karakun
+seo_title: 'Work at Karakun | Software Engineering, Consulting & Open Source Culture'
+description: 'Work happier at Karakun. Join agile teams building custom software, contributing to open source and shaping digital solutions across Europe and India.'
 order: '19'
 headerText: 
 permalink: /you-at-karakun/
@@ -12,21 +14,31 @@ nav:
 ---
 
 ## Love where you work
-At Karakun, we always look for talented people to do work that they love, at all levels of the company.
-Karakun has a team of more than 30 very experienced software developers that have been working together for many years. The Karakun team develops custom solutions in an agile way for enterprises of different industries. We base our software on Java and Web technologies. We do not only focus on high quality results but on delivering the best possible user experience. We are deeply convinced that customer satisfaction is the key for sustainable business.
+Karakun exists because we believe that good software empowers people – instead of holding them back. 
+Since 2018, we have been developing custom software that simplify work, improve processes and ensure user satisfaction. 
+Our teams bring together many years of combined experience in software engineering, IT consulting and research.
 
-At Karakun we believe in the tools we use and the solutions we offer. With a strong focus on open source based development we always aim at creating the best outcome for our customers while at the same time sharing our insights and knowledge with the community.
+Using agile methodologies, state-of-the-art Java and modern web technologies, and our own open-source expertise, we develop customised applications where standard software reaches its limits. 
+We support our clients from concept to operation – with flexible teams, modern software architecture and a clear focus on sustainable software quality. 
+Whether it’s end-to-end software development, technology consultancy or AI-powered speech and text analysis – we design digital solutions that make a difference.
 
-## Stay up to date
-At Karakun, we mostly use open source projects and tools in our daily business. Since we strongly believe in open source we have a history of active contributions to many of these technologies.
-To always be up-to-date, we attend high-profile conferences like JavaLand, Devoxx or Oracle Code One. Plus, we do internal hackathons and sponsor meetups like hackergarten or JUGs. On top of that we offer trainings for several modern technologies and topics - held by either Karakun staff or by internationally acclaimed experts.
+## Stay up to date with technology and community
+At Karakun, we heavily rely on open source software in our daily business. 
+Since we strongly believe in open source, we actively contribute to many of these technologies.
+To always be up-to-date, we attend leading software engineering conferences like JavaLand, Devoxx, Jfokus or JCON. 
+Plus, we organize internal Code Camps and sponsor meetups like Hackergarten or JUGs. 
+And last but not least, we are co-organizers of [BaselOne](https://baselone.org/){:target="_blank"} - a 2-day software development event in the heart of Basel (Switzerland).
 
-We are  proud to be the home of several Java Champions, Java Rockstars and Java book authors. You  have the opportunity to work with them on your next projects. At Karakun our development teams are composed flexibly- without any hierarchies or fixed roles. 
+We are  proud to be the home of Conference speakers, Java Champions, Java Rockstars and Java book authors. 
+You have the opportunity to work with them on your next projects. 
+At Karakun, our development teams are composed flexibly - without any hierarchies or fixed roles. 
 
 ![Karakun loves open source]({{ "/assets/images/pages/you-at-karakun/duke-loves-os-small.png" | absolute_url }})
 
-## Find the right environment
-Our headquarter is located in [Basel, Switzerland](https://www.google.com/maps/place/Karakun+AG/@47.5560423,7.5830238,17z/data=!3m1!4b1!4m5!3m4!1s0x4791b964d4499a5b:0x3c0e6bdb3503d901!8m2!3d47.5560387!4d7.5852125). We also have offices in [Dortmund, Germany](https://www.google.com/maps/place/Kanalstra%C3%9Fe+25,+44147+Dortmund/@51.5295391,7.4416001,17z/data=!3m1!4b1!4m6!3m5!1s0x47b9198ad191f229:0x2458e65c82d39bf6!8m2!3d51.5295358!4d7.4441804!16s%2Fg%2F11c4lkkpt5?entry=ttu&g_ep=EgoyMDI2MDEwNC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D) and [Stuttgart, Germany](https://www.google.com/maps/place/Waldburgstra%C3%9Fe+17-19,+70563+Stuttgart/@48.7247147,9.1058147,17z/data=!3m1!4b1!4m6!3m5!1s0x4799dc547a0a6147:0x5ae605ef6e2fdb9f!8m2!3d48.7247112!4d9.108395!16s%2Fg%2F11nnrq4mws?entry=ttu&g_ep=EgoyMDI2MDEwNC4wIKXMDSoKLDEwMDc5MjA3MUgBUAM%3D). All offices are ready to take care of new and motivated employees.
+## Find the right environment for your career
+Our headquarter is located in [Basel, Switzerland](https://maps.app.goo.gl/2XkiPy4tBjMabheGA){:target="_blank"}. 
+We also have offices in [Dortmund, Germany](https://maps.app.goo.gl/HbwfwGcEn5p6xCBa9){:target="_blank"}, [Stuttgart, Germany](https://maps.app.goo.gl/EPf1sHej1HZr8Ais8){:target="_blank"}, and [Mumbai, India](https://maps.app.goo.gl/RDx58FyCKPK7NuoBA){:target="_blank"}. 
+All offices are ready to take care of new and motivated employees.
 
-## Do the first step!
-If you are interested in working with an agile and motivated team, have a look at our [job postings](https://karakun.com/jobs/) or just [contact us](mailto:you@karakun.com).
+## Take the first step!
+If you are interested in working with an agile and motivated team, have a look at our [job postings](https://karakun.com/jobs/){:target="_blank"} or simply [get in touch with us](mailto:info@karakun.com).
