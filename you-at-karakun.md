@@ -26,7 +26,7 @@ Whether it’s end-to-end software development, technology consultancy or AI-pow
 At Karakun, we heavily rely on open source software in our daily business. 
 Since we strongly believe in open source, we actively contribute to many of these technologies.
 To always be up-to-date, we attend leading software engineering conferences like JavaLand, Devoxx, Jfokus or JCON. 
-Plus, we organize internal hackathons and sponsor meetups like Hackergarten or JUGs. 
+Plus, we organize internal Code Camps and sponsor meetups like Hackergarten or JUGs. 
 And last but not least, we are co-organizers of [BaselOne](https://baselone.org/){:target="_blank"} - a 2-day software development event in the heart of Basel (Switzerland).
 
 We are  proud to be the home of Conference speakers, Java Champions, Java Rockstars and Java book authors. 
