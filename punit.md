@@ -1,6 +1,6 @@
 ---
 layout: article
-title: PUnit
+title: "PUnit – Probabilistic Testing for Non-Deterministic AI Systems"
 seo_title: "PUnit – Probabilistic Testing for Non-Deterministic AI Systems"
 description: "PUnit is an open-source JUnit 5 extension for probabilistic testing of AI systems, LLM applications, and non-deterministic software behaviour."
 order: "17"
