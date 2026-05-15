@@ -10,6 +10,7 @@ header:
   image: punit
   text: Testing <span class="my-karakun">non-deterministic systems</span> with confidence
 nav:
+  title: PUnit
   bottom: false
 ---
 
