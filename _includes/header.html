@@ -88,10 +88,14 @@
 {%- assign page_image_x = page.header.x | default: "center" -%}
 {%- assign page_image_y = page.header.y | default: "center" -%}
 {%- assign fallback_header_text = page.title | append: " by Karakun" -%}
+{%- assign header_tag = "h1" -%}
+{%- if page.layout == "post" or page.layout == "talk" or page.layout == "rico" or page.header.h1 == false -%}
+  {%- assign header_tag = "div" -%}
+{%- endif -%}
 <div class="page-image" style="background-image: url('/assets/images/pageHeaders/{{ page_image }}.png'); background-size: {{ page_image_size }}; background-position-x: {{ page_image_x }}; background-position-y: {{ page_image_y }};">
   <div>
-    <h1 class="header-text container">
+    <{{ header_tag }} class="header-text container">
       <div>{{ page.header.text | default: fallback_header_text | replace: 'Karakun','<span class="my-karakun">Karakun</span>' }}</div>
-    </h1>
+    </{{ header_tag }}>
   </div>
 </div>
