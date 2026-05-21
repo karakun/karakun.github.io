@@ -4,7 +4,7 @@ title: 'Shipping marimo WASM Notebooks as Browser-Based Engineering Tools with S
 seo_title: 'marimo WASM Tools with Spring Boot'
 description: 'Deploy marimo WASM notebooks as browser-based Python tools with Pyodide, Spring Boot security, shared wheels, and REST API integration.'
 authors: [ 'dirk' ]
-featuredImage: 'jfokus26'
+featuredImage: 'WASM'
 excerpt: 'Engineering workflows often need interactive judgment, not just automation. This article shows how Exoknox uses marimo, Pyodide, and Spring Boot to ship notebook-based tools directly in the browser.'
 permalink: '/2026/05/26/marimo-wasm-exoknox.html'
 categories: [ Spring Boot, Python, REST API, WASM ]
