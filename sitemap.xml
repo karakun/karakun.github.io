@@ -21,4 +21,18 @@ permalink: /sitemap.xml
     </url>
     {% endfor %}
 
+    {% for person in site.people %}
+    <url>
+        <loc>{{ site.url }}{{ person.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endfor %}
+
+    {% for talk in site.talks %}
+    <url>
+        <loc>{{ site.url }}{{ talk.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+    </url>
+    {% endfor %}
+
 </urlset>
