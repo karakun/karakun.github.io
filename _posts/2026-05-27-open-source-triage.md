@@ -1,0 +1,641 @@
+---
+layout: post
+title: "Open Source Doesn't Need Another Pull Request. It Needs Triage."
+seo_title: "Open Source Triage: The Contribution Maintainers Need Most"
+description: "On busy open source projects, triage can be more valuable than another pull request. Learn how to clarify issues, connect related work, and help maintainers make better decisions."
+authors: [ 'francois' ]
+featuredImage: 'open-source-triage'
+excerpt: "On busy open source projects, the highest-leverage contribution is often not another pull request but triage. Clear issue tracker context prevents duplicate work, exposes partial fixes, and helps maintainers make the next decision faster."
+permalink: '/2026/05/27/open-source-doesnt-need-another-pull-request-it-needs-triage.html'
+categories: [ Development ]
+header:
+  text: "Open Source Doesn't Need Another Pull Request. It Needs Triage."
+  image: 'post'
+---
+
+Most engineers think open source contribution starts when you write code.
+
+I don't think that anymore.
+
+If you're used to Jira, imagine your project has a backlog of 6,000 tickets (in open source, we call these **issues**, and the board is the **issue tracker**).
+
+If you think 6,000 is an exaggeration, look at the [issue tracker for OpenClaw](https://github.com/openclaw/openclaw/issues). That's the reality of a successful open source project.
+
+Scattered somewhere in that mess are three separate issues:
+
+- one says the web UI only accepts images
+- another says the web UI should also allow uploading document files like PDF and Word
+- a third asks for any kind of file to be uploadable
+
+Meanwhile, over in your Git repository, there are already two open pull requests (PRs). If you use GitLab, these are called **merge requests**:
+
+- one changes only the file picker in the frontend
+- another changes the file picker **and** the backend
+
+One engineer looks through the backlog, finds the first issue, and starts writing a *third* PR because "the bug looks easy to fix."
+
+At the same time, a maintainer sees the frontend-only PR, assumes it solves the whole problem, and merges it.
+
+Now the UI looks fixed, but the backend still drops the files. Multiple people just wasted their evening on the same problem, and the issue tracker is now actively lying to everyone.
+
+Both of those engineers did exactly what they were supposed to do, and together, they still made the project worse.
+
+The most expensive open source bug is often not the hardest one.
+It's the one that gets fixed three times.
+
+You might be thinking: "That's just a communication issue. Why didn't they talk to each other?"
+
+In a company, they would have. They might have seen each other's status in a daily stand-up or noticed a message in a private Slack channel.
+
+Open source doesn't work like that.
+
+Take OpenClaw as an example. It has a huge contributor base and a much smaller group of **maintainers** (the leaders of the open source project). While a developer in Zurich is waking up to spot a bug, someone in San Francisco is finishing their day, and a third person in Tokyo is just starting to look at the backlog. Almost everyone involved is doing this in their spare time, fitting it in around their "real" jobs. They're rarely online at the same time, let alone in the same meeting. There's no "daily sync" for a huge, distributed group of strangers.
+
+Even for the maintainers, keeping track of every relationship is a full-time job they don't have time for. On a project like OpenClaw, thousands of issues and PRs can be open at the same time. If the maintainers spent their time manually checking every new issue for duplicates or related code, they'd never have time to actually get a single PR merged.
+
+If the issues and PRs aren't linked, communication breaks before it even starts. One engineer might "claim" an issue with a comment, but if a second engineer finds a duplicate issue buried pages deep in the backlog, they have no way of knowing that someone else is already halfway through the fix - or that two other PRs already exist that address the same problem.
+
+I almost did exactly that.
+
+Recently, while using OpenClaw on my Android phone, I noticed something odd: tapping the paperclip in the web UI only let me choose images, while Telegram let me upload any file.
+
+Since OpenClaw is an AI coding assistant, I asked it to investigate if this was a bug in OpenClaw. It looked through its own codebase, quickly found the technical cause, and **immediately asked if it should prepare a PR with the fix.**
+
+If even an AI assistant jumps straight to the code without checking if anyone else is already working on the problem, it's no surprise that developers do the same.
+
+If I had stopped there, the next step would have been simple: let the AI generate the fix, create a branch, and open one more PR.
+
+Instead, I asked it to check the issue tracker and PRs first.
+
+That changed everything.
+
+There were already several related issues and two PRs. One issue asked for support for document file types. Another asked for support for any kind of file, not just documents. One PR only changed the frontend. The other changed both frontend and backend. And behind all of that was the core problem: we already knew the backend dropped these files, so a UI-only fix would just create a broken feature.
+
+At that point, writing another fix was the worst thing I could do.
+
+The useful contribution was mapping out the existing work so the maintainers could see the overlap, close the duplicates, and focus on the PR that actually solved the whole problem.
+
+That's triage.
+
+The issue tracker is the project's shared memory.
+
+If that shared memory is vague, outdated, or misleading, you get exactly the scenario I just described: two engineers writing redundant code while a maintainer merges a half-finished fix.
+
+---
+## Table of Contents
+
+* [1. Triage is debugging the issue tracker](#Triage)
+
+* [2. Why this matters more than most people think](#Why)
+
+* [3. Related isn't the same as duplicate](#Related)
+
+* [4. The 5-minute workflow I wish more people used](#Workflow)
+
+* [5. What good triage comments sound like](#Comments)
+
+* [6. The fastest ways to make triage worse](#BadTriage)
+
+* [7. AI makes human triage more important, not less](#AI)
+
+* [8. Final thoughts](#Final)
+
+---
+
+## <a name="Triage"></a> 1. Triage is debugging the issue tracker
+
+At first glance, triage sounds boring.
+
+It sounds like paperwork.
+It sounds like process.
+It sounds like the thing you do when you can't contribute code.
+
+I think that's backwards.
+
+On a busy open source project, triage is one of the most important contributions you can make, because it changes what everyone else does next.
+
+The best short definition I've come up with is this:
+
+**Triage is debugging the issue tracker until the next action becomes obvious.**
+
+That next action might be:
+
+1. Is this reproducible?
+2. Is there already a better issue for it?
+3. Is there already a PR for it?
+4. Does that PR solve the whole problem, or only part of it?
+5. Is this still relevant, or has later work already changed the behavior?
+
+A good triage comment usually doesn't try to do everything.
+
+It does one job: it reduces uncertainty.
+
+If you only remember one thing from this article, remember this:
+
+**A short, accurate comment is better than a long, uncertain one.**
+
+## <a name="Why"></a> 2. Why this matters more than most people think
+
+### 1. Duplicate work is easier than people realize
+
+As we saw with the OpenClaw example, the asynchronous nature of open source makes it incredibly easy for two people to spend their evening on the exact same problem without realizing it.
+
+That sounds small until it happens again and again.
+
+Then it becomes a tax on everyone involved.
+
+### 2. A merged PR isn't the same as a solved issue
+
+A PR title can sound complete. The green "Merged" badge feels like a finish line. But a merged PR doesn't automatically mean the whole problem is gone.
+
+Recently, a severe issue was reported in OpenClaw: sending a binary file via Telegram caused the bot to dump raw, unsanitized bytes into the context. A single file could blow up the prompt to [around 460,000 tokens](https://github.com/openclaw/openclaw/pull/66663). This wasn't just a bug; it posed a massive risk of resource exhaustion and cost amplification.
+
+Shortly after, a contributor opened a quick PR to fix it. OpenClaw's PR template explicitly asks PR authors to confirm they deployed the change locally and tested it manually. Instead, the PR body didn't include the required template information. The PR description explicitly stated it was generated by an AI - and in my experience, if you don't tell an AI to follow a repository's template, it will usually just invent its own structure and, in this case, completely drop the manual verification part.
+
+Because of the urgency, a maintainer assigned themselves and merged it within minutes. I don't blame the maintainer for a second - in fact, if I were the maintainer, I would have done the same thing. With thousands of open PRs, delaying a critical security patch to argue over paperwork is a bad tradeoff. You understandably assume that if a PR author can patch a complex bug, they probably verified that it works.
+
+To be clear: double-checking *merged* PRs is rarely how you should spend your time. In open source, your energy is almost always better spent triaging the open backlog. But when I looked at the changes in this specific PR, I was surprised by how small the fix was. It gave me the same nagging feeling as the frontend-only fix we talked about earlier: *Did this actually solve the whole problem?* Because I didn't know that specific part of the codebase well enough to confirm that gut feeling just by reading the diff, I decided to do the easiest thing: I deployed the newly merged main branch and tried to see if I could still reproduce the issue myself.
+
+Uploading a 100 KB EPUB file immediately blew up my local prompt to [231,000 tokens](https://github.com/openclaw/openclaw/pull/66877).
+
+The PR author had fixed *part* of the issue, but not all of it. If the PR had been transparent that the fix hadn't been tested locally, someone else could have stepped in to verify it *before* it was merged - which, by the way, is a fantastic triage contribution all on its own. This isn't exclusively an AI problem. Long before AI, contributors deleted templates because they looked like boilerplate or felt like overkill for a "small" fix. Most contributors don't do this maliciously; they don't realize why maintainers rely on those checklists. But whether a human misunderstands the template or an AI wipes it out, the result is the same: hiding the fact that you skipped manual testing sets a dangerous trap.
+
+After I patched the remaining upload leak, I kept digging. Experience tells me that where there is one bug, there are usually neighbors. Instead of stopping at the narrowest interpretation of the bug, I tried *replying* to a message of a previously sent binary file on Telegram. Sure enough, it pulled the raw bytes into the context again. It was a different path, but the same broader problem.
+
+I packaged both fixes into a new [PR (#66877)](https://github.com/openclaw/openclaw/pull/66877), which the maintainers merged an hour later.
+
+The real lesson here is about what code review looks like under pressure. In a perfect world, a maintainer reviewing a PR would always pull the branch and test the behavior locally to verify it actually solves the issue. But when a team is drowning in thousands of open PRs, they often only have time to read the diff and ensure the logic makes sense. They have to use their judgment to decide whether the change looks good enough to skip local testing, trust the PR author's claims, or rely on the community to verify the real behavior.
+
+This is exactly where triage steps in. You don't have to write the code to save the day. If you take an open PR, test it locally, and leave a comment saying, *"I deployed this branch and followed the reproduction steps, but the issue is still present,"* you just saved the project from shipping a broken feature. Catching an incomplete fix before it gets merged makes you a hero to the maintainers.
+
+In my case, the broken PR was merged within minutes because it was an urgent security fix, leaving no window for the community to verify the code before it landed. But normally, PRs sit in the review queue for days or weeks. That gives you plenty of time to pull the branch, test the fix yourself, and raise that exact flag.
+
+However, if the code actually works, commenting, *"I deployed this locally and confirmed: on main the issue happens, but on this branch it is completely resolved,"* is extremely valuable for a maintainer. Doing the manual verification that maintainers don't have time for is one of the most valuable triage contributions you can make.
+
+### 3. A messy issue tracker lies to people
+
+An unclear issue tracker doesn't just look untidy.
+It actively changes what people decide to do.
+
+Someone spends an evening reproducing a bug that already has a PR.
+A maintainer assumes the problem is solved because the title sounds right.
+A contributor opens a duplicate issue for a "PDF upload error" because the original report was vaguely titled "mobile attachment bug" and nobody ever added the specific keywords or error codes that would have made it show up in a search.
+
+Bridging these gaps doesn't require you to be the lead architect. It just means applying a **technical perspective** to look past the surface-level description. In my case, it was easy to assume that because Telegram already allowed all file types, the backend was fine - making a frontend-only fix look like the complete answer. Triage is that "Wait a minute" moment where you pause to verify if that assumption is actually true.
+
+Whether you're identifying a shared root cause between two different-looking bugs, or noticing that a PR only masks a symptom instead of fixing the logic, you're using engineering judgment. That's why keeping the issue tracker trustworthy isn't admin work; it's **engineering work**.
+
+### 4. It's one of the best ways to start contributing
+
+Many engineers assume they need deep knowledge of the codebase before they can contribute to open source.
+
+That's understandable, but it's often wrong.
+
+You don't need to know every service, build step, and deployment detail to notice that:
+
+- the reproduction steps are missing
+- the version is missing
+- the PR description doesn't match the changed files
+- two PRs address the same issue but aren't linked to the issue yet
+- a PR fixes an issue that hasn't been linked
+- two issues describe the exact same problem from slightly different angles
+- a PR only touches the frontend because it **looks** as though the backend is already "done" (as I initially assumed). You don't need to know the code to ask: "Since Telegram **already allows all file types**, are we sure the Web UI uses the exact same API path, or are we just **hoping** it does?"
+
+That level of careful reading is an immediate, high-value contribution. On a project with a large review queue, the last thing maintainers need is another item added to it. Even a one-line "quick fix" adds to the noise. Connecting the dots is more valuable because it helps clear the backlog instead of adding to it.
+
+## <a name="Related"></a> 3. Related isn't the same as duplicate
+
+This is one of the easiest mistakes to make if you're new to open source. Several things can exist in the same part or functionality of the software without being the same issue.
+
+In my OpenClaw example, all of these were about file uploads:
+
+- the web UI only accepts images
+- one issue asks for support for document files
+- a broader issue wants support for any kind of file
+- one PR changes only the frontend
+- another changes frontend and backend
+- there was also a question about whether uploading files actually worked at all
+
+Those items are clearly connected, but they aren't identical. If you treat them as a single "bucket" and start closing them simply based on which one arrived first, you create a chain reaction of waste:
+
+**1. The "Incomplete Fix" Trap**
+It's easy to think, *"Obviously, I would keep the PR that fixes both the frontend and the backend."* But in reality, triagers and maintainers rarely have the time to deeply compare the code of every duplicate. Usually, they just see two PRs with similar titles that claim to fix the same problem.
+
+Ideally, the PR author would leave a note saying, *"I'm opening this because PR #123 is an incomplete fix."* But in practice, most contributors don't realize they should search for existing, unlinked PRs before writing code. They usually have no idea the older PR even exists.
+
+If you just assume the two PRs are identical and blindly close the newer one as a duplicate, you might accidentally bury the actual solution. If the older, partial fix gets merged, the feature will still be broken. But since the "right" PR was already closed, nobody will think to look for it. Weeks from now, a third contributor will end up spending hours just to rewrite the exact same backend code that was already sitting in the PR you closed.
+
+**2. The Scope Trap**
+If you close the request for "any file type" in favor of the narrower "documents support," you have unintentionally limited the project's potential. It creates a confusing experience where users can send images through the Telegram bot, but not through the Web UI. This mismatch happens when a triager takes an issue author's request too literally. Issue authors often think about their immediate needs, like uploading a PDF, but a good triager has to translate that narrow complaint into a broader system requirement. If you just assume the issue author's specific example is the whole story, you guarantee that developers will have to rewrite the exact same code the moment someone else tries to upload a code file.
+
+**3. The "Cannot Reproduce" Trap**
+The most dangerous mistake in triage is assuming a bug doesn't exist just because you can't reproduce it yourself. It's incredibly common to read an issue report, try it out, see it working perfectly, and immediately close the issue as non-reproducible. But unless the issue author is an LLM, they probably aren't hallucinating. If you can't trigger the bug, it's almost always because you don't fully understand the issue author's environment, or because they left out a specific detail that felt too "obvious" to mention. When you experience this, the best thing you can ask yourself is: *"What am I missing?"*
+
+You wouldn't believe how many issues get closed this way, leaving real, systemic bugs hiding in the codebase to frustrate users for years. Maintainers don't do this because they don't care. With thousands of issues to fix, they just don't have the time to chase down missing details for every vague report.
+
+This is exactly where you can step in. By going the extra mile - asking the issue author clarifying questions, trying to set up an environment that matches theirs as closely as possible, or trying different settings - you provide the exact help the maintainers need. Good triage means not giving up. You should never be satisfied until you figure out exactly what the issue author was doing. Treating every report as worth understanding and digging until you find the missing variable is the difference between blindly closing tabs and actually improving the project.
+
+There's one more trap that causes the same kind of waste, even when no duplicate is involved.
+
+**4. The "Confident Diagnosis" Trap**
+
+Some issue reports do more than describe a problem. They also explain what the issue author believes caused it.
+
+That's helpful, but it can also hide the next thing you should verify.
+
+Imagine an issue that says:
+
+> The database doesn't save profile changes.
+>
+> I changed my display name, clicked Save, saw a success message, refreshed the page, and the old name was back.
+>
+> I checked the user record in the database and found that it still contains the old display name, so I suspect there's an issue with writing the change to the database.
+
+The issue author may be right. Maybe the backend really doesn't persist the change to the database.
+
+But the problem could also be somewhere else: the frontend never sent the changed field, the backend rejected the change but the frontend still showed a success message, the backend wrote to a different record, or the write was attempted but rolled back.
+
+Good faith means assuming the issue author is trying to help. It doesn't mean assuming their diagnosis is automatically correct.
+
+A useful triage comment could say:
+
+> Thanks for the clear steps and for checking the database.
+>
+> You mentioned that after clicking Save, you see a success message, but the user record in the database still contains the old display name.
+>
+> I'd like to confirm where in the flow the change gets lost. Could you check the browser network tab when clicking Save and see whether the request contains the changed display name and whether the response is successful?
+>
+> That would help narrow this down: either the frontend doesn't send the change, the backend rejects it but the frontend still shows success, the backend writes to a different record, or the write is attempted but rolled back.
+
+This kind of comment takes the issue seriously without accepting the first diagnosis too quickly. It tests the simple explanations first, but still leaves room for the issue author to have information you don't have yet.
+
+That balance matters. If you assume the issue author is wrong, your comment can sound dismissive and make them defensive. If you assume the issue author's diagnosis is right, you may skip the simplest explanation and turn a misunderstanding into a misclassified bug, a misplaced feature request, or a much larger investigation than necessary.
+
+**Don't waste a misunderstanding**
+
+And if the issue author comes back and says, "You were right, I misunderstood how this works," don't treat that as the end of the story.
+
+That misunderstanding may still be useful.
+
+This isn't limited to configuration misunderstandings. Whenever an issue ends without any change to code, docs, examples, error messages, or repository guidance, pause for a moment: is there a small change that would have helped the issue author find the answer before needing to open an issue?
+
+You can ask:
+
+> Thanks for confirming, glad it works now.
+>
+> One more thought: this sounds like something the docs could make clearer. What should the docs say so the next person can find the answer before needing to open an issue?
+
+If the issue author suggests a clearer wording, don't let that disappear in the thread. If you have time, turn it into a small docs PR and link the PR back to the original issue. You don't need to be a maintainer to do that.
+
+If you don't have time to make the docs change yourself, create a follow-up issue instead. Link the original discussion and write down what was confusing, so someone else can pick it up later.
+
+Even if the original issue has already been closed, this can still be valuable. If comments are still open, you can ask the question there. If not, you can still open a docs issue that points back to the original discussion.
+
+A misunderstanding isn't always just user error. Sometimes it's evidence that the project is teaching the right thing in the wrong way.
+
+That's still triage. You took one confusing issue and turned it into something the project can learn from.
+
+---
+
+In the end, good triage sits in the middle. It keeps the differences that matter and removes the duplication that doesn't. Sometimes the real question isn't just "what links to what?" It's "what kind of problem is this, actually?" In my case, the Web UI behavior looked like a bug because Telegram allowed arbitrary file types. But after reading more closely, it also looked plausible that the Web UI had simply been implemented as an image-only flow on purpose. Good triage makes that kind of distinction visible instead of pretending it's obvious.
+
+## <a name="Workflow"></a> 4. The 5-minute workflow I wish more people used
+
+You don't need a large, complicated process.
+
+You need one simple enough that you'll actually use it. If a workflow feels like a chore, you'll skip it the second you get busy. If it's natural and intuitive, it actually gets followed.
+
+### 1. Read the whole thing
+
+Don't triage from the title.
+
+Read the body, screenshots, reproduction steps, version information, linked issues, recent comments, and, for PRs, the changed files.
+
+A surprising amount of poor triage comes from people reacting to names instead of content.
+
+As you read, slow down whenever the issue author moves from "this happened" to "therefore this is the cause."
+
+This describes what happened:
+
+> I changed my display name, clicked Save, saw a success message, refreshed the page, and the old name was back.
+
+This is a possible cause:
+
+> There must be an issue with writing to the database.
+
+The issue author may be right. But the cause could also be the frontend request, backend validation, a different database record, a rollback, stale cached data, or a draft state.
+
+That doesn't mean the issue author is wrong. It just tells you what to check next.
+
+### 2. Ask whether there is enough information to act
+
+Before doing detective work, ask a simpler question:
+
+Is there even enough detail here to classify the problem?
+
+For an issue, that usually means:
+
+- exact version
+- reproduction steps
+- expected behavior
+- actual behavior
+- environment
+- logs or screenshots, when relevant
+
+For a PR, it can also mean:
+
+- scope
+- linked issues
+- tests
+- migration notes
+- whether the changed files actually match the claim
+
+If the basics are missing, asking for them may already be the most useful thing you can do.
+
+### 3. Search for existing context
+
+Before you comment, build a tiny map in your head by searching for:
+
+- the same symptom
+- a broader issue in the same area
+- a deeper issue behind the symptom
+- an existing PR that may already cover it
+- a PR that may only cover part of it
+- newer releases or merged PRs that may already have changed the behavior
+
+That small map is often enough to stop you from commenting too early or opening something that never needed to exist.
+
+### 4. Decide the one job of your comment
+
+Before writing anything, finish this sentence:
+
+**The job of this comment is to...**
+
+For example:
+
+- ask for missing details
+- link this issue to a broader one
+- point out that the PR is partial
+- tell readers where the real implementation work is happening
+- explain that two related issues aren't duplicates
+
+If your comment tries to do five jobs, it will usually do none of them well.
+
+### 5. Only state what you have verified
+
+This is the rule I trust most: **Don't guess. Only state exactly what you've personally checked.**
+
+Not the longest explanation.
+Not the most confident-sounding assumption.
+Just the verified facts.
+
+Comment on the **issue** when the main point is that the problem needs clarification, is narrower or broader than another issue, or already has a relevant PR.
+
+Comment on the **PR** when the main point is that the proposed fix is partial, broader than the linked issue, or overlapping with other work.
+
+Only comment on both the issue and the PR if the two audiences (the issue authors reporting the bug and the developers reviewing the code) genuinely need different information.
+
+And whatever you do, match your certainty to what you actually verified.
+
+Don't write:
+
+```md
+Fixed by #123.
+```
+
+because the title sounds right.
+
+Write it only if you checked the diff and are confident it really solves the issue.
+
+If you're not there yet, softer wording is better:
+
+```md
+This may be addressed by #123.
+```
+
+That sounds like a small difference.
+In triage, it isn't.
+
+On GitHub, if you write [`Fixes #123`](https://docs.github.com/en/issues/tracking-your-work-with-issues/using-issues/linking-a-pull-request-to-an-issue) in a PR description, the linked issue will usually get closed automatically once the PR is merged. If you're wrong, the bug stays in production, users get frustrated, and someone has to open a new issue weeks later. That false confidence is expensive.
+
+## <a name="Comments"></a> 5. What good triage comments sound like
+
+The best triage comments are usually short, concrete, and slightly boring in the best possible way.
+
+They don't try to sound clever.
+They don't try to sound authoritative.
+They remove confusion.
+
+A useful triage comment usually does three things:
+
+1. Lead with the conclusion.
+2. Explain why.
+3. Then stop.
+
+That doesn't mean the comment has to be tiny. It means the comment should contain the information needed to make the next decision without requiring everyone else to reconstruct your reasoning.
+
+Here are four real patterns from the OpenClaw issues and PRs that inspired this post.
+
+### Linking a narrower issue to a broader one
+
+From [Issue #50337](https://github.com/openclaw/openclaw/issues/50337#issuecomment-4184430216):
+
+> This issue is similar to [#56344](https://github.com/openclaw/openclaw/issues/56344).
+>
+> This issue is about allowing documents to be uploaded in addition to images through the Web UI, while [#56344](https://github.com/openclaw/openclaw/issues/56344) is about allowing all file types. I prefer the approach of [#56344](https://github.com/openclaw/openclaw/issues/56344), because it's consistent with what channels like Telegram allow and would also cover other useful file types like `.patch`, `.md`, `.adoc`, etc.
+>
+> Because of that, I think this issue could be closed in favor of [#56344](https://github.com/openclaw/openclaw/issues/56344). The PR for that broader change is [#57707](https://github.com/openclaw/openclaw/pull/57707).
+
+This works because it doesn't just say "duplicate" or "related". It explains the relationship between the issues: one is narrower, the other is broader, and the broader one already has an implementation path.
+
+The useful pattern is:
+
+1. Name the related issue.
+2. Explain how it's related.
+3. Explain which one should stay open and why.
+4. Point to the PR, if one exists.
+
+### Explaining that a PR is only partial
+
+From [PR #54248](https://github.com/openclaw/openclaw/pull/54248#issuecomment-4184430558):
+
+> This PR is incomplete, because it only covers the UI side of the upload flow.
+>
+> Files other than images would still not be handled properly by the backend, so this would not fully solve the problem. I think this PR could be closed in favor of [#57707](https://github.com/openclaw/openclaw/pull/57707), because that one covers both the frontend and backend parts of the same issue.
+
+This works because it leads with the conclusion but still includes the reason that matters. The problem isn't that the PR is bad. The problem is that it only fixes one side of the flow.
+
+The useful pattern is:
+
+1. State that the PR is incomplete.
+2. Say exactly which part it covers.
+3. Say exactly which part is still missing.
+4. Link to the more complete PR.
+
+### Pointing issue readers to the implementation
+
+From [PR #57707](https://github.com/openclaw/openclaw/pull/57707#issuecomment-4184430466):
+
+> Implements [#56344](https://github.com/openclaw/openclaw/issues/56344) and [#58423](https://github.com/openclaw/openclaw/issues/58423).
+>
+> It also includes the smaller change requested in [#50337](https://github.com/openclaw/openclaw/issues/50337), since allowing all file types also covers allowing documents in addition to images through the Web UI.
+
+This works because it makes the scope of the PR explicit. Someone reading one of the issues can understand that this implementation covers more than one request, and why the smaller request is included in the broader one.
+
+The useful pattern is:
+
+1. List the issues the PR implements.
+2. Mention smaller related requests that are also covered.
+3. Explain why they are covered, instead of assuming that the link is obvious.
+
+### Asking for the one detail that matters next
+
+Adapted from [Issue #56375](https://github.com/openclaw/openclaw/issues/56375#issuecomment-4184430620):
+
+> The upload button isn't just decorative. Uploading image files through it works for me.
+>
+> You're on `2026.3.24`. Can you check whether this still happens on `2026.4.2`?
+>
+> It would help if you could share the file type you are trying to upload, the actual file if you can attach it, whether this only affects one file or different file types, whether it also happens in another browser, what OS/environment OpenClaw runs on, and whether you use an ad blocker, VPN, router-level blocking, or something similar.
+>
+> Since the screenshot shows a custom API setup, it would also help to know whether this happens with other providers/models and to see the relevant part of your `openclaw.json`, with secrets redacted.
+>
+> One important detail: the Web UI currently only supports image uploads. So if your file picker lets you choose a non-image file, that could explain what you are seeing. This may also change with [#57707](https://github.com/openclaw/openclaw/pull/57707), which adds support for all file types in the Web UI.
+
+This works because it doesn't just ask for "more information". It asks for the specific information that would help separate several possible causes: an old version, an unsupported file type, a browser issue, an environment issue, a blocking extension, or a provider/model configuration problem.
+
+The useful pattern is:
+
+1. State what you could verify yourself.
+2. Ask the issue author to test the newest relevant version, if they aren't already using it.
+3. Ask for the smallest useful set of missing details.
+4. Explain any limitations that might already explain the issue report.
+5. Link to the PR that may change that behavior.
+
+The pattern is the same in all four cases: say what you think should happen, give enough context to make it actionable, and avoid turning the comment into another discussion thread.
+
+Good triage comments aren't short because information is missing. They're short because everything unrelated to the next decision has been removed.
+
+## <a name="BadTriage"></a> 6. The fastest ways to make triage worse
+
+Bad triage is worse than no triage because it adds noise and false confidence.
+
+The fastest ways to make a busy issue tracker worse are usually these:
+
+- opening a new issue or PR before checking what already exists
+- posting bare links like `Related: #123` or no links at all without saying why the link matters
+- posting comments like "I have this issue too" without providing any relevant context or reproduction steps
+- guessing from titles instead of reading the diff
+- assuming that just because two issues touch the same part of the UI, they must be the exact same bug
+- asking for information that's already in the issue body or screenshot
+- sounding more certain than you really are
+- treating "it was my mistake" as the end of the story, instead of turning the misunderstanding into a docs improvement or follow-up issue
+- pasting AI-generated comments without reviewing them first
+
+Remember: triage is supposed to reduce work, not increase it!
+
+## <a name="AI"></a> 7. AI makes human triage more important, not less
+
+AI is genuinely useful for triage.
+
+It can help with things like:
+
+- finding related issues and PRs
+- checking whether an issue or PR follows the repository template
+- suggesting better search terms
+- summarizing the overlap between two issues
+- mapping the surrounding repository context
+
+But AI is also very good at sounding certain when it shouldn't be.
+
+That makes it useful as an assistant and dangerous as a substitute for judgment.
+
+A simple way I think about it is this:
+
+**AI is a speed multiplier. It multiplies good process and bad process.**
+
+In my OpenClaw case, the assistant quickly understood the code and was ready to fix it. What it didn't naturally do was the human part: slow down, inspect the issue tracker carefully, and figure out whether a new PR would actually help.
+
+Instead of letting AI blindly post comments for you, the best way to use it for triage is to map the territory first.
+
+You can use AI to scan the repository, identify similar issues, check recent PRs, read contribution guidelines, and inspect issue or PR templates before you ever write a line of code.
+
+One tedious part of that work is checking whether an existing issue or PR actually follows the repository's own template. To make that easier, I wrote a [reusable prompt](https://gist.github.com/martinfrancois/b38b3d14098ec585f431299a61c3f7c9) for checking whether an issue or PR follows the repository's own template. You paste in the issue or PR URL, and it asks the agent to find the relevant template, compare the body against it, classify the result, flag possible inconsistencies, and draft a concise comment for you to review, if one is needed.
+
+I contributed that prompt to the [Good OSS Citizen](https://github.com/tesslio/good-oss-citizen) skills, so if you use an AI coding agent, Good OSS Citizen is the more convenient version: same idea, less copy-pasting, and more structure.
+
+From the cloned fork of the open source project you plan to work from, install it with one of these commands (requires [Node.js](https://nodejs.org/en/download) or [Bun](https://bun.com/docs/installation)):
+
+```bash
+# npm
+npx tessl i tessl-labs/good-oss-citizen
+
+# Yarn
+yarn dlx tessl i tessl-labs/good-oss-citizen
+
+# pnpm
+pnpm dlx tessl i tessl-labs/good-oss-citizen
+
+# Bun
+bunx tessl i tessl-labs/good-oss-citizen
+```
+
+If your coding agent has internet access and can run shell commands, you can also point it to the Good OSS Citizen repository and ask it to install the tool in your fork. Review the command before running it.
+
+Then ask your agent:
+
+```md
+Triage this issue:
+https://github.com/example/project/issues/123
+```
+
+That's it.
+
+The triage skill in Good OSS Citizen does a bit more than the raw prompt. It can fetch the already-open issue or PR body, fetch the matching templates, apply a reusable rubric, write a `triage_comment.md` handoff, and explicitly tell the agent not to post to GitHub. It drafts; you decide whether to post.
+
+Good OSS Citizen also includes broader open source contribution checks through its rules, skills, and scripts: contribution guidelines, AI policies, prior rejected PRs, claimed issues, DCO requirements, and changelog expectations. For triage, the important part is that the agent does the boring checks first and leaves the judgment to you.
+
+Use AI for the heavy lifting.
+Let it search.
+Let it summarize.
+Let it prepare a draft.
+
+But don't outsource the judgment.
+
+## <a name="Final"></a> 8. Final thoughts
+
+Triage isn't glamorous.
+
+It doesn't give you the same dopamine hit as opening a PR, seeing green CI checks, and getting something merged.
+
+But on busy open source projects, it's often the most impactful contribution you can make.
+
+Issue trackers don't usually get messy because of a single big mistake. They become messy the same way a kitchen junk drawer does. One day, you toss a vague bug report in. The next day, an unlinked PR. Then an overconfident comment. Nobody cleans it out, and six months later, no one can find the batteries.
+
+Good triage works in the opposite direction.
+It makes the issue tracker easier to trust.
+It makes the next decision easier.
+It helps maintainers spend more time reviewing the right work and less time reconstructing context that should already be there.
+
+And if you're not sure what kind of help a project needs, ask.
+
+Most projects link to their community from the `README.md`, `CONTRIBUTING.md`, or documentation. Look for words like "Community", "Contributing", "Support", "Chat", or "Getting help". That might lead you to Discord, Slack, Matrix, Zulip, a forum, a mailing list, or GitHub Discussions.
+
+Once you find the most relevant place, ask a simple question:
+
+> I like this project and would like to contribute in a way that actually helps. Is this the right place to ask what would be most useful right now?
+
+Even if it isn't the perfect place, this makes it easy for someone to point you in the right direction.
+
+So the next time you want to contribute to open source, don't start by asking:
+
+**"What can I code?"**
+
+Also ask:
+
+**"What can I clarify?"**
+
+On busy projects, that's triage.
+And very often, that's exactly the contribution maintainers need most.
+
+If you'd like to share your own experiences with triage, want a second opinion on a messy issue tracker, or need specific advice, feel free to reach out via [email](mailto:francois.martin@karakun.com) or connect with me on [LinkedIn](https://linkedin.com/in/françoismartin).
