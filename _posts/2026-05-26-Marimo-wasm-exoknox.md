@@ -3,9 +3,9 @@ layout: post
 title: 'Shipping marimo WASM Notebooks as Browser-Based Engineering Tools with Spring Boot'
 seo_title: 'marimo WASM Tools with Spring Boot'
 description: 'Deploy marimo WASM notebooks as browser-based Python tools with Pyodide, Spring Boot security, shared wheels, and REST API integration.'
-authors: [ 'dirk' ]
+authors: [ 'marcel' ]
 featuredImage: 'WASM'
-excerpt: 'Engineering workflows often need interactive judgment, not just automation. This article shows how Exoknox uses marimo, Pyodide, and Spring Boot to ship notebook-based tools directly in the browser.'
+excerpt: 'Engineering workflows often need interactive judgment, not just automation. This article shows how EXOKNOX uses marimo, Pyodide, and Spring Boot to ship notebook-based tools directly in the browser.'
 permalink: '/2026/05/26/marimo-wasm-exoknox.html'
 categories: [ Spring Boot, Python, REST API, WASM ]
 header:
@@ -45,12 +45,12 @@ Engineers need to compare different algorithms, tune parameters, inspect the res
 
 At the same time, we wanted to move away from EXOKNOX's Java-based Eclipse RCP frontend.
 
-So the requirement was clear: we needed a lightweight, browser-based Python tool with an interactive UI that could read and write Exoknox data.
+So the requirement was clear: we needed a lightweight, browser-based Python tool with an interactive UI that could read and write EXOKNOX data.
 
 ## <a name="why-marimo-for-browser-based-python-tools"></a> Why marimo for Browser-Based Python Tools
 
 [Marimo](https://marimo.io){:target="_blank"} is a reactive Python notebook framework. 
-Unlike Jupyter, Marimo notebooks are pure Python files — no JSON, no hidden state. 
+Unlike Jupyter, marimo notebooks are pure Python files — no JSON, no hidden state. 
 Cells are reactive: when a value changes, all dependent cells re-execute automatically. 
 It ships a clean web UI and can be deployed either as a running server application or as a **WebAssembly (WASM) application** that executes entirely in the browser via [Pyodide](https://pyodide.org){:target="_blank"}.
 
@@ -73,30 +73,30 @@ frontend/scripting/
 │       ├── api/              ← HTTP client to access the backend REST API
 │       └── curveprocessing/  ← Curve processing functions
 └── marimoapps/
-    ├── curveeditor/          ← Marimo notebook app
-    └── curvefitting/          ← Marimo notebook app
+    ├── curveeditor/          ← marimo notebook app
+    └── curvefitting/          ← marimo notebook app
 ```
 <br>
 **`common`** is a plain Python package built as a wheel (`.whl`). 
 It contains all business logic and is shared across both apps — as an editable [uv](https://github.com/astral-sh/uv){:target="_blank"} workspace dependency during local development and as a pre-built wheel loaded at runtime inside the browser.
 
-**`marimoapps`** contains the Marimo notebooks. Each app declares `common` as a `uv` workspace dependency so that during development they share a single source tree. For WASM export, the common wheel is bundled alongside the app and loaded at runtime via `micropip`.
+**`marimoapps`** contains the marimo notebooks. Each app declares `common` as a `uv` workspace dependency so that during development they share a single source tree. For WASM export, the common wheel is bundled alongside the app and loaded at runtime via `micropip`.
 
 The high-level architecture is straightforward:
 
 ```
 Browser
-  └── Marimo WASM app (Python running in Pyodide)
-        ├── Fetches functional data via Exoknox REST API
-        └── Writes results back via Exoknox REST API
+  └── marimo WASM app (Python running in Pyodide)
+        ├── Fetches functional data via EXOKNOX REST API
+        └── Writes results back via EXOKNOX REST API
 
 Spring Boot Server
-  ├── Serves Marimo notebooks as static resources
+  ├── Serves marimo notebooks as static resources
   ├── Enforces OIDC authentication
-  └── Provides the Exoknox REST API
+  └── Provides the EXOKNOX REST API
 ```
 <br>
-There is no Marimo server process and no Python runtime on the backend. Just static files, served securely, executing in the client's browser.
+There is no marimo server process and no Python runtime on the backend. Just static files, served securely, executing in the client's browser.
 
 The resulting tools are embedded as web pages in the browser: 
 
@@ -116,15 +116,15 @@ Moving from proof of concept to production meant solving deployment, API, and de
 
 ### Challenge 1 — Secure Static Notebook Deployment Without a marimo Server
 
-The obvious deployment for Marimo is as a server: you run `marimo run notebook.py` and Marimo starts a WebSocket-backed application server that executes Python on the backend. 
+The obvious deployment for marimo is as a server: you run `marimo run notebook.py` and marimo starts a WebSocket-backed application server that executes Python on the backend. 
 We evaluated this and rejected it for two reasons.
 
 **Security surface.** 
-A running Marimo server executes arbitrary Python code from notebooks that are essentially customer property. 
+A running marimo server executes arbitrary Python code from notebooks that are essentially customer property. 
 Even sandboxed, this is an attack vector we preferred not to manage.
 
 **Infrastructure complexity.** 
-For on-premise installations — which many Exoknox customers require — spinning up and managing a persistent Marimo server (or per-session containers in Kubernetes) places requirements on the customer's infrastructure that we cannot guarantee.
+For on-premise installations — which many EXOKNOX customers require — spinning up and managing a persistent marimo server (or per-session containers in Kubernetes) places requirements on the customer's infrastructure that we cannot guarantee.
 
 The WASM approach removes the need to execute notebook Python on the backend. 
 That significantly reduces the server-side attack surface, although the browser-side notebook still has to be treated like any authenticated frontend code.
@@ -133,13 +133,13 @@ Backend access is secured by OIDC authentication and managed entirely by the bro
 
 #### From Notebook to Static WebAssembly Assets
 
-Marimo can export a notebook as a self-contained WASM application:
+marimo can export a notebook as a self-contained WASM application:
 
 ```bash
 marimo export html-wasm notebook.py -o dist/notebook.html --mode run
 ```
 <br>
-The output is a static directory with an `index.html`, the notebook code, and the assets needed by the Marimo WASM runtime. 
+The output is a static directory with an `index.html`, the notebook code, and the assets needed by the marimo WASM runtime. 
 We serve this from Spring Boot as static content, protected behind Spring Security's OAuth2 login flow.
 
 ```java
@@ -208,12 +208,12 @@ Spring Boot then serves these static resources, making the apps accessible at:
 A marimo WASM notebook runs entirely in the browser. 
 It has no direct access to databases or backend services — it can only make HTTP requests. 
 The data access model is exactly the same as any other frontend application. 
-In the module we have a directory with Python modules that are bundled as a wheel into the WASM, providing access to the Exoknox REST API.
+In the module we have a directory with Python modules that are bundled as a wheel into the WASM, providing access to the EXOKNOX REST API.
 
 #### Browser-Based HTTP Requests with Pyodide
 
 We built a Python module that uses Pyodide's HTTP module to send HTTP requests to the backend (`http_client.py`).
-The notebook fetches data from the Exoknox REST API using the user’s existing browser session. 
+The notebook fetches data from the EXOKNOX REST API using the user’s existing browser session. 
 In WASM mode, `credentials="include"` lets the browser attach the same authenticated session cookies it would use for the rest of the application.
 
 ```python
@@ -272,7 +272,7 @@ async def save_dataset(scripting_request: ScriptingResultRequestDTO, base_url: s
 <br>
 #### Notebook Integration
 
-Each Marimo notebook contains a dedicated cell to load data on startup. 
+Each marimo notebook contains a dedicated cell to load data on startup. 
 It reads the dataset ID from URL query parameters, derives the base URL from the notebook's current location, and hands back either the loaded channels or an error message:
 
 ```python
@@ -319,10 +319,10 @@ async def _(mo, exoknox_api, base_url, save_button, datasetid, x_fitted, y_fitte
 ### Challenge 3 — Development Mode vs. Production WASM Mode
 
 This was the most practically fiddly challenge. 
-During development, a running Marimo server is the right environment: fast feedback, full Python library support, no Pyodide compilation step. 
+During development, a running marimo server is the right environment: fast feedback, full Python library support, no Pyodide compilation step. 
 In production, the notebook runs in WASM under Pyodide.
 
-Start Marimo in edit mode with `uv run marimo edit curve_fitting.py`. 
+Start marimo in edit mode with `uv run marimo edit curve_fitting.py`. 
 In this mode, you build your board interactively: add and edit cells, add UI elements, and see results update immediately. 
 Changes propagate automatically to dependent cells, so there's no manual rerun flow. 
 Everything you do is saved instantly to the underlying Python file, making the board both live and persistent at the same time.
@@ -333,7 +333,7 @@ These two environments differ in two important ways:
 **Import availability.** 
 Pyodide supports a substantial subset of the scientific Python ecosystem (NumPy, SciPy, Pandas, Matplotlib), but not every library. 
 Anything with C extensions that Pyodide has not pre-compiled is unavailable. 
-The Python version in each `pyproject.toml` must match the Python version provided by the Pyodide runtime used by Marimo’s WASM export. 
+The Python version in each `pyproject.toml` must match the Python version provided by the Pyodide runtime used by marimo’s WASM export. 
 In our setup that means pinning Python to `==3.12.*`, because the prebuilt Pyodide wheels we rely on are built for that runtime.
 
 **Available APIs.** 
@@ -417,7 +417,7 @@ So far this has not been a problem — NumPy, SciPy, and Pandas cover our use ca
 This also prevented us from generating the complete client with `OpenAPI` as this is not using `pyodide.http`. 
 
 **Startup latency.** 
-Starting up the Marimo app takes some time because the browser first has to initialize Pyodide and load notebook dependencies.
+Starting up the marimo app takes some time because the browser first has to initialize Pyodide and load notebook dependencies.
 
 **Performance.** 
 WASM Python is slower than native Python. 
@@ -430,7 +430,7 @@ Spring Security protects access, but anyone authenticated can view source.
 This is an accepted trade-off; the notebooks contain customer-specific logic that customers themselves should be able to see.
 
 **Notebook architecture limits app complexity.** 
-With Marimo notebooks, it is not easy to build larger, more complex applications. 
+With marimo notebooks, it is not easy to build larger, more complex applications. 
 We therefore use this approach for focused, interactive analysis tools rather than full-featured application surfaces.
 
 **Dual-mode boilerplate.** 
@@ -448,9 +448,9 @@ It is straightforward to adapt notebooks to individual requirements.
 - **Strong plotting capabilities.** 
 Rich, interactive visualizations are available out of the box.
 - **Practical engineering UI components.** 
-Marimo includes useful prebuilt elements for technical workflows.
+marimo includes useful prebuilt elements for technical workflows.
 - **No backend Python execution.** 
-With Marimo WASM, code runs in a fully browser-sandboxed environment.
+With marimo WASM, code runs in a fully browser-sandboxed environment.
 - **Simple deployment model.** 
 The production artifact is static content packaged into the existing Spring Boot application.
 
@@ -466,8 +466,8 @@ The full stack looks like this:
 
 | Concern | Technology |
 |---|---|
-| Notebook authoring | Marimo |
-| Python runtime in browser | Pyodide (via Marimo `html-wasm` export) |
+| Notebook authoring | marimo |
+| Python runtime in browser | Pyodide (via marimo `html-wasm` export) |
 | In-browser package loading | `micropip` |
 | Python package management | `uv` |
 | Shared logic distribution | Pure-Python wheel (`common-0.1.0-py3-none-any.whl`) |
@@ -477,11 +477,11 @@ The full stack looks like this:
 
 For teams considering a similar architecture, the deciding questions are simple: 
 do your dependencies run in Pyodide, and are your data volumes suitable for browser-side execution? 
-If yes, Marimo WASM offers a compelling deployment model: 
+If yes, marimo WASM offers a compelling deployment model: 
 interactive Python tools shipped as static assets, protected by the same authentication and API layer as the rest of the application.
 
 ## <a name="cta"></a> Let's discuss!
 
 Do you have questions about browser-based Python tools, marimo WASM, Pyodide, or Spring Boot integration?
-[Feel free to reach out](/people/dirk).
+[Feel free to reach out](/people/marcel).
 I’m always happy to exchange knowledge, ideas, and experiences.
