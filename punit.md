@@ -78,24 +78,21 @@ In practice, probabilistic tests can look like this:
 
 
 ```java
-class GreetingServiceTest {
+  @ProbabilisticTest
+      void serviceGreetsConsistently() {
+          // sampling declares an SLA and a condition that must be satisified
+          var greetingSampling =
+                  Contract.<String, String>inline()
+                          .returning(GreetingServiceTest::greet) // call the actual service
+                          .passRate(0.95) // define minimum pass rate
+                          .contractRef(SLA, "Greeting Service SLA v1.0 §2.1") // document SLA provenance
+                          .satisfies("greeting is 'friendly'", GreetingServiceTest::greetingIsFriendly)
+                          .sampling(50,  List.of("Mike", "Elke", "Helena")); // 50 samples; input selected round-robin style
 
-    @ProbabilisticTest
-    void serviceGreetsConsistently() {
-
-        PUnit.testing(
-            Sampling.of(
-                nf -> new GreetingService(),
-                100,
-                List.of("Alice", "Bob", "Charlie")
-            )
-        )
-        .criterion(
-            PassRate.meeting(0.95, ThresholdOrigin.SLA)
-        )
-        .assertPasses();
-    }
-}
+          // a unit test expressed using the sampling
+          PUnit.testing(greetingSampling)
+                  .assertPasses(); // passes as long as ≥95% of greetings satisfy the 'friendly' test
+      }
 ```
 
 
