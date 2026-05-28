@@ -1,5 +1,6 @@
 ///usr/bin/env jbang "$0" "$@" ; exit $?
 
+import org.xml.sax.SAXException;
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -19,6 +20,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 public class SubmitIndexNow {
 
@@ -45,7 +47,7 @@ public class SubmitIndexNow {
         new SubmitIndexNow().run();
     }
 
-    private void run() throws Exception {
+    private void run() throws IOException, InterruptedException, ParserConfigurationException, SAXException {
         Optional<String> key = resolveIndexNowKey();
         if (key.isEmpty()) {
             logger.info("Skipping IndexNow notification because no INDEXNOW_KEY or committed key file was found.");
@@ -178,7 +180,7 @@ public class SubmitIndexNow {
     }
 
     private LinkedHashSet<String> fetchSitemapUrls(URI siteUrl)
-            throws ParserConfigurationException, IOException, SAXException {
+            throws ParserConfigurationException, IOException, SAXException, InterruptedException {
 
         URI sitemap = siteUrl.resolve("/sitemap.xml");
         HttpRequest request = HttpRequest.newBuilder(sitemap)
@@ -198,7 +200,7 @@ public class SubmitIndexNow {
         return urls;
     }
 
-    private LinkedHashSet<String> parseSitemapWithXml(String body) throws Exception {
+    private LinkedHashSet<String> parseSitemapWithXml(String body) throws ParserConfigurationException, IOException, SAXException {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         factory.setNamespaceAware(true);
         factory.setFeature("http://apache.org/xml/features/disallow-doctype-decl", true);
