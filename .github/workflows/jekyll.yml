@@ -87,7 +87,7 @@ jobs:
           distribution: temurin
           java-version: '21'
       - name: Setup JBang
-        uses: jbangdev/setup-jbang@v0.119.0
+        uses: jbangdev/setup-jbang@v0.1.1
       - name: Notify Bing via IndexNow
         run: jbang scripts/SubmitIndexNow.java
         env:

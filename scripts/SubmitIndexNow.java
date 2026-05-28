@@ -2,6 +2,7 @@
 
 import java.io.IOException;
 import java.net.URI;
+import java.net.URISyntaxException;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
@@ -13,12 +14,15 @@ import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
+import java.util.logging.Logger;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Stream;
 import javax.xml.parsers.DocumentBuilderFactory;
 
 public class SubmitIndexNow {
+
+    private static final Logger logger = Logger.getLogger(SubmitIndexNow.class.getName());
 
     private static final Pattern INDEXNOW_KEY_FILE = Pattern.compile("^[a-fA-F0-9]{32}\\.txt$");
     private static final Pattern LOC_PATTERN = Pattern.compile("<loc>(.*?)</loc>");
@@ -44,13 +48,13 @@ public class SubmitIndexNow {
     private void run() throws Exception {
         Optional<String> key = resolveIndexNowKey();
         if (key.isEmpty()) {
-            System.out.println("Skipping IndexNow notification because no INDEXNOW_KEY or committed key file was found.");
+            logger.info("Skipping IndexNow notification because no INDEXNOW_KEY or committed key file was found.");
             return;
         }
 
         URI siteUrl = resolveSiteUrl();
         List<String> changedFiles = determineChangedFiles();
-        System.out.printf("Detected %d changed file(s).%n", changedFiles.size());
+        logger.info("Detected %d changed file(s).".formatted(changedFiles.size()));
 
         LinkedHashSet<String> sitemapUrls = fetchSitemapUrls(siteUrl);
         boolean submitAll = changedFiles.isEmpty() || changedFiles.stream().anyMatch(this::isSharedRenderingFile);
@@ -58,24 +62,24 @@ public class SubmitIndexNow {
         LinkedHashSet<String> urlsToSubmit = new LinkedHashSet<>();
         if (submitAll) {
             urlsToSubmit.addAll(sitemapUrls);
-            System.out.printf("Submitting all %d sitemap URL(s).%n", urlsToSubmit.size());
+            logger.info("Submitting all %d sitemap URL(s).".formatted(urlsToSubmit.size()));
         } else {
             for (String changedFile : changedFiles) {
                 mapChangedFileToUrl(changedFile, siteUrl)
                         .filter(url -> sitemapUrls.isEmpty() || sitemapUrls.contains(url))
                         .ifPresent(urlsToSubmit::add);
             }
-            System.out.printf("Mapped %d URL(s) from changed files.%n", urlsToSubmit.size());
+            logger.info("Mapped %d URL(s) from changed files.".formatted(urlsToSubmit.size()));
         }
 
         if (urlsToSubmit.isEmpty()) {
-            System.out.println("No public URLs to submit to IndexNow.");
+            logger.info("No public URLs to submit to IndexNow.");
             return;
         }
 
         if (Boolean.parseBoolean(env("DRY_RUN"))) {
-            System.out.printf("DRY_RUN enabled; would submit %d URL(s) to IndexNow.%n", urlsToSubmit.size());
-            urlsToSubmit.forEach(url -> System.out.println("  " + url));
+            logger.info("DRY_RUN enabled; would submit %d URL(s) to IndexNow.".formatted(urlsToSubmit.size()));
+            urlsToSubmit.stream().map(url -> "  " + url).forEach(logger::info);
             return;
         }
 
@@ -91,7 +95,8 @@ public class SubmitIndexNow {
         try (Stream<Path> files = Files.list(Path.of("."))) {
             return files
                     .filter(Files::isRegularFile)
-                    .map(path -> path.getFileName().toString())
+                    .map(Path::getFileName)
+                    .map(Path::toString)
                     .filter(name -> INDEXNOW_KEY_FILE.matcher(name).matches())
                     .map(name -> name.substring(0, name.length() - ".txt".length()))
                     .sorted()
@@ -142,7 +147,7 @@ public class SubmitIndexNow {
 
     private List<String> determineChangedFiles() throws IOException, InterruptedException {
         if ("schedule".equals(env("EVENT_NAME"))) {
-            System.out.println("Scheduled build detected; falling back to all sitemap URLs.");
+            logger.info("Scheduled build detected; falling back to all sitemap URLs.");
             return List.of();
         }
 
@@ -152,7 +157,7 @@ public class SubmitIndexNow {
             after = "HEAD";
         }
         if (before.isBlank() || before.matches("^0+$")) {
-            System.out.println("No usable BEFORE_SHA found; falling back to all sitemap URLs.");
+            logger.info("No usable BEFORE_SHA found; falling back to all sitemap URLs.");
             return List.of();
         }
 
@@ -162,7 +167,7 @@ public class SubmitIndexNow {
         String output = new String(process.getInputStream().readAllBytes(), StandardCharsets.UTF_8);
         int exit = process.waitFor();
         if (exit != 0) {
-            System.out.printf("git diff failed with exit code %d; falling back to all sitemap URLs.%n%s%n", exit, output);
+            logger.info("git diff failed with exit code %d; falling back to all sitemap URLs.%n%s".formatted(exit, output));
             return List.of();
         }
         return output.lines()
@@ -172,7 +177,9 @@ public class SubmitIndexNow {
                 .toList();
     }
 
-    private LinkedHashSet<String> fetchSitemapUrls(URI siteUrl) throws Exception {
+    private LinkedHashSet<String> fetchSitemapUrls(URI siteUrl)
+            throws ParserConfigurationException, IOException, SAXException {
+
         URI sitemap = siteUrl.resolve("/sitemap.xml");
         HttpRequest request = HttpRequest.newBuilder(sitemap)
                 .timeout(Duration.ofSeconds(30))
@@ -187,7 +194,7 @@ public class SubmitIndexNow {
         if (urls.isEmpty()) {
             urls = parseSitemapWithRegex(response.body());
         }
-        System.out.printf("Fetched %d URL(s) from %s.%n", urls.size(), sitemap);
+        logger.info("Fetched %d URL(s) from %s.".formatted(urls.size(), sitemap));
         return urls;
     }
 
@@ -329,7 +336,7 @@ public class SubmitIndexNow {
 
         HttpResponse<String> response = http.send(request, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
         int status = response.statusCode();
-        System.out.printf("IndexNow response: HTTP %d for %d URL(s).%n", status, urlsToSubmit.size());
+        logger.info("IndexNow response: HTTP %d for %d URL(s).".formatted(status, urlsToSubmit.size()));
         if (status == 200 || status == 202) {
             return;
         }
@@ -355,7 +362,21 @@ public class SubmitIndexNow {
     }
 
     private String normalizeUrl(String url) {
-        return url.trim().replace(" ", "%20");
+        String trimmed = url.trim();
+        try {
+            URI uri = new URI(trimmed).normalize();
+            return new URI(
+                    uri.getScheme() == null ? null : uri.getScheme().toLowerCase(java.util.Locale.ROOT),
+                    uri.getUserInfo(),
+                    uri.getHost() == null ? null : uri.getHost().toLowerCase(java.util.Locale.ROOT),
+                    uri.getPort(),
+                    uri.getPath(),
+                    uri.getQuery(),
+                    null  // strip fragment — irrelevant for search engine indexing
+            ).toASCIIString();
+        } catch (URISyntaxException e) {
+            return trimmed.replace(" ", "%20");
+        }
     }
 
     private String stripTrailingSlash(String value) {
