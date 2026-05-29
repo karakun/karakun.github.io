@@ -13,96 +13,88 @@ header:
   image: 'post'
 ---
 
-Most engineers think open source contribution starts when you write code.
+Most engineers think contributing to open source starts when you write code.
 
-I don't think that anymore.
+But on busy open source projects, the most valuable contribution is often not another pull request. 
+It is triage: clarifying issues, connecting related work, identifying incomplete fixes, and helping maintainers decide what should happen next.
 
-If you're used to Jira, imagine your project has a backlog of 6,000 tickets (in open source, we call these **issues**, and the board is the **issue tracker**).
+Large issue trackers are not just backlogs. 
+They are the project’s shared memory. 
+When that memory is vague, outdated, or misleading, contributors duplicate work, maintainers merge partial fixes, and users keep running into problems the project may already have half-solved elsewhere.
 
-If you think 6,000 is an exaggeration, look at the [issue tracker for OpenClaw](https://github.com/openclaw/openclaw/issues). That's the reality of a successful open source project.
-
-Scattered somewhere in that mess are three separate issues:
-
-- one says the web UI only accepts images
-- another says the web UI should also allow uploading document files like PDF and Word
-- a third asks for any kind of file to be uploadable
-
-Meanwhile, over in your Git repository, there are already two open pull requests (PRs). If you use GitLab, these are called **merge requests**:
-
-- one changes only the file picker in the frontend
-- another changes the file picker **and** the backend
-
-One engineer looks through the backlog, finds the first issue, and starts writing a *third* PR because "the bug looks easy to fix."
-
-At the same time, a maintainer sees the frontend-only PR, assumes it solves the whole problem, and merges it.
-
-Now the UI looks fixed, but the backend still drops the files. Multiple people just wasted their evening on the same problem, and the issue tracker is now actively lying to everyone.
-
-Both of those engineers did exactly what they were supposed to do, and together, they still made the project worse.
-
-The most expensive open source bug is often not the hardest one.
-It's the one that gets fixed three times.
-
-You might be thinking: "That's just a communication issue. Why didn't they talk to each other?"
-
-In a company, they would have. They might have seen each other's status in a daily stand-up or noticed a message in a private Slack channel.
-
-Open source doesn't work like that.
-
-Take OpenClaw as an example. It has a huge contributor base and a much smaller group of **maintainers** (the leaders of the open source project). While a developer in Zurich is waking up to spot a bug, someone in San Francisco is finishing their day, and a third person in Tokyo is just starting to look at the backlog. Almost everyone involved is doing this in their spare time, fitting it in around their "real" jobs. They're rarely online at the same time, let alone in the same meeting. There's no "daily sync" for a huge, distributed group of strangers.
-
-Even for the maintainers, keeping track of every relationship is a full-time job they don't have time for. On a project like OpenClaw, thousands of issues and PRs can be open at the same time. If the maintainers spent their time manually checking every new issue for duplicates or related code, they'd never have time to actually get a single PR merged.
-
-If the issues and PRs aren't linked, communication breaks before it even starts. One engineer might "claim" an issue with a comment, but if a second engineer finds a duplicate issue buried pages deep in the backlog, they have no way of knowing that someone else is already halfway through the fix - or that two other PRs already exist that address the same problem.
-
-I almost did exactly that.
-
-Recently, while using OpenClaw on my Android phone, I noticed something odd: tapping the paperclip in the web UI only let me choose images, while Telegram let me upload any file.
-
-Since OpenClaw is an AI coding assistant, I asked it to investigate if this was a bug in OpenClaw. It looked through its own codebase, quickly found the technical cause, and **immediately asked if it should prepare a PR with the fix.**
-
-If even an AI assistant jumps straight to the code without checking if anyone else is already working on the problem, it's no surprise that developers do the same.
-
-If I had stopped there, the next step would have been simple: let the AI generate the fix, create a branch, and open one more PR.
-
-Instead, I asked it to check the issue tracker and PRs first.
-
-That changed everything.
-
-There were already several related issues and two PRs. One issue asked for support for document file types. Another asked for support for any kind of file, not just documents. One PR only changed the frontend. The other changed both frontend and backend. And behind all of that was the core problem: we already knew the backend dropped these files, so a UI-only fix would just create a broken feature.
-
-At that point, writing another fix was the worst thing I could do.
-
-The useful contribution was mapping out the existing work so the maintainers could see the overlap, close the duplicates, and focus on the PR that actually solved the whole problem.
-
-That's triage.
-
-The issue tracker is the project's shared memory.
-
-If that shared memory is vague, outdated, or misleading, you get exactly the scenario I just described: two engineers writing redundant code while a maintainer merges a half-finished fix.
+This article explains why open source triage is engineering work, how it helps maintainers, how to distinguish related issues from true duplicates, and how AI coding agents can support triage without replacing human judgment.
 
 ---
+
 ## Table of Contents
 
-* [1. Triage is debugging the issue tracker](#Triage)
-
+* [1. Triage is debugging the issue tracker](#Triage-is-debugging-the-issue-tracker)
 * [2. Why this matters more than most people think](#Why)
-
 * [3. Related isn't the same as duplicate](#Related)
-
 * [4. The 5-minute workflow I wish more people used](#Workflow)
-
 * [5. What good triage comments sound like](#Comments)
-
 * [6. The fastest ways to make triage worse](#BadTriage)
-
 * [7. AI makes human triage more important, not less](#AI)
-
 * [8. Final thoughts](#Final)
 
 ---
 
-## <a name="Triage"></a> 1. Triage is debugging the issue tracker
+Before getting into the workflow, here is the kind of situation where triage matters.
+
+Imagine a successful open source project with thousands of open issues. 
+Somewhere in that backlog are three related reports:
+
+- one says the Web UI only accepts images
+- another asks for document uploads, such as PDF and Word files
+- a third asks for support for uploading any file type
+
+In the pull request queue, two related fixes already exist:
+
+- one changes only the file picker in the frontend
+- another changes both the file picker and the backend
+
+Now one engineer finds the first issue and starts writing a third pull request because the bug looks easy to fix. 
+At the same time, a maintainer sees the frontend-only PR, assumes it solves the whole problem, and merges it.
+The UI now looks fixed, but the backend still drops the files. 
+Multiple people have spent their evening on the same problem, and the issue tracker is now misleading everyone.
+
+The most expensive open source bug is often not the hardest one. 
+It is the one that gets fixed three times.
+
+You might think this is just a communication problem. 
+In a company, it probably would be. 
+People might notice each other’s status in a daily stand-up or a private Slack channel.
+Open source does not work like that.
+
+On a project like OpenClaw, contributors work across time zones, jobs, and personal schedules. 
+A developer in Zurich may be waking up to inspect a bug while someone in San Francisco is finishing their day and someone in Tokyo is just opening the backlog. 
+Maintainers cannot manually connect every duplicate issue, related pull request, partial fix, and stale report. 
+If they did, they would have no time left to review the work that actually needs to be merged.
+
+That is why missing links between issues and pull requests are not a minor inconvenience. 
+If one engineer claims an issue but another finds a duplicate buried elsewhere, they may never realize that someone is already halfway through the fix — or that two pull requests already address the same problem.
+
+I almost did exactly that.
+While using OpenClaw on my Android phone, I noticed that tapping the paperclip in the Web UI only let me choose images, while Telegram let me upload any file.
+Since OpenClaw is an AI coding assistant, I asked it to investigate whether this was a bug. 
+It found the technical cause quickly and immediately asked whether it should prepare a pull request.
+
+That is the default instinct many developers now have, with or without AI: find the bug, generate the fix, open the PR.
+Instead, I asked it to check the issue tracker and pull requests first.
+That changed everything.
+
+Several related issues and two pull requests already existed. 
+One issue asked for document uploads. 
+Another asked for any file type. 
+One PR changed only the frontend. 
+The other changed both frontend and backend. 
+The key detail was that the backend already dropped these files, so a UI-only fix would create a feature that looked complete but still failed.
+
+At that point, writing another fix was the least useful thing I could do.
+The useful contribution was mapping the existing work so maintainers could see the overlap, close duplicates, and focus on the pull request that actually solved the whole problem.
+That is triage.
+
+## <a name="Triage-is-debugging-the-issue-tracker"></a> 1. Triage is debugging the issue tracker
 
 At first glance, triage sounds boring.
 
