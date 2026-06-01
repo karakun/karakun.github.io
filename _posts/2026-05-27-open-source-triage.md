@@ -28,14 +28,14 @@ This article explains why open source triage is engineering work, how it helps m
 
 ## Table of Contents
 
-* [1. Triage is debugging the issue tracker](#Triage-is-debugging-the-issue-tracker)
-* [2. Why this matters more than most people think](#Why)
-* [3. Related isn't the same as duplicate](#Related)
-* [4. The 5-minute workflow I wish more people used](#Workflow)
-* [5. What good triage comments sound like](#Comments)
-* [6. The fastest ways to make triage worse](#BadTriage)
-* [7. AI makes human triage more important, not less](#AI)
-* [8. Final thoughts](#Final)
+* [Triage is debugging the issue tracker](#Triage-is-debugging-the-issue-tracker)
+* [Why this matters more than most people think](#Why)
+* [Related isn't the same as duplicate](#Related)
+* [The 5-minute workflow I wish more people used](#Workflow)
+* [What good triage comments sound like](#Comments)
+* [The fastest ways to make triage worse](#BadTriage)
+* [AI makes human triage more important, not less](#AI)
+* [Final thoughts](#Final)
 
 ---
 
@@ -62,39 +62,34 @@ The most expensive open source bug is often not the hardest one.
 It is the one that gets fixed three times.
 
 You might think this is just a communication problem. 
-In a company, it probably would be. 
-People might notice each other’s status in a daily stand-up or a private Slack channel.
+In a company, people might notice each other's work in a stand-up or Slack channel. 
 Open source does not work like that.
 
-On a project like OpenClaw, contributors work across time zones, jobs, and personal schedules. 
-A developer in Zurich may be waking up to inspect a bug while someone in San Francisco is finishing their day and someone in Tokyo is just opening the backlog. 
+On large open source projects, contributors work across time zones and personal schedules.
 Maintainers cannot manually connect every duplicate issue, related pull request, partial fix, and stale report. 
 If they did, they would have no time left to review the work that actually needs to be merged.
 
 That is why missing links between issues and pull requests are not a minor inconvenience. 
-If one engineer claims an issue but another finds a duplicate buried elsewhere, they may never realize that someone is already halfway through the fix — or that two pull requests already address the same problem.
+If one engineer claims an issue but another finds a duplicate elsewhere, they may never realize that someone is already halfway through the fix—or that two pull requests already address the same problem.
 
 I almost did exactly that.
-While using OpenClaw on my Android phone, I noticed that tapping the paperclip in the Web UI only let me choose images, while Telegram let me upload any file.
+While using [OpenClaw](https://openclaw.ai){:target="_blank"} on my Android phone, I noticed that tapping the paperclip in the Web UI only let me choose images, while Telegram let me upload any file.
 Since OpenClaw is an AI coding assistant, I asked it to investigate whether this was a bug. 
 It found the technical cause quickly and immediately asked whether it should prepare a pull request.
 
-That is the default instinct many developers now have, with or without AI: find the bug, generate the fix, open the PR.
 Instead, I asked it to check the issue tracker and pull requests first.
 That changed everything.
 
 Several related issues and two pull requests already existed. 
-One issue asked for document uploads. 
-Another asked for any file type. 
 One PR changed only the frontend. 
-The other changed both frontend and backend. 
-The key detail was that the backend already dropped these files, so a UI-only fix would create a feature that looked complete but still failed.
+The other changed both frontend and backend.
+The key detail was that we already knew the backend dropped these files, so a UI-only fix would create a feature that looked complete but still failed.
 
 At that point, writing another fix was the least useful thing I could do.
 The useful contribution was mapping the existing work so maintainers could see the overlap, close duplicates, and focus on the pull request that actually solved the whole problem.
 That is triage.
 
-## <a name="Triage-is-debugging-the-issue-tracker"></a> 1. Triage is debugging the issue tracker
+## <a name="Triage-is-debugging-the-issue-tracker"></a>Triage is debugging the issue tracker
 
 At first glance, triage sounds boring.
 
@@ -126,9 +121,9 @@ If you only remember one thing from this article, remember this:
 
 **A short, accurate comment is better than a long, uncertain one.**
 
-## <a name="Why"></a> 2. Why this matters more than most people think
+## <a name="Why"></a>Why this matters more than most people think
 
-### 1. Duplicate work is easier than people realize
+### Duplicate work is easier than people realize
 
 As we saw with the OpenClaw example, the asynchronous nature of open source makes it incredibly easy for two people to spend their evening on the exact same problem without realizing it.
 
@@ -136,33 +131,57 @@ That sounds small until it happens again and again.
 
 Then it becomes a tax on everyone involved.
 
-### 2. A merged PR isn't the same as a solved issue
+### A merged PR isn't the same as a solved issue
 
-A PR title can sound complete. The green "Merged" badge feels like a finish line. But a merged PR doesn't automatically mean the whole problem is gone.
+A PR title can sound complete. 
+The green "Merged" badge feels like a finish line. 
+But a merged PR doesn't automatically mean the whole problem is gone.
 
-Recently, a severe issue was reported in OpenClaw: sending a binary file via Telegram caused the bot to dump raw, unsanitized bytes into the context. A single file could blow up the prompt to [around 460,000 tokens](https://github.com/openclaw/openclaw/pull/66663). This wasn't just a bug; it posed a massive risk of resource exhaustion and cost amplification.
+Recently, a severe issue was reported in OpenClaw: sending a binary file via Telegram caused the bot to dump raw, unsanitized bytes into the context. 
+A single file could blow up the prompt to [around 460,000 tokens](https://github.com/openclaw/openclaw/pull/66663). 
+This wasn't just a bug; it posed a massive risk of resource exhaustion and cost amplification.
 
-Shortly after, a contributor opened a quick PR to fix it. OpenClaw's PR template explicitly asks PR authors to confirm they deployed the change locally and tested it manually. Instead, the PR body didn't include the required template information. The PR description explicitly stated it was generated by an AI - and in my experience, if you don't tell an AI to follow a repository's template, it will usually just invent its own structure and, in this case, completely drop the manual verification part.
+Shortly after, a contributor opened a PR to fix it. 
+OpenClaw's PR template asks contributors to confirm they deployed and tested the change locally, but that information was missing. 
+The PR description stated it had been generated by AI, and the manual verification step had apparently never happened.
 
-Because of the urgency, a maintainer assigned themselves and merged it within minutes. I don't blame the maintainer for a second - in fact, if I were the maintainer, I would have done the same thing. With thousands of open PRs, delaying a critical security patch to argue over paperwork is a bad tradeoff. You understandably assume that if a PR author can patch a complex bug, they probably verified that it works.
+Because of the urgency, a maintainer merged it within minutes. 
+That was a reasonable decision: when a critical security issue appears, maintainers often have to balance review depth against the need to ship a fix quickly.
 
-To be clear: double-checking *merged* PRs is rarely how you should spend your time. In open source, your energy is almost always better spent triaging the open backlog. But when I looked at the changes in this specific PR, I was surprised by how small the fix was. It gave me the same nagging feeling as the frontend-only fix we talked about earlier: *Did this actually solve the whole problem?* Because I didn't know that specific part of the codebase well enough to confirm that gut feeling just by reading the diff, I decided to do the easiest thing: I deployed the newly merged main branch and tried to see if I could still reproduce the issue myself.
+Normally, your time is better spent triaging open issues than rechecking merged PRs. 
+But this fix looked surprisingly small, and I wasn't convinced it solved the whole problem. 
+Since I couldn't confirm that from the diff alone, I deployed the updated branch and tested it myself.
 
 Uploading a 100 KB EPUB file immediately blew up my local prompt to [231,000 tokens](https://github.com/openclaw/openclaw/pull/66877).
 
-The PR author had fixed *part* of the issue, but not all of it. If the PR had been transparent that the fix hadn't been tested locally, someone else could have stepped in to verify it *before* it was merged - which, by the way, is a fantastic triage contribution all on its own. This isn't exclusively an AI problem. Long before AI, contributors deleted templates because they looked like boilerplate or felt like overkill for a "small" fix. Most contributors don't do this maliciously; they don't realize why maintainers rely on those checklists. But whether a human misunderstands the template or an AI wipes it out, the result is the same: hiding the fact that you skipped manual testing sets a dangerous trap.
+The PR fixed part of the issue, but not all of it. 
+If the missing verification had been obvious earlier, someone else could have tested the change before it was merged. 
+Whether a human ignores a template or an AI omits it entirely, maintainers lose important context for judging how much trust to place in a fix.
 
-After I patched the remaining upload leak, I kept digging. Experience tells me that where there is one bug, there are usually neighbors. Instead of stopping at the narrowest interpretation of the bug, I tried *replying* to a message of a previously sent binary file on Telegram. Sure enough, it pulled the raw bytes into the context again. It was a different path, but the same broader problem.
+After I patched the remaining upload leak, I kept digging. 
+Experience tells me that where there is one bug, there are usually neighbors. 
+Instead of stopping at the narrowest interpretation of the bug, I tried *replying* to a message of a previously sent binary file on Telegram. 
+Sure enough, it pulled the raw bytes into the context again. 
+It was a different path, but the same broader problem.
 
 I packaged both fixes into a new [PR (#66877)](https://github.com/openclaw/openclaw/pull/66877), which the maintainers merged an hour later.
 
-The real lesson here is about what code review looks like under pressure. In a perfect world, a maintainer reviewing a PR would always pull the branch and test the behavior locally to verify it actually solves the issue. But when a team is drowning in thousands of open PRs, they often only have time to read the diff and ensure the logic makes sense. They have to use their judgment to decide whether the change looks good enough to skip local testing, trust the PR author's claims, or rely on the community to verify the real behavior.
+The real lesson here is about what code review looks like under pressure. 
+In a perfect world, a maintainer reviewing a PR would always pull the branch and test the behavior locally to verify it actually solves the issue. 
+But when a team is drowning in thousands of open PRs, they often only have time to read the diff and ensure the logic makes sense. 
+They have to use their judgment to decide whether the change looks good enough to skip local testing, trust the PR author's claims, or rely on the community to verify the real behavior.
 
-This is exactly where triage steps in. You don't have to write the code to save the day. If you take an open PR, test it locally, and leave a comment saying, *"I deployed this branch and followed the reproduction steps, but the issue is still present,"* you just saved the project from shipping a broken feature. Catching an incomplete fix before it gets merged makes you a hero to the maintainers.
+This is exactly where triage steps in. 
+You don't have to write the code to save the day. 
+If you take an open PR, test it locally, and leave a comment saying, *"I deployed this branch and followed the reproduction steps, but the issue is still present,"* you just saved the project from shipping a broken feature. 
+Catching an incomplete fix before it gets merged makes you a hero to the maintainers.
 
-In my case, the broken PR was merged within minutes because it was an urgent security fix, leaving no window for the community to verify the code before it landed. But normally, PRs sit in the review queue for days or weeks. That gives you plenty of time to pull the branch, test the fix yourself, and raise that exact flag.
+In my case, the broken PR was merged within minutes because it was an urgent security fix, leaving no window for the community to verify the code before it landed. 
+But normally, PRs sit in the review queue for days or weeks. 
+That gives you plenty of time to pull the branch, test the fix yourself, and raise that exact flag.
 
-However, if the code actually works, commenting, *"I deployed this locally and confirmed: on main the issue happens, but on this branch it is completely resolved,"* is extremely valuable for a maintainer. Doing the manual verification that maintainers don't have time for is one of the most valuable triage contributions you can make.
+However, if the code actually works, commenting, *"I deployed this locally and confirmed: on main the issue happens, but on this branch it is completely resolved,"* is extremely valuable for a maintainer. 
+Doing the manual verification that maintainers don't have time for is one of the most valuable triage contributions you can make.
 
 ### 3. A messy issue tracker lies to people
 
