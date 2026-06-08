@@ -6,7 +6,7 @@ description: "On busy open source projects, triage can be more valuable than ano
 authors: [ 'francois' ]
 featuredImage: 'open-source-triage'
 excerpt: "On busy open source projects, the highest-leverage contribution is often not another pull request but triage. Clear issue tracker context prevents duplicate work, exposes partial fixes, and helps maintainers make the next decision faster."
-permalink: '/2026/05/27/open-source-doesnt-need-another-pull-request-it-needs-triage.html'
+permalink: '/2026/06/09/open-source-doesnt-need-another-pull-request-it-needs-triage.html'
 categories: [ Development, Open source, OpenClaw, Community ]
 header:
   text: "Open Source Doesn't Need Another Pull Request. It Needs Triage."
