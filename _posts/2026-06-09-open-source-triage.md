@@ -19,7 +19,7 @@ But on busy open source projects, the most valuable contribution is often not an
 It is triage: clarifying issues, connecting related work, identifying incomplete fixes, and helping maintainers decide what should happen next.
 
 Large issue trackers are not just backlogs. 
-They are the project’s shared memory. 
+They are the project's shared memory. 
 When that memory is vague, outdated, or misleading, contributors duplicate work, maintainers merge partial fixes, and users keep running into problems the project may already have half-solved elsewhere.
 
 This article explains why open source triage is engineering work, how it helps maintainers, how to distinguish related issues from true duplicates, and how AI coding agents can support triage without replacing human judgment.
@@ -70,7 +70,7 @@ Maintainers cannot manually connect every duplicate issue, related pull request,
 If they did, they would have no time left to review the work that actually needs to be merged.
 
 That is why missing links between issues and pull requests are not a minor inconvenience. 
-If one engineer claims an issue but another finds a duplicate elsewhere, they may never realize that someone is already halfway through the fix—or that two pull requests already address the same problem.
+If one engineer claims an issue but another finds a duplicate elsewhere, they may never realize that someone is already halfway through the fix, or that two pull requests already address the same problem.
 
 I almost did exactly that.
 While using [OpenClaw](https://openclaw.ai){:target="_blank"} on my Android phone, I noticed that tapping the paperclip in the Web UI only let me choose images, while Telegram let me upload any file.
@@ -89,7 +89,7 @@ At that point, writing another fix was the least useful thing I could do.
 The useful contribution was mapping the existing work so maintainers could see the overlap, close duplicates, and focus on the pull request that actually solved the whole problem.
 That is triage.
 
-## <a name="Triage-is-debugging-the-issue-tracker"></a>Triage is debugging the issue tracker
+## <a name="Triage-is-debugging-the-issue-tracker"></a> Triage is debugging the issue tracker
 
 At first glance, triage sounds boring.
 
@@ -120,7 +120,7 @@ If you only remember one thing from this article, remember this:
 
 **A short, accurate comment is better than a long, uncertain one.**
 
-## <a name="Why-this-matters-more-than-most-people-think"></a>Why this matters more than most people think
+## <a name="Why-this-matters-more-than-most-people-think"></a> Why this matters more than most people think
 
 ### Duplicate work is easier than people realize
 
@@ -181,7 +181,7 @@ That gives you plenty of time to pull the branch, test the fix yourself, and rai
 However, if the code actually works, commenting, *"I deployed this locally and confirmed: on main the issue happens, but on this branch it is completely resolved,"* is extremely valuable for a maintainer. 
 Doing the manual verification that maintainers don't have time for is one of the most valuable triage contributions you can make.
 
-### 3. A messy issue tracker lies to people
+### A messy issue tracker lies to people
 
 An unclear issue tracker doesn't just look untidy.
 It actively changes what people decide to do.
@@ -197,7 +197,7 @@ Triage is that "Wait a minute" moment where you pause to verify if that assumpti
 
 Whether you're identifying a shared root cause between two different-looking bugs, or noticing that a PR only masks a symptom instead of fixing the logic, you're using engineering judgment. That's why keeping the issue tracker trustworthy isn't admin work; it's **engineering work**.
 
-### 4. It's one of the best ways to start contributing
+### It's one of the best ways to start contributing
 
 Many engineers assume they need deep knowledge of the codebase before they can contribute to open source.
 
