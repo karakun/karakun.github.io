@@ -14,7 +14,7 @@ header:
 ---
 
 Interactive engineering workflows often need more than static forms or fully automated pipelines. 
-In EXOKNOX, curve fitting and extrapolation require engineers to compare algorithms, tune parameters, and inspect results before simulation.
+In [EXOKNOX](https://exoknox.com){:target="_blank"}, curve fitting and extrapolation require engineers to compare algorithms, tune parameters, and inspect results before simulation.
 
 This article explains how we integrated marimo WASM notebooks as browser-based Python tools using Pyodide, Spring Boot security, shared Python wheels, and REST API integration.
 
