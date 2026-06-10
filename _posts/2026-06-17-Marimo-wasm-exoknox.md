@@ -6,7 +6,7 @@ description: 'Deploy marimo WASM notebooks as browser-based Python tools with Py
 authors: [ 'marcel' ]
 featuredImage: 'WASM'
 excerpt: 'Engineering workflows often need interactive judgment, not just automation. This article shows how EXOKNOX uses marimo, Pyodide, and Spring Boot to ship notebook-based tools directly in the browser.'
-permalink: '/2026/05/26/marimo-wasm-exoknox.html'
+permalink: '/2026/06/17/marimo-wasm-exoknox.html'
 categories: [ Spring Boot, Python, REST API, WASM ]
 header:
   text: Shipping marimo WASM Notebooks as Browser-Based Engineering Tools with Spring Boot
@@ -101,9 +101,9 @@ There is no marimo server process and no Python runtime on the backend. Just sta
 The resulting tools are embedded as web pages in the browser: 
 
 ##### Curve Editor
-![Curve Editor](/assets/posts/2026-05-26-Marimo-wasm-exoknox/curveeditor.png)
+![Curve Editor](/assets/posts/2026-06-17-Marimo-wasm-exoknox/curveeditor.png)
 ##### Curve Fitting
-![Curve Fitting](/assets/posts/2026-05-26-Marimo-wasm-exoknox/curve-fitting.png)
+![Curve Fitting](/assets/posts/2026-06-17-Marimo-wasm-exoknox/curve-fitting.png)
 
 
 
