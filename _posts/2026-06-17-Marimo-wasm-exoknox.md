@@ -483,5 +483,5 @@ interactive Python tools shipped as static assets, protected by the same authent
 ## <a name="cta"></a> Let's discuss!
 
 Do you have questions about browser-based Python tools, marimo WASM, Pyodide, or Spring Boot integration?
-[Feel free to reach out](/people/marcel).
+[Feel free to reach out](/people/Marcel).
 I’m always happy to exchange knowledge, ideas, and experiences.
