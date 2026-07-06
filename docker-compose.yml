@@ -2,7 +2,7 @@ version: '2.4'
 
 services:
   jekyll:
-    image: bretfisher/jekyll-serve
+    image: bretfisher/jekyll-serve:stable-20250915-2119a31
     command: [ "bundle", "exec", "jekyll", "serve", "--config", "_config.yml,_config_dev.yml", "--force_polling", "-H", "0.0.0.0", "-P", "4000", "--future", "--drafts" ]
     volumes:
       - .:/site
