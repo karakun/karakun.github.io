@@ -1,0 +1,241 @@
+// Dark mode.
+//
+// Bulma compiles its colours into static rules, so rather than rebuilding the
+// framework this is an override layer keyed on a data-theme attribute. The
+// attribute is set before first paint by an inline script in head.html, from
+// localStorage or the operating system preference, so there is no flash.
+//
+// The no-JS path is the media query at the bottom: it applies the same tokens
+// unless the reader has explicitly chosen light.
+
+@mixin dark-tokens {
+    --karakun-bg: #{$karakun-night-bg};
+    --karakun-bg-raised: #{$karakun-night-bg-raised};
+    --karakun-text: #{$karakun-night-text};
+    --karakun-text-muted: #{$karakun-night-text-muted};
+    --karakun-heading: #{$karakun-night-heading};
+    --karakun-link: #{$karakun-night-link};
+    --karakun-link-hover: #{$karakun-night-link-hover};
+    --karakun-border: #{$karakun-night-border};
+    --karakun-code-bg: var(--karakun-bg-raised);
+    --karakun-tag-bg: #{$karakun-night-tag-bg};
+    --karakun-shadow: #{$karakun-night-shadow};
+}
+
+@mixin dark-styles {
+    @include dark-tokens;
+    color-scheme: dark;
+
+    body {
+        background-color: var(--karakun-bg);
+        color: var(--karakun-text);
+    }
+
+    h1, h2, h3, h4, h5, h6,
+    .title, .subtitle,
+    strong, b {
+        color: var(--karakun-heading);
+    }
+
+    // Buttons and tags carry their own fill, so they keep their own text colour.
+    // The navbar and footer are dark in light mode too, so their links are left
+    // alone rather than turned green on a bar that never changed.
+    a:not(.button):not(.tag):not(.navbar-item):not(.navbar-link):not(.excerpt) {
+        color: var(--karakun-link);
+
+        &:hover { color: var(--karakun-link-hover); }
+    }
+
+    // a card excerpt is body text that happens to be wrapped in a link, and
+    // reads as body text in light mode
+    a.excerpt { color: var(--karakun-text); }
+
+    // the navbar and footer are already dark in light mode, so they only need
+    // their borders reconciled with the darker page behind them
+    .footer, .copyright { border-top-color: var(--karakun-border); }
+
+    hr { background-color: var(--karakun-border); }
+
+    // cards, author boxes and news boxes use Bulma's $white-ter
+    $no-colour-modifier: ':not(.is-primary):not(.is-link):not(.is-info):not(.is-success):not(.is-warning):not(.is-danger):not(.is-black):not(.is-dark):not(.is-light):not(.is-white)';
+
+    // only the plain variants get the raised surface; a coloured notification or
+    // message carries its own meaning and keeps it
+    article.post div.post-author,
+    article.post div.news,
+    .box,
+    .notification#{$no-colour-modifier},
+    .message#{$no-colour-modifier},
+    .message#{$no-colour-modifier} .message-body {
+        background-color: var(--karakun-bg-raised);
+        color: var(--karakun-text);
+        box-shadow: 0 2px 6px var(--karakun-shadow);
+    }
+
+    article.post div.post-tags ul > li {
+        background-color: var(--karakun-tag-bg);
+        color: var(--karakun-text);
+    }
+
+    // plain tags take the muted fill; brand tags keep the green so a category
+    // pill still reads differently from its count badge
+    .tag#{$no-colour-modifier} {
+        background-color: var(--karakun-tag-bg);
+        color: var(--karakun-text);
+    }
+
+    article.post a.tag.is-primary:hover {
+        background: var(--karakun-bg-raised);
+        color: var(--karakun-link);
+    }
+
+    table, .table {
+        background-color: transparent;
+        color: var(--karakun-text);
+        th, td { border-color: var(--karakun-border); color: var(--karakun-text); }
+        thead th { color: var(--karakun-heading); }
+        &.is-hoverable tbody tr:not(.is-selected):hover { background-color: var(--karakun-bg-raised); }
+    }
+
+    blockquote {
+        background-color: var(--karakun-bg-raised);
+        border-left-color: var(--karakun-link);
+        color: var(--karakun-text);
+    }
+
+    code, kbd, samp {
+        background-color: var(--karakun-code-bg);
+        color: var(--karakun-link-hover);
+    }
+
+    // inline code is tinted, but inside a fenced block the text belongs to the
+    // block: Bulma resets it with `pre code`, which this layer would outrank
+    pre code, pre kbd, pre samp {
+        background-color: transparent;
+        color: inherit;
+    }
+
+    pre, .highlight pre, .highlight {
+        background-color: var(--karakun-code-bg);
+        color: var(--karakun-text);
+    }
+
+    .label, .checkbox, .radio, .help {
+        color: var(--karakun-text);
+    }
+
+    .checkbox:hover, .radio:hover {
+        color: var(--karakun-link);
+    }
+
+    input, textarea, select, .input, .textarea {
+        background-color: var(--karakun-bg-raised);
+        border-color: var(--karakun-border);
+        color: var(--karakun-text);
+        &::placeholder { color: var(--karakun-text-muted); }
+    }
+
+    .text-highlight span { color: var(--karakun-text); }
+
+    .post-meta, small, .has-text-grey, .has-text-grey-dark {
+        color: var(--karakun-text-muted);
+    }
+
+    // search widget
+    .navbar .pagefind-ui {
+        --pagefind-ui-text: var(--karakun-text);
+        --pagefind-ui-background: var(--karakun-bg-raised);
+        --pagefind-ui-border: var(--karakun-border);
+        .pagefind-ui__drawer { background: var(--karakun-bg-raised); }
+        .pagefind-ui__result { color: var(--karakun-text); }
+    }
+
+
+    // Syntax highlighting: the light theme uses navy and slate tokens that
+    // disappear on a dark code block, so the palette is remapped here.
+    .highlight {
+        .c, .cm, .c1, .cs, .cp, .gh, .gu, .go { color: #8b949e; }
+        .k, .kc, .kd, .kp, .kr, .ow { color: #ff7b72; }
+        .kt, .nc, .no, .nv, .vc, .vg, .vi, .nb, .bp { color: #ffa657; }
+        .s, .s1, .s2, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #a5d6ff; }
+        .m, .mf, .mh, .mi, .mo, .il, .na { color: #79c0ff; }
+        .nf, .nn, .ni, .ne { color: #d2a8ff; }
+        .nt { color: #7ee787; }
+        .gp, .gt, .w { color: #8b949e; }
+        .err { color: #ffa198; background-color: #490202; }
+        .gd { color: #ffdcd7; background-color: #67060c; }
+        .gd .x { color: #ffdcd7; background-color: #8d1117; }
+        .gi { color: #aff5b4; background-color: #033a16; }
+        .gi .x { color: #aff5b4; background-color: #04471f; }
+        .gr { color: #ffa198; }
+    }
+
+    // the default focus ring is near-black, which disappears on a dark page
+    :focus-visible {
+        outline: 2px solid var(--karakun-link);
+        outline-offset: 2px;
+    }
+}
+
+// The condition lives in one place: an explicit choice, or the system
+// preference when the reader has not chosen light.
+@mixin when-dark {
+    html[data-theme='dark'] { @content; }
+
+    @media (prefers-color-scheme: dark) {
+        html:not([data-theme='light']) { @content; }
+    }
+}
+
+@include when-dark { @include dark-styles; }
+
+html[data-theme='light'] { color-scheme: light; }
+
+
+// Printing a dark page puts near-white text on paper, because browsers drop
+// background colours but keep the text. Every dark rule reads from the tokens,
+// so restoring light values here flips the whole layer back for print. Code
+// blocks are flattened to plain ink, which prints better than any palette.
+@mixin print-reset {
+    color-scheme: light;
+
+    --karakun-bg: #fff;
+    --karakun-bg-raised: #fff;
+    --karakun-text: #111;
+    --karakun-text-muted: #444;
+    --karakun-heading: #000;
+    --karakun-link: #000;
+    --karakun-link-hover: #000;
+    --karakun-border: #ccc;
+    --karakun-code-bg: #f5f5f5;
+    --karakun-tag-bg: #eee;
+    --karakun-shadow: transparent;
+
+    // the dark token rules are more specific than this block, so the reset has
+    // to say so explicitly; print is the textbook case for it
+    .highlight, .highlight * {
+        color: #222 !important;
+        background: transparent !important;
+    }
+}
+
+@media print {
+    @include when-dark { @include print-reset; }
+}
+
+// The toggle only works with JavaScript, so it is offered only when the inline
+// script in head.html has marked the document. Dark mode itself still follows
+// the system without JavaScript, through the media query above.
+html:not(.js) .theme-toggle { display: none; }
+
+// the toggle itself
+html[data-theme='dark'] .theme-toggle {
+    .fa-sun { display: inline-block; }
+    .fa-moon { display: none; }
+}
+@media (prefers-color-scheme: dark) {
+    html:not([data-theme='light']) .theme-toggle {
+        .fa-sun { display: inline-block; }
+        .fa-moon { display: none; }
+    }
+}
