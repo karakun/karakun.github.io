@@ -257,7 +257,7 @@ p {
         align-items: stretch;
         flex-direction: row-reverse;
         flex-grow: 1;
-        background-color: rgba(0, 0, 0, 0.4);
+        background-color: $karakun-header-scrim;
     }
 }
 
@@ -466,6 +466,19 @@ article.post {
         margin: 2em auto 3em auto;
         padding: 0 5em;
     }
+}
+
+// Logos and diagrams across the site are drawn for a white page and many carry
+// no background of their own, so on a dark one their labels and linework
+// disappear. One plate behind every image covers all of them: an opaque photo
+// hides it completely, a transparent one sits on it, and nobody has to keep a
+// list of which images need one. It hugs the image rather than the box around
+// it, because the padding a post figure carries is layout, not picture.
+img.featured-image,
+.featured-images-table img,
+.post-content img {
+    background-color: $white;
+    background-clip: content-box;
 }
 
 img {
@@ -705,8 +718,22 @@ fieldset label {
     gap: 2rem;
 }
 
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    &:hover { color: $karakun-main-color; }
+    .fa-sun { display: none; }
+}
+
 button.navbar-burger {
   border: none;
   background: none;
   color: $navbar-item-color;
 }
+
+// Dark mode override layer. Imported last so it sits below every rule it has to
+// override, including the site's own styles above, rather than relying on
+// specificity alone.
+@import "dark-mode";
