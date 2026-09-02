@@ -73,7 +73,7 @@ git commit
 git push origin main
 ```
 
-Because the clone did not contain the commit before it, Git treated that commit as if it had created the entire file tree. Reverting it therefore staged **every single file in the repository for deletion**. Claude then committed and pushed that to `main`.
+Because the clone did not contain the commit before it, Git [treated that commit as if it had created the entire file tree](https://git-scm.com/docs/shallow). [Reverting it](https://git-scm.com/docs/git-revert) therefore staged **every single file in the repository for deletion**. Claude then committed and pushed that to `main`.
 
 ![Two panels comparing the same revert. Each commit is a snapshot. In a full clone, which holds a parent and HEAD, git revert --no-commit HEAD undoes only HEAD's edit and one file changes back: the broken YAML, which is exactly what was wanted. In a shallow clone the earlier commits were never fetched, so HEAD is the only snapshot and the same command undoes the whole repository, staging every file for deletion: 151 files in one repository and 723 in the other.](/assets/posts/2026-08-28-coding-agent-git-safety/shallow-clone-revert.svg "The same command, two clones, two very different diffs."){:.diagram}
 
@@ -143,7 +143,7 @@ On my personal projects, I want to be able to push small changes to `main` direc
 
 Both Claude Code and Codex have hooks that can refuse a command before it runs, and they are worth having. But they only see the text of the command the agent hands to the shell. They can spot an explicit `git push`. They cannot tell, from a command that runs a Python script, that the script pushes once it starts. That is exactly how my incident reached `main`.
 
-Git sees it. Every `git push` runs the [`pre-push` hook](https://git-scm.com/docs/githooks#_pre_push), no matter what process started it, unless the caller passes `--no-verify`. Git has no idea who I am, of course, but the environment that the push runs in does, and a hook can read that.
+Git sees it. Any push made with the `git` command runs the [`pre-push` hook](https://git-scm.com/docs/githooks#_pre_push), no matter what process started it, unless the caller passes `--no-verify` or has pointed Git at a different hooks folder. A tool that pushes through a Git library instead of the `git` command never runs it. Git has no idea who I am, of course, but the environment that the push runs in does, and a hook can read that.
 
 Harnesses like Codex and Claude Code set an environment variable in every command they run, and the environment is inherited by everything that command spawns. Those variables are still there when a script the agent wrote pushes on its own, three processes deep. I checked what they actually set:
 
