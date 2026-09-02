@@ -137,3 +137,9 @@ a simple box
 | 10,000-19,999           | $1.50                                   | 
 | 20,000-49,999           | $1.25                                   | 
 | 50,000+                 | Oracle must be contacted for details    | 
+
+## Diagrams
+
+Put `{:.diagram}` after an image to drop its side padding and cap its width, so the labels stay readable on a phone and do not stretch across a wide screen. Use it on drawn diagrams. Photographs keep the full column width.
+
+![Four safeguards against two kinds of push, a direct git push and a push made inside a script, with a tick or a cross in every cell.](/assets/posts/2026-08-28-coding-agent-git-safety/what-each-layer-sees.svg "The lower a safeguard sits, the less it depends on what the agent decides to type."){:.diagram}

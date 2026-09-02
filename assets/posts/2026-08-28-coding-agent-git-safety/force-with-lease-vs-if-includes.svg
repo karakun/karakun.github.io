@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 442" width="100%" role="img"
+     aria-labelledby="fwl-title fwl-desc" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif">
+  <title id="fwl-title">Adding force-if-includes makes force-with-lease check your branch</title>
+  <desc id="fwl-desc">Inside your clone, main runs A to B to C with the origin/main tag on C. A dashed box around
+  B, C and that tag is labelled after git fetch. Your own main forks off A to D, outside that box, and carries
+  the HEAD arrow main tag, which is where you push from. A table compares force-with-lease alone with
+  force-with-lease plus force-if-includes. force-with-lease alone checks your clone, which is up to date,
+  satisfied by a fetch, which ensures only that B and C are in your clone, so the push goes through and
+  discards them: allowed. Adding force-if-includes checks your branch, which is not up to date, satisfied by a
+  merge or a rebase, which ensures that B and C are in your branch, so the push is refused.</desc>
+
+  <rect x="0" y="0" width="420" height="442" fill="#ffffff"/>
+
+  <!-- your clone -->
+  <rect x="6" y="8" width="408" height="156" rx="7" fill="#f6f8fa" stroke="#d0d7de"/>
+  <text x="20" y="30" font-size="11.2" font-weight="700" fill="#57606a">IN YOUR CLONE, ON YOUR MACHINE</text>
+
+  <path d="M168 42 L168 51" stroke="#0a58ca" stroke-width="1.6" stroke-linecap="round"/>
+  <path d="M164 47 L168 52 L172 47" fill="none" stroke="#0a58ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M162 54 L162 57 L174 57 L174 54" fill="none" stroke="#0a58ca" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="182" y="55" font-size="11.2" fill="#0a58ca">after</text>
+  <text x="212" y="55" font-size="11.2" fill="#0a58ca" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">git fetch</text>
+
+  <rect x="112" y="66" width="210" height="44" rx="5" fill="#ffffff" stroke="#0a58ca" stroke-width="1.4" stroke-dasharray="4 3"/>
+
+  <path d="M68 88 L118 88" stroke="#8c959f" stroke-width="1.8" fill="none"/>
+  <path d="M142 88 L178 88" stroke="#8c959f" stroke-width="1.8" fill="none"/>
+  <path d="M64 96 L120 132" stroke="#8c959f" stroke-width="1.8" fill="none"/>
+
+  <circle cx="56" cy="88" r="12" fill="#1f2328"/><text x="56" y="92" font-size="11.2" fill="#ffffff" text-anchor="middle">A</text>
+  <circle cx="130" cy="88" r="12" fill="#1f2328"/><text x="130" y="92" font-size="11.2" fill="#ffffff" text-anchor="middle">B</text>
+  <circle cx="190" cy="88" r="12" fill="#1f2328"/><text x="190" y="92" font-size="11.2" fill="#ffffff" text-anchor="middle">C</text>
+
+  <line x1="202" y1="88" x2="214" y2="88" stroke="#8c959f" stroke-width="1.5"/>
+  <rect x="214" y="76" width="98" height="24" rx="4" fill="#ffffff" stroke="#8c959f"/>
+  <text x="226" y="92" font-size="11.2" fill="#1f2328" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">origin/main</text>
+
+  <circle cx="130" cy="138" r="12" fill="#1f2328"/><text x="130" y="142" font-size="11.2" fill="#ffffff" text-anchor="middle">D</text>
+  <line x1="142" y1="138" x2="154" y2="138" stroke="#8c959f" stroke-width="1.5"/>
+  <rect x="154" y="126" width="100" height="24" rx="4" fill="#ffffff" stroke="#8c959f"/>
+  <text x="166" y="142" font-size="11.2" fill="#1f2328" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">HEAD → main</text>
+  <text x="264" y="142" font-size="11.2" fill="#57606a">where you push from</text>
+
+  <!-- the two flag combinations, side by side -->
+  <text x="112" y="192" font-size="10.4" fill="#1f2328" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">--force-with-lease</text>
+  <text x="112" y="207" font-size="10.4" fill="#57606a">alone</text>
+  <text x="258" y="192" font-size="10.4" fill="#1f2328" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">--force-with-lease</text>
+  <text x="258" y="207" font-size="10" fill="#57606a" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">and --force-if-includes</text>
+  <line x1="14" y1="218" x2="406" y2="218" stroke="#d0d7de"/>
+
+  <text x="14" y="240" font-size="11.2" fill="#8c959f">it checks</text>
+  <text x="112" y="240" font-size="11.2" font-weight="700" fill="#1f2328">your clone</text>
+  <text x="258" y="240" font-size="11.2" font-weight="700" fill="#1f2328">your branch</text>
+  <line x1="14" y1="254" x2="406" y2="254" stroke="#eaeef2"/>
+
+  <text x="14" y="276" font-size="11.2" fill="#8c959f">up to date?</text>
+  <text x="112" y="276" font-size="11.2" font-weight="700" fill="#1f2328">yes</text>
+  <text x="258" y="276" font-size="11.2" font-weight="700" fill="#1f2328">no</text>
+  <line x1="14" y1="290" x2="406" y2="290" stroke="#eaeef2"/>
+
+  <text x="14" y="312" font-size="11.2" fill="#8c959f">satisfied by</text>
+  <text x="112" y="312" font-size="11.2" fill="#57606a">a fetch</text>
+  <text x="258" y="312" font-size="11.2" fill="#57606a">a merge or a rebase</text>
+  <line x1="14" y1="326" x2="406" y2="326" stroke="#eaeef2"/>
+
+  <text x="14" y="356" font-size="11.2" fill="#8c959f">which ensures</text>
+  <text x="112" y="348" font-size="11.2" fill="#57606a">B and C are in</text>
+  <text x="112" y="364" font-size="11.2" fill="#57606a">your</text>
+  <text x="138" y="364" font-size="11.2" font-weight="700" fill="#1f2328">clone</text>
+  <text x="258" y="348" font-size="11.2" fill="#57606a">B and C are in</text>
+  <text x="258" y="364" font-size="11.2" fill="#57606a">your</text>
+  <text x="284" y="364" font-size="11.2" font-weight="700" fill="#1f2328">branch</text>
+  <line x1="14" y1="378" x2="406" y2="378" stroke="#eaeef2"/>
+
+  <text x="14" y="414" font-size="11.2" fill="#8c959f">your force push</text>
+  <circle cx="120" cy="410" r="9" fill="#b42318"/>
+  <path d="M116.5 406.5 L123.5 413.5 M123.5 406.5 L116.5 413.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+  <text x="136" y="406" font-size="12.2" font-weight="700" fill="#b42318">goes through</text>
+  <text x="136" y="422" font-size="11.2" fill="#57606a">discarding B and C</text>
+  <circle cx="266" cy="410" r="9" fill="#216e39"/>
+  <path d="M261.5 410 L265 413.5 L271 406.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="282" y="414" font-size="12.2" font-weight="700" fill="#216e39">is refused</text>
+</svg>
