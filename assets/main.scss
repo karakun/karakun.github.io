@@ -389,6 +389,16 @@ article.post {
             margin: 0 auto;
             display: block;
             width: 100%;
+            // A diagram scales as one piece, so its type tracks the column
+            // width: unreadable on a phone, oversized on a wide screen. Losing
+            // the 5em side padding and capping the width holds it at about
+            // body size wherever the column has room. Photographs are left
+            // alone, so nothing else on the site moves.
+            &.diagram {
+                padding-left: 0;
+                padding-right: 0;
+                max-width: 572px;
+            }
         }
     }
     a {
