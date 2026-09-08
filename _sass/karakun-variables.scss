@@ -6,6 +6,24 @@ $karakun-border-radius: 0.5rem;
 $dark: #0A1C24; // footer bg color
 $fa-font-path: 'fonts/';
 
+// Dark mode palette, prefixed 'night' so it does not read as $karakun-dark-green. Kept here with the rest of the brand colours so the
+// override layer in _sass/dark-mode.scss only consumes them.
+$karakun-night-bg: #0F1C22;
+$karakun-night-bg-raised: #16272F;
+$karakun-night-text: #E4EAE9;
+$karakun-night-text-muted: #A7B6B6;
+$karakun-night-heading: #F2F6F5;
+$karakun-night-link: #7FD18A;
+$karakun-night-link-hover: #A5E0AD;
+$karakun-night-border: #273C44;
+$karakun-night-tag-bg: #2A4038;
+$karakun-night-shadow: rgba(0, 0, 0, 0.6);
+
+// Scrim over the page header image. Dark enough for white header text in both
+// modes, so it is not part of the night palette.
+$karakun-header-scrim: rgba(0, 0, 0, 0.55);
+
+
 @import "bulma/utilities/initial-variables";
 
 // Overwrite Bulma default settings

@@ -4,6 +4,48 @@
 <script>
 document.addEventListener('DOMContentLoaded', function () {
 
+// Theme toggle. The stored value is only written when the reader chooses, so
+// anyone who has not chosen keeps following their operating system setting.
+// On the JavaScript side the key, the attribute and the two values are
+// defined once, in head.html; the CSS matches the attribute independently.
+var theme = window.karakunTheme;
+var $themeToggle = document.querySelector('.theme-toggle');
+
+if (theme && $themeToggle) {
+
+  var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
+
+  var systemIsDark = function () {
+    return !!(prefersDark && prefersDark.matches);
+  };
+
+  var isDark = function () {
+    var chosen = document.documentElement.getAttribute(theme.attribute);
+    return chosen ? chosen === theme.dark : systemIsDark();
+  };
+
+  var syncButton = function () {
+    $themeToggle.setAttribute('aria-pressed', isDark() ? 'true' : 'false');
+  };
+
+  syncButton();
+
+  $themeToggle.addEventListener('click', function () {
+    // An explicit choice is always stored, even when it currently matches the
+    // system. Dropping it would mean a reader who picked dark last night is
+    // flipped to light by a machine that switches theme at sunrise.
+    var next = isDark() ? theme.light : theme.dark;
+    theme.apply(next);
+    theme.write(next);
+    syncButton();
+  });
+
+  if (prefersDark && prefersDark.addEventListener) {
+    prefersDark.addEventListener('change', syncButton);
+  }
+}
+
+
 // Get all "navbar-burger" elements
 var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 

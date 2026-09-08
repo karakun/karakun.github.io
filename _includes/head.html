@@ -16,6 +16,39 @@
     {%- seo -%}
   {%- endif -%}
 
+  <meta name="color-scheme" content="light dark">
+  <script>
+    // Resolve the theme before the first paint so the page never flashes light.
+    window.karakunTheme = {
+      key: 'theme',
+      attribute: 'data-theme',
+      dark: 'dark',
+      light: 'light',
+      isValid: function (value) { return value === this.dark || value === this.light; },
+      read: function () {
+        try { return localStorage.getItem(this.key); } catch (e) { return null; }
+      },
+      write: function (value) {
+        try {
+          if (value === null) { localStorage.removeItem(this.key); } else { localStorage.setItem(this.key, value); }
+        } catch (e) { /* private mode, storage disabled */ }
+      },
+      apply: function (value) {
+        if (value === null) {
+          document.documentElement.removeAttribute(this.attribute);
+        } else {
+          document.documentElement.setAttribute(this.attribute, value);
+        }
+      }
+    };
+    (function (theme) {
+      // marks the document as scripted, so the toggle is only offered where it
+      // can actually work; dark mode itself needs no JavaScript
+      document.documentElement.classList.add('js');
+      var stored = theme.read();
+      if (theme.isValid(stored)) { theme.apply(stored); }
+    })(window.karakunTheme);
+  </script>
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   <link rel="manifest" href="/manifest.json">
 
