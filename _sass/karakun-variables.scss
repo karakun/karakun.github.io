@@ -20,9 +20,10 @@ $karakun-night-tag-bg: #2A4038;
 $karakun-night-shadow: rgba(0, 0, 0, 0.6);
 
 // Status colours for the diagrams inlined by _includes/diagram.html, picked for
-// the night background. The light values are attributes inside each SVG.
+// the night background. The light values are attributes inside each SVG. Text
+// in these colours clears 7:1 on the night background, WCAG AAA.
 $karakun-night-success: $karakun-night-link;
-$karakun-night-danger: #F47067;
+$karakun-night-danger: #F79892;
 $karakun-night-warning: #D9A43A;
 $karakun-night-info: #6CB6FF;
 

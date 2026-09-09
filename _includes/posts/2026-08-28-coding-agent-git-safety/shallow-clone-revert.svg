@@ -15,61 +15,61 @@
   <!-- full clone -->
   <rect class="panel" x="2" y="8" width="195" height="358" rx="7" fill="#f6f8fa" stroke="#d0d7de"/>
   <text class="ink" x="18" y="32" font-size="12.2" font-weight="700" fill="#1f2328">Full clone</text>
-  <line class="edge" x1="54" y1="80" x2="87" y2="80" stroke="#8c959f" stroke-width="1.8"/>
-  <line class="edge" x1="111" y1="80" x2="144" y2="80" stroke="#8c959f" stroke-width="1.8"/>
-  <circle class="hollow-node" cx="42" cy="80" r="12" fill="#ffffff" stroke="#8c959f" stroke-width="1.8" stroke-dasharray="3 3"/>
-  <text class="muted" x="42" y="84" font-size="11.2" fill="#57606a" text-anchor="middle">…</text>
-  <circle class="hollow-node" cx="99" cy="80" r="12" fill="#ffffff" stroke="#57606a" stroke-width="1.8"/>
+  <line class="edge" x1="54" y1="80" x2="87" y2="80" stroke="#868e98" stroke-width="1.8"/>
+  <line class="edge" x1="111" y1="80" x2="144" y2="80" stroke="#868e98" stroke-width="1.8"/>
+  <circle class="hollow-node" cx="42" cy="80" r="12" fill="#ffffff" stroke="#868e98" stroke-width="1.8" stroke-dasharray="3 3"/>
+  <text class="muted" x="42" y="84" font-size="11.2" fill="#4c545d" text-anchor="middle">…</text>
+  <circle class="hollow-node" cx="99" cy="80" r="12" fill="#ffffff" stroke="#4c545d" stroke-width="1.8"/>
   <circle class="node" cx="156" cy="80" r="12" fill="#1f2328"/>
-  <text class="muted" x="99" y="108" font-size="11.2" fill="#57606a" text-anchor="middle">parent</text>
+  <text class="muted" x="99" y="108" font-size="11.2" fill="#4c545d" text-anchor="middle">parent</text>
   <text class="ink" x="156" y="108" font-size="11.2" font-weight="700" fill="#1f2328" text-anchor="middle">HEAD</text>
-  <text class="muted" x="156" y="124" font-size="11.2" fill="#57606a" text-anchor="middle">bad YAML</text>
+  <text class="muted" x="156" y="124" font-size="11.2" fill="#4c545d" text-anchor="middle">bad YAML</text>
 
   <rect class="card" x="12" y="146" width="175" height="32" rx="5" fill="#ffffff" stroke="#d0d7de"/>
   <text class="ink" x="99" y="166" font-size="10" fill="#1f2328" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">git revert --no-commit HEAD</text>
 
-  <path class="edge" d="M99 184 L99 200" stroke="#8c959f" stroke-width="1.8"/>
-  <path class="edge" d="M94 195 L99 201 L104 195" fill="none" stroke="#8c959f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="edge" d="M99 184 L99 200" stroke="#868e98" stroke-width="1.8"/>
+  <path class="edge" d="M94 195 L99 201 L104 195" fill="none" stroke="#868e98" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <rect class="card-ok" x="12" y="210" width="175" height="142" rx="5" fill="#ffffff" stroke="#216e39" stroke-width="1.5"/>
+  <rect class="card-ok" x="12" y="210" width="175" height="142" rx="5" fill="#ffffff" stroke="#1d5f31" stroke-width="1.5"/>
   <text class="ink" x="24" y="232" font-size="11.2" fill="#1f2328">Each commit is a snapshot,</text>
   <text class="ink" x="24" y="248" font-size="11.2" fill="#1f2328">so with a parent, only</text>
   <text class="ink" x="24" y="264" font-size="11.2" fill="#1f2328">HEAD's edit gets undone.</text>
-  <circle class="ok" cx="30" cy="284" r="10" fill="#216e39"/>
+  <circle class="ok" cx="30" cy="284" r="10" fill="#1d5f31"/>
   <path class="glyph" d="M25 284 L28.5 287.5 L35 280" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <text class="ok" x="46" y="288" font-size="12.2" font-weight="700" fill="#216e39">1 file changed back</text>
-  <text class="muted" x="46" y="310" font-size="11.2" fill="#57606a">just the broken YAML,</text>
-  <text class="muted" x="46" y="326" font-size="11.2" fill="#57606a">which is exactly what</text>
-  <text class="muted" x="46" y="342" font-size="11.2" fill="#57606a">you wanted undone</text>
+  <text class="ok" x="46" y="288" font-size="12.2" font-weight="700" fill="#1d5f31">1 file changed back</text>
+  <text class="muted" x="46" y="310" font-size="11.2" fill="#4c545d">just the broken YAML,</text>
+  <text class="muted" x="46" y="326" font-size="11.2" fill="#4c545d">which is exactly what</text>
+  <text class="muted" x="46" y="342" font-size="11.2" fill="#4c545d">you wanted undone</text>
 
   <!-- shallow clone -->
   <rect class="panel" x="203" y="8" width="195" height="358" rx="7" fill="#f6f8fa" stroke="#d0d7de"/>
   <text class="ink" x="219" y="32" font-size="12.2" font-weight="700" fill="#1f2328">Shallow clone</text>
-  <text class="muted" x="312" y="32" font-size="11.2" fill="#57606a" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">--depth 1</text>
+  <text class="muted" x="312" y="32" font-size="11.2" fill="#4c545d" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">--depth 1</text>
   <line class="ghost" x1="255" y1="80" x2="288" y2="80" stroke="#c9ccd1" stroke-width="1.8" stroke-dasharray="4 4"/>
   <line class="ghost" x1="312" y1="80" x2="345" y2="80" stroke="#c9ccd1" stroke-width="1.8" stroke-dasharray="4 4"/>
   <circle class="ghost" cx="243" cy="80" r="12" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.8" stroke-dasharray="3 3"/>
   <circle class="ghost" cx="300" cy="80" r="12" fill="#ffffff" stroke="#c9ccd1" stroke-width="1.8" stroke-dasharray="3 3"/>
-  <text class="muted" x="271" y="108" font-size="11.2" fill="#57606a" text-anchor="middle">never fetched</text>
+  <text class="muted" x="271" y="108" font-size="11.2" fill="#4c545d" text-anchor="middle">never fetched</text>
   <circle class="node" cx="357" cy="80" r="12" fill="#1f2328"/>
   <text class="ink" x="357" y="108" font-size="11.2" font-weight="700" fill="#1f2328" text-anchor="middle">HEAD</text>
-  <text class="muted" x="357" y="124" font-size="11.2" fill="#57606a" text-anchor="middle">bad YAML</text>
+  <text class="muted" x="357" y="124" font-size="11.2" fill="#4c545d" text-anchor="middle">bad YAML</text>
 
   <rect class="card" x="213" y="146" width="175" height="32" rx="5" fill="#ffffff" stroke="#d0d7de"/>
   <text class="ink" x="300" y="166" font-size="10" fill="#1f2328" text-anchor="middle" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">git revert --no-commit HEAD</text>
 
-  <path class="edge" d="M300 184 L300 200" stroke="#8c959f" stroke-width="1.8"/>
-  <path class="edge" d="M295 195 L300 201 L305 195" fill="none" stroke="#8c959f" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path class="edge" d="M300 184 L300 200" stroke="#868e98" stroke-width="1.8"/>
+  <path class="edge" d="M295 195 L300 201 L305 195" fill="none" stroke="#868e98" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 
-  <rect class="card-bad" x="213" y="210" width="175" height="142" rx="5" fill="#ffffff" stroke="#b42318" stroke-width="1.5"/>
+  <rect class="card-bad" x="213" y="210" width="175" height="142" rx="5" fill="#ffffff" stroke="#a11f15" stroke-width="1.5"/>
   <text class="ink" x="225" y="232" font-size="11.2" fill="#1f2328">With no parent, HEAD is the</text>
   <text class="ink" x="225" y="248" font-size="11.2" fill="#1f2328">only snapshot, so the whole</text>
   <text class="ink" x="225" y="264" font-size="11.2" fill="#1f2328">repository gets undone.</text>
-  <circle class="bad" cx="231" cy="292" r="10" fill="#b42318"/>
+  <circle class="bad" cx="231" cy="292" r="10" fill="#a11f15"/>
   <path class="glyph" d="M227 288 L235 296 M235 288 L227 296" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
-  <text class="bad" x="247" y="288" font-size="12.2" font-weight="700" fill="#b42318">Every file staged</text>
-  <text class="bad" x="247" y="304" font-size="12.2" font-weight="700" fill="#b42318">for deletion</text>
-  <text class="muted" x="247" y="326" font-size="11.2" fill="#57606a">151 files in one repo,</text>
-  <text class="muted" x="247" y="342" font-size="11.2" fill="#57606a">723 in the other</text>
+  <text class="bad" x="247" y="288" font-size="12.2" font-weight="700" fill="#a11f15">Every file staged</text>
+  <text class="bad" x="247" y="304" font-size="12.2" font-weight="700" fill="#a11f15">for deletion</text>
+  <text class="muted" x="247" y="326" font-size="11.2" fill="#4c545d">151 files in one repo,</text>
+  <text class="muted" x="247" y="342" font-size="11.2" fill="#4c545d">723 in the other</text>
   </g>
 </svg>

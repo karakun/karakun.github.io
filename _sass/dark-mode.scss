@@ -205,10 +205,8 @@
             .edge { stroke: var(--karakun-text-muted); }
             .rule { stroke: var(--karakun-border); }
 
-            // three levels of text, as in the light drawing
             .ink { fill: var(--karakun-heading); }
             .muted { fill: var(--karakun-text-muted); }
-            .faint { fill: var(--karakun-text-muted); opacity: 0.7; }
 
             .ok { fill: var(--karakun-success); }
             .bad { fill: var(--karakun-danger); }
