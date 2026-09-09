@@ -47,19 +47,19 @@ I just no longer allow them to push to `main` directly.
 
 ## Table of Contents
 
-* [How an AI coding agent's unit test reached `main`](#how-an-AI-coding-agent-unit-test-reached-main)
+* [How an AI coding agent's unit test reached `main`](#how-an-ai-coding-agent-unit-test-reached-main)
 * [How the attempted recovery emptied both branches](#how-the-attempted-recovery-emptied-both-branches)
-* [Why coding agent safety checks were not enough](#Why-coding-agent-safety-checks-were-not-enough)
-* [Two weeks later, the coding agent ignored another stop signal](#Two-weeks-later-the-coding-agent-ignored-another-stop-signal)
-* [Git safeguards for AI coding agents](#Git-safeguards-for-AI-coding-agents)
-  * [Start with Git branch protection](#Start-with-Git-branch-protection)
+* [Why coding agent safety checks were not enough](#why-coding-agent-safety-checks-were-not-enough)
+* [Two weeks later, the coding agent ignored another stop signal](#two-weeks-later-the-coding-agent-ignored-another-stop-signal)
+* [Git safeguards for AI coding agents](#git-safeguards-for-ai-coding-agents)
+  * [Start with Git branch protection](#start-with-git-branch-protection)
   * [Block the coding agent without blocking yourself](#block-the-coding-agent-without-blocking-yourself)
-  * [Give the coding agent explicit Git rules](#Give-the-coding-agent-explicit-Git-rules)
-* [What this incident changed about my coding agent workflow](#What-this-incident-changed-about-my-coding-agent-workflow)
+  * [Give the coding agent explicit Git rules](#give-the-coding-agent-explicit-git-rules)
+* [What this incident changed about my coding agent workflow](#what-this-incident-changed-about-my-coding-agent-workflow)
 
 ---
 
-## <a name="how-an-AI-coding-agent-unit-test-reached-main"></a> How an AI coding agent's unit test reached `main`
+## <a name="how-an-ai-coding-agent-unit-test-reached-main"></a> How an AI coding agent's unit test reached `main`
 
 I had asked Claude to write a script that cleaned up a YAML build configuration file. 
 The script had a parsing bug that produced invalid YAML instead.
@@ -110,7 +110,7 @@ Claude later summed up the real gap:
 Claude eventually switched to full clones and restored both repositories. 
 Thankfully, no data was permanently lost.
 
-## <a name="Why-coding-agent-safety-checks-were-not-enough"></a> Why coding agent safety checks were not enough
+## <a name="why-coding-agent-safety-checks-were-not-enough"></a> Why coding agent safety checks were not enough
 
 Claude Code with Opus 5 had completed many difficult tasks well, and each good result made me more comfortable giving it longer tasks and more autonomy.
 
@@ -136,7 +136,7 @@ A safety classifier can block commands that look risky and still miss a dangerou
 That is not a reason to stop using agents. 
 It is a reason to put hard limits around actions with expensive consequences.
 
-## <a name="Two-weeks-later-the-coding-agent-ignored-another-stop-signal"></a> Two weeks later, the coding agent ignored another stop signal
+## <a name="two-weeks-later-the-coding-agent-ignored-another-stop-signal"></a> Two weeks later, the coding agent ignored another stop signal
 
 In another Claude session and another repository, Claude amended a commit and pushed with [`git push --force-with-lease`](https://git-scm.com/docs/git-push#Documentation/git-push.txt---force-with-lease){:target="_blank"}. 
 Git rejected it with a stale-information error, which is the flag doing exactly its job: refusing to overwrite remote state Claude had not confirmed.
@@ -149,11 +149,11 @@ Both incidents showed the same habit.
 `--no-commit` gave it a chance to read the diff, and it committed anyway. 
 A rejected push gave it a chance to stop, and it forced the push through.
 
-## <a name="Git-safeguards-for-AI-coding-agents"></a> Git safeguards for AI coding agents
+## <a name="git-safeguards-for-ai-coding-agents"></a> Git safeguards for AI coding agents
 
 I would set up three layers, in this order.
 
-### <a name="Start-with-Git-branch-protection"></a> Start with Git branch protection
+### <a name="start-with-git-branch-protection"></a> Start with Git branch protection
 
 [Branch protection](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-rulesets/about-rulesets){:target="_blank"} is the most effective safeguard, and probably also one of the easiest to set up. 
 It stops a push to `main` at the remote, on every machine and for everyone at once, whether the push came from me, from an agent, or from a script neither of us was watching.
@@ -241,7 +241,7 @@ The marker and the overrides are conventions, not a sandbox: an agent that clear
 Those are deliberate acts rather than judgment calls, which is the distinction the whole thing is built on, but it is not a wall. 
 And this protects my machine, not my repository.
 
-### <a name="Give-the-coding-agent-explicit-Git-rules"></a> Give the coding agent explicit Git rules
+### <a name="give-the-coding-agent-explicit-git-rules"></a> Give the coding agent explicit Git rules
 
 The hook is what stops a bad push. 
 The rules are what keep the agent from getting into that position in the first place. 
@@ -303,7 +303,7 @@ Choose the safeguards based on what a mistake would cost.
 
 The more expensive the mistake, the less safety should depend on the model remembering a sentence in `AGENTS.md`.
 
-## <a name="What-this-incident-changed-about-my-coding-agent-workflow"></a> What this incident changed about my coding agent workflow
+## <a name="what-this-incident-changed-about-my-coding-agent-workflow"></a> What this incident changed about my coding agent workflow
 
 The part that still bothers me is how normal everything looked. 
 The "test" ran. `git revert` returned zero. 
