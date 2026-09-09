@@ -107,7 +107,7 @@ Claude later summed up the real gap:
 
 > The honest lesson: nothing between "edit the text" and `git push` ever looked at the result.
 
-Claude eventually switched to full clones and restored both repositories. 
+Claude eventually [switched to full clones and restored both repositories](https://xkcd.com/1597/). 
 Thankfully, no data was permanently lost.
 
 ## <a name="why-coding-agent-safety-checks-were-not-enough"></a> Why coding agent safety checks were not enough
