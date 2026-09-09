@@ -602,6 +602,15 @@ article {
     }
 }
 
+// Bulma spaces a pre from what follows it, but only when it is not the last
+// child. Rouge wraps every fenced block in two divs with the pre as the only
+// child, so that rule never fires and a code block sits flush against the
+// next paragraph. The wrapper takes the space Bulma meant for the pre.
+// scoped to the div: kramdown puts the same class on inline code spans
+.content div.highlighter-rouge:not(:last-child) {
+    margin-bottom: 1em;
+}
+
 .copyright {
     border-top: 1px #848B89 solid;
     text-align: center;
