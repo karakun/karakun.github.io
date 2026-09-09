@@ -1,0 +1,10 @@
+{%- comment -%}
+Inlines an SVG diagram from _includes so the page stylesheet reaches its shapes,
+which is what lets dark mode restyle it. An <img> is sealed off from CSS.
+The SVG's own title is its accessible name and the hover text, its desc the
+accessible description.
+  src  path below _includes, e.g. posts/<post>/<name>.svg
+The file goes through Liquid, so a label that shows Liquid's own curly-brace
+delimiters needs them escaped.
+{%- endcomment -%}
+<p class="diagram">{% include {{ include.src }} %}</p>

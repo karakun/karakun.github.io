@@ -19,6 +19,13 @@ $karakun-night-border: #273C44;
 $karakun-night-tag-bg: #2A4038;
 $karakun-night-shadow: rgba(0, 0, 0, 0.6);
 
+// Status colours for the diagrams inlined by _includes/diagram.html, picked for
+// the night background. The light values are attributes inside each SVG.
+$karakun-night-success: $karakun-night-link;
+$karakun-night-danger: #F47067;
+$karakun-night-warning: #D9A43A;
+$karakun-night-info: #6CB6FF;
+
 // Scrim over the page header image. Dark enough for white header text in both
 // modes, so it is not part of the night palette.
 $karakun-header-scrim: rgba(0, 0, 0, 0.55);

@@ -88,7 +88,7 @@ git push origin main
 Because the clone did not contain the commit before it, Git [treated that commit as if it had created the entire file tree](https://git-scm.com/docs/shallow){:target="_blank"}. [Reverting it](https://git-scm.com/docs/git-revert){:target="_blank"} therefore staged **every single file in the repository for deletion**. 
 Claude then committed and pushed that to `main`.
 
-![Two panels comparing the same revert. Each commit is a snapshot. In a full clone, which holds a parent and HEAD, git revert --no-commit HEAD undoes only HEAD's edit and one file changes back: the broken YAML, which is exactly what was wanted. In a shallow clone the earlier commits were never fetched, so HEAD is the only snapshot and the same command undoes the whole repository, staging every file for deletion: 151 files in one repository and 723 in the other.](/assets/posts/2026-08-28-coding-agent-git-safety/shallow-clone-revert.svg "The same command, two clones, two very different diffs."){:.diagram}
+{% include diagram.html src="posts/2026-08-28-coding-agent-git-safety/shallow-clone-revert.svg" %}
 
 Claude even used `--no-commit`, which is the smart part: it had the chance to inspect the diff before committing. 
 However, it committed without looking at the diff.
@@ -213,7 +213,7 @@ I tested it: the push went through and discarded two of them.
 Adding [`--force-if-includes`](https://git-scm.com/docs/git-push#Documentation/git-push.txt---force-if-includes){:target="_blank"} to `--force-with-lease` closes that gap. 
 Git then checks that the remote's current tip was actually incorporated locally before allowing the rewrite:
 
-![A branch graph of your own clone, on your machine. Main runs A to B to C, with a tag reading origin/main on C, and a blue dashed box around B, C and that tag, labelled in the same blue with a download icon and the words after git fetch. Your own main forks off A to D, outside that box, and carries a tag reading HEAD arrow main, which is where you push from. A table then compares the two flag combinations row by row. force-with-lease alone checks your clone, which is up to date, satisfied by a fetch, which ensures only that B and C are in your clone, so your force push goes through, discarding B and C. force-with-lease plus force-if-includes checks your branch, which is not up to date, satisfied by a merge or a rebase, which ensures that B and C are in your branch, so your force push is refused.](/assets/posts/2026-08-28-coding-agent-git-safety/force-with-lease-vs-if-includes.svg "The first flag checks a record your clone keeps. Adding the second checks what your branch actually contains."){:.diagram}
+{% include diagram.html src="posts/2026-08-28-coding-agent-git-safety/force-with-lease-vs-if-includes.svg" %}
 
 It is in the rules I give the agent, but a rule only helps if the agent remembers it. 
 So the hook ignores the flags and applies the same test itself, from the reflog: has this branch ever incorporated the commit that is now on the remote? 
@@ -295,7 +295,7 @@ Seven runs is a small sample, but it was enough to convince me that the instruct
 
 Side by side, what separates them is which pushes to `main` each one actually stops:
 
-![A table of four safeguards against two kinds of push, a direct git push and a push made inside a script the agent ran. Branch protection and the pre-push hook refuse both. A harness hook refuses the direct push and allows the one from a script, because it only reads the command text. Agent instructions, the safeguards written into AGENTS.md and CLAUDE.md, refused the push in five of seven emergency runs, either way.](/assets/posts/2026-08-28-coding-agent-git-safety/what-each-layer-sees.svg "The lower a safeguard sits, the less it depends on what the agent decides to type."){:.diagram}
+{% include diagram.html src="posts/2026-08-28-coding-agent-git-safety/what-each-layer-sees.svg" %}
 
 For a critical system, I would go further: keep tests away from real services, and require separate approval before deployment.
 

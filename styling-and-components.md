@@ -142,4 +142,10 @@ a simple box
 
 Put `{:.diagram}` after an image to drop its side padding and cap its width, so the labels stay readable on a phone and do not stretch across a wide screen. Use it on drawn diagrams. Photographs keep the full column width.
 
-![Four safeguards against two kinds of push, a direct git push and a push made inside a script, with a tick or a cross in every cell.](/assets/posts/2026-08-28-coding-agent-git-safety/what-each-layer-sees.svg "The lower a safeguard sits, the less it depends on what the agent decides to type."){:.diagram}
+An SVG diagram gets the same box through an include, which inlines it so the stylesheet can recolour it for dark mode. Put the file under `_includes/posts/<post>/` and give every shape a role class (`canvas`, `panel`, `card`, `ink`, `muted`, `ok`, `bad` and so on, listed in `_sass/dark-mode.scss`). The light colours stay on the shapes as attributes. The SVG's `<title>` is its accessible name and the hover text, `<desc>` its accessible description. Their ids must be unique across the page, so prefix them per diagram. A stub with front matter at the old `assets` path keeps the file reachable at that URL too.
+
+```liquid
+{% raw %}{% include diagram.html src="posts/2026-08-28-coding-agent-git-safety/what-each-layer-sees.svg" %}{% endraw %}
+```
+
+{% include diagram.html src="posts/2026-08-28-coding-agent-git-safety/what-each-layer-sees.svg" %}

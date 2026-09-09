@@ -382,23 +382,38 @@ a.navbar-item, a.navbar-link {
     padding: 0.75rem 1.25rem;
 }
 
+// the box every picture in a post sits in
+@mixin post-picture {
+    padding: 2em 5em 2.5em 5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// A diagram scales as one piece, so its type tracks the column width:
+// unreadable on a phone, oversized on a wide screen. Losing the 5em side
+// padding and capping the width holds it at about body size wherever the
+// column has room. Photographs are left alone, so nothing else on the site
+// moves.
+@mixin post-diagram {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 572px;
+}
+
 article.post {
     p {
         > img {
-            padding: 2em 5em 2.5em 5em;
-            margin: 0 auto;
+            @include post-picture;
             display: block;
             width: 100%;
-            // A diagram scales as one piece, so its type tracks the column
-            // width: unreadable on a phone, oversized on a wide screen. Losing
-            // the 5em side padding and capping the width holds it at about
-            // body size wherever the column has room. Photographs are left
-            // alone, so nothing else on the site moves.
-            &.diagram {
-                padding-left: 0;
-                padding-right: 0;
-                max-width: 572px;
-            }
+            &.diagram { @include post-diagram; }
+        }
+        // An inlined SVG (_includes/diagram.html) has no <img> to carry the
+        // box, so its wrapper does.
+        &.diagram {
+            @include post-picture;
+            @include post-diagram;
+            > svg { display: block; }
         }
     }
     a {
@@ -483,7 +498,9 @@ article.post {
 // disappear. One plate behind every image covers all of them: an opaque photo
 // hides it completely, a transparent one sits on it, and nobody has to keep a
 // list of which images need one. It hugs the image rather than the box around
-// it, because the padding a post figure carries is layout, not picture.
+// it, because the padding a post figure carries is layout, not picture. A
+// diagram inlined through _includes/diagram.html is not an image and gets no
+// plate: the dark-mode layer recolours it instead.
 img.featured-image,
 .featured-images-table img,
 .post-content img {

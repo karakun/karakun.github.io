@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 362" width="100%" role="img"
+     aria-labelledby="wls-title" aria-describedby="wls-desc" font-family="'Open Sans','Segoe UI',Helvetica,Arial,sans-serif">
+  <title id="wls-title">The lower a safeguard sits, the less it depends on what the agent decides to type.</title>
+  <desc id="wls-desc">A table of four safeguards against two kinds of push, a direct git push and a push made inside a script the
+  agent ran. Branch protection and the pre-push hook refuse both. A harness hook refuses the direct push and
+  allows the one from a script, because it only reads the command text. Agent instructions, the safeguards
+  written into AGENTS.md and CLAUDE.md, refused the push in five of seven emergency runs, either way.</desc>
+
+  <!-- assistive technology reads the title and desc above, not the labels in the drawing -->
+  <g aria-hidden="true">
+
+  <rect class="canvas" x="0" y="0" width="400" height="362" fill="#ffffff"/>
+
+  <text class="muted" x="14" y="44" font-size="11.2" font-weight="700" fill="#57606a">SAFEGUARD</text>
+  <text class="muted" x="200" y="26" font-size="11.2" font-weight="700" fill="#57606a">DIRECT PUSH</text>
+  <text class="muted" x="200" y="44" font-size="11.2" fill="#57606a" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">git push</text>
+  <text class="muted" x="292" y="26" font-size="11.2" font-weight="700" fill="#57606a">INSIDE A SCRIPT</text>
+  <text class="muted" x="292" y="44" font-size="11.2" fill="#57606a" font-family="ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace">cleanup.py</text>
+  <line class="rule" x1="14" y1="58" x2="386" y2="58" stroke="#d0d7de"/>
+
+  <!-- branch protection -->
+  <text class="ink" x="14" y="84" font-size="12.2" font-weight="700" fill="#1f2328">Branch protection</text>
+  <text class="muted" x="14" y="102" font-size="11.2" fill="#57606a">Enforced at the remote, on every</text>
+  <text class="muted" x="14" y="118" font-size="11.2" fill="#57606a">machine and for everyone at once</text>
+  <g transform="translate(0 16)">
+    <circle class="ok" cx="209" cy="80" r="9" fill="#216e39"/>
+    <path class="glyph" d="M204.5 80 L208 83.5 L214 76.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="muted" x="224" y="84" font-size="11.2" fill="#57606a">refused</text>
+    <circle class="ok" cx="301" cy="80" r="9" fill="#216e39"/>
+    <path class="glyph" d="M296.5 80 L300 83.5 L306 76.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="muted" x="316" y="84" font-size="11.2" fill="#57606a">refused</text>
+  </g>
+  <line class="rule" x1="14" y1="134" x2="386" y2="134" stroke="#eaeef2"/>
+
+  <!-- harness hook -->
+  <text class="ink" x="14" y="160" font-size="12.2" font-weight="700" fill="#1f2328">Harness hook</text>
+  <text class="muted" x="14" y="178" font-size="11.2" fill="#57606a">Reads the command text before</text>
+  <text class="muted" x="14" y="194" font-size="11.2" fill="#57606a">it runs, and only that</text>
+  <g transform="translate(0 16)">
+    <circle class="ok" cx="209" cy="156" r="9" fill="#216e39"/>
+    <path class="glyph" d="M204.5 156 L208 159.5 L214 152.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="muted" x="224" y="160" font-size="11.2" fill="#57606a">refused</text>
+    <circle class="bad" cx="301" cy="156" r="9" fill="#b42318"/>
+    <path class="glyph" d="M297.5 152.5 L304.5 159.5 M304.5 152.5 L297.5 159.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text class="bad" x="316" y="160" font-size="11.2" font-weight="700" fill="#b42318">allowed</text>
+  </g>
+  <line class="rule" x1="14" y1="210" x2="386" y2="210" stroke="#eaeef2"/>
+
+  <!-- pre-push hook -->
+  <text class="ink" x="14" y="236" font-size="12.2" font-weight="700" fill="#1f2328">pre-push hook</text>
+  <text class="muted" x="14" y="254" font-size="11.2" fill="#57606a">Git runs it on every push,</text>
+  <text class="muted" x="14" y="270" font-size="11.2" fill="#57606a">whatever process started it</text>
+  <g transform="translate(0 16)">
+    <circle class="ok" cx="209" cy="232" r="9" fill="#216e39"/>
+    <path class="glyph" d="M204.5 232 L208 235.5 L214 228.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="muted" x="224" y="236" font-size="11.2" fill="#57606a">refused</text>
+    <circle class="ok" cx="301" cy="232" r="9" fill="#216e39"/>
+    <path class="glyph" d="M296.5 232 L300 235.5 L306 228.5" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    <text class="muted" x="316" y="236" font-size="11.2" fill="#57606a">refused</text>
+  </g>
+  <line class="rule" x1="14" y1="286" x2="386" y2="286" stroke="#eaeef2"/>
+
+  <!-- agent instructions -->
+  <text class="ink" x="14" y="312" font-size="12.2" font-weight="700" fill="#1f2328">Agent instructions</text>
+  <text class="muted" x="14" y="330" font-size="11.2" fill="#57606a">Safeguards written into</text>
+  <text class="muted" x="14" y="346" font-size="11.2" fill="#57606a">AGENTS.md and CLAUDE.md</text>
+  <g transform="translate(0 14)">
+    <circle class="warn" cx="209" cy="308" r="9" fill="#9a6700"/>
+    <path class="glyph" d="M204.5 308 q2.25 -3.2 4.5 0 q2.25 3.2 4.5 0" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text class="muted" x="224" y="304" font-size="11.2" fill="#57606a">refused in</text>
+    <text class="muted" x="224" y="320" font-size="11.2" fill="#57606a">5 of 7 runs</text>
+    <circle class="warn" cx="301" cy="308" r="9" fill="#9a6700"/>
+    <path class="glyph" d="M296.5 308 q2.25 -3.2 4.5 0 q2.25 3.2 4.5 0" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+    <text class="muted" x="316" y="304" font-size="11.2" fill="#57606a">refused in</text>
+    <text class="muted" x="316" y="320" font-size="11.2" fill="#57606a">5 of 7 runs</text>
+  </g>
+  </g>
+</svg>

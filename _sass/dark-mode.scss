@@ -20,6 +20,10 @@
     --karakun-code-bg: var(--karakun-bg-raised);
     --karakun-tag-bg: #{$karakun-night-tag-bg};
     --karakun-shadow: #{$karakun-night-shadow};
+    --karakun-success: #{$karakun-night-success};
+    --karakun-danger: #{$karakun-night-danger};
+    --karakun-warning: #{$karakun-night-warning};
+    --karakun-info: #{$karakun-night-info};
 }
 
 @mixin dark-styles {
@@ -170,6 +174,53 @@
         .gr { color: #ffa198; }
     }
 
+    // Inline diagrams (_includes/diagram.html). Every shape carries a role
+    // class, and its light colour stays on the element as an attribute, which
+    // any class rule outranks. So this block is the whole dark rendering and
+    // the light one is untouched. Screen only: on paper the attributes are
+    // the right colours already.
+    @media screen {
+        .diagram {
+            .canvas { fill: var(--karakun-bg); }
+            .panel { fill: var(--karakun-bg-raised); stroke: var(--karakun-border); }
+
+            // a card's outline is decoration, as in the light drawing; a box
+            // naming a ref and a ghost commit keep a ring that clears 3:1 on
+            // the panel
+            .card, .card-ok, .card-bad, .card-info, .ref { fill: var(--karakun-bg); }
+            .card { stroke: var(--karakun-border); }
+            .ref { stroke: var(--karakun-text-muted); stroke-opacity: 0.6; }
+            .card-ok { stroke: var(--karakun-success); }
+            .card-bad { stroke: var(--karakun-danger); }
+            .card-info { stroke: var(--karakun-info); }
+
+            // commits: a solid node flips to light with dark lettering, a
+            // hollow one shows the page colour inside a muted ring, a ghost is
+            // one that was never fetched and fades into the panel
+            .node { fill: var(--karakun-text); }
+            .node-label { fill: var(--karakun-bg); }
+            .hollow-node { fill: var(--karakun-bg); stroke: var(--karakun-text-muted); }
+            .ghost { fill: var(--karakun-bg); stroke: var(--karakun-text-muted); stroke-opacity: 0.6; }
+
+            .edge { stroke: var(--karakun-text-muted); }
+            .rule { stroke: var(--karakun-border); }
+
+            // three levels of text, as in the light drawing
+            .ink { fill: var(--karakun-heading); }
+            .muted { fill: var(--karakun-text-muted); }
+            .faint { fill: var(--karakun-text-muted); opacity: 0.7; }
+
+            .ok { fill: var(--karakun-success); }
+            .bad { fill: var(--karakun-danger); }
+            .warn { fill: var(--karakun-warning); }
+            .info { fill: var(--karakun-info); }
+            .info-stroke { stroke: var(--karakun-info); }
+            // the tick or cross on a badge: dark on a light badge, as it was
+            // light on a dark one
+            .glyph { stroke: var(--karakun-bg); }
+        }
+    }
+
     // the default focus ring is near-black, which disappears on a dark page
     :focus-visible {
         outline: 2px solid var(--karakun-link);
@@ -196,6 +247,9 @@ html[data-theme='light'] { color-scheme: light; }
 // background colours but keep the text. Every dark rule reads from the tokens,
 // so restoring light values here flips the whole layer back for print. Code
 // blocks are flattened to plain ink, which prints better than any palette.
+// The diagram block above is screen only and needs nothing here: on paper the
+// SVGs fall back to their own light attributes, so the status tokens it reads
+// are not reset either.
 @mixin print-reset {
     color-scheme: light;
 
