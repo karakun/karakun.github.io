@@ -1,7 +1,7 @@
 ---
 layout: post
-title: 'Groovy 6: Writing Less Code and Saying More'
-seo_title: 'Groovy 6: Writing Less Code and Saying More'
+title: 'Groovy 6: Writing Less Code and Saying More. Concurrency, streaming, and contracts for modern JVM development.'
+seo_title: 'Groovy 6: Concurrency, Streaming, Contracts, and AI-Friendly Code'
 description: 'Groovy 6 makes asynchronous workflows, streaming data and program contracts easier to express, while giving both developers and AI coding agents more explicit information to work with.'
 authors: [ 'jochen' ]
 featuredImage: 'Groovy6-Writing-Less-Code'
@@ -9,9 +9,10 @@ excerpt: 'Groovy 6 makes asynchronous workflows, streaming data and program cont
 permalink: '/2026/09/24/Groovy-6-Writing-Less-Code.html'
 categories: [ Groovy, Java, JVM, Development, AI ]
 header:
-  text: 'Groovy 6: Writing Less Code and Saying More'
+  text: 'Groovy 6: Writing Less Code and Saying More. Concurrency, streaming, and contracts for modern JVM development.'
   image: 'post'
 ---
+**TL;DR:** Groovy is a JVM language that combines Java interoperability with an expressive syntax, supporting both static and dynamic typing. Groovy 6 builds on that foundation with modern concurrency, streaming, HTTP clients, contracts and additional compiler support. This article looks at those capabilities through one small example — a service that assembles a customer report — and at why making program semantics explicit can help both developers and AI coding agents.
 
 Groovy 6 brings together several changes that make everyday code easier to write, but some of the most interesting improvements are not about saving keystrokes. They are about making the structure and guarantees of a program more explicit.
 
