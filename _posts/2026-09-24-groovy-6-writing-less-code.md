@@ -25,6 +25,7 @@ This article looks at those capabilities through one small example — a service
 - [Describing what the code guarantees](#describing-what-the-code-guarantees)
 - [Less code to read, less code to reason about](#less-code-to-read-less-code-to-reason-about)
 - [There is more in Groovy 6](#there-is-more-in-groovy-6)
+- [Let's discuss](#cta)
 
 ---
 
@@ -226,3 +227,6 @@ They can become part of the program itself.
 
 The result is not just less code. 
 It is code that says more.
+
+## <a id="cta"></a> Let's discuss
+Do you have questions about Agentic Engineering, Testing of LLM-based applications or specific developer topics? [Feel free to reach out](/people/jochen). I’m always happy to exchange knowledge, ideas, and experiences.
