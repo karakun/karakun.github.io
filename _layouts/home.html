@@ -1,26 +1,25 @@
 ---
 layout: page
 ---
-{% assign size = paginator.posts | size %}
+<div class="card-grid">
 {% for post in paginator.posts %}
-  {% assign loopindex = forloop.index | modulo: 2 %}
-  {% if loopindex == 1 %}
-    <div class="columns">
-  {% endif %}
-      <article class="talk column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
-        {% assign author = site.people | where:'name', post.author | first %}
-      <div class="article-title">
-        <h2 class="has-text-primary"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      </div>
-        <p>
-          {%- if post.featuredImage -%}
-            <a href="{{ post.url }}"><img class="featured-image" alt="featured" src="/assets/featuredImages/{{ post.featuredImage }}.png"></a>
-          {% endif %}
-          <a class="excerpt" href="{{ post.url }}">{{ post.excerpt | newline_to_br }}</a>
-        </p>
-      </article>
-  {% if loopindex == 0 or forloop.index == size %}
+  <article class="entry-card">
+    {%- if post.featuredImage -%}
+      <a class="entry-card-image" href="{{ post.url }}" tabindex="-1" aria-hidden="true">
+        <img class="entry-card-img" alt="" loading="lazy" src="/assets/featuredImages/{{ post.featuredImage }}.png">
+      </a>
+    {%- endif -%}
+    <div class="entry-card-body">
+      <p class="entry-card-meta">
+        <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+        {%- assign author = site.people | where: 'name', post.authors[0] | first -%}
+        {%- if author %} · {{ author.firstName }} {{ author.lastName }}{% if post.authors.size > 1 %} and others{% endif %}{% endif %}
+      </p>
+      <h2 class="entry-card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <p class="entry-card-excerpt">{{ post.excerpt | strip_html | strip }}</p>
+      <span class="entry-card-more" aria-hidden="true">Read article<i class="fas fa-arrow-right"></i></span>
     </div>
-  {% endif %}
+  </article>
 {% endfor %}
+</div>
 {%- include pagination.html -%}

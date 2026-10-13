@@ -93,247 +93,314 @@
 // Syntax highlighting
 @import "syntax";
 
+// Design tokens. The light values live here, the dark override layer
+// (_sass/dark-mode.scss) redefines the same names, so every rule below that
+// reads a token follows the theme on its own.
+:root {
+    --karakun-bg: #{$karakun-day-bg};
+    --karakun-bg-raised: #{$karakun-day-bg-raised};
+    --karakun-surface: #{$karakun-day-surface};
+    --karakun-text: #{$karakun-day-text};
+    --karakun-text-muted: #{$karakun-day-text-muted};
+    --karakun-heading: #{$karakun-day-heading};
+    --karakun-link: #{$karakun-day-link};
+    --karakun-link-hover: #{$karakun-day-link-hover};
+    --karakun-border: #{$karakun-day-border};
+    --karakun-code-bg: #{$karakun-day-code-bg};
+    --karakun-tag-bg: #{$karakun-day-tag-bg};
+    --karakun-shadow: #{$karakun-day-shadow};
+
+    --karakun-radius: 0.75rem;
+    --karakun-radius-small: 0.5rem;
+    --karakun-heading-font: 'Encode Sans', sans-serif;
+    --karakun-transition: 180ms ease;
+}
+
+html {
+    scroll-padding-top: 6rem; // anchors land below the sticky navbar
+}
+
 body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
     font-family: 'Open Sans', sans-serif;
+    background-color: var(--karakun-bg);
+    color: var(--karakun-text);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
 }
 
 .page-wrapper {
     flex: 1;
 }
 
-.navbar-brand {
-    align-items: center;
-}
-
-nav {
-    + .page-wrapper {
-        margin-top: 2em;
+// Bulma only pads a container from the desktop breakpoint up, so on phones and
+// tablets everything touched the screen edge.
+.container {
+    @include until($desktop) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
     }
 }
 
-.footer {
-    border-top: 1px solid $grey-lighter;
-    margin-top: 6em;
-    padding-bottom: 0em;
+.column {
+    padding: 0.75rem 1.25rem;
+}
 
-    .boxes {
-        display: flex;
-        justify-content: space-between;
-        @include mobile {
-            flex-direction: column;
-        }
-        > div.menu {
-            display: flex;
-            justify-content: space-between;
-            span {
-                .navbar-item{
-                    padding: 0 0 2em 1em;
-                }
-                > a {
-                    text-decoration: underline;
-                    color: $white;
-                    &:hover,
-                    &.is-active, {
-                        text-decoration: none;
-                    }
-                }
-            }
-        }
-        div.social {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            ul {
-                min-width: max-content;
-                @include mobile {
-                    align-self: center;
-                }
-                > li {
-                    display: inline-flex;
-                    > a {
-                        padding-top: 0;
-                        font-size: 2em;
-                        color: $white;
-                    }
-                }
-            }
-            @include mobile {
-                text-align: center;
-            }
-        }
-        > div {
-            flex-grow: 1;
-        }
+// on phones the container already provides the gutter; nested columns would
+// otherwise add theirs on top and squeeze the text into a narrow strip
+@include mobile {
+    .columns {
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-       > div.right-clm {
-            display: flex;
-            flex-direction: column;
-
-            @include mobile {
-                align-self: center;
-            }
-            > div.newsletter {
-                text-align: right;
-                display: flex;
-                flex-direction: column;
-                align-items: flex-end;
-                > a {
-                    display: flex;
-                }
-            }
-        }
+    .column {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
-h1 {
-    font-size: $size-1;
-}
+/* ---------------------------------------------------------------- type */
 
-h2 {
-    font-size: $size-2;
-}
-
-h3 {
-    font-size: $size-3;
-}
-
-h4 {
-    font-size: $size-4;
-}
-
-h5 {
-    font-size: $size-5;
-}
-
-h1, h2, h3, h4, h5 {
-    line-height: 1;
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--karakun-heading-font);
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+    color: var(--karakun-heading);
     margin-bottom: 0.5em;
-    font-family: 'Encode Sans', sans-serif;
-    font-weight: bold;
 }
 
-h5 {
-    font-weight: 600;
-}
+h1 { font-size: unquote("clamp(2rem, 1.6rem + 1.6vw, 2.75rem)"); }
+h2 { font-size: unquote("clamp(1.5rem, 1.3rem + 0.8vw, 1.875rem)"); }
+h3 { font-size: 1.375rem; }
+h4 { font-size: 1.15rem; }
+h5 { font-size: 1rem; font-weight: 600; }
 
 p {
-    text-align: justify;
+    text-align: left;
 }
 
-.page-title {
-    font-size: 1.5em;
-    color: $white;
-    font-family: 'Encode Sans', sans-serif;
-    > span {
-        padding-right: 0.3em;
+a {
+    transition: color var(--karakun-transition);
+
+    &.excerpt {
+        color: var(--karakun-text);
     }
 }
 
-.social-media-list {
-    .svg-icon {
-        width: 1em;
-        height: 1em;
+::selection {
+    background-color: rgba($karakun-main-color, 0.35);
+}
+
+:focus-visible {
+    outline: 2px solid var(--karakun-link);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.my-karakun {
+    color: $karakun-main-color;
+    font-weight: 700;
+}
+
+.text-highlight {
+    color: var(--karakun-link);
+    font-weight: bolder;
+
+    span {
+        color: var(--karakun-text);
+        font-weight: normal;
     }
 }
 
-.author {
-    margin-top: $size-7;
+.margin-top {
+    margin-top: 1.5em;
 }
 
-.raccoon-logo {
-    height: $size-2;
-}
+/* -------------------------------------------------------------- navbar */
 
-.page-image {
-    height: 24.5em;
-    margin-bottom: 5em;
-    display: flex;
-    align-items: stretch;
-    > div {
-        display: flex;
-        align-items: stretch;
-        flex-direction: row-reverse;
-        flex-grow: 1;
-        background-color: $karakun-header-scrim;
-    }
+// the bar stays on top; the hero image (_includes/page-header.html) sits
+// outside the header so it scrolls away beneath it
+body > header {
+    position: sticky;
+    top: 0;
+    z-index: 30;
 }
 
 .navbar {
-    min-height: 5.5rem;
-    @include mobile {
-        min-height: 1em;
-        padding-left: 1em;
-    }
-    @include tablet-only {
-        min-height: 1em;
+    min-height: 4.25rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.18);
+
+    @include until($desktop) {
+        min-height: 3.75rem;
     }
 
+    > .container {
+        align-items: center;
+    }
+
+    .navbar-brand {
+        align-items: center;
+        min-height: 3.75rem;
+        gap: 0.25rem;
+    }
+
+    .navbar-menu {
+        align-items: center;
+        gap: 0.125rem;
+
+        @include until($desktop) {
+            background-color: $karakun-main-dark-background;
+            box-shadow: none;
+            padding: 0.5rem 0 1rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+        }
+    }
+
+    a.navbar-item, .navbar-link {
+        font-family: var(--karakun-heading-font);
+        font-weight: 600;
+        font-size: 0.95rem;
+        color: rgba(255, 255, 255, 0.78);
+        border-radius: var(--karakun-radius-small);
+        padding: 0.5rem 0.8rem;
+        position: relative;
+        transition: color var(--karakun-transition), background-color var(--karakun-transition);
+
+        &:hover {
+            color: $white;
+            background-color: rgba(255, 255, 255, 0.07);
+            text-decoration: none;
+        }
+
+        &.is-active {
+            color: $white;
+            text-decoration: none;
+
+            // a short brand bar under the current page instead of an underline
+            &::after {
+                content: '';
+                position: absolute;
+                left: 0.8rem;
+                right: 0.8rem;
+                bottom: 0.15rem;
+                height: 2px;
+                border-radius: 2px;
+                background-color: $karakun-main-color;
+
+                @include until($desktop) {
+                    left: 0;
+                    right: auto;
+                    top: 0.6rem;
+                    bottom: 0.6rem;
+                    width: 3px;
+                    height: auto;
+                }
+            }
+        }
+
+        &.page-title {
+            font-size: 1.35rem;
+            font-weight: 600;
+            color: $white;
+            padding-left: 0.4rem;
+            letter-spacing: -0.01em;
+
+            &:hover { background-color: transparent; }
+            &::after { display: none; }
+
+            > span {
+                padding-right: 0.3em;
+            }
+
+            @include mobile {
+                font-size: 1.15rem;
+            }
+        }
+    }
 
     .pagefind-ui {
-        --pagefind-ui-scale: 1;
-        --pagefind-ui-primary: #3DA05E;
-        --pagefind-ui-text: #393939;
+        --pagefind-ui-scale: 0.85;
+        --pagefind-ui-primary: #{$karakun-dark-green};
+        --pagefind-ui-text: #{$karakun-day-text};
         --pagefind-ui-background: white;
-        --pagefind-ui-border: #a5afb0;
-        --pagefind-ui-tag: #3DA05E;
+        --pagefind-ui-border: transparent;
+        --pagefind-ui-tag: #{$karakun-dark-green};
         --pagefind-ui-border-width: 1px;
-        --pagefind-ui-border-radius: 0.5rem;
+        --pagefind-ui-border-radius: 999px;
         --pagefind-ui-image-border-radius: 0.5rem;
         --pagefind-ui-image-box-ratio: 3 / 2;
         --pagefind-ui-font: 'Open Sans', sans-serif;
 
         .pagefind-ui__form {
             &:before {
-                top: 0.7em;
-                left: 0.7em;
+                top: 0.85em;
+                left: 1em;
                 background-color: $karakun-dark-green;
             }
-            .pagefind-ui__search-input{
-                height: 2.5em;
+
+            .pagefind-ui__search-input {
+                height: 2.6em;
                 font-weight: inherit;
-                font-size: inherit;
+                font-size: 0.95rem;
                 padding-right: inherit !important;
-                padding-left: 2.5em;
+                padding-left: 2.6em;
+                background-color: var(--pagefind-ui-background);
+                transition: box-shadow var(--karakun-transition);
+
+                &:focus {
+                    box-shadow: 0 0 0 3px rgba($karakun-main-color, 0.45);
+                    outline: none;
+                }
             }
+
             .pagefind-ui__search-clear {
                 color: $grey-light;
                 height: 2em;
                 font-weight: bold;
                 padding: 0.5em;
+                background: transparent;
+                top: 0.3em;
+                right: 0.5em;
             }
         }
 
-        .pagefind-ui__drawer  {
+        .pagefind-ui__drawer {
             position: absolute;
             z-index: 1000;
             width: 40em;
             right: 0;
             overflow-y: auto;
-            max-height: 85vh;
-            background: $white;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
-            margin-top: auto;
+            max-height: 80vh;
+            margin-top: 0.75rem;
             gap: normal;
+            background: $white;
+            border: 1px solid var(--karakun-border);
+            border-radius: var(--karakun-radius);
+            box-shadow: 0 16px 48px rgba(10, 28, 36, 0.22);
 
-            @include mobile {
+            @include until($desktop) {
                 width: inherit;
-            }
-            @include tablet-only {
-                width: inherit;
+                left: 0;
             }
 
             .pagefind-ui__filter-panel {
                 min-width: 25%;
                 margin-left: 1em;
-                margin-top:0;
+                margin-top: 0;
             }
+
             .pagefind-ui__results-area {
                 max-width: 75%;
                 margin-top: 0;
             }
+
             .pagefind-ui__result, .pagefind-ui__message, .pagefind-ui__filter-block {
                 padding: 1em;
                 border-bottom: none;
@@ -344,236 +411,58 @@ p {
             }
         }
     }
-}
 
-a.navbar-item, a.navbar-link {
-    &.is-active, &:hover {
-        text-decoration: underline;
-        color: $navbar-item-active-color;
-    }
-    &.page-title{
-        text-decoration: none;
-    }
-}
+    #search {
+        min-width: 15rem;
 
-.my-karakun {
-    color: $primary;
-    font-weight: bold;
-}
+        &:hover { background-color: transparent; }
 
-.header-text {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row-reverse;
-    padding-bottom: 1em;
-    font-size: $size-2;
-    font-weight: lighter;
-    font-family: 'Encode Sans', sans-serif;
-    color: $white;
-    > div {
-        max-width: 9.5em;
-        text-align: right;
-        line-height: 1.2em;
-        font-size: 1.2em;
+        @include until($desktop) {
+            min-width: 0;
+        }
     }
 }
 
-.column {
-    padding: 0.75rem 1.25rem;
+.raccoon-logo {
+    height: 2.25rem;
+    flex-shrink: 0;
 }
 
-// the box every picture in a post sits in
-@mixin post-picture {
-    padding: 2em 5em 2.5em 5em;
-    margin-left: auto;
-    margin-right: auto;
-}
+.theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.05rem;
+    color: rgba(255, 255, 255, 0.78);
+    border-radius: var(--karakun-radius-small);
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    transition: color var(--karakun-transition), background-color var(--karakun-transition);
 
-// A diagram scales as one piece, so its type tracks the column width:
-// unreadable on a phone, oversized on a wide screen. Losing the 5em side
-// padding and capping the width holds it at about body size wherever the
-// column has room. Photographs are left alone, so nothing else on the site
-// moves.
-@mixin post-diagram {
-    padding-left: 0;
-    padding-right: 0;
-    max-width: 572px;
-}
+    &:hover {
+        color: $karakun-main-color;
+        background-color: rgba(255, 255, 255, 0.07);
+    }
 
-article.post {
-    p {
-        > img {
-            @include post-picture;
-            display: block;
-            width: 100%;
-            &.diagram { @include post-diagram; }
-        }
-        // An inlined SVG (_includes/diagram.html) has no <img> to carry the
-        // box, so its wrapper does.
-        &.diagram {
-            @include post-picture;
-            @include post-diagram;
-            > svg { display: block; }
-        }
-    }
-    a {
-        text-decoration: underline;
-        &:hover, &.button, &.tag {
-            text-decoration: none;
-        }
-        &.tag.is-primary {
-            border: $karakun-dark-green;
-            border-width: 1px;
-            border-style: solid;
-        }
-        &.tag.is-primary:hover {
-            background: #ffffff;
-            color: $karakun-dark-green;
-            border: $karakun-dark-green;
-            border-width: 1px;
-            border-style: solid;
-        }
-    }
-    .embed-container {
-        > iframe {
-            padding-left: 5em;
-            padding-right: 5em;
-        }
-    }
-    div.post-author,
-    div.news {
-        padding: 1em;
-        background-color: $white-ter;
-        border-radius: $karakun-border-radius;
-        min-height: 16em;
-        p {
-            > img {
-                padding: 0;
-                margin: 0.3em 1em 1em 0;
-                max-width: 10em;
-                float: left;
-            }
-        }
-        .information {
-            margin-top: 2em;
-        }
-        ul {
-            padding-left: 1em;
-            list-style: square;
-            li {
-                padding-top: 0.5em;
-                list-style: square;
-            }
-        }
-    }
-    div.post-tags {
-        padding: 1em 1em 1em 0;
-        ul {
-            > li {
-                display: inline-block;
-                padding: 0.25em 1em;
-                background-color: $grey-light;
-                color: $white;
-                margin-bottom: 0.5em;
-                border-radius: $karakun-border-radius;
-            }
-        }
-    }
-    h1.post-title {
-        margin-top: 0;
-        margin-bottom: 0.25em;
-        + .post-meta {
-            margin-bottom: 1em;
-        }
-    }
-    .table {
-        @extend .is-hoverable;
-        margin: 2em auto 3em auto;
-        padding: 0 5em;
+    .fa-sun { display: none; }
+
+    @include until($desktop) {
+        width: auto;
+        justify-content: flex-start;
+        padding-left: 0.8rem;
     }
 }
 
-// Logos and diagrams across the site are drawn for a white page and many carry
-// no background of their own, so on a dark one their labels and linework
-// disappear. One plate behind every image covers all of them: an opaque photo
-// hides it completely, a transparent one sits on it, and nobody has to keep a
-// list of which images need one. It hugs the image rather than the box around
-// it, because the padding a post figure carries is layout, not picture. A
-// diagram inlined through _includes/diagram.html is not an image and gets no
-// plate: the dark-mode layer recolours it instead.
-img.featured-image,
-.featured-images-table img,
-.post-content img {
-    background-color: $white;
-    background-clip: content-box;
-}
-
-img {
-    &.featured-image {
-        float: left;
-        margin-right: 0.8em;
-        max-width: 180px;
-        border-radius: $karakun-border-radius;
-        margin-top: 0.42em;
-        border-width: 0.15em;
-        border-color: #a5afb0;
-        border-style: solid;
-        filter: grayscale(1);
-    }
-}
-
-article {
-    .article-title {
-        position: relative;
-        min-height: 3em;
-        a {
-            color: $primary;
-        }
-
-        h3 {
-          position: absolute;
-          bottom: 0.5em;
-          left: 0;
-        }
-
-        p {
-            position: absolute;
-            margin-top: 1.5em;
-        }
-    }
-
-    &.talk, &.book, &.karakun-media {
-        margin-bottom: $size-2;
-        clear: both;
-        &:hover {
-            p {
-                img.featured-image {
-                    filter: grayscale(0);
-                }
-            }
-        }
-        h5 {
-            margin-bottom: 0;
-        }
-        .post-meta {
-            margin-bottom: 0.8em;
-        }
-        .has-text-primary a {
-            color: $primary;
-        }
-
-        .post-meta, .links {
-            a {
-                text-decoration: underline;
-                &:hover {
-                    text-decoration: none;
-                }
-            }
-        }
-    }
+button.navbar-burger {
+    border: none;
+    background: none;
+    color: $navbar-item-color;
+    cursor: pointer;
 }
 
 .blink-cursor {
+    color: $karakun-main-color;
     animation: blink-animation 1s steps(5, start) infinite;
 }
 
@@ -583,46 +472,7 @@ article {
     }
 }
 
-.featured-images-table {
-    img {
-        width: 192px;
-    }
-    @extend .table
-
-}
-
-.highlight {
-    pre {
-        text-align: left;
-        border-radius: $karakun-border-radius;
-        overflow: auto;
-        code {
-            font-family: 'Source Code Pro', monospace;
-        }
-    }
-}
-
-// Bulma spaces a pre from what follows it, but only when it is not the last
-// child. Rouge wraps every fenced block in two divs with the pre as the only
-// child, so that rule never fires and a code block sits flush against the
-// next paragraph. The wrapper takes the space Bulma meant for the pre.
-// scoped to the div: kramdown puts the same class on inline code spans
-.content div.highlighter-rouge:not(:last-child) {
-    margin-bottom: 1em;
-}
-
-.copyright {
-    border-top: 1px #848B89 solid;
-    text-align: center;
-    padding: 1em 0;
-}
-
-a {
-    &.excerpt {
-        color: $body-color;
-    }
-}
-
+// the raccoon blinks
 .lid {
     animation: blink 4.5s infinite;
 }
@@ -657,12 +507,124 @@ a {
     }
 }
 
-.links {
-    clear: both;
-    padding-top: 0.5em;
+/* ---------------------------------------------------------------- hero */
+
+.page-image {
+    height: unquote("clamp(13rem, 24vw, 21rem)");
+    margin-bottom: unquote("clamp(2rem, 4vw, 3.5rem)");
+    display: flex;
+    align-items: stretch;
+
     > div {
         display: flex;
+        align-items: stretch;
+        flex-grow: 1;
+        // darker at the bottom, where the title sits, so the photo keeps its
+        // texture at the top
+        background: linear-gradient(180deg, rgba(10, 28, 36, 0.35) 0%, rgba(10, 28, 36, 0.6) 55%, rgba(10, 28, 36, 0.88) 100%);
     }
+}
+
+.header-text {
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: unquote("clamp(1.5rem, 3vw, 2.5rem)");
+    margin-bottom: 0;
+    font-family: var(--karakun-heading-font);
+    font-size: unquote("clamp(1.75rem, 1.2rem + 2.4vw, 3rem)");
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: $white;
+    width: 100%;
+
+    > div {
+        max-width: 18em;
+        line-height: 1.15;
+        text-shadow: 0 2px 16px rgba(0, 0, 0, 0.35);
+
+        // a short brand rule above the title
+        &::before {
+            content: '';
+            display: block;
+            width: 3rem;
+            height: 4px;
+            border-radius: 2px;
+            background-color: $karakun-main-color;
+            margin-bottom: 0.9rem;
+        }
+    }
+}
+
+nav + .page-wrapper {
+    margin-top: 2em;
+}
+
+/* ------------------------------------------------------- shared pieces */
+
+.button {
+    font-family: var(--karakun-heading-font);
+    font-weight: 600;
+    border-radius: var(--karakun-radius-small);
+    transition: background-color var(--karakun-transition), transform var(--karakun-transition), box-shadow var(--karakun-transition);
+
+    &.is-primary:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba($karakun-dark-green, 0.3);
+    }
+}
+
+// Tag pairs (category name + article count) read as one pill.
+.tags.has-addons {
+    .tag {
+        font-family: var(--karakun-heading-font);
+        font-weight: 600;
+        font-size: 0.85rem;
+        height: 2rem;
+        padding: 0 0.85em;
+        transition: background-color var(--karakun-transition), color var(--karakun-transition);
+    }
+
+    .tag:first-child {
+        border-radius: 999px 0 0 999px;
+    }
+
+    .tag:last-child {
+        border-radius: 0 999px 999px 0;
+        background-color: var(--karakun-tag-bg);
+        color: var(--karakun-text-muted);
+    }
+
+    a.tag.is-primary:hover {
+        background-color: var(--karakun-link-hover);
+    }
+}
+
+.tag {
+    border-radius: 999px;
+}
+
+.box, .notification, .message {
+    border-radius: var(--karakun-radius);
+}
+
+.box {
+    box-shadow: 0 1px 2px var(--karakun-shadow), 0 0 0 1px var(--karakun-border);
+}
+
+hr {
+    background-color: var(--karakun-border);
+    height: 1px;
+    margin: 2rem 0;
+}
+
+// a small uppercase caption used for sidebar headings
+@mixin eyebrow {
+    font-family: var(--karakun-heading-font);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--karakun-text-muted);
 }
 
 .metainfo-icon-div {
@@ -670,11 +632,22 @@ a {
     max-width: 14px;
     min-width: 14px;
     text-align: center;
-            margin-right: 1em;
+    margin-right: 0.75em;
 }
 
 .metainfo-icon {
-    color: $primary;
+    color: var(--karakun-link);
+}
+
+.links {
+    clear: both;
+    padding-top: 0.5em;
+
+    > div {
+        display: flex;
+        align-items: baseline;
+        padding: 0.15em 0;
+    }
 }
 
 .embed-container {
@@ -683,6 +656,8 @@ a {
     height: 0;
     overflow: hidden;
     max-width: 100%;
+    border-radius: var(--karakun-radius);
+
     iframe, object, embed {
         position: absolute;
         top: 0;
@@ -692,29 +667,613 @@ a {
     }
 }
 
+/* --------------------------------------------------------- card grids */
+
+// Home, talks and books list their entries as cards in a responsive grid.
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(#{unquote("min(100%, 30rem)")}, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.entry-card {
+    position: relative;
+    display: flex;
+    gap: 1.25rem;
+    padding: 1.25rem;
+    background-color: var(--karakun-surface);
+    border: 1px solid var(--karakun-border);
+    border-radius: var(--karakun-radius);
+    box-shadow: 0 1px 2px var(--karakun-shadow);
+    transition: transform var(--karakun-transition), box-shadow var(--karakun-transition), border-color var(--karakun-transition);
+
+    &:hover, &:focus-within {
+        transform: translateY(-2px);
+        border-color: rgba($karakun-main-color, 0.6);
+        box-shadow: 0 12px 32px var(--karakun-shadow);
+
+        .entry-card-image img {
+            filter: grayscale(0);
+            transform: scale(1.04);
+        }
+    }
+
+    @include mobile {
+        flex-direction: column;
+    }
+}
+
+.entry-card-image {
+    flex: 0 0 8.5rem;
+    align-self: flex-start;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: var(--karakun-radius-small);
+    background-color: $white; // logos are drawn for a white page
+    box-shadow: 0 0 0 1px var(--karakun-border);
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(1);
+        transition: filter 300ms ease, transform 300ms ease;
+    }
+
+    @include mobile {
+        flex-basis: auto;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+.entry-card-body {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    flex: 1;
+}
+
+.entry-card .entry-card-body > .entry-card-meta {
+    margin-top: 0;
+    font-size: 0.8rem;
+    color: var(--karakun-text-muted);
+    margin-bottom: 0.35rem;
+    font-family: var(--karakun-heading-font);
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+.entry-card .entry-card-body > .entry-card-title {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+
+    a {
+        color: var(--karakun-heading);
+
+        &:hover { color: var(--karakun-link); }
+
+        // the whole card is the link target
+        &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: inherit;
+        }
+    }
+}
+
+.entry-card:hover .entry-card-title a {
+    color: var(--karakun-link);
+}
+
+.entry-card-excerpt {
+    font-size: 0.925rem;
+    line-height: 1.6;
+    color: var(--karakun-text-muted);
+    margin-bottom: 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.entry-card-more {
+    margin-top: auto;
+    padding-top: 0.75rem;
+    font-family: var(--karakun-heading-font);
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--karakun-link);
+
+    i {
+        margin-left: 0.35em;
+        font-size: 0.75em;
+        transition: transform var(--karakun-transition);
+    }
+}
+
+.entry-card:hover .entry-card-more i {
+    transform: translateX(3px);
+}
+
+// Talks and books carry their own links below the text, which must stay
+// clickable above the stretched title link.
+.entry-card-links {
+    position: relative;
+    z-index: 1;
+    margin-top: auto;
+    padding-top: 0.75rem;
+    font-size: 0.875rem;
+
+    a, .post-meta a {
+        color: var(--karakun-link);
+        text-decoration: none;
+        &:hover { text-decoration: underline; }
+    }
+}
+
+.entry-card .post-meta {
+    position: relative;
+    z-index: 1;
+    font-size: 0.875rem;
+    color: var(--karakun-text-muted);
+    margin-bottom: 0.5rem;
+
+    a {
+        color: var(--karakun-link);
+        &:hover { text-decoration: underline; }
+    }
+}
+
+// a book has no detail page, so its title is plain text
+.entry-card-title:not(:has(a)) {
+    color: var(--karakun-heading);
+}
+
+/* ---------------------------------------------------------- pagination */
+
+.pagination-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.pagination-wrapper .pagination {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-family: var(--karakun-heading-font);
+    font-weight: 600;
+
+    > a, > span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 2.5rem;
+        height: 2.5rem;
+        padding: 0 0.5rem;
+        border-radius: 999px;
+        color: var(--karakun-text);
+        transition: background-color var(--karakun-transition), color var(--karakun-transition);
+    }
+
+    > a {
+        border: 1px solid var(--karakun-border);
+        background-color: var(--karakun-surface);
+
+        &:hover {
+            border-color: var(--karakun-link);
+            color: var(--karakun-link);
+        }
+    }
+
+    > span.active {
+        background-color: $karakun-dark-green;
+        color: $white;
+    }
+
+    > span.pagination-step {
+        opacity: 0.35;
+    }
+
+    > span.pagination-more {
+        min-width: 1.5rem;
+        color: var(--karakun-text-muted);
+    }
+}
+
+/* --------------------------------------------------------------- posts */
+
+// the box every picture in a post sits in
+@mixin post-picture {
+    padding: 2em 5em 2.5em 5em;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mobile {
+        padding: 1em 0 1.5em 0;
+    }
+}
+
+// A diagram scales as one piece, so its type tracks the column width:
+// unreadable on a phone, oversized on a wide screen. Losing the 5em side
+// padding and capping the width holds it at about body size wherever the
+// column has room. Photographs are left alone, so nothing else on the site
+// moves.
+@mixin post-diagram {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 572px;
+}
+
+// Free-standing pages (about, people, trainings, ...) read at a comfortable
+// measure instead of running across the whole container.
+.container > article.post.content:not(.columns) {
+    max-width: 52rem;
+}
+
+.post-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--karakun-border);
+}
+
+.post-meta {
+    color: var(--karakun-text-muted);
+    font-size: 0.925rem;
+
+    a {
+        color: var(--karakun-link);
+        font-weight: 600;
+    }
+}
+
+article.post {
+    h1.post-title {
+        margin-top: 0;
+        margin-bottom: 0.6rem;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+    }
+
+    a {
+        text-decoration: none;
+        &:hover, &.button, &.tag {
+            text-decoration: none;
+        }
+    }
+
+    a.tag.is-primary {
+        border: 1px solid transparent;
+    }
+
+    .embed-container {
+        > iframe {
+            padding-left: 5em;
+            padding-right: 5em;
+
+            @include mobile {
+                padding-left: 0;
+                padding-right: 0;
+            }
+        }
+    }
+
+    .table {
+        @extend .is-hoverable;
+        margin: 2em auto 3em auto;
+        padding: 0 5em;
+    }
+}
+
+// the reading column: body copy at a book-like size and rhythm
+.post-content, article.post.content {
+    font-size: 1.0625rem;
+    line-height: 1.75;
+
+    p {
+        margin-bottom: 1.25em;
+
+        > img {
+            @include post-picture;
+            display: block;
+            width: 100%;
+            border-radius: var(--karakun-radius);
+            &.diagram { @include post-diagram; }
+        }
+
+        // An inlined SVG (_includes/diagram.html) has no <img> to carry the
+        // box, so its wrapper does.
+        &.diagram {
+            @include post-picture;
+            @include post-diagram;
+            > svg { display: block; }
+        }
+    }
+
+    a:not(.button):not(.tag) {
+        color: var(--karakun-link);
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.2em;
+        text-decoration-color: rgba($karakun-dark-green, 0.4);
+
+        &:hover {
+            color: var(--karakun-link-hover);
+            text-decoration-color: currentColor;
+        }
+    }
+
+    h2, h3, h4 {
+        margin-top: 2.25em;
+        margin-bottom: 0.6em;
+        line-height: 1.3;
+    }
+
+    h2 { font-size: 1.65rem; }
+    h3 { font-size: 1.3rem; }
+    h4 { font-size: 1.1rem; }
+
+    > h2:first-child, > h3:first-child {
+        margin-top: 0;
+    }
+
+    ul, ol {
+        margin-top: 0.5em;
+        margin-bottom: 1.25em;
+
+        li + li {
+            margin-top: 0.3em;
+        }
+
+        li::marker {
+            color: var(--karakun-link);
+        }
+    }
+
+    strong {
+        color: var(--karakun-heading);
+    }
+
+    blockquote {
+        background-color: var(--karakun-bg-raised);
+        border-left: 4px solid $karakun-main-color;
+        border-radius: 0 var(--karakun-radius-small) var(--karakun-radius-small) 0;
+        padding: 1.25em 1.5em;
+        color: var(--karakun-text);
+
+        p:last-child { margin-bottom: 0; }
+    }
+
+    table {
+        font-size: 0.95rem;
+
+        th {
+            font-family: var(--karakun-heading-font);
+            color: var(--karakun-heading);
+            border-bottom-width: 2px;
+        }
+
+        td, th {
+            border-color: var(--karakun-border);
+        }
+    }
+
+    // inline code
+    code {
+        font-family: 'Source Code Pro', monospace;
+        font-size: 0.875em;
+        padding: 0.15em 0.4em;
+        border-radius: 0.3rem;
+        background-color: var(--karakun-code-bg);
+        color: var(--karakun-heading);
+        border: 1px solid var(--karakun-border);
+    }
+
+    pre code {
+        border: none;
+        padding: 0;
+        font-size: inherit;
+    }
+}
+
+// the narrow column on post and talk pages
+.column.overview {
+    @include desktop {
+        padding-left: 2rem;
+    }
+
+    // the author box and the tags stick as one block, so they cannot slide
+    // over each other; a sidebar taller than the window scrolls on its own
+    @include desktop {
+        position: sticky;
+        top: 5rem;
+        align-self: flex-start;
+        max-height: calc(100vh - 6rem);
+        overflow-y: auto;
+    }
+}
+
+article.post div.post-author,
+article.post div.news {
+    padding: 1.5rem;
+    background-color: var(--karakun-surface);
+    border: 1px solid var(--karakun-border);
+    border-radius: var(--karakun-radius);
+    box-shadow: 0 1px 2px var(--karakun-shadow);
+    font-size: 0.9rem;
+    line-height: 1.6;
+
+    > h2, > h5 {
+        @include eyebrow;
+        margin-bottom: 1rem;
+    }
+
+    p {
+        text-align: left;
+
+        > img {
+            display: block;
+            padding: 0;
+            margin: 0 0 1rem 0;
+            width: 5rem;
+            height: 5rem;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: $white;
+            box-shadow: 0 0 0 3px var(--karakun-surface), 0 0 0 5px rgba($karakun-main-color, 0.6);
+        }
+    }
+
+    // more than one author: separate them
+    .information + br + p {
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--karakun-border);
+    }
+
+    .information {
+        margin-top: 1rem;
+
+        + br { display: none; }
+
+        .button {
+            font-size: 0.85rem;
+        }
+    }
+
+    ul {
+        padding-left: 1em;
+        list-style: square;
+
+        li {
+            padding-top: 0.5em;
+            list-style: square;
+        }
+    }
+}
+
+article.post div.post-tags {
+    margin-top: 1.25rem;
+    padding: 1.25rem 0 0 0;
+
+    &::before {
+        content: 'Topics';
+        display: block;
+        @include eyebrow;
+        margin-bottom: 0.75rem;
+    }
+
+    .field.is-grouped.is-grouped-multiline {
+        gap: 0.5rem;
+
+        > .control {
+            margin: 0;
+        }
+    }
+}
+
+/* --------------------------------------------------------------- media */
+
+// Logos and diagrams across the site are drawn for a white page and many carry
+// no background of their own, so on a dark one their labels and linework
+// disappear. One plate behind every image covers all of them: an opaque photo
+// hides it completely, a transparent one sits on it, and nobody has to keep a
+// list of which images need one. It hugs the image rather than the box around
+// it, because the padding a post figure carries is layout, not picture. A
+// diagram inlined through _includes/diagram.html is not an image and gets no
+// plate: the dark-mode layer recolours it instead.
+img.featured-image,
+.featured-images-table img,
+.post-content img {
+    background-color: $white;
+    background-clip: content-box;
+}
+
+img.featured-image {
+    float: left;
+    margin-right: 1em;
+    max-width: 180px;
+    border-radius: var(--karakun-radius-small);
+    margin-top: 0.42em;
+    border: 1px solid var(--karakun-border);
+    filter: grayscale(1);
+    transition: filter 300ms ease;
+}
+
+.featured-images-table {
+    img {
+        width: 192px;
+    }
+    @extend .table
+}
+
+.highlight {
+    pre {
+        text-align: left;
+        border-radius: var(--karakun-radius);
+        overflow: auto;
+        padding: 1.25rem 1.5rem;
+        font-size: 0.875rem;
+        line-height: 1.65;
+        border: 1px solid var(--karakun-border);
+
+        code {
+            font-family: 'Source Code Pro', monospace;
+        }
+    }
+}
+
+.highlight, .highlight pre {
+    background-color: var(--karakun-code-bg);
+}
+
+.highlight {
+    border-radius: var(--karakun-radius);
+}
+
+// Bulma spaces a pre from what follows it, but only when it is not the last
+// child. Rouge wraps every fenced block in two divs with the pre as the only
+// child, so that rule never fires and a code block sits flush against the
+// next paragraph. The wrapper takes the space Bulma meant for the pre.
+// scoped to the div: kramdown puts the same class on inline code spans
+.content div.highlighter-rouge:not(:last-child) {
+    margin-bottom: 1.5em;
+}
+
+/* ------------------------------------------------------- other layouts */
 
 .foundations-wrapper, .training-wrapper {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: flex-start;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    background-color: var(--karakun-surface);
+    border: 1px solid var(--karakun-border);
+    border-radius: var(--karakun-radius);
 
-    padding-top: 1em;
-    padding-bottom: 2em;
-    padding-left: 1em;
+    > p:last-child { margin-bottom: 0; }
+
+    @include mobile {
+        flex-direction: column;
+    }
 }
 
 .training-logo, .foundations-logo {
     display: inline-block;
-    margin-right: 0.5em;
-
-    min-width: 12em;
-    max-width: 12em;
+    min-width: 10em;
+    max-width: 10em;
     width: 100%;
-}
-
-.training-logo {
-    padding-top: 1em;
+    background-color: $white;
+    border-radius: var(--karakun-radius-small);
 }
 
 .training-author {
@@ -726,47 +1285,119 @@ fieldset {
     border-width: 0;
     margin: 0.5em 0 0.5em 0.5em;
 }
+
 fieldset label {
     display: block !important;
     margin: 0.2em 0;
 }
 
-.margin-top {
-    margin-top: 1.5em;
+.author {
+    margin-top: $size-7;
 }
 
-.text-highlight {
-    color: $karakun-dark-green;
-    font-weight: bolder;
+.social-media-list {
+    .svg-icon {
+        width: 1em;
+        height: 1em;
+    }
 }
 
-.text-highlight span {
-    color: black;
-    font-weight: normal;
+/* -------------------------------------------------------------- footer */
+
+.footer {
+    margin-top: 6rem;
+    padding: 3.5rem 1.5rem 2.5rem;
+    border-top: 3px solid $karakun-main-color;
+
+    .boxes {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        gap: 2.5rem;
+        align-items: start;
+
+        @include until($desktop) {
+            grid-template-columns: 1fr;
+            gap: 2rem;
+        }
+
+        > div.menu {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            gap: 0.25rem 1.5rem;
+
+            // the site name heads the list on a line of its own
+            > span:first-child {
+                flex-basis: 100%;
+                font-family: var(--karakun-heading-font);
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 0.75rem;
+            }
+
+            span .navbar-item {
+                padding: 0.25rem 0;
+                color: rgba(255, 255, 255, 0.72);
+                font-size: 0.925rem;
+                transition: color var(--karakun-transition);
+
+                &:hover, &.is-active {
+                    color: $white;
+                    background: transparent;
+                }
+            }
+        }
+
+        div.social ul {
+            display: flex;
+            gap: 0.5rem;
+
+            > li > a {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 2.75rem;
+                height: 2.75rem;
+                padding: 0;
+                font-size: 1.25rem;
+                color: rgba(255, 255, 255, 0.8);
+                border-radius: 50%;
+                background-color: rgba(255, 255, 255, 0.07);
+                transition: background-color var(--karakun-transition), color var(--karakun-transition);
+
+                &:hover {
+                    background-color: $karakun-dark-green;
+                    color: $white;
+                }
+            }
+        }
+
+        > div.right-clm > div.newsletter > a {
+            display: flex;
+            transition: opacity var(--karakun-transition);
+
+            &:hover { opacity: 0.85; }
+
+            img {
+                max-width: 220px;
+            }
+        }
+    }
 }
 
-.pagination-wrapper {
-    display: flex;
-    justify-content: center;
+.copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+    padding: 1.25rem 0;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.pagination-wrapper .pagination {
-    gap: 2rem;
-}
-
-.theme-toggle {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1.1rem;
-    &:hover { color: $karakun-main-color; }
-    .fa-sun { display: none; }
-}
-
-button.navbar-burger {
-  border: none;
-  background: none;
-  color: $navbar-item-color;
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        transition: none !important;
+        animation: none !important;
+    }
 }
 
 // Dark mode override layer. Imported last so it sits below every rule it has to

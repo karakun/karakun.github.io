@@ -6,6 +6,22 @@ $karakun-border-radius: 0.5rem;
 $dark: #0A1C24; // footer bg color
 $fa-font-path: 'fonts/';
 
+// Light palette for the design tokens declared on :root in assets/main.scss.
+// The dark override layer redefines the same tokens, so a component that reads
+// them follows the theme without a dark rule of its own.
+$karakun-day-bg: #FFFFFF;
+$karakun-day-bg-raised: #F4F7F6;
+$karakun-day-surface: #FFFFFF;
+$karakun-day-text: #2B3A3F;
+$karakun-day-text-muted: #5E6E71;
+$karakun-day-heading: #0A1C24;
+$karakun-day-link: #2C8049; // the brand green darkened to clear 4.5:1 on white
+$karakun-day-link-hover: #1F6236;
+$karakun-day-border: #E1E7E6;
+$karakun-day-tag-bg: #EAF1EE;
+$karakun-day-code-bg: #F4F7F6;
+$karakun-day-shadow: rgba(10, 28, 36, 0.08);
+
 // Dark mode palette, prefixed 'night' so it does not read as $karakun-dark-green. Kept here with the rest of the brand colours so the
 // override layer in _sass/dark-mode.scss only consumes them.
 $karakun-night-bg: #0F1C22;
@@ -18,6 +34,7 @@ $karakun-night-link-hover: #A5E0AD;
 $karakun-night-border: #273C44;
 $karakun-night-tag-bg: #2A4038;
 $karakun-night-shadow: rgba(0, 0, 0, 0.6);
+$karakun-night-surface: #13232A; // cards sit between the page and the raised panels
 
 // Status colours for the diagrams inlined by _includes/diagram.html, picked for
 // the night background. The light values are attributes inside each SVG. Text
