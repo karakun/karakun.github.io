@@ -1,45 +1,41 @@
 ---
 layout: page
 ---
-{% assign size = site.data.books | size %}
+<div class="card-grid">
 {% for book in site.data.books %}
-  {% assign loopindex = forloop.index | modulo: 2 %}
-  {% if loopindex == 1 %}
-    <div class="columns">
-  {% endif %}
-      <article class="book column content {% unless forloop.index == size and loopindex == 1 %} is-half {% endunless %}">
-      <h3 class="has-text-primary">{{ book.name }}</h3>
-        <div class="post-meta">
-            {% assign author_array = "" | split: "/" %}
-            {% for authorName in book.authors %}
-              {% assign author = site.people | where:'name', authorName | first %}
-              {% capture link %}{% if author.alumni == true %}{{ author.firstName }} {{ author.lastName }}{% else %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endif %}{% endcapture %}
-              {% assign author_array = author_array | push: link %}
-            {% endfor %}
-            by {{ author_array | join: ', ' }} {% if book.multipleAuthors %} and others {% endif %}
-          </div>
-          <p>
-            {%- if book.featuredImage -%}
-              <img class="featured-image" src="/assets/featuredImages/{{ book.featuredImage }}.png" alt="cover image of the book">
-            {% endif %}
-            {{ book.description | newline_to_br }}
-          </p>
-          <div class="links">
-              {%- if book.amazon-link -%}
-            <div>
-              <div class="metainfo-icon-div"><i class="fab fa-amazon"></i></div>
-              <div><a href="{{ book.amazon-link }}">Buy the book at amazon</a></div>
-            </div>
-            {% endif %}
-            {%- if book.download-link -%}
-            <div>
-              <div class="metainfo-icon-div"><i class="fas fa-cloud-download-alt metainfo-icon"></i></div>
-              <div><a href="{{ book.download-link }}">Download the book for free</a></div>
-            </div>
-            {% endif %}
-          </div>
-        </article>
-  {% if loopindex == 0 or forloop.index == size %}
+  <article class="entry-card book">
+    {%- if book.featuredImage -%}
+      <div class="entry-card-image">
+        <img alt="cover image of the book" loading="lazy" src="/assets/featuredImages/{{ book.featuredImage }}.png">
+      </div>
+    {%- endif -%}
+    <div class="entry-card-body">
+      <h3 class="entry-card-title">{{ book.name }}</h3>
+      <div class="post-meta">
+        {% assign author_array = "" | split: "/" %}
+        {% for authorName in book.authors %}
+          {% assign author = site.people | where:'name', authorName | first %}
+          {% capture link %}{% if author.alumni == true %}{{ author.firstName }} {{ author.lastName }}{% else %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endif %}{% endcapture %}
+          {% assign author_array = author_array | push: link %}
+        {% endfor %}
+        by {{ author_array | join: ', ' }} {% if book.multipleAuthors %} and others {% endif %}
+      </div>
+      <p class="entry-card-text">{{ book.description | newline_to_br }}</p>
+      <div class="links entry-card-links">
+        {%- if book.amazon-link -%}
+        <div>
+          <div class="metainfo-icon-div"><i class="fab fa-amazon metainfo-icon"></i></div>
+          <div><a href="{{ book.amazon-link }}">Buy the book at amazon</a></div>
+        </div>
+        {% endif %}
+        {%- if book.download-link -%}
+        <div>
+          <div class="metainfo-icon-div"><i class="fas fa-cloud-download-alt metainfo-icon"></i></div>
+          <div><a href="{{ book.download-link }}">Download the book for free</a></div>
+        </div>
+        {% endif %}
+      </div>
     </div>
-  {% endif %}
+  </article>
 {% endfor %}
+</div>

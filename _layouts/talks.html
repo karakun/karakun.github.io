@@ -1,93 +1,78 @@
 ---
 layout: page
 ---
-{% assign size = 0 %}
-{% for talk in site.talks %}
-  {% if talk.archive == page.archive %}
-    {% assign size = size | plus: 1 %}
-  {% endif %}
-{% endfor %}
-
-{% assign loopcount = 0 %}
 {% assign sortedtalks = site.talks | sort: 'index' | reverse %}
+<div class="card-grid">
 {% for talk in sortedtalks %}
   {% if talk.archive == page.archive %}
-    {% assign loopcount = loopcount | plus: 1 %}
-    {% assign loopindex = loopcount | modulo: 2 %}
-
-    {% if loopindex == 1 %}
-      <div class="columns">
-    {% endif %}
-        <article class="talk column content {% unless loopcount == size and loopindex == 1 %} is-half {% endunless %}">
-          <h3 class="has-text-primary"><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
-          <div class="post-meta">
-            <!-- count valid speakers -->
-            {% assign lastSpeaker = 0 %}
-            {% for i in talk.speakers %}
-              {% assign ii = site.people | where:'name', a | first %}
-              {% if ii %}
-                {% assign lastSpeaker = lastSpeaker | plus: 1 %}
+    <article class="entry-card talk">
+      {%- if talk.featuredImage -%}
+        <a class="entry-card-image" href="{{ talk.url }}" tabindex="-1" aria-hidden="true">
+          <img alt="" loading="lazy" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
+        </a>
+      {%- endif -%}
+      <div class="entry-card-body">
+        <h3 class="entry-card-title"><a href="{{ talk.url }}">{{ talk.title }}</a></h3>
+        <div class="post-meta">
+          <!-- count valid speakers -->
+          {% assign lastSpeaker = 0 %}
+          {% for i in talk.speakers %}
+            {% assign ii = site.people | where:'name', a | first %}
+            {% if ii %}
+              {% assign lastSpeaker = lastSpeaker | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% assign secondLastSpeaker = lastSpeaker | minus: 1 %}
+          <!-- list valid speakers -->
+          {% assign counter = 0 %}
+          {% for a in talk.speakers %}
+            {% assign author = site.people | where:'name', a | first %}
+            {% if author %}
+              {% assign counter = counter | plus: 1 %}
+              {% if counter == 1 %}
+                by
+              {% else %}
+                {% if counter == lastSpeaker %}and{% endif %}
+              {% endif %}
+              {% if author.alumni == true %}{{ author.firstName }} {{ author.lastName }}{% else %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endif %}{% if counter < secondLastSpeaker %},{% endif %}
+            {% endif %}
+          {% endfor %}
+        </div>
+        <p class="entry-card-excerpt">{{ talk.excerpt | strip_html | strip }}</p>
+        <div class="links entry-card-links">
+          {%- if talk.lectures -%}
+            {% assign lecturesArray = "" | split: "/" %}
+            {% for lecture in talk.lectures %}
+              {% if forloop.index < 4 %}
+                {% assign lecturesArray = lecturesArray | push: lecture %}
               {% endif %}
             {% endfor %}
-            {% assign secondLastSpeaker = lastSpeaker | minus: 1 %}
-            <!-- list valid speakers -->
-            {% assign counter = 0 %}
-            {% for a in talk.speakers %}
-              {% assign author = site.people | where:'name', a | first %}
-              {% if author %}
-                {% assign counter = counter | plus: 1 %}
-                {% if counter == 1 %}
-                  by
-                {% else %}
-                  {% if counter == lastSpeaker %}and{% endif %}
-                {% endif %}
-                {% if author.alumni == true %}{{ author.firstName }} {{ author.lastName }}{% else %}<a href="{{ author.url }}">{{ author.firstName }} {{ author.lastName }}</a>{% endif %}{% if counter < secondLastSpeaker %},{% endif %}
-              {% endif %}
-            {% endfor %}
+          <div>
+            <div class="metainfo-icon-div" aria-hidden="true"><i class="fas fa-map-marker-alt metainfo-icon"></i></div>
+            <div>{{ lecturesArray | join: ', ' }} {% if talk.lectures.size > 4 %} and <span title="{{ talk.lectures | join: ', ' }}">others</span> {% endif %}</div>
           </div>
-          <p>
-            {%- if talk.featuredImage -%}
-            <a href="{{ talk.url }}">
-              <img class="featured-image" alt="" src="/assets/featuredImages/{{ talk.featuredImage }}.png">
-            </a>
-            {% endif %}
-            <a class="excerpt" href="{{ talk.url }}">{{ talk.excerpt | newline_to_br }}</a>
-          </p>
-          <div class="links">
-              {%- if talk.lectures -%}
-              {% assign lecturesArray = "" | split: "/" %}
-              {% for lecture in talk.lectures %}
-                {% if forloop.index < 4 %}
-                  {% assign lecturesArray = lecturesArray | push: lecture %}
-                {% endif %}
-              {% endfor %}
-            <div>
-              <div class="metainfo-icon-div" aria-hidden="true"><i class="fas fa-map-marker-alt metainfo-icon"></i></div>
-              <div>{{ lecturesArray | join: ', ' }} {% if talk.lectures.size > 4 %} and <span title="{{ talk.lectures | join: ', ' }}" alt="{{ talk.lectures | join: ', ' }}">others</span> {% endif %}</div>
-            </div>
-            {% endif %}
-            {%- if talk.slides-link -%}
-            <div>
-              <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-slideshare metainfo-icon"></i></div>
-              <div><a href="{{ talk.slides-link }}">Download slides</a></div>
-            </div>
-            {% endif %}
-            {%- if talk.video-link -%}
-            <div>
-              <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-youtube metainfo-icon"></i></div>
-              <div><a href="{{ talk.video-link }}">Watch talk online</a></div>
-            </div>
-            {% endif %}
-            {%- if talk.github-link -%}
-            <div>
-              <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-github metainfo-icon"></i></div>
-              <div><a href="{{ talk.github-link }}">Resources on GitHub</a></div>
-            </div>
-            {% endif %}
+          {% endif %}
+          {%- if talk.slides-link -%}
+          <div>
+            <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-slideshare metainfo-icon"></i></div>
+            <div><a href="{{ talk.slides-link }}">Download slides</a></div>
           </div>
-        </article>
-    {% if loopindex == 0 or loopcount == size %}
+          {% endif %}
+          {%- if talk.video-link -%}
+          <div>
+            <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-youtube metainfo-icon"></i></div>
+            <div><a href="{{ talk.video-link }}">Watch talk online</a></div>
+          </div>
+          {% endif %}
+          {%- if talk.github-link -%}
+          <div>
+            <div class="metainfo-icon-div" aria-hidden="true"><i class="fab fa-github metainfo-icon"></i></div>
+            <div><a href="{{ talk.github-link }}">Resources on GitHub</a></div>
+          </div>
+          {% endif %}
+        </div>
       </div>
-    {% endif %}
+    </article>
   {% endif %}
 {% endfor %}
+</div>
