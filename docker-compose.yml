@@ -2,9 +2,16 @@ version: '2.4'
 
 services:
   jekyll:
-    image: bretfisher/jekyll-serve:stable-20250915-2119a31
-    command: [ "bundle", "exec", "jekyll", "serve", "--config", "_config.yml,_config_dev.yml", "--force_polling", "-H", "0.0.0.0", "-P", "4000", "--future", "--drafts" ]
+    image: ruby:3.4.11
+    working_dir: /site
+    environment:
+      BUNDLE_PATH: /usr/local/bundle
+    command: [ "sh", "-c", "bundle install && exec bundle exec jekyll serve --config _config.yml,_config_dev.yml --force_polling -H 0.0.0.0 -P 4000 --future --drafts" ]
     volumes:
       - .:/site
+      - bundle:/usr/local/bundle
     ports:
       - '4000:4000'
+
+volumes:
+  bundle:
