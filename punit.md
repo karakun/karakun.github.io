@@ -104,6 +104,7 @@ PUnit transforms repeated executions into statistical evidence instead of relyin
 
 - [PUnit on GitHub](https://github.com/javai-org/punit){:target="_blank"}
 - [Releases](https://github.com/javai-org/punit/releases){:target="_blank"}
+- [Video: EU AI Act: Konformität ohne Kennzahlen – wie geht das?](https://www.youtube.com/watch?v=xee9dGxL2vQ){:target="_blank"} (German only)
 
 ---
 
