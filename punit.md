@@ -16,6 +16,8 @@ nav:
 
 ## Testing Non-Deterministic Systems with Confidence
 
+Probabilistic Testing with Punit covers the statistical tooling that lets teams measure, enforce, and version-control the resilience properties of non-deterministic systems like LLM-integrations, ML components, and distributed services that traditional binary pass/fail were never designed to handle.
+
 A conventional unit test pretends certainty: one run, one verdict.
 AI systems do not behave that way.
 
