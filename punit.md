@@ -16,6 +16,8 @@ nav:
 
 ## Testing Non-Deterministic Systems with Confidence
 
+Probabilistic Testing with Punit covers the statistical tooling that lets teams measure, enforce, and version-control the resilience properties of non-deterministic systems like LLM-integrations, ML components, and distributed services that traditional binary pass/fail were never designed to handle.
+
 A conventional unit test pretends certainty: one run, one verdict.
 AI systems do not behave that way.
 
@@ -104,6 +106,9 @@ PUnit transforms repeated executions into statistical evidence instead of relyin
 
 - [PUnit on GitHub](https://github.com/javai-org/punit){:target="_blank"}
 - [Releases](https://github.com/javai-org/punit/releases){:target="_blank"}
+- [Video: EU AI Act: Konformität ohne Kennzahlen – wie geht das?](https://www.youtube.com/watch?v=xee9dGxL2vQ){:target="_blank"} (German only)
+- [Article on heise online: Testen im Zeitalter der LLMs – Ein probabilistischer Ansatz gegen flakige Tests](https://www.heise.de/hintergrund/Testen-im-Zeitalter-der-LLMs-Ein-probabilistischer-Ansatz-gegen-flakige-Tests-11298750.html){:target="_blank"} (German only)
+- [Workshop at J-Fall 2026: Taming Non-Determinism – From Probabilistic Testing to Resilience Patterns](https://jfall.nl/preconference/#:~:text=Taming%20Non%2DDeterminism){:target="_blank"} (November 11, 2026, Veenendaal, NL)
 
 ---
 
