@@ -8,7 +8,7 @@ lectures: ['Diwodo 2026']
 video-link: 'https://youtu.be/xee9dGxL2vQ'
 featuredImage: EUAIAct
 header:
-  text: Documentation
+  text: Probabilistisches Testen
   image: talks
 index: 51
 ---
