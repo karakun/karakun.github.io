@@ -7,7 +7,7 @@ order: "18"
 headerText:
 permalink: /tiberius/
 header:
-  image: tiberius
+  image: tiberius_header
   text: Making <span class="my-karakun">LLM security</span> measurable and testable
 nav:
   title: Tiberius
