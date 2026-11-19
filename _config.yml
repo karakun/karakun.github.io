@@ -19,12 +19,13 @@ description: >- # this means to ignore newlines until "baseurl:"
   The Developer Hub of Karakun AG
 baseurl: "" # the subpath of your site, e.g. /blog
 keep_files: [pagefind] # otherwise Jekyll will clear that generated files all the time
+include: [.htaccess] # dotfiles are skipped by default
 contact:
   street: Elisabethenanlage 25
   city: CH-4051 Basel
   email: info@karakun.com
   company: Karakun AG
-url: "https://dev.karakun.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://karakun.dev" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: karakun
 github_username:  karakun
 mastodon:
