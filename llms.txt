@@ -17,14 +17,14 @@ without prior written consent from Karakun AG.
 
 For licensing inquiries or questions about AI usage of this content:
 - Website: https://karakun.com
-- Blog: https://dev.karakun.com
-- About: https://dev.karakun.com/about/
+- Blog: https://karakun.dev
+- About: https://karakun.dev/about/
 
 ## Content
 
-- [Home](https://dev.karakun.com/)
-- [All Articles](https://dev.karakun.com/page/1/)
-- [Books](https://dev.karakun.com/books/)
-- [Talks](https://dev.karakun.com/talks/)
-- [About Karakun](https://dev.karakun.com/about/)
-- [OpenWebStart](https://dev.karakun.com/webstart/)
+- [Home](https://karakun.dev/)
+- [All Articles](https://karakun.dev/page/1/)
+- [Books](https://karakun.dev/books/)
+- [Talks](https://karakun.dev/talks/)
+- [About Karakun](https://karakun.dev/about/)
+- [OpenWebStart](https://karakun.dev/webstart/)

@@ -1,0 +1,10 @@
+# Served by Apache on the cyon webspace (replaces GitHub Pages defaults)
+ErrorDocument 404 /404.html
+
+# GitHub Pages served /foo as /foo.html; keep old extensionless links working
+Options -MultiViews
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+?)/?$ $1.html [L]
