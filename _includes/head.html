@@ -9,12 +9,15 @@
     <meta property="og:image" content="{{ site.url }}/assets/images/raccoon.png" />
   {%- endif -%}
 
-  {%- if page.seo_title -%}
-    <title>{{ page.seo_title }}</title>
+  {%- if paginator and paginator.page > 1 -%}
+    <title>{{ site.title | escape }} – Page {{ paginator.page }} of {{ paginator.total_pages }}</title>
+    {%- seo title=false -%}
+  {%- elsif page.seo_title -%}
+    <title>{{ page.seo_title | escape }}</title>
     {%- seo title=false -%}
   {%- else -%}
     {%- seo -%}
-  {%- endif -%}
+  {%- endif -%}	
 
   <meta name="color-scheme" content="light dark">
   <script>
