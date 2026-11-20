@@ -38,13 +38,13 @@ established Java I/O workflows.
 This article introduces EncryptedFileChannel, an open source drop-in replacement for Java’s FileChannel that transparently encrypts and decrypts data using Google Tink. It demonstrates how to integrate strong, authenticated encryption into existing Java I/O code without refactoring application logic. A lightweight reminder for developers: **don’t roll your own crypto!**
 
 When working on a custom **Apache Lucene Store plugin**, we needed to write Lucene’s **index** and **transaction log (translog)** files in an encrypted form - without changing Lucene’s logic or APIs.
-Lucene’s I/O layer expects to interact with a plain `java.nio.channels.FileChannel`. So we built a **drop-in replacement**: [EncryptedFileChannel](https://github.com/karakun/encrypted-filechannel).
+Lucene’s I/O layer expects to interact with a plain `java.nio.channels.FileChannel`. So we built a **drop-in replacement**: [EncryptedFileChannel](https://github.com/karakun/encrypted-filechannel){:target="_blank"}.
 
 It behaves like a standard `FileChannel`, but transparently encrypts all data written to disk and decrypts it on read - all using **Google Tink’s StreamingAead** API.
 
 ## <a name="tink"></a> Why Use Google Tink for Java NIO Encryption?
 
-Before diving into the details - a quick note on why we chose [Google Tink](https://github.com/tink-crypto) instead of implementing encryption ourselves.
+Before diving into the details - a quick note on why we chose [Google Tink](https://github.com/tink-crypto){:target="_blank"} instead of implementing encryption ourselves.
 
 Cryptography is one of those areas where *“almost correct”* is *still wrong*.
 Common pitfalls include nonce reuse, missing authentication, weak key derivation, or insecure cipher modes.
@@ -196,12 +196,12 @@ This design choice gives us both flexibility and safety.
 `EncryptedFileChannel` is a small but powerful utility:
 It lets you bring **transparent, authenticated encryption** into any Java NIO–based system, including Lucene, without rewriting application logic.
 
-You can find the source and tests on GitHub ([MPL-2.0 license](github.com/karakun/encrypted-filechannel?tab=MPL-2.0-1-ov-file#readme)):
-[karakun/encrypted-filechannel](https://github.com/karakun/encrypted-filechannel)
+You can find the source and tests on GitHub ([MPL-2.0 license](https://github.com/karakun/encrypted-filechannel?tab=MPL-2.0-1-ov-file#readme){:target="_blank"}):
+[karakun/encrypted-filechannel](https://github.com/karakun/encrypted-filechannel){:target="_blank"}
 
 If you’re working with sensitive data on disk - and need something light, reliable, and open - give it a look.
 
 ## <a name="cta"></a> Let's Connect
-If you’re exploring encrypted storage, working on encrypting Lucene index files in Java, or experimenting with Google Tink StreamingAead for Java NIO encryption, [feel free to reach out](/people/hannes). 
+If you’re exploring encrypted storage, working on encrypting Lucene index files in Java, or experimenting with Google Tink StreamingAead for Java NIO encryption, [feel free to reach out](/people/Hannes). 
 I’m always happy to discuss implementation details, compare architectural approaches, or exchange ideas with fellow practitioners building transparent file 
 encryption for Lucene storage and other secure Java I/O solutions.
