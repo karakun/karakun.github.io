@@ -1,9 +1,25 @@
-# Served by Apache on the cyon webspace (replaces GitHub Pages defaults)
+# Apache configuration for the Karakun Developer Hub on cyon
+
+# Browser security headers
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+    Header always set X-Frame-Options "SAMEORIGIN"
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # Disable access to camera, microphone and browser geolocation
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Display the custom error page for missing resources
 ErrorDocument 404 /404.html
 
-# GitHub Pages served /foo as /foo.html; keep old extensionless links working
+# Disable automatic content negotiation; use explicit URL rewriting instead
 Options -MultiViews
 RewriteEngine On
+
+# Preserve existing URLs without a .html extension.
+# Only rewrite when the requested path is neither a file nor a directory
+# and a matching .html file exists.
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.html -f
