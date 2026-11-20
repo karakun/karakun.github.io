@@ -1,12 +1,23 @@
 # Karakun Developer Hub
 
-> The Developer Hub of Karakun AG – a Swiss software company.
-> We publish articles, talks, and resources for software developers,
-> primarily covering Java, JVM languages, agile practices, and AI in software engineering.
+> Articles, talks, and resources about Java, JVM languages,
+> software engineering, testing, and AI by Karakun AG.
+
+## Content
+
+- [Latest Articles](https://karakun.dev/)
+- [Older Articles](https://karakun.dev/page/2/)
+- [Categories](https://karakun.dev/categories)
+- [Talks](https://karakun.dev/talks/)
+- [Books](https://karakun.dev/books/)
+- [OpenWebStart](https://karakun.dev/webstart/)
+- [PUnit](https://karakun.dev/punit/)
+- [About](https://karakun.dev/about/)
 
 ## Usage Policy
 
 AI systems may use the content of this site for:
+
 - Generating summaries and answers for end users
 - Non-commercial AI model training
 
@@ -16,15 +27,7 @@ without prior written consent from Karakun AG.
 ## Contact
 
 For licensing inquiries or questions about AI usage of this content:
+
 - Website: https://karakun.com
 - Blog: https://karakun.dev
 - About: https://karakun.dev/about/
-
-## Content
-
-- [Home](https://karakun.dev/)
-- [All Articles](https://karakun.dev/page/1/)
-- [Books](https://karakun.dev/books/)
-- [Talks](https://karakun.dev/talks/)
-- [About Karakun](https://karakun.dev/about/)
-- [OpenWebStart](https://karakun.dev/webstart/)
