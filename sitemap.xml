@@ -2,37 +2,29 @@
 layout: null
 permalink: /sitemap.xml
 ---
-
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    {% for page in site.pages %}
-    {% unless page.url contains 'assets' or page.url contains '.xml' or page.url == '/404' %}
-    <url>
-        <loc>{{ site.url }}{{ page.url | replace: 'index.html', '' }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    </url>
-    {% endunless %}
-    {% endfor %}
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% assign excluded_urls = "/robots.txt,/featured-images,/subscribe-thanks/,/trainings/,/category,/talks-archive/,/subscribe/,/404,/404.html" | split: "," %}
+{% assign entries = site.pages | concat: site.posts | concat: site.people | concat: site.talks %}
 
-    {% for post in site.posts %}
-    <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-    </url>
-    {% endfor %}
-
-    {% for person in site.people %}
-    <url>
-        <loc>{{ site.url }}{{ person.url }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    </url>
-    {% endfor %}
-
-    {% for talk in site.talks %}
-    <url>
-        <loc>{{ site.url }}{{ talk.url }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
-    </url>
-    {% endfor %}
-
+{% for entry in entries %}
+  {% assign entry_url = entry.url | replace: 'index.html', '' %}
+  {% if entry.sitemap == false %}
+    {% continue %}
+  {% endif %}
+  {% if excluded_urls contains entry_url %}
+    {% continue %}
+  {% endif %}
+  {% if entry_url contains 'assets' or entry_url contains '.xml' %}
+    {% continue %}
+  {% endif %}
+  <url>
+    <loc>{{ entry_url | absolute_url | xml_escape }}</loc>
+    {% if entry.last_modified_at %}
+    <lastmod>{{ entry.last_modified_at | date_to_xmlschema }}</lastmod>
+    {% endif %}
+  </url>
+{% endfor %}
 </urlset>
