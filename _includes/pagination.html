@@ -1,23 +1,31 @@
 {% if paginator.total_pages > 1 %}
 
-  {% assign start = paginator.page | minus: 2 %}
-  {% assign end = paginator.page | plus: 2 %}
-
-  {% if start < 1 %}
+  {% if paginator.total_pages <= 9 %}
     {% assign start = 1 %}
-    {% assign end = start | plus: 4 %}
-  {% elsif end > paginator.total_pages %}
-    {% assign start = paginator.total_pages | minus: 4 %}
     {% assign end = paginator.total_pages %}
+  {% else %}
+    {% assign start = paginator.page | minus: 2 %}
+    {% assign end = paginator.page | plus: 2 %}
+
+    {% if start < 1 %}
+      {% assign start = 1 %}
+      {% assign end = start | plus: 4 %}
+    {% elsif end > paginator.total_pages %}
+      {% assign start = paginator.total_pages | minus: 4 %}
+      {% assign end = paginator.total_pages %}
+    {% endif %}
+
+    {% if start < 1 %}
+      {% assign start = 1 %}
+    {% endif %}
+
+    {% if end > paginator.total_pages %}
+      {% assign end = paginator.total_pages %}
+    {% endif %}
   {% endif %}
 
-  {% if start < 1 %}
-    {% assign start = 1 %}
-  {% endif %}
-
-  {% if end > paginator.total_pages %}
-    {% assign end = paginator.total_pages %}
-  {% endif %}
+  {% assign page_after_current = paginator.page | plus: 1 %}
+  {% assign trailing_gap_limit = paginator.total_pages | minus: 2 %}
 
   <div class="pagination-wrapper">
     <div class="pagination">
@@ -41,12 +49,32 @@
       {% endif %}
 
       {% for page in (start..end) %}
+        {% assign page_distance = page | minus: paginator.page %}
+        {% if page_distance < 0 %}
+          {% assign page_distance = page_distance | times: -1 %}
+        {% endif %}
+        {% assign distant_class = '' %}
+        {% if paginator.total_pages <= 9 and page_distance > 1 and page != 1 and page != paginator.total_pages %}
+          {% assign distant_class = 'pagination-distant' %}
+        {% elsif forloop.first and start > 1 %}
+          {% assign distant_class = 'pagination-distant' %}
+        {% elsif forloop.last and end < paginator.total_pages %}
+          {% assign distant_class = 'pagination-distant' %}
+        {% endif %}
         {% if page == paginator.page %}
           <span class="active">{{ page }}</span>
         {% elsif page == 1 %}
-          <a href="{{ site.baseurl }}/" aria-label="Page 1">1</a>
+          <a class="{{ distant_class }}" href="{{ site.baseurl }}/" aria-label="Page 1">1</a>
         {% else %}
-          <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" aria-label="Page {{ page }}">{{ page }}</a>
+          <a class="{{ distant_class }}" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}" aria-label="Page {{ page }}">{{ page }}</a>
+        {% endif %}
+        {% if paginator.total_pages <= 9 %}
+          {% if forloop.first and paginator.page > 3 %}
+            <span class="pagination-more pagination-mobile-more" aria-hidden="true">&middot;&middot;&middot;</span>
+          {% endif %}
+          {% if page == page_after_current and paginator.page < trailing_gap_limit %}
+            <span class="pagination-more pagination-mobile-more" aria-hidden="true">&middot;&middot;&middot;</span>
+          {% endif %}
         {% endif %}
       {% endfor %}
 

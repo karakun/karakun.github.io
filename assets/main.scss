@@ -738,7 +738,7 @@ hr {
 
 .entry-card .entry-card-body > .entry-card-meta {
     margin-top: 0;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     color: var(--karakun-text-muted);
     margin-bottom: 0.35rem;
     font-family: var(--karakun-heading-font);
@@ -747,15 +747,22 @@ hr {
 }
 
 .entry-card .entry-card-body > .entry-card-title {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
     line-height: 1.3;
     margin-top: 0;
     margin-bottom: 0.5rem;
 
     a {
         color: var(--karakun-heading);
+        text-decoration: none;
 
-        &:hover { color: var(--karakun-link); }
+        &:hover, &:focus-visible {
+            color: var(--karakun-link-hover);
+            text-decoration: underline;
+            text-decoration-color: currentColor;
+            text-decoration-thickness: 1px;
+            text-underline-offset: 0.16em;
+        }
 
         // the whole card is the link target
         &::after {
@@ -767,12 +774,15 @@ hr {
     }
 }
 
-.entry-card:hover .entry-card-title a {
-    color: var(--karakun-link);
+.entry-card:hover .entry-card-title a,
+.entry-card:focus-within .entry-card-title a {
+    color: var(--karakun-link-hover);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
 }
 
 .entry-card-excerpt {
-    font-size: 0.925rem;
+    font-size: 1rem;
     line-height: 1.6;
     color: var(--karakun-text-muted);
     margin-bottom: 0;
@@ -786,7 +796,7 @@ hr {
     margin-top: auto;
     padding-top: 0.75rem;
     font-family: var(--karakun-heading-font);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--karakun-link);
 
@@ -812,8 +822,10 @@ hr {
 
     a, .post-meta a {
         color: var(--karakun-link);
-        text-decoration: none;
-        &:hover { text-decoration: underline; }
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.16em;
+        &:hover { color: var(--karakun-link-hover); }
     }
 }
 
@@ -826,7 +838,10 @@ hr {
 
     a {
         color: var(--karakun-link);
-        &:hover { text-decoration: underline; }
+        text-decoration: underline;
+        text-decoration-thickness: 1px;
+        text-underline-offset: 0.16em;
+        &:hover { color: var(--karakun-link-hover); }
     }
 }
 
@@ -884,6 +899,34 @@ hr {
     > span.pagination-more {
         min-width: 1.5rem;
         color: var(--karakun-text-muted);
+    }
+
+    > span.pagination-mobile-more {
+        display: none;
+    }
+}
+
+@include mobile {
+    .pagination-wrapper .pagination {
+        gap: 0.15rem;
+
+        > a, > span {
+            min-width: 1.875rem;
+            height: 2rem;
+            padding: 0 0.3rem;
+        }
+
+        > span.pagination-more {
+            min-width: 1.25rem;
+        }
+
+        > span.pagination-mobile-more {
+            display: inline-flex;
+        }
+
+        > .pagination-distant {
+            display: none;
+        }
     }
 }
 
@@ -1088,14 +1131,25 @@ article.post {
         padding-left: 2rem;
     }
 
-    // the author box and the tags stick as one block, so they cannot slide
-    // over each other; a sidebar taller than the window scrolls on its own
+    // Keep the author box and tags together while scrolling, without creating
+    // a second scroll area inside the page.
     @include desktop {
         position: sticky;
         top: 5rem;
         align-self: flex-start;
-        max-height: calc(100vh - 6rem);
-        overflow-y: auto;
+    }
+}
+
+// The article and sidebar do not have enough room side by side on tablet
+// portrait. Stack them until the desktop breakpoint, then use the sidebar.
+@include until($desktop) {
+    .post.columns {
+        flex-direction: column;
+    }
+
+    .post.columns > .column {
+        flex: none;
+        width: 100%;
     }
 }
 
