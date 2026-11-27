@@ -27,7 +27,6 @@ public class SubmitIndexNow {
     private static final Logger logger = Logger.getLogger(SubmitIndexNow.class.getName());
 
     private static final Pattern INDEXNOW_KEY_FILE = Pattern.compile("^[a-fA-F0-9]{32}\\.txt$");
-    private static final Pattern LOC_PATTERN = Pattern.compile("<loc>(.*?)</loc>");
     private static final Pattern FRONT_MATTER_PERMALINK = Pattern.compile("(?m)^permalink:\\s*[\"']?([^\"'\\r\\n]+)[\"']?\\s*$");
     private static final Pattern POST_FILE = Pattern.compile("^_posts/(\\d{4})-(\\d{2})-(\\d{2})-(.+)\\.md$");
     private static final Set<String> SHARED_RENDERING_FILES = Set.of(
@@ -182,21 +181,32 @@ public class SubmitIndexNow {
     private LinkedHashSet<String> fetchSitemapUrls(URI siteUrl)
             throws ParserConfigurationException, IOException, SAXException, InterruptedException {
 
-        URI sitemap = siteUrl.resolve("/sitemap.xml");
-        HttpRequest request = HttpRequest.newBuilder(sitemap)
-                .timeout(Duration.ofSeconds(30))
-                .GET()
-                .build();
-        HttpResponse<String> response = http.send(request, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
-        if (response.statusCode() < 200 || response.statusCode() >= 300) {
-            throw new IllegalStateException("Could not fetch sitemap " + sitemap + ": HTTP " + response.statusCode());
+        String source;
+        String body;
+        Path localSitemap = Path.of(env("SITEMAP_FILE").isBlank() ? "_site/sitemap.xml" : env("SITEMAP_FILE"));
+        if (Files.isRegularFile(localSitemap)) {
+            // Prefer the freshly built sitemap: no dependency on the live server (WAF, caching, deploy timing)
+            source = localSitemap.toString();
+            body = Files.readString(localSitemap, StandardCharsets.UTF_8);
+        } else {
+            URI sitemap = siteUrl.resolve("/sitemap.xml");
+            source = sitemap.toString();
+            HttpRequest request = HttpRequest.newBuilder(sitemap)
+                    .timeout(Duration.ofSeconds(30))
+                    .GET()
+                    .build();
+            HttpResponse<String> response = http.send(request, HttpResponse.BodyHandlers.ofString(StandardCharsets.UTF_8));
+            if (response.statusCode() < 200 || response.statusCode() >= 300) {
+                throw new IllegalStateException("Could not fetch sitemap " + sitemap + ": HTTP " + response.statusCode());
+            }
+            body = response.body();
         }
 
-        LinkedHashSet<String> urls = parseSitemapWithXml(response.body());
+        LinkedHashSet<String> urls = parseSitemapWithXml(body);
         if (urls.isEmpty()) {
-            urls = parseSitemapWithRegex(response.body());
+            throw new IllegalStateException("No URLs found in sitemap " + source + ".");
         }
-        logger.info("Fetched %d URL(s) from %s.".formatted(urls.size(), sitemap));
+        logger.info("Fetched %d URL(s) from %s.".formatted(urls.size(), source));
         return urls;
     }
 
@@ -210,15 +220,6 @@ public class SubmitIndexNow {
         LinkedHashSet<String> urls = new LinkedHashSet<>();
         for (int i = 0; i < locs.getLength(); i++) {
             urls.add(normalizeUrl(locs.item(i).getTextContent()));
-        }
-        return urls;
-    }
-
-    private LinkedHashSet<String> parseSitemapWithRegex(String body) {
-        LinkedHashSet<String> urls = new LinkedHashSet<>();
-        Matcher matcher = LOC_PATTERN.matcher(body);
-        while (matcher.find()) {
-            urls.add(normalizeUrl(matcher.group(1)));
         }
         return urls;
     }

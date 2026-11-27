@@ -111,6 +111,11 @@ jobs:
         with:
           distribution: temurin
           java-version: '21'
+      - name: Download site
+        uses: actions/download-artifact@v8
+        with:
+          name: site
+          path: _site
       - name: Setup JBang
         uses: jbangdev/setup-jbang@v0.1.1
       - name: Notify Bing via IndexNow
