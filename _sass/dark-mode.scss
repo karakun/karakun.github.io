@@ -11,6 +11,7 @@
 @mixin dark-tokens {
     --karakun-bg: #{$karakun-night-bg};
     --karakun-bg-raised: #{$karakun-night-bg-raised};
+    --karakun-surface: #{$karakun-night-surface};
     --karakun-text: #{$karakun-night-text};
     --karakun-text-muted: #{$karakun-night-text-muted};
     --karakun-heading: #{$karakun-night-heading};
@@ -253,6 +254,7 @@ html[data-theme='light'] { color-scheme: light; }
 
     --karakun-bg: #fff;
     --karakun-bg-raised: #fff;
+    --karakun-surface: #fff;
     --karakun-text: #111;
     --karakun-text-muted: #444;
     --karakun-heading: #000;
